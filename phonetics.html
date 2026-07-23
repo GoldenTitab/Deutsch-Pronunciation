@@ -659,7 +659,10 @@
     </div>
 
     <script>
-        // ===== تمام توابع JavaScript =====
+        // ===== تنظیمات =====
+        const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/'; // کاربر باید جایگزین کند
+
+        // ===== توابع =====
         function showToast(message) {
             const toast = document.getElementById('ui-toast');
             document.getElementById('toast-message').innerText = message;
@@ -688,7 +691,7 @@
             };
 
             try {
-                const workerUrl = `https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/?word=${encodeURIComponent(word)}`;
+                const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(word)}`;
                 const response = await fetch(workerUrl);
                 if (response.ok) {
                     const audioBlob = await response.blob();
