@@ -16,6 +16,23 @@ This repository hosts a static web page (converted into an installable PWA) that
 - Understanding pronunciation rules and IPA transcriptions
 - Listening to word pronunciations via the browser's built-in speech synthesis
 
+## Setup Instructions
+
+1. **Replace the TTS Worker URL**:
+   - In `script.js`, `phonetics.html`, and any other file that uses TTS, replace `TTS_WORKER_URL` with your actual Cloudflare Worker address.
+   - Example: `const TTS_WORKER_URL = 'https://tts-proxy.your-subdomain.workers.dev/';`
+
+2. **Configure the Cloudflare Worker**:
+   - Follow the instructions in `worker.js` to set up your own Cloudflare Worker.
+   - Set the `TTS_API_KEY` secret with your Google Cloud TTS API key.
+
+3. **Add Icons**:
+   - Place `icon-192.png` and `icon-512.png` inside an `icons/` folder for PWA support.
+
+4. **Deploy**:
+   - Upload all files to a web server (or use GitHub Pages, Netlify, etc.).
+   - The app will work offline once visited.
+
 ## Usage
 
 This is for personal educational use only. No commercial use is intended.
