@@ -175,6 +175,10 @@
                 <i class="fas fa-gem" aria-hidden="true"></i>
                 <span>آلمانی با من</span>
             </div>
+            <form id="globalSearchForm" class="global-search" role="search">
+                <input type="text" id="globalSearchInput" placeholder="جستجوی سریع کلمه یا فعل..." aria-label="جستجوی سریع">
+                <button type="submit" aria-label="جستجو"><i class="fas fa-search" aria-hidden="true"></i></button>
+            </form>
             <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="منوی ناوبری">
                 <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
@@ -182,7 +186,10 @@
                 <li><a href="#" data-section="home" class="active">خانه</a></li>
                 <li><a href="#" data-section="vocabulary">واژگان</a></li>
                 <li><a href="#" data-section="grammar">گرامر</a></li>
+                <li><a href="#" data-section="conjugation">صرف افعال</a></li>
+                <li><a href="#" data-section="cases">حالت‌های دستوری</a></li>
                 <li><a href="#" data-section="levels">سطوح</a></li>
+                <li><a href="#" data-section="quiz">آزمون سطح</a></li>
                 <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
                 <li><a href="#" data-section="progress">پیشرفت من</a></li>
                 <li><a href="#" data-section="phonetics">مسترکلاس فونتیک</a></li>
@@ -208,6 +215,7 @@
                 <input type="text" id="vocabSearch" placeholder="جستجوی کلمه (آلمانی، فارسی، انگلیسی)...">
                 <select id="vocabLevelFilter">
                     <option value="all">همه سطوح</option>
+                    <option value="A0">A0</option>
                     <option value="A1">A1</option>
                     <option value="A2">A2</option>
                     <option value="B1">B1</option>
@@ -240,6 +248,7 @@
             <div class="controls-bar">
                 <select id="grammarLevelFilter">
                     <option value="all">همه سطوح گرامر</option>
+                    <option value="A0">A0</option>
                     <option value="A1">A1</option>
                     <option value="A2">A2</option>
                     <option value="B1">B1</option>
@@ -250,9 +259,42 @@
             <div id="grammarGrid" class="grammar-grid"></div>
         </section>
 
+        <section id="conjugation" class="section">
+            <h2>صرف افعال (Konjugation)</h2>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">صرف زمان حال مهم‌ترین افعال آلمانی، شامل افعال بی‌قاعده و کمکی-وجهی.</p>
+            <div class="controls-bar">
+                <input type="text" id="verbSearch" placeholder="جستجوی فعل (مثلاً sein, haben, sprechen)...">
+            </div>
+            <div id="verbGrid" class="grammar-grid"></div>
+        </section>
+
+        <section id="cases" class="section">
+            <h2>حالت‌های دستوری (Kasus)</h2>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">حروف تعریف، ضمایر و حروف اضافه در چهار حالت آلمانی — مهم‌ترین بخش گرامری برای عبور از سطح A2/B1.</p>
+            <div id="casesContent"></div>
+        </section>
+
         <section id="levels" class="section">
             <h2>سطوح زبان آلمانی</h2>
             <div id="levelsGrid" class="levels-grid"></div>
+        </section>
+
+        <section id="quiz" class="section">
+            <h2>آزمون سطح</h2>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">قبل از رفتن به سطح بعد، دانش واژگان خودت را با یک آزمون کوتاه بسنج.</p>
+            <div class="controls-bar">
+                <select id="quizLevelFilter">
+                    <option value="all">همه سطوح</option>
+                    <option value="A0">A0</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+                <button id="quizStartBtn" class="btn-primary">شروع آزمون (۱۰ سوال)</button>
+            </div>
+            <div id="quizArea"></div>
         </section>
 
         <section id="flashcards" class="section">
@@ -260,6 +302,7 @@
             <div class="controls-bar">
                 <select id="flashcardLevelFilter">
                     <option value="all">همه سطوح</option>
+                    <option value="A0">A0</option>
                     <option value="A1">A1</option>
                     <option value="A2">A2</option>
                     <option value="B1">B1</option>
