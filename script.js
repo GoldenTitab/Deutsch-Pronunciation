@@ -1,6 +1,12 @@
 "use strict";
 
 // ============================================================
+// CONFIGURATION – کاربر باید این آدرس را با Worker خود جایگزین کند
+// ============================================================
+const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
+// مثال: const TTS_WORKER_URL = 'https://tts-proxy.mon-domain.workers.dev/';
+
+// ============================================================
 // GLOBALS
 // ============================================================
 
@@ -63,7 +69,7 @@ async function speakGerman(text) {
     try {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), 3000);
-        const workerUrl = `https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/?word=${encodeURIComponent(text)}`;
+        const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(text)}`;
         const response = await fetch(workerUrl, { signal: controller.signal });
         clearTimeout(timer);
         if (response.ok) {
@@ -95,13 +101,14 @@ async function speakGerman(text) {
     });
 }
 
-function attachSpeaker(container, word) {
+function attachSpeaker(container) {
     container.querySelectorAll('.audio-btn').forEach(btn => {
         const clone = btn.cloneNode(true);
         btn.parentNode.replaceChild(clone, btn);
         clone.addEventListener('click', (e) => {
             e.stopPropagation();
-            speakGerman(clone.dataset.word || word || '');
+            const word = clone.dataset.word;
+            if (word) speakGerman(word);
         });
     });
 }
@@ -332,6 +339,7 @@ function renderVocab() {
         </tr>`;
     }).join('');
 
+    // دکمه‌های پخش صدا
     vocabBody.querySelectorAll('.audio-btn:not(.learn-toggle)').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -339,6 +347,7 @@ function renderVocab() {
         });
     });
 
+    // دکمه‌های یادگیری
     vocabBody.querySelectorAll('.learn-toggle').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -506,8 +515,9 @@ function showFlashcard() {
     flashcard.classList.remove('flipped');
     flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
 
-    attachSpeaker(flashFront, w.word);
-    if (flashBack) attachSpeaker(flashBack, w.word);
+    // اتصال دکمه‌های پخش صدا در front و back
+    attachSpeaker(flashFront);
+    if (flashBack) attachSpeaker(flashBack);
 }
 
 flipBtn.addEventListener('click', () => {
