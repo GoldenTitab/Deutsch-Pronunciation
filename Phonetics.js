@@ -42,7 +42,7 @@
                     resetBtn();
                     return;
                 }
-            } catch (e) { /* fallback */ }
+            } catch (e) {}
 
             try {
                 const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodeURIComponent(word)}`;
@@ -54,7 +54,7 @@
                 });
                 resetBtn();
                 return;
-            } catch (e) { /* fallback to device TTS */ }
+            } catch (e) {}
 
             try {
                 if (!window.speechSynthesis) throw new Error('No speechSynthesis');
@@ -207,7 +207,6 @@
             });
         }
 
-        // جفت‌های کمینه
         const MINIMAL_PAIRS = [
             [{ w: 'Bett', fa: 'تخت', en: 'bed' }, { w: 'Beet', fa: 'باغچه', en: 'flower bed' }],
             [{ w: 'Höhle', fa: 'غار', en: 'cave' }, { w: 'Hölle', fa: 'جهنم', en: 'hell' }],
@@ -257,7 +256,6 @@
         }
         if (document.getElementById('pair-options')) newPair();
 
-        // ضبط صدا
         let mediaRecorder, recChunks = [], recStream, isRecording = false;
         async function toggleRecording() {
             const btn = document.getElementById('rec-toggle-btn');
@@ -291,7 +289,6 @@
             }
         }
 
-        // کلمات سفارشی
         const CUSTOM_WORDS_KEY = 'germanCustomWords';
         const HIDDEN_WORDS_KEY = 'germanHiddenWords';
         function loadCustomWords() {
@@ -440,6 +437,7 @@
         }
         if (document.getElementById('flash-card')) pickFlash();
 
+        // PWA
         let deferredInstallPrompt;
         window.addEventListener('beforeinstallprompt', e => {
             e.preventDefault();
