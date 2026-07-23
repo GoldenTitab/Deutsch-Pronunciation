@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش زبان آلمانی</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gem" aria-hidden="true"></i>
+                <span>آلمانی با من</span>
+            </div>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="منوی ناوبری">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul id="navList" class="nav-list">
+                <li><a href="#" data-section="home" class="active">خانه</a></li>
+                <li><a href="#" data-section="vocabulary">واژگان</a></li>
+                <li><a href="#" data-section="grammar">گرامر</a></li>
+                <li><a href="#" data-section="levels">سطوح</a></li>
+                <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
+                <li><a href="#" data-section="progress">پیشرفت من</a></li>
+            </ul>
+            <button id="themeToggle" class="theme-toggle" aria-label="تغییر تم">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>یادگیری هوشمند زبان آلمانی</h1>
+                <p>مسیر جامع یادگیری واژگان، گرامر و اصطلاحات از سطح A1 تا C1</p>
+            </div>
+            <div id="homeFeatures" class="features-grid"></div>
+        </section>
+
+        <!-- Vocabulary Section -->
+        <section id="vocabulary" class="section">
+            <h2>واژگان و لغت‌نامه</h2>
+            <div class="controls-bar">
+                <input type="text" id="vocabSearch" placeholder="جستجوی کلمه (آلمانی، فارسی، انگلیسی)...">
+                <select id="vocabLevelFilter">
+                    <option value="all">همه سطوح</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+                <button id="vocabRandomBtn" class="btn-primary">کلمه تصادفی</button>
+            </div>
+            <div class="table-container">
+                <table id="vocabTable">
+                    <thead>
+                        <tr>
+                            <th>کلمه (آلمانی)</th>
+                            <th>تلفظ (IPA)</th>
+                            <th>معنی فارسی</th>
+                            <th>معنی انگلیسی</th>
+                            <th>سطح</th>
+                            <th>عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vocabBody">
+                        <!-- کلمات به صورت پویا بارگذاری می‌شوند -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="vocabPagination" class="pagination"></div>
+        </section>
+
+        <!-- Grammar Section -->
+        <section id="grammar" class="section">
+            <h2>آموزش گرامر</h2>
+            <div class="controls-bar">
+                <select id="grammarLevelFilter">
+                    <option value="all">همه سطوح گرامر</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+            </div>
+            <div id="grammarGrid" class="grammar-grid"></div>
+        </section>
+
+        <!-- Levels Section -->
+        <section id="levels" class="section">
+            <h2>سطوح زبان آلمانی</h2>
+            <div id="levelsGrid" class="levels-grid"></div>
+        </section>
+
+        <!-- Flashcards Section -->
+        <section id="flashcards" class="section">
+            <h2>جعبه لایتنر و فلش‌کارت</h2>
+            <div class="controls-bar">
+                <select id="flashcardLevelFilter">
+                    <option value="all">همه سطوح</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+                <span id="flashcardCount" class="badge">0 کلمه</span>
+                <button id="flashcardShuffle" class="btn-secondary"><i class="fas fa-random"></i> بر زدن کارت‌ها</button>
+            </div>
+            <div class="flashcard-container">
+                <div id="flashcard" class="flashcard" role="button" aria-label="فلش‌کارت">
+                    <div class="card-face front" id="flashFront"></div>
+                    <div class="card-face back" id="flashBack">
+                        <div class="flashcard-word" id="flashFa"></div>
+                        <div class="flashcard-word en" id="flashEn" dir="ltr"></div>
+                        <span class="level-badge" id="flashLevel"></span>
+                    </div>
+                </div>
+                <div class="flashcard-controls">
+                    <button id="flashPrev" class="btn-primary"><i class="fas fa-arrow-right"></i> قبلی</button>
+                    <button id="flipBtn" class="btn-accent">برگرداندن کارت</button>
+                    <button id="flashNext" class="btn-primary">بعدی <i class="fas fa-arrow-left"></i></button>
+                </div>
+                <div id="flashIndex" class="flash-index">0 از 0</div>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progress" class="section">
+            <h2>آمار و پیشرفت یادگیری</h2>
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <span id="statWords">0</span>
+                        <p>کلمات یادگرفته شده</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <span id="statTotal">0</span>
+                        <p>کل کلمات مجموعه</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <span id="statPercent">0%</span>
+                        <p>درصد پیشرفت کل</p>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <div id="progressLevels" class="progress-levels"></div>
+            <div class="reset-container">
+                <button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>طراحی شده برای یادگیری بهتر و اصولی زبان آلمانی</p>
+    </footer>
+
+</body>
+</html>
