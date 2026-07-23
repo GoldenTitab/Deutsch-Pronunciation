@@ -1,6 +1,8 @@
 "use strict";
 
+
 const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
+
 
 let APP_DATA = null;
 let learnedWords = new Set();
@@ -46,7 +48,14 @@ const themeToggle        = document.getElementById('themeToggle');
 const navToggle          = document.getElementById('navToggle');
 const navList            = document.getElementById('navList');
 const homeFeatures       = document.getElementById('homeFeatures');
-
+const verbSearch         = document.getElementById('verbSearch');
+const verbGrid           = document.getElementById('verbGrid');
+const casesContent       = document.getElementById('casesContent');
+const quizLevelFilter    = document.getElementById('quizLevelFilter');
+const quizStartBtn       = document.getElementById('quizStartBtn');
+const quizArea           = document.getElementById('quizArea');
+const globalSearchForm   = document.getElementById('globalSearchForm');
+const globalSearchInput  = document.getElementById('globalSearchInput');
 
 async function speakGerman(text) {
     if (!text) return;
@@ -70,7 +79,7 @@ async function speakGerman(text) {
             URL.revokeObjectURL(audioUrl);
             return;
         }
-    } catch (_) { /* fallback to Web Speech API */ }
+    } catch (_) {}
 
     return new Promise((resolve) => {
         if (!window.speechSynthesis) { resolve(); return; }
@@ -150,6 +159,8 @@ document.querySelectorAll('.nav-list a').forEach(a => {
 
         if (section === 'vocabulary') filterVocab();
         if (section === 'grammar')    renderGrammar();
+        if (section === 'conjugation') renderVerbs();
+        if (section === 'cases')     renderCases();
         if (section === 'levels')     renderLevels();
         if (section === 'flashcards') initFlashcards();
         if (section === 'progress')   updateProgress();
@@ -174,6 +185,34 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+function goToSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
+    const navLink = document.querySelector(`.nav-list a[data-section="${id}"]`);
+    if (navLink) navLink.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+globalSearchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const term = globalSearchInput.value.trim();
+    if (!term || !APP_DATA) return;
+    const lower = term.toLowerCase();
+    const isVerb = (APP_DATA.verbs || []).some(v => v.infinitive.toLowerCase().includes(lower));
+    if (isVerb) {
+        verbSearch.value = term;
+        goToSection('conjugation');
+        renderVerbs();
+    } else {
+        vocabLevelFilter.value = 'all';
+        vocabSearch.value = term;
+        goToSection('vocabulary');
+        filterVocab();
+    }
+    globalSearchInput.blur();
+});
+
 
 async function loadData() {
     try {
@@ -185,6 +224,8 @@ async function loadData() {
         renderLevels();
         renderVocab();
         renderGrammar();
+        renderVerbs();
+        renderCases();
         initFlashcards();
         updateProgress();
     } catch (err) {
@@ -203,12 +244,12 @@ async function loadData() {
 function renderHome() {
     if (!APP_DATA) return;
     const features = [
-        { icon: 'fa-graduation-cap', title: 'از A1 تا C1',      desc: 'مسیر گام‌به‌گام بر اساس استاندارد روز' },
+        { icon: 'fa-graduation-cap', title: 'از A0 تا C1',      desc: 'مسیر گام‌به‌گام از الفبا تا سطح پیشرفته' },
         { icon: 'fa-volume-up',      title: 'تلفظ دقیق IPA',    desc: 'فونتیک استاندارد بین‌المللی' },
         { icon: 'fa-language',       title: 'ترجمهٔ دوزبانه',   desc: 'فارسی و انگلیسی برای هر کلمه' },
-        { icon: 'fa-infinity',       title: 'واژگان جامع',      desc: 'پوشش کامل تمام سطوح یادگیری' },
-        { icon: 'fa-headphones',     title: 'تلفظ صوتی',        desc: 'پشتیبانی از صوت کلمات و جملات' },
-        { icon: 'fa-chart-simple',   title: 'پیگیری پیشرفت',    desc: 'آمار دقیق روند یادگیری شما' },
+        { icon: 'fa-diagram-project',title: 'صرف افعال و حالت‌های دستوری', desc: 'مرجع کامل Konjugation و Kasus' },
+        { icon: 'fa-headphones',     title: 'تلفظ صوتی و مسترکلاس فونتیک', desc: 'آنالیزور، جفت‌های کمینه و ضبط صدا' },
+        { icon: 'fa-list-check',     title: 'آزمون سطح و پیگیری پیشرفت', desc: 'قبل از سطح بعد، دانشت را بسنج' },
     ];
     homeFeatures.innerHTML = features.map(f => `
         <div class="feature">
@@ -217,6 +258,28 @@ function renderHome() {
             <p>${f.desc}</p>
         </div>
     `).join('');
+
+    const path = [
+        { section: 'vocabulary', label: '۱. الفبا و اعداد را در بخش واژگان (سطح A0) مرور کن' },
+        { section: 'vocabulary',  label: '۲. واژگان سطح فعلی‌ات را در بخش واژگان تمرین کن' },
+        { section: 'grammar',     label: '۳. قواعد گرامری هم‌سطح را در بخش گرامر بخوان' },
+        { section: 'cases',       label: '۴. حالت‌های دستوری (der/die/das و حروف اضافه) را مرور کن' },
+        { section: 'flashcards',  label: '۵. با فلش‌کارت واژگان را مرور و تثبیت کن' },
+        { section: 'quiz',        label: '۶. با آزمون سطح، آمادگی رفتن به سطح بعد را بسنج' },
+    ];
+    const pathHtml = `
+        <div class="progress-levels" style="margin-top:2rem;">
+            <h3 style="margin-bottom:0.5rem;">مسیر یادگیری پیشنهادی</h3>
+            ${path.map(p => `<button class="btn-secondary home-path-btn" data-goto="${p.section}" style="text-align:right;justify-content:flex-start;">${p.label}</button>`).join('')}
+        </div>
+    `;
+    homeFeatures.insertAdjacentHTML('afterend', pathHtml);
+    document.querySelectorAll('.home-path-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const navLink = document.querySelector(`.nav-list a[data-section="${btn.dataset.goto}"]`);
+            if (navLink) navLink.click();
+        });
+    });
 }
 
 
@@ -443,6 +506,100 @@ function renderGrammar() {
 grammarLevelFilter.addEventListener('change', renderGrammar);
 
 
+const PRONOUN_LABELS = { ich: 'ich', du: 'du', er_sie_es: 'er/sie/es', wir: 'wir', ihr: 'ihr', sie_Sie: 'sie/Sie' };
+
+function renderVerbs() {
+    if (!APP_DATA || !APP_DATA.verbs) return;
+    const term = (verbSearch.value || '').toLowerCase().trim();
+    const list = APP_DATA.verbs.filter(v =>
+        !term || v.infinitive.toLowerCase().includes(term) || (v.fa && v.fa.includes(term)) || (v.en && v.en.toLowerCase().includes(term))
+    );
+
+    if (list.length === 0) {
+        verbGrid.innerHTML = '<p style="opacity:0.6;text-align:center;padding:2rem;">فعلی پیدا نشد</p>';
+        return;
+    }
+
+    verbGrid.innerHTML = list.map(v => `
+        <div class="grammar-card">
+            <div class="title" dir="ltr">${escHtml(v.infinitive)}
+                <button class="audio-btn" data-word="${escHtml(v.infinitive)}" aria-label="پخش تلفظ ${escHtml(v.infinitive)}">
+                    <i class="fas fa-volume-up" aria-hidden="true"></i>
+                </button>
+            </div>
+            <span class="level-tag">${escHtml(v.type || '')}</span>
+            <div class="grammar-desc">🇮🇷 ${escHtml(v.fa || '')} &nbsp;·&nbsp; 🇬🇧 ${escHtml(v.en || '')}</div>
+            <table class="verb-table">
+                ${Object.keys(PRONOUN_LABELS).map(p => `
+                    <tr>
+                        <td class="pronoun">${PRONOUN_LABELS[p]}</td>
+                        <td dir="ltr">${escHtml(v.present[p] || '')}</td>
+                    </tr>
+                `).join('')}
+            </table>
+        </div>
+    `).join('');
+
+    attachSpeaker(verbGrid);
+}
+
+verbSearch.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(renderVerbs, 200);
+});
+
+
+function renderCases() {
+    if (!APP_DATA || !APP_DATA.cases) return;
+    const c = APP_DATA.cases;
+    const genderLabel = { m: 'مذکر', f: 'مؤنث', n: 'خنثی', pl: 'جمع' };
+
+    const articleTable = (title, rows) => `
+        <h3 style="margin:1.5rem 0 0.75rem;">${title}</h3>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>حالت</th>${Object.keys(rows.Nominativ).map(g => `<th>${genderLabel[g]}</th>`).join('')}</tr></thead>
+                <tbody>
+                    ${Object.keys(rows).map(kase => `
+                        <tr><td><strong>${kase}</strong></td>${Object.keys(rows[kase]).map(g => `<td dir="ltr">${escHtml(rows[kase][g])}</td>`).join('')}</tr>
+                    `).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+
+    const pronounTable = `
+        <h3 style="margin:1.5rem 0 0.75rem;">ضمایر شخصی در حالت‌های صرفی</h3>
+        <div class="table-container">
+            <table>
+                <thead><tr><th>ضمیر (Nominativ)</th><th>Akkusativ</th><th>Dativ</th></tr></thead>
+                <tbody>
+                    ${c.pronouns.map(p => `<tr><td dir="ltr">${escHtml(p.person)}</td><td dir="ltr">${escHtml(p.akkusativ)}</td><td dir="ltr">${escHtml(p.dativ)}</td></tr>`).join('')}
+                </tbody>
+            </table>
+        </div>
+    `;
+
+    const prepCards = `
+        <h3 style="margin:1.5rem 0 0.75rem;">حروف اضافه بر اساس حالت دستوری</h3>
+        <div class="grammar-grid">
+            ${Object.keys(c.prepositions).map(kase => `
+                <div class="grammar-card">
+                    <div class="title">${kase}</div>
+                    <div class="grammar-desc" dir="ltr">${c.prepositions[kase].join(' · ')}</div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+
+    casesContent.innerHTML =
+        articleTable('حرف تعریف معین (der/die/das)', c.articles_definite) +
+        articleTable('حرف تعریف نامعین (ein/eine)', c.articles_indefinite) +
+        pronounTable +
+        prepCards;
+}
+
+
 function initFlashcards() {
     if (!APP_DATA || !APP_DATA.vocabulary) return;
     const level = flashcardLevelFilter.value;
@@ -504,6 +661,82 @@ flashcardShuffle.addEventListener('click', () => {
 flashcardLevelFilter.addEventListener('change', initFlashcards);
 
 
+let quizQuestions = [];
+let quizIndex = 0;
+let quizScore = 0;
+
+function shuffleArr(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function buildQuiz() {
+    const level = quizLevelFilter.value;
+    const pool = level === 'all' ? (APP_DATA.vocabulary || []) : (APP_DATA.vocabulary || []).filter(w => w.level === level);
+    if (pool.length < 4) {
+        quizArea.innerHTML = '<p style="opacity:0.6;text-align:center;padding:2rem;">برای این سطح واژگان کافی برای آزمون وجود ندارد</p>';
+        return;
+    }
+    const questionWords = shuffleArr(pool).slice(0, Math.min(10, pool.length));
+    quizQuestions = questionWords.map(w => {
+        const distractors = shuffleArr(pool.filter(x => x.word !== w.word)).slice(0, 3).map(x => x.fa);
+        const options = shuffleArr([w.fa, ...distractors]);
+        return { word: w.word, ipa: w.ipa, answer: w.fa, options };
+    });
+    quizIndex = 0;
+    quizScore = 0;
+    renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+    if (quizIndex >= quizQuestions.length) {
+        quizArea.innerHTML = `
+            <div class="table-container" style="padding:2rem;text-align:center;">
+                <h3>نتیجه آزمون</h3>
+                <p style="font-size:1.5rem;margin:1rem 0;">${quizScore} از ${quizQuestions.length} پاسخ درست</p>
+                <button id="quizRetryBtn" class="btn-primary">آزمون دوباره</button>
+            </div>
+        `;
+        document.getElementById('quizRetryBtn').addEventListener('click', buildQuiz);
+        try { localStorage.setItem('germanQuizLast_' + quizLevelFilter.value, JSON.stringify({ score: quizScore, total: quizQuestions.length })); } catch (_) {}
+        return;
+    }
+    const q = quizQuestions[quizIndex];
+    quizArea.innerHTML = `
+        <div class="table-container" style="padding:1.5rem;">
+            <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${quizIndex + 1} از ${quizQuestions.length} &nbsp;·&nbsp; امتیاز: ${quizScore}</p>
+            <div class="flashcard-word" dir="ltr" style="margin-bottom:0.25rem;">${escHtml(q.word)}
+                <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+            </div>
+            <div class="flashcard-ipa" dir="ltr">${escHtml(q.ipa || '')}</div>
+            <p style="margin:1rem 0 0.5rem;">معنی فارسی این کلمه چیست؟</p>
+            <div id="quizOptions" style="display:flex;flex-direction:column;gap:0.5rem;">
+                ${q.options.map(o => `<button class="btn-secondary quiz-option" data-value="${escHtml(o)}" style="text-align:right;">${escHtml(o)}</button>`).join('')}
+            </div>
+        </div>
+    `;
+    attachSpeaker(quizArea);
+    document.querySelectorAll('.quiz-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const correct = btn.dataset.value === q.answer;
+            document.querySelectorAll('.quiz-option').forEach(b => {
+                b.disabled = true;
+                if (b.dataset.value === q.answer) b.classList.add('btn-accent');
+            });
+            if (correct) quizScore++;
+            else btn.style.outline = '2px solid #ef4444';
+            setTimeout(() => { quizIndex++; renderQuizQuestion(); }, 700);
+        });
+    });
+}
+
+quizStartBtn.addEventListener('click', buildQuiz);
+
+
 function loadProgress() {
     try {
         const saved = JSON.parse(localStorage.getItem('germanLearned') || '[]');
@@ -534,7 +767,7 @@ function updateProgress() {
     if (statPercent) statPercent.textContent = pct + '%';
     updateProgressBar();
 
-    const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+    const levels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
     progressLevelsDiv.innerHTML = levels.map(lvl => {
         const totalLvl   = APP_DATA.vocabulary.filter(w => w.level === lvl).length;
         const learnedLvl = APP_DATA.vocabulary.filter(w => w.level === lvl && learnedWords.has(w.word)).length;
