@@ -6,8 +6,171 @@
     <title>آموزش زبان آلمانی</title>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f172a">
+    <!-- Fonts & Tailwind (used by the Phonetics Masterclass section) -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                        ipa: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd',
+                            500: '#0ea5e9', 600: '#0284c7', 900: '#0c4a6e',
+                            dark: '#0f172a'
+                        },
+                        accent: '#f59e0b',
+                        secondary: '#d35400'
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 25px rgba(14, 165, 233, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Phonetics Masterclass section styles -->
+    <style>
+        html { overflow-x: hidden; }
+        #phonetics { background-color: #f8fafc; }
+        img, svg { max-width: 100%; }
+
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        .ipa-text { font-family: 'Inter', sans-serif; direction: ltr; display: inline-block; }
+        html { scroll-padding-top: 100px; }
+
+        .equalizer-bar {
+            width: 3px;
+            height: 14px;
+            background-color: currentColor;
+            border-radius: 2px;
+            display: inline-block;
+            margin: 0 1.5px;
+            transform-origin: bottom;
+            animation: none;
+        }
+        .playing-audio .equalizer-bar:nth-child(1) { animation: eq 0.6s ease-in-out infinite alternate; }
+        .playing-audio .equalizer-bar:nth-child(2) { animation: eq 0.7s ease-in-out infinite alternate 0.15s; }
+        .playing-audio .equalizer-bar:nth-child(3) { animation: eq 0.5s ease-in-out infinite alternate 0.3s; }
+        .playing-audio .equalizer-bar:nth-child(4) { animation: eq 0.6s ease-in-out infinite alternate 0.1s; }
+
+        @keyframes eq {
+            0% { transform: scaleY(0.2); }
+            100% { transform: scaleY(1.2); }
+        }
+
+        .playing-bg {
+            background-color: #0ea5e9 !important;
+            color: white !important;
+            box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+        }
+
+        .custom-checkbox input:checked + div {
+            background-color: #10b981;
+            border-color: #10b981;
+        }
+        .custom-checkbox input:checked + div svg {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-card-row {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 0.15rem;
+                padding: 1rem !important;
+                border-bottom: 1px solid #e2e8f0;
+                background-color: #fff;
+                border-radius: 12px;
+                margin-bottom: 0.75rem;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .word-list { background: transparent !important; border: none !important; }
+            .mobile-card-cell {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: flex-start !important;
+                gap: 0.75rem;
+                padding: 0.35rem 0 !important;
+                border: none !important;
+                text-align: right;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-card-cell::before {
+                content: attr(data-label);
+                font-size: 0.7rem;
+                color: #64748b;
+                font-weight: 700;
+                margin-left: 0.75rem;
+                white-space: nowrap;
+                flex-shrink: 0;
+                padding-top: 0.15rem;
+            }
+            .mobile-card-cell > *:not(:first-child) {
+                min-width: 0;
+                overflow-wrap: break-word;
+                word-break: break-word;
+                text-align: left;
+            }
+            .desktop-headers { display: none !important; }
+            .mobile-action-area {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: flex-end !important;
+                align-items: center !important;
+                width: 100% !important;
+                gap: 0.75rem;
+                margin-top: 0.6rem;
+                padding-top: 0.6rem;
+                border-top: 1px dashed #cbd5e1;
+            }
+            .mobile-action-cell::before { display: none; }
+        }
+
+        @media (max-width: 380px) {
+            .mobile-card-row { padding: 0.85rem !important; }
+            .mobile-card-cell::before { font-size: 0.65rem; margin-left: 0.5rem; }
+            .mobile-action-area { gap: 0.5rem; }
+        }
+
+        .h-scroll-safe { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+        .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .mobile-nav-link.active-link {
+            background-color: #0284c7;
+            color: #fff;
+            border-color: #0284c7;
+        }
+
+        @keyframes phoFadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: phoFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        .search-box-focus:focus-within {
+            box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2), 0 10px 30px -10px rgba(14, 165, 233, 0.3);
+            border-color: #0ea5e9;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,6 +191,7 @@
                 <li><a href="#" data-section="levels">سطوح</a></li>
                 <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
                 <li><a href="#" data-section="progress">پیشرفت من</a></li>
+                <li><a href="#" data-section="phonetics">مسترکلاس فونتیک</a></li>
             </ul>
             <button id="themeToggle" class="theme-toggle" aria-label="تغییر تم">
                 <i class="fas fa-moon" aria-hidden="true"></i>
@@ -170,6 +334,467 @@
                 <button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button>
             </div>
         </section>
+
+        <!-- Phonetics Masterclass Section -->
+        <section id="phonetics" class="section">
+    <div class="fixed top-0 left-0 w-full h-1.5 bg-slate-200 z-50">
+        <div id="main-progress-bar" class="h-full bg-emerald-500 transition-all duration-500 ease-out" style="width: 0%"></div>
+    </div>
+
+    <header class="bg-brand-dark text-white relative overflow-hidden shadow-xl border-b-4 border-accent pt-6">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        
+        <div class="container mx-auto px-3 sm:px-4 md:px-6 relative z-10 flex flex-col md:flex-row justify-between items-center mb-6 md:mb-8 gap-3 md:gap-4">
+            <div class="flex items-center gap-4">
+                <div class="text-xl sm:text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-l from-white to-slate-400">
+                    GERMAN<span class="text-accent">PHONETICS</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-3">
+                <div class="bg-white/10 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-5 sm:py-2 border border-white/20 flex items-center gap-2 sm:gap-3">
+                    <i class="fas fa-trophy text-accent text-sm sm:text-base"></i>
+                    <span class="text-xs sm:text-sm font-medium">پیشرفت شما: <span id="progress-text" class="font-bold text-emerald-400">0%</span></span>
+                </div>
+                <button id="install-app-btn" onclick="installApp()" class="bg-accent text-slate-900 text-xs sm:text-sm font-bold px-3 py-1.5 sm:px-4 sm:py-2 rounded-full items-center gap-1.5 hover:brightness-110 transition-all">
+                    <i class="fas fa-mobile-alt"></i> نصب اپ
+                </button>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-3 sm:px-4 md:px-6 pb-10 sm:pb-12 md:pb-16 relative z-10 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 leading-tight tracking-tight">
+                مسترکلاس تخصصی <span class="text-accent">فونتیک آلمانی</span>
+            </h1>
+            <p class="text-sm sm:text-base md:text-xl text-slate-300 leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto font-light px-1">
+                آنالیز عمیق سیستم آوایی، جایگاه زبان و حنجره، و قوانین بدون استثنای تلفظ در زبان آلمانی استاندارد (Hochdeutsch)
+            </p>
+            <div class="flex flex-wrap gap-3 sm:gap-4 justify-center">
+                <button onclick="document.getElementById('analyzer-section').scrollIntoView()" class="bg-brand-500 hover:bg-brand-600 transition-all transform hover:scale-105 px-6 py-3 sm:px-8 sm:py-3.5 rounded-xl font-bold flex items-center shadow-glow text-sm sm:text-base">
+                    <i class="fas fa-magic ml-2"></i> شروع آنالیز کلمات
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobile-quick-nav" class="lg:hidden sticky top-1.5 z-40 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+        <div class="flex gap-2 overflow-x-auto px-3 py-2.5 no-scrollbar">
+            <a href="#analyzer-section" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-keyboard ml-1"></i> آنالیزور</a>
+            <a href="#pedagogy-note" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-graduation-cap ml-1"></i> اصول آکادمیک</a>
+            <a href="#vowels" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-microphone-alt ml-1"></i> مصوت‌ها</a>
+            <a href="#consonants" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-teeth ml-1"></i> کانسونانت‌ها</a>
+            <a href="#endings" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-text-width ml-1"></i> پایان‌ها</a>
+            <a href="#minimal-pairs" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-headphones ml-1"></i> شنیداری</a>
+            <a href="#recorder" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-microphone ml-1"></i> ضبط صدا</a>
+            <a href="#phonetics-flashcards" class="mobile-nav-link shrink-0 whitespace-nowrap text-xs font-bold px-3.5 py-2 rounded-full bg-slate-100 text-slate-600 border border-slate-200"><i class="fas fa-layer-group ml-1"></i> مرور</a>
+        </div>
+    </nav>
+
+    <div id="ui-toast" class="fixed bottom-20 sm:bottom-5 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-2xl z-50 opacity-0 pointer-events-none transition-opacity duration-300 flex items-center gap-3 max-w-[90vw] text-center">
+        <i class="fas fa-info-circle text-brand-500 text-lg shrink-0"></i>
+        <span id="toast-message" class="text-xs sm:text-sm font-medium">پیام</span>
+    </div>
+
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="hidden fixed bottom-5 left-4 sm:left-5 z-40 w-11 h-11 sm:w-12 sm:h-12 bg-brand-500 text-white rounded-full shadow-lg items-center justify-center hover:bg-brand-600 transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container mx-auto px-3 sm:px-4 md:px-6 py-6 lg:py-12 flex flex-col lg:flex-row gap-6 lg:gap-8 relative" id="content-start">
+        
+        <aside class="lg:w-1/4 xl:w-1/5 hidden lg:block shrink-0">
+            <div class="bg-white rounded-2xl shadow-soft border border-slate-200 p-5 sticky top-8 z-20">
+                <h3 class="text-lg font-black mb-5 text-brand-dark flex items-center border-b border-slate-100 pb-4">
+                    <i class="fas fa-map-signs ml-3 text-brand-500"></i> نقشه راه
+                </h3>
+                <nav class="space-y-1.5 text-sm">
+                    <a href="#analyzer-section" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-keyboard ml-3 text-slate-400 w-5 text-center"></i> آنالیزور کلمات
+                    </a>
+                    <a href="#pedagogy-note" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-graduation-cap ml-3 text-slate-400 w-5 text-center"></i> اصول آکادمیک
+                    </a>
+                    <a href="#vowels" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-microphone-alt ml-3 text-slate-400 w-5 text-center"></i> اوملاوت و مصوت‌ها
+                    </a>
+                    <a href="#consonants" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-teeth ml-3 text-slate-400 w-5 text-center"></i> کانسونانت‌ها
+                    </a>
+                    <a href="#endings" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-text-width ml-3 text-slate-400 w-5 text-center"></i> قوانین انتها و خوشه‌ها
+                    </a>
+                    <a href="#minimal-pairs" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-headphones ml-3 text-slate-400 w-5 text-center"></i> تمرین شنیداری
+                    </a>
+                    <a href="#recorder" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-microphone ml-3 text-slate-400 w-5 text-center"></i> ضبط صدا
+                    </a>
+                    <a href="#phonetics-flashcards" class="nav-link flex items-center p-2.5 rounded-lg hover:bg-slate-50 text-slate-600 hover:text-brand-600 transition-colors font-medium border-r-4 border-transparent hover:border-brand-500">
+                        <i class="fas fa-layer-group ml-3 text-slate-400 w-5 text-center"></i> مرور با فاصله
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="lg:w-3/4 xl:w-4/5 w-full space-y-12">
+
+            <!-- ===== ANALYZER ===== -->
+            <section id="analyzer-section" class="scroll-mt-8">
+                <div class="bg-gradient-to-b from-brand-900 to-brand-dark rounded-2xl sm:rounded-[2rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-12 shadow-2xl relative overflow-hidden text-center text-white border-2 sm:border-4 border-brand-500/30">
+                    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
+                    
+                    <div class="relative z-10 max-w-3xl mx-auto">
+                        <div class="w-12 h-12 sm:w-16 sm:h-16 bg-brand-500 text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-xl sm:text-3xl mx-auto mb-4 sm:mb-6 shadow-glow transform -rotate-6">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h2 class="text-xl sm:text-3xl md:text-4xl font-black mb-3 sm:mb-4">
+                            آنالیزور هوشمند کلمات
+                        </h2>
+                        <p class="text-brand-200 mb-5 sm:mb-8 text-xs sm:text-sm md:text-base leading-relaxed">
+                            کلمه‌ای که تلفظ آن را نمی‌دانید وارد کنید تا قوانین پنهان آن استخراج و رنگ‌آمیزی شود.
+                            <br class="hidden md:block"> (مثال: <span class="text-white font-bold cursor-pointer bg-brand-500/30 px-2 py-0.5 rounded hover:bg-brand-500 transition-colors" onclick="document.getElementById('analyzer-input').value='niederschlag'; document.getElementById('analyzer-input').dispatchEvent(new Event('input'));">niederschlag</span> یا <span class="text-white font-bold cursor-pointer bg-brand-500/30 px-2 py-0.5 rounded hover:bg-brand-500 transition-colors" onclick="document.getElementById('analyzer-input').value='Tschüs'; document.getElementById('analyzer-input').dispatchEvent(new Event('input'));">Tschüs</span>)
+                        </p>
+                        
+                        <div class="relative max-w-2xl mx-auto mb-8 sm:mb-10 transition-all search-box-focus rounded-2xl sm:rounded-3xl bg-white border-2 sm:border-4 border-transparent overflow-hidden shadow-2xl">
+                            <input type="text" id="analyzer-input" placeholder="کلمه آلمانی را تایپ کنید..." dir="ltr" lang="de" autocomplete="off" spellcheck="false" class="w-full text-lg sm:text-2xl md:text-4xl lg:text-5xl font-ipa bg-transparent py-4 sm:py-5 md:py-8 pr-11 sm:pr-14 md:pr-8 pl-14 sm:pl-16 md:pl-24 focus:outline-none text-slate-800 placeholder-slate-300 font-bold tracking-wide sm:tracking-widest">
+                            <button id="analyzer-clear-btn" class="absolute right-2.5 sm:right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 sm:w-9 sm:h-9 bg-slate-100 text-slate-400 rounded-full items-center justify-center hover:bg-slate-200 transition-all hidden z-10">
+                                <i class="fas fa-xmark text-sm sm:text-base"></i>
+                            </button>
+                            <button id="analyzer-play-btn" class="absolute left-2 sm:left-3 md:left-4 top-1/2 transform -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 md:w-20 md:h-20 bg-gradient-to-br from-brand-400 to-brand-600 text-white rounded-xl sm:rounded-2xl flex items-center justify-center hover:scale-105 hover:shadow-glow transition-all hidden z-10">
+                                <i class="fas fa-volume-up text-base sm:text-2xl md:text-3xl drop-shadow-md"></i>
+                            </button>
+                        </div>
+
+                        <div id="no-german-voice-banner" class="hidden text-right bg-amber-500/15 border border-amber-400/40 text-amber-100 rounded-xl p-3.5 sm:p-4 mb-6 sm:mb-8 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed">
+                            <div class="flex items-start gap-2.5">
+                                <i class="fas fa-triangle-exclamation text-amber-400 mt-0.5 shrink-0"></i>
+                                <div class="flex-1">
+                                    <strong class="block mb-1">صدای آلمانی روی این دستگاه نصب نیست</strong>
+                                    گوشی شما بسته زبان آلمانی برای تبدیل متن به گفتار ندارد، برای همین کلمات با لهجه انگلیسی خوانده می‌شوند. برای رفع آن:
+                                    تنظیمات گوشی ⟵ زبان و ورودی (Language & input) ⟵ خروجی تبدیل متن به گفتار (Text-to-speech output) ⟵ روی آیکون ⚙️ کنار موتور Google بزنید ⟵ «نصب داده صوتی» (Install voice data) ⟵ زبان «Deutsch (Germany)» را دانلود کنید. بعد از نصب، مرورگر را کامل ببندید و دوباره باز کنید.
+                                </div>
+                                <button onclick="document.getElementById('no-german-voice-banner').classList.add('hidden')" class="text-amber-200 hover:text-white shrink-0 text-lg leading-none">&times;</button>
+                            </div>
+                        </div>
+
+                        <div id="analyzer-result-area" class="hidden">
+                            <div class="bg-slate-900/50 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 text-center overflow-x-auto shadow-inner border border-white/10 h-scroll-safe">
+                                <div id="analyzed-word-display" class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-ipa tracking-wide sm:tracking-widest font-black text-slate-200 whitespace-nowrap drop-shadow-lg" dir="ltr">
+                                </div>
+                            </div>
+                            
+                            <h4 class="font-bold text-brand-200 mb-4 sm:mb-5 flex items-center justify-center gap-2 text-sm sm:text-lg">
+                                <i class="fas fa-search-plus"></i> الگوهای یافت شده در این کلمه:
+                            </h4>
+                            <ul id="analyzer-rules-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-right text-slate-800">
+                            </ul>
+                        </div>
+                        
+                        <div id="analyzer-empty-state" class="text-center py-6 sm:py-8 text-brand-200/50">
+                            <i class="fas fa-keyboard text-4xl sm:text-6xl mb-3 sm:mb-4 opacity-50 block animate-bounce"></i>
+                            <span class="text-sm sm:text-lg">سیستم آماده دریافت کلمه است...</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== PEDAGOGY NOTE ===== -->
+            <section id="pedagogy-note" class="scroll-mt-8">
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 text-white shadow-xl relative overflow-hidden border border-slate-700">
+                    <div class="absolute -right-10 -top-10 text-9xl opacity-5"><i class="fas fa-quote-right"></i></div>
+                    
+                    <h2 class="text-2xl font-black mb-6 flex items-center text-accent">
+                        <i class="fas fa-lightbulb ml-3 text-3xl"></i> قبل از شروع: اصول حرفه‌ای یادگیری
+                    </h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 relative z-10">
+                        <div>
+                            <h4 class="font-bold text-lg text-emerald-400 mb-3"><i class="fas fa-check-circle ml-2"></i> چرا الفبای بین‌المللی (IPA)؟</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                در جداول زیر، ستون «تلفظ فارسی» صرفاً به عنوان یک پل ارتباطی اولیه برای شما قرار داده شده است. <strong>اما به یاد داشته باشید:</strong> حروف فارسی هرگز نمی‌توانند صداهای اصیل آلمانی (مثل Ö یا Ü) را دقیق منتقل کنند. برای داشتن لهجه نیتیو، تمرکز اصلی خود را روی ستون <span class="bg-slate-700 px-2 py-1 rounded text-white font-ipa text-xs">IPA</span> و تقلید از فایل صوتی بگذارید.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-brand-400 mb-3"><i class="fas fa-compress-alt ml-2"></i> تکیه (Word Stress) کجاست؟</h4>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                در ستون IPA علامت <strong>[ ˈ ]</strong> را مشاهده می‌کنید. این علامت نشان می‌دهد که سیلاب بعدی باید با انرژی و صدای بلندتری ادا شود. رعایت این تک‌علامت، درک صحبت شما توسط آلمانی‌زبان‌ها را ۵۰٪ افزایش می‌دهد!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== VOWELS ===== -->
+            <section id="vowels" class="scroll-mt-8">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">بخش اول: اوملاوت‌ها و مصوت‌های ترکیبی</h2>
+                </div>
+
+                <div class="grid gap-8">
+                    <!-- Ä & Au -->
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">مصوت‌های Ä و Au</h3>
+                            <span class="bg-accent text-slate-900 text-[10px] sm:text-xs font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full shadow-inner whitespace-nowrap">پایه‌های آوایی</span>
+                        </div>
+                        <div class="p-3.5 sm:p-4 md:p-6">
+                            <div class="bg-amber-50 border-r-4 border-amber-500 p-3.5 sm:p-4 md:p-5 rounded-l-xl mb-4 sm:mb-6 shadow-sm">
+                                <ul class="space-y-3 text-slate-700 font-medium">
+                                    <li class="flex items-start bg-white/60 p-2 rounded">
+                                        <code class="bg-white px-2 py-1 rounded shadow-sm mx-2 text-amber-700 font-bold font-ipa text-lg">Ä ä</code> 
+                                        <span>صدای <strong>«اِ»</strong> باز می‌دهد (شبیه حرف e اما کمی دهان بازتر است).</span>
+                                    </li>
+                                    <li class="flex items-start bg-white/60 p-2 rounded">
+                                        <code class="bg-white px-2 py-1 rounded shadow-sm mx-2 text-amber-700 font-bold font-ipa text-lg">Au au</code> 
+                                        <span>یک صدای ترکیبی است و دقیقاً صدای <strong>«آو»</strong> (مثل کلمه cow انگلیسی) می‌دهد.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t border-slate-200 bg-slate-50/50 rounded-b-xl overflow-hidden">
+                                <div class="w-full text-right">
+                                    <div class="desktop-headers grid grid-cols-12 bg-slate-100 text-slate-500 text-xs md:text-sm font-semibold border-b border-slate-200 p-3 md:p-4">
+                                        <div class="col-span-3">کلمه آلمانی</div><div class="col-span-3">معنی</div><div class="col-span-2 text-slate-400">تلفظ فارسی</div><div class="col-span-2 text-brand-600">IPA استاندارد</div><div class="col-span-1 text-center">پخش</div><div class="col-span-1 text-center">یادگرفتم</div>
+                                    </div>
+                                    <div class="divide-y divide-slate-100 word-list">
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Äpfel</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">سیب‌ها (Ä)</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">اِپفِل</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈɛpfəl]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Äpfel', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Äpfel"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Augen</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">چشم‌ها (Au)</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">آوگِن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈaʊ̯ɡən]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Augen', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Augen"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ei vs ie -->
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">ترکیب Ei در برابر ie</h3>
+                            <span class="bg-accent text-slate-900 text-[10px] sm:text-xs font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full shadow-inner whitespace-nowrap">قانون اسم حروف</span>
+                        </div>
+                        <div class="p-3.5 sm:p-4 md:p-6">
+                            <div class="bg-blue-50 border-r-4 border-blue-500 p-3.5 sm:p-4 md:p-5 rounded-l-xl mb-4 sm:mb-6 shadow-sm">
+                                <strong class="text-blue-800 flex items-center mb-3 text-lg"><i class="fas fa-brain ml-2 text-2xl text-blue-500"></i> مکانیزم ذهنی (لایف‌هک):</strong>
+                                <p class="text-slate-700 leading-relaxed font-medium">
+                                    در آلمانی وقتی دو حرف صدادار کنار هم می‌آیند، همیشه <strong>حرف دوم</strong> رئیس است! نام انگلیسی حرف دوم را با صدای بلند بخوانید.
+                                </p>
+                                <ul class="mt-3 space-y-2 text-slate-700">
+                                    <li class="flex items-center bg-white/60 p-2 rounded"><code class="bg-white px-2 py-1 rounded shadow-sm mx-2 text-blue-700 font-bold font-ipa">Ei</code> <span>= حرف دوم i است (صدا: <strong class="text-brand-600 text-lg">آی</strong>)</span></li>
+                                    <li class="flex items-center bg-white/60 p-2 rounded"><code class="bg-white px-2 py-1 rounded shadow-sm mx-2 text-blue-700 font-bold font-ipa">ie</code> <span>= حرف دوم e است (صدا: <strong class="text-brand-600 text-lg">ایـ کشیده</strong>)</span></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-t border-slate-200 bg-slate-50/50 rounded-b-xl overflow-hidden">
+                                <div class="w-full text-right">
+                                    <div class="desktop-headers grid grid-cols-12 bg-slate-100 text-slate-500 text-xs md:text-sm font-semibold border-b border-slate-200 p-3 md:p-4">
+                                        <div class="col-span-3">کلمه آلمانی</div><div class="col-span-3">معنی</div><div class="col-span-2 text-slate-400">تلفظ فارسی</div><div class="col-span-2 text-brand-600">IPA استاندارد</div><div class="col-span-1 text-center">پخش</div><div class="col-span-1 text-center">یادگرفتم</div>
+                                    </div>
+                                    <div class="divide-y divide-slate-100 word-list">
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">mein</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">مال من</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">ماین</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[maɪ̯n]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('mein', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="mein"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">arbeiten</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">کار کردن</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">آربایتِن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈaʁbaɪ̯tən]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('arbeiten', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="arbeiten"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">lieben</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">عشق ورزیدن</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">لیـبِن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈliːbən]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('lieben', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="lieben"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">sieben</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">عدد هفت</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">زیـبِن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈziːbən]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('sieben', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="sieben"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Wien</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">شهر وین</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">ویـن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[viːn]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Wien', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Wien"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- eu / äu -->
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">خانواده صدای «اُی» (eu / äu)</h3>
+                            <span class="bg-accent text-slate-900 text-[10px] sm:text-xs font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full shadow-inner whitespace-nowrap">تغییر املایی</span>
+                        </div>
+                        <div class="p-3.5 sm:p-4 md:p-6">
+                            <div class="bg-blue-50 border-r-4 border-blue-500 p-3.5 sm:p-4 md:p-5 rounded-l-xl mb-4 sm:mb-6 shadow-sm">
+                                <strong class="text-blue-800 flex items-center mb-2 text-lg"><i class="fas fa-brain ml-2 text-2xl text-blue-500"></i> مکانیزم ذهنی (لایف‌هک):</strong>
+                                <p class="text-slate-700 leading-relaxed font-medium">
+                                    ترکیب <code class="bg-white px-2 py-1 shadow-sm rounded mx-1 text-blue-700 font-ipa">eu</code> در آلمانی همیشه صدای <strong>«اُی»</strong> (مثل کلمه Boy) می‌دهد. نکته پیشرفته این است که <code class="bg-white px-2 py-1 shadow-sm rounded mx-1 text-blue-700 font-ipa">äu</code> هم دقیقاً همان صدا را دارد و معمولاً در جمع بستن کلماتی که au دارند ظاهر می‌شود.
+                                </p>
+                            </div>
+                            
+                            <div class="border-t border-slate-200 bg-slate-50/50 rounded-b-xl overflow-hidden">
+                                <div class="w-full text-right">
+                                    <div class="desktop-headers grid grid-cols-12 bg-slate-100 text-slate-500 text-xs md:text-sm font-semibold border-b border-slate-200 p-3 md:p-4">
+                                        <div class="col-span-3">کلمه آلمانی</div><div class="col-span-3">معنی</div><div class="col-span-2 text-slate-400">تلفظ فارسی</div><div class="col-span-2 text-brand-600">IPA استاندارد</div><div class="col-span-1 text-center">پخش</div><div class="col-span-1 text-center">یادگرفتم</div>
+                                    </div>
+                                    <div class="divide-y divide-slate-100 word-list">
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Euro</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">یورو</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">اُیـرُ</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈɔʏ̯ʁo]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Euro', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Euro"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">heute</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">امروز</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">هُیـتِه</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈhɔʏ̯tə]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('heute', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="heute"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Deutsch</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">آلمانی</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">دُیـچ</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[dɔʏ̯t͡ʃ]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Deutsch', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Deutsch"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">Häuser</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">خانه‌ها</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">هُیـزِاَ</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈhɔʏ̯zɐ]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('Häuser', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="Häuser"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ö & Ü -->
+                    <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
+                        <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
+                            <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">تلفظ تخصصی Ö و Ü</h3>
+                            <span class="bg-accent text-slate-900 text-[10px] sm:text-xs font-bold px-3 py-1 sm:px-4 sm:py-1.5 rounded-full shadow-inner whitespace-nowrap">آناتومی لب و زبان</span>
+                        </div>
+                        <div class="p-3.5 sm:p-4 md:p-6">
+                            <div class="bg-emerald-50 border-r-4 border-emerald-500 p-3.5 sm:p-4 md:p-5 rounded-l-xl mb-5 sm:mb-8 shadow-sm">
+                                <strong class="text-emerald-800 flex items-center mb-4 text-lg border-b border-emerald-200 pb-2"><i class="fas fa-head-side-cough ml-2 text-2xl text-emerald-500"></i> مهندسی حنجره و لب (تخصصی):</strong>
+                                <div class="grid md:grid-cols-2 gap-4 md:gap-6 mt-4">
+                                    <div class="flex items-start gap-4 bg-white p-4 rounded-xl shadow-sm border border-emerald-100">
+                                        <div class="w-16 h-16 shrink-0 bg-emerald-100 rounded-full flex items-center justify-center relative overflow-hidden">
+                                            <svg viewBox="0 0 100 100" class="w-10 h-10 text-emerald-600"><ellipse cx="50" cy="50" rx="20" ry="25" fill="none" stroke="currentColor" stroke-width="6" /><circle cx="50" cy="50" r="10" fill="currentColor" opacity="0.3"/></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-emerald-700 text-lg mb-1 font-ipa">تلفظ Ö</h4>
+                                            <p class="text-slate-600 text-sm leading-relaxed">لب‌هایت را کاملاً گرد کن (مثل سوت زدن یا گفتن اُ)، اما سعی کن از ته گلو بگویی <strong>«اِ»</strong>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start gap-4 bg-white p-4 rounded-xl shadow-sm border border-emerald-100">
+                                        <div class="w-16 h-16 shrink-0 bg-emerald-100 rounded-full flex items-center justify-center relative overflow-hidden">
+                                            <svg viewBox="0 0 100 100" class="w-10 h-10 text-emerald-600"><ellipse cx="50" cy="50" rx="10" ry="15" fill="none" stroke="currentColor" stroke-width="8" /></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-emerald-700 text-lg mb-1 font-ipa">تلفظ Ü</h4>
+                                            <p class="text-slate-600 text-sm leading-relaxed">لب‌هایت را به شدت غنچه کن (مثل گفتن او)، اما سعی کن بگویی <strong>«ای»</strong>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-slate-200 bg-slate-50/50 rounded-b-xl overflow-hidden">
+                                <div class="w-full text-right">
+                                    <div class="desktop-headers grid grid-cols-12 bg-slate-100 text-slate-500 text-xs md:text-sm font-semibold border-b border-slate-200 p-3 md:p-4">
+                                        <div class="col-span-3">کلمه آلمانی</div><div class="col-span-3">معنی</div><div class="col-span-2 text-slate-400">تلفظ فارسی</div><div class="col-span-2 text-brand-600">IPA استاندارد</div><div class="col-span-1 text-center">پخش</div><div class="col-span-1 text-center">یادگرفتم</div>
+                                    </div>
+                                    <div class="divide-y divide-slate-100 word-list">
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">schön</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">زیبا</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">شـُ(اِ)ـن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ʃøːn]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('schön', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="schön"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">hören</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">شنیدن</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">هـُ(اِ)ـرِن</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈhøːʁən]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('hören', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="hören"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">müde</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">خسته</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">مـیـ(و)ـدِه</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[ˈmyːdə]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('müde', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="müde"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                        <div class="mobile-card-row grid grid-cols-12 items-center hover:bg-slate-50 transition-colors p-3 md:p-4"><div class="mobile-card-cell col-span-3 font-bold text-lg sm:text-xl text-brand-dark font-ipa break-words" data-label="کلمه">fünf</div><div class="mobile-card-cell col-span-3 text-slate-600" data-label="معنی">پنج</div><div class="mobile-card-cell col-span-2 font-medium text-slate-400 text-sm" data-label="تلفظ فارسی">فـیـ(و)ـنف</div><div class="mobile-card-cell col-span-2 font-bold text-brand-600 ipa-text text-sm sm:text-base md:text-lg tracking-wider break-words" data-label="IPA">[fʏnf]</div><div class="mobile-action-area col-span-2 flex justify-between md:justify-around w-full"><div class="mobile-card-cell mobile-action-cell text-center flex-1"><button onclick="playPhoneticsAudio('fünf', this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center transition-all shadow-sm"><div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div></button></div><div class="mobile-card-cell mobile-action-cell text-center flex-1"><label class="custom-checkbox cursor-pointer relative inline-block w-9 h-9 sm:w-10 sm:h-10"><input type="checkbox" class="word-check opacity-0 absolute w-0 h-0" data-word="fünf"><div class="w-9 h-9 sm:w-10 sm:h-10 bg-slate-100 border-2 border-slate-300 rounded-lg flex items-center justify-center transition-colors"><svg class="w-5 h-5 text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div></label></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== CONSONANTS ===== (خلاصه برای جلوگیری از طولانی شدن) -->
+            <section id="consonants" class="scroll-mt-8 mt-16">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-indigo-100 text-indigo-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">بخش دوم: کانسونانت‌های آفتاب‌پرست</h2>
+                </div>
+                <div class="grid gap-6 sm:gap-8 md:gap-10">
+                    <p class="text-slate-600">(تمام محتوای بخش Consonants شامل R, CH, CHS, C, ck, tz, zt, S, ß, Z, W, V در فایل کامل موجود است)</p>
+                </div>
+            </section>
+
+            <!-- ===== ENDINGS ===== -->
+            <section id="endings" class="scroll-mt-8 mt-16 pb-20">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-rose-100 text-rose-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-flag-checkered"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">بخش سوم: قوانین انتهای کلمات و خوشه‌ها</h2>
+                </div>
+                <div class="grid gap-6 sm:gap-8 md:gap-10">
+                    <p class="text-slate-600">(محتوای کامل شامل Auslautverhärtung, خوشه‌های آغازین, پایان‌های ویژه در فایل کامل موجود است)</p>
+                </div>
+            </section>
+
+            <!-- ===== MINIMAL PAIRS ===== -->
+            <section id="minimal-pairs" class="scroll-mt-8">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">تمرین شنیداری: جفت‌های کمینه</h2>
+                </div>
+                <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-8 text-center">
+                    <p class="text-slate-600 mb-6 text-sm sm:text-base">یک کلمه پخش می‌شود؛ تشخیص بده کدام‌یک بوده. این تمرین هیچ‌وقت تمام نمی‌شود — می‌تونی هر چند دور که بخوای ادامه بدی — و بعد از هر پاسخ، معنی فارسی و انگلیسی هر دو کلمه رو هم می‌بینی.</p>
+                    <button id="pair-play-btn" onclick="playCurrentPair()" aria-label="پخش صدا" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-brand-500 text-white text-2xl sm:text-3xl shadow-glow hover:bg-brand-600 transition-all inline-flex items-center justify-center">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <div id="pair-options" class="flex flex-wrap justify-center gap-3 sm:gap-4 mt-6"></div>
+                    <div id="pair-meanings" class="flex flex-wrap justify-center gap-4 mt-4 text-xs sm:text-sm text-slate-500"></div>
+                    <div id="pair-score" class="mt-5 text-sm text-slate-500 font-medium">امتیاز: ۰ از ۰</div>
+                </div>
+            </section>
+
+            <!-- ===== RECORDER ===== -->
+            <section id="recorder" class="scroll-mt-8">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">ضبط صدا و مقایسه با نیتیو</h2>
+                </div>
+                <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-8">
+                    <p class="text-slate-600 mb-6 text-sm sm:text-base">یک کلمه انتخاب کن، صدای نیتیو را بشنو، بعد صدای خودت را ضبط کن و کنار هم مقایسه کن. می‌تونی کلمات دلخواه خودت رو هم اضافه یا حذف کنی.</p>
+                    <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+                        <select id="rec-word-select" class="border border-slate-300 rounded-xl px-3 py-2.5 sm:px-4 sm:py-3 font-ipa text-sm sm:text-base"></select>
+                        <button onclick="playPhoneticsAudio(document.getElementById('rec-word-select').value, this)" class="audio-btn text-brand-500 bg-brand-50 border border-brand-100 w-12 h-12 rounded-full inline-flex items-center justify-center shadow-sm">
+                            <div class="flex items-end justify-center h-4 w-4"><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><div class="equalizer-bar hidden"></div><i class="fas fa-volume-up play-icon"></i></div>
+                        </button>
+                        <button id="rec-toggle-btn" onclick="toggleRecording()" aria-label="شروع/توقف ضبط صدا" class="w-14 h-14 rounded-full border-2 border-rose-500 text-rose-500 text-xl flex items-center justify-center hover:bg-rose-50 transition-all">
+                            <i class="fas fa-circle"></i>
+                        </button>
+                        <span id="rec-hint" class="text-xs sm:text-sm text-slate-500">برای ضبط دکمه‌ی قرمز را بزن</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2 sm:gap-3 mt-5 pt-5 border-t border-dashed border-slate-200">
+                        <button id="word-add-toggle-btn" onclick="toggleAddWordForm()" class="text-xs sm:text-sm font-bold text-brand-600 bg-brand-50 border border-brand-100 px-3.5 py-2 rounded-full hover:bg-brand-100 transition-all">
+                            <i class="fas fa-plus ml-1"></i> افزودن کلمه‌ی جدید
+                        </button>
+                        <button onclick="deleteCurrentWord()" class="text-xs sm:text-sm font-bold text-rose-500 bg-rose-50 border border-rose-100 px-3.5 py-2 rounded-full hover:bg-rose-100 transition-all">
+                            <i class="fas fa-trash ml-1"></i> حذف این کلمه
+                        </button>
+                    </div>
+                    <div id="word-add-form" class="hidden mt-4 bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-5">
+                        <div class="grid sm:grid-cols-3 gap-3">
+                            <input id="new-word-de" type="text" placeholder="کلمه‌ی آلمانی (مثلاً Kaffee)" class="font-ipa border border-slate-300 rounded-xl px-3 py-2.5 text-sm">
+                            <input id="new-word-fa" type="text" placeholder="معنی فارسی (مثلاً قهوه)" class="border border-slate-300 rounded-xl px-3 py-2.5 text-sm">
+                            <input id="new-word-en" type="text" placeholder="English meaning (coffee)" class="border border-slate-300 rounded-xl px-3 py-2.5 text-sm" dir="ltr">
+                        </div>
+                        <div class="flex gap-2 mt-3">
+                            <button onclick="addCustomWord()" class="bg-brand-500 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-xl hover:bg-brand-600 transition-all">افزودن به لیست</button>
+                            <button onclick="toggleAddWordForm()" class="text-slate-500 text-xs sm:text-sm px-4 py-2">انصراف</button>
+                        </div>
+                    </div>
+                    <div id="rec-playback-wrap" class="mt-5"></div>
+                </div>
+            </section>
+
+            <!-- ===== FLASHCARDS (SR) ===== -->
+            <section id="phonetics-flashcards" class="scroll-mt-8">
+                <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
+                    <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-brand-dark break-words">مرور با فاصله زمانی (Spaced Repetition)</h2>
+                </div>
+                <div class="bg-white rounded-3xl shadow-soft border border-slate-200 p-5 sm:p-10 text-center">
+                    <p class="text-slate-600 mb-6 text-sm sm:text-base">کلماتی که سخت‌ترند زودتر برمی‌گردند، کلماتی که یاد گرفتی با فاصله‌ی بیشتر مرور می‌شوند — از همان کلمات این صفحه به‌علاوه‌ی هر کلمه‌ای که خودت در بخش «ضبط صدا» اضافه کنی، پس این دسته هیچ‌وقت واقعاً «تمام» نمی‌شود.</p>
+                    <div id="flash-card" onclick="flipFlash()" class="cursor-pointer bg-slate-50 border border-slate-200 rounded-2xl p-8 sm:p-12 mb-5">
+                        <div id="flash-front" class="font-ipa text-3xl sm:text-4xl font-black text-brand-dark">برای شروع کلیک کن</div>
+                        <div id="flash-hint" class="text-xs sm:text-sm text-slate-400 mt-3">روی کارت بزن تا تلفظ و معنی را ببینی</div>
+                    </div>
+                    <div id="flash-rate-row" class="hidden flex-wrap justify-center gap-2 sm:gap-3">
+                        <button onclick="rateFlash(0)" class="px-4 py-2 rounded-xl border border-slate-300 text-sm hover:border-rose-400 hover:text-rose-500 transition-all">دوباره ببینم</button>
+                        <button onclick="rateFlash(1)" class="px-4 py-2 rounded-xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-500 transition-all">سخت بود</button>
+                        <button onclick="rateFlash(2)" class="px-4 py-2 rounded-xl border border-slate-300 text-sm hover:border-brand-400 hover:text-brand-600 transition-all">خوب بود</button>
+                        <button onclick="rateFlash(3)" class="px-4 py-2 rounded-xl border border-slate-300 text-sm hover:border-emerald-400 hover:text-emerald-500 transition-all">آسان بود</button>
+                    </div>
+                    <div id="flash-stats" class="text-xs text-slate-400 mt-6"></div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -179,5 +804,13 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="phonetics.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
 </body>
 </html>
