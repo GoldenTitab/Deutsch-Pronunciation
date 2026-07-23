@@ -1,16 +1,6 @@
 "use strict";
 
-// ============================================================
-// CONFIGURATION – کاربر باید این آدرس را با Worker خود جایگزین کند
-// این تنها جایی است که باید این مقدار را عوض کنید؛ script.js قبل از
-// phonetics.js لود می‌شود و phonetics.js همین متغیر را به اشتراک می‌گذارد.
-// ============================================================
 const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
-// مثال: const TTS_WORKER_URL = 'https://tts-proxy.mon-domain.workers.dev/';
-
-// ============================================================
-// GLOBALS
-// ============================================================
 
 let APP_DATA = null;
 let learnedWords = new Set();
@@ -21,9 +11,6 @@ let flashCards = [];
 let flashIndexValue = 0;
 let searchTimeout = null;
 
-// ============================================================
-// DOM REFS
-// ============================================================
 
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
@@ -60,9 +47,6 @@ const navToggle          = document.getElementById('navToggle');
 const navList            = document.getElementById('navList');
 const homeFeatures       = document.getElementById('homeFeatures');
 
-// ============================================================
-// SPEECH (TTS)
-// ============================================================
 
 async function speakGerman(text) {
     if (!text) return;
@@ -115,9 +99,6 @@ function attachSpeaker(container) {
     });
 }
 
-// ============================================================
-// THEME
-// ============================================================
 
 function loadTheme() {
     const dark = localStorage.getItem('theme') === 'dark';
@@ -135,9 +116,6 @@ themeToggle.addEventListener('click', () => {
 
 loadTheme();
 
-// ============================================================
-// NAVIGATION
-// ============================================================
 
 navToggle.addEventListener('click', () => {
     const isOpen = navList.classList.toggle('open');
@@ -196,9 +174,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ============================================================
-// LOAD DATA
-// ============================================================
 
 async function loadData() {
     try {
@@ -224,9 +199,6 @@ async function loadData() {
     }
 }
 
-// ============================================================
-// HOME
-// ============================================================
 
 function renderHome() {
     if (!APP_DATA) return;
@@ -247,9 +219,6 @@ function renderHome() {
     `).join('');
 }
 
-// ============================================================
-// LEVELS
-// ============================================================
 
 function renderLevels() {
     if (!APP_DATA || !APP_DATA.levels) return;
@@ -277,9 +246,6 @@ function renderLevels() {
     });
 }
 
-// ============================================================
-// VOCABULARY
-// ============================================================
 
 function escHtml(str) {
     if (typeof str !== 'string') return '';
@@ -341,7 +307,6 @@ function renderVocab() {
         </tr>`;
     }).join('');
 
-    // دکمه‌های پخش صدا
     vocabBody.querySelectorAll('.audio-btn:not(.learn-toggle)').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -349,7 +314,6 @@ function renderVocab() {
         });
     });
 
-    // دکمه‌های یادگیری
     vocabBody.querySelectorAll('.learn-toggle').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -426,9 +390,6 @@ vocabRandomBtn.addEventListener('click', () => {
     filterVocab();
 });
 
-// ============================================================
-// GRAMMAR
-// ============================================================
 
 function renderGrammar() {
     if (!APP_DATA || !APP_DATA.grammar) return;
@@ -481,9 +442,6 @@ function renderGrammar() {
 
 grammarLevelFilter.addEventListener('change', renderGrammar);
 
-// ============================================================
-// FLASHCARDS
-// ============================================================
 
 function initFlashcards() {
     if (!APP_DATA || !APP_DATA.vocabulary) return;
@@ -517,7 +475,6 @@ function showFlashcard() {
     flashcard.classList.remove('flipped');
     flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
 
-    // اتصال دکمه‌های پخش صدا در front و back
     attachSpeaker(flashFront);
     if (flashBack) attachSpeaker(flashBack);
 }
@@ -546,9 +503,6 @@ flashcardShuffle.addEventListener('click', () => {
 });
 flashcardLevelFilter.addEventListener('change', initFlashcards);
 
-// ============================================================
-// PROGRESS
-// ============================================================
 
 function loadProgress() {
     try {
@@ -620,9 +574,6 @@ resetProgressBtn.addEventListener('click', () => {
     }
 });
 
-// ============================================================
-// INIT
-// ============================================================
 
 loadProgress();
 loadData();
