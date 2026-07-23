@@ -1,14 +1,14 @@
 /**
- * نمونه Cloudflare Worker برای پروکسی امن به سرویس TTS (Google Cloud TTS).
+ * Cloudflare Worker برای پروکسی امن به سرویس Google Cloud TTS.
  * 
- * نحوهٔ راه‌اندازی:
+ * نحوه راه‌اندازی:
  * 1. یک حساب Cloudflare Workers رایگان بسازید (workers.cloudflare.com)
  * 2. با دستور: npx wrangler init tts-proxy یک پروژه بسازید و این فایل را جای worker.js بگذارید
  * 3. کلید Google Cloud TTS را به‌عنوان secret تنظیم کنید:
  *    npx wrangler secret put TTS_API_KEY
  * 4. دیپلوی کنید: npx wrangler deploy
- * 5. در index.html و phonetics.html، آدرس Worker را با آدرس خود جایگزین کنید:
- *    مثلاً: https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/?word=Hallo
+ * 5. در index.html، script.js و phonetics.html، متغیر TTS_WORKER_URL را با آدرس Worker خود جایگزین کنید:
+ *    مثلاً: const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
  *    (YOUR-SUBDOMAIN را با ساب‌دامین واقعی خود عوض کنید)
  */
 
