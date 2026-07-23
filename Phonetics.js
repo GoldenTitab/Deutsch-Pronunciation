@@ -1,6 +1,4 @@
-// TTS_WORKER_URL از script.js به اشتراک گذاشته شده است
 
-        // ===== توابع =====
         function showToast(message) {
             const toast = document.getElementById('ui-toast');
             document.getElementById('toast-message').innerText = message;
@@ -86,7 +84,6 @@
             }
         }
 
-        // تحلیلگر کلمات (ساده‌شده)
         const phoneticsRules = [
             { regex: /tsch/gi, class: 'text-purple-400', classBg: 'bg-purple-100', hint: '<strong>tsch</strong>: صدای ترکیبی "چ"' },
             { regex: /sch/gi, class: 'text-pink-400', classBg: 'bg-pink-100', hint: '<strong>sch</strong>: صدای "ش"' },
@@ -379,7 +376,6 @@
             populateRecorderSelect();
         }
 
-        // مرور با فاصله (SR)
         const SR_KEY = 'germanFlashSR';
         function loadSR() { try { return JSON.parse(localStorage.getItem(SR_KEY)) || {}; } catch (e) { return {}; } }
         function saveSR(data) { localStorage.setItem(SR_KEY, JSON.stringify(data)); }
@@ -444,7 +440,6 @@
         }
         if (document.getElementById('flash-card')) pickFlash();
 
-        // PWA
         let deferredInstallPrompt;
         window.addEventListener('beforeinstallprompt', e => {
             e.preventDefault();
@@ -459,7 +454,6 @@
             const btn = document.getElementById('install-app-btn');
             if (btn) btn.style.display = 'none';
         }
-        // بارگذاری اولیه
         document.addEventListener('DOMContentLoaded', function() {
             const checkboxes = document.querySelectorAll('.word-check');
             let saved = {};
@@ -497,7 +491,6 @@
             cb.addEventListener('change', updateProgressUI);
         });
 
-        // اسکرول فعال‌سازی منو
         const sections = document.querySelectorAll("#content-start section[id]");
         const navLinks = document.querySelectorAll("aside nav a.nav-link");
         const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
