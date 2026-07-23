@@ -2,6 +2,8 @@
 
 // ============================================================
 // CONFIGURATION – کاربر باید این آدرس را با Worker خود جایگزین کند
+// این تنها جایی است که باید این مقدار را عوض کنید؛ script.js قبل از
+// phonetics.js لود می‌شود و phonetics.js همین متغیر را به اشتراک می‌گذارد.
 // ============================================================
 const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
 // مثال: const TTS_WORKER_URL = 'https://tts-proxy.mon-domain.workers.dev/';
