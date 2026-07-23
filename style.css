@@ -42,7 +42,6 @@ body {
     flex-direction: column;
 }
 
-/* Header & Nav */
 header {
     background-color: var(--card-bg);
     border-bottom: 1px solid var(--border-color);
@@ -117,7 +116,6 @@ header {
     background-color: var(--border-color);
 }
 
-/* Main & Sections */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -145,7 +143,6 @@ h2 {
     font-size: 1.75rem;
 }
 
-/* Home Section */
 .hero {
     text-align: center;
     padding: 3rem 1rem;
@@ -186,7 +183,6 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Controls & Filters */
 .controls-bar {
     display: flex;
     gap: 1rem;
@@ -207,7 +203,6 @@ h2 {
     min-width: 200px;
 }
 
-/* Buttons */
 button, .btn-primary, .btn-secondary, .btn-accent, .btn-danger {
     padding: 0.75rem 1.25rem;
     border: none;
@@ -242,7 +237,6 @@ button, .btn-primary, .btn-secondary, .btn-accent, .btn-danger {
     cursor: pointer;
 }
 
-/* Tables */
 .table-container {
     background-color: var(--card-bg);
     border-radius: 1rem;
@@ -315,7 +309,6 @@ body.dark .audio-btn.learn-toggle.learned {
     background-color: rgba(129, 199, 132, 0.15);
 }
 
-/* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
@@ -336,7 +329,6 @@ body.dark .audio-btn.learn-toggle.learned {
     border-color: var(--primary-color);
 }
 
-/* Grammar & Levels Grids */
 .grammar-grid, .levels-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -406,7 +398,6 @@ body.dark .grammar-card .level-tag {
     font-size: 0.95rem;
 }
 
-/* Flashcards */
 .flashcard-container {
     max-width: 600px;
     margin: 0 auto;
@@ -473,7 +464,6 @@ body.dark .grammar-card .level-tag {
     font-size: 0.95rem;
 }
 
-/* Progress Section */
 .stats-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -570,7 +560,6 @@ body.dark .grammar-card .level-tag {
     text-align: center;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -580,7 +569,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive Menu */
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
