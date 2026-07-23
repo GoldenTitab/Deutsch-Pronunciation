@@ -332,7 +332,7 @@ body.dark .audio-btn.learn-toggle.learned {
 
 .pagination button.active {
     background-color: var(--primary-color);
-    color: #white;
+    color: #fff;
     border-color: var(--primary-color);
 }
 
