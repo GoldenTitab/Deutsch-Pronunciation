@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آموزش زبان آلمانی</title>
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- PWA -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0f172a">
-    <!-- Fonts & Tailwind (used by the Phonetics Masterclass section) -->
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,9 +35,7 @@
             }
         }
     </script>
-    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Phonetics Masterclass section styles -->
     <style>
         html { overflow-x: hidden; }
         #phonetics { background-color: #f8fafc; }
@@ -174,7 +169,6 @@
 </head>
 <body>
 
-    <!-- Header & Navigation -->
     <header>
         <div class="nav-container">
             <div class="logo">
@@ -199,9 +193,7 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- Home Section -->
         <section id="home" class="section active">
             <div class="hero">
                 <h1>یادگیری هوشمند زبان آلمانی</h1>
@@ -210,7 +202,6 @@
             <div id="homeFeatures" class="features-grid"></div>
         </section>
 
-        <!-- Vocabulary Section -->
         <section id="vocabulary" class="section">
             <h2>واژگان و لغت‌نامه</h2>
             <div class="controls-bar">
@@ -238,14 +229,12 @@
                         </tr>
                     </thead>
                     <tbody id="vocabBody">
-                        <!-- کلمات به صورت پویا بارگذاری می‌شوند -->
                     </tbody>
                 </table>
             </div>
             <div id="vocabPagination" class="pagination"></div>
         </section>
 
-        <!-- Grammar Section -->
         <section id="grammar" class="section">
             <h2>آموزش گرامر</h2>
             <div class="controls-bar">
@@ -261,13 +250,11 @@
             <div id="grammarGrid" class="grammar-grid"></div>
         </section>
 
-        <!-- Levels Section -->
         <section id="levels" class="section">
             <h2>سطوح زبان آلمانی</h2>
             <div id="levelsGrid" class="levels-grid"></div>
         </section>
 
-        <!-- Flashcards Section -->
         <section id="flashcards" class="section">
             <h2>جعبه لایتنر و فلش‌کارت</h2>
             <div class="controls-bar">
@@ -300,7 +287,6 @@
             </div>
         </section>
 
-        <!-- Progress Section -->
         <section id="progress" class="section">
             <h2>آمار و پیشرفت یادگیری</h2>
             <div class="stats-cards">
@@ -335,7 +321,6 @@
             </div>
         </section>
 
-        <!-- Phonetics Masterclass Section -->
         <section id="phonetics" class="section">
     <div class="fixed top-0 left-0 w-full h-1.5 bg-slate-200 z-50">
         <div id="main-progress-bar" class="h-full bg-emerald-500 transition-all duration-500 ease-out" style="width: 0%"></div>
@@ -436,7 +421,6 @@
 
         <main class="lg:w-3/4 xl:w-4/5 w-full space-y-12">
 
-            <!-- ===== ANALYZER ===== -->
             <section id="analyzer-section" class="scroll-mt-8">
                 <div class="bg-gradient-to-b from-brand-900 to-brand-dark rounded-2xl sm:rounded-[2rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-12 shadow-2xl relative overflow-hidden text-center text-white border-2 sm:border-4 border-brand-500/30">
                     <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]"></div>
@@ -496,7 +480,6 @@
                 </div>
             </section>
 
-            <!-- ===== PEDAGOGY NOTE ===== -->
             <section id="pedagogy-note" class="scroll-mt-8">
                 <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 text-white shadow-xl relative overflow-hidden border border-slate-700">
                     <div class="absolute -right-10 -top-10 text-9xl opacity-5"><i class="fas fa-quote-right"></i></div>
@@ -522,7 +505,6 @@
                 </div>
             </section>
 
-            <!-- ===== VOWELS ===== -->
             <section id="vowels" class="scroll-mt-8">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -532,7 +514,6 @@
                 </div>
 
                 <div class="grid gap-8">
-                    <!-- Ä & Au -->
                     <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
                         <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
                             <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">مصوت‌های Ä و Au</h3>
@@ -566,7 +547,6 @@
                         </div>
                     </div>
 
-                    <!-- Ei vs ie -->
                     <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
                         <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
                             <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">ترکیب Ei در برابر ie</h3>
@@ -601,7 +581,6 @@
                         </div>
                     </div>
 
-                    <!-- eu / äu -->
                     <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
                         <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
                             <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">خانواده صدای «اُی» (eu / äu)</h3>
@@ -631,7 +610,6 @@
                         </div>
                     </div>
 
-                    <!-- Ö & Ü -->
                     <div class="bg-white rounded-3xl shadow-soft border border-slate-200 overflow-hidden">
                         <div class="bg-slate-800 text-white p-3.5 sm:p-5 flex flex-wrap justify-between items-center gap-2 sm:gap-4">
                             <h3 class="text-base sm:text-lg md:text-xl font-bold font-ipa tracking-wide sm:tracking-widest break-words">تلفظ تخصصی Ö و Ü</h3>
@@ -680,7 +658,6 @@
                 </div>
             </section>
 
-            <!-- ===== CONSONANTS ===== (خلاصه برای جلوگیری از طولانی شدن) -->
             <section id="consonants" class="scroll-mt-8 mt-16">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-indigo-100 text-indigo-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -693,7 +670,6 @@
                 </div>
             </section>
 
-            <!-- ===== ENDINGS ===== -->
             <section id="endings" class="scroll-mt-8 mt-16 pb-20">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-rose-100 text-rose-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -706,7 +682,6 @@
                 </div>
             </section>
 
-            <!-- ===== MINIMAL PAIRS ===== -->
             <section id="minimal-pairs" class="scroll-mt-8">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -725,7 +700,6 @@
                 </div>
             </section>
 
-            <!-- ===== RECORDER ===== -->
             <section id="recorder" class="scroll-mt-8">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -768,7 +742,6 @@
                 </div>
             </section>
 
-            <!-- ===== FLASHCARDS (SR) ===== -->
             <section id="phonetics-flashcards" class="scroll-mt-8">
                 <div class="flex items-center mb-5 sm:mb-8 border-b-2 border-slate-200 pb-3 sm:pb-4">
                     <div class="bg-brand-100 text-brand-600 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-lg sm:text-2xl ml-2.5 sm:ml-4 shadow-sm shrink-0">
@@ -797,12 +770,10 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>طراحی شده برای یادگیری بهتر و اصولی زبان آلمانی</p>
     </footer>
 
-    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="phonetics.js"></script>
     <script>
