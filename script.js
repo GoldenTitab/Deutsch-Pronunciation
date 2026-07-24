@@ -20,6 +20,7 @@ const $$ = (s) => document.querySelectorAll(s);
 const vocabBody          = document.getElementById('vocabBody');
 const vocabSearch        = document.getElementById('vocabSearch');
 const vocabLevelFilter   = document.getElementById('vocabLevelFilter');
+const vocabCategoryFilter = document.getElementById('vocabCategoryFilter');
 const vocabPagination    = document.getElementById('vocabPagination');
 const vocabRandomBtn     = document.getElementById('vocabRandomBtn');
 const grammarGrid        = document.getElementById('grammarGrid');
@@ -56,6 +57,17 @@ const quizStartBtn       = document.getElementById('quizStartBtn');
 const quizArea           = document.getElementById('quizArea');
 const globalSearchForm   = document.getElementById('globalSearchForm');
 const globalSearchInput  = document.getElementById('globalSearchInput');
+const readingLevelFilter = document.getElementById('readingLevelFilter');
+const readingContent     = document.getElementById('readingContent');
+const verbExerciseBtn    = document.getElementById('verbExerciseBtn');
+const verbExerciseArea   = document.getElementById('verbExerciseArea');
+const caseExerciseBtn    = document.getElementById('caseExerciseBtn');
+const caseExerciseArea   = document.getElementById('caseExerciseArea');
+const flashcardDueToggle = document.getElementById('flashcardDueToggle');
+const flashRateRow       = document.getElementById('flashRateRow');
+const progressRing       = document.getElementById('progressRing');
+const progressRingText   = document.getElementById('progressRingText');
+const ariaLiveRegion     = document.getElementById('ariaLiveRegion');
 
 async function speakGerman(text) {
     if (!text) return;
@@ -79,7 +91,7 @@ async function speakGerman(text) {
             URL.revokeObjectURL(audioUrl);
             return;
         }
-    } catch (_) {}
+    } catch (_) { /* fallback to Web Speech API */ }
 
     return new Promise((resolve) => {
         if (!window.speechSynthesis) { resolve(); return; }
@@ -138,34 +150,68 @@ document.addEventListener('click', (e) => {
     }
 });
 
+const SECTION_LABELS = {
+    home: 'خانه', vocabulary: 'واژگان', grammar: 'گرامر', conjugation: 'صرف افعال',
+    cases: 'حالت‌های دستوری', levels: 'سطوح', quiz: 'آزمون سطح', reading: 'متن‌خوانی',
+    flashcards: 'فلش‌کارت', progress: 'پیشرفت من', phonetics: 'مسترکلاس فونتیک'
+};
+
+function runSectionInit(section) {
+    if (section === 'vocabulary') filterVocab();
+    if (section === 'grammar')    renderGrammar();
+    if (section === 'conjugation') renderVerbs();
+    if (section === 'cases')     renderCases();
+    if (section === 'reading')   renderReading();
+    if (section === 'levels')     renderLevels();
+    if (section === 'flashcards') initFlashcards();
+    if (section === 'progress')   updateProgress();
+}
+
+function activateSection(id, opts = {}) {
+    const target = document.getElementById(id);
+    if (!target) return;
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    target.classList.add('active');
+    document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
+    const navLink = document.querySelector(`.nav-list a[data-section="${id}"]`);
+    if (navLink) navLink.classList.add('active');
+    navList.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (opts.updateHash !== false && location.hash.slice(1) !== id) {
+        history.pushState(null, '', '#' + id);
+    }
+    if (ariaLiveRegion) ariaLiveRegion.textContent = 'بخش ' + (SECTION_LABELS[id] || id) + ' نمایش داده شد';
+    runSectionInit(id);
+}
+
+function goToSection(id) {
+    activateSection(id);
+}
+
 document.querySelectorAll('.nav-list a').forEach(a => {
     a.addEventListener('click', (e) => {
         const section = a.dataset.section;
-
         if (!section) {
             navList.classList.remove('open');
-            return; 
+            return;
         }
-
         e.preventDefault();
-        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-        const target = document.getElementById(section);
-        if (target) target.classList.add('active');
-        document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
-        a.classList.add('active');
-        navList.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        if (section === 'vocabulary') filterVocab();
-        if (section === 'grammar')    renderGrammar();
-        if (section === 'conjugation') renderVerbs();
-        if (section === 'cases')     renderCases();
-        if (section === 'levels')     renderLevels();
-        if (section === 'flashcards') initFlashcards();
-        if (section === 'progress')   updateProgress();
+        activateSection(section);
     });
 });
+
+window.addEventListener('popstate', () => {
+    const id = location.hash.slice(1);
+    if (id && document.getElementById(id)) activateSection(id, { updateHash: false });
+});
+
+function initFromHash() {
+    const id = location.hash.slice(1);
+    if (id && document.getElementById(id) && id !== 'home') {
+        activateSection(id, { updateHash: false });
+    }
+}
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -185,14 +231,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-function goToSection(id) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
-    const navLink = document.querySelector(`.nav-list a[data-section="${id}"]`);
-    if (navLink) navLink.classList.add('active');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
 
 globalSearchForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -214,6 +252,24 @@ globalSearchForm.addEventListener('submit', (e) => {
 });
 
 
+function celebrate() {
+    const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+    const wrap = document.createElement('div');
+    wrap.className = 'confetti-wrap';
+    for (let i = 0; i < 40; i++) {
+        const piece = document.createElement('span');
+        piece.className = 'confetti-piece';
+        piece.style.left = Math.random() * 100 + '%';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.animationDelay = (Math.random() * 0.4) + 's';
+        piece.style.animationDuration = (1.8 + Math.random() * 1.2) + 's';
+        wrap.appendChild(piece);
+    }
+    document.body.appendChild(wrap);
+    setTimeout(() => wrap.remove(), 3200);
+}
+
+
 async function loadData() {
     try {
         const res = await fetch('data.json');
@@ -226,8 +282,10 @@ async function loadData() {
         renderGrammar();
         renderVerbs();
         renderCases();
+        renderReading();
         initFlashcards();
         updateProgress();
+        initFromHash();
     } catch (err) {
         console.error('Error loading data:', err);
         document.querySelector('main').innerHTML = `
@@ -237,9 +295,11 @@ async function loadData() {
                 <p style="font-size:0.8rem;opacity:0.7;">${err.message}</p>
             </div>
         `;
+    } finally {
+        const overlay = document.getElementById('appLoadingOverlay');
+        if (overlay) overlay.classList.add('hidden');
     }
 }
-
 
 function renderHome() {
     if (!APP_DATA) return;
@@ -283,12 +343,25 @@ function renderHome() {
 }
 
 
+const LEVEL_ICONS = { A0: 'fa-seedling', A1: 'fa-shoe-prints', A2: 'fa-walking', B1: 'fa-hiking', B2: 'fa-mountain', C1: 'fa-trophy' };
+
+function getQuizReadyBadge(levelId) {
+    try {
+        const stored = JSON.parse(localStorage.getItem('germanQuizLast_' + levelId));
+        if (stored && stored.total > 0 && (stored.score / stored.total) >= 0.8) {
+            return `<span class="level-badge" style="background-color:rgba(16,185,129,0.15);color:var(--accent-color);margin-top:0.5rem;display:inline-block;">✓ آماده‌ی سطح بعد</span>`;
+        }
+    } catch (_) {}
+    return '';
+}
+
 function renderLevels() {
     if (!APP_DATA || !APP_DATA.levels) return;
     levelsGrid.innerHTML = APP_DATA.levels.map(l => `
         <div class="level-card">
-            <div class="level" aria-label="سطح ${escHtml(l.label || l.id)}">${escHtml(l.label || l.id)}</div>
+            <div class="level" aria-label="سطح ${escHtml(l.label || l.id)}"><i class="fas ${LEVEL_ICONS[l.id] || 'fa-graduation-cap'}" aria-hidden="true"></i> ${escHtml(l.label || l.id)}</div>
             <div class="level-desc">${escHtml(l.desc || '')}</div>
+            ${getQuizReadyBadge(l.id)}
             <button class="btn-small" data-level="${escHtml(l.id)}"
                     aria-label="مشاهده واژگان سطح ${escHtml(l.label || l.id)}">مشاهده واژگان</button>
         </div>
@@ -298,13 +371,7 @@ function renderLevels() {
         btn.addEventListener('click', () => {
             vocabLevelFilter.value = btn.dataset.level;
             filterVocab();
-
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            document.getElementById('vocabulary').classList.add('active');
-            document.querySelectorAll('.nav-list a').forEach(l => l.classList.remove('active'));
-            const navLink = document.querySelector(`.nav-list a[data-section="vocabulary"]`);
-            if (navLink) navLink.classList.add('active');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            goToSection('vocabulary');
         });
     });
 }
@@ -324,12 +391,14 @@ function filterVocab() {
     if (!APP_DATA) return;
     const search = vocabSearch.value.toLowerCase().trim();
     const level  = vocabLevelFilter.value;
+    const category = vocabCategoryFilter.value;
     currentVocab = (APP_DATA.vocabulary || []).filter(w => {
         const matchSearch = w.word.toLowerCase().includes(search) ||
                             (w.fa && w.fa.includes(search)) ||
                             (w.en && w.en.toLowerCase().includes(search));
         const matchLevel  = level === 'all' || w.level === level;
-        return matchSearch && matchLevel;
+        const matchCategory = category === 'all' || w.category === category;
+        return matchSearch && matchLevel && matchCategory;
     });
     vocabPage = 1;
     renderVocab();
@@ -350,12 +419,12 @@ function renderVocab() {
         const isLearned = learnedWords.has(w.word);
         return `
         <tr data-word="${escHtml(w.word)}">
-            <td><strong>${escHtml(w.word)}</strong></td>
-            <td class="ipa" dir="ltr">${escHtml(w.ipa || '')}</td>
-            <td>${escHtml(w.fa || '')}</td>
-            <td dir="ltr">${escHtml(w.en || '')}</td>
-            <td><span class="level-badge">${escHtml(w.level || '')}</span></td>
-            <td class="vocab-actions">
+            <td data-label="کلمه"><strong>${escHtml(w.word)}</strong></td>
+            <td class="ipa" data-label="تلفظ" dir="ltr">${escHtml(w.ipa || '')}</td>
+            <td data-label="فارسی">${escHtml(w.fa || '')}</td>
+            <td data-label="English" dir="ltr">${escHtml(w.en || '')}</td>
+            <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
+            <td class="vocab-actions" data-label="عملیات">
                 <button class="audio-btn" data-word="${escHtml(w.word)}"
                         aria-label="پخش تلفظ ${escHtml(w.word)}">
                     <i class="fas fa-volume-up" aria-hidden="true"></i>
@@ -446,6 +515,7 @@ vocabSearch.addEventListener('input', () => {
 });
 
 vocabLevelFilter.addEventListener('change', filterVocab);
+vocabCategoryFilter.addEventListener('change', filterVocab);
 vocabRandomBtn.addEventListener('click', () => {
     if (!APP_DATA || !APP_DATA.vocabulary || APP_DATA.vocabulary.length === 0) return;
     const random = APP_DATA.vocabulary[Math.floor(Math.random() * APP_DATA.vocabulary.length)];
@@ -537,6 +607,7 @@ function renderVerbs() {
                     </tr>
                 `).join('')}
             </table>
+            <div class="trans" style="margin-top:0.5rem;" dir="ltr">Perfekt: ${escHtml(v.auxiliary)} ... ${escHtml(v.partizip)}</div>
         </div>
     `).join('');
 
@@ -548,6 +619,89 @@ verbSearch.addEventListener('input', () => {
     searchTimeout = setTimeout(renderVerbs, 200);
 });
 
+
+function runExercise(container, questions, onFinish) {
+    let idx = 0, score = 0;
+    function renderQ() {
+        if (idx >= questions.length) { onFinish(score, questions.length); return; }
+        const q = questions[idx];
+        container.innerHTML = `
+            <div class="table-container" style="padding:1.5rem;margin-bottom:1rem;">
+                <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${idx + 1} از ${questions.length} &nbsp;·&nbsp; امتیاز: ${score}</p>
+                <p style="font-size:1.1rem;margin-bottom:1rem;" dir="ltr">${q.prompt}</p>
+                <div style="display:flex;flex-direction:column;gap:0.5rem;">
+                    ${q.options.map(o => `<button class="btn-secondary exercise-option" data-value="${escHtml(o)}" style="text-align:right;" dir="ltr">${escHtml(o)}</button>`).join('')}
+                </div>
+            </div>
+        `;
+        container.querySelectorAll('.exercise-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const correct = btn.dataset.value === q.answer;
+                container.querySelectorAll('.exercise-option').forEach(b => {
+                    b.disabled = true;
+                    if (b.dataset.value === q.answer) b.classList.add('btn-accent');
+                });
+                if (correct) score++;
+                else btn.style.outline = '2px solid #ef4444';
+                setTimeout(() => { idx++; renderQ(); }, 700);
+            });
+        });
+    }
+    renderQ();
+}
+
+function showExerciseResult(container, score, total, onRetry) {
+    container.innerHTML = `
+        <div class="table-container" style="padding:2rem;text-align:center;">
+            <h3>نتیجه تمرین</h3>
+            <p style="font-size:1.5rem;margin:1rem 0;">${score} از ${total} پاسخ درست</p>
+            <button class="btn-primary exercise-retry-btn">تمرین دوباره</button>
+        </div>
+    `;
+    if (score === total && total > 0) celebrate();
+    container.querySelector('.exercise-retry-btn').addEventListener('click', onRetry);
+}
+
+function startVerbExercise() {
+    if (!APP_DATA || !APP_DATA.verbs) return;
+    const pool = shuffleArr(APP_DATA.verbs).slice(0, Math.min(8, APP_DATA.verbs.length));
+    const questions = pool.map(v => {
+        const pronoun = shuffleArr(Object.keys(PRONOUN_LABELS))[0];
+        const answer = v.present[pronoun];
+        const distractors = shuffleArr(Object.values(v.present).filter(f => f !== answer)).slice(0, 3);
+        return {
+            prompt: `${PRONOUN_LABELS[pronoun]} ___ (${v.infinitive} — ${v.fa})`,
+            answer,
+            options: shuffleArr([answer, ...distractors])
+        };
+    });
+    runExercise(verbExerciseArea, questions, (score, total) => showExerciseResult(verbExerciseArea, score, total, startVerbExercise));
+}
+verbExerciseBtn.addEventListener('click', startVerbExercise);
+
+function startCaseExercise() {
+    if (!APP_DATA || !APP_DATA.cases) return;
+    const genderLabel = { m: 'مذکر (der)', f: 'مؤنث (die)', n: 'خنثی (das)', pl: 'جمع (die)' };
+    const nouns = { m: 'Tisch', f: 'Lampe', n: 'Buch', pl: 'Bücher' };
+    const defArt = APP_DATA.cases.articles_definite;
+    const kasusList = Object.keys(defArt);
+    const genderList = Object.keys(defArt.Nominativ);
+    const combos = [];
+    kasusList.forEach(k => genderList.forEach(g => combos.push({ k, g })));
+    const chosen = shuffleArr(combos).slice(0, 8);
+    const allArticles = [...new Set(kasusList.flatMap(k => Object.values(defArt[k])))];
+    const questions = chosen.map(({ k, g }) => {
+        const answer = defArt[k][g];
+        const distractors = shuffleArr(allArticles.filter(a => a !== answer)).slice(0, 3);
+        return {
+            prompt: `___ ${nouns[g]} (${genderLabel[g]}, حالت ${k})`,
+            answer,
+            options: shuffleArr([answer, ...distractors])
+        };
+    });
+    runExercise(caseExerciseArea, questions, (score, total) => showExerciseResult(caseExerciseArea, score, total, startCaseExercise));
+}
+caseExerciseBtn.addEventListener('click', startCaseExercise);
 
 function renderCases() {
     if (!APP_DATA || !APP_DATA.cases) return;
@@ -599,12 +753,73 @@ function renderCases() {
         prepCards;
 }
 
+function renderReading() {
+    if (!APP_DATA || !APP_DATA.readings) return;
+    const level = readingLevelFilter.value;
+    const passage = APP_DATA.readings.find(r => r.level === level) || APP_DATA.readings[0];
+    if (!passage) return;
+
+    readingContent.innerHTML = `
+        <div class="table-container" style="padding:1.5rem;margin-bottom:1.5rem;">
+            <h3>${escHtml(passage.title)}</h3>
+            <p dir="ltr" style="line-height:2;font-size:1.1rem;margin:1rem 0;">${escHtml(passage.text)}
+                <button class="audio-btn" data-word="${escHtml(passage.text)}" aria-label="پخش تلفظ متن">
+                    <i class="fas fa-volume-up" aria-hidden="true"></i>
+                </button>
+            </p>
+        </div>
+        <div id="readingQuestions"></div>
+    `;
+    attachSpeaker(readingContent);
+
+    const qWrap = document.getElementById('readingQuestions');
+    qWrap.innerHTML = passage.questions.map((q, i) => `
+        <div class="table-container" style="padding:1.25rem;margin-bottom:1rem;">
+            <p style="margin-bottom:0.75rem;">${i + 1}. ${escHtml(q.q)}</p>
+            <div style="display:flex;flex-direction:column;gap:0.5rem;" data-answer="${escHtml(q.answer)}">
+                ${q.options.map(o => `<button class="btn-secondary reading-option" data-value="${escHtml(o)}" style="text-align:right;">${escHtml(o)}</button>`).join('')}
+            </div>
+        </div>
+    `).join('');
+
+    qWrap.querySelectorAll('[data-answer]').forEach(group => {
+        const answer = group.dataset.answer;
+        group.querySelectorAll('.reading-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                group.querySelectorAll('.reading-option').forEach(b => b.disabled = true);
+                if (btn.dataset.value === answer) {
+                    btn.classList.add('btn-accent');
+                } else {
+                    btn.style.outline = '2px solid #ef4444';
+                    group.querySelectorAll('.reading-option').forEach(b => { if (b.dataset.value === answer) b.classList.add('btn-accent'); });
+                }
+            });
+        });
+    });
+}
+
+readingLevelFilter.addEventListener('change', renderReading);
+
+
+const MAIN_SR_KEY = 'germanMainFlashSR';
+let flashDueOnly = false;
+
+function loadMainSR() { try { return JSON.parse(localStorage.getItem(MAIN_SR_KEY)) || {}; } catch (_) { return {}; } }
+function saveMainSR(data) { try { localStorage.setItem(MAIN_SR_KEY, JSON.stringify(data)); } catch (_) {} }
+function getMainCardState(word) { return loadMainSR()[word] || { interval: 0, ease: 2.5, due: 0, reps: 0 }; }
+function setMainCardState(word, state) { const d = loadMainSR(); d[word] = state; saveMainSR(d); }
 
 function initFlashcards() {
     if (!APP_DATA || !APP_DATA.vocabulary) return;
     const level = flashcardLevelFilter.value;
     let pool = level === 'all' ? APP_DATA.vocabulary : APP_DATA.vocabulary.filter(w => w.level === level);
     if (pool.length === 0) pool = APP_DATA.vocabulary;
+    if (flashDueOnly) {
+        const sr = loadMainSR();
+        const now = Date.now();
+        const due = pool.filter(w => !sr[w.word] || sr[w.word].due <= now);
+        pool = due.length > 0 ? due : pool;
+    }
     flashCards = [...pool];
     flashIndexValue = 0;
     flashcardCount.textContent = flashCards.length + ' کلمه';
@@ -612,7 +827,11 @@ function initFlashcards() {
 }
 
 function showFlashcard() {
-    if (flashCards.length === 0) return;
+    if (flashCards.length === 0) {
+        flashFront.innerHTML = '<div class="flashcard-word">کلمه‌ی سررسید‌شده‌ای نیست 🎉</div>';
+        flashRateRow.style.display = 'none';
+        return;
+    }
     const w = flashCards[flashIndexValue];
 
     flashFront.innerHTML = `
@@ -631,17 +850,21 @@ function showFlashcard() {
     flashIndex.textContent = `${flashIndexValue + 1} از ${flashCards.length}`;
     flashcard.classList.remove('flipped');
     flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
+    flashRateRow.style.display = 'none';
 
+    // اتصال دکمه‌های پخش صدا در front و back
     attachSpeaker(flashFront);
     if (flashBack) attachSpeaker(flashBack);
 }
 
 flipBtn.addEventListener('click', () => {
     flashcard.classList.toggle('flipped');
+    if (flashcard.classList.contains('flipped')) flashRateRow.style.display = 'flex';
 });
 
 flashcard.addEventListener('click', () => {
     flashcard.classList.toggle('flipped');
+    if (flashcard.classList.contains('flipped')) flashRateRow.style.display = 'flex';
 });
 
 flashPrev.addEventListener('click', () => {
@@ -659,6 +882,32 @@ flashcardShuffle.addEventListener('click', () => {
     showFlashcard();
 });
 flashcardLevelFilter.addEventListener('change', initFlashcards);
+
+flashcardDueToggle.addEventListener('click', () => {
+    flashDueOnly = !flashDueOnly;
+    flashcardDueToggle.classList.toggle('learn-toggle-active', flashDueOnly);
+    initFlashcards();
+});
+
+document.querySelectorAll('.flash-rate-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const word = flashCards[flashIndexValue] && flashCards[flashIndexValue].word;
+        if (!word) return;
+        const quality = parseInt(btn.dataset.quality, 10);
+        const st = getMainCardState(word);
+        let { interval, ease, reps } = st;
+        if (quality === 0) { reps = 0; interval = 0; }
+        else {
+            reps++;
+            ease = Math.max(1.3, ease + (0.1 - (3 - quality) * (0.08 + (3 - quality) * 0.02)));
+            interval = reps === 1 ? 1 : reps === 2 ? 3 : Math.round(interval * ease) || 1;
+        }
+        const due = quality === 0 ? Date.now() - 1 : Date.now() + interval * 24 * 60 * 60 * 1000;
+        setMainCardState(word, { interval, ease, due, reps });
+        if (flashIndexValue < flashCards.length - 1) { flashIndexValue++; showFlashcard(); }
+        else { flashIndexValue = 0; initFlashcards(); }
+    });
+});
 
 
 let quizQuestions = [];
@@ -703,6 +952,7 @@ function renderQuizQuestion() {
         `;
         document.getElementById('quizRetryBtn').addEventListener('click', buildQuiz);
         try { localStorage.setItem('germanQuizLast_' + quizLevelFilter.value, JSON.stringify({ score: quizScore, total: quizQuestions.length })); } catch (_) {}
+        if (quizScore === quizQuestions.length) celebrate();
         return;
     }
     const q = quizQuestions[quizIndex];
@@ -766,6 +1016,30 @@ function updateProgress() {
     if (statTotal)   statTotal.textContent   = total;
     if (statPercent) statPercent.textContent = pct + '%';
     updateProgressBar();
+
+    if (progressRing) {
+        progressRing.style.background = `conic-gradient(var(--accent-color) ${pct * 3.6}deg, var(--border-color) 0deg)`;
+    }
+    if (progressRingText) progressRingText.textContent = pct + '%';
+
+    const badgeMilestones = [10, 50, 100, 200, 500];
+    const badgesArea = document.getElementById('badgesArea');
+    if (badgesArea) {
+        let unlockedCountBefore = 0;
+        try { unlockedCountBefore = JSON.parse(localStorage.getItem('germanBadgesUnlocked') || '[]').length; } catch (_) {}
+        const unlocked = badgeMilestones.filter(m => learned >= m);
+        badgesArea.innerHTML = badgeMilestones.map(m => `
+            <div class="stat-card" style="opacity:${learned >= m ? 1 : 0.4};">
+                <i class="fas ${learned >= m ? 'fa-medal' : 'fa-lock'}"></i>
+                <div>
+                    <span>${m}</span>
+                    <p>${learned >= m ? 'کسب‌شده' : 'کلمه برای باز شدن'}</p>
+                </div>
+            </div>
+        `).join('');
+        if (unlocked.length > unlockedCountBefore) celebrate();
+        try { localStorage.setItem('germanBadgesUnlocked', JSON.stringify(unlocked)); } catch (_) {}
+    }
 
     const levels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
     progressLevelsDiv.innerHTML = levels.map(lvl => {
