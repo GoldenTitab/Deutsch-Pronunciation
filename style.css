@@ -81,7 +81,9 @@ header {
 .nav-list {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    justify-content: flex-end;
 }
 
 .nav-list a {
@@ -662,4 +664,173 @@ footer {
         border-radius: 0;
         display: block;
     }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link {
+    position: absolute;
+    right: 1rem;
+    top: -3rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.6rem 1.25rem;
+    border-radius: 0.5rem;
+    z-index: 2000;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+.category-badge {
+    background-color: rgba(16, 185, 129, 0.12);
+    color: var(--accent-color);
+}
+
+.learn-toggle-active {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.progress-ring-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.progress-ring {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-color) 0deg, var(--border-color) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.6s ease;
+    position: relative;
+}
+
+.progress-ring::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+}
+
+.progress-ring span {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.confetti-wrap {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 3000;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    top: -20px;
+    width: 9px;
+    height: 14px;
+    opacity: 0.9;
+    animation-name: confetti-fall;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    border-radius: 2px;
+}
+
+@keyframes confetti-fall {
+    from { transform: translateY(0) rotate(0deg); opacity: 1; }
+    to   { transform: translateY(100vh) rotate(540deg); opacity: 0; }
+}
+
+.skeleton-wrap {
+    padding: 2rem 0;
+}
+
+.skeleton-line {
+    height: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.9rem;
+    background: linear-gradient(90deg, var(--border-color) 25%, var(--table-hover) 50%, var(--border-color) 75%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+@media (max-width: 760px) {
+    #vocabTable thead { display: none; }
+    #vocabTable, #vocabTable tbody, #vocabTable tr, #vocabTable td {
+        display: block;
+        width: 100%;
+    }
+    #vocabTable tr {
+        border-bottom: 1px solid var(--border-color);
+        padding: 0.75rem 1rem;
+    }
+    #vocabTable td {
+        border: none;
+        padding: 0.3rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    #vocabTable td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: var(--text-muted);
+        font-size: 0.8rem;
+        flex-shrink: 0;
+    }
+    #vocabTable td.vocab-actions {
+        justify-content: flex-end;
+    }
+}
+
+body.dark #phonetics {
+    background-color: #0b1220;
+}
+
+body.dark #phonetics header.bg-brand-dark {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.app-loading-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: var(--bg-color);
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transition: opacity 0.3s ease;
+}
+
+.app-loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
 }
