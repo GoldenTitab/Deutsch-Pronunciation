@@ -1,4 +1,3 @@
-
         function showToast(message) {
             const toast = document.getElementById('ui-toast');
             document.getElementById('toast-message').innerText = message;
@@ -437,7 +436,6 @@
         }
         if (document.getElementById('flash-card')) pickFlash();
 
-        // PWA
         let deferredInstallPrompt;
         window.addEventListener('beforeinstallprompt', e => {
             e.preventDefault();
