@@ -3916,6 +3916,222 @@
       "fa": "جامعه مدنی",
       "en": "civil society",
       "level": "C1"
+    },
+    {
+      "word": "Vater",
+      "ipa": "[ˈfaːtɐ]",
+      "fa": "پدر",
+      "en": "father",
+      "level": "A1",
+      "category": "خانواده"
+    },
+    {
+      "word": "Mutter",
+      "ipa": "[ˈmʊtɐ]",
+      "fa": "مادر",
+      "en": "mother",
+      "level": "A1",
+      "category": "خانواده"
+    },
+    {
+      "word": "Bruder",
+      "ipa": "[ˈbʁuːdɐ]",
+      "fa": "برادر",
+      "en": "brother",
+      "level": "A1",
+      "category": "خانواده"
+    },
+    {
+      "word": "Schwester",
+      "ipa": "[ˈʃvɛstɐ]",
+      "fa": "خواهر",
+      "en": "sister",
+      "level": "A1",
+      "category": "خانواده"
+    },
+    {
+      "word": "Sohn",
+      "ipa": "[zoːn]",
+      "fa": "پسر (فرزند)",
+      "en": "son",
+      "level": "A2",
+      "category": "خانواده"
+    },
+    {
+      "word": "Tochter",
+      "ipa": "[ˈtɔxtɐ]",
+      "fa": "دختر (فرزند)",
+      "en": "daughter",
+      "level": "A2",
+      "category": "خانواده"
+    },
+    {
+      "word": "Großvater",
+      "ipa": "[ˈgʁoːsfaːtɐ]",
+      "fa": "پدربزرگ",
+      "en": "grandfather",
+      "level": "A2",
+      "category": "خانواده"
+    },
+    {
+      "word": "Großmutter",
+      "ipa": "[ˈgʁoːsmʊtɐ]",
+      "fa": "مادربزرگ",
+      "en": "grandmother",
+      "level": "A2",
+      "category": "خانواده"
+    },
+    {
+      "word": "Brot",
+      "ipa": "[bʁoːt]",
+      "fa": "نان",
+      "en": "bread",
+      "level": "A1",
+      "category": "غذا"
+    },
+    {
+      "word": "Wasser",
+      "ipa": "[ˈvasɐ]",
+      "fa": "آب",
+      "en": "water",
+      "level": "A1",
+      "category": "غذا"
+    },
+    {
+      "word": "Kaffee",
+      "ipa": "[ˈkafe]",
+      "fa": "قهوه",
+      "en": "coffee",
+      "level": "A1",
+      "category": "غذا"
+    },
+    {
+      "word": "Fleisch",
+      "ipa": "[flaɪ̯ʃ]",
+      "fa": "گوشت",
+      "en": "meat",
+      "level": "A2",
+      "category": "غذا"
+    },
+    {
+      "word": "Gemüse",
+      "ipa": "[gəˈmyːzə]",
+      "fa": "سبزیجات",
+      "en": "vegetables",
+      "level": "A2",
+      "category": "غذا"
+    },
+    {
+      "word": "Suppe",
+      "ipa": "[ˈzʊpə]",
+      "fa": "سوپ",
+      "en": "soup",
+      "level": "A2",
+      "category": "غذا"
+    },
+    {
+      "word": "Kuchen",
+      "ipa": "[ˈkuːxn̩]",
+      "fa": "کیک",
+      "en": "cake",
+      "level": "A2",
+      "category": "غذا"
+    },
+    {
+      "word": "Flughafen",
+      "ipa": "[ˈfluːkhaːfn̩]",
+      "fa": "فرودگاه",
+      "en": "airport",
+      "level": "A2",
+      "category": "سفر"
+    },
+    {
+      "word": "Zug",
+      "ipa": "[tsuːk]",
+      "fa": "قطار",
+      "en": "train",
+      "level": "A2",
+      "category": "سفر"
+    },
+    {
+      "word": "Ticket",
+      "ipa": "[ˈtɪkət]",
+      "fa": "بلیت",
+      "en": "ticket",
+      "level": "A2",
+      "category": "سفر"
+    },
+    {
+      "word": "Koffer",
+      "ipa": "[ˈkɔfɐ]",
+      "fa": "چمدان",
+      "en": "suitcase",
+      "level": "B1",
+      "category": "سفر"
+    },
+    {
+      "word": "Reisepass",
+      "ipa": "[ˈʁaɪ̯zəpas]",
+      "fa": "گذرنامه",
+      "en": "passport",
+      "level": "B1",
+      "category": "سفر"
+    },
+    {
+      "word": "Hotel",
+      "ipa": "[hoˈtɛl]",
+      "fa": "هتل",
+      "en": "hotel",
+      "level": "A2",
+      "category": "سفر"
+    },
+    {
+      "word": "Arbeit",
+      "ipa": "[ˈaʁbaɪ̯t]",
+      "fa": "کار",
+      "en": "work/job",
+      "level": "A2",
+      "category": "کار"
+    },
+    {
+      "word": "Chef",
+      "ipa": "[ʃɛf]",
+      "fa": "رئیس",
+      "en": "boss",
+      "level": "B1",
+      "category": "کار"
+    },
+    {
+      "word": "Kollege",
+      "ipa": "[kɔˈleːgə]",
+      "fa": "همکار",
+      "en": "colleague",
+      "level": "B1",
+      "category": "کار"
+    },
+    {
+      "word": "Bewerbung",
+      "ipa": "[bəˈvɛʁbʊŋ]",
+      "fa": "درخواست شغل",
+      "en": "job application",
+      "level": "B1",
+      "category": "کار"
+    },
+    {
+      "word": "Gehalt",
+      "ipa": "[gəˈhalt]",
+      "fa": "حقوق",
+      "en": "salary",
+      "level": "B1",
+      "category": "کار"
+    },
+    {
+      "word": "Besprechung",
+      "ipa": "[bəˈʃpʁɛçʊŋ]",
+      "fa": "جلسه",
+      "en": "meeting",
+      "level": "B2",
+      "category": "کار"
     }
   ],
   "grammar": [
@@ -5333,7 +5549,9 @@
         "wir": "sind",
         "ihr": "seid",
         "sie_Sie": "sind"
-      }
+      },
+      "auxiliary": "sein",
+      "partizip": "gewesen"
     },
     {
       "infinitive": "haben",
@@ -5347,7 +5565,9 @@
         "wir": "haben",
         "ihr": "habt",
         "sie_Sie": "haben"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gehabt"
     },
     {
       "infinitive": "werden",
@@ -5361,7 +5581,9 @@
         "wir": "werden",
         "ihr": "werdet",
         "sie_Sie": "werden"
-      }
+      },
+      "auxiliary": "sein",
+      "partizip": "geworden"
     },
     {
       "infinitive": "können",
@@ -5375,7 +5597,9 @@
         "wir": "können",
         "ihr": "könnt",
         "sie_Sie": "können"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gekonnt"
     },
     {
       "infinitive": "müssen",
@@ -5389,7 +5613,9 @@
         "wir": "müssen",
         "ihr": "müsst",
         "sie_Sie": "müssen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gemusst"
     },
     {
       "infinitive": "dürfen",
@@ -5403,7 +5629,9 @@
         "wir": "dürfen",
         "ihr": "dürft",
         "sie_Sie": "dürfen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gedurft"
     },
     {
       "infinitive": "sollen",
@@ -5417,7 +5645,9 @@
         "wir": "sollen",
         "ihr": "sollt",
         "sie_Sie": "sollen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gesollt"
     },
     {
       "infinitive": "wollen",
@@ -5431,7 +5661,9 @@
         "wir": "wollen",
         "ihr": "wollt",
         "sie_Sie": "wollen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gewollt"
     },
     {
       "infinitive": "mögen",
@@ -5445,7 +5677,9 @@
         "wir": "mögen",
         "ihr": "mögt",
         "sie_Sie": "mögen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gemocht"
     },
     {
       "infinitive": "machen",
@@ -5459,7 +5693,9 @@
         "wir": "machen",
         "ihr": "macht",
         "sie_Sie": "machen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gemacht"
     },
     {
       "infinitive": "gehen",
@@ -5473,7 +5709,9 @@
         "wir": "gehen",
         "ihr": "geht",
         "sie_Sie": "gehen"
-      }
+      },
+      "auxiliary": "sein",
+      "partizip": "gegangen"
     },
     {
       "infinitive": "kommen",
@@ -5487,7 +5725,9 @@
         "wir": "kommen",
         "ihr": "kommt",
         "sie_Sie": "kommen"
-      }
+      },
+      "auxiliary": "sein",
+      "partizip": "gekommen"
     },
     {
       "infinitive": "sehen",
@@ -5501,7 +5741,9 @@
         "wir": "sehen",
         "ihr": "seht",
         "sie_Sie": "sehen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gesehen"
     },
     {
       "infinitive": "sprechen",
@@ -5515,7 +5757,9 @@
         "wir": "sprechen",
         "ihr": "sprecht",
         "sie_Sie": "sprechen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gesprochen"
     },
     {
       "infinitive": "lesen",
@@ -5529,7 +5773,9 @@
         "wir": "lesen",
         "ihr": "lest",
         "sie_Sie": "lesen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gelesen"
     },
     {
       "infinitive": "essen",
@@ -5543,7 +5789,9 @@
         "wir": "essen",
         "ihr": "esst",
         "sie_Sie": "essen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gegessen"
     },
     {
       "infinitive": "fahren",
@@ -5557,7 +5805,9 @@
         "wir": "fahren",
         "ihr": "fahrt",
         "sie_Sie": "fahren"
-      }
+      },
+      "auxiliary": "sein",
+      "partizip": "gefahren"
     },
     {
       "infinitive": "geben",
@@ -5571,7 +5821,9 @@
         "wir": "geben",
         "ihr": "gebt",
         "sie_Sie": "geben"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gegeben"
     },
     {
       "infinitive": "nehmen",
@@ -5585,7 +5837,9 @@
         "wir": "nehmen",
         "ihr": "nehmt",
         "sie_Sie": "nehmen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "genommen"
     },
     {
       "infinitive": "wissen",
@@ -5599,7 +5853,9 @@
         "wir": "wissen",
         "ihr": "wisst",
         "sie_Sie": "wissen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gewusst"
     },
     {
       "infinitive": "arbeiten",
@@ -5613,7 +5869,9 @@
         "wir": "arbeiten",
         "ihr": "arbeitet",
         "sie_Sie": "arbeiten"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gearbeitet"
     },
     {
       "infinitive": "spielen",
@@ -5627,7 +5885,9 @@
         "wir": "spielen",
         "ihr": "spielt",
         "sie_Sie": "spielen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gespielt"
     },
     {
       "infinitive": "lernen",
@@ -5641,7 +5901,9 @@
         "wir": "lernen",
         "ihr": "lernt",
         "sie_Sie": "lernen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gelernt"
     },
     {
       "infinitive": "wohnen",
@@ -5655,7 +5917,9 @@
         "wir": "wohnen",
         "ihr": "wohnt",
         "sie_Sie": "wohnen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "gewohnt"
     },
     {
       "infinitive": "heißen",
@@ -5669,7 +5933,9 @@
         "wir": "heißen",
         "ihr": "heißt",
         "sie_Sie": "heißen"
-      }
+      },
+      "auxiliary": "haben",
+      "partizip": "geheißen"
     }
   ],
   "cases": {
@@ -5798,5 +6064,157 @@
         "statt"
       ]
     }
-  }
+  },
+  "readings": [
+    {
+      "level": "A0",
+      "title": "سلام، من سارا هستم",
+      "text": "Ich heiße Sara. Ich komme aus dem Iran. Ich lerne Deutsch. Guten Tag!",
+      "questions": [
+        {
+          "q": "سارا اهل کجاست؟",
+          "options": [
+            "ایران",
+            "آلمان",
+            "فرانسه"
+          ],
+          "answer": "ایران"
+        },
+        {
+          "q": "سارا چه زبانی یاد می‌گیرد؟",
+          "options": [
+            "آلمانی",
+            "انگلیسی",
+            "فرانسه"
+          ],
+          "answer": "آلمانی"
+        }
+      ]
+    },
+    {
+      "level": "A1",
+      "title": "خانواده‌ی تام",
+      "text": "Mein Name ist Tom. Ich wohne in Berlin. Ich habe eine Schwester und einen Bruder. Wir gehen oft ins Kino.",
+      "questions": [
+        {
+          "q": "تام کجا زندگی می‌کند؟",
+          "options": [
+            "برلین",
+            "مونیخ",
+            "هامبورگ"
+          ],
+          "answer": "برلین"
+        },
+        {
+          "q": "تام و خانواده‌اش اغلب کجا می‌روند؟",
+          "options": [
+            "سینما",
+            "پارک",
+            "رستوران"
+          ],
+          "answer": "سینما"
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "title": "آخر هفته",
+      "text": "Am Wochenende fahre ich gern Rad. Manchmal treffe ich Freunde im Park. Wir spielen Fußball oder sprechen über die Schule.",
+      "questions": [
+        {
+          "q": "در آخر هفته چه کاری انجام می‌شود؟",
+          "options": [
+            "دوچرخه‌سواری",
+            "شنا",
+            "آشپزی"
+          ],
+          "answer": "دوچرخه‌سواری"
+        },
+        {
+          "q": "دوستان در پارک چه‌کار می‌کنند؟",
+          "options": [
+            "فوتبال بازی می‌کنند",
+            "کتاب می‌خوانند",
+            "می‌خوابند"
+          ],
+          "answer": "فوتبال بازی می‌کنند"
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "title": "سفر به اتریش",
+      "text": "Letztes Jahr habe ich eine Reise nach Österreich gemacht. Die Berge waren wunderschön, und das Essen hat mir sehr gut geschmeckt. Leider war das Wetter nicht immer gut.",
+      "questions": [
+        {
+          "q": "سفر به کدام کشور بود؟",
+          "options": [
+            "اتریش",
+            "سوئیس",
+            "ایتالیا"
+          ],
+          "answer": "اتریش"
+        },
+        {
+          "q": "آب‌وهوا چگونه بود؟",
+          "options": [
+            "همیشه خوب نبود",
+            "همیشه عالی بود",
+            "اصلاً بارانی نبود"
+          ],
+          "answer": "همیشه خوب نبود"
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "title": "دیجیتالی‌شدن زندگی",
+      "text": "Die Digitalisierung verändert unseren Alltag stark. Immer mehr Menschen arbeiten von zu Hause aus, was sowohl Vorteile als auch Nachteile mit sich bringt.",
+      "questions": [
+        {
+          "q": "متن درباره‌ی چیست؟",
+          "options": [
+            "دیجیتالی‌شدن زندگی روزمره",
+            "ورزش",
+            "آشپزی"
+          ],
+          "answer": "دیجیتالی‌شدن زندگی روزمره"
+        },
+        {
+          "q": "کار از خانه چگونه توصیف شده؟",
+          "options": [
+            "هم مزیت هم معایب دارد",
+            "فقط مزیت دارد",
+            "فقط ضرر دارد"
+          ],
+          "answer": "هم مزیت هم معایب دارد"
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "title": "بحث تغییرات اقلیمی",
+      "text": "Obwohl die Debatte über den Klimawandel seit Jahrzehnten geführt wird, gelingt es der Politik bislang nur unzureichend, wirksame Maßnahmen umzusetzen.",
+      "questions": [
+        {
+          "q": "موضوع اصلی بحث در متن چیست؟",
+          "options": [
+            "تغییرات اقلیمی",
+            "اقتصاد جهانی",
+            "آموزش"
+          ],
+          "answer": "تغییرات اقلیمی"
+        },
+        {
+          "q": "نویسنده عملکرد سیاست را چطور توصیف می‌کند؟",
+          "options": [
+            "ناکافی در اجرای اقدامات مؤثر",
+            "بسیار موفق",
+            "بی‌ربط به موضوع"
+          ],
+          "answer": "ناکافی در اجرای اقدامات مؤثر"
+        }
+      ]
+    }
+  ]
 }
