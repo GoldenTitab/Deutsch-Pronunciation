@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>آموزش زبان آلمانی</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='33' y='0' fill='%23000'/%3E%3Crect width='100' height='34' y='33' fill='%23DD0000'/%3E%3Crect width='100' height='33' y='67' fill='%23FFCE00'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0f172a">
@@ -169,6 +170,19 @@
 </head>
 <body>
 
+    <a href="#main-content" class="skip-link">پرش به محتوای اصلی</a>
+    <div id="ariaLiveRegion" class="sr-only" aria-live="polite"></div>
+
+    <div id="appLoadingOverlay" class="app-loading-overlay">
+        <div class="skeleton-wrap" style="max-width:600px;width:100%;">
+            <div class="skeleton-line" style="width:40%;height:1.5rem;"></div>
+            <div class="skeleton-line" style="width:90%;"></div>
+            <div class="skeleton-line" style="width:75%;"></div>
+            <div class="skeleton-line" style="width:85%;"></div>
+            <div class="skeleton-line" style="width:60%;"></div>
+        </div>
+    </div>
+
     <header>
         <div class="nav-container">
             <div class="logo">
@@ -189,6 +203,7 @@
                 <li><a href="#" data-section="conjugation">صرف افعال</a></li>
                 <li><a href="#" data-section="cases">حالت‌های دستوری</a></li>
                 <li><a href="#" data-section="levels">سطوح</a></li>
+                <li><a href="#" data-section="reading">متن‌خوانی</a></li>
                 <li><a href="#" data-section="quiz">آزمون سطح</a></li>
                 <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
                 <li><a href="#" data-section="progress">پیشرفت من</a></li>
@@ -200,7 +215,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="home" class="section active">
             <div class="hero">
                 <h1>یادگیری هوشمند زبان آلمانی</h1>
@@ -221,6 +236,13 @@
                     <option value="B1">B1</option>
                     <option value="B2">B2</option>
                     <option value="C1">C1</option>
+                </select>
+                <select id="vocabCategoryFilter">
+                    <option value="all">همه موضوعات</option>
+                    <option value="خانواده">خانواده</option>
+                    <option value="غذا">غذا</option>
+                    <option value="سفر">سفر</option>
+                    <option value="کار">کار</option>
                 </select>
                 <button id="vocabRandomBtn" class="btn-primary">کلمه تصادفی</button>
             </div>
@@ -261,17 +283,39 @@
 
         <section id="conjugation" class="section">
             <h2>صرف افعال (Konjugation)</h2>
-            <p style="color:var(--text-muted);margin-bottom:1rem;">صرف زمان حال مهم‌ترین افعال آلمانی، شامل افعال بی‌قاعده و کمکی-وجهی.</p>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">صرف زمان حال و زمان کامل (Perfekt) مهم‌ترین افعال آلمانی، شامل افعال بی‌قاعده و کمکی-وجهی.</p>
             <div class="controls-bar">
                 <input type="text" id="verbSearch" placeholder="جستجوی فعل (مثلاً sein, haben, sprechen)...">
+                <button id="verbExerciseBtn" class="btn-accent">تمرین صرف افعال</button>
             </div>
+            <div id="verbExerciseArea"></div>
             <div id="verbGrid" class="grammar-grid"></div>
         </section>
 
         <section id="cases" class="section">
             <h2>حالت‌های دستوری (Kasus)</h2>
             <p style="color:var(--text-muted);margin-bottom:1rem;">حروف تعریف، ضمایر و حروف اضافه در چهار حالت آلمانی — مهم‌ترین بخش گرامری برای عبور از سطح A2/B1.</p>
+            <div class="controls-bar">
+                <button id="caseExerciseBtn" class="btn-accent">تمرین حروف تعریف</button>
+            </div>
+            <div id="caseExerciseArea"></div>
             <div id="casesContent"></div>
+        </section>
+
+        <section id="reading" class="section">
+            <h2>متن‌خوانی و درک مطلب</h2>
+            <p style="color:var(--text-muted);margin-bottom:1rem;">یک متن کوتاه به همراه چند سؤال درک مطلب، به ازای هر سطح.</p>
+            <div class="controls-bar">
+                <select id="readingLevelFilter">
+                    <option value="A0">A0</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="B1">B1</option>
+                    <option value="B2">B2</option>
+                    <option value="C1">C1</option>
+                </select>
+            </div>
+            <div id="readingContent"></div>
         </section>
 
         <section id="levels" class="section">
@@ -311,6 +355,7 @@
                 </select>
                 <span id="flashcardCount" class="badge">0 کلمه</span>
                 <button id="flashcardShuffle" class="btn-secondary"><i class="fas fa-random"></i> بر زدن کارت‌ها</button>
+                <button id="flashcardDueToggle" class="btn-secondary">فقط کلمات سررسید‌شده</button>
             </div>
             <div class="flashcard-container">
                 <div id="flashcard" class="flashcard" role="button" aria-label="فلش‌کارت">
@@ -326,12 +371,23 @@
                     <button id="flipBtn" class="btn-accent">برگرداندن کارت</button>
                     <button id="flashNext" class="btn-primary">بعدی <i class="fas fa-arrow-left"></i></button>
                 </div>
+                <div id="flashRateRow" class="flashcard-controls" style="display:none;">
+                    <button class="btn-small flash-rate-btn" data-quality="0" style="background:#ef4444;">دوباره ببینم</button>
+                    <button class="btn-small flash-rate-btn" data-quality="1" style="background:#f59e0b;">سخت بود</button>
+                    <button class="btn-small flash-rate-btn" data-quality="2" style="background:var(--primary-color);">خوب بود</button>
+                    <button class="btn-small flash-rate-btn" data-quality="3" style="background:var(--accent-color);">آسان بود</button>
+                </div>
                 <div id="flashIndex" class="flash-index">0 از 0</div>
             </div>
         </section>
 
         <section id="progress" class="section">
             <h2>آمار و پیشرفت یادگیری</h2>
+            <div class="progress-ring-wrap">
+                <div id="progressRing" class="progress-ring">
+                    <span id="progressRingText">0%</span>
+                </div>
+            </div>
             <div class="stats-cards">
                 <div class="stat-card">
                     <i class="fas fa-check-circle"></i>
@@ -359,6 +415,7 @@
                 <div id="progressFill" class="progress-fill"></div>
             </div>
             <div id="progressLevels" class="progress-levels"></div>
+            <div id="badgesArea" class="stats-cards" style="margin-top:1.5rem;"></div>
             <div class="reset-container">
                 <button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button>
             </div>
@@ -462,7 +519,7 @@
             </div>
         </aside>
 
-        <main class="lg:w-3/4 xl:w-4/5 w-full space-y-12">
+        <div class="pho-main lg:w-3/4 xl:w-4/5 w-full space-y-12">
 
             <section id="analyzer-section" class="scroll-mt-8">
                 <div class="bg-gradient-to-b from-brand-900 to-brand-dark rounded-2xl sm:rounded-[2rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-12 shadow-2xl relative overflow-hidden text-center text-white border-2 sm:border-4 border-brand-500/30">
@@ -808,7 +865,7 @@
                 </div>
             </section>
 
-        </main>
+        </div>
     </div>
         </section>
     </main>
