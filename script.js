@@ -91,7 +91,7 @@ async function speakGerman(text) {
             URL.revokeObjectURL(audioUrl);
             return;
         }
-    } catch (_) { /* fallback to Web Speech API */ }
+    } catch (_) {}
 
     return new Promise((resolve) => {
         if (!window.speechSynthesis) { resolve(); return; }
@@ -182,6 +182,15 @@ function activateSection(id, opts = {}) {
         history.pushState(null, '', '#' + id);
     }
     if (ariaLiveRegion) ariaLiveRegion.textContent = 'بخش ' + (SECTION_LABELS[id] || id) + ' نمایش داده شد';
+
+
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+    target.addEventListener('blur', function clearTabindex() {
+        target.removeAttribute('tabindex');
+        target.removeEventListener('blur', clearTabindex);
+    }, { once: true });
+
     runSectionInit(id);
 }
 
@@ -852,7 +861,6 @@ function showFlashcard() {
     flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
     flashRateRow.style.display = 'none';
 
-    // اتصال دکمه‌های پخش صدا در front و back
     attachSpeaker(flashFront);
     if (flashBack) attachSpeaker(flashBack);
 }
