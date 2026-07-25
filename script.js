@@ -50,6 +50,7 @@ const navToggle          = document.getElementById('navToggle');
 const navList            = document.getElementById('navList');
 const homeFeatures       = document.getElementById('homeFeatures');
 const verbSearch         = document.getElementById('verbSearch');
+const verbLevelFilter    = document.getElementById('verbLevelFilter');
 const verbGrid           = document.getElementById('verbGrid');
 const casesContent       = document.getElementById('casesContent');
 const quizLevelFilter    = document.getElementById('quizLevelFilter');
@@ -158,7 +159,7 @@ const SECTION_LABELS = {
 
 function runSectionInit(section) {
     if (section === 'vocabulary') filterVocab();
-    if (section === 'grammar')    renderGrammar();
+    if (section === 'grammar')    { renderGrammar(); renderCultureNotes(); }
     if (section === 'conjugation') renderVerbs();
     if (section === 'cases')     renderCases();
     if (section === 'reading')   renderReading();
@@ -182,7 +183,6 @@ function activateSection(id, opts = {}) {
         history.pushState(null, '', '#' + id);
     }
     if (ariaLiveRegion) ariaLiveRegion.textContent = 'بخش ' + (SECTION_LABELS[id] || id) + ' نمایش داده شد';
-
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
     target.focus({ preventScroll: true });
     target.addEventListener('blur', function clearTabindex() {
@@ -280,14 +280,25 @@ function celebrate() {
 
 async function loadData() {
     try {
-        const res = await fetch('data.json');
-        if (!res.ok) throw new Error('Failed to load data.json');
-        APP_DATA   = await res.json();
+        const coreRes = await fetch('data/core.json');
+        if (!coreRes.ok) throw new Error('Failed to load data/core.json');
+        APP_DATA = await coreRes.json();
+        APP_DATA.vocabulary = [];
+        const levelIds = (APP_DATA.levels || []).map(l => l.id);
+        const vocabChunks = await Promise.all(levelIds.map(async id => {
+            try {
+                const r = await fetch(`data/vocab-${id}.json`);
+                return r.ok ? await r.json() : [];
+            } catch (_) { return []; }
+        }));
+        APP_DATA.vocabulary = vocabChunks.flat();
+
         currentVocab = APP_DATA.vocabulary || [];
         renderHome();
         renderLevels();
         renderVocab();
         renderGrammar();
+        renderCultureNotes();
         renderVerbs();
         renderCases();
         renderReading();
@@ -299,7 +310,7 @@ async function loadData() {
         document.querySelector('main').innerHTML = `
             <div style="text-align:center;padding:3rem;direction:rtl;">
                 <h2 style="color:#d32f2f;">خطا در بارگذاری داده‌ها</h2>
-                <p>لطفاً فایل data.json را در کنار این صفحه قرار دهید.</p>
+                <p>لطفاً پوشه‌ی data را در کنار این صفحه قرار دهید.</p>
                 <p style="font-size:0.8rem;opacity:0.7;">${err.message}</p>
             </div>
         `;
@@ -584,13 +595,45 @@ function renderGrammar() {
 grammarLevelFilter.addEventListener('change', renderGrammar);
 
 
+function renderCultureNotes() {
+    const wrap = document.getElementById('cultureNotesWrap');
+    const grid = document.getElementById('cultureNotesGrid');
+    if (!grid || !APP_DATA || !APP_DATA.cultureNotes) return;
+
+    const level = grammarLevelFilter.value;
+    const notes = level === 'all'
+        ? APP_DATA.cultureNotes
+        : APP_DATA.cultureNotes.filter(n => n.level === level);
+
+    if (wrap) wrap.style.display = notes.length ? '' : 'none';
+
+    grid.innerHTML = notes.map(n => `
+        <div class="grammar-card">
+            <div class="title">${escHtml(n.title || '')}</div>
+            <span class="level-tag">${escHtml(n.level || '')}</span>
+            <div class="example" dir="ltr">
+                <span>${escHtml(n.text || '')}</span>
+                ${n.text ? `<button class="audio-btn" data-word="${escHtml(n.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up" aria-hidden="true"></i></button>` : ''}
+            </div>
+            ${n.fa ? `<div class="trans">🇮🇷 ${escHtml(n.fa)}</div>` : ''}
+        </div>
+    `).join('');
+
+    attachSpeaker(grid);
+}
+
+grammarLevelFilter.addEventListener('change', renderCultureNotes);
+
+
 const PRONOUN_LABELS = { ich: 'ich', du: 'du', er_sie_es: 'er/sie/es', wir: 'wir', ihr: 'ihr', sie_Sie: 'sie/Sie' };
 
 function renderVerbs() {
     if (!APP_DATA || !APP_DATA.verbs) return;
     const term = (verbSearch.value || '').toLowerCase().trim();
+    const level = verbLevelFilter.value;
     const list = APP_DATA.verbs.filter(v =>
-        !term || v.infinitive.toLowerCase().includes(term) || (v.fa && v.fa.includes(term)) || (v.en && v.en.toLowerCase().includes(term))
+        (level === 'all' || v.level === level) &&
+        (!term || v.infinitive.toLowerCase().includes(term) || (v.fa && v.fa.includes(term)) || (v.en && v.en.toLowerCase().includes(term)))
     );
 
     if (list.length === 0) {
@@ -605,13 +648,16 @@ function renderVerbs() {
                     <i class="fas fa-volume-up" aria-hidden="true"></i>
                 </button>
             </div>
-            <span class="level-tag">${escHtml(v.type || '')}</span>
+            <span class="level-tag">${escHtml(v.level || '')}</span>
+            <span class="level-tag">${escHtml(v.type || '')}</span>${v.separable ? ' <span class="level-tag" style="background-color:rgba(16,185,129,0.15);color:var(--accent-color);">فعل جدایی‌پذیر (پیشوند: ' + escHtml(v.prefix || '') + ')</span>' : ''}
             <div class="grammar-desc">🇮🇷 ${escHtml(v.fa || '')} &nbsp;·&nbsp; 🇬🇧 ${escHtml(v.en || '')}</div>
             <table class="verb-table">
+                <tr><th class="pronoun"></th><th>حال (Präsens)</th>${v.praeteritum ? '<th>گذشته‌ی ساده (Präteritum)</th>' : ''}</tr>
                 ${Object.keys(PRONOUN_LABELS).map(p => `
                     <tr>
                         <td class="pronoun">${PRONOUN_LABELS[p]}</td>
                         <td dir="ltr">${escHtml(v.present[p] || '')}</td>
+                        ${v.praeteritum ? `<td dir="ltr">${escHtml(v.praeteritum[p] || '')}</td>` : ''}
                     </tr>
                 `).join('')}
             </table>
@@ -626,6 +672,7 @@ verbSearch.addEventListener('input', () => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(renderVerbs, 200);
 });
+verbLevelFilter.addEventListener('change', renderVerbs);
 
 
 function runExercise(container, questions, onFinish) {
@@ -675,10 +722,13 @@ function startVerbExercise() {
     const pool = shuffleArr(APP_DATA.verbs).slice(0, Math.min(8, APP_DATA.verbs.length));
     const questions = pool.map(v => {
         const pronoun = shuffleArr(Object.keys(PRONOUN_LABELS))[0];
-        const answer = v.present[pronoun];
-        const distractors = shuffleArr(Object.values(v.present).filter(f => f !== answer)).slice(0, 3);
+        const useTense = (v.praeteritum && Math.random() < 0.35) ? 'praeteritum' : 'present';
+        const tenseLabel = useTense === 'praeteritum' ? ' — گذشته‌ی ساده' : '';
+        const forms = v[useTense];
+        const answer = forms[pronoun];
+        const distractors = shuffleArr(Object.values(forms).filter(f => f !== answer)).slice(0, 3);
         return {
-            prompt: `${PRONOUN_LABELS[pronoun]} ___ (${v.infinitive} — ${v.fa})`,
+            prompt: `${PRONOUN_LABELS[pronoun]} ___ (${v.infinitive} — ${v.fa}${tenseLabel})`,
             answer,
             options: shuffleArr([answer, ...distractors])
         };
@@ -933,17 +983,63 @@ function shuffleArr(arr) {
 
 function buildQuiz() {
     const level = quizLevelFilter.value;
-    const pool = level === 'all' ? (APP_DATA.vocabulary || []) : (APP_DATA.vocabulary || []).filter(w => w.level === level);
-    if (pool.length < 4) {
+    const vocabPool = level === 'all' ? (APP_DATA.vocabulary || []) : (APP_DATA.vocabulary || []).filter(w => w.level === level);
+    if (vocabPool.length < 4) {
         quizArea.innerHTML = '<p style="opacity:0.6;text-align:center;padding:2rem;">برای این سطح واژگان کافی برای آزمون وجود ندارد</p>';
         return;
     }
-    const questionWords = shuffleArr(pool).slice(0, Math.min(10, pool.length));
-    quizQuestions = questionWords.map(w => {
-        const distractors = shuffleArr(pool.filter(x => x.word !== w.word)).slice(0, 3).map(x => x.fa);
-        const options = shuffleArr([w.fa, ...distractors]);
-        return { word: w.word, ipa: w.ipa, answer: w.fa, options };
+
+    // Vocabulary questions (meaning of a word)
+    const vocabWords = shuffleArr(vocabPool).slice(0, Math.min(6, vocabPool.length));
+    const vocabQuestions = vocabWords.map(w => {
+        const distractors = shuffleArr(vocabPool.filter(x => x.word !== w.word)).slice(0, 3).map(x => x.fa);
+        return {
+            type: 'vocab', word: w.word, ipa: w.ipa,
+            promptLabel: 'معنی فارسی این کلمه چیست؟',
+            answer: w.fa, options: shuffleArr([w.fa, ...distractors])
+        };
     });
+
+    // Verb conjugation questions, scoped to verbs at or below the chosen level
+    let verbQuestions = [];
+    const levelOrder = (APP_DATA.levels || []).map(l => l.id);
+    const levelRank = levelOrder.indexOf(level);
+    const verbPool = (APP_DATA.verbs || []).filter(v => level === 'all' || levelOrder.indexOf(v.level) <= (levelRank === -1 ? levelOrder.length : levelRank));
+    if (verbPool.length) {
+        const chosenVerbs = shuffleArr(verbPool).slice(0, 2);
+        verbQuestions = chosenVerbs.map(v => {
+            const pronoun = shuffleArr(Object.keys(PRONOUN_LABELS))[0];
+            const answer = v.present[pronoun];
+            const distractors = shuffleArr(Object.values(v.present).filter(f => f !== answer)).slice(0, 3);
+            return {
+                type: 'grammar',
+                promptLabel: `صرف صحیح فعل «${v.infinitive}» (${v.fa}) برای «${PRONOUN_LABELS[pronoun]}» چیست؟`,
+                answer, options: shuffleArr([answer, ...distractors])
+            };
+        });
+    }
+
+    // Article/case question, skipped for the absolute-beginner A0 level
+    let caseQuestions = [];
+    if (level !== 'A0' && APP_DATA.cases) {
+        const genderLabel = { m: 'مذکر (der)', f: 'مؤنث (die)', n: 'خنثی (das)', pl: 'جمع (die)' };
+        const nouns = { m: 'Tisch', f: 'Lampe', n: 'Buch', pl: 'Bücher' };
+        const defArt = APP_DATA.cases.articles_definite;
+        const kasusList = Object.keys(defArt);
+        const genderList = Object.keys(defArt.Nominativ);
+        const k = shuffleArr(kasusList)[0];
+        const g = shuffleArr(genderList)[0];
+        const answer = defArt[k][g];
+        const allArticles = [...new Set(kasusList.flatMap(kk => Object.values(defArt[kk])))];
+        const distractors = shuffleArr(allArticles.filter(a => a !== answer)).slice(0, 3);
+        caseQuestions = [{
+            type: 'grammar',
+            promptLabel: `حرف تعریف صحیح: ___ ${nouns[g]} (${genderLabel[g]}, حالت ${k})`,
+            answer, options: shuffleArr([answer, ...distractors])
+        }];
+    }
+
+    quizQuestions = shuffleArr([...vocabQuestions, ...verbQuestions, ...caseQuestions]);
     quizIndex = 0;
     quizScore = 0;
     renderQuizQuestion();
@@ -964,14 +1060,17 @@ function renderQuizQuestion() {
         return;
     }
     const q = quizQuestions[quizIndex];
+    const isVocab = q.type === 'vocab';
     quizArea.innerHTML = `
         <div class="table-container" style="padding:1.5rem;">
             <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${quizIndex + 1} از ${quizQuestions.length} &nbsp;·&nbsp; امتیاز: ${quizScore}</p>
-            <div class="flashcard-word" dir="ltr" style="margin-bottom:0.25rem;">${escHtml(q.word)}
-                <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
-            </div>
-            <div class="flashcard-ipa" dir="ltr">${escHtml(q.ipa || '')}</div>
-            <p style="margin:1rem 0 0.5rem;">معنی فارسی این کلمه چیست؟</p>
+            ${isVocab ? `
+                <div class="flashcard-word" dir="ltr" style="margin-bottom:0.25rem;">${escHtml(q.word)}
+                    <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up" aria-hidden="true"></i></button>
+                </div>
+                <div class="flashcard-ipa" dir="ltr">${escHtml(q.ipa || '')}</div>
+            ` : ''}
+            <p style="margin:1rem 0 0.5rem;">${escHtml(q.promptLabel)}</p>
             <div id="quizOptions" style="display:flex;flex-direction:column;gap:0.5rem;">
                 ${q.options.map(o => `<button class="btn-secondary quiz-option" data-value="${escHtml(o)}" style="text-align:right;">${escHtml(o)}</button>`).join('')}
             </div>
