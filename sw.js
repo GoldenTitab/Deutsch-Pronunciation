@@ -1,4 +1,4 @@
-const CACHE_NAME = 'german-master-v8';
+const CACHE_NAME = 'german-master-v9';
 const CORE_ASSETS = [
   './',
   './index.html',
