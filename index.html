@@ -72,7 +72,7 @@
       </button>
 
       <nav id="primary-nav" aria-label="منوی اصلی">
-        <ul class="nav-list">
+        <ul class="nav-list" id="navList">
           <li><a href="#" data-section="home" class="active">خانه</a></li>
           <li><a href="#" data-section="vocabulary">واژگان</a></li>
           <li><a href="#" data-section="grammar">گرامر</a></li>
@@ -122,8 +122,12 @@
         <input type="text" id="vocabSearch" placeholder="جستجوی کلمه (آلمانی، فارسی، انگلیسی)...">
         <select id="vocabLevelFilter">
           <option value="all">همه سطوح</option>
-          <option value="A0">A0</option><option value="A1">A1</option><option value="A2">A2</option>
-          <option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
         <select id="vocabCategoryFilter">
           <option value="all">همه موضوعات</option>
@@ -136,7 +140,16 @@
       </div>
       <div class="table-container">
         <table id="vocabTable">
-          <thead><tr><th>کلمه (آلمانی)</th><th>تلفظ (IPA)</th><th>معنی فارسی</th><th>معنی انگلیسی</th><th>سطح</th><th>عملیات</th></tr></thead>
+          <thead>
+            <tr>
+              <th>کلمه (آلمانی)</th>
+              <th>تلفظ (IPA)</th>
+              <th>معنی فارسی</th>
+              <th>معنی انگلیسی</th>
+              <th>سطح</th>
+              <th>عملیات</th>
+            </tr>
+          </thead>
           <tbody id="vocabBody"></tbody>
         </table>
       </div>
@@ -148,8 +161,12 @@
       <div class="controls-bar">
         <select id="grammarLevelFilter">
           <option value="all">همه سطوح گرامر</option>
-          <option value="A0">A0</option><option value="A1">A1</option><option value="A2">A2</option>
-          <option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
       </div>
       <div id="grammarGrid" class="grammar-grid"></div>
@@ -166,7 +183,8 @@
         <input type="text" id="verbSearch" placeholder="جستجوی فعل (مثلاً sein, haben, sprechen)...">
         <select id="verbLevelFilter">
           <option value="all">همه سطوح</option>
-          <option value="A1">A1</option><option value="A2">A2</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
         </select>
         <button id="verbExerciseBtn" class="btn-accent">تمرین صرف افعال</button>
       </div>
@@ -189,8 +207,12 @@
       <p style="color:var(--text-muted);margin-bottom:1rem;">یک متن کوتاه به همراه چند سؤال درک مطلب، به ازای هر سطح.</p>
       <div class="controls-bar">
         <select id="readingLevelFilter">
-          <option value="A0">A0</option><option value="A1">A1</option><option value="A2">A2</option>
-          <option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
       </div>
       <div id="readingContent"></div>
@@ -207,8 +229,12 @@
       <div class="controls-bar">
         <select id="quizLevelFilter">
           <option value="all">همه سطوح</option>
-          <option value="A0">A0</option><option value="A1">A1</option><option value="A2">A2</option>
-          <option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
         <button id="quizStartBtn" class="btn-primary">شروع آزمون (۱۰ سوال)</button>
       </div>
@@ -220,8 +246,12 @@
       <div class="controls-bar">
         <select id="flashcardLevelFilter">
           <option value="all">همه سطوح</option>
-          <option value="A0">A0</option><option value="A1">A1</option><option value="A2">A2</option>
-          <option value="B1">B1</option><option value="B2">B2</option><option value="C1">C1</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
         <span id="flashcardCount" class="badge">0 کلمه</span>
         <button id="flashcardShuffle" class="btn-secondary"><i class="fas fa-random"></i> بر زدن کارت‌ها</button>
@@ -259,14 +289,36 @@
         </div>
       </div>
       <div class="stats-cards">
-        <div class="stat-card"><i class="fas fa-check-circle"></i><div><span id="statWords">0</span><p>کلمات یادگرفته شده</p></div></div>
-        <div class="stat-card"><i class="fas fa-book"></i><div><span id="statTotal">0</span><p>کل کلمات مجموعه</p></div></div>
-        <div class="stat-card"><i class="fas fa-chart-line"></i><div><span id="statPercent">0%</span><p>درصد پیشرفت کل</p></div></div>
+        <div class="stat-card">
+          <i class="fas fa-check-circle"></i>
+          <div>
+            <span id="statWords">0</span>
+            <p>کلمات یادگرفته شده</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-book"></i>
+          <div>
+            <span id="statTotal">0</span>
+            <p>کل کلمات مجموعه</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-chart-line"></i>
+          <div>
+            <span id="statPercent">0%</span>
+            <p>درصد پیشرفت کل</p>
+          </div>
+        </div>
       </div>
-      <div class="progress-bar-container"><div id="progressFill" class="progress-fill"></div></div>
+      <div class="progress-bar-container">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
       <div id="progressLevels" class="progress-levels"></div>
       <div id="badgesArea" class="stats-cards" style="margin-top:1.5rem;"></div>
-      <div class="reset-container"><button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button></div>
+      <div class="reset-container">
+        <button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button>
+      </div>
     </section>
 
     <section id="phonetics" class="section">
@@ -334,6 +386,7 @@
         </aside>
 
         <div class="phonetics-main-content">
+
           <section id="analyzer-section" class="phonetics-section analyzer">
             <div class="analyzer-card">
               <div class="analyzer-icon"><i class="fas fa-microscope"></i></div>
@@ -387,6 +440,7 @@
               <div class="section-icon"><i class="fas fa-font"></i></div>
               <h2>بخش اول: اوملاوت‌ها و مصوت‌های ترکیبی</h2>
             </div>
+
             <div class="phonetics-card">
               <div class="card-header">
                 <h3>مصوت‌های Ä و Au</h3>
@@ -401,7 +455,12 @@
                 </div>
                 <div class="word-table-wrap">
                   <div class="desktop-headers">
-                    <span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span>
+                    <span>کلمه آلمانی</span>
+                    <span>معنی</span>
+                    <span>تلفظ فارسی</span>
+                    <span>IPA استاندارد</span>
+                    <span>پخش</span>
+                    <span>یادگرفتم</span>
                   </div>
                   <div class="word-list">
                     <div class="mobile-card-row">
@@ -429,6 +488,91 @@
               </div>
             </div>
 
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>ترکیب Ei در برابر ie</h3>
+                <span class="card-badge">قانون اسم حروف</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-blue">
+                  <strong>مکانیزم ذهنی (لایف‌هک):</strong>
+                  <p>در آلمانی وقتی دو حرف صدادار کنار هم می‌آیند، همیشه <strong>حرف دوم</strong> رئیس است! نام انگلیسی حرف دوم را با صدای بلند بخوانید.</p>
+                  <ul>
+                    <li><code>Ei</code> = حرف دوم i است (صدا: <strong>آی</strong>)</li>
+                    <li><code>ie</code> = حرف دوم e است (صدا: <strong>ایـ کشیده</strong>)</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers">
+                    <span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span>
+                  </div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">mein</span><span data-label="معنی">مال من</span><span data-label="تلفظ فارسی" class="fa-phonetic">ماین</span><span data-label="IPA" class="ipa-cell">[maɪ̯n]</span><span class="action-cell"><button onclick="playPhoneticsAudio('mein', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="mein"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">arbeiten</span><span data-label="معنی">کار کردن</span><span data-label="تلفظ فارسی" class="fa-phonetic">آربایتِن</span><span data-label="IPA" class="ipa-cell">[ˈaʁbaɪ̯tən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('arbeiten', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="arbeiten"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">lieben</span><span data-label="معنی">عشق ورزیدن</span><span data-label="تلفظ فارسی" class="fa-phonetic">لیـبِن</span><span data-label="IPA" class="ipa-cell">[ˈliːbən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('lieben', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="lieben"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">sieben</span><span data-label="معنی">عدد هفت</span><span data-label="تلفظ فارسی" class="fa-phonetic">زیـبِن</span><span data-label="IPA" class="ipa-cell">[ˈziːbən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('sieben', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="sieben"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Wien</span><span data-label="معنی">شهر وین</span><span data-label="تلفظ فارسی" class="fa-phonetic">ویـن</span><span data-label="IPA" class="ipa-cell">[viːn]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Wien', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Wien"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>خانواده صدای «اُی» (eu / äu)</h3>
+                <span class="card-badge">تغییر املایی</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-blue">
+                  <strong>مکانیزم ذهنی (لایف‌هک):</strong>
+                  <p>ترکیب <code>eu</code> در آلمانی همیشه صدای <strong>«اُی»</strong> (مثل کلمه Boy) می‌دهد. نکته پیشرفته این است که <code>äu</code> هم دقیقاً همان صدا را دارد و معمولاً در جمع بستن کلماتی که au دارند ظاهر می‌شود.</p>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers">
+                    <span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span>
+                  </div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Euro</span><span data-label="معنی">یورو</span><span data-label="تلفظ فارسی" class="fa-phonetic">اُیـرُ</span><span data-label="IPA" class="ipa-cell">[ˈɔʏ̯ʁo]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Euro', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Euro"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">heute</span><span data-label="معنی">امروز</span><span data-label="تلفظ فارسی" class="fa-phonetic">هُیـتِه</span><span data-label="IPA" class="ipa-cell">[ˈhɔʏ̯tə]</span><span class="action-cell"><button onclick="playPhoneticsAudio('heute', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="heute"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Deutsch</span><span data-label="معنی">آلمانی</span><span data-label="تلفظ فارسی" class="fa-phonetic">دُیـچ</span><span data-label="IPA" class="ipa-cell">[dɔʏ̯t͡ʃ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Deutsch', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Deutsch"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Häuser</span><span data-label="معنی">خانه‌ها</span><span data-label="تلفظ فارسی" class="fa-phonetic">هُیـزِاَ</span><span data-label="IPA" class="ipa-cell">[ˈhɔʏ̯zɐ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Häuser', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Häuser"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>تلفظ تخصصی Ö و Ü</h3>
+                <span class="card-badge">آناتومی لب و زبان</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-emerald">
+                  <strong>مهندسی حنجره و لب (تخصصی):</strong>
+                  <div class="pedagogy-grid" style="margin-top:1rem;">
+                    <div>
+                      <h4 style="font-weight:700;color:var(--accent-color);">تلفظ Ö</h4>
+                      <p>لب‌هایت را کاملاً گرد کن (مثل سوت زدن یا گفتن اُ)، اما سعی کن از ته گلو بگویی <strong>«اِ»</strong>.</p>
+                    </div>
+                    <div>
+                      <h4 style="font-weight:700;color:var(--accent-color);">تلفظ Ü</h4>
+                      <p>لب‌هایت را به شدت غنچه کن (مثل گفتن او)، اما سعی کن بگویی <strong>«ای»</strong>.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers">
+                    <span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span>
+                  </div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">schön</span><span data-label="معنی">زیبا</span><span data-label="تلفظ فارسی" class="fa-phonetic">شـُ(اِ)ـن</span><span data-label="IPA" class="ipa-cell">[ʃøːn]</span><span class="action-cell"><button onclick="playPhoneticsAudio('schön', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="schön"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">hören</span><span data-label="معنی">شنیدن</span><span data-label="تلفظ فارسی" class="fa-phonetic">هـُ(اِ)ـرِن</span><span data-label="IPA" class="ipa-cell">[ˈhøːʁən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('hören', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="hören"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">müde</span><span data-label="معنی">خسته</span><span data-label="تلفظ فارسی" class="fa-phonetic">مـیـ(و)ـدِه</span><span data-label="IPA" class="ipa-cell">[ˈmyːdə]</span><span class="action-cell"><button onclick="playPhoneticsAudio('müde', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="müde"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">fünf</span><span data-label="معنی">پنج</span><span data-label="تلفظ فارسی" class="fa-phonetic">فـیـ(و)ـنف</span><span data-label="IPA" class="ipa-cell">[fʏnf]</span><span class="action-cell"><button onclick="playPhoneticsAudio('fünf', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="fünf"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section id="consonants" class="phonetics-section">
