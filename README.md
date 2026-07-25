@@ -12,6 +12,8 @@ I do not claim authorship, credit, or any rights to this code. If you are the or
 
 The site is a single-page app: `index.html` holds every section (home, vocabulary, grammar, levels, flashcards, progress, and the Phonetics Masterclass), and the in-page navigation switches between them without leaving the tab or loading a separate page. The old standalone `phonetics.html` is no longer linked and can be deleted from the repo.
 
+Content data lives under `data/`: `core.json` (levels, grammar, verbs, cases, readings, culture notes) plus one `vocab-<LEVEL>.json` per CEFR level (A0–C1). These are fetched in parallel on load instead of one large `data.json`.
+
 ## Purpose
 
 This repository hosts a static web page (converted into an installable PWA) that helps with:
