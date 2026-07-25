@@ -1,4 +1,4 @@
-        function showToast(message) {
+function showToast(message) {
             const toast = document.getElementById('ui-toast');
             document.getElementById('toast-message').innerText = message;
             toast.classList.remove('opacity-0', 'pointer-events-none');
