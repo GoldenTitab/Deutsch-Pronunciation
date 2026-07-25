@@ -20,7 +20,6 @@
                         ipa: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                    
                         brand: {
                             50:  'rgb(var(--primary-rgb) / 0.06)',
                             100: 'rgb(var(--primary-rgb) / 0.12)',
@@ -285,6 +284,11 @@
                 </select>
             </div>
             <div id="grammarGrid" class="grammar-grid"></div>
+
+            <div id="cultureNotesWrap" style="margin-top:2rem;">
+                <h3 style="margin-bottom:0.75rem;"><i class="fas fa-globe-europe" aria-hidden="true"></i> نکات فرهنگی (Landeskunde) — سطوح B2/C1</h3>
+                <div id="cultureNotesGrid" class="grammar-grid"></div>
+            </div>
         </section>
 
         <section id="conjugation" class="section">
@@ -292,6 +296,11 @@
             <p style="color:var(--text-muted);margin-bottom:1rem;">صرف زمان حال و زمان کامل (Perfekt) مهم‌ترین افعال آلمانی، شامل افعال بی‌قاعده و کمکی-وجهی.</p>
             <div class="controls-bar">
                 <input type="text" id="verbSearch" placeholder="جستجوی فعل (مثلاً sein, haben, sprechen)...">
+                <select id="verbLevelFilter">
+                    <option value="all">همه سطوح</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                </select>
                 <button id="verbExerciseBtn" class="btn-accent">تمرین صرف افعال</button>
             </div>
             <div id="verbExerciseArea"></div>
