@@ -1,4 +1,4 @@
-const CACHE_NAME = 'german-master-v6';
+const CACHE_NAME = 'german-master-v8';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -6,7 +6,13 @@ const CORE_ASSETS = [
   './style.css',
   './script.js',
   './phonetics.js',
-  './data.json'
+  './data/core.json',
+  './data/vocab-A0.json',
+  './data/vocab-A1.json',
+  './data/vocab-A2.json',
+  './data/vocab-B1.json',
+  './data/vocab-B2.json',
+  './data/vocab-C1.json'
 ];
 
 self.addEventListener('install', event => {
