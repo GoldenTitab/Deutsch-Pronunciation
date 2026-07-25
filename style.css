@@ -10,8 +10,6 @@
     --table-hover: #f1f3f5;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --transition: all 0.3s ease;
-
-
     --primary-rgb: 59 130 246;
     --primary-hover-rgb: 37 99 235;
     --accent-rgb: 16 185 129;
@@ -804,22 +802,35 @@ footer {
 }
 
 @media (max-width: 760px) {
+    .table-container {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+    }
     #vocabTable thead { display: none; }
-    #vocabTable, #vocabTable tbody, #vocabTable tr, #vocabTable td {
+    #vocabTable, #vocabTable tbody { display: block; width: 100%; }
+    #vocabTable { border: none; background: transparent; box-shadow: none; }
+    #vocabTable tr {
         display: block;
         width: 100%;
-    }
-    #vocabTable tr {
-        border-bottom: 1px solid var(--border-color);
-        padding: 0.75rem 1rem;
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        padding: 0.85rem 1rem;
+        margin-bottom: 0.75rem;
     }
     #vocabTable td {
-        border: none;
-        padding: 0.3rem 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 0.75rem;
+        border: none;
+        padding: 0.35rem 0;
+    }
+    #vocabTable td:not(:last-child) {
+        border-bottom: 1px dashed var(--border-color);
     }
     #vocabTable td::before {
         content: attr(data-label);
@@ -830,15 +841,49 @@ footer {
     }
     #vocabTable td.vocab-actions {
         justify-content: flex-end;
+        border-bottom: none;
     }
-}
-
-body.dark #phonetics {
-    background-color: #0b1220;
 }
 
 body.dark #phonetics header.bg-brand-dark {
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+body.dark #phonetics .bg-white,
+body.dark #phonetics .bg-slate-50,
+body.dark #phonetics .hover\:bg-slate-50:hover {
+    background-color: var(--card-bg);
+}
+body.dark #phonetics .bg-slate-50\/50 {
+    background-color: rgb(var(--card-bg-rgb) / 0.5);
+}
+body.dark #phonetics .bg-slate-100,
+body.dark #phonetics .bg-slate-200,
+body.dark #phonetics .hover\:bg-slate-200:hover {
+    background-color: var(--table-hover);
+}
+
+body.dark #phonetics .border-slate-100,
+body.dark #phonetics .border-slate-200,
+body.dark #phonetics .border-slate-300,
+body.dark #phonetics .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+    border-color: var(--border-color);
+}
+
+body.dark #phonetics .text-slate-200,
+body.dark #phonetics .text-slate-300,
+body.dark #phonetics .text-slate-400,
+body.dark #phonetics .text-slate-500 {
+    color: var(--text-muted);
+}
+body.dark #phonetics .text-slate-600,
+body.dark #phonetics .text-slate-700,
+body.dark #phonetics .text-slate-800,
+body.dark #phonetics .text-brand-dark {
+    color: var(--text-color);
+}
+body.dark #phonetics .placeholder-slate-300::placeholder {
+    color: var(--text-muted);
 }
 
 .app-loading-overlay {
