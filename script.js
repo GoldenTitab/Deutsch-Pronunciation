@@ -183,7 +183,6 @@ function activateSection(id, opts = {}) {
     }
     if (ariaLiveRegion) ariaLiveRegion.textContent = 'بخش ' + (SECTION_LABELS[id] || id) + ' نمایش داده شد';
 
-
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
     target.focus({ preventScroll: true });
     target.addEventListener('blur', function clearTabindex() {
@@ -861,6 +860,7 @@ function showFlashcard() {
     flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
     flashRateRow.style.display = 'none';
 
+    // اتصال دکمه‌های پخش صدا در front و back
     attachSpeaker(flashFront);
     if (flashBack) attachSpeaker(flashBack);
 }
