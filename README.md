@@ -30,8 +30,8 @@ This repository hosts a static web page (converted into an installable PWA) that
    - Follow the instructions in `worker.js` to set up your own Cloudflare Worker.
    - Set the `TTS_API_KEY` secret with your Google Cloud TTS API key.
 
-3. **Add Icons**:
-   - Place `icon-192.png` and `icon-512.png` inside an `icons/` folder for PWA support.
+3. **Icons**:
+   - `icons/icon-192.png` and `icons/icon-512.png` are already included, generated from the site's brand palette.
 
 4. **Deploy**:
    - Upload all files to a web server (or use GitHub Pages, Netlify, etc.).
