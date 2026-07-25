@@ -660,7 +660,7 @@ footer {
     opacity: 0.85;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .nav-toggle {
         display: block;
     }
