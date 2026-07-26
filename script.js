@@ -217,7 +217,7 @@ function activateSection(id, opts = {}) {
   if (navLink) navLink.classList.add('active');
   navList.classList.remove('open');
   navToggle.setAttribute('aria-expanded', 'false');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (opts.scrollTop !== false) window.scrollTo({ top: 0, behavior: 'smooth' });
   if (opts.updateHash !== false && location.hash.slice(1) !== id) {
     history.pushState(null, '', '#' + id);
   }
@@ -243,9 +243,41 @@ document.querySelectorAll('.nav-list a[data-section]').forEach(a => {
   });
 });
 
+function resolveHashTarget(id) {
+  const el = document.getElementById(id);
+  if (!el) return null;
+  const section = el.classList.contains('section') ? el : el.closest('.section');
+  if (!section) return null;
+  return { section, target: el };
+}
+
+function goToHash(id, { updateHash = true } = {}) {
+  const resolved = resolveHashTarget(id);
+  if (!resolved) return false;
+  const isTopLevel = resolved.section === resolved.target;
+  if (!resolved.section.classList.contains('active')) {
+    activateSection(resolved.section.id, { updateHash: false, scrollTop: isTopLevel });
+  }
+  if (!isTopLevel) {
+    requestAnimationFrame(() => resolved.target.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  }
+  if (updateHash && location.hash.slice(1) !== id) {
+    history.pushState(null, '', '#' + id);
+  }
+  return true;
+}
+
 window.addEventListener('popstate', () => {
   const id = location.hash.slice(1);
-  if (id && document.getElementById(id)) activateSection(id, { updateHash: false });
+  if (id) goToHash(id, { updateHash: false });
+});
+
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[href^="#"]');
+  if (!link || link.hasAttribute('data-section')) return;
+  const id = link.getAttribute('href').slice(1);
+  if (!id) return;
+  if (goToHash(id, { updateHash: true })) e.preventDefault();
 });
 
 document.addEventListener('keydown', (e) => {
@@ -312,8 +344,9 @@ async function loadData() {
     renderReading();
     initFlashcards();
     updateProgress();
+    if (typeof populateRecorderSelect === 'function') populateRecorderSelect();
     const hash = location.hash.slice(1);
-    if (hash && document.getElementById(hash)) activateSection(hash, { updateHash: false });
+    if (hash) goToHash(hash, { updateHash: false });
   } catch (err) {
     console.error('Error loading data:', err);
     document.querySelector('main').innerHTML = `
@@ -1158,3 +1191,363 @@ loadData();
 
 window.speakGerman = speakGerman;
 window.playAudio = speakGerman;
+
+
+function showToast(message) {
+  const toast = document.getElementById('ui-toast');
+  const msgEl = document.getElementById('toast-message');
+  if (!toast || !msgEl) return;
+  msgEl.textContent = message;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+async function playPhoneticsAudio(word, btnElement) {
+  let icon, bars;
+  if (btnElement) {
+    icon = btnElement.querySelector('.play-icon, .fa-volume-up');
+    bars = btnElement.querySelectorAll('.equalizer-bar');
+    btnElement.classList.add('playing-audio', 'playing-bg');
+    if (icon) icon.classList.add('hidden');
+    if (bars) bars.forEach(b => b.classList.remove('hidden'));
+  }
+  const resetBtn = () => {
+    if (!btnElement) return;
+    btnElement.classList.remove('playing-audio', 'playing-bg');
+    if (icon) icon.classList.remove('hidden');
+    if (bars) bars.forEach(b => b.classList.add('hidden'));
+  };
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 3000);
+    const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(word)}`;
+    const response = await fetch(workerUrl, { signal: controller.signal });
+    clearTimeout(timer);
+    if (response.ok) {
+      const audioBlob = await response.blob();
+      const audioUrl = URL.createObjectURL(audioBlob);
+      const audio = new Audio(audioUrl);
+      await new Promise((resolve, reject) => {
+        audio.onended = resolve;
+        audio.onerror = reject;
+        audio.play().catch(reject);
+      });
+      URL.revokeObjectURL(audioUrl);
+      resetBtn();
+      return;
+    }
+  } catch (e) {}
+
+  try {
+    if (!window.speechSynthesis) throw new Error('No speechSynthesis');
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(word);
+    let voices = window.speechSynthesis.getVoices();
+    let germanVoices = voices.filter(v => v.lang.toLowerCase().startsWith('de'));
+    if (germanVoices.length > 0) {
+      utterance.voice = germanVoices[0];
+      utterance.lang = germanVoices[0].lang;
+    } else {
+      utterance.lang = 'de-DE';
+      const banner = document.getElementById('no-german-voice-banner');
+      if (banner) banner.classList.remove('hidden');
+    }
+    utterance.rate = 0.85;
+    utterance.pitch = 1.0;
+    await new Promise((resolve, reject) => {
+      utterance.onend = resolve;
+      utterance.onerror = reject;
+      window.speechSynthesis.speak(utterance);
+    });
+    resetBtn();
+  } catch (e) {
+    showToast('پخش صدا با هیچ منبعی ممکن نشد. اتصال اینترنت را بررسی کن.');
+    resetBtn();
+  }
+}
+
+const phoneticsRules = [
+  { regex: /tsch/gi, color: '#a855f7', hint: '<strong>tsch</strong>: صدای ترکیبی «چ»' },
+  { regex: /sch/gi, color: '#ec4899', hint: '<strong>sch</strong>: صدای «ش»' },
+  { regex: /chs/gi, color: '#f59e0b', hint: '<strong>chs</strong>: صدای ترکیبی «کْس»' },
+  { regex: /tion\b/gi, color: '#6366f1', hint: '<strong>tion</strong>: صدای «تسیون»' },
+  { regex: /ig\b/gi, color: '#14b8a6', hint: '<strong>ig</strong>: صدای نرم «ایش»' },
+  { regex: /er/gi, color: '#f97316', hint: '<strong>er</strong>: صدای «آ/اَ» کوتاه' },
+  { regex: /ei/gi, color: '#eab308', hint: '<strong>ei</strong>: صدای «آی»' },
+  { regex: /ie/gi, color: '#3b82f6', hint: '<strong>ie</strong>: صدای «ای» کشیده' },
+  { regex: /eu|äu/gi, color: '#84cc16', hint: '<strong>eu / äu</strong>: صدای «اُی»' },
+  { regex: /au/gi, color: '#f97316', hint: '<strong>au</strong>: صدای «آو»' },
+  { regex: /ä/gi, color: '#f59e0b', hint: '<strong>ä</strong>: صدای «اِ» باز' },
+  { regex: /ö/gi, color: '#d946ef', hint: '<strong>ö</strong>: صدای خاص (گرد + اِ)' },
+  { regex: /ü/gi, color: '#8b5cf6', hint: '<strong>ü</strong>: صدای خاص (غنچه + ای)' },
+  { regex: /z/gi, color: '#f43f5e', hint: '<strong>z</strong>: صدای «تس»' },
+  { regex: /w/gi, color: '#0ea5e9', hint: '<strong>w</strong>: صدای «و»' },
+  { regex: /v/gi, color: '#64748b', hint: '<strong>v</strong>: معمولاً صدای «ف»' },
+  { regex: /b\b/gi, color: '#94a3b8', hint: '<strong>b</strong> در انتها: تبدیل به «پ»' },
+  { regex: /d\b/gi, color: '#94a3b8', hint: '<strong>d</strong> در انتها: تبدیل به «ت»' },
+  { regex: /g\b/gi, color: '#94a3b8', hint: '<strong>g</strong> در انتها: تبدیل به «ک»' },
+];
+
+const analyzerInput = document.getElementById('analyzer-input');
+const emptyState = document.getElementById('analyzer-empty-state');
+const resultArea = document.getElementById('analyzer-result-area');
+const displayWord = document.getElementById('analyzed-word-display');
+const rulesList = document.getElementById('analyzer-rules-list');
+const playBtn = document.getElementById('analyzer-play-btn');
+const clearBtn = document.getElementById('analyzer-clear-btn');
+
+function analyzeWord(word) {
+  let intervals = [];
+  let appliedRules = [];
+  for (let rule of phoneticsRules) {
+    let match;
+    rule.regex.lastIndex = 0;
+    while ((match = rule.regex.exec(word)) !== null) {
+      let start = match.index;
+      let end = start + match[0].length;
+      let overlap = intervals.some(inv => start < inv.end && end > inv.start);
+      if (!overlap) {
+        intervals.push({ start, end, text: match[0], rule });
+        if (!appliedRules.some(r => r.hint === rule.hint)) appliedRules.push(rule);
+      }
+      if (rule.regex.lastIndex === match.index) rule.regex.lastIndex++;
+    }
+  }
+  intervals.sort((a, b) => a.start - b.start);
+  let parts = [];
+  let currentIndex = 0;
+  for (let inv of intervals) {
+    if (inv.start > currentIndex) parts.push({ text: word.substring(currentIndex, inv.start), matched: false });
+    parts.push({ text: inv.text, matched: true, color: inv.rule.color });
+    currentIndex = inv.end;
+  }
+  if (currentIndex < word.length) parts.push({ text: word.substring(currentIndex), matched: false });
+  return { parts, rules: appliedRules };
+}
+
+if (analyzerInput) {
+  analyzerInput.addEventListener('input', function (e) {
+    const word = e.target.value.trim();
+    if (clearBtn) clearBtn.classList.toggle('hidden', e.target.value.length === 0);
+    if (word.length === 0) {
+      emptyState.classList.remove('hidden');
+      resultArea.classList.add('hidden');
+      playBtn.classList.add('hidden');
+      return;
+    }
+    emptyState.classList.add('hidden');
+    resultArea.classList.remove('hidden');
+    playBtn.classList.remove('hidden');
+    const analysis = analyzeWord(word);
+    let displayHtml = '';
+    analysis.parts.forEach(part => {
+      displayHtml += part.matched
+        ? `<span class="phonetic-highlight" style="color:${part.color}">${escHtml(part.text)}</span>`
+        : `<span>${escHtml(part.text)}</span>`;
+    });
+    displayWord.innerHTML = displayHtml;
+    rulesList.innerHTML = analysis.rules.length === 0
+      ? '<li style="justify-content:center;color:var(--text-muted);">کلمه ساده‌ای است، قانون ترکیبی خاصی در آن یافت نشد.</li>'
+      : analysis.rules.map(rule => `
+          <li><span class="rule-swatch" style="background:${rule.color}"></span><span>${rule.hint}</span></li>
+        `).join('');
+  });
+
+  playBtn.addEventListener('click', () => {
+    const word = analyzerInput.value.trim();
+    if (word) playPhoneticsAudio(word, null);
+  });
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      analyzerInput.value = '';
+      analyzerInput.dispatchEvent(new Event('input'));
+      analyzerInput.focus();
+    });
+  }
+}
+
+// --- Minimal pairs listening drill ---------------------------------------
+const MINIMAL_PAIRS = [
+  [{ w: 'Bett', fa: 'تخت', en: 'bed' }, { w: 'Beet', fa: 'باغچه', en: 'flower bed' }],
+  [{ w: 'Höhle', fa: 'غار', en: 'cave' }, { w: 'Hölle', fa: 'جهنم', en: 'hell' }],
+  [{ w: 'Miete', fa: 'اجاره', en: 'rent' }, { w: 'Mitte', fa: 'وسط', en: 'middle' }],
+  [{ w: 'rot', fa: 'قرمز', en: 'red' }, { w: 'tot', fa: 'مرده', en: 'dead' }],
+  [{ w: 'ich', fa: 'من', en: 'I' }, { w: 'ach', fa: '(حرف ندا) آخ', en: 'oh / ah' }],
+];
+let currentPair = null;
+let pairScore = { correct: 0, total: 0 };
+
+function newPair() {
+  const pair = MINIMAL_PAIRS[Math.floor(Math.random() * MINIMAL_PAIRS.length)];
+  const shuffled = Math.random() < 0.5 ? pair : [pair[1], pair[0]];
+  currentPair = { pair: shuffled, answer: shuffled[Math.round(Math.random())] };
+  const wrap = document.getElementById('pair-options');
+  const meaningsWrap = document.getElementById('pair-meanings');
+  if (!wrap) return;
+  wrap.innerHTML = shuffled.map(item => `<button data-word="${escHtml(item.w)}">${escHtml(item.w)}</button>`).join('');
+  wrap.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => checkPair(btn, btn.dataset.word));
+  });
+  if (meaningsWrap) meaningsWrap.innerHTML = '';
+}
+
+function playCurrentPair() {
+  if (!currentPair) newPair();
+  playPhoneticsAudio(currentPair.answer.w, document.getElementById('pair-play-btn'));
+}
+
+function checkPair(btn, chosenWord) {
+  const correct = chosenWord === currentPair.answer.w;
+  pairScore.total++;
+  if (correct) {
+    pairScore.correct++;
+    btn.classList.add('pair-correct');
+  } else {
+    btn.classList.add('pair-wrong');
+    [...document.getElementById('pair-options').children].forEach(b => {
+      if (b.textContent === currentPair.answer.w) b.classList.add('pair-correct');
+    });
+  }
+  document.getElementById('pair-score').textContent = `امتیاز: ${pairScore.correct} از ${pairScore.total}`;
+  const meaningsWrap = document.getElementById('pair-meanings');
+  if (meaningsWrap) {
+    meaningsWrap.innerHTML = currentPair.pair.map(item =>
+      `<span><b class="font-ipa">${escHtml(item.w)}</b>: ${escHtml(item.fa)} · ${escHtml(item.en)}</span>`
+    ).join('');
+  }
+  setTimeout(newPair, 1600);
+}
+if (document.getElementById('pair-options')) newPair();
+
+let mediaRecorder, recChunks = [], recStream, isRecording = false;
+
+async function toggleRecording() {
+  const btn = document.getElementById('rec-toggle-btn');
+  const hint = document.getElementById('rec-hint');
+  if (!isRecording) {
+    try {
+      recStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch (e) {
+      if (hint) hint.textContent = 'دسترسی به میکروفون رد شد یا در دسترس نیست.';
+      return;
+    }
+    recChunks = [];
+    mediaRecorder = new MediaRecorder(recStream);
+    mediaRecorder.ondataavailable = e => recChunks.push(e.data);
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(recChunks, { type: 'audio/webm' });
+      const url = URL.createObjectURL(blob);
+      document.getElementById('rec-playback-wrap').innerHTML =
+        `<div class="text-muted" style="margin-bottom:0.5rem;font-size:0.8rem;">صدای ضبط‌شده‌ی شما:</div><audio controls src="${url}" style="width:100%"></audio>`;
+      recStream.getTracks().forEach(t => t.stop());
+    };
+    mediaRecorder.start();
+    isRecording = true;
+    btn.classList.add('recording');
+    if (hint) hint.textContent = 'در حال ضبط… برای توقف دوباره بزن';
+  } else {
+    mediaRecorder.stop();
+    isRecording = false;
+    btn.classList.remove('recording');
+    if (hint) hint.textContent = 'ضبط تمام شد. صدای نیتیو و صدای خودت را مقایسه کن.';
+  }
+}
+
+const DEFAULT_RECORDER_WORDS = [
+  { word: 'Hallo', fa: 'سلام' }, { word: 'Danke', fa: 'متشکرم' },
+  { word: 'Bitte', fa: 'خواهش می‌کنم' }, { word: 'Tschüs', fa: 'خداحافظ' },
+];
+
+function populateRecorderSelect(filter) {
+  const recSelect = document.getElementById('rec-word-select');
+  if (!recSelect) return;
+  const source = (APP_DATA && APP_DATA.vocabulary && APP_DATA.vocabulary.length)
+    ? APP_DATA.vocabulary : DEFAULT_RECORDER_WORDS;
+  const term = (filter || '').toLowerCase().trim();
+  const words = (term
+    ? source.filter(w => w.word.toLowerCase().includes(term) || (w.fa && w.fa.includes(term)) || (w.en && w.en.toLowerCase().includes(term)))
+    : source
+  ).slice(0, 200);
+  const prevValue = recSelect.value;
+  recSelect.innerHTML = words.length
+    ? words.map(w => `<option value="${escHtml(w.word)}">${escHtml(w.word)}${w.fa ? ' — ' + escHtml(w.fa) : ''}</option>`).join('')
+    : '<option value="">کلمه‌ای یافت نشد</option>';
+  if (words.some(w => w.word === prevValue)) recSelect.value = prevValue;
+}
+
+const recWordSearch = document.getElementById('rec-word-search');
+if (recWordSearch) recWordSearch.addEventListener('input', () => populateRecorderSelect(recWordSearch.value));
+populateRecorderSelect();
+
+let deferredInstallPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  const btn = document.getElementById('install-app-btn');
+  if (btn) btn.style.display = 'inline-flex';
+});
+
+function installApp() {
+  if (!deferredInstallPrompt) return;
+  deferredInstallPrompt.prompt();
+  deferredInstallPrompt = null;
+  const btn = document.getElementById('install-app-btn');
+  if (btn) btn.style.display = 'none';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const checkboxes = document.querySelectorAll('.word-check');
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem('germanPhoneticsProgress')) || {}; } catch (e) {}
+  checkboxes.forEach(cb => {
+    const word = cb.getAttribute('data-word');
+    if (saved[word]) cb.checked = true;
+  });
+  updatePhoneticsProgressUI();
+});
+
+function updatePhoneticsProgressUI() {
+  const checkboxes = document.querySelectorAll('.word-check');
+  let total = checkboxes.length;
+  if (total === 0) return;
+  let checked = document.querySelectorAll('.word-check:checked').length;
+  let percentage = Math.round((checked / total) * 100);
+  const bar = document.getElementById('main-progress-bar');
+  const text = document.getElementById('progress-text');
+  if (bar) bar.style.width = percentage + '%';
+  if (text) text.innerText = percentage + '%';
+  let savedState = {};
+  checkboxes.forEach(cb => { savedState[cb.getAttribute('data-word')] = cb.checked; });
+  try { localStorage.setItem('germanPhoneticsProgress', JSON.stringify(savedState)); } catch (e) {}
+  if (percentage === 100 && checked > 0) {
+    setTimeout(() => showToast('🎉 تبریک! شما تمام کلمات این مسترکلاس را مسلط شدید!'), 500);
+  }
+}
+
+document.querySelectorAll('.word-check').forEach(cb => {
+  cb.addEventListener('change', updatePhoneticsProgressUI);
+});
+
+const phoneticsScrollSections = document.querySelectorAll('#phonetics .phonetics-section[id]');
+const phoneticsSidebarLinks = document.querySelectorAll('.phonetics-sidebar-inner nav a');
+const phoneticsMobileNavLinks = document.querySelectorAll('.phonetics-mobile-nav a');
+const backToTopBtn = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (!document.getElementById('phonetics').classList.contains('active')) return;
+  let current = '';
+  phoneticsScrollSections.forEach((section) => {
+    if (window.scrollY >= section.offsetTop - 200) current = section.getAttribute('id');
+  });
+  phoneticsSidebarLinks.forEach((a) => {
+    a.classList.toggle('active-anchor', current !== '' && a.getAttribute('href') === '#' + current);
+  });
+  phoneticsMobileNavLinks.forEach((a) => {
+    a.classList.toggle('active-anchor', current !== '' && a.getAttribute('href') === '#' + current);
+  });
+  if (backToTopBtn) backToTopBtn.classList.toggle('hidden', window.scrollY <= window.innerHeight * 0.8);
+});
+
+console.log('مسترکلاس فونتیک آلمانی بارگذاری شد!');
