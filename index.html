@@ -94,7 +94,7 @@
                 <a href="#endings">پایان‌ها</a>
                 <a href="#minimal-pairs">جفت‌های کمینه</a>
                 <a href="#recorder">ضبط صدا</a>
-                <a href="#phonetics-flashcards">مرور با فاصله</a>
+                <a href="#" data-section="flashcards">مرور با فلش‌کارت</a>
               </div>
             </div>
           </li>
@@ -322,8 +322,8 @@
     </section>
 
     <section id="phonetics" class="section">
-      <div class="fixed top-0 left-0 w-full h-1.5 bg-slate-200 z-50">
-        <div id="main-progress-bar" class="h-full bg-emerald-500 transition-all duration-500 ease-out" style="width:0%"></div>
+      <div class="phonetics-top-progress">
+        <div id="main-progress-bar" class="phonetics-top-progress-fill" style="width:0%"></div>
       </div>
 
       <header class="phonetics-hero">
@@ -356,7 +356,7 @@
         <a href="#endings">پایان‌ها</a>
         <a href="#minimal-pairs">شنیداری</a>
         <a href="#recorder">ضبط صدا</a>
-        <a href="#phonetics-flashcards">مرور</a>
+        <a href="#" data-section="flashcards">مرور</a>
       </nav>
 
       <div id="ui-toast" class="ui-toast">
@@ -380,7 +380,7 @@
               <a href="#endings"><i class="fas fa-text-width"></i> قوانین انتها و خوشه‌ها</a>
               <a href="#minimal-pairs"><i class="fas fa-headphones"></i> تمرین شنیداری</a>
               <a href="#recorder"><i class="fas fa-microphone"></i> ضبط صدا</a>
-              <a href="#phonetics-flashcards"><i class="fas fa-layer-group"></i> مرور با فاصله</a>
+              <a href="#" data-section="flashcards"><i class="fas fa-layer-group"></i> مرور با فلش‌کارت</a>
             </nav>
           </div>
         </aside>
@@ -580,7 +580,102 @@
               <div class="section-icon"><i class="fas fa-language"></i></div>
               <h2>بخش دوم: کانسونانت‌های آفتاب‌پرست</h2>
             </div>
-            <p class="text-muted">(تمام محتوای بخش Consonants شامل R, CH, CHS, C, ck, tz, zt, S, ß, Z, W, V در فایل کامل موجود است)</p>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>حرف R: از گلو تا محو شدن</h3>
+                <span class="card-badge">صدای متغیر</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-blue">
+                  <ul>
+                    <li><code>R r</code> در ابتدای کلمه یا هجا، صدایی گلویی و خشن (شبیه غرغره کردن آب یا R فرانسوی) دارد.</li>
+                    <li><code>R r</code> در انتهای کلمه یا بعد از مصوت بلند، تقریباً محو می‌شود و به یک صدای «آ» کوتاه و باز تبدیل می‌شود — اصلاً غلیظ تلفظ نمی‌شود.</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">rot</span><span data-label="معنی">قرمز (R گلویی در ابتدا)</span><span data-label="تلفظ فارسی" class="fa-phonetic">روت</span><span data-label="IPA" class="ipa-cell">[ʁoːt]</span><span class="action-cell"><button onclick="playPhoneticsAudio('rot', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="rot-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Vater</span><span data-label="معنی">پدر (R انتهایی محو‌شونده)</span><span data-label="تلفظ فارسی" class="fa-phonetic">فاتـَ</span><span data-label="IPA" class="ipa-cell">[ˈfaːtɐ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Vater', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Vater-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Uhr</span><span data-label="معنی">ساعت (R کاملاً محو)</span><span data-label="تلفظ فارسی" class="fa-phonetic">اوآ</span><span data-label="IPA" class="ipa-cell">[uːɐ̯]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Uhr', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Uhr-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>دو صدای CH: نرم (Ich) و خشن (Ach)</h3>
+                <span class="card-badge">وابسته به حرف قبل</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-amber">
+                  <strong>مکانیزم ذهنی (لایف‌هک):</strong>
+                  <ul>
+                    <li>بعد از <code>e, i, ä, ö, ü</code> و صامت‌ها، یا در پسوند کوچک‌کننده <code>-chen</code>: صدای نرم «ish/ich» از جلوی دهان.</li>
+                    <li>بعد از <code>a, o, u, au</code>: صدای خشن و گلویی شبیه «خ» فارسی.</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">ich</span><span data-label="معنی">من (Ich-Laut نرم)</span><span data-label="تلفظ فارسی" class="fa-phonetic">ایش</span><span data-label="IPA" class="ipa-cell">[ɪç]</span><span class="action-cell"><button onclick="playPhoneticsAudio('ich', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="ich-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Milch</span><span data-label="معنی">شیر (Ich-Laut نرم)</span><span data-label="تلفظ فارسی" class="fa-phonetic">میلش</span><span data-label="IPA" class="ipa-cell">[mɪlç]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Milch', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Milch-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Buch</span><span data-label="معنی">کتاب (Ach-Laut خشن)</span><span data-label="تلفظ فارسی" class="fa-phonetic">بوخ</span><span data-label="IPA" class="ipa-cell">[buːx]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Buch', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Buch-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Nacht</span><span data-label="معنی">شب (Ach-Laut خشن)</span><span data-label="تلفظ فارسی" class="fa-phonetic">ناخت</span><span data-label="IPA" class="ipa-cell">[naxt]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Nacht', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Nacht-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>S تنها، SS و ß</h3>
+                <span class="card-badge">بی‌واک یا واک‌دار</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-blue">
+                  <ul>
+                    <li><code>S s</code> در ابتدای هجا و قبل از مصوت: صدای واک‌دار «ز» می‌دهد.</li>
+                    <li><code>SS ss</code> و <code>ß</code>: همیشه بی‌واک و صدای «س» ساده می‌دهند؛ <code>ß</code> معمولاً بعد از مصوت بلند یا دوصدایی می‌آید.</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">sehen</span><span data-label="معنی">دیدن (s واک‌دار)</span><span data-label="تلفظ فارسی" class="fa-phonetic">زیـهِن</span><span data-label="IPA" class="ipa-cell">[ˈzeːən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('sehen', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="sehen-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Wasser</span><span data-label="معنی">آب (ss بی‌واک)</span><span data-label="تلفظ فارسی" class="fa-phonetic">واسـِر</span><span data-label="IPA" class="ipa-cell">[ˈvasɐ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Wasser', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Wasser-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Straße</span><span data-label="معنی">خیابان (ß بی‌واک)</span><span data-label="تلفظ فارسی" class="fa-phonetic">اشتراسـِه</span><span data-label="IPA" class="ipa-cell">[ˈʃtʁaːsə]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Straße', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Strasse-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>W در برابر V، و خوشه‌های SP-/ST- در ابتدای کلمه</h3>
+                <span class="card-badge">دام‌های رایج فارسی‌زبانان</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-emerald">
+                  <ul>
+                    <li><code>W w</code> همیشه صدای «و» انگلیسی (v) می‌دهد — هرگز «w» انگلیسی نیست.</li>
+                    <li><code>V v</code> در بیشتر کلمات اصیل آلمانی صدای «ف» می‌دهد، ولی در کلمات وام‌گرفته (لاتین/بین‌المللی) صدای «و» دارد.</li>
+                    <li><code>Sp-</code> و <code>St-</code> در ابتدای کلمه، به «اشپ» و «اشت» تبدیل می‌شوند.</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Vater</span><span data-label="معنی">پدر (V → ف)</span><span data-label="تلفظ فارسی" class="fa-phonetic">فاتـَ</span><span data-label="IPA" class="ipa-cell">[ˈfaːtɐ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Vater', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Vater2-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Vase</span><span data-label="معنی">گلدان (V وام‌واژه → و)</span><span data-label="تلفظ فارسی" class="fa-phonetic">وازِه</span><span data-label="IPA" class="ipa-cell">[ˈvaːzə]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Vase', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Vase-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">sprechen</span><span data-label="معنی">صحبت کردن (sp → اشپ)</span><span data-label="تلفظ فارسی" class="fa-phonetic">اشپـرِشـِن</span><span data-label="IPA" class="ipa-cell">[ˈʃpʁɛçən]</span><span class="action-cell"><button onclick="playPhoneticsAudio('sprechen', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="sprechen-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Stadt</span><span data-label="معنی">شهر (st → اشت)</span><span data-label="تلفظ فارسی" class="fa-phonetic">اشتات</span><span data-label="IPA" class="ipa-cell">[ʃtat]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Stadt', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Stadt-cons"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section id="endings" class="phonetics-section">
@@ -588,7 +683,70 @@
               <div class="section-icon"><i class="fas fa-flag-checkered"></i></div>
               <h2>بخش سوم: قوانین انتهای کلمات و خوشه‌ها</h2>
             </div>
-            <p class="text-muted">(محتوای کامل شامل Auslautverhärtung, خوشه‌های آغازین, پایان‌های ویژه در فایل کامل موجود است)</p>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>Auslautverhärtung: سخت شدن حروف انتهایی</h3>
+                <span class="card-badge">مهم‌ترین قانون انتهای کلمه</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-amber">
+                  <strong>مکانیزم ذهنی (لایف‌هک):</strong>
+                  <p>در انتهای کلمه یا هجا، حروف واک‌دار <code>b, d, g</code> همیشه بی‌واک تلفظ می‌شوند و به ترتیب مثل <strong>p, t, k</strong> شنیده می‌شوند — حتی اگر در نوشتار همان حرف اصلی باقی بماند.</p>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Hund</span><span data-label="معنی">سگ (d → ت)</span><span data-label="تلفظ فارسی" class="fa-phonetic">هونت</span><span data-label="IPA" class="ipa-cell">[hʊnt]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Hund', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Hund-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Tag</span><span data-label="معنی">روز (g → ک)</span><span data-label="تلفظ فارسی" class="fa-phonetic">تاک</span><span data-label="IPA" class="ipa-cell">[taːk]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Tag', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Tag-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">gelb</span><span data-label="معنی">زرد (b → پ)</span><span data-label="تلفظ فارسی" class="fa-phonetic">گِلپ</span><span data-label="IPA" class="ipa-cell">[ɡɛlp]</span><span class="action-cell"><button onclick="playPhoneticsAudio('gelb', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="gelb-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>پسوند ig-</h3>
+                <span class="card-badge">استثنای مهم املایی</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-blue">
+                  <p>پسوند <code>-ig</code> در انتهای کلمه، برخلاف ظاهرش، مثل <strong>«ish/ich» نرم</strong> (همان Ich-Laut) تلفظ می‌شود، نه «ایگ». این یکی از رایج‌ترین اشتباهات زبان‌آموزان است.</p>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">richtig</span><span data-label="معنی">درست</span><span data-label="تلفظ فارسی" class="fa-phonetic">ریشتیش</span><span data-label="IPA" class="ipa-cell">[ˈʁɪçtɪç]</span><span class="action-cell"><button onclick="playPhoneticsAudio('richtig', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="richtig-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">wichtig</span><span data-label="معنی">مهم</span><span data-label="تلفظ فارسی" class="fa-phonetic">ویشتیش</span><span data-label="IPA" class="ipa-cell">[ˈvɪçtɪç]</span><span class="action-cell"><button onclick="playPhoneticsAudio('wichtig', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="wichtig-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">König</span><span data-label="معنی">پادشاه</span><span data-label="تلفظ فارسی" class="fa-phonetic">کوـنیش</span><span data-label="IPA" class="ipa-cell">[ˈkøːnɪç]</span><span class="action-cell"><button onclick="playPhoneticsAudio('König', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Konig-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="phonetics-card">
+              <div class="card-header">
+                <h3>پسوند‌های بین‌المللی tion- و پایان بی‌تکیه er-</h3>
+                <span class="card-badge">کلمات هم‌ریشه با انگلیسی</span>
+              </div>
+              <div class="card-body">
+                <div class="rule-box rule-emerald">
+                  <ul>
+                    <li><code>-tion</code> همیشه «تسیون» خوانده می‌شود، با تکیه روی <code>o</code>.</li>
+                    <li><code>-er</code>ی بی‌تکیه در انتهای کلمه (مثل بسیاری از اسم‌ها) به همان صدای محو R تبدیل می‌شود که در بخش قبل دیدیم.</li>
+                  </ul>
+                </div>
+                <div class="word-table-wrap">
+                  <div class="desktop-headers"><span>کلمه آلمانی</span><span>معنی</span><span>تلفظ فارسی</span><span>IPA استاندارد</span><span>پخش</span><span>یادگرفتم</span></div>
+                  <div class="word-list">
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Nation</span><span data-label="معنی">ملت</span><span data-label="تلفظ فارسی" class="fa-phonetic">ناتسیون</span><span data-label="IPA" class="ipa-cell">[naˈt͡si̯oːn]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Nation', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Nation-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Information</span><span data-label="معنی">اطلاعات</span><span data-label="تلفظ فارسی" class="fa-phonetic">این‌فورماتسیون</span><span data-label="IPA" class="ipa-cell">[ɪnfɔʁmaˈt͡si̯oːn]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Information', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Information-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                    <div class="mobile-card-row"><span data-label="کلمه" class="word">Lehrer</span><span data-label="معنی">معلم (er بی‌تکیه)</span><span data-label="تلفظ فارسی" class="fa-phonetic">لـِـرـَ</span><span data-label="IPA" class="ipa-cell">[ˈleːʁɐ]</span><span class="action-cell"><button onclick="playPhoneticsAudio('Lehrer', this)" class="audio-btn"><i class="fas fa-volume-up"></i></button></span><span class="action-cell"><label class="custom-checkbox"><input type="checkbox" class="word-check" data-word="Lehrer-end"><div><svg><use href="#checkmark"/></svg></div></label></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           <section id="minimal-pairs" class="phonetics-section">
@@ -611,24 +769,14 @@
               <h2>ضبط صدا و مقایسه با نیتیو</h2>
             </div>
             <div class="recorder-card">
-              <p>یک کلمه انتخاب کن، صدای نیتیو را بشنو، بعد صدای خودت را ضبط کن و کنار هم مقایسه کن. می‌تونی کلمات دلخواه خودت رو هم اضافه یا حذف کنی.</p>
+              <p>یک کلمه از واژگان آموزش‌دیده‌شده انتخاب کن، صدای نیتیو را بشنو، بعد صدای خودت را ضبط کن و کنار هم مقایسه کن.</p>
               <div class="recorder-controls">
+                <input id="rec-word-search" type="text" class="recorder-search" placeholder="جستجوی کلمه…" autocomplete="off">
                 <select id="rec-word-select"></select>
-                <button onclick="playPhoneticsAudio(document.getElementById('rec-word-select').value, this)" class="audio-btn"><i class="fas fa-volume-up"></i></button>
+                <button onclick="playPhoneticsAudio(document.getElementById('rec-word-select').value, this)" class="audio-btn" aria-label="پخش تلفظ نیتیو"><i class="fas fa-volume-up"></i></button>
                 <button id="rec-toggle-btn" onclick="toggleRecording()" aria-label="شروع/توقف ضبط"><i class="fas fa-circle"></i></button>
-                <span id="rec-hint">برای ضبط دکمه‌ی قرمز را بزن</span>
               </div>
-              <div class="recorder-actions">
-                <button onclick="toggleAddWordForm()"><i class="fas fa-plus"></i> افزودن کلمه‌ی جدید</button>
-                <button onclick="deleteCurrentWord()"><i class="fas fa-trash"></i> حذف این کلمه</button>
-              </div>
-              <div id="word-add-form" class="add-word-form hidden">
-                <input id="new-word-de" type="text" placeholder="کلمه‌ی آلمانی (مثلاً Kaffee)">
-                <input id="new-word-fa" type="text" placeholder="معنی فارسی (مثلاً قهوه)">
-                <input id="new-word-en" type="text" placeholder="English meaning (coffee)" dir="ltr">
-                <button onclick="addCustomWord()" class="btn-primary">افزودن به لیست</button>
-                <button onclick="toggleAddWordForm()" class="btn-secondary">انصراف</button>
-              </div>
+              <p id="rec-hint" class="rec-hint-note">برای ضبط دکمه‌ی قرمز را بزن</p>
               <div id="rec-playback-wrap" class="rec-playback"></div>
             </div>
           </section>
@@ -636,21 +784,13 @@
           <section id="phonetics-flashcards" class="phonetics-section">
             <div class="section-header">
               <div class="section-icon"><i class="fas fa-layer-group"></i></div>
-              <h2>مرور با فاصله زمانی (Spaced Repetition)</h2>
+              <h2>مرور و مسلط شدن</h2>
             </div>
-            <div class="spaced-card">
-              <p>کلماتی که سخت‌ترند زودتر برمی‌گردند، کلماتی که یاد گرفتی با فاصله‌ی بیشتر مرور می‌شوند — از همان کلمات این صفحه به‌علاوه‌ی هر کلمه‌ای که خودت در بخش «ضبط صدا» اضافه کنی، پس این دسته هیچ‌وقت واقعاً «تمام» نمی‌شود.</p>
-              <div id="flash-card" onclick="flipFlash()" class="spaced-flash-card">
-                <div id="flash-front" class="spaced-front">برای شروع کلیک کن</div>
-                <div id="flash-hint" class="spaced-hint">روی کارت بزن تا تلفظ و معنی را ببینی</div>
-              </div>
-              <div id="flash-rate-row" class="spaced-rate hidden">
-                <button onclick="rateFlash(0)">دوباره ببینم</button>
-                <button onclick="rateFlash(1)">سخت بود</button>
-                <button onclick="rateFlash(2)">خوب بود</button>
-                <button onclick="rateFlash(3)">آسان بود</button>
-              </div>
-              <div id="flash-stats" class="spaced-stats"></div>
+            <div class="minimal-pairs-card">
+              <p>برای مرور با فاصله‌ی زمانی (Spaced Repetition) و پیگیری کلماتی که یاد گرفتی، از بخش «فلش‌کارت» اصلی سایت استفاده کن — همه‌ی واژگان از جمله کلمات همین مسترکلاس آنجا موجود است.</p>
+              <button class="btn-primary btn-lg" onclick="document.querySelector('.nav-list a[data-section=&quot;flashcards&quot;]').click()">
+                <i class="fas fa-layer-group"></i> رفتن به فلش‌کارت‌ها
+              </button>
             </div>
           </section>
 
@@ -666,7 +806,6 @@
   <svg style="display:none"><defs><path id="checkmark" d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></defs></svg>
 
   <script src="script.js"></script>
-  <script src="phonetics.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
