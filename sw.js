@@ -1,11 +1,10 @@
-const CACHE_NAME = 'german-master-v8';
+const CACHE_NAME = 'german-master-v9';
 const CORE_ASSETS = [
   './',
   './index.html',
   './manifest.json',
   './style.css',
   './script.js',
-  './phonetics.js',
   './data/core.json',
   './data/vocab-A0.json',
   './data/vocab-A1.json',
