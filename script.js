@@ -4,6 +4,10 @@ const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
 
 let APP_DATA = null;
 let learnedWords = new Set();
+
+function wKey(w) {
+  return (w && (w.id || w.word)) || '';
+}
 let vocabPage = 1;
 const PAGE_SIZE = 20;
 let currentVocab = [];
@@ -464,17 +468,17 @@ function renderVocab() {
   }
 
   vocabBody.innerHTML = page.map(w => {
-    const isLearned = learnedWords.has(w.word);
+    const isLearned = learnedWords.has(wKey(w));
     return `
     <tr data-word="${escHtml(w.word)}">
-      <td data-label="کلمه"><strong>${escHtml(w.word)}</strong></td>
+      <td data-label="کلمه"><strong lang="de">${escHtml(w.word)}</strong></td>
       <td class="ipa" data-label="تلفظ" dir="ltr">${escHtml(w.ipa || '')}</td>
       <td data-label="فارسی">${escHtml(w.fa || '')}</td>
-      <td data-label="English" dir="ltr">${escHtml(w.en || '')}</td>
+      <td data-label="English" dir="ltr" lang="en">${escHtml(w.en || '')}</td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
         <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up"></i></button>
-        <button class="audio-btn learn-toggle ${isLearned ? 'learned' : ''}" data-word="${escHtml(w.word)}" aria-label="${isLearned ? 'حذف از یادگرفته‌ها' : 'علامت‌گذاری به‌عنوان یادگرفته'}" aria-pressed="${isLearned}">
+        <button class="audio-btn learn-toggle ${isLearned ? 'learned' : ''}" data-word="${escHtml(w.word)}" data-key="${escHtml(wKey(w))}" aria-label="${isLearned ? 'حذف از یادگرفته‌ها' : 'علامت‌گذاری به‌عنوان یادگرفته'}" aria-pressed="${isLearned}">
           <i class="fas ${isLearned ? 'fa-check-circle' : 'fa-circle'}"></i>
         </button>
       </td>
@@ -491,16 +495,16 @@ function renderVocab() {
   vocabBody.querySelectorAll('.learn-toggle').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const word = btn.dataset.word;
-      if (!word) return;
-      if (learnedWords.has(word)) {
-        learnedWords.delete(word);
+      const key = btn.dataset.key;
+      if (!key) return;
+      if (learnedWords.has(key)) {
+        learnedWords.delete(key);
         btn.classList.remove('learned');
         btn.querySelector('i').className = 'fas fa-circle';
         btn.setAttribute('aria-pressed', 'false');
         btn.setAttribute('aria-label', 'علامت‌گذاری به‌عنوان یادگرفته');
       } else {
-        learnedWords.add(word);
+        learnedWords.add(key);
         btn.classList.add('learned');
         btn.querySelector('i').className = 'fas fa-check-circle';
         btn.setAttribute('aria-pressed', 'true');
@@ -582,14 +586,14 @@ function renderGrammar() {
     if (g.examples && Array.isArray(g.examples)) {
       extraContent += g.examples.map(ex => `
         <div class="example" dir="ltr">
-          <span>${escHtml(ex)}</span>
+          <span lang="de">${escHtml(ex)}</span>
           <button class="audio-btn" data-word="${escHtml(ex)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up"></i></button>
         </div>
       `).join('');
     } else if (g.example) {
       extraContent += `
         <div class="example" dir="ltr">
-          <span>${escHtml(g.example)}</span>
+          <span lang="de">${escHtml(g.example)}</span>
           <button class="audio-btn" data-word="${escHtml(g.example)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up"></i></button>
         </div>
       `;
@@ -625,7 +629,7 @@ function renderCultureNotes() {
       <div class="title">${escHtml(n.title || '')}</div>
       <span class="level-tag">${escHtml(n.level || '')}</span>
       <div class="example" dir="ltr">
-        <span>${escHtml(n.text || '')}</span>
+        <span lang="de">${escHtml(n.text || '')}</span>
         ${n.text ? `<button class="audio-btn" data-word="${escHtml(n.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up"></i></button>` : ''}
       </div>
       ${n.fa ? `<div class="trans">🇮🇷 ${escHtml(n.fa)}</div>` : ''}
@@ -655,7 +659,7 @@ function renderVerbs() {
 
   verbGrid.innerHTML = list.map(v => `
     <div class="grammar-card">
-      <div class="title" dir="ltr">${escHtml(v.infinitive)}
+      <div class="title" dir="ltr" lang="de">${escHtml(v.infinitive)}
         <button class="audio-btn" data-word="${escHtml(v.infinitive)}" aria-label="پخش تلفظ ${escHtml(v.infinitive)}"><i class="fas fa-volume-up"></i></button>
       </div>
       <span class="level-tag">${escHtml(v.level || '')}</span>
@@ -666,12 +670,12 @@ function renderVerbs() {
         ${Object.keys(PRONOUN_LABELS).map(p => `
           <tr>
             <td class="pronoun">${PRONOUN_LABELS[p]}</td>
-            <td dir="ltr">${escHtml(v.present[p] || '')}</td>
-            ${v.praeteritum ? `<td dir="ltr">${escHtml(v.praeteritum[p] || '')}</td>` : ''}
+            <td dir="ltr" lang="de">${escHtml(v.present[p] || '')}</td>
+            ${v.praeteritum ? `<td dir="ltr" lang="de">${escHtml(v.praeteritum[p] || '')}</td>` : ''}
           </tr>
         `).join('')}
       </table>
-      <div class="trans" style="margin-top:0.5rem;" dir="ltr">Perfekt: ${escHtml(v.auxiliary)} ... ${escHtml(v.partizip)}</div>
+      <div class="trans" style="margin-top:0.5rem;" dir="ltr" lang="de">Perfekt: ${escHtml(v.auxiliary)} ... ${escHtml(v.partizip)}</div>
     </div>
   `).join('');
 
@@ -694,9 +698,9 @@ function runExercise(container, questions, onFinish) {
     container.innerHTML = `
       <div class="table-container" style="padding:1.5rem;margin-bottom:1rem;">
         <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${idx + 1} از ${questions.length} &nbsp;·&nbsp; امتیاز: ${score}</p>
-        <p style="font-size:1.1rem;margin-bottom:1rem;" dir="ltr">${q.prompt}</p>
+        <p style="font-size:1.1rem;margin-bottom:1rem;" dir="ltr" lang="de">${q.prompt}</p>
         <div style="display:flex;flex-direction:column;gap:0.5rem;">
-          ${q.options.map(o => `<button class="btn-secondary exercise-option" data-value="${escHtml(o)}" style="text-align:right;" dir="ltr">${escHtml(o)}</button>`).join('')}
+          ${q.options.map(o => `<button class="btn-secondary exercise-option" data-value="${escHtml(o)}" style="text-align:right;" dir="ltr" lang="de">${escHtml(o)}</button>`).join('')}
         </div>
       </div>
     `;
@@ -784,7 +788,7 @@ function renderCases() {
         <thead><tr><th>حالت</th>${Object.keys(rows.Nominativ).map(g => `<th>${genderLabel[g]}</th>`).join('')}</tr></thead>
         <tbody>
           ${Object.keys(rows).map(kase => `
-            <tr><td><strong>${kase}</strong></td>${Object.keys(rows[kase]).map(g => `<td dir="ltr">${escHtml(rows[kase][g])}</td>`).join('')}</tr>
+            <tr><td><strong>${kase}</strong></td>${Object.keys(rows[kase]).map(g => `<td dir="ltr" lang="de">${escHtml(rows[kase][g])}</td>`).join('')}</tr>
           `).join('')}
         </tbody>
       </table>
@@ -797,7 +801,7 @@ function renderCases() {
       <table>
         <thead><tr><th>ضمیر (Nominativ)</th><th>Akkusativ</th><th>Dativ</th></tr></thead>
         <tbody>
-          ${c.pronouns.map(p => `<tr><td dir="ltr">${escHtml(p.person)}</td><td dir="ltr">${escHtml(p.akkusativ)}</td><td dir="ltr">${escHtml(p.dativ)}</td></tr>`).join('')}
+          ${c.pronouns.map(p => `<tr><td dir="ltr" lang="de">${escHtml(p.person)}</td><td dir="ltr" lang="de">${escHtml(p.akkusativ)}</td><td dir="ltr" lang="de">${escHtml(p.dativ)}</td></tr>`).join('')}
         </tbody>
       </table>
     </div>
@@ -809,7 +813,7 @@ function renderCases() {
       ${Object.keys(c.prepositions).map(kase => `
         <div class="grammar-card">
           <div class="title">${kase}</div>
-          <div class="grammar-desc" dir="ltr">${c.prepositions[kase].join(' · ')}</div>
+          <div class="grammar-desc" dir="ltr" lang="de">${c.prepositions[kase].join(' · ')}</div>
         </div>
       `).join('')}
     </div>
@@ -831,7 +835,7 @@ function renderReading() {
   readingContent.innerHTML = `
     <div class="table-container" style="padding:1.5rem;margin-bottom:1.5rem;">
       <h3>${escHtml(passage.title)}</h3>
-      <p dir="ltr" style="line-height:2;font-size:1.1rem;margin:1rem 0;">${escHtml(passage.text)}
+      <p dir="ltr" lang="de" style="line-height:2;font-size:1.1rem;margin:1rem 0;">${escHtml(passage.text)}
         <button class="audio-btn" data-word="${escHtml(passage.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up"></i></button>
       </p>
     </div>
@@ -888,7 +892,7 @@ function initFlashcards() {
   if (flashDueOnly) {
     const sr = loadMainSR();
     const now = Date.now();
-    const due = pool.filter(w => !sr[w.word] || sr[w.word].due <= now);
+    const due = pool.filter(w => !sr[wKey(w)] || sr[wKey(w)].due <= now);
     pool = due.length > 0 ? due : pool;
   }
   flashCards = [...pool];
@@ -906,7 +910,7 @@ function showFlashcard() {
   const w = flashCards[flashIndexValue];
 
   flashFront.innerHTML = `
-    <div class="flashcard-word">${escHtml(w.word)}</div>
+    <div class="flashcard-word" lang="de">${escHtml(w.word)}</div>
     <div class="flashcard-ipa" dir="ltr">${escHtml(w.ipa || '')}</div>
     <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up"></i> گوش کن</button>
   `;
@@ -960,10 +964,11 @@ flashcardDueToggle.addEventListener('click', () => {
 
 document.querySelectorAll('.flash-rate-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    const word = flashCards[flashIndexValue] && flashCards[flashIndexValue].word;
-    if (!word) return;
+    const currentCard = flashCards[flashIndexValue];
+    const key = currentCard && wKey(currentCard);
+    if (!key) return;
     const quality = parseInt(btn.dataset.quality, 10);
-    const st = getMainCardState(word);
+    const st = getMainCardState(key);
     let { interval, ease, reps } = st;
     if (quality === 0) { reps = 0;
       interval = 0; } else {
@@ -972,7 +977,7 @@ document.querySelectorAll('.flash-rate-btn').forEach(btn => {
       interval = reps === 1 ? 1 : reps === 2 ? 3 : Math.round(interval * ease) || 1;
     }
     const due = quality === 0 ? Date.now() - 1 : Date.now() + interval * 24 * 60 * 60 * 1000;
-    setMainCardState(word, { interval, ease, due, reps });
+    setMainCardState(key, { interval, ease, due, reps });
     if (flashIndexValue < flashCards.length - 1) { flashIndexValue++;
       showFlashcard(); } else { flashIndexValue = 0;
       initFlashcards(); }
@@ -1069,7 +1074,7 @@ function renderQuizQuestion() {
     <div class="table-container" style="padding:1.5rem;">
       <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${quizIndex + 1} از ${quizQuestions.length} &nbsp;·&nbsp; امتیاز: ${quizScore}</p>
       ${isVocab ? `
-        <div class="flashcard-word" dir="ltr" style="margin-bottom:0.25rem;">${escHtml(q.word)}
+        <div class="flashcard-word" dir="ltr" lang="de" style="margin-bottom:0.25rem;">${escHtml(q.word)}
           <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up"></i></button>
         </div>
         <div class="flashcard-ipa" dir="ltr">${escHtml(q.ipa || '')}</div>
@@ -1155,7 +1160,7 @@ function updateProgress() {
   const levels = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
   progressLevelsDiv.innerHTML = levels.map(lvl => {
     const totalLvl = APP_DATA.vocabulary.filter(w => w.level === lvl).length;
-    const learnedLvl = APP_DATA.vocabulary.filter(w => w.level === lvl && learnedWords.has(w.word)).length;
+    const learnedLvl = APP_DATA.vocabulary.filter(w => w.level === lvl && learnedWords.has(wKey(w))).length;
     const pctLvl = totalLvl > 0 ? Math.round((learnedLvl / totalLvl) * 100) : 0;
     return `
       <div class="progress-level-item">
@@ -1368,7 +1373,6 @@ if (analyzerInput) {
   }
 }
 
-// --- Minimal pairs listening drill ---------------------------------------
 const MINIMAL_PAIRS = [
   [{ w: 'Bett', fa: 'تخت', en: 'bed' }, { w: 'Beet', fa: 'باغچه', en: 'flower bed' }],
   [{ w: 'Höhle', fa: 'غار', en: 'cave' }, { w: 'Hölle', fa: 'جهنم', en: 'hell' }],
@@ -1386,7 +1390,7 @@ function newPair() {
   const wrap = document.getElementById('pair-options');
   const meaningsWrap = document.getElementById('pair-meanings');
   if (!wrap) return;
-  wrap.innerHTML = shuffled.map(item => `<button data-word="${escHtml(item.w)}">${escHtml(item.w)}</button>`).join('');
+  wrap.innerHTML = shuffled.map(item => `<button data-word="${escHtml(item.w)}" lang="de">${escHtml(item.w)}</button>`).join('');
   wrap.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', () => checkPair(btn, btn.dataset.word));
   });
