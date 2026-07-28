@@ -1115,14 +1115,18 @@ footer {
 }
 
 .custom-checkbox {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
   position: relative;
+  vertical-align: middle;
 }
 
 .custom-checkbox input {
+  position: absolute;
   opacity: 0;
   width: 0;
   height: 0;
