@@ -107,29 +107,32 @@ function celebrate() {
   setTimeout(() => wrap.remove(), 3200);
 }
 
-async function speakGerman(text) {
+async function speakGerman(text, showBanner = false) {
   if (!text) return;
   if (window.speechSynthesis) window.speechSynthesis.cancel();
 
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 3000);
-    const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(text)}`;
-    const response = await fetch(workerUrl, { signal: controller.signal });
-    clearTimeout(timer);
-    if (response.ok) {
-      const audioBlob = await response.blob();
-      const audioUrl = URL.createObjectURL(audioBlob);
-      const audio = new Audio(audioUrl);
-      await new Promise((resolve, reject) => {
-        audio.onended = resolve;
-        audio.onerror = reject;
-        audio.play().catch(reject);
-      });
-      URL.revokeObjectURL(audioUrl);
-      return;
-    }
-  } catch (_) {}
+  const workerConfigured = TTS_WORKER_URL && !TTS_WORKER_URL.includes('YOUR-SUBDOMAIN');
+  if (workerConfigured) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 3000);
+      const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(text)}`;
+      const response = await fetch(workerUrl, { signal: controller.signal });
+      clearTimeout(timer);
+      if (response.ok) {
+        const audioBlob = await response.blob();
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = new Audio(audioUrl);
+        await new Promise((resolve, reject) => {
+          audio.onended = resolve;
+          audio.onerror = reject;
+          audio.play().catch(reject);
+        });
+        URL.revokeObjectURL(audioUrl);
+        return;
+      }
+    } catch (_) {}
+  }
 
   return new Promise((resolve) => {
     if (!window.speechSynthesis) { resolve(); return; }
@@ -143,7 +146,36 @@ async function speakGerman(text) {
     utterance.onend = resolve;
     utterance.onerror = resolve;
     window.speechSynthesis.speak(utterance);
+    if (showBanner && !deVoice) {
+      const banner = document.getElementById('no-german-voice-banner');
+      if (banner) banner.classList.remove('hidden');
+    }
   });
+}
+
+async function playPhoneticsAudio(word, btnElement) {
+  let icon, bars;
+  if (btnElement) {
+    icon = btnElement.querySelector('.play-icon, .fa-volume-up');
+    bars = btnElement.querySelectorAll('.equalizer-bar');
+    btnElement.classList.add('playing-audio', 'playing-bg');
+    if (icon) icon.classList.add('hidden');
+    if (bars) bars.forEach(b => b.classList.remove('hidden'));
+  }
+  const resetBtn = () => {
+    if (!btnElement) return;
+    btnElement.classList.remove('playing-audio', 'playing-bg');
+    if (icon) icon.classList.remove('hidden');
+    if (bars) bars.forEach(b => b.classList.add('hidden'));
+  };
+
+  try {
+    await speakGerman(word, true);
+  } catch (e) {
+    showToast('پخش صدا با هیچ منبعی ممکن نشد. اتصال اینترنت را بررسی کن.');
+  } finally {
+    resetBtn();
+  }
 }
 
 function attachSpeaker(container) {
@@ -153,7 +185,7 @@ function attachSpeaker(container) {
     clone.addEventListener('click', (e) => {
       e.stopPropagation();
       const word = clone.dataset.word;
-      if (word) speakGerman(word);
+      if (word) playPhoneticsAudio(word, clone);
     });
   });
 }
@@ -328,10 +360,11 @@ document.addEventListener('keydown', (e) => {
   }
   const flashSection = document.getElementById('flashcards');
   if (flashSection && flashSection.classList.contains('active')) {
-    if (e.key === 'ArrowRight') flashPrev.click();
-    if (e.key === 'ArrowLeft') flashNext.click();
-    if (e.key === ' ' || e.key === 'Enter') {
-      if (document.activeElement === document.body || document.activeElement === flashcard) {
+    const active = document.activeElement;
+    if (active === document.body || active === flashcard || active === document.getElementById('flashFront') || active === document.getElementById('flashBack')) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); flashPrev.click(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); flashNext.click(); }
+      if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
         flipBtn.click();
       }
@@ -514,7 +547,7 @@ function renderVocab() {
       <td data-label="English" dir="ltr" lang="en">${escHtml(w.en || '')}</td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
-        <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up"></i></button>
+        <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         <button class="audio-btn learn-toggle ${isLearned ? 'learned' : ''}" data-word="${escHtml(w.word)}" data-key="${escHtml(wKey(w))}" aria-label="${isLearned ? 'حذف از یادگرفته‌ها' : 'علامت‌گذاری به‌عنوان یادگرفته'}" aria-pressed="${isLearned}">
           <i class="fas ${isLearned ? 'fa-check-circle' : 'fa-circle'}"></i>
         </button>
@@ -525,7 +558,8 @@ function renderVocab() {
   vocabBody.querySelectorAll('.audio-btn:not(.learn-toggle)').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      speakGerman(btn.dataset.word);
+      const word = btn.dataset.word;
+      if (word) playPhoneticsAudio(word, btn);
     });
   });
 
@@ -598,9 +632,12 @@ vocabSearch.addEventListener('input', () => {
 });
 vocabLevelFilter.addEventListener('change', filterVocab);
 vocabCategoryFilter.addEventListener('change', filterVocab);
+
 vocabRandomBtn.addEventListener('click', () => {
   if (!APP_DATA || !APP_DATA.vocabulary || APP_DATA.vocabulary.length === 0) return;
   const random = APP_DATA.vocabulary[Math.floor(Math.random() * APP_DATA.vocabulary.length)];
+  vocabLevelFilter.value = 'all';
+  vocabCategoryFilter.value = 'all';
   vocabSearch.value = random.word;
   filterVocab();
 });
@@ -624,14 +661,14 @@ function renderGrammar() {
       extraContent += g.examples.map(ex => `
         <div class="example" dir="ltr">
           <span lang="de">${escHtml(ex)}</span>
-          <button class="audio-btn" data-word="${escHtml(ex)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up"></i></button>
+          <button class="audio-btn" data-word="${escHtml(ex)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         </div>
       `).join('');
     } else if (g.example) {
       extraContent += `
         <div class="example" dir="ltr">
           <span lang="de">${escHtml(g.example)}</span>
-          <button class="audio-btn" data-word="${escHtml(g.example)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up"></i></button>
+          <button class="audio-btn" data-word="${escHtml(g.example)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         </div>
       `;
     }
@@ -667,7 +704,7 @@ function renderCultureNotes() {
       <span class="level-tag">${escHtml(n.level || '')}</span>
       <div class="example" dir="ltr">
         <span lang="de">${escHtml(n.text || '')}</span>
-        ${n.text ? `<button class="audio-btn" data-word="${escHtml(n.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up"></i></button>` : ''}
+        ${n.text ? `<button class="audio-btn" data-word="${escHtml(n.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>` : ''}
       </div>
       ${n.fa ? `<div class="trans">🇮🇷 ${escHtml(n.fa)}</div>` : ''}
     </div>
@@ -697,7 +734,7 @@ function renderVerbs() {
   verbGrid.innerHTML = list.map(v => `
     <div class="grammar-card">
       <div class="title" dir="ltr" lang="de">${escHtml(v.infinitive)}
-        <button class="audio-btn" data-word="${escHtml(v.infinitive)}" aria-label="پخش تلفظ ${escHtml(v.infinitive)}"><i class="fas fa-volume-up"></i></button>
+        <button class="audio-btn" data-word="${escHtml(v.infinitive)}" aria-label="پخش تلفظ ${escHtml(v.infinitive)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
       </div>
       <span class="level-tag">${escHtml(v.level || '')}</span>
       <span class="level-tag">${escHtml(v.type || '')}</span>${v.separable ? ' <span class="level-tag" style="background-color:rgba(16,185,129,0.15);color:var(--accent-color);">فعل جدایی‌پذیر (پیشوند: ' + escHtml(v.prefix || '') + ')</span>' : ''}
@@ -873,7 +910,7 @@ function renderReading() {
     <div class="table-container" style="padding:1.5rem;margin-bottom:1.5rem;">
       <h3>${escHtml(passage.title)}</h3>
       <p dir="ltr" lang="de" style="line-height:2;font-size:1.1rem;margin:1rem 0;">${escHtml(passage.text)}
-        <button class="audio-btn" data-word="${escHtml(passage.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up"></i></button>
+        <button class="audio-btn" data-word="${escHtml(passage.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
       </p>
     </div>
     <div id="readingQuestions"></div>
@@ -949,7 +986,7 @@ function showFlashcard() {
   flashFront.innerHTML = `
     <div class="flashcard-word" lang="de">${escHtml(w.word)}</div>
     <div class="flashcard-ipa" dir="ltr">${escHtml(w.ipa || '')}</div>
-    <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up"></i> گوش کن</button>
+    <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span> گوش کن</button>
   `;
 
   if (flashFa) flashFa.textContent = w.fa || '';
@@ -958,7 +995,7 @@ function showFlashcard() {
 
   flashIndex.textContent = `${flashIndexValue + 1} از ${flashCards.length}`;
   flashcard.classList.remove('flipped');
-  flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word}`);
+  flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word} - سمت جلو`);
   flashRateRow.style.display = 'none';
 
   attachSpeaker(flashFront);
@@ -967,12 +1004,22 @@ function showFlashcard() {
 
 flipBtn.addEventListener('click', () => {
   flashcard.classList.toggle('flipped');
-  if (flashcard.classList.contains('flipped')) flashRateRow.style.display = 'flex';
+  const isFlipped = flashcard.classList.contains('flipped');
+  flashRateRow.style.display = isFlipped ? 'flex' : 'none';
+  const w = flashCards[flashIndexValue];
+  if (w) {
+    flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word} - سمت ${isFlipped ? 'پشت' : 'جلو'}`);
+  }
 });
 
 flashcard.addEventListener('click', () => {
   flashcard.classList.toggle('flipped');
-  if (flashcard.classList.contains('flipped')) flashRateRow.style.display = 'flex';
+  const isFlipped = flashcard.classList.contains('flipped');
+  flashRateRow.style.display = isFlipped ? 'flex' : 'none';
+  const w = flashCards[flashIndexValue];
+  if (w) {
+    flashcard.setAttribute('aria-label', `کارت ${flashIndexValue + 1} از ${flashCards.length}: ${w.word} - سمت ${isFlipped ? 'پشت' : 'جلو'}`);
+  }
 });
 
 flashPrev.addEventListener('click', () => {
@@ -1112,7 +1159,7 @@ function renderQuizQuestion() {
       <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${quizIndex + 1} از ${quizQuestions.length} &nbsp;·&nbsp; امتیاز: ${quizScore}</p>
       ${isVocab ? `
         <div class="flashcard-word" dir="ltr" lang="de" style="margin-bottom:0.25rem;">${escHtml(q.word)}
-          <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up"></i></button>
+          <button class="audio-btn" data-word="${escHtml(q.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         </div>
         <div class="flashcard-ipa" dir="ltr">${escHtml(q.ipa || '')}</div>
       ` : ''}
@@ -1232,7 +1279,7 @@ loadProgress();
 loadData();
 
 window.speakGerman = speakGerman;
-window.playAudio = speakGerman;
+window.playPhoneticsAudio = playPhoneticsAudio;
 
 function showToast(message) {
   const toast = document.getElementById('ui-toast');
@@ -1241,71 +1288,6 @@ function showToast(message) {
   msgEl.textContent = message;
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 3000);
-}
-
-async function playPhoneticsAudio(word, btnElement) {
-  let icon, bars;
-  if (btnElement) {
-    icon = btnElement.querySelector('.play-icon, .fa-volume-up');
-    bars = btnElement.querySelectorAll('.equalizer-bar');
-    btnElement.classList.add('playing-audio', 'playing-bg');
-    if (icon) icon.classList.add('hidden');
-    if (bars) bars.forEach(b => b.classList.remove('hidden'));
-  }
-  const resetBtn = () => {
-    if (!btnElement) return;
-    btnElement.classList.remove('playing-audio', 'playing-bg');
-    if (icon) icon.classList.remove('hidden');
-    if (bars) bars.forEach(b => b.classList.add('hidden'));
-  };
-
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 3000);
-    const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(word)}`;
-    const response = await fetch(workerUrl, { signal: controller.signal });
-    clearTimeout(timer);
-    if (response.ok) {
-      const audioBlob = await response.blob();
-      const audioUrl = URL.createObjectURL(audioBlob);
-      const audio = new Audio(audioUrl);
-      await new Promise((resolve, reject) => {
-        audio.onended = resolve;
-        audio.onerror = reject;
-        audio.play().catch(reject);
-      });
-      URL.revokeObjectURL(audioUrl);
-      resetBtn();
-      return;
-    }
-  } catch (e) {}
-
-  try {
-    if (!window.speechSynthesis) throw new Error('No speechSynthesis');
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(word);
-    let voices = window.speechSynthesis.getVoices();
-    let germanVoices = voices.filter(v => v.lang.toLowerCase().startsWith('de'));
-    if (germanVoices.length > 0) {
-      utterance.voice = germanVoices[0];
-      utterance.lang = germanVoices[0].lang;
-    } else {
-      utterance.lang = 'de-DE';
-      const banner = document.getElementById('no-german-voice-banner');
-      if (banner) banner.classList.remove('hidden');
-    }
-    utterance.rate = 0.85;
-    utterance.pitch = 1.0;
-    await new Promise((resolve, reject) => {
-      utterance.onend = resolve;
-      utterance.onerror = reject;
-      window.speechSynthesis.speak(utterance);
-    });
-    resetBtn();
-  } catch (e) {
-    showToast('پخش صدا با هیچ منبعی ممکن نشد. اتصال اینترنت را بررسی کن.');
-    resetBtn();
-  }
 }
 
 const phoneticsRules = [
@@ -1368,9 +1350,9 @@ function analyzeWord(word) {
 }
 
 if (analyzerInput) {
-  analyzerInput.addEventListener('input', function (e) {
-    const word = e.target.value.trim();
-    if (clearBtn) clearBtn.classList.toggle('hidden', e.target.value.length === 0);
+  const doAnalyze = () => {
+    const word = analyzerInput.value.trim();
+    if (clearBtn) clearBtn.classList.toggle('hidden', analyzerInput.value.length === 0);
     if (word.length === 0) {
       emptyState.classList.remove('hidden');
       resultArea.classList.add('hidden');
@@ -1393,6 +1375,14 @@ if (analyzerInput) {
       : analysis.rules.map(rule => `
           <li><span class="rule-swatch" style="background:${rule.color}"></span><span>${rule.hint}</span></li>
         `).join('');
+  };
+
+  analyzerInput.addEventListener('input', doAnalyze);
+  analyzerInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      doAnalyze();
+    }
   });
 
   playBtn.addEventListener('click', () => {
@@ -1421,10 +1411,7 @@ const MINIMAL_PAIRS = [
   [{ w: 'Busse', fa: 'اتوبوس‌ها', en: 'buses' }, { w: 'Buße', fa: 'جزا / توبه', en: 'penance / fine' }],
   [{ w: 'Stadt', fa: 'شهر', en: 'city' }, { w: 'Statt', fa: 'به جای', en: 'instead of' }],
   [{ w: 'Rübe', fa: 'چغندر', en: 'beetroot' }, { w: 'Robe', fa: 'عبا / روپوش', en: 'robe / gown' }],
-  [{ w: 'Mutter', fa: 'مادر', en: 'mother' }, { w: 'Mutter (mit ü)', fa: 'مادر (تلفظ با اُمالوت)', en: 'mother (with umlaut)' }],
-  { w: 'Bürger', fa: 'شهروند', en: 'citizen' }, { w: 'Burger', fa: 'همبرگر', en: 'burger' }],
-  [{ w: 'Schwester', fa: 'خواهر', en: 'sister' }, { w: 'Schwester (mit sch)', fa: 'خواهر (با ش)', en: 'sister (with sch)' }],
-  [{ w: 'Tisch', fa: 'میز', en: 'table' }, { w: 'Tisch (mit sch)', fa: 'میز (با ش)', en: 'table (with sch)' }],
+  [{ w: 'Bürger', fa: 'شهروند', en: 'citizen' }, { w: 'Burger', fa: 'همبرگر', en: 'burger' }],
   [{ w: 'Kuchen', fa: 'کیک', en: 'cake' }, { w: 'Küchen', fa: 'آشپزخانه‌ها', en: 'kitchens' }],
   [{ w: 'Hund', fa: 'سگ', en: 'dog' }, { w: 'Hunt', fa: '(نام خانوادگی) هونت', en: 'surname Hunt' }],
   [{ w: 'Tag', fa: 'روز', en: 'day' }, { w: 'Tack', fa: 'میخ (نوک‌تیز)', en: 'tack' }],
@@ -1477,6 +1464,7 @@ function checkPair(btn, chosenWord) {
 if (document.getElementById('pair-options')) newPair();
 
 let mediaRecorder, recChunks = [], recStream, isRecording = false;
+let recAudio = null;
 
 async function toggleRecording() {
   const btn = document.getElementById('rec-toggle-btn');
@@ -1494,8 +1482,10 @@ async function toggleRecording() {
     mediaRecorder.onstop = () => {
       const blob = new Blob(recChunks, { type: 'audio/webm' });
       const url = URL.createObjectURL(blob);
-      document.getElementById('rec-playback-wrap').innerHTML =
-        `<div class="text-muted" style="margin-bottom:0.5rem;font-size:0.8rem;">صدای ضبط‌شده‌ی شما:</div><audio controls src="${url}" style="width:100%"></audio>`;
+      const playbackDiv = document.getElementById('rec-playback-wrap');
+      playbackDiv.innerHTML =
+        `<div class="text-muted" style="margin-bottom:0.5rem;font-size:0.8rem;">صدای ضبط‌شده‌ی شما:</div><audio id="rec-audio-player" controls src="${url}" style="width:100%"></audio>`;
+      recAudio = document.getElementById('rec-audio-player');
       recStream.getTracks().forEach(t => t.stop());
     };
     mediaRecorder.start();
@@ -1535,6 +1525,33 @@ function populateRecorderSelect(filter) {
 const recWordSearch = document.getElementById('rec-word-search');
 if (recWordSearch) recWordSearch.addEventListener('input', () => populateRecorderSelect(recWordSearch.value));
 populateRecorderSelect();
+
+document.addEventListener('play', function(e) {
+  if (e.target.tagName === 'AUDIO' && e.target.id === 'rec-audio-player') {
+    const nativeBtn = document.querySelector('#recorder .audio-btn');
+    if (nativeBtn) {
+      if (nativeBtn.classList.contains('playing-audio')) {
+        if (window.speechSynthesis) window.speechSynthesis.cancel();
+        document.querySelectorAll('audio').forEach(a => a.pause());
+        nativeBtn.classList.remove('playing-audio', 'playing-bg');
+        const icon = nativeBtn.querySelector('.play-icon, .fa-volume-up');
+        if (icon) icon.classList.remove('hidden');
+        nativeBtn.querySelectorAll('.equalizer-bar').forEach(b => b.classList.add('hidden'));
+      }
+    }
+  }
+}, true);
+
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.audio-btn:not(.learn-toggle)');
+  if (btn && document.getElementById('rec-audio-player')) {
+    const recAudioEl = document.getElementById('rec-audio-player');
+    if (recAudioEl && !recAudioEl.paused) {
+      recAudioEl.pause();
+      recAudioEl.currentTime = 0;
+    }
+  }
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   const checkboxes = document.querySelectorAll('.word-check');
