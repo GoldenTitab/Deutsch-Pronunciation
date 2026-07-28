@@ -1300,7 +1300,7 @@ const phoneticsRules = [
   { regex: /ei/gi, color: '#eab308', hint: '<strong>ei</strong>: صدای «آی»' },
   { regex: /ie/gi, color: '#3b82f6', hint: '<strong>ie</strong>: صدای «ای» کشیده' },
   { regex: /eu|äu/gi, color: '#84cc16', hint: '<strong>eu / äu</strong>: صدای «اُی»' },
-  { regex: /au/gi, color: '#f97316', hint: '<strong>au</strong>: صدای «آو»' },
+  { regex: /au/gi, color: '#f97316', hint: '<strong>au</strong>: صدای «آئو»' },
   { regex: /ä/gi, color: '#f59e0b', hint: '<strong>ä</strong>: صدای «اِ» باز' },
   { regex: /ö/gi, color: '#d946ef', hint: '<strong>ö</strong>: صدای خاص (گرد + اِ)' },
   { regex: /ü/gi, color: '#8b5cf6', hint: '<strong>ü</strong>: صدای خاص (غنچه + ای)' },
