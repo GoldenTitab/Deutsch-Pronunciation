@@ -186,6 +186,43 @@ document.addEventListener('click', (e) => {
   }
 });
 
+const megaParent = document.getElementById('megaParent');
+const megaToggle = document.getElementById('megaToggle');
+const megaMenu = document.getElementById('megaMenu');
+
+function isTouchDevice() {
+  return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+}
+
+if (megaParent && isTouchDevice()) {
+  let touchTimeout = null;
+  megaToggle.addEventListener('click', function(e) {
+    e.preventDefault();
+    const isOpen = megaParent.classList.toggle('mega-menu-touch-open');
+    megaToggle.setAttribute('aria-expanded', String(isOpen));
+    clearTimeout(touchTimeout);
+  });
+  document.addEventListener('click', function(e) {
+    if (!megaParent.contains(e.target)) {
+      megaParent.classList.remove('mega-menu-touch-open');
+      if (megaToggle) megaToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+  megaMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function() {
+      megaParent.classList.remove('mega-menu-touch-open');
+      if (megaToggle) megaToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+if (megaParent) {
+  megaToggle.addEventListener('click', function(e) {
+    if (!isTouchDevice()) return;
+    e.preventDefault();
+  });
+}
+
 const SECTION_LABELS = {
   home: 'خانه',
   vocabulary: 'واژگان',
@@ -1197,7 +1234,6 @@ loadData();
 window.speakGerman = speakGerman;
 window.playAudio = speakGerman;
 
-
 function showToast(message) {
   const toast = document.getElementById('ui-toast');
   const msgEl = document.getElementById('toast-message');
@@ -1379,6 +1415,21 @@ const MINIMAL_PAIRS = [
   [{ w: 'Miete', fa: 'اجاره', en: 'rent' }, { w: 'Mitte', fa: 'وسط', en: 'middle' }],
   [{ w: 'rot', fa: 'قرمز', en: 'red' }, { w: 'tot', fa: 'مرده', en: 'dead' }],
   [{ w: 'ich', fa: 'من', en: 'I' }, { w: 'ach', fa: '(حرف ندا) آخ', en: 'oh / ah' }],
+  [{ w: 'Ratte', fa: 'موش صحرایی', en: 'rat' }, { w: 'Rate', fa: 'تخمین / نصیحت', en: 'guess / advice' }],
+  [{ w: 'Soll', fa: 'باید (حالت) / حد', en: 'should / limit' }, { w: 'Zoll', fa: 'گمرک / اینچ', en: 'customs / inch' }],
+  [{ w: 'Kiste', fa: 'جعبه', en: 'box' }, { w: 'Küsse', fa: 'بوسه‌ها', en: 'kisses' }],
+  [{ w: 'Busse', fa: 'اتوبوس‌ها', en: 'buses' }, { w: 'Buße', fa: 'جزا / توبه', en: 'penance / fine' }],
+  [{ w: 'Stadt', fa: 'شهر', en: 'city' }, { w: 'Statt', fa: 'به جای', en: 'instead of' }],
+  [{ w: 'Rübe', fa: 'چغندر', en: 'beetroot' }, { w: 'Robe', fa: 'عبا / روپوش', en: 'robe / gown' }],
+  [{ w: 'Mutter', fa: 'مادر', en: 'mother' }, { w: 'Mutter (mit ü)', fa: 'مادر (تلفظ با اُمالوت)', en: 'mother (with umlaut)' }],
+  { w: 'Bürger', fa: 'شهروند', en: 'citizen' }, { w: 'Burger', fa: 'همبرگر', en: 'burger' }],
+  [{ w: 'Schwester', fa: 'خواهر', en: 'sister' }, { w: 'Schwester (mit sch)', fa: 'خواهر (با ش)', en: 'sister (with sch)' }],
+  [{ w: 'Tisch', fa: 'میز', en: 'table' }, { w: 'Tisch (mit sch)', fa: 'میز (با ش)', en: 'table (with sch)' }],
+  [{ w: 'Kuchen', fa: 'کیک', en: 'cake' }, { w: 'Küchen', fa: 'آشپزخانه‌ها', en: 'kitchens' }],
+  [{ w: 'Hund', fa: 'سگ', en: 'dog' }, { w: 'Hunt', fa: '(نام خانوادگی) هونت', en: 'surname Hunt' }],
+  [{ w: 'Tag', fa: 'روز', en: 'day' }, { w: 'Tack', fa: 'میخ (نوک‌تیز)', en: 'tack' }],
+  [{ w: 'Weg', fa: 'راه', en: 'way' }, { w: 'Wegg', fa: 'کوکی (شیرینی)', en: 'cookie (Swiss)' }],
+  [{ w: 'Berg', fa: 'کوه', en: 'mountain' }, { w: 'Burg', fa: 'قلعه', en: 'castle' }]
 ];
 let currentPair = null;
 let pairScore = { correct: 0, total: 0 };
