@@ -21,7 +21,7 @@ body.dark {
   --bg-color: #0f172a;
   --card-bg: #1e293b;
   --text-color: #f8fafc;
-  --text-muted: #94a3b8;
+  --text-muted: #cbd5e1;
   --primary-color: #60a5fa;
   --primary-hover: #3b82f6;
   --accent-color: #34d399;
@@ -418,6 +418,8 @@ tr:hover td {
 .vocab-actions {
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .audio-btn {
@@ -878,6 +880,8 @@ footer {
   #vocabTable td.vocab-actions {
     justify-content: flex-end;
     border-bottom: none;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 }
 
@@ -1088,6 +1092,7 @@ footer {
   align-items: center;
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
+  word-break: break-word;
 }
 
 .mobile-card-row:hover {
