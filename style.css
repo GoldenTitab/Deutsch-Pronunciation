@@ -788,13 +788,14 @@ footer {
     gap: 0;
     border-bottom: 1px solid var(--border-color);
     max-height: 0;
-    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     transition: max-height 0.3s ease;
     box-shadow: var(--shadow);
   }
 
   .nav-list.open {
-    max-height: 400px;
+    max-height: min(75vh, 32rem);
   }
 
   .nav-list a {
@@ -881,42 +882,6 @@ footer {
   background: var(--bg-color);
 }
 
-.phonetics-mobile-nav {
-  display: flex;
-  gap: 0.5rem;
-  overflow-x: auto;
-  padding: 0.75rem 1rem;
-  background: var(--card-bg);
-  border-bottom: 1px solid var(--border-color);
-  position: sticky;
-  top: 0;
-  z-index: 30;
-  scrollbar-width: none;
-}
-
-.phonetics-mobile-nav::-webkit-scrollbar {
-  display: none;
-}
-
-.phonetics-mobile-nav a {
-  flex-shrink: 0;
-  background: var(--bg-color);
-  color: var(--text-muted);
-  padding: 0.4rem 1rem;
-  border-radius: 2rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1px solid var(--border-color);
-  transition: var(--transition);
-}
-
-.phonetics-mobile-nav a:hover,
-.phonetics-mobile-nav a:focus {
-  background: var(--primary-color);
-  color: #fff;
-}
-
 .ui-toast {
   position: fixed;
   bottom: 2rem;
@@ -967,67 +932,10 @@ footer {
 }
 
 .phonetics-main-grid {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 2rem;
-  max-width: 1200px;
+  display: block;
+  max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
-}
-
-.phonetics-sidebar {
-  position: sticky;
-  top: 6rem;
-  align-self: start;
-}
-
-.phonetics-sidebar-inner {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: var(--shadow);
-}
-
-.phonetics-sidebar-inner h3 {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
-}
-
-.phonetics-sidebar-inner nav {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.phonetics-sidebar-inner nav a {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: var(--transition);
-  border-right: 3px solid transparent;
-}
-
-.phonetics-sidebar-inner nav a:hover,
-.phonetics-sidebar-inner nav a:focus {
-  background: rgba(var(--primary-rgb), 0.06);
-  color: var(--primary-color);
-  border-right-color: var(--primary-color);
-}
-
-.phonetics-sidebar-inner nav a i {
-  width: 1.25rem;
-  text-align: center;
 }
 
 .phonetics-main-content {
@@ -1644,15 +1552,6 @@ footer {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 1024px) {
-  .phonetics-main-grid {
-    grid-template-columns: 1fr;
-  }
-  .phonetics-sidebar {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
   .phonetics-hero-title h1 {
     font-size: 1.8rem;
@@ -1777,18 +1676,6 @@ footer {
   border-color: #ef4444 !important;
   color: #ef4444 !important;
   background: rgba(239, 68, 68, 0.1) !important;
-}
-
-.phonetics-sidebar-inner nav a.active-anchor {
-  background: rgba(var(--primary-rgb), 0.08);
-  color: var(--primary-color);
-  border-right-color: var(--primary-color);
-}
-
-.phonetics-mobile-nav a.active-anchor {
-  background: var(--primary-color);
-  color: #fff;
-  border-color: var(--primary-color);
 }
 
 #vocabTable {
