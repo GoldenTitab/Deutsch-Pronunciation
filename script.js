@@ -1485,22 +1485,6 @@ const recWordSearch = document.getElementById('rec-word-search');
 if (recWordSearch) recWordSearch.addEventListener('input', () => populateRecorderSelect(recWordSearch.value));
 populateRecorderSelect();
 
-let deferredInstallPrompt;
-window.addEventListener('beforeinstallprompt', e => {
-  e.preventDefault();
-  deferredInstallPrompt = e;
-  const btn = document.getElementById('install-app-btn');
-  if (btn) btn.style.display = 'inline-flex';
-});
-
-function installApp() {
-  if (!deferredInstallPrompt) return;
-  deferredInstallPrompt.prompt();
-  deferredInstallPrompt = null;
-  const btn = document.getElementById('install-app-btn');
-  if (btn) btn.style.display = 'none';
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   const checkboxes = document.querySelectorAll('.word-check');
   let saved = {};
@@ -1534,23 +1518,9 @@ document.querySelectorAll('.word-check').forEach(cb => {
   cb.addEventListener('change', updatePhoneticsProgressUI);
 });
 
-const phoneticsScrollSections = document.querySelectorAll('#phonetics .phonetics-section[id]');
-const phoneticsSidebarLinks = document.querySelectorAll('.phonetics-sidebar-inner nav a');
-const phoneticsMobileNavLinks = document.querySelectorAll('.phonetics-mobile-nav a');
 const backToTopBtn = document.getElementById('back-to-top');
 
 window.addEventListener('scroll', () => {
-  if (!document.getElementById('phonetics').classList.contains('active')) return;
-  let current = '';
-  phoneticsScrollSections.forEach((section) => {
-    if (window.scrollY >= section.offsetTop - 200) current = section.getAttribute('id');
-  });
-  phoneticsSidebarLinks.forEach((a) => {
-    a.classList.toggle('active-anchor', current !== '' && a.getAttribute('href') === '#' + current);
-  });
-  phoneticsMobileNavLinks.forEach((a) => {
-    a.classList.toggle('active-anchor', current !== '' && a.getAttribute('href') === '#' + current);
-  });
   if (backToTopBtn) backToTopBtn.classList.toggle('hidden', window.scrollY <= window.innerHeight * 0.8);
 });
 
