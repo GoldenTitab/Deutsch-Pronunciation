@@ -377,7 +377,7 @@ globalSearchForm.addEventListener('submit', (e) => {
   const term = globalSearchInput.value.trim();
   if (!term || !APP_DATA) return;
   const lower = term.toLowerCase();
-  const isVerb = (APP_DATA.verbs || []).some(v => v.infinitive.toLowerCase().includes(lower));
+  const isVerb = (APP_DATA.verbs || []).some(v => v.infinitive.toLowerCase() === lower);
   if (isVerb) {
     verbSearch.value = term;
     goToSection('conjugation');
@@ -1296,9 +1296,9 @@ const phoneticsRules = [
   { regex: /chs/gi, color: '#f59e0b', hint: '<strong>chs</strong>: صدای ترکیبی «کْس»' },
   { regex: /tion\b/gi, color: '#6366f1', hint: '<strong>tion</strong>: صدای «تسیون»' },
   { regex: /ig\b/gi, color: '#14b8a6', hint: '<strong>ig</strong>: صدای نرم «ایش»' },
-  { regex: /er/gi, color: '#f97316', hint: '<strong>er</strong>: صدای «آ/اَ» کوتاه' },
   { regex: /ei/gi, color: '#eab308', hint: '<strong>ei</strong>: صدای «آی»' },
   { regex: /ie/gi, color: '#3b82f6', hint: '<strong>ie</strong>: صدای «ای» کشیده' },
+  { regex: /er/gi, color: '#f97316', hint: '<strong>er</strong>: صدای «آ/اَ» کوتاه' },
   { regex: /eu|äu/gi, color: '#84cc16', hint: '<strong>eu / äu</strong>: صدای «اُی»' },
   { regex: /au/gi, color: '#f97316', hint: '<strong>au</strong>: صدای «آئو»' },
   { regex: /ä/gi, color: '#f59e0b', hint: '<strong>ä</strong>: صدای «اِ» باز' },
@@ -1570,10 +1570,6 @@ function updatePhoneticsProgressUI() {
   if (total === 0) return;
   let checked = document.querySelectorAll('.word-check:checked').length;
   let percentage = Math.round((checked / total) * 100);
-  const bar = document.getElementById('main-progress-bar');
-  const text = document.getElementById('progress-text');
-  if (bar) bar.style.width = percentage + '%';
-  if (text) text.innerText = percentage + '%';
   let savedState = {};
   checkboxes.forEach(cb => { savedState[cb.getAttribute('data-word')] = cb.checked; });
   try { localStorage.setItem('germanPhoneticsProgress', JSON.stringify(savedState)); } catch (e) {}
