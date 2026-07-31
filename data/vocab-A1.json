@@ -1,307 +1,3582 @@
 [
-  {"word":"Hallo","ipa":"[haˈloː]","fa":"سلام","en":"hello","level":"A1","category":"احوال‌پرسی و عبارات رایج"},
-  {"word":"Bitte","ipa":"[ˈbɪtə]","fa":"خواهش می‌کنم / بفرمایید","en":"please / you're welcome","level":"A1","category":"احوال‌پرسی و عبارات رایج"},
-  {"word":"Danke","ipa":"[ˈdaŋkə]","fa":"متشکرم","en":"thanks","level":"A1","category":"احوال‌پرسی و عبارات رایج"},
-  {"word":"Ja","ipa":"[jaː]","fa":"بله","en":"yes","level":"A1","category":"احوال‌پرسی و عبارات رایج"},
-  {"word":"Nein","ipa":"[naɪ̯n]","fa":"نه","en":"no","level":"A1","category":"احوال‌پرسی و عبارات رایج"},
-  {"word":"mir","ipa":"[miːɐ̯]","fa":"به من / برای من","en":"to / for me","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"dir","ipa":"[diːɐ̯]","fa":"به تو / برای تو (غیررسمی)","en":"to / for you (informal)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"ihm","ipa":"[iːm]","fa":"به او / برای او (مذکر)","en":"to / for him","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"ihr","ipa":"[iːɐ̯]","fa":"به او / برای او (مونث)","en":"to / for her","level":"A1","id":"ihr_dat_her","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"uns","ipa":"[ʊns]","fa":"به ما / برای ما","en":"to / for us","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"euch","ipa":"[ɔʏ̯ç]","fa":"به شما / برای شما (غیررسمی جمع)","en":"to / for you (informal pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"Ihnen","ipa":"[ˈiːnən]","fa":"به شما / برای شما (رسمی)","en":"to / for you (formal)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"mein","ipa":"[maɪ̯n]","fa":"مال من (مذکر/خنثی)","en":"my (masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"meine","ipa":"[ˈmaɪ̯nə]","fa":"مال من (مونث/جمع)","en":"my (fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"dein","ipa":"[daɪ̯n]","fa":"مال تو (مذکر/خنثی)","en":"your (informal sg., masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"deine","ipa":"[ˈdaɪ̯nə]","fa":"مال تو (مونث/جمع)","en":"your (informal sg., fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"sein","ipa":"[zaɪ̯n]","fa":"مال او (مذکر/خنثی)","en":"his / its (masc./neut.)","level":"A1","id":"sein_poss","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"ihr","ipa":"[iːɐ̯]","fa":"مال او (مونث/جمع)","en":"her / their (fem./pl.)","level":"A1","id":"ihr_poss","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"unser","ipa":"[ˈʊnzɐ]","fa":"مال ما (مذکر/خنثی)","en":"our (masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"unsere","ipa":"[ˈʊnzərə]","fa":"مال ما (مونث/جمع)","en":"our (fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"euer","ipa":"[ˈɔɪ̯ɐ]","fa":"مال شما (مذکر/خنثی، غیررسمی جمع)","en":"your (informal pl., masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"eure","ipa":"[ˈɔɪ̯rə]","fa":"مال شما (مونث/جمع، غیررسمی جمع)","en":"your (informal pl., fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"Ihr","ipa":"[iːɐ̯]","fa":"مال شما (رسمی)","en":"your (formal)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه","id":"ihr_formal_your"},
-  {"word":"der","ipa":"[deːɐ̯]","fa":"حرف تعریف مذکر","en":"the (masculine)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"die","ipa":"[diː]","fa":"حرف تعریف مونث/جمع","en":"the (feminine/plural)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"das","ipa":"[das]","fa":"حرف تعریف خنثی","en":"the (neuter)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"ein","ipa":"[aɪ̯n]","fa":"یک (مذکر/خنثی)","en":"a / an (masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"eine","ipa":"[ˈaɪ̯nə]","fa":"یک (مونث)","en":"a / an (fem.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"kein","ipa":"[kaɪ̯n]","fa":"هیچ (مذکر/خنثی)","en":"no / not a (masc./neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"keine","ipa":"[ˈkaɪ̯nə]","fa":"هیچ (مونث/جمع)","en":"no / not a (fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"wohin","ipa":"[voˈhɪn]","fa":"به کجا (مقصد)","en":"where to","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"wie viel","ipa":"[viː fiːl]","fa":"چقدر (برای اسم‌های شمارش‌ناپذیر)","en":"how much","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"wie viele","ipa":"[viː ˈfiːlə]","fa":"چند تا (برای اسم‌های شمارش‌پذیر)","en":"how many","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"welcher","ipa":"[ˈvɛlçɐ]","fa":"کدام (مذکر)","en":"which (masc.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"welche","ipa":"[ˈvɛlçə]","fa":"کدام (مونث/جمع)","en":"which (fem./pl.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"welches","ipa":"[ˈvɛlçəs]","fa":"کدام (خنثی)","en":"which (neut.)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"werden","ipa":"[ˈveːɐ̯dn̩]","fa":"شدن / خواهم (... برای آینده)","en":"to become / will","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"können","ipa":"[ˈkœnən]","fa":"توانستن","en":"can / to be able to","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"wollen","ipa":"[ˈvɔlən]","fa":"خواستن (اراده)","en":"to want (will)","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"möchten","ipa":"[ˈmœçtn̩]","fa":"خواستن (تمایل، مؤدبانه)","en":"would like","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"müssen","ipa":"[ˈmʏsn̩]","fa":"باید (اجبار)","en":"must / to have to","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"dürfen","ipa":"[ˈdʏʁfn̩]","fa":"اجازه داشتن","en":"may / to be allowed to","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"sollen","ipa":"[ˈzɔlən]","fa":"باید (تکلیف، توصیه)","en":"shall / ought to","level":"A1","category":"افعال کمکی و وجهی"},
-  {"word":"gehen","ipa":"[ˈɡeːən]","fa":"رفتن / پیاده رفتن","en":"to go / walk","level":"A1","category":"افعال روزمره"},
-  {"word":"leben","ipa":"[ˈleːbn̩]","fa":"زندگی کردن","en":"to live (exist)","level":"A1","category":"افعال روزمره"},
-  {"word":"arbeiten","ipa":"[ˈaʁbaɪ̯tn̩]","fa":"کار کردن","en":"to work","level":"A1","category":"افعال روزمره"},
-  {"word":"lernen","ipa":"[ˈlɛʁnən]","fa":"یاد گرفتن","en":"to learn","level":"A1","category":"افعال روزمره"},
-  {"word":"studieren","ipa":"[ʃtuˈdiːʁən]","fa":"تحصیل کردن (دانشگاه)","en":"to study (uni)","level":"A1","category":"افعال روزمره"},
-  {"word":"machen","ipa":"[ˈmaxən]","fa":"انجام دادن / درست کردن","en":"to do / make","level":"A1","category":"افعال روزمره"},
-  {"word":"spielen","ipa":"[ˈʃpiːlən]","fa":"بازی کردن / نواختن","en":"to play","level":"A1","category":"افعال روزمره"},
-  {"word":"essen","ipa":"[ˈɛsən]","fa":"خوردن","en":"to eat","level":"A1","category":"افعال روزمره"},
-  {"word":"trinken","ipa":"[ˈtʁɪŋkən]","fa":"نوشیدن","en":"to drink","level":"A1","category":"افعال روزمره"},
-  {"word":"kochen","ipa":"[ˈkɔxən]","fa":"پختن (غذا)","en":"to cook","level":"A1","category":"افعال روزمره"},
-  {"word":"fahren","ipa":"[ˈfaːʁən]","fa":"سوار شدن / راندن","en":"to drive / ride","level":"A1","category":"افعال روزمره"},
-  {"word":"laufen","ipa":"[ˈlaʊ̯fən]","fa":"دویدن / راه رفتن (سریع)","en":"to run / walk fast","level":"A1","category":"افعال روزمره"},
-  {"word":"schwimmen","ipa":"[ˈʃvɪmən]","fa":"شنا کردن","en":"to swim","level":"A1","category":"افعال روزمره"},
-  {"word":"aufstehen","ipa":"[ˈaʊ̯fˌʃteːən]","fa":"از خواب بلند شدن","en":"to get up","level":"A1","category":"افعال روزمره"},
-  {"word":"anrufen","ipa":"[ˈanˌʁuːfən]","fa":"تلفن زدن","en":"to call (phone)","level":"A1","category":"افعال روزمره"},
-  {"word":"einkaufen","ipa":"[ˈaɪ̯nˌkaʊ̯fən]","fa":"خرید کردن (از فروشگاه)","en":"to go shopping","level":"A1","category":"افعال روزمره"},
-  {"word":"fernsehen","ipa":"[ˈfɛʁnˌzeːən]","fa":"تلویزیون تماشا کردن","en":"to watch TV","level":"A1","category":"افعال روزمره"},
-  {"word":"mitnehmen","ipa":"[ˈmɪtˌneːmən]","fa":"با خود بردن","en":"to take along","level":"A1","category":"افعال روزمره"},
-  {"word":"aufräumen","ipa":"[ˈaʊ̯fˌʁɔʏ̯mən]","fa":"مرتب کردن (اتاق)","en":"to tidy up","level":"A1","category":"افعال روزمره"},
-  {"word":"zuhören","ipa":"[ˈtsuːˌhøːʁən]","fa":"گوش دادن (به)","en":"to listen to","level":"A1","category":"افعال روزمره"},
-  {"word":"sich freuen","ipa":"[zɪç ˈfʁɔʏ̯ən]","fa":"خوشحال شدن (از)","en":"to be happy (about)","level":"A1","category":"افعال روزمره"},
-  {"word":"sich interessieren","ipa":"[zɪç ɪntəʁɛˈsiːʁən]","fa":"علاقه داشتن (به)","en":"to be interested (in)","level":"A1","category":"افعال روزمره"},
-  {"word":"sich anziehen","ipa":"[zɪç ˈanˌtsiːən]","fa":"لباس پوشیدن","en":"to get dressed","level":"A1","category":"افعال روزمره"},
-  {"word":"sich ausziehen","ipa":"[zɪç ˈaʊ̯sˌtsiːən]","fa":"لباس درآوردن","en":"to get undressed","level":"A1","category":"افعال روزمره"},
-  {"word":"frühstücken","ipa":"[ˈfʁyːˌʃtʏkən]","fa":"صبحانه خوردن","en":"to have breakfast","level":"A1","category":"افعال روزمره"},
-  {"word":"duschen","ipa":"[ˈduːʃən]","fa":"دوش گرفتن","en":"to shower","level":"A1","category":"افعال روزمره"},
-  {"word":"Zähne putzen","ipa":"[ˈt͡sɛːnə ˈpʊt͡sn̩]","fa":"مسواک زدن","en":"to brush teeth","level":"A1","category":"افعال روزمره"},
-  {"word":"die Uhr","ipa":"[diː ʔuːɐ̯]","fa":"ساعت (دیواری/مچی)","en":"clock / watch","level":"A1","category":"زمان و تقویم"},
-  {"word":"die Stunde","ipa":"[diː ˈʃtʊndə]","fa":"ساعت (زمان)","en":"hour","level":"A1","category":"زمان و تقویم"},
-  {"word":"die Minute","ipa":"[diː miˈnuːtə]","fa":"دقیقه","en":"minute","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Morgen","ipa":"[deːɐ̯ ˈmɔʁɡn̩]","fa":"صبح","en":"morning","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Vormittag","ipa":"[deːɐ̯ ˈfoːɐ̯mɪtaːk]","fa":"قبل از ظهر","en":"forenoon","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Mittag","ipa":"[deːɐ̯ ˈmɪtaːk]","fa":"ظهر","en":"noon","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Nachmittag","ipa":"[deːɐ̯ ˈnaːxmɪtaːk]","fa":"بعد از ظهر","en":"afternoon","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Abend","ipa":"[deːɐ̯ ˈaːbn̩t]","fa":"عصر","en":"evening","level":"A1","category":"زمان و تقویم"},
-  {"word":"die Nacht","ipa":"[diː naxt]","fa":"شب","en":"night","level":"A1","category":"زمان و تقویم"},
-  {"word":"heute","ipa":"[ˈhɔʏ̯tə]","fa":"امروز","en":"today","level":"A1","category":"زمان و تقویم"},
-  {"word":"morgen","ipa":"[ˈmɔʁɡn̩]","fa":"فردا","en":"tomorrow","level":"A1","category":"زمان و تقویم"},
-  {"word":"gestern","ipa":"[ˈɡɛstɐn]","fa":"دیروز","en":"yesterday","level":"A1","category":"زمان و تقویم"},
-  {"word":"übermorgen","ipa":"[ˈyːbɐˌmɔʁɡn̩]","fa":"پس‌فردا","en":"the day after tomorrow","level":"A1","category":"زمان و تقویم"},
-  {"word":"vorgestern","ipa":"[ˈfoːɐ̯ˌɡɛstɐn]","fa":"پریروز","en":"the day before yesterday","level":"A1","category":"زمان و تقویم"},
-  {"word":"die Woche","ipa":"[diː ˈvɔxə]","fa":"هفته","en":"week","level":"A1","category":"زمان و تقویم"},
-  {"word":"das Wochenende","ipa":"[das ˈvɔxənˌɛndə]","fa":"آخر هفته","en":"weekend","level":"A1","category":"زمان و تقویم"},
-  {"word":"der Monat","ipa":"[deːɐ̯ ˈmoːnat]","fa":"ماه","en":"month","level":"A1","category":"زمان و تقویم"},
-  {"word":"das Jahr","ipa":"[das jaːɐ̯]","fa":"سال","en":"year","level":"A1","category":"زمان و تقویم"},
-  {"word":"das Wetter","ipa":"[das ˈvɛtɐ]","fa":"آب‌وهوا","en":"weather","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"die Sonne","ipa":"[diː ˈzɔnə]","fa":"آفتاب","en":"sun","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"der Regen","ipa":"[deːɐ̯ ˈʁeːɡn̩]","fa":"باران","en":"rain","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"der Schnee","ipa":"[deːɐ̯ ʃneː]","fa":"برف","en":"snow","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"der Wind","ipa":"[deːɐ̯ vɪnt]","fa":"باد","en":"wind","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"warm","ipa":"[vaʁm]","fa":"گرم","en":"warm","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"kalt","ipa":"[kalt]","fa":"سرد","en":"cold","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"heiß","ipa":"[haɪ̯s]","fa":"داغ / بسیار گرم","en":"hot","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"sonnig","ipa":"[ˈzɔnɪç]","fa":"آفتابی","en":"sunny","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"regnerisch","ipa":"[ˈʁeːɡnəʁɪʃ]","fa":"بارانی","en":"rainy","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"schneien","ipa":"[ˈʃnaɪ̯ən]","fa":"برف باریدن","en":"to snow","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"regnen","ipa":"[ˈʁeːɡnən]","fa":"باران باریدن","en":"to rain","level":"A1","category":"طبیعت و آب‌وهوا"},
-  {"word":"das Haus","ipa":"[das haʊ̯s]","fa":"خانه (ساختمان)","en":"house","level":"A1","category":"منزل و خانه"},
-  {"word":"die Wohnung","ipa":"[diː ˈvoːnʊŋ]","fa":"آپارتمان","en":"apartment","level":"A1","category":"منزل و خانه"},
-  {"word":"das Zimmer","ipa":"[das ˈt͡sɪmɐ]","fa":"اتاق","en":"room","level":"A1","category":"منزل و خانه"},
-  {"word":"die Küche","ipa":"[diː ˈkʏçə]","fa":"آشپزخانه","en":"kitchen","level":"A1","category":"منزل و خانه"},
-  {"word":"das Bad","ipa":"[das baːt]","fa":"حمام / دستشویی","en":"bathroom","level":"A1","category":"منزل و خانه"},
-  {"word":"das Wohnzimmer","ipa":"[das ˈvoːnˌt͡sɪmɐ]","fa":"اتاق نشیمن","en":"living room","level":"A1","category":"منزل و خانه"},
-  {"word":"das Schlafzimmer","ipa":"[das ˈʃlaːfˌt͡sɪmɐ]","fa":"اتاق خواب","en":"bedroom","level":"A1","category":"منزل و خانه"},
-  {"word":"der Flur","ipa":"[deːɐ̯ fluːɐ̯]","fa":"راهرو","en":"hallway","level":"A1","category":"منزل و خانه"},
-  {"word":"der Balkon","ipa":"[deːɐ̯ balˈkɔ̃ː]","fa":"بالکن","en":"balcony","level":"A1","category":"منزل و خانه"},
-  {"word":"der Keller","ipa":"[deːɐ̯ ˈkɛlɐ]","fa":"زیرزمین","en":"basement","level":"A1","category":"منزل و خانه"},
-  {"word":"der Garten","ipa":"[deːɐ̯ ˈɡaʁtn̩]","fa":"باغچه / حیاط","en":"garden","level":"A1","category":"منزل و خانه"},
-  {"word":"die Tür","ipa":"[diː tyːɐ̯]","fa":"در","en":"door","level":"A1","category":"منزل و خانه"},
-  {"word":"das Fenster","ipa":"[das ˈfɛnstɐ]","fa":"پنجره","en":"window","level":"A1","category":"منزل و خانه"},
-  {"word":"die Wand","ipa":"[diː vant]","fa":"دیوار","en":"wall","level":"A1","category":"منزل و خانه"},
-  {"word":"das Bild","ipa":"[das bɪlt]","fa":"تصویر","en":"picture","level":"A1","category":"منزل و خانه"},
-  {"word":"der Tisch","ipa":"[deːɐ̯ tɪʃ]","fa":"میز","en":"table","level":"A1","category":"منزل و خانه"},
-  {"word":"der Stuhl","ipa":"[deːɐ̯ ʃtuːl]","fa":"صندلی","en":"chair","level":"A1","category":"منزل و خانه"},
-  {"word":"das Sofa","ipa":"[das ˈzoːfa]","fa":"مبل","en":"sofa","level":"A1","category":"منزل و خانه"},
-  {"word":"der Sessel","ipa":"[deːɐ̯ ˈzɛsl̩]","fa":"صندلی راحتی","en":"armchair","level":"A1","category":"منزل و خانه"},
-  {"word":"der Schrank","ipa":"[deːɐ̯ ʃʁaŋk]","fa":"کمد / گنجه","en":"cupboard / wardrobe","level":"A1","category":"منزل و خانه"},
-  {"word":"das Regal","ipa":"[das ʁeˈɡaːl]","fa":"قفسه","en":"shelf","level":"A1","category":"منزل و خانه"},
-  {"word":"der Spiegel","ipa":"[deːɐ̯ ˈʃpiːɡl̩]","fa":"آینه","en":"mirror","level":"A1","category":"منزل و خانه"},
-  {"word":"der Vorhang","ipa":"[deːɐ̯ ˈfoːɐ̯haŋ]","fa":"پرده","en":"curtain","level":"A1","category":"منزل و خانه"},
-  {"word":"der Teppich","ipa":"[deːɐ̯ ˈtɛpɪç]","fa":"قالی / فرش","en":"carpet","level":"A1","category":"منزل و خانه"},
-  {"word":"das Bett","ipa":"[das bɛt]","fa":"تخت","en":"bed","level":"A1","category":"منزل و خانه"},
-  {"word":"die Lampe","ipa":"[diː ˈlampə]","fa":"چراغ","en":"lamp","level":"A1","category":"منزل و خانه"},
-  {"word":"das Brötchen","ipa":"[das ˈbʁøːtçən]","fa":"نان کوچک (نان سنگک)","en":"roll (bread)","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Käse","ipa":"[deːɐ̯ ˈkɛːzə]","fa":"پنیر","en":"cheese","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Butter","ipa":"[diː ˈbʊtɐ]","fa":"کره","en":"butter","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Marmelade","ipa":"[diː maʁməˈlaːdə]","fa":"مربا","en":"jam","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Honig","ipa":"[deːɐ̯ ˈhoːnɪç]","fa":"عسل","en":"honey","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Ei","ipa":"[das aɪ̯]","fa":"تخم‌مرغ","en":"egg","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Wurst","ipa":"[diː vʊʁst]","fa":"سوسیس / کالباس","en":"sausage","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Fleisch","ipa":"[das flaɪ̯ʃ]","fa":"گوشت","en":"meat","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Huhn","ipa":"[das huːn]","fa":"مرغ","en":"chicken","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Fisch","ipa":"[deːɐ̯ fɪʃ]","fa":"ماهی","en":"fish","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Obst","ipa":"[das ˈoːpst]","fa":"میوه","en":"fruit","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Apfel","ipa":"[deːɐ̯ ˈapfl̩]","fa":"سیب","en":"apple","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Banane","ipa":"[diː baˈnaːnə]","fa":"موز","en":"banana","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Birne","ipa":"[diː ˈbɪʁnə]","fa":"گلابی","en":"pear","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Orange","ipa":"[oˈʁaŋʃə]","fa":"پرتقال","en":"orange","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Erdbeere","ipa":"[diː ˈeːɐ̯tbeːʁə]","fa":"توت‌فرنگی","en":"strawberry","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Traube","ipa":"[diː ˈtʁaʊ̯bə]","fa":"انگور","en":"grape","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Gemüse","ipa":"[das ɡəˈmyːzə]","fa":"سبزیجات","en":"vegetables","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Kartoffel","ipa":"[diː kaʁˈtɔfl̩]","fa":"سیب‌زمینی","en":"potato","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Tomate","ipa":"[diː toˈmaːtə]","fa":"گوجه‌فرنگی","en":"tomato","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Gurke","ipa":"[diː ˈɡʊʁkə]","fa":"خیار","en":"cucumber","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Karotte","ipa":"[diː kaˈʁɔtə]","fa":"هویج","en":"carrot","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Zwiebel","ipa":"[diː ˈt͡sviːbl̩]","fa":"پیاز","en":"onion","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Salat","ipa":"[deːɐ̯ zaˈlaːt]","fa":"سالاد","en":"salad","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"die Suppe","ipa":"[diː ˈzʊpə]","fa":"سوپ","en":"soup","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Kuchen","ipa":"[deːɐ̯ ˈkuːxən]","fa":"کیک","en":"cake","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Bier","ipa":"[das biːɐ̯]","fa":"آبجو","en":"beer","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"der Wein","ipa":"[deːɐ̯ vaɪ̯n]","fa":"شراب","en":"wine","level":"A1","category":"غذا و نوشیدنی"},
-  {"word":"das Hemd","ipa":"[das hɛmt]","fa":"پیراهن (مردانه)","en":"shirt","level":"A1","category":"پوشاک"},
-  {"word":"die Hose","ipa":"[diː ˈhoːzə]","fa":"شلوار","en":"trousers","level":"A1","category":"پوشاک"},
-  {"word":"die Jeans","ipa":"[diː d͡ʒiːns]","fa":"شلوار جین","en":"jeans","level":"A1","category":"پوشاک"},
-  {"word":"der Rock","ipa":"[deːɐ̯ ʁɔk]","fa":"دامن","en":"skirt","level":"A1","category":"پوشاک"},
-  {"word":"das Kleid","ipa":"[das klaɪ̯t]","fa":"لباس (زنانه)","en":"dress","level":"A1","category":"پوشاک"},
-  {"word":"die Jacke","ipa":"[diː ˈjakə]","fa":"ژاکت","en":"jacket","level":"A1","category":"پوشاک"},
-  {"word":"der Mantel","ipa":"[deːɐ̯ ˈmantl̩]","fa":"کاپشن / پالتو","en":"coat","level":"A1","category":"پوشاک"},
-  {"word":"der Pullover","ipa":"[deːɐ̯ ˈpʊloːvɐ]","fa":"پلیور","en":"pullover / sweater","level":"A1","category":"پوشاک"},
-  {"word":"der Schal","ipa":"[deːɐ̯ ʃaːl]","fa":"شال گردن","en":"scarf","level":"A1","category":"پوشاک"},
-  {"word":"die Mütze","ipa":"[diː ˈmʏt͡sə]","fa":"کلاه (بافتنی)","en":"cap / beanie","level":"A1","category":"پوشاک"},
-  {"word":"die Schuhe","ipa":"[diː ˈʃuːə]","fa":"کفش‌ها","en":"shoes","level":"A1","category":"پوشاک"},
-  {"word":"die Stiefel","ipa":"[diː ˈʃtiːfl̩]","fa":"چکمه‌ها","en":"boots","level":"A1","category":"پوشاک"},
-  {"word":"die Socken","ipa":"[diː ˈzɔkən]","fa":"جوراب‌ها","en":"socks","level":"A1","category":"پوشاک"},
-  {"word":"der Kopf","ipa":"[deːɐ̯ kɔpf]","fa":"سر","en":"head","level":"A1","category":"بدن و سلامتی"},
-  {"word":"das Auge","ipa":"[das ˈaʊ̯ɡə]","fa":"چشم","en":"eye","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Augen","ipa":"[diː ˈaʊ̯ɡn̩]","fa":"چشم‌ها","en":"eyes","level":"A1","category":"بدن و سلامتی"},
-  {"word":"das Ohr","ipa":"[das oːɐ̯]","fa":"گوش","en":"ear","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Nase","ipa":"[diː ˈnaːzə]","fa":"بینی","en":"nose","level":"A1","category":"بدن و سلامتی"},
-  {"word":"der Mund","ipa":"[deːɐ̯ mʊnt]","fa":"دهان","en":"mouth","level":"A1","category":"بدن و سلامتی"},
-  {"word":"der Hals","ipa":"[deːɐ̯ hals]","fa":"گردن","en":"neck","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Schulter","ipa":"[diː ˈʃʊltɐ]","fa":"شانه","en":"shoulder","level":"A1","category":"بدن و سلامتی"},
-  {"word":"der Arm","ipa":"[deːɐ̯ aʁm]","fa":"بازو","en":"arm","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Hand","ipa":"[diː hant]","fa":"دست","en":"hand","level":"A1","category":"بدن و سلامتی"},
-  {"word":"das Bein","ipa":"[das baɪ̯n]","fa":"پا (از ران تا مچ)","en":"leg","level":"A1","category":"بدن و سلامتی"},
-  {"word":"der Fuß","ipa":"[deːɐ̯ fuːs]","fa":"پا (کف پا)","en":"foot","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Haare","ipa":"[diː ˈhaːʁə]","fa":"موها","en":"hair","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Zähne","ipa":"[diː ˈt͡sɛːnə]","fa":"دندان‌ها","en":"teeth","level":"A1","category":"بدن و سلامتی"},
-  {"word":"die Familie","ipa":"[diː faˈmiːli̯ə]","fa":"خانواده","en":"family","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Eltern","ipa":"[diː ˈɛltɐn]","fa":"والدین","en":"parents","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Geschwister","ipa":"[diː ɡəˈʃvɪstɐ]","fa":"خواهر و برادرها","en":"siblings","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"der Sohn","ipa":"[deːɐ̯ zoːn]","fa":"پسر (فرزند)","en":"son","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Tochter","ipa":"[diː ˈtɔxtɐ]","fa":"دختر (فرزند)","en":"daughter","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"das Baby","ipa":"[das ˈbeːbi]","fa":"نوزاد","en":"baby","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"der Opa","ipa":"[deːɐ̯ ˈoːpa]","fa":"پدربزرگ","en":"grandpa","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Oma","ipa":"[diː ˈoːma]","fa":"مادربزرگ","en":"grandma","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"der Onkel","ipa":"[deːɐ̯ ˈɔŋkl̩]","fa":"عمو / دایی","en":"uncle","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Tante","ipa":"[diː ˈtantə]","fa":"عمه / خاله","en":"aunt","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"der Cousin","ipa":"[deːɐ̯ kuˈzɛ̃ː]","fa":"پسرعمو / پسرخاله","en":"cousin (male)","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"die Cousine","ipa":"[diː kuˈziːnə]","fa":"دخترعمو / دخترخاله","en":"cousin (female)","level":"A1","category":"خانواده و روابط نزدیک"},
-  {"word":"der Arzt","ipa":"[deːɐ̯ ʔaʁtst]","fa":"پزشک (مرد)","en":"doctor (male)","level":"A1","category":"مشاغل"},
-  {"word":"die Ärztin","ipa":"[diː ˈɛʁtstɪn]","fa":"پزشک (زن)","en":"doctor (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Lehrer","ipa":"[deːɐ̯ ˈleːʁɐ]","fa":"معلم (مرد)","en":"teacher (male)","level":"A1","category":"مشاغل"},
-  {"word":"die Lehrerin","ipa":"[diː ˈleːʁəʁɪn]","fa":"معلم (زن)","en":"teacher (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Schüler","ipa":"[deːɐ̯ ˈʃyːlɐ]","fa":"دانش‌آموز (مرد)","en":"pupil (male)","level":"A1","category":"مشاغل"},
-  {"word":"die Schülerin","ipa":"[diː ˈʃyːləʁɪn]","fa":"دانش‌آموز (زن)","en":"pupil (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Student","ipa":"[deːɐ̯ ʃtuˈdɛnt]","fa":"دانشجو (مرد)","en":"student (uni, male)","level":"A1","category":"مشاغل"},
-  {"word":"die Studentin","ipa":"[diː ʃtuˈdɛntɪn]","fa":"دانشجو (زن)","en":"student (uni, female)","level":"A1","category":"مشاغل"},
-  {"word":"der Polizist","ipa":"[deːɐ̯ poliˈt͡sɪst]","fa":"پلیس (مرد)","en":"policeman","level":"A1","category":"مشاغل"},
-  {"word":"die Polizistin","ipa":"[diː poliˈt͡sɪstɪn]","fa":"پلیس (زن)","en":"policewoman","level":"A1","category":"مشاغل"},
-  {"word":"der Krankenpfleger","ipa":"[deːɐ̯ ˈkʁaŋkn̩ˌpfleːɡɐ]","fa":"پرستار (مرد)","en":"nurse (male)","level":"A1","category":"مشاغل"},
-  {"word":"die Krankenschwester","ipa":"[diː ˈkʁaŋkn̩ˌʃvɛstɐ]","fa":"پرستار (زن)","en":"nurse (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Ingenieur","ipa":"[deːɐ̯ ɪnʒeˈni̯øːɐ̯]","fa":"مهندس (مرد)","en":"engineer","level":"A1","category":"مشاغل"},
-  {"word":"die Ingenieurin","ipa":"[diː ɪnʒeˈni̯øːʁɪn]","fa":"مهندس (زن)","en":"engineer (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Bäcker","ipa":"[deːɐ̯ ˈbɛkɐ]","fa":"نانوا","en":"baker","level":"A1","category":"مشاغل"},
-  {"word":"der Verkäufer","ipa":"[deːɐ̯ fɛɐ̯ˈkɔʏ̯fɐ]","fa":"فروشنده (مرد)","en":"salesman","level":"A1","category":"مشاغل"},
-  {"word":"die Verkäuferin","ipa":"[diː fɛɐ̯ˈkɔʏ̯fəʁɪn]","fa":"فروشنده (زن)","en":"saleswoman","level":"A1","category":"مشاغل"},
-  {"word":"der Koch","ipa":"[deːɐ̯ kɔx]","fa":"آشپز (مرد)","en":"cook (male)","level":"A1","category":"مشاغل"},
-  {"word":"die Köchin","ipa":"[diː ˈkœçɪn]","fa":"آشپز (زن)","en":"cook (female)","level":"A1","category":"مشاغل"},
-  {"word":"der Fahrer","ipa":"[deːɐ̯ ˈfaːʁɐ]","fa":"راننده","en":"driver","level":"A1","category":"مشاغل"},
-  {"word":"der Friseur","ipa":"[deːɐ̯ fʁiˈzøːɐ̯]","fa":"آرایشگر (مرد)","en":"hairdresser","level":"A1","category":"مشاغل"},
-  {"word":"die Friseurin","ipa":"[diː fʁiˈzøːʁɪn]","fa":"آرایشگر (زن)","en":"hairdresser (female)","level":"A1","category":"مشاغل"},
-  {"word":"die Stadt","ipa":"[diː ʃtat]","fa":"شهر","en":"city","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Straße","ipa":"[diː ˈʃtʁaːsə]","fa":"خیابان","en":"street","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"der Platz","ipa":"[deːɐ̯ plats]","fa":"میدان / جایگاه","en":"square / place","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Gebäude","ipa":"[das ɡəˈbɔʏ̯də]","fa":"ساختمان","en":"building","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"der Bahnhof","ipa":"[deːɐ̯ ˈbaːnhoːf]","fa":"ایستگاه قطار","en":"train station","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"der Supermarkt","ipa":"[deːɐ̯ ˈzuːpɐmaʁkt]","fa":"سوپرمارکت","en":"supermarket","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Bäckerei","ipa":"[diː bɛkəˈʁaɪ̯]","fa":"نانوایی","en":"bakery","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Apotheke","ipa":"[diː apoˈteːkə]","fa":"داروخانه","en":"pharmacy","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Krankenhaus","ipa":"[das ˈkʁaŋkn̩ˌhaʊ̯s]","fa":"بیمارستان","en":"hospital","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Polizei","ipa":"[diː poliˈt͡saɪ̯]","fa":"پلیس (نیرو)","en":"police","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Post","ipa":"[diː pɔst]","fa":"اداره پست","en":"post office","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Bank","ipa":"[diː baŋk]","fa":"بانک","en":"bank","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Restaurant","ipa":"[das ʁɛstoˈʁɑ̃ː]","fa":"رستوران","en":"restaurant","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Café","ipa":"[das kaˈfeː]","fa":"کافی‌شاپ","en":"café","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"der Park","ipa":"[deːɐ̯ paʁk]","fa":"پارک","en":"park","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Kino","ipa":"[das ˈkiːno]","fa":"سینما","en":"cinema","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Museum","ipa":"[das muˈzeːʊm]","fa":"موزه","en":"museum","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Kirche","ipa":"[diː ˈkɪʁçə]","fa":"کلیسا","en":"church","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Schule","ipa":"[diː ˈʃuːlə]","fa":"مدرسه","en":"school","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"die Universität","ipa":"[diː ʔunivɛʁziˈtɛːt]","fa":"دانشگاه","en":"university","level":"A1","category":"شهر و مکان‌های عمومی"},
-  {"word":"das Auto","ipa":"[das ˈaʊ̯to]","fa":"ماشین (خودرو)","en":"car","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"der Bus","ipa":"[deːɐ̯ bʊs]","fa":"اتوبوس","en":"bus","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"die Bahn","ipa":"[diː baːn]","fa":"قطار / تراموا","en":"train / tram","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"das Fahrrad","ipa":"[das ˈfaːɐ̯ʁat]","fa":"دوچرخه","en":"bicycle","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"das Motorrad","ipa":"[das moˈtoːɐ̯ʁat]","fa":"موتورسیکلت","en":"motorbike","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"das Flugzeug","ipa":"[das ˈfluːktsɔʏ̯k]","fa":"هواپیما","en":"airplane","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"der Zug","ipa":"[deːɐ̯ t͡suːk]","fa":"قطار (مسافری)","en":"train","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"fliegen","ipa":"[ˈfliːɡən]","fa":"پرواز کردن","en":"to fly","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"die Ecke","ipa":"[diː ˈɛkə]","fa":"گوشه / نبش","en":"corner","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"die Ampel","ipa":"[diː ˈampl̩]","fa":"چراغ راهنمایی","en":"traffic light","level":"A1","category":"حمل‌ونقل و سفر"},
-  {"word":"Fußball spielen","ipa":"[ˈfuːsbal ˌʃpiːlən]","fa":"فوتبال بازی کردن","en":"to play football","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Musik hören","ipa":"[muˈziːk ˈhøːʁən]","fa":"موسیقی گوش دادن","en":"to listen to music","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Bücher lesen","ipa":"[ˈbyːçɐ ˈleːzn̩]","fa":"کتاب خواندن","en":"to read books","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"reisen","ipa":"[ˈʁaɪ̯zn̩]","fa":"سفر کردن","en":"to travel","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"tanzen","ipa":"[ˈtant͡sn̩]","fa":"رقصیدن","en":"to dance","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"singen","ipa":"[ˈzɪŋən]","fa":"آواز خواندن","en":"to sing","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"malen","ipa":"[ˈmaːlən]","fa":"نقاشی کردن","en":"to paint","level":"A1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"die Türkei","ipa":"[diː ˈtʏʁkaɪ̯]","fa":"ترکیه","en":"Turkey","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Frankreich","ipa":"[ˈfʁaŋkʁaɪ̯ç]","fa":"فرانسه","en":"France","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Italien","ipa":"[iˈtaːli̯ən]","fa":"ایتالیا","en":"Italy","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Spanien","ipa":"[ˈʃpaːni̯ən]","fa":"اسپانیا","en":"Spain","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Österreich","ipa":"[ˈøːstɐʁaɪ̯ç]","fa":"اتریش","en":"Austria","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"die Schweiz","ipa":"[diː ʃvaɪ̯ts]","fa":"سوئیس","en":"Switzerland","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"China","ipa":"[ˈçiːna]","fa":"چین","en":"China","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Japan","ipa":"[jaˈpaːn]","fa":"ژاپن","en":"Japan","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Russland","ipa":"[ˈʁʊslant]","fa":"روسیه","en":"Russia","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Englisch","ipa":"[ˈɛŋlɪʃ]","fa":"انگلیسی (زبان)","en":"English","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Französisch","ipa":"[fʁanˈt͡søːzɪʃ]","fa":"فرانسوی (زبان)","en":"French","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Spanisch","ipa":"[ˈʃpaːnɪʃ]","fa":"اسپانیایی (زبان)","en":"Spanish","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"Italienisch","ipa":"[itaˈli̯eːnɪʃ]","fa":"ایتالیایی (زبان)","en":"Italian","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"deutsch","ipa":"[dɔʏ̯tʃ]","fa":"آلمانی (زبان/مربوط)","en":"German","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"türkisch","ipa":"[ˈtʏʁkɪʃ]","fa":"ترکی (زبان/مربوط)","en":"Turkish","level":"A1","category":"کشورها و زبان‌ها"},
-  {"word":"gut","ipa":"[ɡuːt]","fa":"خوب","en":"good","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"schlecht","ipa":"[ʃlɛçt]","fa":"بد","en":"bad","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"groß","ipa":"[ɡʁoːs]","fa":"بزرگ / قدبلند","en":"big / tall","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"klein","ipa":"[klaɪ̯n]","fa":"کوچک / کوتاه","en":"small / short","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"jung","ipa":"[jʊŋ]","fa":"جوان","en":"young","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"alt","ipa":"[alt]","fa":"پیر / قدیمی","en":"old","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"neu","ipa":"[nɔʏ̯]","fa":"نو","en":"new","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"teuer","ipa":"[ˈtɔʏ̯ɐ]","fa":"گران","en":"expensive","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"billig","ipa":"[ˈbɪlɪç]","fa":"ارزان","en":"cheap","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"wichtig","ipa":"[ˈvɪçtɪç]","fa":"مهم","en":"important","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"interessant","ipa":"[ɪntəʁɛˈsant]","fa":"جالب","en":"interesting","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"langweilig","ipa":"[ˈlaŋvaɪ̯lɪç]","fa":"کسالت‌بار","en":"boring","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"schnell","ipa":"[ʃnɛl]","fa":"سریع","en":"fast","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"langsam","ipa":"[ˈlaŋzaːm]","fa":"آهسته","en":"slow","level":"A1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"glücklich","ipa":"[ˈɡlʏklɪç]","fa":"خوشحال","en":"happy","level":"A1","category":"احساسات و شخصیت"},
-  {"word":"traurig","ipa":"[ˈtʁaʊ̯ʁɪç]","fa":"غمگین","en":"sad","level":"A1","category":"احساسات و شخصیت"},
-  {"word":"müde","ipa":"[ˈmyːdə]","fa":"خسته","en":"tired","level":"A1","category":"بدن و سلامتی"},
-  {"word":"krank","ipa":"[kʁaŋk]","fa":"بیمار","en":"ill","level":"A1","category":"بدن و سلامتی"},
-  {"word":"gesund","ipa":"[ɡəˈzʊnt]","fa":"سالم","en":"healthy","level":"A1","category":"بدن و سلامتی"},
-  {"word":"in","ipa":"[ɪn]","fa":"در (مکان داخل)","en":"in","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"auf","ipa":"[aʊ̯f]","fa":"روی (سطح) / در (مکان باز)","en":"on / at","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"an","ipa":"[an]","fa":"کنار / به (عمودی)","en":"at / on (vertical)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"bei","ipa":"[baɪ̯]","fa":"نزد / در (مکان شخص)","en":"at (someone's place)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"mit","ipa":"[mɪt]","fa":"با (همراه)","en":"with","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"nach","ipa":"[naːx]","fa":"به سوی (مکان) / بعد از (زمان)","en":"to (direction) / after","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"von","ipa":"[fɔn]","fa":"از (مبدأ)","en":"from","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"für","ipa":"[fyːɐ̯]","fa":"برای","en":"for","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"ohne","ipa":"[ˈoːnə]","fa":"بدون","en":"without","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"seit","ipa":"[zaɪ̯t]","fa":"از (زمان شروع)","en":"since / for (time)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"am","ipa":"[am]","fa":"در روز (جمله با روز هفته)","en":"on (day)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"im","ipa":"[ɪm]","fa":"در ماه / در (فصل)","en":"in (month/season)","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"um","ipa":"[ʊm]","fa":"ساعت (زمان) / دور","en":"at (time) / around","level":"A1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"und","ipa":"[ʊnt]","fa":"و","en":"and","level":"A1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"aber","ipa":"[ˈaːbɐ]","fa":"اما","en":"but","level":"A1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"oder","ipa":"[ˈoːdɐ]","fa":"یا","en":"or","level":"A1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"denn","ipa":"[dɛn]","fa":"زیرا (جمله ساده)","en":"because (main clause)","level":"A1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"weil","ipa":"[vaɪ̯l]","fa":"زیرا (جمله فرعی)","en":"because (subordinate clause)","level":"A1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"es gibt","ipa":"[ɛs ɡiːpt]","fa":"وجود دارد","en":"there is / there are","level":"A1","category":"احوال‌پرسی و عبارات رایج"}
+  {
+    "word": "Hallo",
+    "ipa": "[haˈloː]",
+    "fa": "سلام",
+    "en": "hello",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Bitte",
+    "ipa": "[ˈbɪtə]",
+    "fa": "خواهش می‌کنم / بفرمایید",
+    "en": "please / you're welcome",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Danke",
+    "ipa": "[ˈdaŋkə]",
+    "fa": "متشکرم",
+    "en": "thanks",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Ja",
+    "ipa": "[jaː]",
+    "fa": "بله",
+    "en": "yes",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Nein",
+    "ipa": "[naɪ̯n]",
+    "fa": "نه",
+    "en": "no",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "mir",
+    "ipa": "[miːɐ̯]",
+    "fa": "به من / برای من",
+    "en": "to / for me",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "dir",
+    "ipa": "[diːɐ̯]",
+    "fa": "به تو / برای تو (غیررسمی)",
+    "en": "to / for you (informal)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ihm",
+    "ipa": "[iːm]",
+    "fa": "به او / برای او (مذکر)",
+    "en": "to / for him",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ihr",
+    "ipa": "[iːɐ̯]",
+    "fa": "به او / برای او (مونث)",
+    "en": "to / for her",
+    "level": "A1",
+    "id": "ihr_dat_her",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "uns",
+    "ipa": "[ʊns]",
+    "fa": "به ما / برای ما",
+    "en": "to / for us",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "euch",
+    "ipa": "[ɔʏ̯ç]",
+    "fa": "به شما / برای شما (غیررسمی جمع)",
+    "en": "to / for you (informal pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Ihnen",
+    "ipa": "[ˈiːnən]",
+    "fa": "به شما / برای شما (رسمی)",
+    "en": "to / for you (formal)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "mein",
+    "ipa": "[maɪ̯n]",
+    "fa": "مال من (مذکر/خنثی)",
+    "en": "my (masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "meine",
+    "ipa": "[ˈmaɪ̯nə]",
+    "fa": "مال من (مونث/جمع)",
+    "en": "my (fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "dein",
+    "ipa": "[daɪ̯n]",
+    "fa": "مال تو (مذکر/خنثی)",
+    "en": "your (informal sg., masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "deine",
+    "ipa": "[ˈdaɪ̯nə]",
+    "fa": "مال تو (مونث/جمع)",
+    "en": "your (informal sg., fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "sein",
+    "ipa": "[zaɪ̯n]",
+    "fa": "مال او (مذکر/خنثی)",
+    "en": "his / its (masc./neut.)",
+    "level": "A1",
+    "id": "sein_poss",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ihr",
+    "ipa": "[iːɐ̯]",
+    "fa": "مال او (مونث/جمع)",
+    "en": "her / their (fem./pl.)",
+    "level": "A1",
+    "id": "ihr_poss",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "unser",
+    "ipa": "[ˈʊnzɐ]",
+    "fa": "مال ما (مذکر/خنثی)",
+    "en": "our (masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "unsere",
+    "ipa": "[ˈʊnzərə]",
+    "fa": "مال ما (مونث/جمع)",
+    "en": "our (fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "euer",
+    "ipa": "[ˈɔɪ̯ɐ]",
+    "fa": "مال شما (مذکر/خنثی، غیررسمی جمع)",
+    "en": "your (informal pl., masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "eure",
+    "ipa": "[ˈɔɪ̯rə]",
+    "fa": "مال شما (مونث/جمع، غیررسمی جمع)",
+    "en": "your (informal pl., fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Ihr",
+    "ipa": "[iːɐ̯]",
+    "fa": "مال شما (رسمی)",
+    "en": "your (formal)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "id": "ihr_formal_your"
+  },
+  {
+    "word": "der",
+    "ipa": "[deːɐ̯]",
+    "fa": "حرف تعریف مذکر",
+    "en": "the (masculine)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "die",
+    "ipa": "[diː]",
+    "fa": "حرف تعریف مونث/جمع",
+    "en": "the (feminine/plural)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "das",
+    "ipa": "[das]",
+    "fa": "حرف تعریف خنثی",
+    "en": "the (neuter)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ein",
+    "ipa": "[aɪ̯n]",
+    "fa": "یک (مذکر/خنثی)",
+    "en": "a / an (masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "eine",
+    "ipa": "[ˈaɪ̯nə]",
+    "fa": "یک (مونث)",
+    "en": "a / an (fem.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "kein",
+    "ipa": "[kaɪ̯n]",
+    "fa": "هیچ (مذکر/خنثی)",
+    "en": "no / not a (masc./neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "keine",
+    "ipa": "[ˈkaɪ̯nə]",
+    "fa": "هیچ (مونث/جمع)",
+    "en": "no / not a (fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "wohin",
+    "ipa": "[voˈhɪn]",
+    "fa": "به کجا (مقصد)",
+    "en": "where to",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "wie viel",
+    "ipa": "[viː fiːl]",
+    "fa": "چقدر (برای اسم‌های شمارش‌ناپذیر)",
+    "en": "how much",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "wie viele",
+    "ipa": "[viː ˈfiːlə]",
+    "fa": "چند تا (برای اسم‌های شمارش‌پذیر)",
+    "en": "how many",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "welcher",
+    "ipa": "[ˈvɛlçɐ]",
+    "fa": "کدام (مذکر)",
+    "en": "which (masc.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "welche",
+    "ipa": "[ˈvɛlçə]",
+    "fa": "کدام (مونث/جمع)",
+    "en": "which (fem./pl.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "welches",
+    "ipa": "[ˈvɛlçəs]",
+    "fa": "کدام (خنثی)",
+    "en": "which (neut.)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "werden",
+    "ipa": "[ˈveːɐ̯dn̩]",
+    "fa": "شدن / خواهم (... برای آینده)",
+    "en": "to become / will",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "können",
+    "ipa": "[ˈkœnən]",
+    "fa": "توانستن",
+    "en": "can / to be able to",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "wollen",
+    "ipa": "[ˈvɔlən]",
+    "fa": "خواستن (اراده)",
+    "en": "to want (will)",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "möchten",
+    "ipa": "[ˈmœçtn̩]",
+    "fa": "خواستن (تمایل، مؤدبانه)",
+    "en": "would like",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "müssen",
+    "ipa": "[ˈmʏsn̩]",
+    "fa": "باید (اجبار)",
+    "en": "must / to have to",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "dürfen",
+    "ipa": "[ˈdʏʁfn̩]",
+    "fa": "اجازه داشتن",
+    "en": "may / to be allowed to",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "sollen",
+    "ipa": "[ˈzɔlən]",
+    "fa": "باید (تکلیف، توصیه)",
+    "en": "shall / ought to",
+    "level": "A1",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "gehen",
+    "ipa": "[ˈɡeːən]",
+    "fa": "رفتن / پیاده رفتن",
+    "en": "to go / walk",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "leben",
+    "ipa": "[ˈleːbn̩]",
+    "fa": "زندگی کردن",
+    "en": "to live (exist)",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "arbeiten",
+    "ipa": "[ˈaʁbaɪ̯tn̩]",
+    "fa": "کار کردن",
+    "en": "to work",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "lernen",
+    "ipa": "[ˈlɛʁnən]",
+    "fa": "یاد گرفتن",
+    "en": "to learn",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "studieren",
+    "ipa": "[ʃtuˈdiːʁən]",
+    "fa": "تحصیل کردن (دانشگاه)",
+    "en": "to study (uni)",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "machen",
+    "ipa": "[ˈmaxən]",
+    "fa": "انجام دادن / درست کردن",
+    "en": "to do / make",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "spielen",
+    "ipa": "[ˈʃpiːlən]",
+    "fa": "بازی کردن / نواختن",
+    "en": "to play",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "essen",
+    "ipa": "[ˈɛsən]",
+    "fa": "خوردن",
+    "en": "to eat",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "trinken",
+    "ipa": "[ˈtʁɪŋkən]",
+    "fa": "نوشیدن",
+    "en": "to drink",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "kochen",
+    "ipa": "[ˈkɔxən]",
+    "fa": "پختن (غذا)",
+    "en": "to cook",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "fahren",
+    "ipa": "[ˈfaːʁən]",
+    "fa": "سوار شدن / راندن",
+    "en": "to drive / ride",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "laufen",
+    "ipa": "[ˈlaʊ̯fən]",
+    "fa": "دویدن / راه رفتن (سریع)",
+    "en": "to run / walk fast",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "schwimmen",
+    "ipa": "[ˈʃvɪmən]",
+    "fa": "شنا کردن",
+    "en": "to swim",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aufstehen",
+    "ipa": "[ˈaʊ̯fˌʃteːən]",
+    "fa": "از خواب بلند شدن",
+    "en": "to get up",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "anrufen",
+    "ipa": "[ˈanˌʁuːfən]",
+    "fa": "تلفن زدن",
+    "en": "to call (phone)",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "einkaufen",
+    "ipa": "[ˈaɪ̯nˌkaʊ̯fən]",
+    "fa": "خرید کردن (از فروشگاه)",
+    "en": "to go shopping",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "fernsehen",
+    "ipa": "[ˈfɛʁnˌzeːən]",
+    "fa": "تلویزیون تماشا کردن",
+    "en": "to watch TV",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "mitnehmen",
+    "ipa": "[ˈmɪtˌneːmən]",
+    "fa": "با خود بردن",
+    "en": "to take along",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aufräumen",
+    "ipa": "[ˈaʊ̯fˌʁɔʏ̯mən]",
+    "fa": "مرتب کردن (اتاق)",
+    "en": "to tidy up",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "zuhören",
+    "ipa": "[ˈtsuːˌhøːʁən]",
+    "fa": "گوش دادن (به)",
+    "en": "to listen to",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich freuen",
+    "ipa": "[zɪç ˈfʁɔʏ̯ən]",
+    "fa": "خوشحال شدن (از)",
+    "en": "to be happy (about)",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich interessieren",
+    "ipa": "[zɪç ɪntəʁɛˈsiːʁən]",
+    "fa": "علاقه داشتن (به)",
+    "en": "to be interested (in)",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich anziehen",
+    "ipa": "[zɪç ˈanˌtsiːən]",
+    "fa": "لباس پوشیدن",
+    "en": "to get dressed",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich ausziehen",
+    "ipa": "[zɪç ˈaʊ̯sˌtsiːən]",
+    "fa": "لباس درآوردن",
+    "en": "to get undressed",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "frühstücken",
+    "ipa": "[ˈfʁyːˌʃtʏkən]",
+    "fa": "صبحانه خوردن",
+    "en": "to have breakfast",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "duschen",
+    "ipa": "[ˈduːʃən]",
+    "fa": "دوش گرفتن",
+    "en": "to shower",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Zähne putzen",
+    "ipa": "[ˈt͡sɛːnə ˈpʊt͡sn̩]",
+    "fa": "مسواک زدن",
+    "en": "to brush teeth",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "die Uhr",
+    "ipa": "[diː ʔuːɐ̯]",
+    "fa": "ساعت (دیواری/مچی)",
+    "en": "clock / watch",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "die Stunde",
+    "ipa": "[diː ˈʃtʊndə]",
+    "fa": "ساعت (زمان)",
+    "en": "hour",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "die Minute",
+    "ipa": "[diː miˈnuːtə]",
+    "fa": "دقیقه",
+    "en": "minute",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Morgen",
+    "ipa": "[deːɐ̯ ˈmɔʁɡn̩]",
+    "fa": "صبح",
+    "en": "morning",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Vormittag",
+    "ipa": "[deːɐ̯ ˈfoːɐ̯mɪtaːk]",
+    "fa": "قبل از ظهر",
+    "en": "forenoon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Mittag",
+    "ipa": "[deːɐ̯ ˈmɪtaːk]",
+    "fa": "ظهر",
+    "en": "noon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Nachmittag",
+    "ipa": "[deːɐ̯ ˈnaːxmɪtaːk]",
+    "fa": "بعد از ظهر",
+    "en": "afternoon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Abend",
+    "ipa": "[deːɐ̯ ˈaːbn̩t]",
+    "fa": "عصر",
+    "en": "evening",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "die Nacht",
+    "ipa": "[diː naxt]",
+    "fa": "شب",
+    "en": "night",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "heute",
+    "ipa": "[ˈhɔʏ̯tə]",
+    "fa": "امروز",
+    "en": "today",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "morgen",
+    "ipa": "[ˈmɔʁɡn̩]",
+    "fa": "فردا",
+    "en": "tomorrow",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "gestern",
+    "ipa": "[ˈɡɛstɐn]",
+    "fa": "دیروز",
+    "en": "yesterday",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "übermorgen",
+    "ipa": "[ˈyːbɐˌmɔʁɡn̩]",
+    "fa": "پس‌فردا",
+    "en": "the day after tomorrow",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "vorgestern",
+    "ipa": "[ˈfoːɐ̯ˌɡɛstɐn]",
+    "fa": "پریروز",
+    "en": "the day before yesterday",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "die Woche",
+    "ipa": "[diː ˈvɔxə]",
+    "fa": "هفته",
+    "en": "week",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "das Wochenende",
+    "ipa": "[das ˈvɔxənˌɛndə]",
+    "fa": "آخر هفته",
+    "en": "weekend",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "der Monat",
+    "ipa": "[deːɐ̯ ˈmoːnat]",
+    "fa": "ماه",
+    "en": "month",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "das Jahr",
+    "ipa": "[das jaːɐ̯]",
+    "fa": "سال",
+    "en": "year",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "das Wetter",
+    "ipa": "[das ˈvɛtɐ]",
+    "fa": "آب‌وهوا",
+    "en": "weather",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "die Sonne",
+    "ipa": "[diː ˈzɔnə]",
+    "fa": "آفتاب",
+    "en": "sun",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "der Regen",
+    "ipa": "[deːɐ̯ ˈʁeːɡn̩]",
+    "fa": "باران",
+    "en": "rain",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "der Schnee",
+    "ipa": "[deːɐ̯ ʃneː]",
+    "fa": "برف",
+    "en": "snow",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "der Wind",
+    "ipa": "[deːɐ̯ vɪnt]",
+    "fa": "باد",
+    "en": "wind",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "warm",
+    "ipa": "[vaʁm]",
+    "fa": "گرم",
+    "en": "warm",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "kalt",
+    "ipa": "[kalt]",
+    "fa": "سرد",
+    "en": "cold",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "heiß",
+    "ipa": "[haɪ̯s]",
+    "fa": "داغ / بسیار گرم",
+    "en": "hot",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "sonnig",
+    "ipa": "[ˈzɔnɪç]",
+    "fa": "آفتابی",
+    "en": "sunny",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "regnerisch",
+    "ipa": "[ˈʁeːɡnəʁɪʃ]",
+    "fa": "بارانی",
+    "en": "rainy",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "schneien",
+    "ipa": "[ˈʃnaɪ̯ən]",
+    "fa": "برف باریدن",
+    "en": "to snow",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "regnen",
+    "ipa": "[ˈʁeːɡnən]",
+    "fa": "باران باریدن",
+    "en": "to rain",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "das Haus",
+    "ipa": "[das haʊ̯s]",
+    "fa": "خانه (ساختمان)",
+    "en": "house",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "die Wohnung",
+    "ipa": "[diː ˈvoːnʊŋ]",
+    "fa": "آپارتمان",
+    "en": "apartment",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Zimmer",
+    "ipa": "[das ˈt͡sɪmɐ]",
+    "fa": "اتاق",
+    "en": "room",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "die Küche",
+    "ipa": "[diː ˈkʏçə]",
+    "fa": "آشپزخانه",
+    "en": "kitchen",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Bad",
+    "ipa": "[das baːt]",
+    "fa": "حمام / دستشویی",
+    "en": "bathroom",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Wohnzimmer",
+    "ipa": "[das ˈvoːnˌt͡sɪmɐ]",
+    "fa": "اتاق نشیمن",
+    "en": "living room",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Schlafzimmer",
+    "ipa": "[das ˈʃlaːfˌt͡sɪmɐ]",
+    "fa": "اتاق خواب",
+    "en": "bedroom",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Flur",
+    "ipa": "[deːɐ̯ fluːɐ̯]",
+    "fa": "راهرو",
+    "en": "hallway",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Balkon",
+    "ipa": "[deːɐ̯ balˈkɔ̃ː]",
+    "fa": "بالکن",
+    "en": "balcony",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Keller",
+    "ipa": "[deːɐ̯ ˈkɛlɐ]",
+    "fa": "زیرزمین",
+    "en": "basement",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Garten",
+    "ipa": "[deːɐ̯ ˈɡaʁtn̩]",
+    "fa": "باغچه / حیاط",
+    "en": "garden",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "die Tür",
+    "ipa": "[diː tyːɐ̯]",
+    "fa": "در",
+    "en": "door",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Fenster",
+    "ipa": "[das ˈfɛnstɐ]",
+    "fa": "پنجره",
+    "en": "window",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "die Wand",
+    "ipa": "[diː vant]",
+    "fa": "دیوار",
+    "en": "wall",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Bild",
+    "ipa": "[das bɪlt]",
+    "fa": "تصویر",
+    "en": "picture",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Tisch",
+    "ipa": "[deːɐ̯ tɪʃ]",
+    "fa": "میز",
+    "en": "table",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Stuhl",
+    "ipa": "[deːɐ̯ ʃtuːl]",
+    "fa": "صندلی",
+    "en": "chair",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Sofa",
+    "ipa": "[das ˈzoːfa]",
+    "fa": "مبل",
+    "en": "sofa",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Sessel",
+    "ipa": "[deːɐ̯ ˈzɛsl̩]",
+    "fa": "صندلی راحتی",
+    "en": "armchair",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Schrank",
+    "ipa": "[deːɐ̯ ʃʁaŋk]",
+    "fa": "کمد / گنجه",
+    "en": "cupboard / wardrobe",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Regal",
+    "ipa": "[das ʁeˈɡaːl]",
+    "fa": "قفسه",
+    "en": "shelf",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Spiegel",
+    "ipa": "[deːɐ̯ ˈʃpiːɡl̩]",
+    "fa": "آینه",
+    "en": "mirror",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Vorhang",
+    "ipa": "[deːɐ̯ ˈfoːɐ̯haŋ]",
+    "fa": "پرده",
+    "en": "curtain",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "der Teppich",
+    "ipa": "[deːɐ̯ ˈtɛpɪç]",
+    "fa": "قالی / فرش",
+    "en": "carpet",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Bett",
+    "ipa": "[das bɛt]",
+    "fa": "تخت",
+    "en": "bed",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "die Lampe",
+    "ipa": "[diː ˈlampə]",
+    "fa": "چراغ",
+    "en": "lamp",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "das Brötchen",
+    "ipa": "[das ˈbʁøːtçən]",
+    "fa": "نان کوچک (نان سنگک)",
+    "en": "roll (bread)",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Käse",
+    "ipa": "[deːɐ̯ ˈkɛːzə]",
+    "fa": "پنیر",
+    "en": "cheese",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Butter",
+    "ipa": "[diː ˈbʊtɐ]",
+    "fa": "کره",
+    "en": "butter",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Marmelade",
+    "ipa": "[diː maʁməˈlaːdə]",
+    "fa": "مربا",
+    "en": "jam",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Honig",
+    "ipa": "[deːɐ̯ ˈhoːnɪç]",
+    "fa": "عسل",
+    "en": "honey",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Ei",
+    "ipa": "[das aɪ̯]",
+    "fa": "تخم‌مرغ",
+    "en": "egg",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Wurst",
+    "ipa": "[diː vʊʁst]",
+    "fa": "سوسیس / کالباس",
+    "en": "sausage",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Fleisch",
+    "ipa": "[das flaɪ̯ʃ]",
+    "fa": "گوشت",
+    "en": "meat",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Huhn",
+    "ipa": "[das huːn]",
+    "fa": "مرغ",
+    "en": "chicken",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Fisch",
+    "ipa": "[deːɐ̯ fɪʃ]",
+    "fa": "ماهی",
+    "en": "fish",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Obst",
+    "ipa": "[das ˈoːpst]",
+    "fa": "میوه",
+    "en": "fruit",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Apfel",
+    "ipa": "[deːɐ̯ ˈapfl̩]",
+    "fa": "سیب",
+    "en": "apple",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Banane",
+    "ipa": "[diː baˈnaːnə]",
+    "fa": "موز",
+    "en": "banana",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Birne",
+    "ipa": "[diː ˈbɪʁnə]",
+    "fa": "گلابی",
+    "en": "pear",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Orange",
+    "ipa": "[oˈʁaŋʃə]",
+    "fa": "پرتقال",
+    "en": "orange",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Erdbeere",
+    "ipa": "[diː ˈeːɐ̯tbeːʁə]",
+    "fa": "توت‌فرنگی",
+    "en": "strawberry",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Traube",
+    "ipa": "[diː ˈtʁaʊ̯bə]",
+    "fa": "انگور",
+    "en": "grape",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Gemüse",
+    "ipa": "[das ɡəˈmyːzə]",
+    "fa": "سبزیجات",
+    "en": "vegetables",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Kartoffel",
+    "ipa": "[diː kaʁˈtɔfl̩]",
+    "fa": "سیب‌زمینی",
+    "en": "potato",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Tomate",
+    "ipa": "[diː toˈmaːtə]",
+    "fa": "گوجه‌فرنگی",
+    "en": "tomato",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Gurke",
+    "ipa": "[diː ˈɡʊʁkə]",
+    "fa": "خیار",
+    "en": "cucumber",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Karotte",
+    "ipa": "[diː kaˈʁɔtə]",
+    "fa": "هویج",
+    "en": "carrot",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Zwiebel",
+    "ipa": "[diː ˈt͡sviːbl̩]",
+    "fa": "پیاز",
+    "en": "onion",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Salat",
+    "ipa": "[deːɐ̯ zaˈlaːt]",
+    "fa": "سالاد",
+    "en": "salad",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "die Suppe",
+    "ipa": "[diː ˈzʊpə]",
+    "fa": "سوپ",
+    "en": "soup",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Kuchen",
+    "ipa": "[deːɐ̯ ˈkuːxən]",
+    "fa": "کیک",
+    "en": "cake",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Bier",
+    "ipa": "[das biːɐ̯]",
+    "fa": "آبجو",
+    "en": "beer",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "der Wein",
+    "ipa": "[deːɐ̯ vaɪ̯n]",
+    "fa": "شراب",
+    "en": "wine",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das Hemd",
+    "ipa": "[das hɛmt]",
+    "fa": "پیراهن (مردانه)",
+    "en": "shirt",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Hose",
+    "ipa": "[diː ˈhoːzə]",
+    "fa": "شلوار",
+    "en": "trousers",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Jeans",
+    "ipa": "[diː d͡ʒiːns]",
+    "fa": "شلوار جین",
+    "en": "jeans",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "der Rock",
+    "ipa": "[deːɐ̯ ʁɔk]",
+    "fa": "دامن",
+    "en": "skirt",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "das Kleid",
+    "ipa": "[das klaɪ̯t]",
+    "fa": "لباس (زنانه)",
+    "en": "dress",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Jacke",
+    "ipa": "[diː ˈjakə]",
+    "fa": "ژاکت",
+    "en": "jacket",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "der Mantel",
+    "ipa": "[deːɐ̯ ˈmantl̩]",
+    "fa": "کاپشن / پالتو",
+    "en": "coat",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "der Pullover",
+    "ipa": "[deːɐ̯ ˈpʊloːvɐ]",
+    "fa": "پلیور",
+    "en": "pullover / sweater",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "der Schal",
+    "ipa": "[deːɐ̯ ʃaːl]",
+    "fa": "شال گردن",
+    "en": "scarf",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Mütze",
+    "ipa": "[diː ˈmʏt͡sə]",
+    "fa": "کلاه (بافتنی)",
+    "en": "cap / beanie",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Schuhe",
+    "ipa": "[diː ˈʃuːə]",
+    "fa": "کفش‌ها",
+    "en": "shoes",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Stiefel",
+    "ipa": "[diː ˈʃtiːfl̩]",
+    "fa": "چکمه‌ها",
+    "en": "boots",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "die Socken",
+    "ipa": "[diː ˈzɔkən]",
+    "fa": "جوراب‌ها",
+    "en": "socks",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "der Kopf",
+    "ipa": "[deːɐ̯ kɔpf]",
+    "fa": "سر",
+    "en": "head",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "das Auge",
+    "ipa": "[das ˈaʊ̯ɡə]",
+    "fa": "چشم",
+    "en": "eye",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Augen",
+    "ipa": "[diː ˈaʊ̯ɡn̩]",
+    "fa": "چشم‌ها",
+    "en": "eyes",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "das Ohr",
+    "ipa": "[das oːɐ̯]",
+    "fa": "گوش",
+    "en": "ear",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Nase",
+    "ipa": "[diː ˈnaːzə]",
+    "fa": "بینی",
+    "en": "nose",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "der Mund",
+    "ipa": "[deːɐ̯ mʊnt]",
+    "fa": "دهان",
+    "en": "mouth",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "der Hals",
+    "ipa": "[deːɐ̯ hals]",
+    "fa": "گردن",
+    "en": "neck",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Schulter",
+    "ipa": "[diː ˈʃʊltɐ]",
+    "fa": "شانه",
+    "en": "shoulder",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "der Arm",
+    "ipa": "[deːɐ̯ aʁm]",
+    "fa": "بازو",
+    "en": "arm",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Hand",
+    "ipa": "[diː hant]",
+    "fa": "دست",
+    "en": "hand",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "das Bein",
+    "ipa": "[das baɪ̯n]",
+    "fa": "پا (از ران تا مچ)",
+    "en": "leg",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "der Fuß",
+    "ipa": "[deːɐ̯ fuːs]",
+    "fa": "پا (کف پا)",
+    "en": "foot",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Haare",
+    "ipa": "[diː ˈhaːʁə]",
+    "fa": "موها",
+    "en": "hair",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Zähne",
+    "ipa": "[diː ˈt͡sɛːnə]",
+    "fa": "دندان‌ها",
+    "en": "teeth",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "die Familie",
+    "ipa": "[diː faˈmiːli̯ə]",
+    "fa": "خانواده",
+    "en": "family",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Eltern",
+    "ipa": "[diː ˈɛltɐn]",
+    "fa": "والدین",
+    "en": "parents",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Geschwister",
+    "ipa": "[diː ɡəˈʃvɪstɐ]",
+    "fa": "خواهر و برادرها",
+    "en": "siblings",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "der Sohn",
+    "ipa": "[deːɐ̯ zoːn]",
+    "fa": "پسر (فرزند)",
+    "en": "son",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Tochter",
+    "ipa": "[diː ˈtɔxtɐ]",
+    "fa": "دختر (فرزند)",
+    "en": "daughter",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "das Baby",
+    "ipa": "[das ˈbeːbi]",
+    "fa": "نوزاد",
+    "en": "baby",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "der Opa",
+    "ipa": "[deːɐ̯ ˈoːpa]",
+    "fa": "پدربزرگ",
+    "en": "grandpa",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Oma",
+    "ipa": "[diː ˈoːma]",
+    "fa": "مادربزرگ",
+    "en": "grandma",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "der Onkel",
+    "ipa": "[deːɐ̯ ˈɔŋkl̩]",
+    "fa": "عمو / دایی",
+    "en": "uncle",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Tante",
+    "ipa": "[diː ˈtantə]",
+    "fa": "عمه / خاله",
+    "en": "aunt",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "der Cousin",
+    "ipa": "[deːɐ̯ kuˈzɛ̃ː]",
+    "fa": "پسرعمو / پسرخاله",
+    "en": "cousin (male)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "die Cousine",
+    "ipa": "[diː kuˈziːnə]",
+    "fa": "دخترعمو / دخترخاله",
+    "en": "cousin (female)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "der Arzt",
+    "ipa": "[deːɐ̯ ʔaʁtst]",
+    "fa": "پزشک (مرد)",
+    "en": "doctor (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Ärztin",
+    "ipa": "[diː ˈɛʁtstɪn]",
+    "fa": "پزشک (زن)",
+    "en": "doctor (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Lehrer",
+    "ipa": "[deːɐ̯ ˈleːʁɐ]",
+    "fa": "معلم (مرد)",
+    "en": "teacher (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Lehrerin",
+    "ipa": "[diː ˈleːʁəʁɪn]",
+    "fa": "معلم (زن)",
+    "en": "teacher (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Schüler",
+    "ipa": "[deːɐ̯ ˈʃyːlɐ]",
+    "fa": "دانش‌آموز (مرد)",
+    "en": "pupil (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Schülerin",
+    "ipa": "[diː ˈʃyːləʁɪn]",
+    "fa": "دانش‌آموز (زن)",
+    "en": "pupil (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Student",
+    "ipa": "[deːɐ̯ ʃtuˈdɛnt]",
+    "fa": "دانشجو (مرد)",
+    "en": "student (uni, male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Studentin",
+    "ipa": "[diː ʃtuˈdɛntɪn]",
+    "fa": "دانشجو (زن)",
+    "en": "student (uni, female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Polizist",
+    "ipa": "[deːɐ̯ poliˈt͡sɪst]",
+    "fa": "پلیس (مرد)",
+    "en": "policeman",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Polizistin",
+    "ipa": "[diː poliˈt͡sɪstɪn]",
+    "fa": "پلیس (زن)",
+    "en": "policewoman",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Krankenpfleger",
+    "ipa": "[deːɐ̯ ˈkʁaŋkn̩ˌpfleːɡɐ]",
+    "fa": "پرستار (مرد)",
+    "en": "nurse (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Krankenschwester",
+    "ipa": "[diː ˈkʁaŋkn̩ˌʃvɛstɐ]",
+    "fa": "پرستار (زن)",
+    "en": "nurse (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Ingenieur",
+    "ipa": "[deːɐ̯ ɪnʒeˈni̯øːɐ̯]",
+    "fa": "مهندس (مرد)",
+    "en": "engineer",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Ingenieurin",
+    "ipa": "[diː ɪnʒeˈni̯øːʁɪn]",
+    "fa": "مهندس (زن)",
+    "en": "engineer (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Bäcker",
+    "ipa": "[deːɐ̯ ˈbɛkɐ]",
+    "fa": "نانوا",
+    "en": "baker",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Verkäufer",
+    "ipa": "[deːɐ̯ fɛɐ̯ˈkɔʏ̯fɐ]",
+    "fa": "فروشنده (مرد)",
+    "en": "salesman",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Verkäuferin",
+    "ipa": "[diː fɛɐ̯ˈkɔʏ̯fəʁɪn]",
+    "fa": "فروشنده (زن)",
+    "en": "saleswoman",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Koch",
+    "ipa": "[deːɐ̯ kɔx]",
+    "fa": "آشپز (مرد)",
+    "en": "cook (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Köchin",
+    "ipa": "[diː ˈkœçɪn]",
+    "fa": "آشپز (زن)",
+    "en": "cook (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Fahrer",
+    "ipa": "[deːɐ̯ ˈfaːʁɐ]",
+    "fa": "راننده",
+    "en": "driver",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "der Friseur",
+    "ipa": "[deːɐ̯ fʁiˈzøːɐ̯]",
+    "fa": "آرایشگر (مرد)",
+    "en": "hairdresser",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Friseurin",
+    "ipa": "[diː fʁiˈzøːʁɪn]",
+    "fa": "آرایشگر (زن)",
+    "en": "hairdresser (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "die Stadt",
+    "ipa": "[diː ʃtat]",
+    "fa": "شهر",
+    "en": "city",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Straße",
+    "ipa": "[diː ˈʃtʁaːsə]",
+    "fa": "خیابان",
+    "en": "street",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "der Platz",
+    "ipa": "[deːɐ̯ plats]",
+    "fa": "میدان / جایگاه",
+    "en": "square / place",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Gebäude",
+    "ipa": "[das ɡəˈbɔʏ̯də]",
+    "fa": "ساختمان",
+    "en": "building",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "der Bahnhof",
+    "ipa": "[deːɐ̯ ˈbaːnhoːf]",
+    "fa": "ایستگاه قطار",
+    "en": "train station",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "der Supermarkt",
+    "ipa": "[deːɐ̯ ˈzuːpɐmaʁkt]",
+    "fa": "سوپرمارکت",
+    "en": "supermarket",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Bäckerei",
+    "ipa": "[diː bɛkəˈʁaɪ̯]",
+    "fa": "نانوایی",
+    "en": "bakery",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Apotheke",
+    "ipa": "[diː apoˈteːkə]",
+    "fa": "داروخانه",
+    "en": "pharmacy",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Krankenhaus",
+    "ipa": "[das ˈkʁaŋkn̩ˌhaʊ̯s]",
+    "fa": "بیمارستان",
+    "en": "hospital",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Polizei",
+    "ipa": "[diː poliˈt͡saɪ̯]",
+    "fa": "پلیس (نیرو)",
+    "en": "police",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Post",
+    "ipa": "[diː pɔst]",
+    "fa": "اداره پست",
+    "en": "post office",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Bank",
+    "ipa": "[diː baŋk]",
+    "fa": "بانک",
+    "en": "bank",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Restaurant",
+    "ipa": "[das ʁɛstoˈʁɑ̃ː]",
+    "fa": "رستوران",
+    "en": "restaurant",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Café",
+    "ipa": "[das kaˈfeː]",
+    "fa": "کافی‌شاپ",
+    "en": "café",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "der Park",
+    "ipa": "[deːɐ̯ paʁk]",
+    "fa": "پارک",
+    "en": "park",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Kino",
+    "ipa": "[das ˈkiːno]",
+    "fa": "سینما",
+    "en": "cinema",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Museum",
+    "ipa": "[das muˈzeːʊm]",
+    "fa": "موزه",
+    "en": "museum",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Kirche",
+    "ipa": "[diː ˈkɪʁçə]",
+    "fa": "کلیسا",
+    "en": "church",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Schule",
+    "ipa": "[diː ˈʃuːlə]",
+    "fa": "مدرسه",
+    "en": "school",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "die Universität",
+    "ipa": "[diː ʔunivɛʁziˈtɛːt]",
+    "fa": "دانشگاه",
+    "en": "university",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "das Auto",
+    "ipa": "[das ˈaʊ̯to]",
+    "fa": "ماشین (خودرو)",
+    "en": "car",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "der Bus",
+    "ipa": "[deːɐ̯ bʊs]",
+    "fa": "اتوبوس",
+    "en": "bus",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "die Bahn",
+    "ipa": "[diː baːn]",
+    "fa": "قطار / تراموا",
+    "en": "train / tram",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "das Fahrrad",
+    "ipa": "[das ˈfaːɐ̯ʁat]",
+    "fa": "دوچرخه",
+    "en": "bicycle",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "das Motorrad",
+    "ipa": "[das moˈtoːɐ̯ʁat]",
+    "fa": "موتورسیکلت",
+    "en": "motorbike",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "das Flugzeug",
+    "ipa": "[das ˈfluːktsɔʏ̯k]",
+    "fa": "هواپیما",
+    "en": "airplane",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "der Zug",
+    "ipa": "[deːɐ̯ t͡suːk]",
+    "fa": "قطار (مسافری)",
+    "en": "train",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "fliegen",
+    "ipa": "[ˈfliːɡən]",
+    "fa": "پرواز کردن",
+    "en": "to fly",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "die Ecke",
+    "ipa": "[diː ˈɛkə]",
+    "fa": "گوشه / نبش",
+    "en": "corner",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "die Ampel",
+    "ipa": "[diː ˈampl̩]",
+    "fa": "چراغ راهنمایی",
+    "en": "traffic light",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Fußball spielen",
+    "ipa": "[ˈfuːsbal ˌʃpiːlən]",
+    "fa": "فوتبال بازی کردن",
+    "en": "to play football",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Musik hören",
+    "ipa": "[muˈziːk ˈhøːʁən]",
+    "fa": "موسیقی گوش دادن",
+    "en": "to listen to music",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Bücher lesen",
+    "ipa": "[ˈbyːçɐ ˈleːzn̩]",
+    "fa": "کتاب خواندن",
+    "en": "to read books",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "reisen",
+    "ipa": "[ˈʁaɪ̯zn̩]",
+    "fa": "سفر کردن",
+    "en": "to travel",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "tanzen",
+    "ipa": "[ˈtant͡sn̩]",
+    "fa": "رقصیدن",
+    "en": "to dance",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "singen",
+    "ipa": "[ˈzɪŋən]",
+    "fa": "آواز خواندن",
+    "en": "to sing",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "malen",
+    "ipa": "[ˈmaːlən]",
+    "fa": "نقاشی کردن",
+    "en": "to paint",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "die Türkei",
+    "ipa": "[diː ˈtʏʁkaɪ̯]",
+    "fa": "ترکیه",
+    "en": "Turkey",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Frankreich",
+    "ipa": "[ˈfʁaŋkʁaɪ̯ç]",
+    "fa": "فرانسه",
+    "en": "France",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Italien",
+    "ipa": "[iˈtaːli̯ən]",
+    "fa": "ایتالیا",
+    "en": "Italy",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Spanien",
+    "ipa": "[ˈʃpaːni̯ən]",
+    "fa": "اسپانیا",
+    "en": "Spain",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Österreich",
+    "ipa": "[ˈøːstɐʁaɪ̯ç]",
+    "fa": "اتریش",
+    "en": "Austria",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "die Schweiz",
+    "ipa": "[diː ʃvaɪ̯ts]",
+    "fa": "سوئیس",
+    "en": "Switzerland",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "China",
+    "ipa": "[ˈçiːna]",
+    "fa": "چین",
+    "en": "China",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Japan",
+    "ipa": "[jaˈpaːn]",
+    "fa": "ژاپن",
+    "en": "Japan",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Russland",
+    "ipa": "[ˈʁʊslant]",
+    "fa": "روسیه",
+    "en": "Russia",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Englisch",
+    "ipa": "[ˈɛŋlɪʃ]",
+    "fa": "انگلیسی (زبان)",
+    "en": "English",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Französisch",
+    "ipa": "[fʁanˈt͡søːzɪʃ]",
+    "fa": "فرانسوی (زبان)",
+    "en": "French",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Spanisch",
+    "ipa": "[ˈʃpaːnɪʃ]",
+    "fa": "اسپانیایی (زبان)",
+    "en": "Spanish",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Italienisch",
+    "ipa": "[itaˈli̯eːnɪʃ]",
+    "fa": "ایتالیایی (زبان)",
+    "en": "Italian",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "deutsch",
+    "ipa": "[dɔʏ̯tʃ]",
+    "fa": "آلمانی (زبان/مربوط)",
+    "en": "German",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "türkisch",
+    "ipa": "[ˈtʏʁkɪʃ]",
+    "fa": "ترکی (زبان/مربوط)",
+    "en": "Turkish",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "gut",
+    "ipa": "[ɡuːt]",
+    "fa": "خوب",
+    "en": "good",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "schlecht",
+    "ipa": "[ʃlɛçt]",
+    "fa": "بد",
+    "en": "bad",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "groß",
+    "ipa": "[ɡʁoːs]",
+    "fa": "بزرگ / قدبلند",
+    "en": "big / tall",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "klein",
+    "ipa": "[klaɪ̯n]",
+    "fa": "کوچک / کوتاه",
+    "en": "small / short",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "jung",
+    "ipa": "[jʊŋ]",
+    "fa": "جوان",
+    "en": "young",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "alt",
+    "ipa": "[alt]",
+    "fa": "پیر / قدیمی",
+    "en": "old",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "neu",
+    "ipa": "[nɔʏ̯]",
+    "fa": "نو",
+    "en": "new",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "teuer",
+    "ipa": "[ˈtɔʏ̯ɐ]",
+    "fa": "گران",
+    "en": "expensive",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "billig",
+    "ipa": "[ˈbɪlɪç]",
+    "fa": "ارزان",
+    "en": "cheap",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "wichtig",
+    "ipa": "[ˈvɪçtɪç]",
+    "fa": "مهم",
+    "en": "important",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "interessant",
+    "ipa": "[ɪntəʁɛˈsant]",
+    "fa": "جالب",
+    "en": "interesting",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "langweilig",
+    "ipa": "[ˈlaŋvaɪ̯lɪç]",
+    "fa": "کسالت‌بار",
+    "en": "boring",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "schnell",
+    "ipa": "[ʃnɛl]",
+    "fa": "سریع",
+    "en": "fast",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "langsam",
+    "ipa": "[ˈlaŋzaːm]",
+    "fa": "آهسته",
+    "en": "slow",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "glücklich",
+    "ipa": "[ˈɡlʏklɪç]",
+    "fa": "خوشحال",
+    "en": "happy",
+    "level": "A1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "traurig",
+    "ipa": "[ˈtʁaʊ̯ʁɪç]",
+    "fa": "غمگین",
+    "en": "sad",
+    "level": "A1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "müde",
+    "ipa": "[ˈmyːdə]",
+    "fa": "خسته",
+    "en": "tired",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "krank",
+    "ipa": "[kʁaŋk]",
+    "fa": "بیمار",
+    "en": "ill",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "gesund",
+    "ipa": "[ɡəˈzʊnt]",
+    "fa": "سالم",
+    "en": "healthy",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "in",
+    "ipa": "[ɪn]",
+    "fa": "در (مکان داخل)",
+    "en": "in",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "auf",
+    "ipa": "[aʊ̯f]",
+    "fa": "روی (سطح) / در (مکان باز)",
+    "en": "on / at",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "an",
+    "ipa": "[an]",
+    "fa": "کنار / به (عمودی)",
+    "en": "at / on (vertical)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "bei",
+    "ipa": "[baɪ̯]",
+    "fa": "نزد / در (مکان شخص)",
+    "en": "at (someone's place)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "mit",
+    "ipa": "[mɪt]",
+    "fa": "با (همراه)",
+    "en": "with",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "nach",
+    "ipa": "[naːx]",
+    "fa": "به سوی (مکان) / بعد از (زمان)",
+    "en": "to (direction) / after",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "von",
+    "ipa": "[fɔn]",
+    "fa": "از (مبدأ)",
+    "en": "from",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "für",
+    "ipa": "[fyːɐ̯]",
+    "fa": "برای",
+    "en": "for",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ohne",
+    "ipa": "[ˈoːnə]",
+    "fa": "بدون",
+    "en": "without",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "seit",
+    "ipa": "[zaɪ̯t]",
+    "fa": "از (زمان شروع)",
+    "en": "since / for (time)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "am",
+    "ipa": "[am]",
+    "fa": "در روز (جمله با روز هفته)",
+    "en": "on (day)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "im",
+    "ipa": "[ɪm]",
+    "fa": "در ماه / در (فصل)",
+    "en": "in (month/season)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "um",
+    "ipa": "[ʊm]",
+    "fa": "ساعت (زمان) / دور",
+    "en": "at (time) / around",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "und",
+    "ipa": "[ʊnt]",
+    "fa": "و",
+    "en": "and",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "aber",
+    "ipa": "[ˈaːbɐ]",
+    "fa": "اما",
+    "en": "but",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "oder",
+    "ipa": "[ˈoːdɐ]",
+    "fa": "یا",
+    "en": "or",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "denn",
+    "ipa": "[dɛn]",
+    "fa": "زیرا (جمله ساده)",
+    "en": "because (main clause)",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "weil",
+    "ipa": "[vaɪ̯l]",
+    "fa": "زیرا (جمله فرعی)",
+    "en": "because (subordinate clause)",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "es gibt",
+    "ipa": "[ɛs ɡiːpt]",
+    "fa": "وجود دارد",
+    "en": "there is / there are",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "ab",
+    "ipa": "[ap]",
+    "fa": "از (این به بعد) / جدا",
+    "en": "from / off (prefix/preposition)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Abend",
+    "ipa": "[ˈaːbənt]",
+    "fa": "غروب / شب",
+    "en": "evening",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Abendessen",
+    "ipa": "[ˈaːbn̩tˌʔɛsn̩]",
+    "fa": "شام",
+    "en": "dinner / supper",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "abends",
+    "ipa": "[ˈaːbn̩ts]",
+    "fa": "شب‌ها / عصرها",
+    "en": "in the evening(s)",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "achtunddreißig",
+    "ipa": "[ˈaxtʊntˌdʁaɪ̯sɪç]",
+    "fa": "سی‌وهشت",
+    "en": "thirty-eight",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "achtundzwanzig",
+    "ipa": "[ˈaxtʊntˌtsvantsɪç]",
+    "fa": "بیست‌وهشت",
+    "en": "twenty-eight",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Achtung",
+    "ipa": "[ˈaxtʊŋ]",
+    "fa": "توجه! / احترام",
+    "en": "attention! / respect",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "achtzehnte",
+    "ipa": "[ˈaxtseːntə]",
+    "fa": "هجدهم",
+    "en": "eighteenth",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Adresse",
+    "ipa": "[aˈdʁɛsə]",
+    "fa": "آدرس",
+    "en": "address",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Affe",
+    "ipa": "[ˈafə]",
+    "fa": "میمون",
+    "en": "monkey",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Afrika",
+    "ipa": "[ˈaːfʁika]",
+    "fa": "آفریقا",
+    "en": "Africa",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Ägypten",
+    "ipa": "[ɛˈɡʏptn̩]",
+    "fa": "مصر",
+    "en": "Egypt",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "alle",
+    "ipa": "[ˈalə]",
+    "fa": "همه",
+    "en": "all / everyone",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "alles Gute",
+    "ipa": "[ˈalɛs ˈɡuːtə]",
+    "fa": "همه چی به‌خیر / موفق باشی",
+    "en": "all the best",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "alles klar",
+    "ipa": "[ˈalɛs klaːɐ̯]",
+    "fa": "همه‌چی روبه‌راهه / فهمیدم",
+    "en": "all clear / got it",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "als",
+    "ipa": "[als]",
+    "fa": "وقتی که / به‌عنوان",
+    "en": "when / as / than",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "also",
+    "ipa": "[ˈalzoː]",
+    "fa": "پس / بنابراین",
+    "en": "so / therefore",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "am Telefon",
+    "ipa": "[am teleˈfoːn]",
+    "fa": "پای تلفن",
+    "en": "on the phone",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "am Wochenende",
+    "ipa": "[am ˈvɔxn̩ʔɛndə]",
+    "fa": "در آخر هفته",
+    "en": "on the weekend",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Amerika",
+    "ipa": "[aˈmeːʁika]",
+    "fa": "آمریکا",
+    "en": "America",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Amerikaner",
+    "ipa": "[ameʁiˈkaːnɐ]",
+    "fa": "مرد آمریکایی",
+    "en": "American (man)",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Amerikanerin",
+    "ipa": "[ameʁiˈkaːnəʁɪn]",
+    "fa": "زن آمریکایی",
+    "en": "American (woman)",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "amerikanisch",
+    "ipa": "[ameʁiˈkaːnɪʃ]",
+    "fa": "آمریکایی",
+    "en": "American (adj.)",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Ampel",
+    "ipa": "[ˈampl̩]",
+    "fa": "چراغ راهنمایی",
+    "en": "traffic light",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "an der Kasse",
+    "ipa": "[an deːɐ̯ ˈkasə]",
+    "fa": "دم صندوق",
+    "en": "at the checkout",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Ananas",
+    "ipa": "[ˈananas]",
+    "fa": "آناناس",
+    "en": "pineapple",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "ander",
+    "ipa": "[ˈandɐ]",
+    "fa": "دیگر / دیگری",
+    "en": "other",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Anfang",
+    "ipa": "[ˈanfaŋ]",
+    "fa": "شروع / آغاز",
+    "en": "beginning / start",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Anfänger",
+    "ipa": "[ˈanfɛŋɐ]",
+    "fa": "مبتدی",
+    "en": "beginner",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "ankommen",
+    "ipa": "[ˈanˌkɔmən]",
+    "fa": "رسیدن (به مقصد)",
+    "en": "to arrive",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "anschauen",
+    "ipa": "[ˈanˌʃaʊ̯ən]",
+    "fa": "نگاه کردن / تماشا کردن",
+    "en": "to look at / watch",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Ankunft",
+    "ipa": "[ˈankʊnft]",
+    "fa": "ورود / رسیدن",
+    "en": "arrival",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "anmachen",
+    "ipa": "[ˈanˌmaxn̩]",
+    "fa": "روشن کردن",
+    "en": "to turn on",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Anruf",
+    "ipa": "[ˈanʁuːf]",
+    "fa": "تماس تلفنی",
+    "en": "phone call",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "antworten",
+    "ipa": "[ˈantvɔʁtn̩]",
+    "fa": "پاسخ دادن",
+    "en": "to answer",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Apfel",
+    "ipa": "[ˈapfl̩]",
+    "fa": "سیب",
+    "en": "apple",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Apfelkuchen",
+    "ipa": "[ˈapfl̩ˌkuːxn̩]",
+    "fa": "کیک سیب",
+    "en": "apple cake",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Apfelsaft",
+    "ipa": "[ˈapfl̩ˌzaft]",
+    "fa": "آب‌سیب",
+    "en": "apple juice",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Apotheke",
+    "ipa": "[apoˈteːkə]",
+    "fa": "داروخانه",
+    "en": "pharmacy",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "arabisch",
+    "ipa": "[aˈʁaːbɪʃ]",
+    "fa": "عربی",
+    "en": "Arabic",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Arbeitsheft",
+    "ipa": "[ˈaʁbaɪ̯tsˌhɛft]",
+    "fa": "کتاب کار (تمرین)",
+    "en": "workbook",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "achte",
+    "ipa": "[ˈaxtə]",
+    "fa": "هشتم",
+    "en": "eighth",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "all",
+    "ipa": "[al]",
+    "fa": "همه، کل",
+    "en": "all (of)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "am See",
+    "ipa": "[am zeː]",
+    "fa": "کنار دریاچه",
+    "en": "at the lake",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "am Strand",
+    "ipa": "[am ʃtʁant]",
+    "fa": "در ساحل",
+    "en": "at the beach",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Art",
+    "ipa": "[aːɐ̯t]",
+    "fa": "نوع / شیوه",
+    "en": "type / kind / manner",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Arzt",
+    "ipa": "[aːɐ̯tst]",
+    "fa": "پزشک (مرد)",
+    "en": "doctor (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Ärztin",
+    "ipa": "[ˈɛːɐ̯tstɪn]",
+    "fa": "پزشک (زن)",
+    "en": "doctor (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "essen",
+    "ipa": "[ˈɛsn̩]",
+    "fa": "خوردن",
+    "en": "to eat",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Asien",
+    "ipa": "[ˈaːziːən]",
+    "fa": "آسیا",
+    "en": "Asia",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "auch",
+    "ipa": "[aʊ̯x]",
+    "fa": "هم / همچنین",
+    "en": "also / too",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "auf dem Markt",
+    "ipa": "[aʊ̯f deːm maʁkt]",
+    "fa": "در بازار",
+    "en": "at the market",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "auf Wiederhören",
+    "ipa": "[aʊ̯f ˈviːdɐˌhøːʁən]",
+    "fa": "خداحافظ (پای تلفن)",
+    "en": "goodbye (on the phone)",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Aufzug",
+    "ipa": "[ˈaʊ̯ftsuːk]",
+    "fa": "آسانسور",
+    "en": "elevator / lift",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Auge",
+    "ipa": "[ˈaʊ̯ɡə]",
+    "fa": "چشم",
+    "en": "eye",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "aus",
+    "ipa": "[aʊ̯s]",
+    "fa": "از / خاموش",
+    "en": "from / out / off",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Ausgang",
+    "ipa": "[ˈaʊ̯sɡaŋ]",
+    "fa": "خروجی",
+    "en": "exit",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Australien",
+    "ipa": "[aʊ̯sˈtʁaːliːən]",
+    "fa": "استرالیا",
+    "en": "Australia",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Auto",
+    "ipa": "[ˈaʊ̯to]",
+    "fa": "ماشین / خودرو",
+    "en": "car",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Autobahn",
+    "ipa": "[ˈaʊ̯toˌbaːn]",
+    "fa": "بزرگراه",
+    "en": "highway / motorway",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Autofahren",
+    "ipa": "[ˈaʊ̯toˌfaːʁən]",
+    "fa": "رانندگی کردن",
+    "en": "driving (a car)",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Baby",
+    "ipa": "[ˈbeːbi]",
+    "fa": "نوزاد",
+    "en": "baby",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Bäcker",
+    "ipa": "[ˈbɛkɐ]",
+    "fa": "نانوا (مرد)",
+    "en": "baker (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Bäckerei",
+    "ipa": "[bɛkəˈʁaɪ̯]",
+    "fa": "نانوایی",
+    "en": "bakery",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bäckerin",
+    "ipa": "[ˈbɛkəʁɪn]",
+    "fa": "نانوا (زن)",
+    "en": "baker (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "baden",
+    "ipa": "[ˈbaːdn̩]",
+    "fa": "حمام کردن / شنا کردن",
+    "en": "to bathe / to swim",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Badezimmer",
+    "ipa": "[ˈbaːdəˌtsɪmɐ]",
+    "fa": "حمام (اتاق)",
+    "en": "bathroom",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Bahn",
+    "ipa": "[baːn]",
+    "fa": "قطار / خط راه‌آهن",
+    "en": "train / rail",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bahnhof",
+    "ipa": "[ˈbaːnhoːf]",
+    "fa": "ایستگاه قطار",
+    "en": "train station",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Balkon",
+    "ipa": "[balˈkɔŋ]",
+    "fa": "بالکن",
+    "en": "balcony",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Ball",
+    "ipa": "[bal]",
+    "fa": "توپ",
+    "en": "ball",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Banane",
+    "ipa": "[baˈnaːnə]",
+    "fa": "موز",
+    "en": "banana",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bank",
+    "ipa": "[baŋk]",
+    "fa": "بانک / نیمکت",
+    "en": "bank / bench",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Basketball",
+    "ipa": "[ˈbaskətbal]",
+    "fa": "بسکتبال",
+    "en": "basketball",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Batterie",
+    "ipa": "[batəˈʁiː]",
+    "fa": "باتری",
+    "en": "battery",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "bauen",
+    "ipa": "[ˈbaʊ̯ən]",
+    "fa": "ساختن",
+    "en": "to build",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Baum",
+    "ipa": "[baʊ̯m]",
+    "fa": "درخت",
+    "en": "tree",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "anfangen",
+    "ipa": "[ˈanˌfaŋən]",
+    "fa": "شروع کردن",
+    "en": "to begin / start",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "beginnen",
+    "ipa": "[bəˈɡɪnən]",
+    "fa": "شروع شدن/کردن",
+    "en": "to begin",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "beide",
+    "ipa": "[ˈbaɪ̯də]",
+    "fa": "هر دو",
+    "en": "both",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "beim",
+    "ipa": "[baɪ̯m]",
+    "fa": "نزد / هنگام (مخفف bei dem)",
+    "en": "at the / while (contraction of bei dem)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Bein",
+    "ipa": "[baɪ̯n]",
+    "fa": "پا (ساق)",
+    "en": "leg",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "bekommen",
+    "ipa": "[bəˈkɔmən]",
+    "fa": "گرفتن / دریافت کردن",
+    "en": "to get / receive",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "benutzen",
+    "ipa": "[bəˈnʊtsn̩]",
+    "fa": "استفاده کردن",
+    "en": "to use",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Berlin",
+    "ipa": "[bɛʁˈliːn]",
+    "fa": "برلین",
+    "en": "Berlin",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "beste Freundin",
+    "ipa": "[ˈbɛstə ˈfʁɔɪ̯ndɪn]",
+    "fa": "بهترین دوست (زن)",
+    "en": "best friend (female)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "bestellen",
+    "ipa": "[bəˈʃtɛlən]",
+    "fa": "سفارش دادن",
+    "en": "to order",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "bester Freund",
+    "ipa": "[ˈbɛstɐ fʁɔɪ̯nt]",
+    "fa": "بهترین دوست (مرد)",
+    "en": "best friend (male)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "besuchen",
+    "ipa": "[bəˈzuːxn̩]",
+    "fa": "دیدن کردن / ملاقات کردن",
+    "en": "to visit",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Bett",
+    "ipa": "[bɛt]",
+    "fa": "تخت‌خواب",
+    "en": "bed",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "bewölkt",
+    "ipa": "[bəˈvœlkt]",
+    "fa": "ابری",
+    "en": "cloudy",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bezahlen",
+    "ipa": "[bəˈtsaːlən]",
+    "fa": "پرداخت کردن",
+    "en": "to pay",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Bibliothek",
+    "ipa": "[bibliːoˈteːk]",
+    "fa": "کتابخانه",
+    "en": "library",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Bier",
+    "ipa": "[biːɐ̯]",
+    "fa": "آبجو",
+    "en": "beer",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bild",
+    "ipa": "[bɪlt]",
+    "fa": "عکس / تصویر",
+    "en": "picture / image",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Bildschirm",
+    "ipa": "[ˈbɪltʃɪʁm]",
+    "fa": "صفحه‌نمایش",
+    "en": "screen / monitor",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Birne",
+    "ipa": "[ˈbɪʁnə]",
+    "fa": "گلابی",
+    "en": "pear",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "bis",
+    "ipa": "[bɪs]",
+    "fa": "تا",
+    "en": "until / to",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "bis bald",
+    "ipa": "[bɪs balt]",
+    "fa": "به‌زودی می‌بینمت",
+    "en": "see you soon",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "bis morgen",
+    "ipa": "[bɪs ˈmɔʁɡn̩]",
+    "fa": "فردا می‌بینمت",
+    "en": "see you tomorrow",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "bis später",
+    "ipa": "[bɪs ˈʃpɛːtɐ]",
+    "fa": "بعداً می‌بینمت",
+    "en": "see you later",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "bis wann",
+    "ipa": "[bɪs van]",
+    "fa": "تا کی",
+    "en": "until when",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "bisschen",
+    "ipa": "[ˈbɪsçən]",
+    "fa": "کمی / یک‌ذره",
+    "en": "a little / a bit",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Blatt",
+    "ipa": "[blat]",
+    "fa": "برگ / ورق (کاغذ)",
+    "en": "leaf / sheet (of paper)",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bleiben",
+    "ipa": "[ˈblaɪ̯bn̩]",
+    "fa": "ماندن",
+    "en": "to stay / remain",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Bleistift",
+    "ipa": "[ˈblaɪ̯ʃtɪft]",
+    "fa": "مداد",
+    "en": "pencil",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Blumenladen",
+    "ipa": "[ˈbluːmənˌlaːdn̩]",
+    "fa": "گل‌فروشی",
+    "en": "flower shop",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Boden",
+    "ipa": "[ˈboːdn̩]",
+    "fa": "زمین / کف",
+    "en": "floor / ground",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Boot",
+    "ipa": "[boːt]",
+    "fa": "قایق",
+    "en": "boat",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Brezel",
+    "ipa": "[ˈbʁeːtsl̩]",
+    "fa": "برتزل (نان گره‌ای)",
+    "en": "pretzel",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Briefkasten",
+    "ipa": "[ˈbʁiːfˌkastn̩]",
+    "fa": "صندوق پستی",
+    "en": "mailbox",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Briefmarke",
+    "ipa": "[ˈbʁiːfˌmaʁkə]",
+    "fa": "تمبر",
+    "en": "stamp",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Brieftasche",
+    "ipa": "[ˈbʁiːfˌtaʃə]",
+    "fa": "کیف پول",
+    "en": "wallet",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Brille",
+    "ipa": "[ˈbʁɪlə]",
+    "fa": "عینک",
+    "en": "glasses",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "bringen",
+    "ipa": "[ˈbʁɪŋən]",
+    "fa": "آوردن",
+    "en": "to bring",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Brötchen",
+    "ipa": "[ˈbʁøːtçən]",
+    "fa": "نان کوچک (صبحانه)",
+    "en": "bread roll",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Brücke",
+    "ipa": "[ˈbʁʏkə]",
+    "fa": "پل",
+    "en": "bridge",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Buch",
+    "ipa": "[buːx]",
+    "fa": "کتاب",
+    "en": "book",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Bücherei",
+    "ipa": "[byçəˈʁaɪ̯]",
+    "fa": "کتابخانه (محاوره‌ای)",
+    "en": "library (informal)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Bücherregal",
+    "ipa": "[ˈbyçɐʁeˌɡaːl]",
+    "fa": "قفسه کتاب",
+    "en": "bookshelf",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Buchladen",
+    "ipa": "[ˈbuːxˌlaːdn̩]",
+    "fa": "کتاب‌فروشی",
+    "en": "bookstore",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Burger",
+    "ipa": "[ˈbœʁɡɐ]",
+    "fa": "برگر",
+    "en": "burger",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bus",
+    "ipa": "[bʊs]",
+    "fa": "اتوبوس",
+    "en": "bus",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bushaltestelle",
+    "ipa": "[ˈbʊshaltəˌʃtɛlə]",
+    "fa": "ایستگاه اتوبوس",
+    "en": "bus stop",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Butter",
+    "ipa": "[ˈbʊtɐ]",
+    "fa": "کره",
+    "en": "butter",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Café",
+    "ipa": "[kaˈfeː]",
+    "fa": "کافه",
+    "en": "café",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Chef",
+    "ipa": "[ʃɛf]",
+    "fa": "رئیس",
+    "en": "boss",
+    "level": "A1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "chinesisch",
+    "ipa": "[çiˈneːzɪʃ]",
+    "fa": "چینی",
+    "en": "Chinese",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Cola",
+    "ipa": "[ˈkoːla]",
+    "fa": "نوشابه کولا",
+    "en": "cola",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Computerraum",
+    "ipa": "[kɔmˈpjuːtɐˌʁaʊ̯m]",
+    "fa": "اتاق کامپیوتر",
+    "en": "computer room",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "cool",
+    "ipa": "[kuːl]",
+    "fa": "باحال",
+    "en": "cool",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Couch",
+    "ipa": "[kaʊ̯tʃ]",
+    "fa": "کاناپه",
+    "en": "couch / sofa",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Cousin",
+    "ipa": "[kuˈzɛ̃ː]",
+    "fa": "پسرعمو/پسردایی و ...",
+    "en": "cousin (male)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Cousine",
+    "ipa": "[kuˈziːnə]",
+    "fa": "دخترعمو/دختردایی و ...",
+    "en": "cousin (female)",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Croissant",
+    "ipa": "[kʁwaˈsɑ̃ː]",
+    "fa": "کروسان",
+    "en": "croissant",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "da",
+    "ipa": "[daː]",
+    "fa": "آنجا / چون",
+    "en": "there / since",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "da drüben",
+    "ipa": "[daː ˈdʁyːbn̩]",
+    "fa": "آن‌طرف",
+    "en": "over there",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Dach",
+    "ipa": "[dax]",
+    "fa": "سقف / پشت‌بام",
+    "en": "roof",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Dänemark",
+    "ipa": "[ˈdɛːnəmaʁk]",
+    "fa": "دانمارک",
+    "en": "Denmark",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "danken",
+    "ipa": "[ˈdaŋkn̩]",
+    "fa": "تشکر کردن",
+    "en": "to thank",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "dann",
+    "ipa": "[dan]",
+    "fa": "سپس / بعد",
+    "en": "then",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "das geht",
+    "ipa": "[das ɡeːt]",
+    "fa": "می‌شه / درسته",
+    "en": "that works / that's okay",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  }
 ]

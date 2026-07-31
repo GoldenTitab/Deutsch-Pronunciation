@@ -1,157 +1,2618 @@
 [
-  {"word":"abholen","ipa":"[ˈapˌhoːlən]","fa":"بردن / برداشتن (از جایی)","en":"to pick up (from somewhere)","level":"A2","category":"افعال روزمره"},
-  {"word":"abnehmen","ipa":"[ˈapˌneːmən]","fa":"کم کردن / وزن کم کردن","en":"to reduce / to lose weight","level":"A2","category":"افعال روزمره"},
-  {"word":"anfangen","ipa":"[ˈanˌfaŋən]","fa":"شروع کردن","en":"to start / begin","level":"A2","category":"افعال روزمره"},
-  {"word":"Antwort","ipa":"[ˈantvɔʁt]","fa":"پاسخ","en":"answer","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"anziehen","ipa":"[ˈanˌtsiːən]","fa":"پوشیدن (لباس)","en":"to put on (clothes)","level":"A2","category":"افعال روزمره"},
-  {"word":"Arbeit","ipa":"[ˈaʁbaɪ̯t]","fa":"کار (شغل / فعالیت)","en":"work / job","level":"A2","category":"کار و شغل"},
-  {"word":"aufhören","ipa":"[ˈaʊ̯fˌhøːʁən]","fa":"متوقف شدن / دست کشیدن","en":"to stop / cease","level":"A2","category":"افعال روزمره"},
-  {"word":"aufmachen","ipa":"[ˈaʊ̯fˌmaxən]","fa":"باز کردن","en":"to open","level":"A2","category":"افعال روزمره"},
-  {"word":"ausgehen","ipa":"[ˈaʊ̯sˌɡeːən]","fa":"بیرون رفتن (برای تفریح)","en":"to go out (for fun)","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Ausweis","ipa":"[ˈaʊ̯svaɪ̯s]","fa":"کارت شناسایی","en":"ID card","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"ausziehen","ipa":"[ˈaʊ̯sˌtsiːən]","fa":"درآوردن (لباس)","en":"to take off (clothes)","level":"A2","category":"افعال روزمره"},
-  {"word":"Backofen","ipa":"[ˈbakˌʔoːfn̩]","fa":"فر (اجاق گاز)","en":"oven","level":"A2","category":"منزل و خانه"},
-  {"word":"bald","ipa":"[balt]","fa":"به زودی","en":"soon","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Bauch","ipa":"[baʊ̯x]","fa":"شکم","en":"belly / stomach","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Bauchschmerzen","ipa":"[ˈbaʊ̯xˌʃmɛʁt͡sn̩]","fa":"دل‌درد","en":"stomachache","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Beruf","ipa":"[bəˈʁuːf]","fa":"شغل","en":"profession","level":"A2","category":"مشاغل"},
-  {"word":"besuchen","ipa":"[bəˈzuːxən]","fa":"ملاقات کردن / بازدید کردن","en":"to visit","level":"A2","category":"افعال روزمره"},
-  {"word":"bezahlen","ipa":"[bəˈtsaːlən]","fa":"پرداخت کردن","en":"to pay","level":"A2","category":"افعال روزمره"},
-  {"word":"Bluse","ipa":"[ˈbluːzə]","fa":"بلوز (زنانه)","en":"blouse","level":"A2","category":"پوشاک"},
-  {"word":"brauchen","ipa":"[ˈbʁaʊ̯xən]","fa":"نیاز داشتن","en":"to need","level":"A2","category":"افعال روزمره"},
-  {"word":"breit","ipa":"[bʁaɪ̯t]","fa":"پهن / عریض","en":"wide / broad","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Brief","ipa":"[bʁiːf]","fa":"نامه","en":"letter (mail)","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Büro","ipa":"[byˈʁoː]","fa":"دفتر کار","en":"office","level":"A2","category":"کار و شغل"},
-  {"word":"Cent","ipa":"[t͡sɛnt]","fa":"سنت","en":"cent","level":"A2","category":"اقتصاد و مالی"},
-  {"word":"Chef","ipa":"[ʃɛf]","fa":"رئیس (مرد)","en":"boss (male)","level":"A2","category":"مشاغل"},
-  {"word":"Chefin","ipa":"[ˈʃɛfɪn]","fa":"رئیس (زن)","en":"boss (female)","level":"A2","category":"مشاغل"},
-  {"word":"Computer","ipa":"[kɔmˈpjuːtɐ]","fa":"کامپیوتر","en":"computer","level":"A2","category":"فناوری"},
-  {"word":"Ehefrau","ipa":"[ˈeːəˌfʁaʊ̯]","fa":"همسر (زن)","en":"wife","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Ehemann","ipa":"[ˈeːəˌman]","fa":"همسر (مرد)","en":"husband","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"E-Mail","ipa":"[ˈiːmeɪ̯l]","fa":"ایمیل","en":"e-mail","level":"A2","category":"فناوری"},
-  {"word":"Ende","ipa":"[ˈɛndə]","fa":"پایان","en":"end","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"erklären","ipa":"[ɛɐ̯ˈklɛːʁən]","fa":"توضیح دادن","en":"to explain","level":"A2","category":"افعال روزمره"},
-  {"word":"erzählen","ipa":"[ɛɐ̯ˈt͡sɛːlən]","fa":"تعریف کردن (داستان)","en":"to tell / narrate","level":"A2","category":"افعال روزمره"},
-  {"word":"Euro","ipa":"[ˈɔʏ̯ʁo]","fa":"یورو","en":"euro","level":"A2","category":"اقتصاد و مالی"},
-  {"word":"Fahrkarte","ipa":"[ˈfaːɐ̯ˌkaʁtə]","fa":"بلیت (قطار/اتوبوس)","en":"ticket (train/bus)","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Fernseher","ipa":"[ˈfɛʁnˌzeːɐ]","fa":"تلویزیون (دستگاه)","en":"television set","level":"A2","category":"منزل و خانه"},
-  {"word":"Fieber","ipa":"[ˈfiːbɐ]","fa":"تب","en":"fever","level":"A2","category":"بدن و سلامتی"},
-  {"word":"finden","ipa":"[ˈfɪndn̩]","fa":"پیدا کردن / نظر داشتن","en":"to find / to think (opinion)","level":"A2","category":"افعال روزمره"},
-  {"word":"Flasche","ipa":"[ˈflaʃə]","fa":"بطری","en":"bottle","level":"A2","category":"منزل و خانه"},
-  {"word":"Flug","ipa":"[fluːk]","fa":"پرواز (سفر هوایی)","en":"flight","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Flughafen","ipa":"[ˈfluːkˌhaːfn̩]","fa":"فرودگاه","en":"airport","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Freizeit","ipa":"[ˈfʁaɪ̯t͡saɪ̯t]","fa":"اوقات فراغت","en":"free time","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Freund","ipa":"[fʁɔʏ̯nt]","fa":"دوست (مرد)","en":"friend (male)","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Freundin","ipa":"[ˈfʁɔʏ̯ndɪn]","fa":"دوست (زن)","en":"friend (female)","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"früh","ipa":"[fʁyː]","fa":"زود (صبح)","en":"early","level":"A2","category":"زمان و تقویم"},
-  {"word":"Frühstück","ipa":"[ˈfʁyːˌʃtʏk]","fa":"صبحانه","en":"breakfast","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"fühlen","ipa":"[ˈfyːlən]","fa":"احساس کردن","en":"to feel","level":"A2","category":"احساسات و شخصیت"},
-  {"word":"Fußball","ipa":"[ˈfuːsˌbal]","fa":"فوتبال","en":"football / soccer","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Gabel","ipa":"[ˈɡaːbl̩]","fa":"چنگال","en":"fork","level":"A2","category":"منزل و خانه"},
-  {"word":"geben","ipa":"[ˈɡeːbn̩]","fa":"دادن","en":"to give","level":"A2","category":"افعال روزمره"},
-  {"word":"gefallen","ipa":"[ɡəˈfalən]","fa":"پسندیده شدن (برای کسی)","en":"to like (sth. appeals to sb.)","level":"A2","category":"افعال روزمره"},
-  {"word":"Geld","ipa":"[ɡɛlt]","fa":"پول","en":"money","level":"A2","category":"اقتصاد و مالی"},
-  {"word":"Geschenk","ipa":"[ɡəˈʃɛŋk]","fa":"هدیه","en":"gift","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Gesundheit","ipa":"[ɡəˈzʊnthaɪ̯t]","fa":"سلامتی","en":"health","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Glas","ipa":"[ɡlaːs]","fa":"لیوان","en":"glass","level":"A2","category":"منزل و خانه"},
-  {"word":"Glück","ipa":"[ɡlʏk]","fa":"خوش‌شانسی / خوشبختی","en":"luck / happiness","level":"A2","category":"احساسات و شخصیت"},
-  {"word":"Großeltern","ipa":"[ˈɡʁoːsˌʔɛltɐn]","fa":"پدربزرگ و مادربزرگ","en":"grandparents","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Großmutter","ipa":"[ˈɡʁoːsˌmʊtɐ]","fa":"مادربزرگ","en":"grandmother","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Großvater","ipa":"[ˈɡʁoːsˌfaːtɐ]","fa":"پدربزرگ","en":"grandfather","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Gürtel","ipa":"[ˈɡʏʁtl̩]","fa":"کمربند","en":"belt","level":"A2","category":"پوشاک"},
-  {"word":"Handschuh","ipa":"[ˈhantˌʃuː]","fa":"دستکش","en":"glove","level":"A2","category":"پوشاک"},
-  {"word":"Handy","ipa":"[ˈhɛndi]","fa":"تلفن همراه","en":"mobile phone","level":"A2","category":"فناوری"},
-  {"word":"hässlich","ipa":"[ˈhɛslɪç]","fa":"زشت","en":"ugly","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Haustür","ipa":"[ˈhaʊ̯sˌtyːɐ̯]","fa":"در ورودی خانه","en":"front door","level":"A2","category":"منزل و خانه"},
-  {"word":"helfen","ipa":"[ˈhɛlfn̩]","fa":"کمک کردن","en":"to help","level":"A2","category":"افعال روزمره"},
-  {"word":"Herd","ipa":"[heːɐ̯t]","fa":"اجاق گاز","en":"stove / hob","level":"A2","category":"منزل و خانه"},
-  {"word":"Hobby","ipa":"[ˈhɔbi]","fa":"سرگرمی","en":"hobby","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"hoch","ipa":"[hoːx]","fa":"بلند (ارتفاع)","en":"high / tall","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"hören","ipa":"[ˈhøːʁən]","fa":"شنیدن","en":"to hear","level":"A2","category":"افعال روزمره"},
-  {"word":"Hotel","ipa":"[hoˈtɛl]","fa":"هتل","en":"hotel","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Husten","ipa":"[ˈhuːstn̩]","fa":"سرفه","en":"cough","level":"A2","category":"بدن و سلامتی"},
-  {"word":"immer","ipa":"[ˈɪmɐ]","fa":"همیشه","en":"always","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Internet","ipa":"[ˈɪntɐnɛt]","fa":"اینترنت","en":"internet","level":"A2","category":"فناوری"},
-  {"word":"kaputt","ipa":"[kaˈpʊt]","fa":"خراب","en":"broken","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"kennen","ipa":"[ˈkɛnən]","fa":"شناختن (کسی را)","en":"to know (a person)","level":"A2","category":"افعال روزمره"},
-  {"word":"Kinder","ipa":"[ˈkɪndɐ]","fa":"بچه‌ها","en":"children","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Klasse","ipa":"[ˈklasə]","fa":"کلاس (درس)","en":"class (school)","level":"A2","category":"مدرسه و آموزش"},
-  {"word":"Knoblauch","ipa":"[ˈknoːblaʊ̯x]","fa":"سیر","en":"garlic","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"Koffer","ipa":"[ˈkɔfɐ]","fa":"چمدان","en":"suitcase","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Kollege","ipa":"[kɔˈleːɡə]","fa":"همکار (مرد)","en":"colleague (male)","level":"A2","category":"کار و شغل"},
-  {"word":"Kollegin","ipa":"[kɔˈleːɡɪn]","fa":"همکار (زن)","en":"colleague (female)","level":"A2","category":"کار و شغل"},
-  {"word":"Kopfschmerzen","ipa":"[ˈkɔpfˌʃmɛʁt͡sn̩]","fa":"سردرد","en":"headache","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Kühlschrank","ipa":"[ˈkyːlˌʃʁaŋk]","fa":"یخچال","en":"fridge","level":"A2","category":"منزل و خانه"},
-  {"word":"kurz","ipa":"[kʊʁt͡s]","fa":"کوتاه","en":"short","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"lang","ipa":"[laŋ]","fa":"بلند (طول)","en":"long","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Leben","ipa":"[ˈleːbn̩]","fa":"زندگی","en":"life","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"leicht","ipa":"[laɪ̯çt]","fa":"سبک / آسان","en":"light / easy","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"lieben","ipa":"[ˈliːbn̩]","fa":"دوست داشتن (عاشق بودن)","en":"to love","level":"A2","category":"احساسات و شخصیت"},
-  {"word":"Löffel","ipa":"[ˈlœfl̩]","fa":"قاشق","en":"spoon","level":"A2","category":"منزل و خانه"},
-  {"word":"Medikament","ipa":"[medikaˈmɛnt]","fa":"دارو","en":"medicine","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Messer","ipa":"[ˈmɛsɐ]","fa":"چاقو","en":"knife","level":"A2","category":"منزل و خانه"},
-  {"word":"mitkommen","ipa":"[ˈmɪtˌkɔmən]","fa":"همراه آمدن","en":"to come along","level":"A2","category":"افعال روزمره"},
-  {"word":"Mittagessen","ipa":"[ˈmɪtaːkˌʔɛsn̩]","fa":"ناهار","en":"lunch","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"mögen","ipa":"[ˈmøːɡən]","fa":"دوست داشتن (چیزی/کسی را)","en":"to like","level":"A2","category":"افعال کمکی و وجهی"},
-  {"word":"Mülleimer","ipa":"[ˈmʏlˌʔaɪ̯mɐ]","fa":"سطل زباله","en":"rubbish bin","level":"A2","category":"منزل و خانه"},
-  {"word":"nie","ipa":"[niː]","fa":"هرگز","en":"never","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"nirgendwo","ipa":"[ˈnɪʁɡəntˌvoː]","fa":"هیچ‌جا","en":"nowhere","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Note","ipa":"[ˈnoːtə]","fa":"نمره (مدرسه)","en":"grade (school)","level":"A2","category":"مدرسه و آموزش"},
-  {"word":"Nudeln","ipa":"[ˈnuːdl̩n]","fa":"ماکارونی","en":"pasta / noodles","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"Ober","ipa":"[ˈoːbɐ]","fa":"گارسون (مرد)","en":"waiter","level":"A2","category":"مشاغل"},
-  {"word":"oft","ipa":"[ɔft]","fa":"اغلب","en":"often","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Packung","ipa":"[ˈpakʊŋ]","fa":"بسته (بسته‌بندی)","en":"pack / packet","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"Pass","ipa":"[pas]","fa":"گذرنامه","en":"passport","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"Pizza","ipa":"[ˈpɪt͡sa]","fa":"پیتزا","en":"pizza","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"Preis","ipa":"[pʁaɪ̯s]","fa":"قیمت","en":"price","level":"A2","category":"اقتصاد و مالی"},
-  {"word":"Prüfung","ipa":"[ˈpʁyːfʊŋ]","fa":"آزمون","en":"exam","level":"A2","category":"مدرسه و آموزش"},
-  {"word":"putzen","ipa":"[ˈpʊt͡sn̩]","fa":"تمیز کردن (جارو و...)","en":"to clean (sweep etc.)","level":"A2","category":"افعال روزمره"},
-  {"word":"Reis","ipa":"[ʁaɪ̯s]","fa":"برنج","en":"rice","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"Reise","ipa":"[ˈʁaɪ̯zə]","fa":"سفر","en":"trip / journey","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"riechen","ipa":"[ˈʁiːçn̩]","fa":"بو کردن","en":"to smell","level":"A2","category":"افعال روزمره"},
-  {"word":"Rücken","ipa":"[ˈʁʏkən]","fa":"پشت (کمر)","en":"back (body part)","level":"A2","category":"بدن و سلامتی"},
-  {"word":"Salz","ipa":"[zalt͡s]","fa":"نمک","en":"salt","level":"A2","category":"غذا و نوشیدنی"},
-  {"word":"sauber","ipa":"[ˈzaʊ̯bɐ]","fa":"تمیز","en":"clean","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Schale","ipa":"[ˈʃaːlə]","fa":"کاسه","en":"bowl","level":"A2","category":"منزل و خانه"},
-  {"word":"Schiff","ipa":"[ʃɪf]","fa":"کشتی","en":"ship","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"schlafen","ipa":"[ˈʃlaːfn̩]","fa":"خوابیدن","en":"to sleep","level":"A2","category":"افعال روزمره"},
-  {"word":"Schluss","ipa":"[ʃlʊs]","fa":"پایان / خاتمه","en":"end / close","level":"A2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"schmal","ipa":"[ʃmaːl]","fa":"باریک","en":"narrow","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"schmecken","ipa":"[ˈʃmɛkən]","fa":"مزه داشتن / چشیدن","en":"to taste","level":"A2","category":"افعال روزمره"},
-  {"word":"Schnupfen","ipa":"[ˈʃnʊpfn̩]","fa":"آبریزش بینی","en":"runny nose","level":"A2","category":"بدن و سلامتی"},
-  {"word":"schwer","ipa":"[ʃveːɐ̯]","fa":"سنگین / دشوار","en":"heavy / difficult","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Schwiegermutter","ipa":"[ˈʃviːɡɐˌmʊtɐ]","fa":"مادرشوهر / مادرزن","en":"mother-in-law","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"Schwiegervater","ipa":"[ˈʃviːɡɐˌfaːtɐ]","fa":"پدرشوهر / پدرزن","en":"father-in-law","level":"A2","category":"خانواده و روابط نزدیک"},
-  {"word":"selten","ipa":"[ˈzɛltn̩]","fa":"به ندرت","en":"rarely","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"sich ausruhen","ipa":"[zɪç ˈaʊ̯sˌʁuːən]","fa":"استراحت کردن","en":"to rest","level":"A2","category":"افعال روزمره"},
-  {"word":"sich erholen","ipa":"[zɪç ɛɐ̯ˈhoːlən]","fa":"بهبود یافتن (بعد از بیماری)","en":"to recover","level":"A2","category":"بدن و سلامتی"},
-  {"word":"sich kümmern","ipa":"[zɪç ˈkʏmɐn]","fa":"مراقبت کردن (از)","en":"to take care (of)","level":"A2","category":"افعال روزمره"},
-  {"word":"sich treffen","ipa":"[zɪç ˈtʁɛfn̩]","fa":"همدیگر را ملاقات کردن","en":"to meet each other","level":"A2","category":"افعال روزمره"},
-  {"word":"sich vorstellen","ipa":"[zɪç ˈfoːɐ̯ˌʃtɛlən]","fa":"خود را معرفی کردن / تصور کردن","en":"to introduce oneself / imagine","level":"A2","category":"افعال روزمره"},
-  {"word":"sich waschen","ipa":"[zɪç ˈvaʃən]","fa":"خود را شستن","en":"to wash oneself","level":"A2","category":"افعال روزمره"},
-  {"word":"Smartphone","ipa":"[ˈsmaʁtfoːn]","fa":"تلفن هوشمند","en":"smartphone","level":"A2","category":"فناوری"},
-  {"word":"Socke","ipa":"[ˈzɔkə]","fa":"جوراب","en":"sock","level":"A2","category":"پوشاک"},
-  {"word":"spät","ipa":"[ʃpɛːt]","fa":"دیر (وقت)","en":"late","level":"A2","category":"زمان و تقویم"},
-  {"word":"später","ipa":"[ˈʃpɛːtɐ]","fa":"بعداً","en":"later","level":"A2","category":"زمان و تقویم"},
-  {"word":"Spiel","ipa":"[ʃpiːl]","fa":"بازی","en":"game","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Sport","ipa":"[ʃpɔʁt]","fa":"ورزش","en":"sport","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Tasche","ipa":"[ˈtaʃə]","fa":"کیف / جیب","en":"bag / pocket","level":"A2","category":"پوشاک"},
-  {"word":"Theater","ipa":"[teˈaːtɐ]","fa":"تئاتر","en":"theatre","level":"A2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Ticket","ipa":"[ˈtɪkət]","fa":"بلیت","en":"ticket","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"tief","ipa":"[tiːf]","fa":"عمیق","en":"deep","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"über","ipa":"[ˈyːbɐ]","fa":"روی (بالا) / دربارهٔ","en":"over / about","level":"A2","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"überall","ipa":"[ˈyːbɐˌʔal]","fa":"همه‌جا","en":"everywhere","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"U-Bahn","ipa":"[ˈuːbaːn]","fa":"مترو","en":"underground / subway","level":"A2","category":"حمل‌ونقل و سفر"},
-  {"word":"vergessen","ipa":"[fɛɐ̯ˈɡɛsn̩]","fa":"فراموش کردن","en":"to forget","level":"A2","category":"افعال روزمره"},
-  {"word":"verkaufen","ipa":"[fɛɐ̯ˈkaʊ̯fn̩]","fa":"فروختن","en":"to sell","level":"A2","category":"افعال روزمره"},
-  {"word":"verstehen","ipa":"[fɛɐ̯ˈʃteːən]","fa":"فهمیدن","en":"to understand","level":"A2","category":"افعال روزمره"},
-  {"word":"vorhaben","ipa":"[ˈfoːɐ̯ˌhaːbn̩]","fa":"قصد داشتن","en":"to intend / plan","level":"A2","category":"افعال روزمره"},
-  {"word":"Waage","ipa":"[ˈvaːɡə]","fa":"ترازو","en":"scales","level":"A2","category":"منزل و خانه"},
-  {"word":"warten","ipa":"[ˈvaʁtn̩]","fa":"منتظر شدن","en":"to wait","level":"A2","category":"افعال روزمره"},
-  {"word":"Waschmaschine","ipa":"[ˈvaʃmaˌʃiːnə]","fa":"ماشین لباس‌شویی","en":"washing machine","level":"A2","category":"منزل و خانه"},
-  {"word":"weit","ipa":"[vaɪ̯t]","fa":"دور / وسیع","en":"far / wide","level":"A2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"wirklich","ipa":"[ˈvɪʁklɪç]","fa":"واقعاً","en":"really","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Zahn","ipa":"[t͡saːn]","fa":"دندان","en":"tooth","level":"A2","category":"بدن و سلامتی"},
-  {"word":"zusammen","ipa":"[t͡suˈzamən]","fa":"با هم","en":"together","level":"A2","category":"حروف ربط و قیدهای رایج"},
-  {"word":"zwischen","ipa":"[ˈt͡svɪʃn̩]","fa":"بین","en":"between","level":"A2","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"}
+  {
+    "word": "abholen",
+    "ipa": "[ˈapˌhoːlən]",
+    "fa": "بردن / برداشتن (از جایی)",
+    "en": "to pick up (from somewhere)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "abnehmen",
+    "ipa": "[ˈapˌneːmən]",
+    "fa": "کم کردن / وزن کم کردن",
+    "en": "to reduce / to lose weight",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "anfangen",
+    "ipa": "[ˈanˌfaŋən]",
+    "fa": "شروع کردن",
+    "en": "to start / begin",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Antwort",
+    "ipa": "[ˈantvɔʁt]",
+    "fa": "پاسخ",
+    "en": "answer",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "anziehen",
+    "ipa": "[ˈanˌtsiːən]",
+    "fa": "پوشیدن (لباس)",
+    "en": "to put on (clothes)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Arbeit",
+    "ipa": "[ˈaʁbaɪ̯t]",
+    "fa": "کار (شغل / فعالیت)",
+    "en": "work / job",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "aufhören",
+    "ipa": "[ˈaʊ̯fˌhøːʁən]",
+    "fa": "متوقف شدن / دست کشیدن",
+    "en": "to stop / cease",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aufmachen",
+    "ipa": "[ˈaʊ̯fˌmaxən]",
+    "fa": "باز کردن",
+    "en": "to open",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "ausgehen",
+    "ipa": "[ˈaʊ̯sˌɡeːən]",
+    "fa": "بیرون رفتن (برای تفریح)",
+    "en": "to go out (for fun)",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Ausweis",
+    "ipa": "[ˈaʊ̯svaɪ̯s]",
+    "fa": "کارت شناسایی",
+    "en": "ID card",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "ausziehen",
+    "ipa": "[ˈaʊ̯sˌtsiːən]",
+    "fa": "درآوردن (لباس)",
+    "en": "to take off (clothes)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Backofen",
+    "ipa": "[ˈbakˌʔoːfn̩]",
+    "fa": "فر (اجاق گاز)",
+    "en": "oven",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "bald",
+    "ipa": "[balt]",
+    "fa": "به زودی",
+    "en": "soon",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Bauch",
+    "ipa": "[baʊ̯x]",
+    "fa": "شکم",
+    "en": "belly / stomach",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Bauchschmerzen",
+    "ipa": "[ˈbaʊ̯xˌʃmɛʁt͡sn̩]",
+    "fa": "دل‌درد",
+    "en": "stomachache",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Beruf",
+    "ipa": "[bəˈʁuːf]",
+    "fa": "شغل",
+    "en": "profession",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "besuchen",
+    "ipa": "[bəˈzuːxən]",
+    "fa": "ملاقات کردن / بازدید کردن",
+    "en": "to visit",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "bezahlen",
+    "ipa": "[bəˈtsaːlən]",
+    "fa": "پرداخت کردن",
+    "en": "to pay",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Bluse",
+    "ipa": "[ˈbluːzə]",
+    "fa": "بلوز (زنانه)",
+    "en": "blouse",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "brauchen",
+    "ipa": "[ˈbʁaʊ̯xən]",
+    "fa": "نیاز داشتن",
+    "en": "to need",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "breit",
+    "ipa": "[bʁaɪ̯t]",
+    "fa": "پهن / عریض",
+    "en": "wide / broad",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Brief",
+    "ipa": "[bʁiːf]",
+    "fa": "نامه",
+    "en": "letter (mail)",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Büro",
+    "ipa": "[byˈʁoː]",
+    "fa": "دفتر کار",
+    "en": "office",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Cent",
+    "ipa": "[t͡sɛnt]",
+    "fa": "سنت",
+    "en": "cent",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Chef",
+    "ipa": "[ʃɛf]",
+    "fa": "رئیس (مرد)",
+    "en": "boss (male)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Chefin",
+    "ipa": "[ˈʃɛfɪn]",
+    "fa": "رئیس (زن)",
+    "en": "boss (female)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Computer",
+    "ipa": "[kɔmˈpjuːtɐ]",
+    "fa": "کامپیوتر",
+    "en": "computer",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ehefrau",
+    "ipa": "[ˈeːəˌfʁaʊ̯]",
+    "fa": "همسر (زن)",
+    "en": "wife",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Ehemann",
+    "ipa": "[ˈeːəˌman]",
+    "fa": "همسر (مرد)",
+    "en": "husband",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "E-Mail",
+    "ipa": "[ˈiːmeɪ̯l]",
+    "fa": "ایمیل",
+    "en": "e-mail",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ende",
+    "ipa": "[ˈɛndə]",
+    "fa": "پایان",
+    "en": "end",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "erklären",
+    "ipa": "[ɛɐ̯ˈklɛːʁən]",
+    "fa": "توضیح دادن",
+    "en": "to explain",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "erzählen",
+    "ipa": "[ɛɐ̯ˈt͡sɛːlən]",
+    "fa": "تعریف کردن (داستان)",
+    "en": "to tell / narrate",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Euro",
+    "ipa": "[ˈɔʏ̯ʁo]",
+    "fa": "یورو",
+    "en": "euro",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Fahrkarte",
+    "ipa": "[ˈfaːɐ̯ˌkaʁtə]",
+    "fa": "بلیت (قطار/اتوبوس)",
+    "en": "ticket (train/bus)",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Fernseher",
+    "ipa": "[ˈfɛʁnˌzeːɐ]",
+    "fa": "تلویزیون (دستگاه)",
+    "en": "television set",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Fieber",
+    "ipa": "[ˈfiːbɐ]",
+    "fa": "تب",
+    "en": "fever",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "finden",
+    "ipa": "[ˈfɪndn̩]",
+    "fa": "پیدا کردن / نظر داشتن",
+    "en": "to find / to think (opinion)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Flasche",
+    "ipa": "[ˈflaʃə]",
+    "fa": "بطری",
+    "en": "bottle",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Flug",
+    "ipa": "[fluːk]",
+    "fa": "پرواز (سفر هوایی)",
+    "en": "flight",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Flughafen",
+    "ipa": "[ˈfluːkˌhaːfn̩]",
+    "fa": "فرودگاه",
+    "en": "airport",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Freizeit",
+    "ipa": "[ˈfʁaɪ̯t͡saɪ̯t]",
+    "fa": "اوقات فراغت",
+    "en": "free time",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Freund",
+    "ipa": "[fʁɔʏ̯nt]",
+    "fa": "دوست (مرد)",
+    "en": "friend (male)",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Freundin",
+    "ipa": "[ˈfʁɔʏ̯ndɪn]",
+    "fa": "دوست (زن)",
+    "en": "friend (female)",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "früh",
+    "ipa": "[fʁyː]",
+    "fa": "زود (صبح)",
+    "en": "early",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Frühstück",
+    "ipa": "[ˈfʁyːˌʃtʏk]",
+    "fa": "صبحانه",
+    "en": "breakfast",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "fühlen",
+    "ipa": "[ˈfyːlən]",
+    "fa": "احساس کردن",
+    "en": "to feel",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Fußball",
+    "ipa": "[ˈfuːsˌbal]",
+    "fa": "فوتبال",
+    "en": "football / soccer",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Gabel",
+    "ipa": "[ˈɡaːbl̩]",
+    "fa": "چنگال",
+    "en": "fork",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "geben",
+    "ipa": "[ˈɡeːbn̩]",
+    "fa": "دادن",
+    "en": "to give",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "gefallen",
+    "ipa": "[ɡəˈfalən]",
+    "fa": "پسندیده شدن (برای کسی)",
+    "en": "to like (sth. appeals to sb.)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Geld",
+    "ipa": "[ɡɛlt]",
+    "fa": "پول",
+    "en": "money",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Geschenk",
+    "ipa": "[ɡəˈʃɛŋk]",
+    "fa": "هدیه",
+    "en": "gift",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Gesundheit",
+    "ipa": "[ɡəˈzʊnthaɪ̯t]",
+    "fa": "سلامتی",
+    "en": "health",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Glas",
+    "ipa": "[ɡlaːs]",
+    "fa": "لیوان",
+    "en": "glass",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Glück",
+    "ipa": "[ɡlʏk]",
+    "fa": "خوش‌شانسی / خوشبختی",
+    "en": "luck / happiness",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Großeltern",
+    "ipa": "[ˈɡʁoːsˌʔɛltɐn]",
+    "fa": "پدربزرگ و مادربزرگ",
+    "en": "grandparents",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Großmutter",
+    "ipa": "[ˈɡʁoːsˌmʊtɐ]",
+    "fa": "مادربزرگ",
+    "en": "grandmother",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Großvater",
+    "ipa": "[ˈɡʁoːsˌfaːtɐ]",
+    "fa": "پدربزرگ",
+    "en": "grandfather",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Gürtel",
+    "ipa": "[ˈɡʏʁtl̩]",
+    "fa": "کمربند",
+    "en": "belt",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Handschuh",
+    "ipa": "[ˈhantˌʃuː]",
+    "fa": "دستکش",
+    "en": "glove",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Handy",
+    "ipa": "[ˈhɛndi]",
+    "fa": "تلفن همراه",
+    "en": "mobile phone",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "hässlich",
+    "ipa": "[ˈhɛslɪç]",
+    "fa": "زشت",
+    "en": "ugly",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Haustür",
+    "ipa": "[ˈhaʊ̯sˌtyːɐ̯]",
+    "fa": "در ورودی خانه",
+    "en": "front door",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "helfen",
+    "ipa": "[ˈhɛlfn̩]",
+    "fa": "کمک کردن",
+    "en": "to help",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Herd",
+    "ipa": "[heːɐ̯t]",
+    "fa": "اجاق گاز",
+    "en": "stove / hob",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Hobby",
+    "ipa": "[ˈhɔbi]",
+    "fa": "سرگرمی",
+    "en": "hobby",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "hoch",
+    "ipa": "[hoːx]",
+    "fa": "بلند (ارتفاع)",
+    "en": "high / tall",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "hören",
+    "ipa": "[ˈhøːʁən]",
+    "fa": "شنیدن",
+    "en": "to hear",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Hotel",
+    "ipa": "[hoˈtɛl]",
+    "fa": "هتل",
+    "en": "hotel",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Husten",
+    "ipa": "[ˈhuːstn̩]",
+    "fa": "سرفه",
+    "en": "cough",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "immer",
+    "ipa": "[ˈɪmɐ]",
+    "fa": "همیشه",
+    "en": "always",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Internet",
+    "ipa": "[ˈɪntɐnɛt]",
+    "fa": "اینترنت",
+    "en": "internet",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "kaputt",
+    "ipa": "[kaˈpʊt]",
+    "fa": "خراب",
+    "en": "broken",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "kennen",
+    "ipa": "[ˈkɛnən]",
+    "fa": "شناختن (کسی را)",
+    "en": "to know (a person)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Kinder",
+    "ipa": "[ˈkɪndɐ]",
+    "fa": "بچه‌ها",
+    "en": "children",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Klasse",
+    "ipa": "[ˈklasə]",
+    "fa": "کلاس (درس)",
+    "en": "class (school)",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Knoblauch",
+    "ipa": "[ˈknoːblaʊ̯x]",
+    "fa": "سیر",
+    "en": "garlic",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Koffer",
+    "ipa": "[ˈkɔfɐ]",
+    "fa": "چمدان",
+    "en": "suitcase",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Kollege",
+    "ipa": "[kɔˈleːɡə]",
+    "fa": "همکار (مرد)",
+    "en": "colleague (male)",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Kollegin",
+    "ipa": "[kɔˈleːɡɪn]",
+    "fa": "همکار (زن)",
+    "en": "colleague (female)",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Kopfschmerzen",
+    "ipa": "[ˈkɔpfˌʃmɛʁt͡sn̩]",
+    "fa": "سردرد",
+    "en": "headache",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Kühlschrank",
+    "ipa": "[ˈkyːlˌʃʁaŋk]",
+    "fa": "یخچال",
+    "en": "fridge",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "kurz",
+    "ipa": "[kʊʁt͡s]",
+    "fa": "کوتاه",
+    "en": "short",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "lang",
+    "ipa": "[laŋ]",
+    "fa": "بلند (طول)",
+    "en": "long",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Leben",
+    "ipa": "[ˈleːbn̩]",
+    "fa": "زندگی",
+    "en": "life",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "leicht",
+    "ipa": "[laɪ̯çt]",
+    "fa": "سبک / آسان",
+    "en": "light / easy",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "lieben",
+    "ipa": "[ˈliːbn̩]",
+    "fa": "دوست داشتن (عاشق بودن)",
+    "en": "to love",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Löffel",
+    "ipa": "[ˈlœfl̩]",
+    "fa": "قاشق",
+    "en": "spoon",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Medikament",
+    "ipa": "[medikaˈmɛnt]",
+    "fa": "دارو",
+    "en": "medicine",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Messer",
+    "ipa": "[ˈmɛsɐ]",
+    "fa": "چاقو",
+    "en": "knife",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "mitkommen",
+    "ipa": "[ˈmɪtˌkɔmən]",
+    "fa": "همراه آمدن",
+    "en": "to come along",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Mittagessen",
+    "ipa": "[ˈmɪtaːkˌʔɛsn̩]",
+    "fa": "ناهار",
+    "en": "lunch",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "mögen",
+    "ipa": "[ˈmøːɡən]",
+    "fa": "دوست داشتن (چیزی/کسی را)",
+    "en": "to like",
+    "level": "A2",
+    "category": "افعال کمکی و وجهی"
+  },
+  {
+    "word": "Mülleimer",
+    "ipa": "[ˈmʏlˌʔaɪ̯mɐ]",
+    "fa": "سطل زباله",
+    "en": "rubbish bin",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "nie",
+    "ipa": "[niː]",
+    "fa": "هرگز",
+    "en": "never",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "nirgendwo",
+    "ipa": "[ˈnɪʁɡəntˌvoː]",
+    "fa": "هیچ‌جا",
+    "en": "nowhere",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Note",
+    "ipa": "[ˈnoːtə]",
+    "fa": "نمره (مدرسه)",
+    "en": "grade (school)",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Nudeln",
+    "ipa": "[ˈnuːdl̩n]",
+    "fa": "ماکارونی",
+    "en": "pasta / noodles",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Ober",
+    "ipa": "[ˈoːbɐ]",
+    "fa": "گارسون (مرد)",
+    "en": "waiter",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "oft",
+    "ipa": "[ɔft]",
+    "fa": "اغلب",
+    "en": "often",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Packung",
+    "ipa": "[ˈpakʊŋ]",
+    "fa": "بسته (بسته‌بندی)",
+    "en": "pack / packet",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Pass",
+    "ipa": "[pas]",
+    "fa": "گذرنامه",
+    "en": "passport",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Pizza",
+    "ipa": "[ˈpɪt͡sa]",
+    "fa": "پیتزا",
+    "en": "pizza",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Preis",
+    "ipa": "[pʁaɪ̯s]",
+    "fa": "قیمت",
+    "en": "price",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Prüfung",
+    "ipa": "[ˈpʁyːfʊŋ]",
+    "fa": "آزمون",
+    "en": "exam",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "putzen",
+    "ipa": "[ˈpʊt͡sn̩]",
+    "fa": "تمیز کردن (جارو و...)",
+    "en": "to clean (sweep etc.)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Reis",
+    "ipa": "[ʁaɪ̯s]",
+    "fa": "برنج",
+    "en": "rice",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Reise",
+    "ipa": "[ˈʁaɪ̯zə]",
+    "fa": "سفر",
+    "en": "trip / journey",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "riechen",
+    "ipa": "[ˈʁiːçn̩]",
+    "fa": "بو کردن",
+    "en": "to smell",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Rücken",
+    "ipa": "[ˈʁʏkən]",
+    "fa": "پشت (کمر)",
+    "en": "back (body part)",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Salz",
+    "ipa": "[zalt͡s]",
+    "fa": "نمک",
+    "en": "salt",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "sauber",
+    "ipa": "[ˈzaʊ̯bɐ]",
+    "fa": "تمیز",
+    "en": "clean",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Schale",
+    "ipa": "[ˈʃaːlə]",
+    "fa": "کاسه",
+    "en": "bowl",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Schiff",
+    "ipa": "[ʃɪf]",
+    "fa": "کشتی",
+    "en": "ship",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "schlafen",
+    "ipa": "[ˈʃlaːfn̩]",
+    "fa": "خوابیدن",
+    "en": "to sleep",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Schluss",
+    "ipa": "[ʃlʊs]",
+    "fa": "پایان / خاتمه",
+    "en": "end / close",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "schmal",
+    "ipa": "[ʃmaːl]",
+    "fa": "باریک",
+    "en": "narrow",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "schmecken",
+    "ipa": "[ˈʃmɛkən]",
+    "fa": "مزه داشتن / چشیدن",
+    "en": "to taste",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Schnupfen",
+    "ipa": "[ˈʃnʊpfn̩]",
+    "fa": "آبریزش بینی",
+    "en": "runny nose",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "schwer",
+    "ipa": "[ʃveːɐ̯]",
+    "fa": "سنگین / دشوار",
+    "en": "heavy / difficult",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Schwiegermutter",
+    "ipa": "[ˈʃviːɡɐˌmʊtɐ]",
+    "fa": "مادرشوهر / مادرزن",
+    "en": "mother-in-law",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Schwiegervater",
+    "ipa": "[ˈʃviːɡɐˌfaːtɐ]",
+    "fa": "پدرشوهر / پدرزن",
+    "en": "father-in-law",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "selten",
+    "ipa": "[ˈzɛltn̩]",
+    "fa": "به ندرت",
+    "en": "rarely",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "sich ausruhen",
+    "ipa": "[zɪç ˈaʊ̯sˌʁuːən]",
+    "fa": "استراحت کردن",
+    "en": "to rest",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich erholen",
+    "ipa": "[zɪç ɛɐ̯ˈhoːlən]",
+    "fa": "بهبود یافتن (بعد از بیماری)",
+    "en": "to recover",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "sich kümmern",
+    "ipa": "[zɪç ˈkʏmɐn]",
+    "fa": "مراقبت کردن (از)",
+    "en": "to take care (of)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich treffen",
+    "ipa": "[zɪç ˈtʁɛfn̩]",
+    "fa": "همدیگر را ملاقات کردن",
+    "en": "to meet each other",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich vorstellen",
+    "ipa": "[zɪç ˈfoːɐ̯ˌʃtɛlən]",
+    "fa": "خود را معرفی کردن / تصور کردن",
+    "en": "to introduce oneself / imagine",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sich waschen",
+    "ipa": "[zɪç ˈvaʃən]",
+    "fa": "خود را شستن",
+    "en": "to wash oneself",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Smartphone",
+    "ipa": "[ˈsmaʁtfoːn]",
+    "fa": "تلفن هوشمند",
+    "en": "smartphone",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Socke",
+    "ipa": "[ˈzɔkə]",
+    "fa": "جوراب",
+    "en": "sock",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "spät",
+    "ipa": "[ʃpɛːt]",
+    "fa": "دیر (وقت)",
+    "en": "late",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "später",
+    "ipa": "[ˈʃpɛːtɐ]",
+    "fa": "بعداً",
+    "en": "later",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Spiel",
+    "ipa": "[ʃpiːl]",
+    "fa": "بازی",
+    "en": "game",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sport",
+    "ipa": "[ʃpɔʁt]",
+    "fa": "ورزش",
+    "en": "sport",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Tasche",
+    "ipa": "[ˈtaʃə]",
+    "fa": "کیف / جیب",
+    "en": "bag / pocket",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Theater",
+    "ipa": "[teˈaːtɐ]",
+    "fa": "تئاتر",
+    "en": "theatre",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Ticket",
+    "ipa": "[ˈtɪkət]",
+    "fa": "بلیت",
+    "en": "ticket",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "tief",
+    "ipa": "[tiːf]",
+    "fa": "عمیق",
+    "en": "deep",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "über",
+    "ipa": "[ˈyːbɐ]",
+    "fa": "روی (بالا) / دربارهٔ",
+    "en": "over / about",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "überall",
+    "ipa": "[ˈyːbɐˌʔal]",
+    "fa": "همه‌جا",
+    "en": "everywhere",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "U-Bahn",
+    "ipa": "[ˈuːbaːn]",
+    "fa": "مترو",
+    "en": "underground / subway",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "vergessen",
+    "ipa": "[fɛɐ̯ˈɡɛsn̩]",
+    "fa": "فراموش کردن",
+    "en": "to forget",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verkaufen",
+    "ipa": "[fɛɐ̯ˈkaʊ̯fn̩]",
+    "fa": "فروختن",
+    "en": "to sell",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verstehen",
+    "ipa": "[fɛɐ̯ˈʃteːən]",
+    "fa": "فهمیدن",
+    "en": "to understand",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "vorhaben",
+    "ipa": "[ˈfoːɐ̯ˌhaːbn̩]",
+    "fa": "قصد داشتن",
+    "en": "to intend / plan",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Waage",
+    "ipa": "[ˈvaːɡə]",
+    "fa": "ترازو",
+    "en": "scales",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "warten",
+    "ipa": "[ˈvaʁtn̩]",
+    "fa": "منتظر شدن",
+    "en": "to wait",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Waschmaschine",
+    "ipa": "[ˈvaʃmaˌʃiːnə]",
+    "fa": "ماشین لباس‌شویی",
+    "en": "washing machine",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "weit",
+    "ipa": "[vaɪ̯t]",
+    "fa": "دور / وسیع",
+    "en": "far / wide",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "wirklich",
+    "ipa": "[ˈvɪʁklɪç]",
+    "fa": "واقعاً",
+    "en": "really",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Zahn",
+    "ipa": "[t͡saːn]",
+    "fa": "دندان",
+    "en": "tooth",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "zusammen",
+    "ipa": "[t͡suˈzamən]",
+    "fa": "با هم",
+    "en": "together",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "zwischen",
+    "ipa": "[ˈt͡svɪʃn̩]",
+    "fa": "بین",
+    "en": "between",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Abfahrt",
+    "ipa": "[ˈapfaːɐ̯t]",
+    "fa": "حرکت (قطار/اتوبوس)، عزیمت",
+    "en": "departure",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Abflug",
+    "ipa": "[ˈapfluːk]",
+    "fa": "پرواز خروجی، حرکت هواپیما",
+    "en": "departure (flight)",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "abwaschen",
+    "ipa": "[ˈapˌvaʃn̩]",
+    "fa": "ظرف شستن",
+    "en": "to wash up / do the dishes",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "abheben",
+    "ipa": "[ˈaphheːbn̩]",
+    "fa": "برداشت کردن (پول) / بلند شدن (هواپیما)",
+    "en": "to withdraw (money) / to take off",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "abtrocknen",
+    "ipa": "[ˈapˌtʁɔknən]",
+    "fa": "خشک کردن (با حوله)",
+    "en": "to dry off",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Adler",
+    "ipa": "[ˈaːdlɐ]",
+    "fa": "عقاب",
+    "en": "eagle",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "ähnlich",
+    "ipa": "[ˈɛːnlɪç]",
+    "fa": "شبیه / مشابه",
+    "en": "similar",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Ahnung",
+    "ipa": "[ˈaːnʊŋ]",
+    "fa": "تصور / اطلاع (کیو أهنونگ = نمی‌دانم)",
+    "en": "idea / notion",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Akku",
+    "ipa": "[ˈaku]",
+    "fa": "باتری قابل‌شارژ",
+    "en": "battery (rechargeable)",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "aktiv",
+    "ipa": "[akˈtiːf]",
+    "fa": "فعال",
+    "en": "active",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Aktivität",
+    "ipa": "[aktiviˈtɛːt]",
+    "fa": "فعالیت",
+    "en": "activity",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "aktuell",
+    "ipa": "[aktuˈɛl]",
+    "fa": "فعلی / روزآمد",
+    "en": "current / up to date",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "akzeptieren",
+    "ipa": "[aktsɛpˈtiːʁən]",
+    "fa": "پذیرفتن",
+    "en": "to accept",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Album",
+    "ipa": "[ˈalbʊm]",
+    "fa": "آلبوم",
+    "en": "album",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Alkohol",
+    "ipa": "[ˈalkohoːl]",
+    "fa": "الکل",
+    "en": "alcohol",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "allein",
+    "ipa": "[aˈlaɪ̯n]",
+    "fa": "تنها",
+    "en": "alone",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Allergie",
+    "ipa": "[alɛʁˈɡiː]",
+    "fa": "آلرژی",
+    "en": "allergy",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "allgemein",
+    "ipa": "[algəˈmaɪ̯n]",
+    "fa": "عمومی / کلی",
+    "en": "general",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Alltag",
+    "ipa": "[ˈalˌtaːk]",
+    "fa": "زندگی روزمره",
+    "en": "everyday life",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Alpen",
+    "ipa": "[ˈalpn̩]",
+    "fa": "کوه‌های آلپ",
+    "en": "the Alps",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "am besten",
+    "ipa": "[am ˈbɛstn̩]",
+    "fa": "بهترین (کار این است که)",
+    "en": "best (of all)",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am nächsten Tag",
+    "ipa": "[am ˈnɛːçstn̩ taːk]",
+    "fa": "روز بعد",
+    "en": "the next day",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "anbieten",
+    "ipa": "[ˈanˌbiːtn̩]",
+    "fa": "پیشنهاد دادن (ارائه کالا/خدمات)",
+    "en": "to offer",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "ändern",
+    "ipa": "[ˈɛndɐn]",
+    "fa": "تغییر دادن",
+    "en": "to change / alter",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "anders",
+    "ipa": "[ˈandɐs]",
+    "fa": "جور دیگر / متفاوت",
+    "en": "differently / otherwise",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Änderung",
+    "ipa": "[ˈɛndəʁʊŋ]",
+    "fa": "تغییر",
+    "en": "change / amendment",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "anmelden",
+    "ipa": "[ˈanˌmɛldn̩]",
+    "fa": "ثبت‌نام کردن",
+    "en": "to register / sign up",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Anleitung",
+    "ipa": "[ˈanlaɪ̯tʊŋ]",
+    "fa": "دستورالعمل",
+    "en": "instructions / manual",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Anmeldung",
+    "ipa": "[ˈanmɛldʊŋ]",
+    "fa": "ثبت‌نام / پذیرش",
+    "en": "registration",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "anprobieren",
+    "ipa": "[ˈanpʁoˌbiːʁən]",
+    "fa": "پرو کردن (لباس)",
+    "en": "to try on",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Anrufbeantworter",
+    "ipa": "[ˈanʁuːfbəˌʔantvɔʁtɐ]",
+    "fa": "پیام‌گیر تلفن",
+    "en": "answering machine / voicemail",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "anstrengend",
+    "ipa": "[ˈanʃtʁɛŋənt]",
+    "fa": "خسته‌کننده / طاقت‌فرسا",
+    "en": "exhausting / strenuous",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Anzug",
+    "ipa": "[ˈantsuːk]",
+    "fa": "کت‌وشلوار",
+    "en": "suit",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Apfelschorle",
+    "ipa": "[ˈapfl̩ˌʃɔʁlə]",
+    "fa": "نوشابه آب‌سیب و گازدار",
+    "en": "apple juice spritzer",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Apfelstrudel",
+    "ipa": "[ˈapfl̩ˌʃtʁuːdl̩]",
+    "fa": "اشترودل سیب",
+    "en": "apple strudel",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Aprikose",
+    "ipa": "[apʁiˈkoːzə]",
+    "fa": "زردآلو",
+    "en": "apricot",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Arbeiter",
+    "ipa": "[ˈaʁbaɪ̯tɐ]",
+    "fa": "کارگر",
+    "en": "worker",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "arbeitslos",
+    "ipa": "[ˈaʁbaɪ̯tsloːs]",
+    "fa": "بیکار",
+    "en": "unemployed",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Arbeitsstelle",
+    "ipa": "[ˈaʁbaɪ̯tsˌʃtɛlə]",
+    "fa": "محل کار / شغل",
+    "en": "job / workplace",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Arbeitszimmer",
+    "ipa": "[ˈaʁbaɪ̯tsˌtsɪmɐ]",
+    "fa": "اتاق کار",
+    "en": "study / home office",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "ärgern",
+    "ipa": "[ˈɛʁɡɐn]",
+    "fa": "عصبانی کردن / آزار دادن",
+    "en": "to annoy / to anger",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "ärgerlich",
+    "ipa": "[ˈɛʁɡɐlɪç]",
+    "fa": "عصبانی‌کننده / آزاردهنده",
+    "en": "annoying / irritated",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "arm",
+    "ipa": "[aʁm]",
+    "fa": "فقیر",
+    "en": "poor",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Armband",
+    "ipa": "[ˈaʁmbant]",
+    "fa": "دستبند",
+    "en": "bracelet",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "abfahren",
+    "ipa": "[ˈapˌfaːʁən]",
+    "fa": "حرکت کردن (قطار/وسیله نقلیه)",
+    "en": "to depart / leave",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "akzeptiert",
+    "ipa": "[aktsɛpˈtiːɐ̯t]",
+    "fa": "پذیرفته‌شده",
+    "en": "accepted",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "alleine",
+    "ipa": "[aˈlaɪ̯nə]",
+    "fa": "تنها",
+    "en": "alone / by oneself",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am billigsten",
+    "ipa": "[am ˈbɪlɪçstn̩]",
+    "fa": "ارزان‌ترین",
+    "en": "the cheapest",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am frischsten",
+    "ipa": "[am ˈfʁɪʃstn̩]",
+    "fa": "تازه‌ترین",
+    "en": "the freshest",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "am größten",
+    "ipa": "[am ˈɡʁøːstn̩]",
+    "fa": "بزرگ‌ترین",
+    "en": "the biggest",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am höchsten",
+    "ipa": "[am ˈhøːçstn̩]",
+    "fa": "بلندترین",
+    "en": "the highest",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am kleinsten",
+    "ipa": "[am ˈklaɪ̯nstn̩]",
+    "fa": "کوچک‌ترین",
+    "en": "the smallest",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am nettesten",
+    "ipa": "[am ˈnɛtəstn̩]",
+    "fa": "مهربان‌ترین",
+    "en": "the nicest",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "am schlechtesten",
+    "ipa": "[am ˈʃlɛçtəstn̩]",
+    "fa": "بدترین",
+    "en": "the worst",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am schnellsten",
+    "ipa": "[am ˈʃnɛlstn̩]",
+    "fa": "سریع‌ترین",
+    "en": "the fastest",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "am süßesten",
+    "ipa": "[am ˈzyːsəstn̩]",
+    "fa": "شیرین‌ترین",
+    "en": "the sweetest",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "am teuersten",
+    "ipa": "[am ˈtɔɪ̯ɐstn̩]",
+    "fa": "گران‌ترین",
+    "en": "the most expensive",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "auf dem Campus",
+    "ipa": "[aʊ̯f deːm ˈkampʊs]",
+    "fa": "در محوطه دانشگاه",
+    "en": "on campus",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "auf jeden Fall",
+    "ipa": "[aʊ̯f ˈjeːdn̩ fal]",
+    "fa": "به‌هرحال / حتماً",
+    "en": "in any case / definitely",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "aufgeben",
+    "ipa": "[ˈaʊ̯fˌɡeːbn̩]",
+    "fa": "تسلیم شدن / رها کردن",
+    "en": "to give up",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "aufpassen",
+    "ipa": "[ˈaʊ̯fˌpasn̩]",
+    "fa": "مراقب بودن",
+    "en": "to pay attention / watch out",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aufregen",
+    "ipa": "[ˈaʊ̯fˌʁeːɡn̩]",
+    "fa": "عصبانی/هیجان‌زده کردن",
+    "en": "to upset / to excite",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "aufladen",
+    "ipa": "[ˈaʊ̯fˌlaːdn̩]",
+    "fa": "شارژ کردن",
+    "en": "to charge (battery)",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "aufregend",
+    "ipa": "[ˈaʊ̯fˌʁeːɡn̩t]",
+    "fa": "هیجان‌انگیز",
+    "en": "exciting",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "aufs",
+    "ipa": "[aʊ̯fs]",
+    "fa": "روی (مخفف auf das)",
+    "en": "onto (contraction of auf das)",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Augenblick",
+    "ipa": "[ˈaʊ̯ɡn̩ˌblɪk]",
+    "fa": "لحظه",
+    "en": "moment",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Aula",
+    "ipa": "[ˈaʊ̯la]",
+    "fa": "سالن اجتماعات (مدرسه)",
+    "en": "assembly hall / auditorium",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "außen",
+    "ipa": "[ˈaʊ̯sn̩]",
+    "fa": "بیرون / خارج",
+    "en": "outside",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "außer",
+    "ipa": "[ˈaʊ̯sɐ]",
+    "fa": "به‌جز",
+    "en": "except / apart from",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Ausflug",
+    "ipa": "[ˈaʊ̯sfluːk]",
+    "fa": "گردش / سفر کوتاه",
+    "en": "excursion / trip",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "ausfüllen",
+    "ipa": "[ˈaʊ̯sˌfʏlən]",
+    "fa": "پر کردن (فرم)",
+    "en": "to fill out",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "ausgeben",
+    "ipa": "[ˈaʊ̯sˌɡeːbn̩]",
+    "fa": "خرج کردن",
+    "en": "to spend (money)",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "auspacken",
+    "ipa": "[ˈaʊ̯sˌpakn̩]",
+    "fa": "باز کردن بسته",
+    "en": "to unpack / unwrap",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Ausland",
+    "ipa": "[ˈaʊ̯slant]",
+    "fa": "خارج از کشور",
+    "en": "abroad / foreign country",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "ausschlafen",
+    "ipa": "[ˈaʊ̯sˌʃlaːfn̩]",
+    "fa": "سیر خوابیدن",
+    "en": "to sleep in",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Auswahl",
+    "ipa": "[ˈaʊ̯svaːl]",
+    "fa": "انتخاب / گزینه‌ها",
+    "en": "selection / choice",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Automat",
+    "ipa": "[aʊ̯toˈmaːt]",
+    "fa": "دستگاه خودکار (اتوماتیک)",
+    "en": "vending machine / automated device",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "automatisch",
+    "ipa": "[aʊ̯toˈmaːtɪʃ]",
+    "fa": "خودکار",
+    "en": "automatic",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Autor",
+    "ipa": "[ˈaʊ̯tɔɐ̯]",
+    "fa": "نویسنده",
+    "en": "author",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Autowerkstatt",
+    "ipa": "[ˈaʊ̯toˌvɛʁkʃtat]",
+    "fa": "تعمیرگاه خودرو",
+    "en": "car repair shop",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bach",
+    "ipa": "[bax]",
+    "fa": "جویبار",
+    "en": "stream / brook",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Backware",
+    "ipa": "[ˈbakˌvaːʁə]",
+    "fa": "محصولات پخته‌شده (نانوایی)",
+    "en": "baked goods",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Badeanzug",
+    "ipa": "[ˈbaːdəʔantsuːk]",
+    "fa": "مایو (زنانه یک‌تکه)",
+    "en": "swimsuit",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Badehose",
+    "ipa": "[ˈbaːdəˌhoːzə]",
+    "fa": "شورت شنا",
+    "en": "swim trunks",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Badetuch",
+    "ipa": "[ˈbaːdəˌtuːx]",
+    "fa": "حوله حمام",
+    "en": "bath towel",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Badewanne",
+    "ipa": "[ˈbaːdəˌvanə]",
+    "fa": "وان حمام",
+    "en": "bathtub",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Bahnsteig",
+    "ipa": "[ˈbaːnʃtaɪ̯k]",
+    "fa": "سکوی ایستگاه قطار",
+    "en": "platform",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bär",
+    "ipa": "[bɛːɐ̯]",
+    "fa": "خرس",
+    "en": "bear",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bar",
+    "ipa": "[baːɐ̯]",
+    "fa": "نقدی (پرداخت نقد)",
+    "en": "cash / in cash",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Bargeld",
+    "ipa": "[ˈbaːɐ̯ɡɛlt]",
+    "fa": "پول نقد",
+    "en": "cash (money)",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Bar",
+    "ipa": "[baːɐ̯]",
+    "fa": "بار / میخانه",
+    "en": "bar / pub",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bart",
+    "ipa": "[baːɐ̯t]",
+    "fa": "ریش",
+    "en": "beard",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Basketballspiel",
+    "ipa": "[ˈbaskətbalˌʃpiːl]",
+    "fa": "بازی بسکتبال",
+    "en": "basketball game",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Bauer",
+    "ipa": "[ˈbaʊ̯ɐ]",
+    "fa": "کشاورز (مرد)",
+    "en": "farmer (male)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Bäuerin",
+    "ipa": "[ˈbɔɪ̯əʁɪn]",
+    "fa": "کشاورز (زن)",
+    "en": "farmer (female)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Bauernhof",
+    "ipa": "[ˈbaʊ̯ɐnhoːf]",
+    "fa": "مزرعه",
+    "en": "farm",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Baumwolle",
+    "ipa": "[ˈbaʊ̯mˌvɔlə]",
+    "fa": "پنبه",
+    "en": "cotton",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Bayern",
+    "ipa": "[ˈbaɪ̯ɐn]",
+    "fa": "باواریا (ایالت)",
+    "en": "Bavaria",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Bayern München",
+    "ipa": "[ˈbaɪ̯ɐn ˈmʏnçn̩]",
+    "fa": "باشگاه بایرن مونیخ",
+    "en": "Bayern Munich (football club)",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "am salzigsten",
+    "ipa": "[am ˈzalt͡sɪçstn̩]",
+    "fa": "شورترین",
+    "en": "the saltiest",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "beantworten",
+    "ipa": "[bəˈʔantvɔʁtn̩]",
+    "fa": "پاسخ دادن (به چیزی)",
+    "en": "to answer (something)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Becher",
+    "ipa": "[ˈbɛçɐ]",
+    "fa": "لیوان (یک‌بارمصرف) / ظرف",
+    "en": "cup / beaker",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "bedeuten",
+    "ipa": "[bəˈdɔɪ̯tn̩]",
+    "fa": "به‌معنای ... بودن",
+    "en": "to mean",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "beenden",
+    "ipa": "[bəˈʔɛndn̩]",
+    "fa": "پایان دادن / تمام کردن",
+    "en": "to end / finish",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "behalten",
+    "ipa": "[bəˈhaltn̩]",
+    "fa": "نگه داشتن",
+    "en": "to keep / retain",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "bei Regen",
+    "ipa": "[baɪ̯ ˈʁeːɡn̩]",
+    "fa": "در باران",
+    "en": "in rainy weather",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bei schlechtem Wetter",
+    "ipa": "[baɪ̯ ˈʃlɛçtəm ˈvɛtɐ]",
+    "fa": "در هوای بد",
+    "en": "in bad weather",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bei schönem Wetter",
+    "ipa": "[baɪ̯ ˈʃøːnəm ˈvɛtɐ]",
+    "fa": "در هوای خوب",
+    "en": "in nice weather",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "beißen",
+    "ipa": "[ˈbaɪ̯sn̩]",
+    "fa": "گاز گرفتن",
+    "en": "to bite",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "bekannt",
+    "ipa": "[bəˈkant]",
+    "fa": "معروف / شناخته‌شده",
+    "en": "well-known / famous",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "beliebt",
+    "ipa": "[bəˈliːpt]",
+    "fa": "محبوب",
+    "en": "popular",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Benzin",
+    "ipa": "[bɛnˈtsiːn]",
+    "fa": "بنزین",
+    "en": "gasoline / petrol",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "bequem",
+    "ipa": "[bəˈkveːm]",
+    "fa": "راحت (صندلی، لباس و ...)",
+    "en": "comfortable",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "bereit",
+    "ipa": "[bəˈʁaɪ̯t]",
+    "fa": "آماده",
+    "en": "ready",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "bereits",
+    "ipa": "[bəˈʁaɪ̯ts]",
+    "fa": "از قبل / قبلاً",
+    "en": "already",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "bergsteigen",
+    "ipa": "[ˈbɛʁkˌʃtaɪ̯ɡn̩]",
+    "fa": "کوه‌نوردی",
+    "en": "mountain climbing",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Berliner",
+    "ipa": "[bɛʁˈliːnɐ]",
+    "fa": "اهل برلین / نوعی دونات آلمانی",
+    "en": "person from Berlin / German jelly doughnut",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "beruflich",
+    "ipa": "[bəˈʁuːflɪç]",
+    "fa": "شغلی / حرفه‌ای",
+    "en": "professionally / work-related",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "berühmt",
+    "ipa": "[bəˈʁyːmt]",
+    "fa": "مشهور",
+    "en": "famous",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "besetzt",
+    "ipa": "[bəˈzɛtst]",
+    "fa": "اشغال (صندلی/خط تلفن)",
+    "en": "occupied / engaged",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "besichtigen",
+    "ipa": "[bəˈzɪçtɪɡn̩]",
+    "fa": "بازدید کردن",
+    "en": "to visit / sightsee",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "besonders",
+    "ipa": "[bəˈzɔndɐs]",
+    "fa": "به‌ویژه / خصوصاً",
+    "en": "especially",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "bestätigen",
+    "ipa": "[bəˈʃtɛːtɪɡn̩]",
+    "fa": "تأیید کردن",
+    "en": "to confirm",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Bestätigung",
+    "ipa": "[bəˈʃtɛːtɪɡʊŋ]",
+    "fa": "تأییدیه",
+    "en": "confirmation",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Bestellung",
+    "ipa": "[bəˈʃtɛlʊŋ]",
+    "fa": "سفارش",
+    "en": "order",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Besucher",
+    "ipa": "[bəˈzuːxɐ]",
+    "fa": "بازدیدکننده",
+    "en": "visitor",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bettdecke",
+    "ipa": "[ˈbɛtˌdɛkə]",
+    "fa": "لحاف / روتختی",
+    "en": "blanket / duvet",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Bettlaken",
+    "ipa": "[ˈbɛtˌlaːkn̩]",
+    "fa": "ملافه",
+    "en": "bed sheet",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "bevor",
+    "ipa": "[bəˈfoːɐ̯]",
+    "fa": "قبل از اینکه",
+    "en": "before",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "bewegen",
+    "ipa": "[bəˈveːɡn̩]",
+    "fa": "حرکت دادن/کردن",
+    "en": "to move",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Bewegung",
+    "ipa": "[bəˈveːɡʊŋ]",
+    "fa": "حرکت / جنبش",
+    "en": "movement",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Bezahlung",
+    "ipa": "[bəˈtsaːlʊŋ]",
+    "fa": "پرداخت / دستمزد",
+    "en": "payment",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Biene",
+    "ipa": "[ˈbiːnə]",
+    "fa": "زنبور",
+    "en": "bee",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Biergarten",
+    "ipa": "[ˈbiːɐ̯ˌɡaʁtn̩]",
+    "fa": "بیرگارتن (باغ آبجوخوری)",
+    "en": "beer garden",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bierkrug",
+    "ipa": "[ˈbiːɐ̯kʁuːk]",
+    "fa": "سبوی آبجو",
+    "en": "beer mug",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "bieten",
+    "ipa": "[ˈbiːtn̩]",
+    "fa": "ارائه دادن / پیشنهاد دادن",
+    "en": "to offer",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Biogurke",
+    "ipa": "[ˈbiːoˌɡʊʁkə]",
+    "fa": "خیار ارگانیک",
+    "en": "organic cucumber",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bioladen",
+    "ipa": "[ˈbiːoˌlaːdn̩]",
+    "fa": "فروشگاه محصولات ارگانیک",
+    "en": "organic food store",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "bis zum nächsten Mal",
+    "ipa": "[bɪs t͡sʊm ˈnɛːçstn̩ maːl]",
+    "fa": "تا دفعه‌ی بعد",
+    "en": "until next time",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "bitten",
+    "ipa": "[ˈbɪtn̩]",
+    "fa": "درخواست کردن",
+    "en": "to ask / request",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "blass",
+    "ipa": "[blas]",
+    "fa": "رنگ‌پریده",
+    "en": "pale",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "blitzen",
+    "ipa": "[ˈblɪtsn̩]",
+    "fa": "برق زدن (آسمان)",
+    "en": "to flash with lightning",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "blond",
+    "ipa": "[blɔnt]",
+    "fa": "بلوند / موطلایی",
+    "en": "blond",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Bohne",
+    "ipa": "[ˈboːnə]",
+    "fa": "لوبیا",
+    "en": "bean",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Bootsfahrt",
+    "ipa": "[ˈboːtsfaːɐ̯t]",
+    "fa": "قایق‌سواری",
+    "en": "boat trip",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "böse",
+    "ipa": "[ˈbøːzə]",
+    "fa": "عصبانی / بد (شخصیت)",
+    "en": "angry / evil / mean",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Brandenburger Tor",
+    "ipa": "[ˈbʁandn̩ˌbʊʁɡɐ toːɐ̯]",
+    "fa": "دروازه براندنبورگ",
+    "en": "Brandenburg Gate",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "brav",
+    "ipa": "[bʁaːf]",
+    "fa": "مؤدب / حرف‌گوش‌کن",
+    "en": "well-behaved / good",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "brennen",
+    "ipa": "[ˈbʁɛnən]",
+    "fa": "سوختن",
+    "en": "to burn",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Briefumschlag",
+    "ipa": "[ˈbʁiːfʔʊmˌʃlaːk]",
+    "fa": "پاکت نامه",
+    "en": "envelope",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Brunnen",
+    "ipa": "[ˈbʁʊnən]",
+    "fa": "چشمه / فواره",
+    "en": "well / fountain",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Brust",
+    "ipa": "[bʁʊst]",
+    "fa": "سینه / قفسه سینه",
+    "en": "chest / breast",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "buchen",
+    "ipa": "[ˈbuːxn̩]",
+    "fa": "رزرو کردن",
+    "en": "to book",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Bundesliga",
+    "ipa": "[ˈbʊndəsliːɡa]",
+    "fa": "بوندس‌لیگا (لیگ فوتبال آلمان)",
+    "en": "Bundesliga (German football league)",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "bunt",
+    "ipa": "[bʊnt]",
+    "fa": "رنگارنگ",
+    "en": "colorful",
+    "level": "A2",
+    "category": "رنگ‌ها"
+  },
+  {
+    "word": "Burg",
+    "ipa": "[bʊʁk]",
+    "fa": "قلعه",
+    "en": "castle / fortress",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Bürgermeister",
+    "ipa": "[ˈbʏʁɡɐˌmaɪ̯stɐ]",
+    "fa": "شهردار",
+    "en": "mayor",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Bürste",
+    "ipa": "[ˈbʏʁstə]",
+    "fa": "برس",
+    "en": "brush",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Campingplatz",
+    "ipa": "[ˈkɛmpɪŋplats]",
+    "fa": "محل کمپینگ",
+    "en": "campsite",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Campus",
+    "ipa": "[ˈkampʊs]",
+    "fa": "محوطه دانشگاه",
+    "en": "campus",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Chor",
+    "ipa": "[koːɐ̯]",
+    "fa": "گروه کر",
+    "en": "choir",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "circa",
+    "ipa": "[ˈtsɪʁka]",
+    "fa": "تقریباً",
+    "en": "approximately",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Clown",
+    "ipa": "[klaʊ̯n]",
+    "fa": "دلقک",
+    "en": "clown",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Club",
+    "ipa": "[klʊp]",
+    "fa": "باشگاه / کلوپ",
+    "en": "club",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Comic",
+    "ipa": "[ˈkɔmɪk]",
+    "fa": "کمیک/داستان مصور",
+    "en": "comic book",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Currywurst",
+    "ipa": "[ˈkœʁiˌvʊʁst]",
+    "fa": "کاری‌وورست (سوسیس با سس کاری)",
+    "en": "currywurst",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "dabei",
+    "ipa": "[daˈbaɪ̯]",
+    "fa": "در این میان / همراه با آن",
+    "en": "with it / present",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "dafür",
+    "ipa": "[daˈfyːɐ̯]",
+    "fa": "برای آن",
+    "en": "for it",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "damals",
+    "ipa": "[ˈdaːmaːls]",
+    "fa": "آن‌زمان / در گذشته",
+    "en": "back then",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Dame",
+    "ipa": "[ˈdaːmə]",
+    "fa": "خانم",
+    "en": "lady",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "damit",
+    "ipa": "[daˈmɪt]",
+    "fa": "با آن / تا اینکه",
+    "en": "with it / so that",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "danach",
+    "ipa": "[daˈnaːx]",
+    "fa": "بعد از آن",
+    "en": "afterwards",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  }
 ]

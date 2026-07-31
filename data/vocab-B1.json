@@ -1,123 +1,1922 @@
 [
-  {"word":"abbiegen","ipa":"[ˈapˌbiːɡn̩]","fa":"پیچیدن (با ماشین)","en":"to turn (vehicle)","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"Abteilung","ipa":"[apˈtaɪ̯lʊŋ]","fa":"بخش (اداری / فروشگاه)","en":"department","level":"B1","category":"کار و شغل"},
-  {"word":"allein","ipa":"[aˈlaɪ̯n]","fa":"تنها","en":"alone","level":"B1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"allerdings","ipa":"[alɛɐ̯ˈdɪŋs]","fa":"البته / هرچند","en":"however / certainly","level":"B1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"angenehm","ipa":"[ˈanɡəˌneːm]","fa":"خوشایند","en":"pleasant","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"ängstlich","ipa":"[ˈɛŋstlɪç]","fa":"ترسو / مضطرب","en":"anxious / fearful","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Anwalt","ipa":"[ˈanvalt]","fa":"وکیل (مرد)","en":"lawyer (male)","level":"B1","category":"مشاغل"},
-  {"word":"Anwältin","ipa":"[ˈanvɛltɪn]","fa":"وکیل (زن)","en":"lawyer (female)","level":"B1","category":"مشاغل"},
-  {"word":"Architekt","ipa":"[aʁçiˈtɛkt]","fa":"معمار (مرد)","en":"architect (male)","level":"B1","category":"مشاغل"},
-  {"word":"Architektin","ipa":"[aʁçiˈtɛktɪn]","fa":"معمار (زن)","en":"architect (female)","level":"B1","category":"مشاغل"},
-  {"word":"Arzttermin","ipa":"[ˈaʁtsttɛʁˌmiːn]","fa":"نوبت دکتر","en":"doctor's appointment","level":"B1","category":"بدن و سلامتی"},
-  {"word":"aufwachsen","ipa":"[ˈaʊ̯fˌvaksn̩]","fa":"بزرگ شدن (رشد کردن)","en":"to grow up","level":"B1","category":"افعال روزمره"},
-  {"word":"aussehen","ipa":"[ˈaʊ̯sˌzeːən]","fa":"به نظر رسیدن / به نظر آمدن","en":"to look (appear)","level":"B1","category":"افعال روزمره"},
-  {"word":"außerdem","ipa":"[ˈaʊ̯sɐˌdeːm]","fa":"علاوه بر این","en":"besides / in addition","level":"B1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"aussteigen","ipa":"[ˈaʊ̯sˌʃtaɪ̯ɡn̩]","fa":"پیاده شدن (از وسیله نقلیه)","en":"to get out (of a vehicle)","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"backen","ipa":"[ˈbakn̩]","fa":"پختن (نان / کیک)","en":"to bake","level":"B1","category":"غذا و نوشیدنی"},
-  {"word":"Baum","ipa":"[baʊ̯m]","fa":"درخت","en":"tree","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"bedeuten","ipa":"[bəˈdɔʏ̯tn̩]","fa":"معنی دادن","en":"to mean","level":"B1","category":"افعال روزمره"},
-  {"word":"Beispiel","ipa":"[ˈbaɪ̯ʃpiːl]","fa":"مثال","en":"example","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Berg","ipa":"[bɛʁk]","fa":"کوه","en":"mountain","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"beschweren (sich)","ipa":"[bəˈʃveːʁən]","fa":"شکایت کردن (از)","en":"to complain (about)","level":"B1","category":"افعال روزمره"},
-  {"word":"Betrieb","ipa":"[bəˈtʁiːp]","fa":"کارخانه / مؤسسه","en":"company / operation","level":"B1","category":"کار و شغل"},
-  {"word":"Bewerbung","ipa":"[bəˈvɛʁbʊŋ]","fa":"درخواست (شغل / دانشگاه)","en":"application (job/uni)","level":"B1","category":"کار و شغل"},
-  {"word":"bewerben (sich)","ipa":"[bəˈvɛʁbn̩]","fa":"درخواست دادن (برای)","en":"to apply (for)","level":"B1","category":"کار و شغل"},
-  {"word":"Biologie","ipa":"[bioloˈɡiː]","fa":"زیست‌شناسی","en":"biology","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Blume","ipa":"[ˈbluːmə]","fa":"گل","en":"flower","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Chemie","ipa":"[çeˈmiː]","fa":"شیمی","en":"chemistry","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Durchschnitt","ipa":"[ˈdʊʁçˌʃnɪt]","fa":"میانگین / معدل","en":"average","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"durstig","ipa":"[ˈdʊʁstɪç]","fa":"تشنه","en":"thirsty","level":"B1","category":"بدن و سلامتی"},
-  {"word":"ehrgeizig","ipa":"[ˈeːɐ̯ˌɡaɪ̯tsɪç]","fa":"جاه‌طلب","en":"ambitious","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"einfallen","ipa":"[ˈaɪ̯nˌfalən]","fa":"به ذهن رسیدن","en":"to occur (to sb.)","level":"B1","category":"افعال روزمره"},
-  {"word":"einladen","ipa":"[ˈaɪ̯nˌlaːdn̩]","fa":"دعوت کردن","en":"to invite","level":"B1","category":"افعال روزمره"},
-  {"word":"einsteigen","ipa":"[ˈaɪ̯nˌʃtaɪ̯ɡn̩]","fa":"سوار شدن (به وسیله نقلیه)","en":"to get on (vehicle)","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"Entscheidung","ipa":"[ɛntˈʃaɪ̯dʊŋ]","fa":"تصمیم","en":"decision","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Erfahrung","ipa":"[ɛɐ̯ˈfaːʁʊŋ]","fa":"تجربه","en":"experience","level":"B1","category":"کار و شغل"},
-  {"word":"erinnern (sich)","ipa":"[ɛɐ̯ˈɪnɐn]","fa":"به یاد آوردن","en":"to remember","level":"B1","category":"افعال روزمره"},
-  {"word":"erwachsen","ipa":"[ɛɐ̯ˈvaksn̩]","fa":"بالغ / بزرگ‌سال","en":"adult (adj./noun)","level":"B1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"faul","ipa":"[faʊ̯l]","fa":"تنبل","en":"lazy","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Ferien","ipa":"[ˈfeːʁiən]","fa":"تعطیلات (مدرسه / دانشگاه)","en":"holidays / vacation","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Firma","ipa":"[ˈfɪʁma]","fa":"شرکت / مؤسسه","en":"company / firm","level":"B1","category":"کار و شغل"},
-  {"word":"fleißig","ipa":"[ˈflaɪ̯sɪç]","fa":"سخت‌کوش","en":"diligent / hard-working","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Fluss","ipa":"[flʊs]","fa":"رودخانه","en":"river","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Fotograf","ipa":"[fotoˈɡʁaːf]","fa":"عکاس (مرد)","en":"photographer (male)","level":"B1","category":"مشاغل"},
-  {"word":"Fotografin","ipa":"[fotoˈɡʁaːfɪn]","fa":"عکاس (زن)","en":"photographer (female)","level":"B1","category":"مشاغل"},
-  {"word":"Frage","ipa":"[ˈfʁaːɡə]","fa":"سؤال","en":"question","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"freundlich","ipa":"[ˈfʁɔʏ̯ntlɪç]","fa":"دوستانه / مهربان","en":"friendly / kind","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Gehalt","ipa":"[ɡəˈhalt]","fa":"حقوق (ماهیانه)","en":"salary","level":"B1","category":"کار و شغل"},
-  {"word":"geduldig","ipa":"[ɡəˈdʊldɪç]","fa":"صبور","en":"patient","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"gegenüber","ipa":"[ɡeːɡn̩ˈʔyːbɐ]","fa":"مقابل (حرف اضافه + داتیو)","en":"opposite / towards","level":"B1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"gehören","ipa":"[ɡəˈhøːʁən]","fa":"متعلق بودن (به)","en":"to belong (to)","level":"B1","category":"افعال روزمره"},
-  {"word":"gelingen","ipa":"[ɡəˈlɪŋən]","fa":"موفق شدن / به سرانجام رسیدن","en":"to succeed (in)","level":"B1","category":"افعال روزمره"},
-  {"word":"Geografie","ipa":"[ɡeoɡʁaˈfiː]","fa":"جغرافیا","en":"geography","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Geschichte","ipa":"[ɡəˈʃɪçtə]","fa":"تاریخ / داستان","en":"history / story","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Geschirrspüler","ipa":"[ɡəˈʃɪʁˌʃpyːlɐ]","fa":"ماشین ظرفشویی","en":"dishwasher","level":"B1","category":"منزل و خانه"},
-  {"word":"Grippe","ipa":"[ˈɡʁɪpə]","fa":"آنفولانزا","en":"flu","level":"B1","category":"بدن و سلامتی"},
-  {"word":"Himmel","ipa":"[ˈhɪml̩]","fa":"آسمان","en":"sky","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"höflich","ipa":"[ˈhøːflɪç]","fa":"مؤدب","en":"polite","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"hungrig","ipa":"[ˈhʊŋʁɪç]","fa":"گرسنه","en":"hungry","level":"B1","category":"بدن و سلامتی"},
-  {"word":"Journalist","ipa":"[jʊʁnaˈlɪst]","fa":"روزنامه‌نگار (مرد)","en":"journalist (male)","level":"B1","category":"مشاغل"},
-  {"word":"Journalistin","ipa":"[jʊʁnaˈlɪstɪn]","fa":"روزنامه‌نگار (زن)","en":"journalist (female)","level":"B1","category":"مشاغل"},
-  {"word":"Kunst","ipa":"[kʊnst]","fa":"هنر","en":"art","level":"B1","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Kurs","ipa":"[kʊʁs]","fa":"دوره (آموزشی)","en":"course","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Lösung","ipa":"[ˈløːzʊŋ]","fa":"راه‌حل","en":"solution","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Mathematik","ipa":"[matemaˈtiːk]","fa":"ریاضیات","en":"mathematics","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Meer","ipa":"[meːɐ̯]","fa":"دریا (اقیانوس)","en":"sea","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Mikrowelle","ipa":"[ˈmiːkʁoˌvɛlə]","fa":"مایکروویو","en":"microwave","level":"B1","category":"منزل و خانه"},
-  {"word":"misslingen","ipa":"[mɪsˈlɪŋən]","fa":"ناموفق بودن / شکست خوردن","en":"to fail","level":"B1","category":"افعال روزمره"},
-  {"word":"mitbringen","ipa":"[ˈmɪtˌbʁɪŋən]","fa":"با خود آوردن","en":"to bring along","level":"B1","category":"افعال روزمره"},
-  {"word":"Ofen","ipa":"[ˈoːfn̩]","fa":"فر (اجاق)","en":"oven","level":"B1","category":"منزل و خانه"},
-  {"word":"Pause","ipa":"[ˈpaʊ̯zə]","fa":"استراحت / زنگ تفریح","en":"break / recess","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Physik","ipa":"[fyˈziːk]","fa":"فیزیک","en":"physics","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"Pilot","ipa":"[piˈloːt]","fa":"خلبان (مرد)","en":"pilot (male)","level":"B1","category":"مشاغل"},
-  {"word":"Pilotin","ipa":"[piˈloːtɪn]","fa":"خلبان (زن)","en":"pilot (female)","level":"B1","category":"مشاغل"},
-  {"word":"Problem","ipa":"[pʁoˈbleːm]","fa":"مشکل","en":"problem","level":"B1","category":"مفاهیم و اشیای روزمره"},
-  {"word":"pünktlich","ipa":"[ˈpʏŋktlɪç]","fa":"سروقت / به‌موقع","en":"punctual","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Reisepass","ipa":"[ˈʁaɪ̯zəˌpas]","fa":"گذرنامه","en":"passport","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"Rezept","ipa":"[ʁeˈt͡sɛpt]","fa":"نسخه (پزشکی) / دستور پخت","en":"prescription / recipe","level":"B1","category":"بدن و سلامتی"},
-  {"word":"Richter","ipa":"[ˈʁɪçtɐ]","fa":"قاضی (مرد)","en":"judge (male)","level":"B1","category":"مشاغل"},
-  {"word":"Richterin","ipa":"[ˈʁɪçtəʁɪn]","fa":"قاضی (زن)","en":"judge (female)","level":"B1","category":"مشاغل"},
-  {"word":"Schauspieler","ipa":"[ˈʃaʊ̯ˌʃpiːlɐ]","fa":"بازیگر (مرد)","en":"actor","level":"B1","category":"مشاغل"},
-  {"word":"Schauspielerin","ipa":"[ˈʃaʊ̯ˌʃpiːləʁɪn]","fa":"بازیگر (زن)","en":"actress","level":"B1","category":"مشاغل"},
-  {"word":"schön","ipa":"[ʃøːn]","fa":"زیبا / خوب","en":"beautiful / nice","level":"B1","category":"صفت‌های توصیفی عمومی"},
-  {"word":"See","ipa":"[zeː]","fa":"دریاچه","en":"lake","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Sekunde","ipa":"[zeˈkʊndə]","fa":"ثانیه","en":"second","level":"B1","category":"زمان و تقویم"},
-  {"word":"Soldat","ipa":"[zɔlˈdaːt]","fa":"سرباز (مرد)","en":"soldier (male)","level":"B1","category":"مشاغل"},
-  {"word":"Soldatin","ipa":"[zɔlˈdaːtɪn]","fa":"سرباز (زن)","en":"soldier (female)","level":"B1","category":"مشاغل"},
-  {"word":"sonst","ipa":"[zɔnst]","fa":"وگرنه / در غیر این صورت","en":"otherwise","level":"B1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"spannend","ipa":"[ˈʃpanənt]","fa":"هیجان‌انگیز","en":"exciting","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"stattfinden","ipa":"[ˈʃtatˌfɪndn̩]","fa":"برگزار شدن / رخ دادن","en":"to take place","level":"B1","category":"افعال روزمره"},
-  {"word":"Stewardess","ipa":"[ˈʃteːvaʁdəs]","fa":"مهماندار هواپیما (زن)","en":"stewardess / flight attendant (female)","level":"B1","category":"مشاغل"},
-  {"word":"Steward","ipa":"[ˈʃteːvaʁt]","fa":"مهماندار هواپیما (مرد)","en":"steward / flight attendant (male)","level":"B1","category":"مشاغل"},
-  {"word":"sympathisch","ipa":"[zʏmˈpaːtɪʃ]","fa":"خوش‌برخورد / دوست‌داشتنی","en":"sympathetic / likable","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Tag","ipa":"[taːk]","fa":"روز","en":"day","level":"B1","category":"زمان و تقویم"},
-  {"word":"Test","ipa":"[tɛst]","fa":"آزمون (کوتاه)","en":"test","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"trotz","ipa":"[tʁɔt͡s]","fa":"با وجود (حرف اضافه + داتیو)","en":"despite / in spite of","level":"B1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"trotzdem","ipa":"[ˈtʁɔt͡sˌdeːm]","fa":"با این حال","en":"nevertheless / anyway","level":"B1","category":"حروف ربط و قیدهای رایج"},
-  {"word":"Übung","ipa":"[ˈyːbʊŋ]","fa":"تمرین","en":"exercise","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"umsteigen","ipa":"[ˈʊmˌʃtaɪ̯ɡn̩]","fa":"تعویض کردن (قطار/اتوبوس)","en":"to change (train/bus)","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"umziehen","ipa":"[ˈʊmˌt͡siːən]","fa":"نقل مکان کردن","en":"to move (house)","level":"B1","category":"منزل و خانه"},
-  {"word":"unfreundlich","ipa":"[ˈʊnˌfʁɔʏ̯ntlɪç]","fa":"غیردوستانه / بداخلاق","en":"unfriendly","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"ungeduldig","ipa":"[ˈʊnɡəˌdʊldɪç]","fa":"بی‌صبر","en":"impatient","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Unterricht","ipa":"[ˈʊntɐˌʁɪçt]","fa":"کلاس درس / تدریس","en":"class / instruction","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"unzuverlässig","ipa":"[ˈʊnt͡suːfɛɐ̯ˌlɛsɪç]","fa":"غیرقابل اعتماد","en":"unreliable","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"Urlaub","ipa":"[ˈuːɐ̯laʊ̯p]","fa":"مرخصی / تعطیلات","en":"holiday / vacation","level":"B1","category":"حمل‌ونقل و سفر"},
-  {"word":"verabreden (sich)","ipa":"[fɛɐ̯ˈapˌʁeːdn̩]","fa":"قرار گذاشتن (با)","en":"to arrange to meet (with)","level":"B1","category":"افعال روزمره"},
-  {"word":"verbringen","ipa":"[fɛɐ̯ˈbʁɪŋən]","fa":"گذراندن (وقت)","en":"to spend (time)","level":"B1","category":"افعال روزمره"},
-  {"word":"vorstellen","ipa":"[ˈfoːɐ̯ˌʃtɛlən]","fa":"معرفی کردن / تصور کردن","en":"to introduce / imagine","level":"B1","category":"افعال روزمره"},
-  {"word":"Vorstellungsgespräch","ipa":"[ˈfoːɐ̯ˌʃtɛlʊŋsɡəˌʃpʁɛːç]","fa":"مصاحبه (شغلی)","en":"job interview","level":"B1","category":"کار و شغل"},
-  {"word":"Wald","ipa":"[valt]","fa":"جنگل","en":"forest","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"waschen","ipa":"[ˈvaʃən]","fa":"شستن","en":"to wash","level":"B1","category":"افعال روزمره"},
-  {"word":"wegen","ipa":"[ˈveːɡn̩]","fa":"به دلیل (حرف اضافه + داتیو)","en":"because of","level":"B1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"weggehen","ipa":"[ˈvɛkˌɡeːən]","fa":"رفتن (دور شدن)","en":"to go away","level":"B1","category":"افعال روزمره"},
-  {"word":"während","ipa":"[ˈvɛːʁənt]","fa":"در طول / هنگام (حرف اضافه + داتیو)","en":"during","level":"B1","category":"ضمایر، حروف‌تعریف و حروف‌اضافه"},
-  {"word":"Wiese","ipa":"[ˈviːzə]","fa":"چمنزار","en":"meadow","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Wolke","ipa":"[ˈvɔlkə]","fa":"ابر","en":"cloud","level":"B1","category":"طبیعت و آب‌وهوا"},
-  {"word":"Zeugnis","ipa":"[ˈt͡sɔɪ̯knɪs]","fa":"کارنامه (مدرسه)","en":"report card / certificate","level":"B1","category":"مدرسه و آموزش"},
-  {"word":"zugehen","ipa":"[ˈt͡suːˌɡeːən]","fa":"نزدیک شدن / اتفاق افتادن","en":"to approach / happen (coll.)","level":"B1","category":"افعال روزمره"},
-  {"word":"zurückkommen","ipa":"[t͡suˈʁʏkˌkɔmən]","fa":"برگشتن","en":"to come back","level":"B1","category":"افعال روزمره"},
-  {"word":"zusehen","ipa":"[ˈt͡suːˌzeːən]","fa":"تماشا کردن (نگاه کردن به)","en":"to watch (look at)","level":"B1","category":"افعال روزمره"},
-  {"word":"zuverlässig","ipa":"[ˈt͡suːfɛɐ̯ˌlɛsɪç]","fa":"قابل اعتماد","en":"reliable","level":"B1","category":"احساسات و شخصیت"},
-  {"word":"zwar","ipa":"[t͡svaːɐ̯]","fa":"البته / به‌راستی (در جملات با aber)","en":"indeed / it's true (with 'aber')","level":"B1","category":"حروف ربط و قیدهای رایج"}
+  {
+    "word": "abbiegen",
+    "ipa": "[ˈapˌbiːɡn̩]",
+    "fa": "پیچیدن (با ماشین)",
+    "en": "to turn (vehicle)",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Abteilung",
+    "ipa": "[apˈtaɪ̯lʊŋ]",
+    "fa": "بخش (اداری / فروشگاه)",
+    "en": "department",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "allein",
+    "ipa": "[aˈlaɪ̯n]",
+    "fa": "تنها",
+    "en": "alone",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "allerdings",
+    "ipa": "[alɛɐ̯ˈdɪŋs]",
+    "fa": "البته / هرچند",
+    "en": "however / certainly",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "angenehm",
+    "ipa": "[ˈanɡəˌneːm]",
+    "fa": "خوشایند",
+    "en": "pleasant",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "ängstlich",
+    "ipa": "[ˈɛŋstlɪç]",
+    "fa": "ترسو / مضطرب",
+    "en": "anxious / fearful",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Anwalt",
+    "ipa": "[ˈanvalt]",
+    "fa": "وکیل (مرد)",
+    "en": "lawyer (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Anwältin",
+    "ipa": "[ˈanvɛltɪn]",
+    "fa": "وکیل (زن)",
+    "en": "lawyer (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Architekt",
+    "ipa": "[aʁçiˈtɛkt]",
+    "fa": "معمار (مرد)",
+    "en": "architect (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Architektin",
+    "ipa": "[aʁçiˈtɛktɪn]",
+    "fa": "معمار (زن)",
+    "en": "architect (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Arzttermin",
+    "ipa": "[ˈaʁtsttɛʁˌmiːn]",
+    "fa": "نوبت دکتر",
+    "en": "doctor's appointment",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "aufwachsen",
+    "ipa": "[ˈaʊ̯fˌvaksn̩]",
+    "fa": "بزرگ شدن (رشد کردن)",
+    "en": "to grow up",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aussehen",
+    "ipa": "[ˈaʊ̯sˌzeːən]",
+    "fa": "به نظر رسیدن / به نظر آمدن",
+    "en": "to look (appear)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "außerdem",
+    "ipa": "[ˈaʊ̯sɐˌdeːm]",
+    "fa": "علاوه بر این",
+    "en": "besides / in addition",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "aussteigen",
+    "ipa": "[ˈaʊ̯sˌʃtaɪ̯ɡn̩]",
+    "fa": "پیاده شدن (از وسیله نقلیه)",
+    "en": "to get out (of a vehicle)",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "backen",
+    "ipa": "[ˈbakn̩]",
+    "fa": "پختن (نان / کیک)",
+    "en": "to bake",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Baum",
+    "ipa": "[baʊ̯m]",
+    "fa": "درخت",
+    "en": "tree",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "bedeuten",
+    "ipa": "[bəˈdɔʏ̯tn̩]",
+    "fa": "معنی دادن",
+    "en": "to mean",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Beispiel",
+    "ipa": "[ˈbaɪ̯ʃpiːl]",
+    "fa": "مثال",
+    "en": "example",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Berg",
+    "ipa": "[bɛʁk]",
+    "fa": "کوه",
+    "en": "mountain",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "beschweren (sich)",
+    "ipa": "[bəˈʃveːʁən]",
+    "fa": "شکایت کردن (از)",
+    "en": "to complain (about)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Betrieb",
+    "ipa": "[bəˈtʁiːp]",
+    "fa": "کارخانه / مؤسسه",
+    "en": "company / operation",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bewerbung",
+    "ipa": "[bəˈvɛʁbʊŋ]",
+    "fa": "درخواست (شغل / دانشگاه)",
+    "en": "application (job/uni)",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "bewerben (sich)",
+    "ipa": "[bəˈvɛʁbn̩]",
+    "fa": "درخواست دادن (برای)",
+    "en": "to apply (for)",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Biologie",
+    "ipa": "[bioloˈɡiː]",
+    "fa": "زیست‌شناسی",
+    "en": "biology",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Blume",
+    "ipa": "[ˈbluːmə]",
+    "fa": "گل",
+    "en": "flower",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Chemie",
+    "ipa": "[çeˈmiː]",
+    "fa": "شیمی",
+    "en": "chemistry",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Durchschnitt",
+    "ipa": "[ˈdʊʁçˌʃnɪt]",
+    "fa": "میانگین / معدل",
+    "en": "average",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "durstig",
+    "ipa": "[ˈdʊʁstɪç]",
+    "fa": "تشنه",
+    "en": "thirsty",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "ehrgeizig",
+    "ipa": "[ˈeːɐ̯ˌɡaɪ̯tsɪç]",
+    "fa": "جاه‌طلب",
+    "en": "ambitious",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "einfallen",
+    "ipa": "[ˈaɪ̯nˌfalən]",
+    "fa": "به ذهن رسیدن",
+    "en": "to occur (to sb.)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "einladen",
+    "ipa": "[ˈaɪ̯nˌlaːdn̩]",
+    "fa": "دعوت کردن",
+    "en": "to invite",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "einsteigen",
+    "ipa": "[ˈaɪ̯nˌʃtaɪ̯ɡn̩]",
+    "fa": "سوار شدن (به وسیله نقلیه)",
+    "en": "to get on (vehicle)",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Entscheidung",
+    "ipa": "[ɛntˈʃaɪ̯dʊŋ]",
+    "fa": "تصمیم",
+    "en": "decision",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Erfahrung",
+    "ipa": "[ɛɐ̯ˈfaːʁʊŋ]",
+    "fa": "تجربه",
+    "en": "experience",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "erinnern (sich)",
+    "ipa": "[ɛɐ̯ˈɪnɐn]",
+    "fa": "به یاد آوردن",
+    "en": "to remember",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "erwachsen",
+    "ipa": "[ɛɐ̯ˈvaksn̩]",
+    "fa": "بالغ / بزرگ‌سال",
+    "en": "adult (adj./noun)",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "faul",
+    "ipa": "[faʊ̯l]",
+    "fa": "تنبل",
+    "en": "lazy",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Ferien",
+    "ipa": "[ˈfeːʁiən]",
+    "fa": "تعطیلات (مدرسه / دانشگاه)",
+    "en": "holidays / vacation",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Firma",
+    "ipa": "[ˈfɪʁma]",
+    "fa": "شرکت / مؤسسه",
+    "en": "company / firm",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "fleißig",
+    "ipa": "[ˈflaɪ̯sɪç]",
+    "fa": "سخت‌کوش",
+    "en": "diligent / hard-working",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Fluss",
+    "ipa": "[flʊs]",
+    "fa": "رودخانه",
+    "en": "river",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Fotograf",
+    "ipa": "[fotoˈɡʁaːf]",
+    "fa": "عکاس (مرد)",
+    "en": "photographer (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Fotografin",
+    "ipa": "[fotoˈɡʁaːfɪn]",
+    "fa": "عکاس (زن)",
+    "en": "photographer (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Frage",
+    "ipa": "[ˈfʁaːɡə]",
+    "fa": "سؤال",
+    "en": "question",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "freundlich",
+    "ipa": "[ˈfʁɔʏ̯ntlɪç]",
+    "fa": "دوستانه / مهربان",
+    "en": "friendly / kind",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Gehalt",
+    "ipa": "[ɡəˈhalt]",
+    "fa": "حقوق (ماهیانه)",
+    "en": "salary",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "geduldig",
+    "ipa": "[ɡəˈdʊldɪç]",
+    "fa": "صبور",
+    "en": "patient",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "gegenüber",
+    "ipa": "[ɡeːɡn̩ˈʔyːbɐ]",
+    "fa": "مقابل (حرف اضافه + داتیو)",
+    "en": "opposite / towards",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "gehören",
+    "ipa": "[ɡəˈhøːʁən]",
+    "fa": "متعلق بودن (به)",
+    "en": "to belong (to)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "gelingen",
+    "ipa": "[ɡəˈlɪŋən]",
+    "fa": "موفق شدن / به سرانجام رسیدن",
+    "en": "to succeed (in)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Geografie",
+    "ipa": "[ɡeoɡʁaˈfiː]",
+    "fa": "جغرافیا",
+    "en": "geography",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Geschichte",
+    "ipa": "[ɡəˈʃɪçtə]",
+    "fa": "تاریخ / داستان",
+    "en": "history / story",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Geschirrspüler",
+    "ipa": "[ɡəˈʃɪʁˌʃpyːlɐ]",
+    "fa": "ماشین ظرفشویی",
+    "en": "dishwasher",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Grippe",
+    "ipa": "[ˈɡʁɪpə]",
+    "fa": "آنفولانزا",
+    "en": "flu",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Himmel",
+    "ipa": "[ˈhɪml̩]",
+    "fa": "آسمان",
+    "en": "sky",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "höflich",
+    "ipa": "[ˈhøːflɪç]",
+    "fa": "مؤدب",
+    "en": "polite",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "hungrig",
+    "ipa": "[ˈhʊŋʁɪç]",
+    "fa": "گرسنه",
+    "en": "hungry",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Journalist",
+    "ipa": "[jʊʁnaˈlɪst]",
+    "fa": "روزنامه‌نگار (مرد)",
+    "en": "journalist (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Journalistin",
+    "ipa": "[jʊʁnaˈlɪstɪn]",
+    "fa": "روزنامه‌نگار (زن)",
+    "en": "journalist (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Kunst",
+    "ipa": "[kʊnst]",
+    "fa": "هنر",
+    "en": "art",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Kurs",
+    "ipa": "[kʊʁs]",
+    "fa": "دوره (آموزشی)",
+    "en": "course",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Lösung",
+    "ipa": "[ˈløːzʊŋ]",
+    "fa": "راه‌حل",
+    "en": "solution",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Mathematik",
+    "ipa": "[matemaˈtiːk]",
+    "fa": "ریاضیات",
+    "en": "mathematics",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Meer",
+    "ipa": "[meːɐ̯]",
+    "fa": "دریا (اقیانوس)",
+    "en": "sea",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Mikrowelle",
+    "ipa": "[ˈmiːkʁoˌvɛlə]",
+    "fa": "مایکروویو",
+    "en": "microwave",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "misslingen",
+    "ipa": "[mɪsˈlɪŋən]",
+    "fa": "ناموفق بودن / شکست خوردن",
+    "en": "to fail",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "mitbringen",
+    "ipa": "[ˈmɪtˌbʁɪŋən]",
+    "fa": "با خود آوردن",
+    "en": "to bring along",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Ofen",
+    "ipa": "[ˈoːfn̩]",
+    "fa": "فر (اجاق)",
+    "en": "oven",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Pause",
+    "ipa": "[ˈpaʊ̯zə]",
+    "fa": "استراحت / زنگ تفریح",
+    "en": "break / recess",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Physik",
+    "ipa": "[fyˈziːk]",
+    "fa": "فیزیک",
+    "en": "physics",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Pilot",
+    "ipa": "[piˈloːt]",
+    "fa": "خلبان (مرد)",
+    "en": "pilot (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Pilotin",
+    "ipa": "[piˈloːtɪn]",
+    "fa": "خلبان (زن)",
+    "en": "pilot (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Problem",
+    "ipa": "[pʁoˈbleːm]",
+    "fa": "مشکل",
+    "en": "problem",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "pünktlich",
+    "ipa": "[ˈpʏŋktlɪç]",
+    "fa": "سروقت / به‌موقع",
+    "en": "punctual",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Reisepass",
+    "ipa": "[ˈʁaɪ̯zəˌpas]",
+    "fa": "گذرنامه",
+    "en": "passport",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Rezept",
+    "ipa": "[ʁeˈt͡sɛpt]",
+    "fa": "نسخه (پزشکی) / دستور پخت",
+    "en": "prescription / recipe",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Richter",
+    "ipa": "[ˈʁɪçtɐ]",
+    "fa": "قاضی (مرد)",
+    "en": "judge (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Richterin",
+    "ipa": "[ˈʁɪçtəʁɪn]",
+    "fa": "قاضی (زن)",
+    "en": "judge (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Schauspieler",
+    "ipa": "[ˈʃaʊ̯ˌʃpiːlɐ]",
+    "fa": "بازیگر (مرد)",
+    "en": "actor",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Schauspielerin",
+    "ipa": "[ˈʃaʊ̯ˌʃpiːləʁɪn]",
+    "fa": "بازیگر (زن)",
+    "en": "actress",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "schön",
+    "ipa": "[ʃøːn]",
+    "fa": "زیبا / خوب",
+    "en": "beautiful / nice",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "See",
+    "ipa": "[zeː]",
+    "fa": "دریاچه",
+    "en": "lake",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Sekunde",
+    "ipa": "[zeˈkʊndə]",
+    "fa": "ثانیه",
+    "en": "second",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Soldat",
+    "ipa": "[zɔlˈdaːt]",
+    "fa": "سرباز (مرد)",
+    "en": "soldier (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Soldatin",
+    "ipa": "[zɔlˈdaːtɪn]",
+    "fa": "سرباز (زن)",
+    "en": "soldier (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "sonst",
+    "ipa": "[zɔnst]",
+    "fa": "وگرنه / در غیر این صورت",
+    "en": "otherwise",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "spannend",
+    "ipa": "[ˈʃpanənt]",
+    "fa": "هیجان‌انگیز",
+    "en": "exciting",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "stattfinden",
+    "ipa": "[ˈʃtatˌfɪndn̩]",
+    "fa": "برگزار شدن / رخ دادن",
+    "en": "to take place",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Stewardess",
+    "ipa": "[ˈʃteːvaʁdəs]",
+    "fa": "مهماندار هواپیما (زن)",
+    "en": "stewardess / flight attendant (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Steward",
+    "ipa": "[ˈʃteːvaʁt]",
+    "fa": "مهماندار هواپیما (مرد)",
+    "en": "steward / flight attendant (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "sympathisch",
+    "ipa": "[zʏmˈpaːtɪʃ]",
+    "fa": "خوش‌برخورد / دوست‌داشتنی",
+    "en": "sympathetic / likable",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Tag",
+    "ipa": "[taːk]",
+    "fa": "روز",
+    "en": "day",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Test",
+    "ipa": "[tɛst]",
+    "fa": "آزمون (کوتاه)",
+    "en": "test",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "trotz",
+    "ipa": "[tʁɔt͡s]",
+    "fa": "با وجود (حرف اضافه + داتیو)",
+    "en": "despite / in spite of",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "trotzdem",
+    "ipa": "[ˈtʁɔt͡sˌdeːm]",
+    "fa": "با این حال",
+    "en": "nevertheless / anyway",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Übung",
+    "ipa": "[ˈyːbʊŋ]",
+    "fa": "تمرین",
+    "en": "exercise",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "umsteigen",
+    "ipa": "[ˈʊmˌʃtaɪ̯ɡn̩]",
+    "fa": "تعویض کردن (قطار/اتوبوس)",
+    "en": "to change (train/bus)",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "umziehen",
+    "ipa": "[ˈʊmˌt͡siːən]",
+    "fa": "نقل مکان کردن",
+    "en": "to move (house)",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "unfreundlich",
+    "ipa": "[ˈʊnˌfʁɔʏ̯ntlɪç]",
+    "fa": "غیردوستانه / بداخلاق",
+    "en": "unfriendly",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "ungeduldig",
+    "ipa": "[ˈʊnɡəˌdʊldɪç]",
+    "fa": "بی‌صبر",
+    "en": "impatient",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Unterricht",
+    "ipa": "[ˈʊntɐˌʁɪçt]",
+    "fa": "کلاس درس / تدریس",
+    "en": "class / instruction",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "unzuverlässig",
+    "ipa": "[ˈʊnt͡suːfɛɐ̯ˌlɛsɪç]",
+    "fa": "غیرقابل اعتماد",
+    "en": "unreliable",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Urlaub",
+    "ipa": "[ˈuːɐ̯laʊ̯p]",
+    "fa": "مرخصی / تعطیلات",
+    "en": "holiday / vacation",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "verabreden (sich)",
+    "ipa": "[fɛɐ̯ˈapˌʁeːdn̩]",
+    "fa": "قرار گذاشتن (با)",
+    "en": "to arrange to meet (with)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verbringen",
+    "ipa": "[fɛɐ̯ˈbʁɪŋən]",
+    "fa": "گذراندن (وقت)",
+    "en": "to spend (time)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "vorstellen",
+    "ipa": "[ˈfoːɐ̯ˌʃtɛlən]",
+    "fa": "معرفی کردن / تصور کردن",
+    "en": "to introduce / imagine",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Vorstellungsgespräch",
+    "ipa": "[ˈfoːɐ̯ˌʃtɛlʊŋsɡəˌʃpʁɛːç]",
+    "fa": "مصاحبه (شغلی)",
+    "en": "job interview",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Wald",
+    "ipa": "[valt]",
+    "fa": "جنگل",
+    "en": "forest",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "waschen",
+    "ipa": "[ˈvaʃən]",
+    "fa": "شستن",
+    "en": "to wash",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "wegen",
+    "ipa": "[ˈveːɡn̩]",
+    "fa": "به دلیل (حرف اضافه + داتیو)",
+    "en": "because of",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "weggehen",
+    "ipa": "[ˈvɛkˌɡeːən]",
+    "fa": "رفتن (دور شدن)",
+    "en": "to go away",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "während",
+    "ipa": "[ˈvɛːʁənt]",
+    "fa": "در طول / هنگام (حرف اضافه + داتیو)",
+    "en": "during",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Wiese",
+    "ipa": "[ˈviːzə]",
+    "fa": "چمنزار",
+    "en": "meadow",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Wolke",
+    "ipa": "[ˈvɔlkə]",
+    "fa": "ابر",
+    "en": "cloud",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Zeugnis",
+    "ipa": "[ˈt͡sɔɪ̯knɪs]",
+    "fa": "کارنامه (مدرسه)",
+    "en": "report card / certificate",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "zugehen",
+    "ipa": "[ˈt͡suːˌɡeːən]",
+    "fa": "نزدیک شدن / اتفاق افتادن",
+    "en": "to approach / happen (coll.)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "zurückkommen",
+    "ipa": "[t͡suˈʁʏkˌkɔmən]",
+    "fa": "برگشتن",
+    "en": "to come back",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "zusehen",
+    "ipa": "[ˈt͡suːˌzeːən]",
+    "fa": "تماشا کردن (نگاه کردن به)",
+    "en": "to watch (look at)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "zuverlässig",
+    "ipa": "[ˈt͡suːfɛɐ̯ˌlɛsɪç]",
+    "fa": "قابل اعتماد",
+    "en": "reliable",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "zwar",
+    "ipa": "[t͡svaːɐ̯]",
+    "fa": "البته / به‌راستی (در جملات با aber)",
+    "en": "indeed / it's true (with 'aber')",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Abenteuer",
+    "ipa": "[ˈaːbn̩ˌtɔɪ̯ɐ]",
+    "fa": "ماجراجویی",
+    "en": "adventure",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "abgeben",
+    "ipa": "[ˈapˌɡeːbn̩]",
+    "fa": "تحویل دادن",
+    "en": "to hand in / hand over",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "abschreiben",
+    "ipa": "[ˈapˌʃʁaɪ̯bn̩]",
+    "fa": "رونویسی کردن / تقلب کردن",
+    "en": "to copy / to write off",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "abstürzen",
+    "ipa": "[ˈapˌʃtʏʁtsn̩]",
+    "fa": "سقوط کردن (هواپیما/کامپیوتر)",
+    "en": "to crash",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "abhängig",
+    "ipa": "[ˈaphɛŋɪç]",
+    "fa": "وابسته",
+    "en": "dependent",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Abiball",
+    "ipa": "[ˈaːbiːbal]",
+    "fa": "جشن فارغ‌التحصیلی دبیرستان",
+    "en": "prom / graduation ball",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Abitur",
+    "ipa": "[abiˈtuːɐ̯]",
+    "fa": "دیپلم متوسطه آلمان (ابیتور)",
+    "en": "German high school diploma",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "abonnieren",
+    "ipa": "[abɔˈniːʁən]",
+    "fa": "اشتراک گرفتن / سابسکرایب کردن",
+    "en": "to subscribe",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Abschluss",
+    "ipa": "[ˈapʃlʊs]",
+    "fa": "مدرک تحصیلی / پایان",
+    "en": "degree / graduation / conclusion",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Abschnitt",
+    "ipa": "[ˈapʃnɪt]",
+    "fa": "بخش / قسمت (متن)",
+    "en": "section / segment",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "achten",
+    "ipa": "[ˈaxtn̩]",
+    "fa": "احترام گذاشتن / توجه کردن",
+    "en": "to respect / to pay attention",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Agentur",
+    "ipa": "[aɡɛnˈtuːɐ̯]",
+    "fa": "آژانس",
+    "en": "agency",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Akademie",
+    "ipa": "[akaˈdeːmiː]",
+    "fa": "آکادمی",
+    "en": "academy",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Akte",
+    "ipa": "[ˈaktə]",
+    "fa": "پرونده",
+    "en": "file / record",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Aktentasche",
+    "ipa": "[ˈaktn̩ˌtaʃə]",
+    "fa": "کیف اداری",
+    "en": "briefcase",
+    "level": "B1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "aktivieren",
+    "ipa": "[aktiˈviːʁən]",
+    "fa": "فعال کردن",
+    "en": "to activate",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "aktualisieren",
+    "ipa": "[aktualiˈziːʁən]",
+    "fa": "به‌روزرسانی کردن",
+    "en": "to update",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Alternative",
+    "ipa": "[altɛʁnaˈtiːvə]",
+    "fa": "جایگزین",
+    "en": "alternative",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Altersheim",
+    "ipa": "[ˈaltɐsˌhaɪ̯m]",
+    "fa": "خانه سالمندان",
+    "en": "nursing home / retirement home",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Amt",
+    "ipa": "[amt]",
+    "fa": "اداره / سازمان دولتی",
+    "en": "office / authority",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Angabe",
+    "ipa": "[ˈanɡaːbə]",
+    "fa": "اطلاعات / جزئیات ارائه‌شده",
+    "en": "detail / information given",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "angeben",
+    "ipa": "[ˈanˌɡeːbn̩]",
+    "fa": "اعلام کردن / فخر فروختن",
+    "en": "to state / to show off",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Anhang",
+    "ipa": "[ˈanhaŋ]",
+    "fa": "پیوست (ایمیل)",
+    "en": "attachment",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "anhängen",
+    "ipa": "[ˈanˌhɛŋən]",
+    "fa": "پیوست کردن",
+    "en": "to attach",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Anliegen",
+    "ipa": "[ˈanliːɡn̩]",
+    "fa": "درخواست / خواسته",
+    "en": "request / concern",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "annehmen",
+    "ipa": "[ˈanˌneːmən]",
+    "fa": "پذیرفتن / فرض کردن",
+    "en": "to accept / assume",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "anreden",
+    "ipa": "[ˈanˌʁeːdn̩]",
+    "fa": "خطاب کردن",
+    "en": "to address (someone)",
+    "level": "B1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Ansage",
+    "ipa": "[ˈanzaːɡə]",
+    "fa": "اعلامیه / اعلان",
+    "en": "announcement",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Anschluss",
+    "ipa": "[ˈanʃlʊs]",
+    "fa": "اتصال / ارتباط قطار",
+    "en": "connection",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ansicht",
+    "ipa": "[ˈanzɪçt]",
+    "fa": "دیدگاه / نظر",
+    "en": "view / opinion",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "ansonsten",
+    "ipa": "[anˈzɔnstn̩]",
+    "fa": "در غیر این صورت",
+    "en": "otherwise",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Antrag",
+    "ipa": "[ˈantʁaːk]",
+    "fa": "درخواست رسمی",
+    "en": "application / request",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Anweisung",
+    "ipa": "[ˈanvaɪ̯zʊŋ]",
+    "fa": "دستور / راهنمایی",
+    "en": "instruction",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Anwendung",
+    "ipa": "[ˈanvɛndʊŋ]",
+    "fa": "کاربرد / اپلیکیشن",
+    "en": "application / usage",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "anzeigen",
+    "ipa": "[ˈantsaɪ̯ɡn̩]",
+    "fa": "نمایش دادن / گزارش دادن",
+    "en": "to display / to report",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "abarbeiten",
+    "ipa": "[ˈapˌʔaʁbaɪ̯tn̩]",
+    "fa": "یکی‌یکی انجام دادن (کارها)",
+    "en": "to work through / work off",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Arbeitgeberin",
+    "ipa": "[ˈaʁbaɪ̯tɡeːbəʁɪn]",
+    "fa": "کارفرما (زن)",
+    "en": "employer (female)",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Arbeitserlaubnis",
+    "ipa": "[ˈaʁbaɪ̯tsɛɐ̯ˌlaʊ̯pnɪs]",
+    "fa": "مجوز کار",
+    "en": "work permit",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Arbeitsloser",
+    "ipa": "[ˈaʁbaɪ̯tsloːzɐ]",
+    "fa": "فرد بیکار",
+    "en": "unemployed person",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "abschneiden",
+    "ipa": "[ˈapˌʃnaɪ̯dn̩]",
+    "fa": "بریدن / نتیجه گرفتن (در آزمون و...)",
+    "en": "to cut off / to perform (in a test)",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "aktualisiert",
+    "ipa": "[aktualiˈziːɐ̯t]",
+    "fa": "به‌روزرسانی‌شده",
+    "en": "updated",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "alternativ",
+    "ipa": "[altɛʁnaˈtiːf]",
+    "fa": "جایگزین (به‌عنوان صفت)",
+    "en": "alternative (adj.)",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Atmosphäre",
+    "ipa": "[atmoˈsfɛːʁə]",
+    "fa": "جو / فضا",
+    "en": "atmosphere",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Aufnahme",
+    "ipa": "[ˈaʊ̯fˌnaːmə]",
+    "fa": "ضبط (صدا/تصویر) / پذیرش",
+    "en": "recording / admission",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "aufnehmen",
+    "ipa": "[ˈaʊ̯fˌneːmən]",
+    "fa": "ضبط کردن / پذیرفتن",
+    "en": "to record / to take up",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Aufsatz",
+    "ipa": "[ˈaʊ̯fzats]",
+    "fa": "انشا / مقاله",
+    "en": "essay",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Auftrag",
+    "ipa": "[ˈaʊ̯ftʁaːk]",
+    "fa": "سفارش / مأموریت",
+    "en": "order / assignment",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Ausdruck",
+    "ipa": "[ˈaʊ̯sdʁʊk]",
+    "fa": "عبارت / بیان",
+    "en": "expression",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Ausländerbehörde",
+    "ipa": "[ˈaʊ̯slɛndɐbəˌhøːɐ̯də]",
+    "fa": "اداره اتباع بیگانه",
+    "en": "immigration office",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Ausnahme",
+    "ipa": "[ˈaʊ̯sˌnaːmə]",
+    "fa": "استثنا",
+    "en": "exception",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "ausrede",
+    "ipa": "[ˈaʊ̯sˌʁeːdə]",
+    "fa": "بهانه",
+    "en": "excuse",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "ausreichend",
+    "ipa": "[ˈaʊ̯sˌʁaɪ̯çn̩t]",
+    "fa": "کافی",
+    "en": "sufficient",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Austausch",
+    "ipa": "[ˈaʊ̯staʊ̯ʃ]",
+    "fa": "تبادل / تعویض",
+    "en": "exchange",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "ausverkauft",
+    "ipa": "[ˈaʊ̯sfɐˌkaʊ̯ft]",
+    "fa": "تمام‌شده (فروش)",
+    "en": "sold out",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "binden",
+    "ipa": "[ˈbɪndn̩]",
+    "fa": "بستن / گره زدن",
+    "en": "to tie / bind",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Bankkauffrau",
+    "ipa": "[ˈbaŋkˌkaʊ̯fʁaʊ̯]",
+    "fa": "کارمند بانک (زن)",
+    "en": "bank clerk (female)",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bankkaufmann",
+    "ipa": "[ˈbaŋkˌkaʊ̯fman]",
+    "fa": "کارمند بانک (مرد)",
+    "en": "bank clerk (male)",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Basilikum",
+    "ipa": "[baˈziːlikʊm]",
+    "fa": "ریحان",
+    "en": "basil",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Basis",
+    "ipa": "[ˈbaːzɪs]",
+    "fa": "پایه / اساس",
+    "en": "basis / foundation",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "beachten",
+    "ipa": "[bəˈʔaxtn̩]",
+    "fa": "توجه کردن / رعایت کردن",
+    "en": "to observe / heed",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "aller",
+    "ipa": "[ˈalɐ]",
+    "fa": "همه (حالت مالکیت جمع)",
+    "en": "of all / all (genitive)",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "ansagen",
+    "ipa": "[ˈanˌzaːɡn̩]",
+    "fa": "اعلام کردن",
+    "en": "to announce",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "ausreden",
+    "ipa": "[ˈaʊ̯sˌʁeːdn̩]",
+    "fa": "منصرف کردن (کسی را از کاری) / حرف را تمام کردن",
+    "en": "to talk someone out of / to finish speaking",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Beamter",
+    "ipa": "[bəˈʔamtɐ]",
+    "fa": "کارمند دولت (مرد)",
+    "en": "civil servant (male)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Beamtin",
+    "ipa": "[bəˈʔamtɪn]",
+    "fa": "کارمند دولت (زن)",
+    "en": "civil servant (female)",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "bearbeiten",
+    "ipa": "[bəˈʔaʁbaɪ̯tn̩]",
+    "fa": "پردازش کردن / رسیدگی کردن",
+    "en": "to process / to edit",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bedeutung",
+    "ipa": "[bəˈdɔɪ̯tʊŋ]",
+    "fa": "معنا / اهمیت",
+    "en": "meaning / significance",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Bedienung",
+    "ipa": "[bəˈdiːnʊŋ]",
+    "fa": "سرویس‌دهی / نحوه استفاده",
+    "en": "service / operation",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bedingung",
+    "ipa": "[bəˈdɪŋʊŋ]",
+    "fa": "شرط",
+    "en": "condition",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "begreifen",
+    "ipa": "[bəˈɡʁaɪ̯fn̩]",
+    "fa": "درک کردن / فهمیدن",
+    "en": "to comprehend / grasp",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "behandeln",
+    "ipa": "[bəˈhandl̩n]",
+    "fa": "درمان کردن / رفتار کردن با",
+    "en": "to treat",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Beitrag",
+    "ipa": "[ˈbaɪ̯tʁaːk]",
+    "fa": "مشارکت / حق‌عضویت / پست (شبکه اجتماعی)",
+    "en": "contribution / post / fee",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "benötigen",
+    "ipa": "[bəˈnøːtɪɡn̩]",
+    "fa": "نیاز داشتن",
+    "en": "to need / require",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "beraten",
+    "ipa": "[bəˈʁaːtn̩]",
+    "fa": "مشاوره دادن",
+    "en": "to advise",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Beratung",
+    "ipa": "[bəˈʁaːtʊŋ]",
+    "fa": "مشاوره",
+    "en": "consultation / advice",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "berechnen",
+    "ipa": "[bəˈʁɛçnən]",
+    "fa": "محاسبه کردن",
+    "en": "to calculate",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Berechnung",
+    "ipa": "[bəˈʁɛçnʊŋ]",
+    "fa": "محاسبه",
+    "en": "calculation",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Bereich",
+    "ipa": "[bəˈʁaɪ̯ç]",
+    "fa": "حوزه / بخش",
+    "en": "area / field",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "berichten",
+    "ipa": "[bəˈʁɪçtn̩]",
+    "fa": "گزارش دادن",
+    "en": "to report",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "bescheiden",
+    "ipa": "[bəˈʃaɪ̯dn̩]",
+    "fa": "متواضع / فروتن",
+    "en": "modest",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Beschreibung",
+    "ipa": "[bəˈʃʁaɪ̯bʊŋ]",
+    "fa": "توصیف / شرح",
+    "en": "description",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "sich beschweren",
+    "ipa": "[zɪç bəˈʃveːʁən]",
+    "fa": "شکایت کردن",
+    "en": "to complain",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "besitzen",
+    "ipa": "[bəˈzɪtsn̩]",
+    "fa": "مالک بودن / داشتن",
+    "en": "to own / possess",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "sich bessern",
+    "ipa": "[zɪç ˈbɛsɐn]",
+    "fa": "بهتر شدن",
+    "en": "to improve",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "bestehen",
+    "ipa": "[bəˈʃteːən]",
+    "fa": "قبول شدن (امتحان) / وجود داشتن",
+    "en": "to pass (an exam) / to exist",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "beten",
+    "ipa": "[ˈbeːtn̩]",
+    "fa": "دعا کردن",
+    "en": "to pray",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "betonen",
+    "ipa": "[bəˈtoːnən]",
+    "fa": "تأکید کردن",
+    "en": "to emphasize",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Betreuung",
+    "ipa": "[bəˈtʁɔɪ̯ʊŋ]",
+    "fa": "نگهداری / مراقبت",
+    "en": "care / supervision",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "betreiben",
+    "ipa": "[bəˈtʁaɪ̯bn̩]",
+    "fa": "اداره کردن / راه‌اندازی کردن",
+    "en": "to operate / run",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bevölkerung",
+    "ipa": "[bəˈfœlkəʁʊŋ]",
+    "fa": "جمعیت",
+    "en": "population",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "bewerten",
+    "ipa": "[bəˈveːɐ̯tn̩]",
+    "fa": "ارزیابی کردن / امتیاز دادن",
+    "en": "to rate / evaluate",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Bewertung",
+    "ipa": "[bəˈveːɐ̯tʊŋ]",
+    "fa": "ارزیابی / نظر (سایت)",
+    "en": "rating / review",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "werben",
+    "ipa": "[ˈvɛʁbn̩]",
+    "fa": "تبلیغ کردن / جذب کردن",
+    "en": "to advertise / recruit",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Bezirk",
+    "ipa": "[bəˈtsɪʁk]",
+    "fa": "منطقه / ناحیه (اداری)",
+    "en": "district",
+    "level": "B1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "biegen",
+    "ipa": "[ˈbiːɡn̩]",
+    "fa": "خم کردن / پیچیدن",
+    "en": "to bend / turn",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "bilden",
+    "ipa": "[ˈbɪldn̩]",
+    "fa": "تشکیل دادن / آموزش دادن",
+    "en": "to form / educate",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "bisher",
+    "ipa": "[bɪsˈheːɐ̯]",
+    "fa": "تا کنون",
+    "en": "so far / until now",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "blicken",
+    "ipa": "[ˈblɪkn̩]",
+    "fa": "نگاه انداختن",
+    "en": "to glance / look",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "bluten",
+    "ipa": "[ˈbluːtn̩]",
+    "fa": "خون‌ریزی کردن",
+    "en": "to bleed",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Bonus",
+    "ipa": "[ˈboːnʊs]",
+    "fa": "پاداش / امتیاز اضافه",
+    "en": "bonus",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "booten",
+    "ipa": "[ˈbuːtn̩]",
+    "fa": "روشن کردن/راه‌اندازی رایانه",
+    "en": "to boot up (a computer)",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Branche",
+    "ipa": "[ˈbʁãːʃə]",
+    "fa": "صنعت / حوزه کاری",
+    "en": "industry / sector",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Bühne",
+    "ipa": "[ˈbyːnə]",
+    "fa": "صحنه (نمایش)",
+    "en": "stage",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Bundesland",
+    "ipa": "[ˈbʊndəslant]",
+    "fa": "ایالت فدرال آلمان",
+    "en": "federal state",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Bundesrepublik",
+    "ipa": "[ˈbʊndəsʁepuˌbliːk]",
+    "fa": "جمهوری فدرال",
+    "en": "federal republic",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Bundestag",
+    "ipa": "[ˈbʊndəstaːk]",
+    "fa": "پارلمان آلمان (بوندستاگ)",
+    "en": "German federal parliament",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Bürger",
+    "ipa": "[ˈbʏʁɡɐ]",
+    "fa": "شهروند",
+    "en": "citizen",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Bürgerbüro",
+    "ipa": "[ˈbʏʁɡɐbyˌʁoː]",
+    "fa": "دفتر خدمات شهروندی",
+    "en": "citizens' office",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "BWL",
+    "ipa": "[beː veː ˈʔɛl]",
+    "fa": "مدیریت بازرگانی (اختصار)",
+    "en": "business administration (abbrev.)",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Charakter",
+    "ipa": "[kaˈʁaktɐ]",
+    "fa": "شخصیت / کاراکتر",
+    "en": "character",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "chemisch",
+    "ipa": "[ˈçeːmɪʃ]",
+    "fa": "شیمیایی",
+    "en": "chemical",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Christ",
+    "ipa": "[kʁɪst]",
+    "fa": "مسیحی",
+    "en": "Christian",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "dadurch",
+    "ipa": "[daˈdʊʁç]",
+    "fa": "از این طریق",
+    "en": "through this / thereby",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "dagegen",
+    "ipa": "[daˈɡeːɡn̩]",
+    "fa": "در برابر آن / برعکس",
+    "en": "against it / on the other hand",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "daher",
+    "ipa": "[daˈheːɐ̯]",
+    "fa": "بنابراین / از این‌رو",
+    "en": "therefore",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "daran",
+    "ipa": "[daˈʁan]",
+    "fa": "به آن / در آن",
+    "en": "on/about it",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "darauf",
+    "ipa": "[daˈʁaʊ̯f]",
+    "fa": "روی آن",
+    "en": "on it",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "darüber",
+    "ipa": "[daˈʁyːbɐ]",
+    "fa": "درباره‌ی آن / بالای آن",
+    "en": "about it / above it",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "darum",
+    "ipa": "[daˈʁʊm]",
+    "fa": "به‌همین‌خاطر / دور آن",
+    "en": "therefore / around it",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  }
 ]

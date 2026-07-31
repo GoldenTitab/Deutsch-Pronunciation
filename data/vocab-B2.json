@@ -1,208 +1,1114 @@
 [
-  {"word":"Abfall","ipa":"[ˈapfal]","fa":"زباله","en":"waste / rubbish","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Abfalltrennung","ipa":"[ˈapfalˌtʁɛnʊŋ]","fa":"تفکیک زباله","en":"waste separation","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Absicht","ipa":"[ˈapzɪçt]","fa":"قصد / هدف","en":"intention","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Abstimmung","ipa":"[ˈapʃtɪmʊŋ]","fa":"رأی‌گیری","en":"vote / ballot","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Aktie","ipa":"[ˈaktsi̯ə]","fa":"سهام (بورس)","en":"share (stock)","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Algorithmus","ipa":"[alɡoˈʁɪtmʊs]","fa":"الگوریتم","en":"algorithm","level":"B2","category":"فناوری"},
-  {"word":"analysieren","ipa":"[anaˈlyːziːʁən]","fa":"تحلیل کردن","en":"to analyze","level":"B2","category":"علم و فلسفه"},
-  {"word":"anerkennen","ipa":"[ˈanʔɛɐ̯ˌkɛnən]","fa":"به رسمیت شناختن","en":"to acknowledge / recognize","level":"B2","category":"افعال روزمره"},
-  {"word":"Angebot","ipa":"[ˈanɡəboːt]","fa":"عرضه / پیشنهاد","en":"supply / offer","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Angst","ipa":"[aŋst]","fa":"ترس","en":"fear","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"anpassen","ipa":"[ˈanˌpasən]","fa":"تطبیق دادن","en":"to adapt","level":"B2","category":"افعال روزمره"},
-  {"word":"Arbeitgeber","ipa":"[ˈaʁbaɪ̯tˌɡeːbɐ]","fa":"کارفرما","en":"employer","level":"B2","category":"کار و شغل"},
-  {"word":"Arbeitnehmer","ipa":"[ˈaʁbaɪ̯tˌneːmɐ]","fa":"کارمند / کارگر","en":"employee","level":"B2","category":"کار و شغل"},
-  {"word":"Arbeitslosigkeit","ipa":"[ˈaʁbaɪ̯tsloːzɪçkaɪ̯t]","fa":"بیکاری","en":"unemployment","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Architektur","ipa":"[aʁçitɛkˈtuːɐ̯]","fa":"معماری","en":"architecture","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Artikel","ipa":"[aʁˈtiːkl̩]","fa":"مقاله (روزنامه / علمی)","en":"article","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Artenschutz","ipa":"[ˈaːʁtənʃʊt͡s]","fa":"حفاظت از گونه‌ها","en":"species protection","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Aufgabe","ipa":"[ˈaʊ̯fɡaːbə]","fa":"وظیفه","en":"task","level":"B2","category":"کار و شغل"},
-  {"word":"Ausbildung","ipa":"[ˈaʊ̯sbɪldʊŋ]","fa":"آموزش (حرفه‌ای)","en":"education / training","level":"B2","category":"مدرسه و آموزش"},
-  {"word":"Ausgabe","ipa":"[ˈaʊ̯sɡaːbə]","fa":"هزینه / نسخه (نشر)","en":"expenditure / edition","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Ausstellung","ipa":"[ˈaʊ̯sʃtɛlʊŋ]","fa":"نمایشگاه","en":"exhibition","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"auswirken","ipa":"[ˈaʊ̯sˌvɪʁkn̩]","fa":"تأثیر گذاشتن","en":"to have an effect","level":"B2","category":"افعال روزمره"},
-  {"word":"Automatisierung","ipa":"[aʊ̯tomaˈtiːzɪʁʊŋ]","fa":"اتوماسیون","en":"automation","level":"B2","category":"فناوری"},
-  {"word":"Ballett","ipa":"[baˈlɛt]","fa":"باله","en":"ballet","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"beeinflussen","ipa":"[bəˈʔaɪ̯nflʊsən]","fa":"تأثیر گذاشتن بر","en":"to influence","level":"B2","category":"افعال روزمره"},
-  {"word":"begeistert","ipa":"[bəˈɡaɪ̯stɐt]","fa":"مشتاق / شیفته","en":"enthusiastic","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Behörde","ipa":"[bəˈhøːɐ̯də]","fa":"اداره / مرجع رسمی","en":"authority / public body","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"belegen","ipa":"[bəˈleːɡn̩]","fa":"ثابت کردن (با مدرک)","en":"to prove / document","level":"B2","category":"مدرسه و آموزش"},
-  {"word":"Bericht","ipa":"[bəˈʁɪçt]","fa":"گزارش","en":"report","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"beschreiben","ipa":"[bəˈʃʁaɪ̯bn̩]","fa":"توصیف کردن","en":"to describe","level":"B2","category":"افعال روزمره"},
-  {"word":"Besprechung","ipa":"[bəˈʃpʁɛçʊŋ]","fa":"جلسه (بحث)","en":"meeting / discussion","level":"B2","category":"کار و شغل"},
-  {"word":"bestimmen","ipa":"[bəˈʃtɪmən]","fa":"تعیین کردن","en":"to determine","level":"B2","category":"افعال روزمره"},
-  {"word":"Bewusstsein","ipa":"[bəˈvʊstzaɪ̯n]","fa":"آگاهی","en":"consciousness","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"Beziehung","ipa":"[bəˈt͡siːʊŋ]","fa":"رابطه","en":"relationship","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Big Data","ipa":"[bɪk ˈdeːta]","fa":"داده‌های کلان","en":"big data","level":"B2","category":"فناوری"},
-  {"word":"Bildung","ipa":"[ˈbɪldʊŋ]","fa":"آموزش و پرورش","en":"education","level":"B2","category":"مدرسه و آموزش"},
-  {"word":"Bilanz","ipa":"[biˈlant͡s]","fa":"ترازنامه","en":"balance sheet","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Biodiversität","ipa":"[ˌbiːodivɛʁziˈtɛːt]","fa":"تنوع زیستی","en":"biodiversity","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Budget","ipa":"[byˈd͡ʒeː]","fa":"بودجه","en":"budget","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Bürger","ipa":"[ˈbʏʁɡɐ]","fa":"شهروند","en":"citizen","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Chance","ipa":"[ˈʃɑ̃ːsə]","fa":"فرصت / شانس","en":"chance / opportunity","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Cloud","ipa":"[klaʊ̯d]","fa":"ابر (رایانشی)","en":"cloud (computing)","level":"B2","category":"فناوری"},
-  {"word":"Code","ipa":"[koːt]","fa":"کد","en":"code","level":"B2","category":"فناوری"},
-  {"word":"darlegen","ipa":"[ˈdaːɐ̯ˌleːɡn̩]","fa":"تشریح / ارائه کردن","en":"to explain / present","level":"B2","category":"افعال روزمره"},
-  {"word":"darstellen","ipa":"[ˈdaːɐ̯ˌʃtɛlən]","fa":"نمایش دادن / نشان دادن","en":"to represent / depict","level":"B2","category":"افعال روزمره"},
-  {"word":"Daten","ipa":"[ˈdaːtn̩]","fa":"داده‌ها","en":"data","level":"B2","category":"فناوری"},
-  {"word":"Demokratie","ipa":"[demoˈkʁaːtiː]","fa":"دموکراسی","en":"democracy","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"digital","ipa":"[diɡiˈtaːl]","fa":"دیجیتال","en":"digital","level":"B2","category":"فناوری"},
-  {"word":"diskutieren","ipa":"[dɪskuˈtiːʁən]","fa":"بحث کردن","en":"to discuss","level":"B2","category":"افعال روزمره"},
-  {"word":"durchführen","ipa":"[ˈdʊʁçˌfyːʁən]","fa":"اجرا کردن","en":"to carry out","level":"B2","category":"افعال روزمره"},
-  {"word":"Effizienz","ipa":"[ɛfiˈt͡si̯ɛnt͡s]","fa":"کارایی","en":"efficiency","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"effizient","ipa":"[ɛfiˈt͡si̯ɛnt]","fa":"کارآمد","en":"efficient","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Einkommen","ipa":"[ˈaɪ̯nkɔmən]","fa":"درآمد","en":"income","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"einrichten","ipa":"[ˈaɪ̯nˌʁɪçtn̩]","fa":"راه‌اندازی / تنظیم کردن","en":"to set up / arrange","level":"B2","category":"منزل و خانه"},
-  {"word":"Emission","ipa":"[emɪˈsi̯oːn]","fa":"انتشار (گاز)","en":"emission","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"emotional","ipa":"[emoˈt͡si̯oːnaːl]","fa":"عاطفی","en":"emotional","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Energie","ipa":"[enɛʁˈɡiː]","fa":"انرژی","en":"energy","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"entscheiden","ipa":"[ɛntˈʃaɪ̯dn̩]","fa":"تصمیم گرفتن","en":"to decide","level":"B2","category":"افعال روزمره"},
-  {"word":"Entsorgung","ipa":"[ɛntˈzɔʁɡʊŋ]","fa":"دفع (زباله)","en":"disposal","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"entstehen","ipa":"[ɛntˈʃteːən]","fa":"پدید آمدن","en":"to emerge / arise","level":"B2","category":"افعال روزمره"},
-  {"word":"entwickeln","ipa":"[ɛntˈvɪkl̩n]","fa":"توسعه دادن","en":"to develop","level":"B2","category":"افعال روزمره"},
-  {"word":"Entwicklung","ipa":"[ɛntˈvɪklʊŋ]","fa":"توسعه","en":"development","level":"B2","category":"علم و فلسفه"},
-  {"word":"Erderwärmung","ipa":"[ˈeːɐ̯tʔɛɐ̯ˌvɛʁmʊŋ]","fa":"گرمایش زمین","en":"global warming","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"erfolgreich","ipa":"[ɛɐ̯ˈfɔlkʁaɪ̯ç]","fa":"موفق","en":"successful","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"erhöhen","ipa":"[ɛɐ̯ˈhøːən]","fa":"افزایش دادن","en":"to increase / raise","level":"B2","category":"افعال روزمره"},
-  {"word":"ermöglichen","ipa":"[ɛɐ̯ˈmøːklɪçn̩]","fa":"امکان دادن","en":"to enable","level":"B2","category":"افعال روزمره"},
-  {"word":"erneuerbar","ipa":"[ɛɐ̯ˈnɔʏ̯ɐbaːɐ̯]","fa":"تجدیدپذیر","en":"renewable","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"erwarten","ipa":"[ɛɐ̯ˈvaʁtn̩]","fa":"انتظار داشتن","en":"to expect","level":"B2","category":"افعال روزمره"},
-  {"word":"erwerben","ipa":"[ɛɐ̯ˈvɛʁbn̩]","fa":"بدست آوردن","en":"to acquire","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"fair","ipa":"[fɛːɐ̯]","fa":"منصفانه","en":"fair","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Fähigkeit","ipa":"[ˈfɛːɪçkaɪ̯t]","fa":"توانایی","en":"ability / skill","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"flexibel","ipa":"[flɛˈksiːbl̩]","fa":"انعطاف‌پذیر","en":"flexible","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"fördern","ipa":"[ˈfœʁdɐn]","fa":"ترویج / تشویق کردن","en":"to promote / foster","level":"B2","category":"افعال روزمره"},
-  {"word":"Forschung","ipa":"[ˈfɔʁʃʊŋ]","fa":"پژوهش / تحقیق","en":"research","level":"B2","category":"علم و فلسفه"},
-  {"word":"Fortschritt","ipa":"[ˈfɔʁtʃʁɪt]","fa":"پیشرفت","en":"progress","level":"B2","category":"علم و فلسفه"},
-  {"word":"fossil","ipa":"[ˈfɔsiːl]","fa":"فسیلی","en":"fossil","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Freiheit","ipa":"[ˈfʁaɪ̯haɪ̯t]","fa":"آزادی","en":"freedom","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Freude","ipa":"[ˈfʁɔʏ̯də]","fa":"شادی","en":"joy","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Führung","ipa":"[ˈfyːʁʊŋ]","fa":"رهبری","en":"leadership","level":"B2","category":"کار و شغل"},
-  {"word":"Gefühl","ipa":"[ɡəˈfyːl]","fa":"احساس","en":"feeling","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Gerechtigkeit","ipa":"[ɡəˈʁɛçtɪçkaɪ̯t]","fa":"عدالت","en":"justice","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Gesellschaft","ipa":"[ɡəˈzɛlʃaft]","fa":"جامعه","en":"society","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"gesellschaftlich","ipa":"[ɡəˈzɛlʃaftlɪç]","fa":"اجتماعی","en":"social","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Gesetz","ipa":"[ɡəˈzɛt͡s]","fa":"قانون","en":"law","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Gewinn","ipa":"[ɡəˈvɪn]","fa":"سود","en":"profit","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"gewährleisten","ipa":"[ɡəˈvɛːɐ̯laɪ̯stn̩]","fa":"تضمین کردن","en":"to guarantee","level":"B2","category":"افعال روزمره"},
-  {"word":"global","ipa":"[ɡloˈbaːl]","fa":"جهانی","en":"global","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Gleichheit","ipa":"[ˈɡlaɪ̯çhaɪ̯t]","fa":"برابری","en":"equality","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"gründen","ipa":"[ˈɡʁʏndn̩]","fa":"بنیان گذاشتن","en":"to found / establish","level":"B2","category":"کار و شغل"},
-  {"word":"Handel","ipa":"[ˈhandl̩]","fa":"تجارت","en":"trade","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"handeln","ipa":"[ˈhandl̩n]","fa":"عمل کردن / معامله کردن","en":"to act / trade","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Hardware","ipa":"[ˈhaːɐ̯dvɛːɐ]","fa":"سخت‌افزار","en":"hardware","level":"B2","category":"فناوری"},
-  {"word":"Ideal","ipa":"[ideˈaːl]","fa":"ایده‌آل","en":"ideal","level":"B2","category":"علم و فلسفه"},
-  {"word":"Identität","ipa":"[idɛntiˈtɛːt]","fa":"هویت","en":"identity","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"Individuum","ipa":"[ɪndiˈviːduʊm]","fa":"فرد","en":"individual","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"Inflation","ipa":"[ɪnflaˈt͡si̯oːn]","fa":"تورم","en":"inflation","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Investition","ipa":"[ɪnvɛstiˈt͡si̯oːn]","fa":"سرمایه‌گذاری","en":"investment","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Karriere","ipa":"[kaˈʁi̯eːʁə]","fa":"حرفه","en":"career","level":"B2","category":"کار و شغل"},
-  {"word":"Kenntnisse","ipa":"[ˈkɛntnɪsə]","fa":"دانش / مهارت‌ها","en":"knowledge / skills","level":"B2","category":"مدرسه و آموزش"},
-  {"word":"kennzeichnen","ipa":"[ˈkɛntsaɪ̯çnən]","fa":"مشخص کردن","en":"to characterize","level":"B2","category":"افعال روزمره"},
-  {"word":"KI","ipa":"[kaː ˈiː]","fa":"هوش مصنوعی","en":"AI (artificial intelligence)","level":"B2","category":"فناوری"},
-  {"word":"Klima","ipa":"[ˈkliːma]","fa":"آب و هوا (اقلیم)","en":"climate","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Klimawandel","ipa":"[ˈkliːmaˌvandl̩]","fa":"تغییر اقلیم","en":"climate change","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Koalition","ipa":"[koaliˈt͡si̯oːn]","fa":"ائتلاف","en":"coalition","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Kommunikation","ipa":"[kɔmunikaˈt͡si̯oːn]","fa":"ارتباطات","en":"communication","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"komplex","ipa":"[kɔmˈplɛks]","fa":"پیچیده","en":"complex","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Konflikt","ipa":"[kɔnˈflɪkt]","fa":"تضاد","en":"conflict","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Konzert","ipa":"[kɔnˈt͡sɛʁt]","fa":"کنسرت","en":"concert","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"koordinieren","ipa":"[koɔʁdiˈniːʁən]","fa":"هماهنگ کردن","en":"to coordinate","level":"B2","category":"کار و شغل"},
-  {"word":"Kosten","ipa":"[ˈkɔstn̩]","fa":"هزینه‌ها","en":"costs","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Krise","ipa":"[ˈkʁiːzə]","fa":"بحران","en":"crisis","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"kritisch","ipa":"[ˈkʁiːtɪʃ]","fa":"انتقادی","en":"critical","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"kulturell","ipa":"[kʊltuˈʁɛl]","fa":"فرهنگی","en":"cultural","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Kündigung","ipa":"[ˈkʏndɪɡʊŋ]","fa":"اخطار / اخراج","en":"termination / dismissal","level":"B2","category":"کار و شغل"},
-  {"word":"Labor","ipa":"[laˈboːɐ̯]","fa":"آزمایشگاه","en":"laboratory","level":"B2","category":"علم و فلسفه"},
-  {"word":"leisten","ipa":"[ˈlaɪ̯stn̩]","fa":"انجام دادن / به عهده گرفتن","en":"to accomplish / perform","level":"B2","category":"کار و شغل"},
-  {"word":"Literatur","ipa":"[lɪtəʁaˈtuːɐ̯]","fa":"ادبیات","en":"literature","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"logisch","ipa":"[ˈloːɡɪʃ]","fa":"منطقی","en":"logical","level":"B2","category":"علم و فلسفه"},
-  {"word":"lokal","ipa":"[loˈkaːl]","fa":"محلی","en":"local","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Malerei","ipa":"[ˈmaːləʁaɪ̯]","fa":"نقاشی (هنر)","en":"painting (art)","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Management","ipa":"[ˈmɛnɪdʒmənt]","fa":"مدیریت (علمی)","en":"management","level":"B2","category":"کار و شغل"},
-  {"word":"Markt","ipa":"[maʁkt]","fa":"بازار","en":"market","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Maschine","ipa":"[maˈʃiːnə]","fa":"دستگاه / ماشین‌آلات","en":"machine (device/apparatus)","level":"B2","category":"فناوری"},
-  {"word":"Material","ipa":"[mateˈʁi̯aːl]","fa":"ماده / مصالح","en":"material","level":"B2","category":"علم و فلسفه"},
-  {"word":"Medien","ipa":"[ˈmeːdi̯ən]","fa":"رسانه‌ها","en":"media","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Meinung","ipa":"[ˈmaɪ̯nʊŋ]","fa":"نظر","en":"opinion","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"Menschenrechte","ipa":"[ˈmɛnʃn̩ˌʁɛçtə]","fa":"حقوق بشر","en":"human rights","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"modern","ipa":"[moˈdɛʁn]","fa":"مدرن","en":"modern","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Müll","ipa":"[mʏl]","fa":"زباله (عامیانه)","en":"trash / garbage","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Nachfrage","ipa":"[ˈnaːxfʁaːɡə]","fa":"تقاضا","en":"demand","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"nachhaltig","ipa":"[ˈnaːxhaltɪç]","fa":"پایدار","en":"sustainable","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Nachhaltigkeit","ipa":"[ˈnaːxhaltɪçkaɪ̯t]","fa":"پایداری","en":"sustainability","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Netzwerk","ipa":"[ˈnɛt͡svɛʁk]","fa":"شبکه","en":"network","level":"B2","category":"فناوری"},
-  {"word":"Ökosystem","ipa":"[ˈøːkozʏsˌteːm]","fa":"اکوسیستم","en":"ecosystem","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"organisieren","ipa":"[ɔʁɡaniˈziːʁən]","fa":"سازماندهی کردن","en":"to organize","level":"B2","category":"کار و شغل"},
-  {"word":"Parlament","ipa":"[paʁlaˈmɛnt]","fa":"پارلمان","en":"parliament","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Partei","ipa":"[paʁˈtaɪ̯]","fa":"حزب","en":"party (political)","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Perspektive","ipa":"[pɛʁspɛkˈtiːvə]","fa":"چشم‌انداز","en":"perspective","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"politisch","ipa":"[poˈliːtɪʃ]","fa":"سیاسی","en":"political","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Praxis","ipa":"[ˈpʁaksɪs]","fa":"عمل (در مقابل تئوری)","en":"practice","level":"B2","category":"کار و شغل"},
-  {"word":"Produkt","ipa":"[pʁoˈdʊkt]","fa":"محصول","en":"product","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Produktion","ipa":"[pʁodʊkˈt͡si̯oːn]","fa":"تولید","en":"production","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Programmierung","ipa":"[pʁoɡʁaˈmiːʁʊŋ]","fa":"برنامه‌نویسی","en":"programming","level":"B2","category":"فناوری"},
-  {"word":"Prozess","ipa":"[pʁoˈt͡sɛs]","fa":"فرایند","en":"process","level":"B2","category":"کار و شغل"},
-  {"word":"Qualifikation","ipa":"[kvalifikaˈt͡si̯oːn]","fa":"صلاحیت / مهارت","en":"qualification","level":"B2","category":"کار و شغل"},
-  {"word":"Realität","ipa":"[ʁealiˈtɛːt]","fa":"واقعیت","en":"reality","level":"B2","category":"علم و فلسفه"},
-  {"word":"Recht","ipa":"[ʁɛçt]","fa":"حق","en":"right","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Recycling","ipa":"[ʁiˈsaɪ̯klɪŋ]","fa":"بازیافت","en":"recycling","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"reduzieren","ipa":"[ʁeduˈt͡siːʁən]","fa":"کاهش دادن","en":"to reduce","level":"B2","category":"افعال روزمره"},
-  {"word":"Regierung","ipa":"[ʁeˈɡiːʁʊŋ]","fa":"دولت","en":"government","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"repräsentieren","ipa":"[ʁepʁɛzɛnˈtiːʁən]","fa":"نمایندگی کردن","en":"to represent","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Respekt","ipa":"[ʁeˈspɛkt]","fa":"احترام","en":"respect","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Ressource","ipa":"[ʁeˈzʊʁsə]","fa":"منبع (طبیعی)","en":"resource","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Risiko","ipa":"[ˈʁiːziko]","fa":"ریسک","en":"risk","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Roboter","ipa":"[ˈʁoːbotɐ]","fa":"ربات","en":"robot","level":"B2","category":"فناوری"},
-  {"word":"schaffen","ipa":"[ˈʃafn̩]","fa":"خلق کردن / موفق شدن","en":"to create / manage","level":"B2","category":"افعال روزمره"},
-  {"word":"schätzen","ipa":"[ˈʃɛt͡sn̩]","fa":"تخمین زدن / ارزش قائل شدن","en":"to estimate / appreciate","level":"B2","category":"افعال روزمره"},
-  {"word":"Sicherheit","ipa":"[ˈzɪçɐhaɪ̯t]","fa":"امنیت / ایمنی","en":"security / safety","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Skulptur","ipa":"[skʊlpˈtuːɐ̯]","fa":"مجسمه","en":"sculpture","level":"B2","category":"ورزش، سرگرمی و هنر"},
-  {"word":"Software","ipa":"[ˈzɔftvɛːɐ]","fa":"نرم‌افزار","en":"software","level":"B2","category":"فناوری"},
-  {"word":"Solaranlage","ipa":"[zoˈlaːɐ̯ˌanlaːɡə]","fa":"نیروگاه خورشیدی","en":"solar power plant","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"stabil","ipa":"[ʃtaˈbiːl]","fa":"پایدار / مقاوم","en":"stable","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"steigern","ipa":"[ˈʃtaɪ̯ɡɐn]","fa":"افزایش دادن (خود)","en":"to increase (oneself)","level":"B2","category":"افعال روزمره"},
-  {"word":"Steuer","ipa":"[ˈʃtɔʏ̯ɐ]","fa":"مالیات","en":"tax","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"System","ipa":"[zʏsˈteːm]","fa":"سیستم","en":"system","level":"B2","category":"فناوری"},
-  {"word":"Technologie","ipa":"[tɛçnoloˈɡiː]","fa":"فناوری","en":"technology","level":"B2","category":"فناوری"},
-  {"word":"Theorie","ipa":"[teoˈʁiː]","fa":"نظریه","en":"theory","level":"B2","category":"علم و فلسفه"},
-  {"word":"traditionell","ipa":"[tʁadit͡si̯oˈnɛl]","fa":"سنتی","en":"traditional","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"transparent","ipa":"[tʁanspaˈʁɛnt]","fa":"شفاف","en":"transparent","level":"B2","category":"صفت‌های توصیفی عمومی"},
-  {"word":"Treibhausgas","ipa":"[ˈtʁaɪ̯phaʊ̯sˌɡaːs]","fa":"گاز گلخانه‌ای","en":"greenhouse gas","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Überstunden","ipa":"[ˈyːbɐˌʃtʊndn̩]","fa":"ساعات اضافه‌کار","en":"overtime","level":"B2","category":"کار و شغل"},
-  {"word":"Umfang","ipa":"[ˈʊmfaŋ]","fa":"گستره / حجم","en":"scope / volume","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"umfassen","ipa":"[ʊmˈfasn̩]","fa":"دربر گرفتن","en":"to comprise / include","level":"B2","category":"افعال روزمره"},
-  {"word":"Umsatz","ipa":"[ˈʊmzats]","fa":"فروش (گردش مالی)","en":"turnover","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Umwelt","ipa":"[ˈʊmvɛlt]","fa":"محیط زیست","en":"environment","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"unterstützen","ipa":"[ʊntɐˈʃtʏt͡sn̩]","fa":"حمایت کردن","en":"to support","level":"B2","category":"افعال روزمره"},
-  {"word":"Urteil","ipa":"[ˈuːɐ̯taɪ̯l]","fa":"رأی (قضایی)","en":"verdict / judgment","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"verändern","ipa":"[fɛɐ̯ˈʔɛndɐn]","fa":"تغییر دادن","en":"to change (trans.)","level":"B2","category":"افعال روزمره"},
-  {"word":"Verantwortung","ipa":"[fɛɐ̯ˈantvɔʁtʊŋ]","fa":"مسئولیت","en":"responsibility","level":"B2","category":"کار و شغل"},
-  {"word":"Verbesserung","ipa":"[fɛɐ̯ˈbɛsəʁʊŋ]","fa":"بهبود","en":"improvement","level":"B2","category":"مفاهیم و اشیای روزمره"},
-  {"word":"verfügen","ipa":"[fɛɐ̯ˈfyːɡn̩]","fa":"در اختیار داشتن","en":"to have at one's disposal","level":"B2","category":"افعال روزمره"},
-  {"word":"Vergangenheit","ipa":"[fɛɐ̯ˈɡaŋənhaɪ̯t]","fa":"گذشته","en":"past","level":"B2","category":"زمان و تقویم"},
-  {"word":"vergleichen","ipa":"[fɛɐ̯ˈɡlaɪ̯çn̩]","fa":"مقایسه کردن","en":"to compare","level":"B2","category":"افعال روزمره"},
-  {"word":"Verhalten","ipa":"[fɛɐ̯ˈhaltn̩]","fa":"رفتار","en":"behavior","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"Verhandlung","ipa":"[fɛɐ̯ˈhandlʊŋ]","fa":"مذاکره / جلسه دادگاه","en":"negotiation / hearing","level":"B2","category":"کار و شغل"},
-  {"word":"Verlust","ipa":"[fɛɐ̯ˈlʊst]","fa":"ضرر","en":"loss","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Verschmutzung","ipa":"[fɛɐ̯ˈʃmʊt͡sʊŋ]","fa":"آلودگی","en":"pollution","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Verschlüsselung","ipa":"[fɛɐ̯ˈʃlʏslʊŋ]","fa":"رمزنگاری","en":"encryption","level":"B2","category":"فناوری"},
-  {"word":"Vertrauen","ipa":"[fɛɐ̯ˈtʁaʊ̯ən]","fa":"اعتماد","en":"trust","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"Verwaltung","ipa":"[fɛɐ̯ˈvaltʊŋ]","fa":"اداره (سازمان)","en":"administration","level":"B2","category":"کار و شغل"},
-  {"word":"virtuell","ipa":"[vɪʁtuˈɛl]","fa":"مجازی","en":"virtual","level":"B2","category":"فناوری"},
-  {"word":"Wachstum","ipa":"[ˈvakstʊm]","fa":"رشد","en":"growth","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Wahl","ipa":"[vaːl]","fa":"انتخاب (رأی‌گیری)","en":"election","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Wahrnehmung","ipa":"[ˈvaːɐ̯neːmʊŋ]","fa":"ادراک / درک","en":"perception","level":"B2","category":"روان‌شناسی و سلامت روان"},
-  {"word":"Werbung","ipa":"[ˈvɛʁbʊŋ]","fa":"تبلیغات","en":"advertising","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Windkraft","ipa":"[ˈvɪntkʁaft]","fa":"انرژی باد","en":"wind power","level":"B2","category":"محیط‌زیست و انرژی"},
-  {"word":"Wirklichkeit","ipa":"[ˈvɪʁklɪçkaɪ̯t]","fa":"واقعیت (به‌طور عینی/در عمل)","en":"reality (in practice)","level":"B2","category":"علم و فلسفه"},
-  {"word":"wirtschaftlich","ipa":"[ˈvɪʁtʃaftlɪç]","fa":"اقتصادی","en":"economic","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Wirtschaft","ipa":"[ˈvɪʁtʃaft]","fa":"اقتصاد","en":"economy","level":"B2","category":"اقتصاد و مالی"},
-  {"word":"Zeuge","ipa":"[ˈt͡sɔʏ̯ɡə]","fa":"شاهد","en":"witness","level":"B2","category":"جامعه، سیاست و حقوق"},
-  {"word":"Zugang","ipa":"[ˈt͡suːɡaŋ]","fa":"دسترسی","en":"access","level":"B2","category":"فناوری"},
-  {"word":"zugreifen","ipa":"[ˈt͡suːˌɡʁaɪ̯fn̩]","fa":"دسترسی پیدا کردن","en":"to access","level":"B2","category":"فناوری"},
-  {"word":"Zukunft","ipa":"[ˈt͡suːkʊnft]","fa":"آینده","en":"future","level":"B2","category":"زمان و تقویم"},
-  {"word":"zunehmen","ipa":"[ˈt͡suːˌneːmən]","fa":"افزایش یافتن","en":"to increase / gain (weight)","level":"B2","category":"بدن و سلامتی"},
-  {"word":"zufrieden","ipa":"[t͡suˈfʁiːdn̩]","fa":"راضی","en":"satisfied","level":"B2","category":"احساسات و شخصیت"},
-  {"word":"zusammenfassen","ipa":"[t͡suˈzamənˌfasn̩]","fa":"خلاصه کردن","en":"to summarize","level":"B2","category":"مدرسه و آموزش"}
+  {
+    "word": "Ambivalenz",
+    "ipa": "[ambivaˈlɛnt͡s]",
+    "fa": "دوگانگی / ضدونقیض",
+    "en": "ambivalence",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Analyse",
+    "ipa": "[anaˈlyːzə]",
+    "fa": "تحلیل",
+    "en": "analysis",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Angststörung",
+    "ipa": "[ˈaŋstˌʃtøːʁʊŋ]",
+    "fa": "اختلال اضطراب",
+    "en": "anxiety disorder",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Asyl",
+    "ipa": "[aˈzyːl]",
+    "fa": "پناهندگی",
+    "en": "asylum",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Ästhetik",
+    "ipa": "[ɛsˈteːtɪk]",
+    "fa": "زیبایی‌شناسی",
+    "en": "aesthetics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Auseinandersetzung",
+    "ipa": "[ˈaʊ̯sʔaɪ̯nandɐˌzɛt͡sʊŋ]",
+    "fa": "بحث / برخورد / رویارویی",
+    "en": "confrontation / debate",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "authentisch",
+    "ipa": "[aʊ̯ˈtɛntɪʃ]",
+    "fa": "اصیل / معتبر",
+    "en": "authentic",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Autoritarismus",
+    "ipa": "[aʊ̯toʁitaˈʁɪsmʊs]",
+    "fa": "استبداد",
+    "en": "authoritarianism",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Beweis",
+    "ipa": "[bəˈvaɪ̯s]",
+    "fa": "دلیل / اثبات",
+    "en": "proof / evidence",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Blockchain",
+    "ipa": "[ˈblɔktʃeɪn]",
+    "fa": "زنجیره‌بلوک",
+    "en": "blockchain",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Bürgerschaft",
+    "ipa": "[ˈbʏʁɡɐʃaft]",
+    "fa": "شهروندی (مجموعه شهروندان)",
+    "en": "citizenship / citizenry",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Burnout",
+    "ipa": "[ˈbœːɐ̯naʊt]",
+    "fa": "فرسودگی شغلی",
+    "en": "burnout",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "CO2-Emission",
+    "ipa": "[tseːoˈtsvaɪ emɪˈsi̯oːn]",
+    "fa": "انتشار دی‌اکسید کربن",
+    "en": "CO2 emission",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "CO2-Fußabdruck",
+    "ipa": "[tseːoˈtsvaɪ ˈfuːsˌapdʁʊk]",
+    "fa": "ردپای کربن",
+    "en": "carbon footprint",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Cyberkriminalität",
+    "ipa": "[ˈsaɪ̯bɐkʁiminaliˈtɛːt]",
+    "fa": "جرایم سایبری",
+    "en": "cybercrime",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Datenschutz",
+    "ipa": "[ˈdaːtn̩ˌʃʊt͡s]",
+    "fa": "حفاظت از داده",
+    "en": "data protection",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Deflation",
+    "ipa": "[deˈflaːt͡si̯oːn]",
+    "fa": "کاهش تورم",
+    "en": "deflation",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Depression",
+    "ipa": "[depʁɛˈsi̯oːn]",
+    "fa": "افسردگی",
+    "en": "depression",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "destabilisieren",
+    "ipa": "[deˈʃtabiliˌziːʁən]",
+    "fa": "بی‌ثبات کردن",
+    "en": "to destabilize",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Diagnose",
+    "ipa": "[diaˈɡnoːzə]",
+    "fa": "تشخیص (پزشکی)",
+    "en": "diagnosis",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Dialektik",
+    "ipa": "[diaˈlɛktɪk]",
+    "fa": "دیالکتیک",
+    "en": "dialectics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Diplomatie",
+    "ipa": "[diplomaˈtiː]",
+    "fa": "دیپلماسی",
+    "en": "diplomacy",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "divers",
+    "ipa": "[diˈvɛʁs]",
+    "fa": "گوناگون / متنوع",
+    "en": "diverse",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Dividende",
+    "ipa": "[diviˈdɛndə]",
+    "fa": "سود سهام",
+    "en": "dividend",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Dynamik",
+    "ipa": "[dyˈnaːmɪk]",
+    "fa": "پویایی",
+    "en": "dynamics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Emotion",
+    "ipa": "[emoˈt͡si̯oːn]",
+    "fa": "احساس (هیجان)",
+    "en": "emotion",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Emotionsregulation",
+    "ipa": "[emoˈt͡si̯oːnsʁeɡulaˈt͡si̯oːn]",
+    "fa": "تنظیم هیجانات",
+    "en": "emotion regulation",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Energiewende",
+    "ipa": "[enɛʁˈɡiːˌvɛndə]",
+    "fa": "گذار انرژی",
+    "en": "energy transition",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Epidemie",
+    "ipa": "[epideˈmiː]",
+    "fa": "همه‌گیری (محلی)",
+    "en": "epidemic",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Epistemologie",
+    "ipa": "[epɪstemoˈloːɡiː]",
+    "fa": "شناخت‌شناسی",
+    "en": "epistemology",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Ergebnis",
+    "ipa": "[ɛɐ̯ˈɡeːpnɪs]",
+    "fa": "نتیجه",
+    "en": "result",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Erkenntnis",
+    "ipa": "[ɛɐ̯ˈkɛntnɪs]",
+    "fa": "شناخت / دریافت",
+    "en": "cognition / insight",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Ethik",
+    "ipa": "[ˈeːtɪk]",
+    "fa": "اخلاق (علمی)",
+    "en": "ethics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Existenz",
+    "ipa": "[ɛksɪsˈtɛnt͡s]",
+    "fa": "وجود",
+    "en": "existence",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Experiment",
+    "ipa": "[ɛkspeʁiˈmɛnt]",
+    "fa": "آزمایش",
+    "en": "experiment",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "explizieren",
+    "ipa": "[ɛkspliˈt͡siːʁən]",
+    "fa": "تصریح کردن / آشکار ساختن",
+    "en": "to explicate",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "extrapolieren",
+    "ipa": "[ɛkstʁapoˈliːʁən]",
+    "fa": "برون‌یابی کردن",
+    "en": "to extrapolate",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Flüchtling",
+    "ipa": "[ˈflʏçtlɪŋ]",
+    "fa": "پناهنده",
+    "en": "refugee",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Föderalismus",
+    "ipa": "[fødeʁaˈlɪsmʊs]",
+    "fa": "فدرالیسم",
+    "en": "federalism",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Gedanke",
+    "ipa": "[ɡəˈdaŋkə]",
+    "fa": "اندیشه",
+    "en": "thought",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Geist",
+    "ipa": "[ɡaɪ̯st]",
+    "fa": "روح / ذهن",
+    "en": "spirit / mind",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Generation",
+    "ipa": "[ɡenəʁaˈt͡si̯oːn]",
+    "fa": "نسل",
+    "en": "generation",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Gentechnik",
+    "ipa": "[ˈɡeːnˌtɛçnɪk]",
+    "fa": "مهندسی ژنتیک",
+    "en": "genetic engineering",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Gesundheitssystem",
+    "ipa": "[ɡəˈzʊnthaɪ̯t͡sˌzʏstəm]",
+    "fa": "سیستم بهداشت و درمان",
+    "en": "health system",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Gewaltenteilung",
+    "ipa": "[ɡəˈvaltn̩ˌtaɪ̯lʊŋ]",
+    "fa": "تفکیک قوا",
+    "en": "separation of powers",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Globalisierung",
+    "ipa": "[ɡlobaliˈziːʁʊŋ]",
+    "fa": "جهانی‌سازی",
+    "en": "globalization",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Herausforderung",
+    "ipa": "[hɛˈʁaʊ̯sfɔʁdəʁʊŋ]",
+    "fa": "چالش",
+    "en": "challenge",
+    "level": "C1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Hermeneutik",
+    "ipa": "[hɛʁmeˈnɔɪ̯tɪk]",
+    "fa": "هرمنوتیک (علم تفسیر)",
+    "en": "hermeneutics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Hypothese",
+    "ipa": "[hypoˈteːzə]",
+    "fa": "فرضیه",
+    "en": "hypothesis",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "implizieren",
+    "ipa": "[ɪmpliˈt͡siːʁən]",
+    "fa": "دلالت داشتن / نتیجه دادن",
+    "en": "to imply",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Impfung",
+    "ipa": "[ˈɪmpfʊŋ]",
+    "fa": "واکسیناسیون",
+    "en": "vaccination",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Indiz",
+    "ipa": "[ɪnˈdiːt͡s]",
+    "fa": "نشانه / قرینه",
+    "en": "indication / clue",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "inkohärent",
+    "ipa": "[ˈɪnkohɛˌʁɛnt]",
+    "fa": "ناهماهنگ / ناپیوسته",
+    "en": "incoherent",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "inkonsistent",
+    "ipa": "[ˈɪnkɔnzɪsˌtɛnt]",
+    "fa": "ناسازگار",
+    "en": "inconsistent",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "innovativ",
+    "ipa": "[ɪnovaˈtiːf]",
+    "fa": "نوآورانه",
+    "en": "innovative",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Integration",
+    "ipa": "[ɪnteɡʁaˈt͡si̯oːn]",
+    "fa": "ادغام / یکپارچه‌سازی",
+    "en": "integration",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Intelligenz",
+    "ipa": "[ɪntɛliˈɡɛnt͡s]",
+    "fa": "هوش",
+    "en": "intelligence",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Interpretation",
+    "ipa": "[ɪntɐpʁetaˈt͡si̯oːn]",
+    "fa": "تفسیر",
+    "en": "interpretation",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "intransparent",
+    "ipa": "[ˈɪntʁanspaˌʁɛnt]",
+    "fa": "غیرشفاف",
+    "en": "non-transparent",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Klimaschutz",
+    "ipa": "[ˈkliːmaˌʃʊt͡s]",
+    "fa": "حفاظت از اقلیم",
+    "en": "climate protection",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Kognition",
+    "ipa": "[koɡniˈt͡si̯oːn]",
+    "fa": "شناخت (ذهنی)",
+    "en": "cognition",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "kohärent",
+    "ipa": "[kohɛˈʁɛnt]",
+    "fa": "هماهنگ / منسجم",
+    "en": "coherent",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Kohärenz",
+    "ipa": "[kohɛˈʁɛnt͡s]",
+    "fa": "انسجام",
+    "en": "coherence",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Konjunktur",
+    "ipa": "[ˈkɔnjʊŋktuːɐ̯]",
+    "fa": "رونق اقتصادی",
+    "en": "economic boom / cycle",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "konsistent",
+    "ipa": "[kɔnzɪsˈtɛnt]",
+    "fa": "سازگار / یکدست",
+    "en": "consistent",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Kontinuität",
+    "ipa": "[kɔntinuiˈtɛːt]",
+    "fa": "تداوم",
+    "en": "continuity",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "kontrovers",
+    "ipa": "[kɔntʁoˈvɛʁs]",
+    "fa": "بحث‌برانگیز",
+    "en": "controversial",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "kontrastieren",
+    "ipa": "[kɔntʁasˈtiːʁən]",
+    "fa": "مقابله کردن / تقابل دادن",
+    "en": "to contrast",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Krankenkasse",
+    "ipa": "[ˈkʁaŋkənˌkasə]",
+    "fa": "بیمه سلامت",
+    "en": "health insurance",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Kredit",
+    "ipa": "[kʁeˈdiːt]",
+    "fa": "اعتبار (وام)",
+    "en": "credit",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Kreislaufwirtschaft",
+    "ipa": "[ˈkʁaɪ̯slaʊ̯fˌvɪʁtʃaft]",
+    "fa": "اقتصاد چرخشی",
+    "en": "circular economy",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Kryptowährung",
+    "ipa": "[ˈkʁʏptoˌvɛːʁʊŋ]",
+    "fa": "ارز دیجیتال",
+    "en": "cryptocurrency",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Künstliche Intelligenz",
+    "ipa": "[ˈkʏnstlɪçə ɪntɛliˈɡɛnt͡s]",
+    "fa": "هوش مصنوعی",
+    "en": "artificial intelligence",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Lebensqualität",
+    "ipa": "[ˈleːbn̩sˌkvaliˈtɛːt]",
+    "fa": "کیفیت زندگی",
+    "en": "quality of life",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "legitimieren",
+    "ipa": "[leɡitiˈmiːʁən]",
+    "fa": "مشروعیت بخشیدن",
+    "en": "to legitimize",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Lösungsansatz",
+    "ipa": "[ˈløːzʊŋsˌanzats]",
+    "fa": "رویکرد حل مسئله",
+    "en": "approach to solution",
+    "level": "C1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Machine Learning",
+    "ipa": "[məˈʃiːn ˈlɜːnɪŋ]",
+    "fa": "یادگیری ماشین",
+    "en": "machine learning",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Makroökonomie",
+    "ipa": "[ˈmakʁoʔøkonoˈmiː]",
+    "fa": "اقتصاد کلان",
+    "en": "macroeconomics",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Methode",
+    "ipa": "[meˈtoːdə]",
+    "fa": "روش",
+    "en": "method",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Migration",
+    "ipa": "[miɡʁaˈt͡si̯oːn]",
+    "fa": "مهاجرت",
+    "en": "migration",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Mikroökonomie",
+    "ipa": "[ˈmikʁoʔøkonoˈmiː]",
+    "fa": "اقتصاد خرد",
+    "en": "microeconomics",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Moral",
+    "ipa": "[moˈʁaːl]",
+    "fa": "اخلاقیات",
+    "en": "morality",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Motivation",
+    "ipa": "[motivaˈt͡si̯oːn]",
+    "fa": "انگیزه",
+    "en": "motivation",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Multikulti",
+    "ipa": "[ˈmʊltiˌkʊlti]",
+    "fa": "چندفرهنگی",
+    "en": "multicultural",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Nachhaltigkeitsziele",
+    "ipa": "[ˈnaːxhaltɪçkaɪ̯t͡sˌt͡siːlə]",
+    "fa": "اهداف توسعه پایدار",
+    "en": "sustainable development goals",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Nanotechnologie",
+    "ipa": "[ˈnanoˌtɛçnoloˈɡiː]",
+    "fa": "نانوتکنولوژی",
+    "en": "nanotechnology",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ökologie",
+    "ipa": "[økoloˈɡiː]",
+    "fa": "بوم‌شناسی",
+    "en": "ecology",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Ontologie",
+    "ipa": "[ɔntoloˈɡiː]",
+    "fa": "هستی‌شناسی",
+    "en": "ontology",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Opposition",
+    "ipa": "[ɔpoziˈt͡si̯oːn]",
+    "fa": "اپوزیسیون",
+    "en": "opposition",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Pandemie",
+    "ipa": "[pandeˈmiː]",
+    "fa": "پاندمی (همه‌گیری جهانی)",
+    "en": "pandemic",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Paradigma",
+    "ipa": "[paʁaˈdɪɡma]",
+    "fa": "الگو / پارادایم",
+    "en": "paradigm",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Paradoxon",
+    "ipa": "[paʁaˈdɔksɔn]",
+    "fa": "متناقض‌نما",
+    "en": "paradox",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Persönlichkeit",
+    "ipa": "[pɛʁˈzøːnlɪçkaɪ̯t]",
+    "fa": "شخصیت",
+    "en": "personality",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "postulieren",
+    "ipa": "[pɔstuˈliːʁən]",
+    "fa": "فرض کردن / مسلم گرفتن",
+    "en": "to postulate",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Prävention",
+    "ipa": "[pʁɛvɛnˈt͡si̯oːn]",
+    "fa": "پیشگیری",
+    "en": "prevention",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Psychotherapie",
+    "ipa": "[psyçoteʁaˈpiː]",
+    "fa": "روان‌درمانی",
+    "en": "psychotherapy",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Quantenphysik",
+    "ipa": "[ˈkvantn̩fyˌziːk]",
+    "fa": "فیزیک کوانتوم",
+    "en": "quantum physics",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Rechtsstaat",
+    "ipa": "[ˈʁɛçt͡sˌʃtaːt]",
+    "fa": "دولت قانون‌مدار",
+    "en": "constitutional state",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "reflektieren",
+    "ipa": "[ʁeflɛkˈtiːʁən]",
+    "fa": "بازتاب دادن / تأمل کردن",
+    "en": "to reflect",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Rehabilitation",
+    "ipa": "[ʁehabilitaˈt͡si̯oːn]",
+    "fa": "توانبخشی",
+    "en": "rehabilitation",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Rezession",
+    "ipa": "[ʁet͡sɛˈsi̯oːn]",
+    "fa": "رکود اقتصادی",
+    "en": "recession",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Robotik",
+    "ipa": "[ʁoˈboːtɪk]",
+    "fa": "رباتیک",
+    "en": "robotics",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Seele",
+    "ipa": "[ˈzeːlə]",
+    "fa": "روان (روح)",
+    "en": "soul / psyche",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Selbstwirksamkeit",
+    "ipa": "[ˈzɛlpstˌvɪʁkzaːmkaɪ̯t]",
+    "fa": "خودکارآمدی",
+    "en": "self-efficacy",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Simulation",
+    "ipa": "[zimulaˈt͡si̯oːn]",
+    "fa": "شبیه‌سازی",
+    "en": "simulation",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Solidarität",
+    "ipa": "[zolidaʁiˈtɛːt]",
+    "fa": "همبستگی",
+    "en": "solidarity",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Souveränität",
+    "ipa": "[zuvəʁɛniˈtɛːt]",
+    "fa": "حاکمیت",
+    "en": "sovereignty",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Spekulation",
+    "ipa": "[ʃpekulaˈt͡si̯oːn]",
+    "fa": "سفته‌بازی / حدس‌زنی",
+    "en": "speculation",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "stabilisieren",
+    "ipa": "[ʃtabiliˈziːʁən]",
+    "fa": "پایدار کردن",
+    "en": "to stabilize",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Stagflation",
+    "ipa": "[ʃtakflaˈt͡si̯oːn]",
+    "fa": "رکود تورمی",
+    "en": "stagflation",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Subvention",
+    "ipa": "[zʊpvɛnˈt͡si̯oːn]",
+    "fa": "یارانه",
+    "en": "subsidy",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Symptom",
+    "ipa": "[zʏmpˈtoːm]",
+    "fa": "نشانه (بیماری)",
+    "en": "symptom",
+    "level": "C1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Synthese",
+    "ipa": "[zʏnˈteːzə]",
+    "fa": "سنتز",
+    "en": "synthesis",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "synthetisieren",
+    "ipa": "[zʏnteˈtiːʁən]",
+    "fa": "سنتز کردن",
+    "en": "to synthesize",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Therapie",
+    "ipa": "[teʁaˈpiː]",
+    "fa": "درمان",
+    "en": "therapy",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Toleranz",
+    "ipa": "[toləˈʁants]",
+    "fa": "تحمل",
+    "en": "tolerance",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Totalitarismus",
+    "ipa": "[totalitaˈʁɪsmʊs]",
+    "fa": "تمامیت‌خواهی",
+    "en": "totalitarianism",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Trauma",
+    "ipa": "[ˈtʁaʊ̯ma]",
+    "fa": "تروما",
+    "en": "trauma",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Treibhauseffekt",
+    "ipa": "[ˈtʁaɪ̯phaʊ̯sˌɛfɛkt]",
+    "fa": "اثر گلخانه‌ای",
+    "en": "greenhouse effect",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Überwachung",
+    "ipa": "[yːbɐˈvaxʊŋ]",
+    "fa": "نظارت",
+    "en": "surveillance",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Überzeugung",
+    "ipa": "[yːbɐˈt͡sɔʏ̯ɡʊŋ]",
+    "fa": "اعتقاد",
+    "en": "conviction",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Umweltschutz",
+    "ipa": "[ˈʊmvɛltˌʃʊt͡s]",
+    "fa": "حفاظت محیط زیست",
+    "en": "environmental protection",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "Umweltverschmutzung",
+    "ipa": "[ˈʊmvɛltfɛɐ̯ˌʃmʊt͡sʊŋ]",
+    "fa": "آلودگی محیط زیست",
+    "en": "environmental pollution",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "verantwortlich",
+    "ipa": "[fɛɐ̯ˈʔantvɔʁtlɪç]",
+    "fa": "مسئول",
+    "en": "responsible",
+    "level": "C1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Verfassung",
+    "ipa": "[fɛɐ̯ˈfasʊŋ]",
+    "fa": "قانون اساسی",
+    "en": "constitution",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Verfassungsgericht",
+    "ipa": "[fɛɐ̯ˈfasʊŋsɡəˌʁɪçt]",
+    "fa": "دادگاه قانون اساسی",
+    "en": "constitutional court",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Verhaltenspsychologie",
+    "ipa": "[fɛɐ̯ˈhaltn̩spsyçoloˈɡiː]",
+    "fa": "روان‌شناسی رفتار",
+    "en": "behavioral psychology",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Vielfalt",
+    "ipa": "[ˈfiːlfalt]",
+    "fa": "تنوع",
+    "en": "diversity",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Virtualität",
+    "ipa": "[viʁtualiˈtɛːt]",
+    "fa": "مجازی‌سازی",
+    "en": "virtuality",
+    "level": "C1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Wesen",
+    "ipa": "[ˈveːzn̩]",
+    "fa": "ذات / ماهیت",
+    "en": "essence",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Wirtschaftswachstum",
+    "ipa": "[ˈvɪʁtʃaftsˌvakstʊm]",
+    "fa": "رشد اقتصادی",
+    "en": "economic growth",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Wohlstand",
+    "ipa": "[ˈvoːlʃtant]",
+    "fa": "رفاه",
+    "en": "prosperity",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Wissenschaft",
+    "ipa": "[ˈvɪsn̩ʃaft]",
+    "fa": "علم",
+    "en": "science",
+    "level": "C1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Zentralismus",
+    "ipa": "[t͡sɛntʁaˈlɪsmʊs]",
+    "fa": "تمرکزگرایی",
+    "en": "centralism",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Zins",
+    "ipa": "[t͡sɪns]",
+    "fa": "بهره (مالی)",
+    "en": "interest (finance)",
+    "level": "C1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Zivilgesellschaft",
+    "ipa": "[tsiˈviːlɡəˌzɛlʃaft]",
+    "fa": "جامعه مدنی",
+    "en": "civil society",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Zukunftsfähigkeit",
+    "ipa": "[ˈt͡suːkʊnftsˌfɛːɪçkaɪ̯t]",
+    "fa": "توانایی آینده‌سازی",
+    "en": "future viability",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی"
+  },
+  {
+    "word": "bedürfen",
+    "ipa": "[bəˈdʏʁfn̩]",
+    "fa": "نیاز داشتن (رسمی)",
+    "en": "to require / need (formal)",
+    "level": "C1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "bergen",
+    "ipa": "[ˈbɛʁɡn̩]",
+    "fa": "نجات دادن / در خود داشتن (خطر و ...)",
+    "en": "to salvage / to harbor (danger etc.)",
+    "level": "C1",
+    "category": "مفاهیم و اشیای روزمره"
+  }
 ]
