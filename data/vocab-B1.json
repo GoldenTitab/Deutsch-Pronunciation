@@ -4078,5 +4078,277 @@
     "en": "at least",
     "level": "B1",
     "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Nachweis",
+    "ipa": "[ˈnaːxvaɪ̯s]",
+    "fa": "مدرک / گواهی",
+    "en": "proof / certificate",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Nacken",
+    "ipa": "[ˈnakn̩]",
+    "fa": "پس‌گردن",
+    "en": "nape / back of neck",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Namibia",
+    "ipa": "[naˈmiːbi̯a]",
+    "fa": "نامیبیا",
+    "en": "Namibia",
+    "level": "B1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "nebenan",
+    "ipa": "[ˈneːbn̩ʔan]",
+    "fa": "همسایه / کنار (خانه بغلی)",
+    "en": "next door",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Nebenfach",
+    "ipa": "[ˈneːbn̩fax]",
+    "fa": "رشته فرعی تحصیلی",
+    "en": "minor (field of study)",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "nennen",
+    "ipa": "[ˈnɛnən]",
+    "fa": "نامیدن / ذکر کردن",
+    "en": "to name / call",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "neulich",
+    "ipa": "[ˈnɔɪ̯lɪç]",
+    "fa": "اخیراً / همین چند وقت پیش",
+    "en": "recently",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nicht einmal",
+    "ipa": "[nɪçt ˈaɪ̯nmaːl]",
+    "fa": "حتی نه",
+    "en": "not even",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "niemals",
+    "ipa": "[ˈniːmaːls]",
+    "fa": "هرگز",
+    "en": "never",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nirgends",
+    "ipa": "[ˈnɪʁɡn̩ts]",
+    "fa": "هیچ‌جا",
+    "en": "nowhere",
+    "level": "B1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "nochmals",
+    "ipa": "[ˈnɔxmaːls]",
+    "fa": "دوباره / مجدداً",
+    "en": "again",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "notwendig",
+    "ipa": "[ˈnoːtvɛndɪç]",
+    "fa": "ضروری / لازم",
+    "en": "necessary",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Nudelholz",
+    "ipa": "[ˈnuːdl̩hɔlts]",
+    "fa": "وردنه",
+    "en": "rolling pin",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "nun",
+    "ipa": "[nuːn]",
+    "fa": "حالا / خب",
+    "en": "now / well",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Nutzung",
+    "ipa": "[ˈnʊtsʊŋ]",
+    "fa": "استفاده / کاربری",
+    "en": "usage",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Obdachloser",
+    "ipa": "[ˈɔptdaxloːzɐ]",
+    "fa": "فرد بی‌خانمان",
+    "en": "homeless person",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Oberfläche",
+    "ipa": "[ˈoːbɐˌflɛçə]",
+    "fa": "سطح (رویه)",
+    "en": "surface",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Oberschenkel",
+    "ipa": "[ˈoːbɐˌʃɛŋkl̩]",
+    "fa": "ران پا",
+    "en": "thigh",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "olé",
+    "ipa": "[oˈleː]",
+    "fa": "اوله (فریاد شادی)",
+    "en": "olé",
+    "level": "B1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Oper",
+    "ipa": "[ˈoːpɐ]",
+    "fa": "اپرا",
+    "en": "opera",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Operation",
+    "ipa": "[opəʁaˈtsjoːn]",
+    "fa": "عمل جراحی",
+    "en": "operation / surgery",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Optimist",
+    "ipa": "[ɔptiˈmɪst]",
+    "fa": "خوش‌بین",
+    "en": "optimist",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Option",
+    "ipa": "[ɔpˈtsjoːn]",
+    "fa": "گزینه",
+    "en": "option",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Orchester",
+    "ipa": "[ɔʁˈkɛstɐ]",
+    "fa": "ارکستر",
+    "en": "orchestra",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Organ",
+    "ipa": "[ɔʁˈɡaːn]",
+    "fa": "عضو بدن (اندام)",
+    "en": "organ (body)",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Organisation",
+    "ipa": "[ɔʁɡanizaˈtsjoːn]",
+    "fa": "سازمان",
+    "en": "organization",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Panik",
+    "ipa": "[ˈpaːnɪk]",
+    "fa": "وحشت / پانیک",
+    "en": "panic",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Partnerschaft",
+    "ipa": "[ˈpaʁtnɐʃaft]",
+    "fa": "شراکت / رابطه زوجی",
+    "en": "partnership",
+    "level": "B1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Pastete",
+    "ipa": "[pasˈteːtə]",
+    "fa": "پته (نوعی خمیر پرشده)",
+    "en": "pâté / pie",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Pension",
+    "ipa": "[pɑ̃ˈzjoːn]",
+    "fa": "مستمری بازنشستگی / پانسیون",
+    "en": "pension / guesthouse",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "per",
+    "ipa": "[pɛːɐ̯]",
+    "fa": "از طریق / با",
+    "en": "via / by",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Pessimist",
+    "ipa": "[pɛsiˈmɪst]",
+    "fa": "بدبین",
+    "en": "pessimist",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Phase",
+    "ipa": "[ˈfaːzə]",
+    "fa": "مرحله / فاز",
+    "en": "phase",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Philosophie",
+    "ipa": "[filozoˈfiː]",
+    "fa": "فلسفه",
+    "en": "philosophy",
+    "level": "B1",
+    "category": "علم و فلسفه"
   }
 ]

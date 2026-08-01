@@ -5846,5 +5846,461 @@
     "en": "member",
     "level": "A2",
     "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "nähen",
+    "ipa": "[ˈnɛːən]",
+    "fa": "دوختن",
+    "en": "to sew",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "naja",
+    "ipa": "[naˈja]",
+    "fa": "خب... (تردید)",
+    "en": "well... (hesitation)",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "nass",
+    "ipa": "[nas]",
+    "fa": "خیس / مرطوب",
+    "en": "wet",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Nationalpark",
+    "ipa": "[natsi̯oˈnaːlpaʁk]",
+    "fa": "پارک ملی",
+    "en": "national park",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Natur",
+    "ipa": "[naˈtuːɐ̯]",
+    "fa": "طبیعت",
+    "en": "nature",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "neben",
+    "ipa": "[ˈneːbn̩]",
+    "fa": "کنار / بغل",
+    "en": "next to",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Neffe",
+    "ipa": "[ˈnɛfə]",
+    "fa": "برادرزاده/خواهرزاده (پسر)",
+    "en": "nephew",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "nervös",
+    "ipa": "[nɛʁˈvøːs]",
+    "fa": "عصبی / مضطرب",
+    "en": "nervous",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Netz",
+    "ipa": "[nɛts]",
+    "fa": "تور / شبکه",
+    "en": "net / network",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "neunzehnhundertachtzig",
+    "ipa": "[ˈnɔɪ̯ntseːnhʊndɐtˈʔaxtsɪç]",
+    "fa": "هزارونهصدوهشتاد",
+    "en": "nineteen eighty (1980)",
+    "level": "A2",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Neuschwanstein",
+    "ipa": "[nɔɪ̯ˈʃvaːnʃtaɪ̯n]",
+    "fa": "قلعه نویشوان‌اشتاین",
+    "en": "Neuschwanstein Castle",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "nicht wahr",
+    "ipa": "[nɪçt vaːɐ̯]",
+    "fa": "مگه نه؟",
+    "en": "isn't it / right?",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Nichte",
+    "ipa": "[ˈnɪçtə]",
+    "fa": "برادرزاده/خواهرزاده (دختر)",
+    "en": "niece",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Nickerchen",
+    "ipa": "[ˈnɪkɐçən]",
+    "fa": "چرت (خواب کوتاه)",
+    "en": "nap",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "niemand",
+    "ipa": "[ˈniːmant]",
+    "fa": "هیچ‌کس",
+    "en": "nobody",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "noch nie",
+    "ipa": "[nɔx niː]",
+    "fa": "تا حالا هیچ‌وقت",
+    "en": "never before",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Norden",
+    "ipa": "[ˈnɔʁdn̩]",
+    "fa": "شمال",
+    "en": "north",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Nordpol",
+    "ipa": "[ˈnɔʁtpoːl]",
+    "fa": "قطب شمال",
+    "en": "North Pole",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "normal",
+    "ipa": "[nɔʁˈmaːl]",
+    "fa": "عادی / معمولی",
+    "en": "normal",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "normalerweise",
+    "ipa": "[nɔʁˈmaːlɐvaɪ̯zə]",
+    "fa": "معمولاً",
+    "en": "normally",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Notaufnahme",
+    "ipa": "[ˈnoːtʔaʊ̯fˌnaːmə]",
+    "fa": "اورژانس بیمارستان",
+    "en": "emergency room",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Notfall",
+    "ipa": "[ˈnoːtfal]",
+    "fa": "مورد اورژانسی",
+    "en": "emergency",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Notiz",
+    "ipa": "[noˈtiːts]",
+    "fa": "یادداشت",
+    "en": "note",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Nussallergie",
+    "ipa": "[ˈnʊsʔalɛʁˌɡiː]",
+    "fa": "آلرژی به آجیل",
+    "en": "nut allergy",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "nutzen",
+    "ipa": "[ˈnʊtsn̩]",
+    "fa": "استفاده کردن",
+    "en": "to use",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Nutzer",
+    "ipa": "[ˈnʊtsɐ]",
+    "fa": "کاربر",
+    "en": "user",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "nützlich",
+    "ipa": "[ˈnʏtslɪç]",
+    "fa": "مفید",
+    "en": "useful",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "ob",
+    "ipa": "[ɔp]",
+    "fa": "آیا / اینکه",
+    "en": "whether / if",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "oben",
+    "ipa": "[ˈoːbn̩]",
+    "fa": "بالا / طبقه بالا",
+    "en": "above / upstairs",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Obstsalat",
+    "ipa": "[ˈoːpstzaˌlaːt]",
+    "fa": "سالاد میوه",
+    "en": "fruit salad",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "obwohl",
+    "ipa": "[ɔpˈvoːl]",
+    "fa": "اگرچه",
+    "en": "although",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "öffentlich",
+    "ipa": "[ˈœfn̩tlɪç]",
+    "fa": "عمومی",
+    "en": "public",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Ohrring",
+    "ipa": "[ˈoːɐ̯ʁɪŋ]",
+    "fa": "گوشواره",
+    "en": "earring",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Oktoberfest",
+    "ipa": "[ɔkˈtoːbɐfɛst]",
+    "fa": "اکتبرفست",
+    "en": "Oktoberfest",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "ordentlich",
+    "ipa": "[ˈɔʁdn̩tlɪç]",
+    "fa": "مرتب / منظم",
+    "en": "tidy / orderly",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Ordner",
+    "ipa": "[ˈɔʁdnɐ]",
+    "fa": "پوشه / زونکن",
+    "en": "folder / binder",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ordnung",
+    "ipa": "[ˈɔʁdnʊŋ]",
+    "fa": "نظم / ترتیب",
+    "en": "order",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "organisieren",
+    "ipa": "[ɔʁɡaniˈziːʁən]",
+    "fa": "سازمان‌دهی کردن",
+    "en": "to organize",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Osten",
+    "ipa": "[ˈɔstn̩]",
+    "fa": "شرق",
+    "en": "east",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Ostern",
+    "ipa": "[ˈoːstɐn]",
+    "fa": "عید پاک",
+    "en": "Easter",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Ostsee",
+    "ipa": "[ˈɔstzeː]",
+    "fa": "دریای بالتیک",
+    "en": "Baltic Sea",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Papagei",
+    "ipa": "[papaˈɡaɪ̯]",
+    "fa": "طوطی",
+    "en": "parrot",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Parfüm",
+    "ipa": "[paʁˈfyːm]",
+    "fa": "عطر",
+    "en": "perfume",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Partner",
+    "ipa": "[ˈpaʁtnɐ]",
+    "fa": "شریک زندگی / همکار (مرد)",
+    "en": "partner (male)",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Partnerin",
+    "ipa": "[ˈpaʁtnəʁɪn]",
+    "fa": "شریک زندگی / همکار (زن)",
+    "en": "partner (female)",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "passen",
+    "ipa": "[ˈpasn̩]",
+    "fa": "اندازه بودن / مناسب بودن",
+    "en": "to fit / suit",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "passend",
+    "ipa": "[ˈpasn̩t]",
+    "fa": "مناسب / متناسب",
+    "en": "matching / suitable",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Passfoto",
+    "ipa": "[ˈpasfoːto]",
+    "fa": "عکس پاسپورتی",
+    "en": "passport photo",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "passieren",
+    "ipa": "[paˈsiːʁən]",
+    "fa": "اتفاق افتادن",
+    "en": "to happen",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Patient",
+    "ipa": "[patsiˈɛnt]",
+    "fa": "بیمار",
+    "en": "patient",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "perfekt",
+    "ipa": "[pɛɐ̯ˈfɛkt]",
+    "fa": "عالی / بی‌نقص",
+    "en": "perfect",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "persönlich",
+    "ipa": "[pɛɐ̯ˈzøːnlɪç]",
+    "fa": "شخصی",
+    "en": "personal",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Pflaster",
+    "ipa": "[ˈpflastɐ]",
+    "fa": "چسب زخم",
+    "en": "band-aid",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Pflaume",
+    "ipa": "[ˈpflaʊ̯mə]",
+    "fa": "آلو",
+    "en": "plum",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "picknicken",
+    "ipa": "[ˈpɪknɪkn̩]",
+    "fa": "پیک‌نیک رفتن",
+    "en": "to picnic",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Pils",
+    "ipa": "[pɪls]",
+    "fa": "آبجو پیلس",
+    "en": "pilsner beer",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Pirat",
+    "ipa": "[piˈʁaːt]",
+    "fa": "دزد دریایی",
+    "en": "pirate",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
   }
 ]
