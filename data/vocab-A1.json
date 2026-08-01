@@ -3578,5 +3578,1093 @@
     "en": "that works / that's okay",
     "level": "A1",
     "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "das macht",
+    "ipa": "[das maxt]",
+    "fa": "جمعش می‌شه (هنگام حساب کردن قیمت)",
+    "en": "that comes to / that will be",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "das macht nichts",
+    "ipa": "[das maxt ˈnɪçts]",
+    "fa": "مهم نیست / اشکالی نداره",
+    "en": "it doesn't matter",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "das tut mir leid",
+    "ipa": "[das tuːt miːɐ̯ laɪ̯t]",
+    "fa": "متأسفم",
+    "en": "I'm sorry",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "dass",
+    "ipa": "[das]",
+    "fa": "که (حرف ربط)",
+    "en": "that (conjunction)",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "denken",
+    "ipa": "[ˈdɛŋkn̩]",
+    "fa": "فکر کردن",
+    "en": "to think",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "die Vereinigten Staaten",
+    "ipa": "[diː fɛɐ̯ˈʔaɪ̯nɪçtn̩ ˈʃtaːtn̩]",
+    "fa": "ایالات متحده آمریکا",
+    "en": "the United States",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "dieses Jahr",
+    "ipa": "[ˈdiːzəs jaːɐ̯]",
+    "fa": "امسال",
+    "en": "this year",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "doch",
+    "ipa": "[dɔx]",
+    "fa": "چرا (پاسخ به سوال منفی) / اما",
+    "en": "yes it is / but (flavoring particle)",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Dollar",
+    "ipa": "[ˈdɔlaɐ̯]",
+    "fa": "دلار",
+    "en": "dollar",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Döner",
+    "ipa": "[ˈdøːnɐ]",
+    "fa": "دونر کباب",
+    "en": "doner kebab",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Doppelzimmer",
+    "ipa": "[ˈdɔpl̩ˌtsɪmɐ]",
+    "fa": "اتاق دوتخته",
+    "en": "double room",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Dorf",
+    "ipa": "[dɔʁf]",
+    "fa": "روستا",
+    "en": "village",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "dort",
+    "ipa": "[dɔʁt]",
+    "fa": "آنجا",
+    "en": "there",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "draußen",
+    "ipa": "[ˈdʁaʊ̯sn̩]",
+    "fa": "بیرون",
+    "en": "outside",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "dreiundzwanzig",
+    "ipa": "[ˈdʁaɪ̯ʔʊntˌtsvantsɪç]",
+    "fa": "بیست‌وسه",
+    "en": "twenty-three",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "drinnen",
+    "ipa": "[ˈdʁɪnən]",
+    "fa": "داخل",
+    "en": "inside",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "dritte",
+    "ipa": "[ˈdʁɪtə]",
+    "fa": "سوم",
+    "en": "third",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Drogeriemarkt",
+    "ipa": "[dʁoɡəˈʁiːmaʁkt]",
+    "fa": "فروشگاه لوازم بهداشتی",
+    "en": "drugstore",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Drucker",
+    "ipa": "[ˈdʁʊkɐ]",
+    "fa": "چاپگر",
+    "en": "printer",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "dunkel",
+    "ipa": "[ˈdʊŋkl̩]",
+    "fa": "تاریک",
+    "en": "dark",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "durch",
+    "ipa": "[dʊʁç]",
+    "fa": "از میان / از طریق",
+    "en": "through",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Durst",
+    "ipa": "[dʊʁst]",
+    "fa": "تشنگی",
+    "en": "thirst",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "E-Mail",
+    "ipa": "[ˈiːmeɪ̯l]",
+    "fa": "ایمیل",
+    "en": "email",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "E-Mail-Adresse",
+    "ipa": "[ˈiːmeɪ̯lʔaˌdʁɛsə]",
+    "fa": "آدرس ایمیل",
+    "en": "email address",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Ecke",
+    "ipa": "[ˈɛkə]",
+    "fa": "گوشه / نبش خیابان",
+    "en": "corner",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Ei",
+    "ipa": "[aɪ̯]",
+    "fa": "تخم‌مرغ",
+    "en": "egg",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Hemd",
+    "ipa": "[hɛmt]",
+    "fa": "پیراهن (مردانه)",
+    "en": "shirt",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Kleid",
+    "ipa": "[klaɪ̯t]",
+    "fa": "لباس (پیراهن زنانه)",
+    "en": "dress",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "ein paar",
+    "ipa": "[aɪ̯n paːɐ̯]",
+    "fa": "چند تا / یک‌سری",
+    "en": "a few / a couple",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "sich",
+    "ipa": "[zɪç]",
+    "fa": "خود (ضمیر انعکاسی)",
+    "en": "himself/herself/itself/themselves (reflexive)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "einen Augenblick",
+    "ipa": "[ˈaɪ̯nən ˈaʊ̯ɡn̩blɪk]",
+    "fa": "یک لحظه",
+    "en": "just a moment",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "einen schönen Tag noch",
+    "ipa": "[ˈaɪ̯nən ˈʃøːnən taːk nɔx]",
+    "fa": "روز خوبی داشته باشی",
+    "en": "have a nice day",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "einfach",
+    "ipa": "[ˈaɪ̯nfax]",
+    "fa": "ساده",
+    "en": "simple / easy",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Eingang",
+    "ipa": "[ˈaɪ̯nɡaŋ]",
+    "fa": "ورودی",
+    "en": "entrance",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "einhundert",
+    "ipa": "[ˈaɪ̯nhʊndɐt]",
+    "fa": "صد",
+    "en": "one hundred",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Einkaufswagen",
+    "ipa": "[ˈaɪ̯nkaʊ̯fsˌvaːɡn̩]",
+    "fa": "چرخ خرید",
+    "en": "shopping cart",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Einkaufszentrum",
+    "ipa": "[ˈaɪ̯nkaʊ̯fsˌtsɛntʁʊm]",
+    "fa": "مرکز خرید",
+    "en": "shopping mall",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Einkaufszettel",
+    "ipa": "[ˈaɪ̯nkaʊ̯fsˌtsɛtl̩]",
+    "fa": "لیست خرید",
+    "en": "shopping list",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "einmal",
+    "ipa": "[ˈaɪ̯nmaːl]",
+    "fa": "یک‌بار",
+    "en": "once",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "einundzwanzig",
+    "ipa": "[ˈaɪ̯nʔʊntˌtsvantsɪç]",
+    "fa": "بیست‌ویک",
+    "en": "twenty-one",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Einzelzimmer",
+    "ipa": "[ˈaɪ̯ntsl̩ˌtsɪmɐ]",
+    "fa": "اتاق یک‌تخته",
+    "en": "single room",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Eiskaffee",
+    "ipa": "[ˈaɪ̯sˌkafeː]",
+    "fa": "قهوه یخ",
+    "en": "iced coffee",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Elefant",
+    "ipa": "[eleˈfant]",
+    "fa": "فیل",
+    "en": "elephant",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "elfte",
+    "ipa": "[ˈɛlftə]",
+    "fa": "یازدهم",
+    "en": "eleventh",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Eltern",
+    "ipa": "[ˈɛltɐn]",
+    "fa": "والدین",
+    "en": "parents",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "entschuldigen Sie bitte",
+    "ipa": "[ɛntˈʃʊldɪɡn̩ ziː ˈbɪtə]",
+    "fa": "ببخشید (رسمی)",
+    "en": "excuse me, please (formal)",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Erdbeere",
+    "ipa": "[ˈeːɐ̯tbeːʁə]",
+    "fa": "توت‌فرنگی",
+    "en": "strawberry",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Erde",
+    "ipa": "[ˈeːɐ̯də]",
+    "fa": "زمین / خاک",
+    "en": "earth / soil",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "es geht",
+    "ipa": "[ɛs ɡeːt]",
+    "fa": "بد نیست / موضوع این است که",
+    "en": "it's okay / it's about",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "es tut mir leid",
+    "ipa": "[ɛs tuːt miːɐ̯ laɪ̯t]",
+    "fa": "متأسفم",
+    "en": "I'm sorry",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Esszimmer",
+    "ipa": "[ˈɛstsɪmɐ]",
+    "fa": "اتاق غذاخوری",
+    "en": "dining room",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "etwas",
+    "ipa": "[ˈɛtvas]",
+    "fa": "چیزی / کمی",
+    "en": "something / a bit",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Europa",
+    "ipa": "[ɔɪ̯ˈʁoːpa]",
+    "fa": "اروپا",
+    "en": "Europe",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Fahrer",
+    "ipa": "[ˈfaːʁɐ]",
+    "fa": "راننده",
+    "en": "driver",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Fahrrad",
+    "ipa": "[ˈfaːɐ̯ʁaːt]",
+    "fa": "دوچرخه",
+    "en": "bicycle",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Fahrradfahren",
+    "ipa": "[ˈfaːɐ̯ʁaːtˌfaːʁən]",
+    "fa": "دوچرخه‌سواری",
+    "en": "cycling",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Fahrschein",
+    "ipa": "[ˈfaːɐ̯ʃaɪ̯n]",
+    "fa": "بلیت (اتوبوس/قطار)",
+    "en": "ticket (for transport)",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "fallen",
+    "ipa": "[ˈfalən]",
+    "fa": "افتادن",
+    "en": "to fall",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "falsch",
+    "ipa": "[falʃ]",
+    "fa": "غلط / اشتباه",
+    "en": "wrong / false",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Familie",
+    "ipa": "[faˈmiːliə]",
+    "fa": "خانواده",
+    "en": "family",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Fan",
+    "ipa": "[fɛn]",
+    "fa": "طرفدار",
+    "en": "fan (supporter)",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Farbe",
+    "ipa": "[ˈfaʁbə]",
+    "fa": "رنگ",
+    "en": "color",
+    "level": "A1",
+    "category": "رنگ‌ها"
+  },
+  {
+    "word": "Farbstift",
+    "ipa": "[ˈfaʁpʃtɪft]",
+    "fa": "مداد رنگی",
+    "en": "colored pencil",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Fehler",
+    "ipa": "[ˈfeːlɐ]",
+    "fa": "اشتباه / خطا",
+    "en": "mistake / error",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "feiern",
+    "ipa": "[ˈfaɪ̯ɐn]",
+    "fa": "جشن گرفتن",
+    "en": "to celebrate",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Feiertag",
+    "ipa": "[ˈfaɪ̯ɐtaːk]",
+    "fa": "روز تعطیل رسمی",
+    "en": "public holiday",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Fenster",
+    "ipa": "[ˈfɛnstɐ]",
+    "fa": "پنجره",
+    "en": "window",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Fernbedienung",
+    "ipa": "[ˈfɛʁnbəˌdiːnʊŋ]",
+    "fa": "کنترل از راه دور",
+    "en": "remote control",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "fertig",
+    "ipa": "[ˈfɛʁtɪç]",
+    "fa": "آماده / تمام‌شده",
+    "en": "ready / finished",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Feuerwehr",
+    "ipa": "[ˈfɔɪ̯ɐveːɐ̯]",
+    "fa": "آتش‌نشانی",
+    "en": "fire department",
+    "level": "A1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Finger",
+    "ipa": "[ˈfɪŋɐ]",
+    "fa": "انگشت",
+    "en": "finger",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Fitnessstudio",
+    "ipa": "[ˈfɪtnɛsˌʃtuːdio]",
+    "fa": "باشگاه بدنسازی",
+    "en": "gym",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Fleisch",
+    "ipa": "[flaɪ̯ʃ]",
+    "fa": "گوشت",
+    "en": "meat",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Flugnummer",
+    "ipa": "[ˈfluːkˌnʊmɐ]",
+    "fa": "شماره پرواز",
+    "en": "flight number",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Flugzeug",
+    "ipa": "[ˈfluːktsɔɪ̯k]",
+    "fa": "هواپیما",
+    "en": "airplane",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Foto",
+    "ipa": "[ˈfoːto]",
+    "fa": "عکس",
+    "en": "photo",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Fotoalbum",
+    "ipa": "[ˈfoːtoˌʔalbʊm]",
+    "fa": "آلبوم عکس",
+    "en": "photo album",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Fotoapparat",
+    "ipa": "[ˈfoːtoʔapaˌʁaːt]",
+    "fa": "دوربین عکاسی",
+    "en": "camera",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "fragen",
+    "ipa": "[ˈfʁaːɡn̩]",
+    "fa": "سؤال کردن / پرسیدن",
+    "en": "to ask",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Frau",
+    "ipa": "[fʁaʊ̯]",
+    "fa": "زن / خانم",
+    "en": "woman / Mrs.",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "frei",
+    "ipa": "[fʁaɪ̯]",
+    "fa": "آزاد / خالی",
+    "en": "free",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "freitags",
+    "ipa": "[ˈfʁaɪ̯taːks]",
+    "fa": "جمعه‌ها",
+    "en": "on Fridays",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "freut mich",
+    "ipa": "[fʁɔɪ̯t mɪç]",
+    "fa": "از آشنایی‌تان خوشحالم",
+    "en": "nice to meet you",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "frisch",
+    "ipa": "[fʁɪʃ]",
+    "fa": "تازه",
+    "en": "fresh",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Friseur",
+    "ipa": "[fʁiˈzøːɐ̯]",
+    "fa": "آرایشگر (مرد)",
+    "en": "hairdresser (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Friseurin",
+    "ipa": "[fʁiˈzøːʁɪn]",
+    "fa": "آرایشگر (زن)",
+    "en": "hairdresser (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "fünftausend",
+    "ipa": "[ˈfʏnftaʊ̯zn̩t]",
+    "fa": "پنج‌هزار",
+    "en": "five thousand",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "fünfte",
+    "ipa": "[ˈfʏnftə]",
+    "fa": "پنجم",
+    "en": "fifth",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "fünfunddreißig",
+    "ipa": "[ˈfʏnfʔʊntˌdʁaɪ̯sɪç]",
+    "fa": "سی‌وپنج",
+    "en": "thirty-five",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "fünfundvierzig",
+    "ipa": "[ˈfʏnfʔʊntˌfɪɐ̯tsɪç]",
+    "fa": "چهل‌وپنج",
+    "en": "forty-five",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "fünfundzwanzig",
+    "ipa": "[ˈfʏnfʔʊntˌtsvantsɪç]",
+    "fa": "بیست‌وپنج",
+    "en": "twenty-five",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Fußballspiel",
+    "ipa": "[ˈfuːsbalˌʃpiːl]",
+    "fa": "بازی فوتبال",
+    "en": "football match",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Fußballtraining",
+    "ipa": "[ˈfuːsbalˌtʁeːnɪŋ]",
+    "fa": "تمرین فوتبال",
+    "en": "football training",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Fuß",
+    "ipa": "[fuːs]",
+    "fa": "پا (کف پا)",
+    "en": "foot",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Garage",
+    "ipa": "[ɡaˈʁaːʒə]",
+    "fa": "گاراژ",
+    "en": "garage",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Garten",
+    "ipa": "[ˈɡaʁtn̩]",
+    "fa": "باغچه / حیاط",
+    "en": "garden",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Gast",
+    "ipa": "[ɡast]",
+    "fa": "مهمان",
+    "en": "guest",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Gebäude",
+    "ipa": "[ɡəˈbɔɪ̯də]",
+    "fa": "ساختمان",
+    "en": "building",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "geboren",
+    "ipa": "[ɡəˈboːʁən]",
+    "fa": "متولدشده",
+    "en": "born",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Geburtsjahr",
+    "ipa": "[ɡəˈbuːɐ̯tsjaːɐ̯]",
+    "fa": "سال تولد",
+    "en": "year of birth",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Geburtsort",
+    "ipa": "[ɡəˈbuːɐ̯tsʔɔʁt]",
+    "fa": "محل تولد",
+    "en": "place of birth",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Geburtstag",
+    "ipa": "[ɡəˈbuːɐ̯tstaːk]",
+    "fa": "روز تولد",
+    "en": "birthday",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Geburtstagskarte",
+    "ipa": "[ɡəˈbuːɐ̯tstaːksˌkaʁtə]",
+    "fa": "کارت تبریک تولد",
+    "en": "birthday card",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "grillen",
+    "ipa": "[ˈɡʁɪlən]",
+    "fa": "کباب کردن (روی گریل)",
+    "en": "to grill / barbecue",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "kaufen",
+    "ipa": "[ˈkaʊ̯fn̩]",
+    "fa": "خریدن",
+    "en": "to buy",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "klicken",
+    "ipa": "[ˈklɪkn̩]",
+    "fa": "کلیک کردن",
+    "en": "to click",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "lachen",
+    "ipa": "[ˈlaxn̩]",
+    "fa": "خندیدن",
+    "en": "to laugh",
+    "level": "A1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Geldautomat",
+    "ipa": "[ˈɡɛltʔaʊ̯toˌmaːt]",
+    "fa": "دستگاه خودپرداز",
+    "en": "ATM",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "lesen",
+    "ipa": "[ˈleːzn̩]",
+    "fa": "خواندن",
+    "en": "to read",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Gemüse",
+    "ipa": "[ɡəˈmyːzə]",
+    "fa": "سبزیجات",
+    "en": "vegetables",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "genau",
+    "ipa": "[ɡəˈnaʊ̯]",
+    "fa": "دقیقاً",
+    "en": "exactly",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "nehmen",
+    "ipa": "[ˈneːmən]",
+    "fa": "گرفتن / برداشتن",
+    "en": "to take",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "öffnen",
+    "ipa": "[ˈœfnən]",
+    "fa": "باز کردن",
+    "en": "to open",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Gepäck",
+    "ipa": "[ɡəˈpɛk]",
+    "fa": "چمدان / بار سفر",
+    "en": "luggage",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "gern",
+    "ipa": "[ɡɛʁn]",
+    "fa": "با کمال میل / دوست داشتن انجام کاری",
+    "en": "gladly / to like doing",
+    "level": "A1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "gern geschehen",
+    "ipa": "[ɡɛʁn ɡəˈʃeːən]",
+    "fa": "خواهش می‌کنم",
+    "en": "you're welcome / my pleasure",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "sagen",
+    "ipa": "[ˈzaːɡn̩]",
+    "fa": "گفتن",
+    "en": "to say",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Geschäft",
+    "ipa": "[ɡəˈʃɛft]",
+    "fa": "مغازه / کسب‌وکار",
+    "en": "shop / business",
+    "level": "A1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "schicken",
+    "ipa": "[ˈʃɪkn̩]",
+    "fa": "فرستادن",
+    "en": "to send",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "schließen",
+    "ipa": "[ˈʃliːsn̩]",
+    "fa": "بستن",
+    "en": "to close",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "schreiben",
+    "ipa": "[ˈʃʁaɪ̯bn̩]",
+    "fa": "نوشتن",
+    "en": "to write",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Geschwister",
+    "ipa": "[ɡəˈʃvɪstɐ]",
+    "fa": "خواهر و برادر (باهم)",
+    "en": "siblings",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "sehen",
+    "ipa": "[ˈzeːən]",
+    "fa": "دیدن",
+    "en": "to see",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "sitzen",
+    "ipa": "[ˈzɪtsn̩]",
+    "fa": "نشستن",
+    "en": "to sit",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Gesicht",
+    "ipa": "[ɡəˈzɪçt]",
+    "fa": "صورت",
+    "en": "face",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "suchen",
+    "ipa": "[ˈzuːxn̩]",
+    "fa": "جستجو کردن / گشتن دنبال",
+    "en": "to search / look for",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Getränk",
+    "ipa": "[ɡəˈtʁɛŋk]",
+    "fa": "نوشیدنی",
+    "en": "drink / beverage",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "treffen",
+    "ipa": "[ˈtʁɛfn̩]",
+    "fa": "ملاقات کردن",
+    "en": "to meet",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "zeigen",
+    "ipa": "[ˈtsaɪ̯ɡn̩]",
+    "fa": "نشان دادن",
+    "en": "to show",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "es gibt",
+    "ipa": "[ɛs ɡɪpt]",
+    "fa": "وجود دارد",
+    "en": "there is / there are",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Giraffe",
+    "ipa": "[ɡiˈʁafə]",
+    "fa": "زرافه",
+    "en": "giraffe",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Gitarre",
+    "ipa": "[ɡiˈtaʁə]",
+    "fa": "گیتار",
+    "en": "guitar",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Grad",
+    "ipa": "[ɡʁaːt]",
+    "fa": "درجه",
+    "en": "degree",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Gramm",
+    "ipa": "[ɡʁam]",
+    "fa": "گرم (واحد وزن)",
+    "en": "gram",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Grammatik",
+    "ipa": "[ɡʁaˈmatɪk]",
+    "fa": "گرامر / دستور زبان",
+    "en": "grammar",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "griechisch",
+    "ipa": "[ˈɡʁiːçɪʃ]",
+    "fa": "یونانی",
+    "en": "Greek",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
   }
 ]
