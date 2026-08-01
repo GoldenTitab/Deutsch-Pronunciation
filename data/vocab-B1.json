@@ -3854,5 +3854,229 @@
     "en": "length",
     "level": "B1",
     "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Lebenslauf",
+    "ipa": "[ˈleːbn̩slaʊ̯f]",
+    "fa": "رزومه",
+    "en": "CV / resume",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Leber",
+    "ipa": "[ˈleːbɐ]",
+    "fa": "کبد",
+    "en": "liver",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "lehren",
+    "ipa": "[ˈleːʁən]",
+    "fa": "آموزش دادن / تدریس کردن",
+    "en": "to teach",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Leistung",
+    "ipa": "[ˈlaɪ̯stʊŋ]",
+    "fa": "عملکرد / دستاورد",
+    "en": "performance / achievement",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Leiter",
+    "ipa": "[ˈlaɪ̯tɐ]",
+    "fa": "نردبان (مؤنث) / رئیس (مذکر)",
+    "en": "ladder (fem.) / director (masc.)",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Leitung",
+    "ipa": "[ˈlaɪ̯tʊŋ]",
+    "fa": "مدیریت / لوله/خط انتقال",
+    "en": "management / pipeline / line",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Leser",
+    "ipa": "[ˈleːzɐ]",
+    "fa": "خواننده (کتاب)",
+    "en": "reader",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Leuchtturm",
+    "ipa": "[ˈlɔɪ̯çtˌtʊʁm]",
+    "fa": "فانوس دریایی",
+    "en": "lighthouse",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "läuten",
+    "ipa": "[ˈlɔɪ̯tn̩]",
+    "fa": "زنگ زدن (زنگوله/ناقوس)",
+    "en": "to ring (a bell)",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Lunge",
+    "ipa": "[ˈlʊŋə]",
+    "fa": "ریه",
+    "en": "lung",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Magie",
+    "ipa": "[maˈɡiː]",
+    "fa": "جادو",
+    "en": "magic",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "magisch",
+    "ipa": "[ˈmaːɡɪʃ]",
+    "fa": "جادویی",
+    "en": "magical",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "mancher",
+    "ipa": "[ˈmançɐ]",
+    "fa": "بعضی",
+    "en": "some / many a",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "markieren",
+    "ipa": "[maʁˈkiːʁən]",
+    "fa": "علامت‌گذاری کردن",
+    "en": "to mark",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Maß",
+    "ipa": "[maːs]",
+    "fa": "اندازه / میزان",
+    "en": "measure / measurement",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Maschinenbau",
+    "ipa": "[maˈʃiːnənˌbaʊ̯]",
+    "fa": "مهندسی مکانیک",
+    "en": "mechanical engineering",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Maultasche",
+    "ipa": "[ˈmaʊ̯ltaʃə]",
+    "fa": "مولتاشه (خمیر پرشده سواحلی)",
+    "en": "stuffed pasta (Swabian dish)",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "meditieren",
+    "ipa": "[mediˈtiːʁən]",
+    "fa": "مدیتیشن کردن",
+    "en": "to meditate",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Mehrfamilienhaus",
+    "ipa": "[ˈmeːɐ̯faˌmiːliənhaʊ̯s]",
+    "fa": "ساختمان چندخانواری",
+    "en": "multi-family house",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Mehrheit",
+    "ipa": "[ˈmeːɐ̯haɪ̯t]",
+    "fa": "اکثریت",
+    "en": "majority",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Mehrwertsteuer",
+    "ipa": "[ˈmeːɐ̯veːɐ̯tˌʃtɔɪ̯ɐ]",
+    "fa": "مالیات بر ارزش افزوده",
+    "en": "VAT",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Meile",
+    "ipa": "[ˈmaɪ̯lə]",
+    "fa": "مایل",
+    "en": "mile",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "meist",
+    "ipa": "[maɪ̯st]",
+    "fa": "بیشترین",
+    "en": "most",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "melden",
+    "ipa": "[ˈmɛldn̩]",
+    "fa": "گزارش دادن / اعلام کردن",
+    "en": "to report",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Meldung",
+    "ipa": "[ˈmɛldʊŋ]",
+    "fa": "گزارش / اعلان",
+    "en": "report / notification",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Melodie",
+    "ipa": "[meloˈdiː]",
+    "fa": "ملودی",
+    "en": "melody",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Metall",
+    "ipa": "[meˈtal]",
+    "fa": "فلز",
+    "en": "metal",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "mindestens",
+    "ipa": "[ˈmɪndəstn̩s]",
+    "fa": "حداقل",
+    "en": "at least",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
   }
 ]

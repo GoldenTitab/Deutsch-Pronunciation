@@ -5690,5 +5690,333 @@
     "en": "for a long time",
     "level": "A1",
     "category": "زمان و تقویم"
+  },
+  {
+    "word": "lass uns",
+    "ipa": "[las ʊns]",
+    "fa": "بیا (پیشنهاد انجام کاری با هم)",
+    "en": "let's",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Lebensmittel",
+    "ipa": "[ˈleːbn̩smɪtl̩]",
+    "fa": "مواد غذایی",
+    "en": "groceries / food",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "lecker",
+    "ipa": "[ˈlɛkɐ]",
+    "fa": "خوشمزه",
+    "en": "delicious",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Lehrbuch",
+    "ipa": "[ˈleːɐ̯buːx]",
+    "fa": "کتاب درسی",
+    "en": "textbook",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Lehrer",
+    "ipa": "[ˈleːʁɐ]",
+    "fa": "معلم (مرد)",
+    "en": "teacher (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Lehrerin",
+    "ipa": "[ˈleːʁəʁɪn]",
+    "fa": "معلم (زن)",
+    "en": "teacher (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Leute",
+    "ipa": "[ˈlɔɪ̯tə]",
+    "fa": "مردم / آدم‌ها",
+    "en": "people",
+    "level": "A1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Licht",
+    "ipa": "[lɪçt]",
+    "fa": "نور / چراغ",
+    "en": "light",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Lieblingsessen",
+    "ipa": "[ˈliːplɪŋsʔɛsn̩]",
+    "fa": "غذای مورد علاقه",
+    "en": "favorite food",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Lieblingslied",
+    "ipa": "[ˈliːplɪŋsliːt]",
+    "fa": "آهنگ مورد علاقه",
+    "en": "favorite song",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Lieblingstier",
+    "ipa": "[ˈliːplɪŋstiːɐ̯]",
+    "fa": "حیوان مورد علاقه",
+    "en": "favorite animal",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Lied",
+    "ipa": "[liːt]",
+    "fa": "آهنگ / ترانه",
+    "en": "song",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Limonade",
+    "ipa": "[limoˈnaːdə]",
+    "fa": "لیموناد / نوشابه",
+    "en": "lemonade / soda",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Lineal",
+    "ipa": "[lineˈaːl]",
+    "fa": "خط‌کش",
+    "en": "ruler",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Liter",
+    "ipa": "[ˈliːtɐ]",
+    "fa": "لیتر",
+    "en": "liter",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Löwe",
+    "ipa": "[ˈløːvə]",
+    "fa": "شیر (حیوان)",
+    "en": "lion",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Luft",
+    "ipa": "[lʊft]",
+    "fa": "هوا",
+    "en": "air",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Luftballon",
+    "ipa": "[ˈlʊftbaˌlɔŋ]",
+    "fa": "بادکنک",
+    "en": "balloon",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "lustig",
+    "ipa": "[ˈlʊstɪç]",
+    "fa": "بامزه / خنده‌دار",
+    "en": "funny",
+    "level": "A1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "mach's gut",
+    "ipa": "[maxs ɡuːt]",
+    "fa": "مواظب خودت باش (خداحافظی محاوره‌ای)",
+    "en": "take care (informal goodbye)",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Mädchen",
+    "ipa": "[ˈmɛːtçən]",
+    "fa": "دختر (کودک)",
+    "en": "girl",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "mal",
+    "ipa": "[maːl]",
+    "fa": "بار / ضربدر",
+    "en": "time(s) / multiplied by",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Mama",
+    "ipa": "[ˈmama]",
+    "fa": "مامان",
+    "en": "mom",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "man",
+    "ipa": "[man]",
+    "fa": "آدم / کسی (ضمیر عام)",
+    "en": "one / you (impersonal)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "manchmal",
+    "ipa": "[ˈmançmaːl]",
+    "fa": "گاهی",
+    "en": "sometimes",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Mann",
+    "ipa": "[man]",
+    "fa": "مرد / شوهر",
+    "en": "man / husband",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Mantel",
+    "ipa": "[ˈmantl̩]",
+    "fa": "پالتو",
+    "en": "coat",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Marmelade",
+    "ipa": "[maʁməˈlaːdə]",
+    "fa": "مربا",
+    "en": "jam",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Mathe",
+    "ipa": "[ˈmaːtə]",
+    "fa": "ریاضی (محاوره‌ای)",
+    "en": "math (informal)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Maus",
+    "ipa": "[maʊ̯s]",
+    "fa": "موش / ماوس",
+    "en": "mouse",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Mayo",
+    "ipa": "[ˈmajo]",
+    "fa": "سس مایونز",
+    "en": "mayo",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Mehl",
+    "ipa": "[meːl]",
+    "fa": "آرد",
+    "en": "flour",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "mehr",
+    "ipa": "[meːɐ̯]",
+    "fa": "بیشتر",
+    "en": "more",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Mensa",
+    "ipa": "[ˈmɛnza]",
+    "fa": "سلف‌سرویس دانشگاه",
+    "en": "university cafeteria",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Mensch",
+    "ipa": "[mɛnʃ]",
+    "fa": "انسان",
+    "en": "human / person",
+    "level": "A1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Meter",
+    "ipa": "[ˈmeːtɐ]",
+    "fa": "متر",
+    "en": "meter",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Million",
+    "ipa": "[mɪˈli̯oːn]",
+    "fa": "میلیون",
+    "en": "million",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Mineralwasser",
+    "ipa": "[mineˈʁaːlˌvasɐ]",
+    "fa": "آب معدنی",
+    "en": "mineral water",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "minus",
+    "ipa": "[ˈmiːnʊs]",
+    "fa": "منها",
+    "en": "minus",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Minute",
+    "ipa": "[miˈnuːtə]",
+    "fa": "دقیقه",
+    "en": "minute",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "mir geht's gut",
+    "ipa": "[miːɐ̯ ɡeːts ɡuːt]",
+    "fa": "حالم خوبه",
+    "en": "I'm doing well",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
   }
 ]
