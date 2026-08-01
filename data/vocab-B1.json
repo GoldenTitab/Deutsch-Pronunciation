@@ -4350,5 +4350,333 @@
     "en": "philosophy",
     "level": "B1",
     "category": "علم و فلسفه"
+  },
+  {
+    "word": "präsentieren",
+    "ipa": "[pʁɛzɛnˈtiːʁən]",
+    "fa": "ارائه دادن",
+    "en": "to present",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Prinzip",
+    "ipa": "[pʁɪnˈtsiːp]",
+    "fa": "اصل / قاعده",
+    "en": "principle",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "pro",
+    "ipa": "[pʁoː]",
+    "fa": "به ازای هر",
+    "en": "per",
+    "level": "B1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Prospekt",
+    "ipa": "[pʁoˈspɛkt]",
+    "fa": "بروشور",
+    "en": "brochure",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "protestieren",
+    "ipa": "[pʁotɛsˈtiːʁən]",
+    "fa": "اعتراض کردن",
+    "en": "to protest",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "prüfen",
+    "ipa": "[ˈpʁyːfn̩]",
+    "fa": "بررسی کردن / امتحان کردن",
+    "en": "to check / examine",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Psychologie",
+    "ipa": "[psyçoloˈɡiː]",
+    "fa": "روان‌شناسی",
+    "en": "psychology",
+    "level": "B1",
+    "category": "روان‌شناسی و سلامت روان"
+  },
+  {
+    "word": "Publikum",
+    "ipa": "[ˈpuːblikʊm]",
+    "fa": "مخاطبان / تماشاگران",
+    "en": "audience",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Quartal",
+    "ipa": "[kvaʁˈtaːl]",
+    "fa": "فصل مالی (سه‌ماهه)",
+    "en": "quarter (of a year)",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Rahmen",
+    "ipa": "[ˈʁaːmən]",
+    "fa": "قاب / چارچوب",
+    "en": "frame",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Rastplatz",
+    "ipa": "[ˈʁastplats]",
+    "fa": "استراحتگاه کنار جاده",
+    "en": "rest stop",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Ratschlag",
+    "ipa": "[ˈʁaːtʃlaːk]",
+    "fa": "توصیه / نصیحت",
+    "en": "advice",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "realistisch",
+    "ipa": "[ʁeaˈlɪstɪʃ]",
+    "fa": "واقع‌بینانه",
+    "en": "realistic",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Rechtschreibung",
+    "ipa": "[ˈʁɛçtʃʁaɪ̯bʊŋ]",
+    "fa": "املا / رسم‌الخط",
+    "en": "spelling",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "rechtzeitig",
+    "ipa": "[ˈʁɛçtsaɪ̯tɪç]",
+    "fa": "به‌موقع",
+    "en": "on time / timely",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "reduzieren",
+    "ipa": "[ʁeduˈtsiːʁən]",
+    "fa": "کاهش دادن",
+    "en": "to reduce",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Referenz",
+    "ipa": "[ʁefeˈʁɛnts]",
+    "fa": "مرجع / توصیه‌نامه",
+    "en": "reference",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Regie",
+    "ipa": "[ʁeˈʒiː]",
+    "fa": "کارگردانی",
+    "en": "directing (film)",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "regional",
+    "ipa": "[ʁeɡi̯oˈnaːl]",
+    "fa": "منطقه‌ای / محلی",
+    "en": "regional",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Reifenpanne",
+    "ipa": "[ˈʁaɪ̯fn̩ˌpanə]",
+    "fa": "پنچری لاستیک",
+    "en": "flat tire",
+    "level": "B1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "rein",
+    "ipa": "[ʁaɪ̯n]",
+    "fa": "خالص / پاک",
+    "en": "pure",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "relativ",
+    "ipa": "[ʁelaˈtiːf]",
+    "fa": "نسبتاً / نسبی",
+    "en": "relative / relatively",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Religion",
+    "ipa": "[ʁeliˈɡi̯oːn]",
+    "fa": "دین",
+    "en": "religion",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Reportage",
+    "ipa": "[ʁepɔʁˈtaːʒə]",
+    "fa": "گزارش خبری",
+    "en": "report / documentary",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Republik",
+    "ipa": "[ʁepuˈbliːk]",
+    "fa": "جمهوری",
+    "en": "republic",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Rinderbraten",
+    "ipa": "[ˈʁɪndɐˌbʁaːtn̩]",
+    "fa": "گوشت گاو کبابی",
+    "en": "roast beef",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Rolle",
+    "ipa": "[ˈʁɔlə]",
+    "fa": "نقش / رول",
+    "en": "role / roll",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Röntgenbild",
+    "ipa": "[ˈʁœntɡn̩bɪlt]",
+    "fa": "عکس رادیولوژی (اشعه ایکس)",
+    "en": "X-ray image",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Runde",
+    "ipa": "[ˈʁʊndə]",
+    "fa": "دور / راند",
+    "en": "round / lap",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Saison",
+    "ipa": "[zɛˈzɔ̃ː]",
+    "fa": "فصل (ورزشی/تجاری)",
+    "en": "season (sports/business)",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sammlung",
+    "ipa": "[ˈzamlʊŋ]",
+    "fa": "مجموعه",
+    "en": "collection",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Säugetier",
+    "ipa": "[ˈzɔɪ̯ɡəˌtiːɐ̯]",
+    "fa": "پستاندار",
+    "en": "mammal",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schaden",
+    "ipa": "[ˈʃaːdn̩]",
+    "fa": "خسارت / آسیب",
+    "en": "damage",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Scheck",
+    "ipa": "[ʃɛk]",
+    "fa": "چک (پرداخت)",
+    "en": "check (payment)",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Schicksal",
+    "ipa": "[ˈʃɪkzaːl]",
+    "fa": "سرنوشت",
+    "en": "fate",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "schließlich",
+    "ipa": "[ˈʃliːslɪç]",
+    "fa": "بالاخره / در نهایت",
+    "en": "finally / after all",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Schneider",
+    "ipa": "[ˈʃnaɪ̯dɐ]",
+    "fa": "خیاط",
+    "en": "tailor",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Schrift",
+    "ipa": "[ʃʁɪft]",
+    "fa": "خط / فونت نوشتاری",
+    "en": "writing / font",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schulabschluss",
+    "ipa": "[ˈʃuːlʔapˌʃlʊs]",
+    "fa": "مدرک فارغ‌التحصیلی مدرسه",
+    "en": "school graduation",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schuld",
+    "ipa": "[ʃʊlt]",
+    "fa": "تقصیر / بدهی",
+    "en": "guilt / debt",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "schuldig",
+    "ipa": "[ˈʃʊldɪç]",
+    "fa": "مقصر / مدیون",
+    "en": "guilty",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
   }
 ]

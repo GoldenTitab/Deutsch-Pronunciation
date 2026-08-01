@@ -6362,5 +6362,373 @@
     "en": "pink",
     "level": "A1",
     "category": "رنگ‌ها"
+  },
+  {
+    "word": "prost",
+    "ipa": "[pʁoːst]",
+    "fa": "به سلامتی",
+    "en": "cheers",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "pst",
+    "ipa": "[pst]",
+    "fa": "هیس",
+    "en": "shh",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Pullover",
+    "ipa": "[pʊˈloːvɐ]",
+    "fa": "پلیور / ژاکت",
+    "en": "sweater",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Puppe",
+    "ipa": "[ˈpʊpə]",
+    "fa": "عروسک",
+    "en": "doll",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Puzzle",
+    "ipa": "[ˈpasl̩]",
+    "fa": "پازل",
+    "en": "puzzle",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Radiergummi",
+    "ipa": "[ʁaˈdiːɐ̯ˌɡʊmi]",
+    "fa": "پاک‌کن",
+    "en": "eraser",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Radio",
+    "ipa": "[ˈʁaːdio]",
+    "fa": "رادیو",
+    "en": "radio",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Regal",
+    "ipa": "[ʁeˈɡaːl]",
+    "fa": "قفسه",
+    "en": "shelf",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Regen",
+    "ipa": "[ˈʁeːɡn̩]",
+    "fa": "باران",
+    "en": "rain",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Regenschirm",
+    "ipa": "[ˈʁeːɡn̩ʃɪʁm]",
+    "fa": "چتر",
+    "en": "umbrella",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Reisebüro",
+    "ipa": "[ˈʁaɪ̯zəbyˌʁoː]",
+    "fa": "آژانس مسافرتی",
+    "en": "travel agency",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Reisetasche",
+    "ipa": "[ˈʁaɪ̯zəˌtaʃə]",
+    "fa": "ساک سفر",
+    "en": "travel bag",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Restaurant",
+    "ipa": "[ʁɛstoˈʁɑ̃ː]",
+    "fa": "رستوران",
+    "en": "restaurant",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Rezeption",
+    "ipa": "[ʁetsɛpˈtsi̯oːn]",
+    "fa": "پذیرش (هتل)",
+    "en": "reception desk",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "richtig",
+    "ipa": "[ˈʁɪçtɪç]",
+    "fa": "درست / صحیح",
+    "en": "correct / right",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Rock",
+    "ipa": "[ʁɔk]",
+    "fa": "دامن",
+    "en": "skirt",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Rolltreppe",
+    "ipa": "[ˈʁɔltʁɛpə]",
+    "fa": "پله‌برقی",
+    "en": "escalator",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Rose",
+    "ipa": "[ˈʁoːzə]",
+    "fa": "گل رز",
+    "en": "rose",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Rotwein",
+    "ipa": "[ˈʁoːtvaɪ̯n]",
+    "fa": "شراب قرمز",
+    "en": "red wine",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Rucksack",
+    "ipa": "[ˈʁʊkzak]",
+    "fa": "کوله‌پشتی",
+    "en": "backpack",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "S-Bahn",
+    "ipa": "[ˈʔɛsbaːn]",
+    "fa": "قطار شهری (اس‌بان)",
+    "en": "suburban train (S-Bahn)",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Saft",
+    "ipa": "[zaft]",
+    "fa": "آب‌میوه",
+    "en": "juice",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Salami",
+    "ipa": "[zaˈlaːmi]",
+    "fa": "سالامی",
+    "en": "salami",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Salat",
+    "ipa": "[zaˈlaːt]",
+    "fa": "سالاد",
+    "en": "salad",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Samstagabend",
+    "ipa": "[ˈzamstaːkˌʔaːbn̩t]",
+    "fa": "شنبه‌شب",
+    "en": "Saturday evening",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "samstags",
+    "ipa": "[ˈzamstaːks]",
+    "fa": "شنبه‌ها",
+    "en": "on Saturdays",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Sandwich",
+    "ipa": "[ˈzɛntvɪtʃ]",
+    "fa": "ساندویچ",
+    "en": "sandwich",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Satz",
+    "ipa": "[zats]",
+    "fa": "جمله",
+    "en": "sentence",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schaf",
+    "ipa": "[ʃaːf]",
+    "fa": "گوسفند",
+    "en": "sheep",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "schauen",
+    "ipa": "[ˈʃaʊ̯ən]",
+    "fa": "نگاه کردن",
+    "en": "to look",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Schiff",
+    "ipa": "[ʃɪf]",
+    "fa": "کشتی",
+    "en": "ship",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Schinken",
+    "ipa": "[ˈʃɪŋkn̩]",
+    "fa": "ژامبون",
+    "en": "ham",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Schlafzimmer",
+    "ipa": "[ˈʃlaːftsɪmɐ]",
+    "fa": "اتاق‌خواب",
+    "en": "bedroom",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "schlecht",
+    "ipa": "[ʃlɛçt]",
+    "fa": "بد",
+    "en": "bad",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Schlüssel",
+    "ipa": "[ˈʃlʏsl̩]",
+    "fa": "کلید",
+    "en": "key",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Schnee",
+    "ipa": "[ʃneː]",
+    "fa": "برف",
+    "en": "snow",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schneemann",
+    "ipa": "[ˈʃneːman]",
+    "fa": "آدم‌برفی",
+    "en": "snowman",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schnitzel",
+    "ipa": "[ˈʃnɪtsl̩]",
+    "fa": "شنیسل",
+    "en": "schnitzel",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Schokolade",
+    "ipa": "[ʃokoˈlaːdə]",
+    "fa": "شکلات",
+    "en": "chocolate",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "schon",
+    "ipa": "[ʃoːn]",
+    "fa": "از قبل / همین حالا",
+    "en": "already",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Schreibtisch",
+    "ipa": "[ˈʃʁaɪ̯ptɪʃ]",
+    "fa": "میز تحریر",
+    "en": "desk",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Schuh",
+    "ipa": "[ʃuː]",
+    "fa": "کفش",
+    "en": "shoe",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Schule",
+    "ipa": "[ˈʃuːlə]",
+    "fa": "مدرسه",
+    "en": "school",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schüler",
+    "ipa": "[ˈʃyːlɐ]",
+    "fa": "دانش‌آموز (پسر)",
+    "en": "student (male, school)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schülerin",
+    "ipa": "[ˈʃyːləʁɪn]",
+    "fa": "دانش‌آموز (دختر)",
+    "en": "student (female, school)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schulranzen",
+    "ipa": "[ˈʃuːlˌʁantsn̩]",
+    "fa": "کیف مدرسه",
+    "en": "school backpack",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
   }
 ]

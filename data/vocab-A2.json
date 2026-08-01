@@ -6302,5 +6302,861 @@
     "en": "pirate",
     "level": "A2",
     "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Präsident",
+    "ipa": "[pʁɛziˈdɛnt]",
+    "fa": "رئیس‌جمهور",
+    "en": "president",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "prima",
+    "ipa": "[ˈpʁiːma]",
+    "fa": "عالی (محاوره‌ای)",
+    "en": "great (informal)",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Prinz",
+    "ipa": "[pʁɪnts]",
+    "fa": "شاهزاده (پسر)",
+    "en": "prince",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Prinzessin",
+    "ipa": "[pʁɪnˈtsɛsɪn]",
+    "fa": "شاهزاده‌خانم",
+    "en": "princess",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "privat",
+    "ipa": "[pʁiˈvaːt]",
+    "fa": "خصوصی",
+    "en": "private",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Professor",
+    "ipa": "[pʁoˈfɛsoːɐ̯]",
+    "fa": "استاد دانشگاه (مرد)",
+    "en": "professor (male)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Professorin",
+    "ipa": "[pʁofɛˈsoːʁɪn]",
+    "fa": "استاد دانشگاه (زن)",
+    "en": "professor (female)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Profil",
+    "ipa": "[pʁoˈfiːl]",
+    "fa": "پروفایل",
+    "en": "profile",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Programm",
+    "ipa": "[pʁoˈɡʁam]",
+    "fa": "برنامه",
+    "en": "program",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "Projekt",
+    "ipa": "[pʁoˈjɛkt]",
+    "fa": "پروژه",
+    "en": "project",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Prozent",
+    "ipa": "[pʁoˈtsɛnt]",
+    "fa": "درصد",
+    "en": "percent",
+    "level": "A2",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Pudel",
+    "ipa": "[ˈpuːdl̩]",
+    "fa": "سگ پودل",
+    "en": "poodle",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Punkt",
+    "ipa": "[pʊŋkt]",
+    "fa": "نقطه / امتیاز",
+    "en": "point",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Pyramide",
+    "ipa": "[pyʁaˈmiːdə]",
+    "fa": "هرم",
+    "en": "pyramid",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Quadratmeter",
+    "ipa": "[kvaˈdʁaːtmeːtɐ]",
+    "fa": "مترمربع",
+    "en": "square meter",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Qualität",
+    "ipa": "[kvaliˈtɛːt]",
+    "fa": "کیفیت",
+    "en": "quality",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "quatschen",
+    "ipa": "[ˈkvatʃn̩]",
+    "fa": "گپ زدن / وراجی کردن",
+    "en": "to chat / chatter",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Quiz",
+    "ipa": "[kvɪs]",
+    "fa": "مسابقه سؤال و جواب",
+    "en": "quiz",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Radtour",
+    "ipa": "[ˈʁaːtˌtuːɐ̯]",
+    "fa": "تور دوچرخه‌سواری",
+    "en": "bike tour",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Rasen",
+    "ipa": "[ˈʁaːzn̩]",
+    "fa": "چمن",
+    "en": "lawn",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Rasierer",
+    "ipa": "[ʁaˈziːʁɐ]",
+    "fa": "ریش‌تراش",
+    "en": "razor / shaver",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "raten",
+    "ipa": "[ˈʁaːtn̩]",
+    "fa": "حدس زدن / پیشنهاد دادن",
+    "en": "to guess / advise",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Rathaus",
+    "ipa": "[ˈʁaːthaʊ̯s]",
+    "fa": "شهرداری",
+    "en": "city hall",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Ratte",
+    "ipa": "[ˈʁatə]",
+    "fa": "موش صحرایی",
+    "en": "rat",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Raum",
+    "ipa": "[ʁaʊ̯m]",
+    "fa": "اتاق / فضا",
+    "en": "room / space",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "räumen",
+    "ipa": "[ˈʁɔɪ̯mən]",
+    "fa": "مرتب کردن / تخلیه کردن",
+    "en": "to clear / tidy up",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Raumschiff",
+    "ipa": "[ˈʁaʊ̯mʃɪf]",
+    "fa": "سفینه فضایی",
+    "en": "spaceship",
+    "level": "A2",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "raus",
+    "ipa": "[ʁaʊ̯s]",
+    "fa": "بیرون (محاوره‌ای)",
+    "en": "out (colloquial)",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Rechnung",
+    "ipa": "[ˈʁɛçnʊŋ]",
+    "fa": "صورت‌حساب / فاکتور",
+    "en": "invoice / bill",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Rechtsanwalt",
+    "ipa": "[ˈʁɛçtsʔanvalt]",
+    "fa": "وکیل",
+    "en": "lawyer",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "reden",
+    "ipa": "[ˈʁeːdn̩]",
+    "fa": "صحبت کردن",
+    "en": "to talk / speak",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Referat",
+    "ipa": "[ʁefeˈʁaːt]",
+    "fa": "سمینار / ارائه کلاسی",
+    "en": "presentation / report (school)",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Regel",
+    "ipa": "[ˈʁeːɡl̩]",
+    "fa": "قانون / قاعده",
+    "en": "rule",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "regelmäßig",
+    "ipa": "[ˈʁeːɡl̩mɛːsɪç]",
+    "fa": "منظم / به‌طور مرتب",
+    "en": "regular / regularly",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Regenbogen",
+    "ipa": "[ˈʁeːɡn̩ˌboːɡn̩]",
+    "fa": "رنگین‌کمان",
+    "en": "rainbow",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Regenmantel",
+    "ipa": "[ˈʁeːɡn̩ˌmantl̩]",
+    "fa": "بارانی",
+    "en": "raincoat",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Region",
+    "ipa": "[ʁeˈɡi̯oːn]",
+    "fa": "منطقه",
+    "en": "region",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "reich",
+    "ipa": "[ʁaɪ̯ç]",
+    "fa": "ثروتمند",
+    "en": "rich",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Reichstagsgebäude",
+    "ipa": "[ˈʁaɪ̯çstaːksɡəˌbɔɪ̯də]",
+    "fa": "ساختمان رایشستاگ (پارلمان آلمان)",
+    "en": "Reichstag building",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "reif",
+    "ipa": "[ʁaɪ̯f]",
+    "fa": "رسیده (میوه) / بالغ",
+    "en": "ripe / mature",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Reihe",
+    "ipa": "[ˈʁaɪ̯ə]",
+    "fa": "ردیف / سری",
+    "en": "row / series",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Reinigung",
+    "ipa": "[ˈʁaɪ̯nɪɡʊŋ]",
+    "fa": "خشک‌شویی / نظافت",
+    "en": "cleaning / dry cleaner",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "reinkommen",
+    "ipa": "[ˈʁaɪ̯nˌkɔmən]",
+    "fa": "داخل آمدن (محاوره‌ای)",
+    "en": "to come in (colloquial)",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Reiseadapter",
+    "ipa": "[ˈʁaɪ̯zəʔaˌdaptɐ]",
+    "fa": "مبدل برق سفر",
+    "en": "travel adapter",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Reiseführer",
+    "ipa": "[ˈʁaɪ̯zəfyːʁɐ]",
+    "fa": "راهنمای سفر",
+    "en": "travel guide",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Reisezentrum",
+    "ipa": "[ˈʁaɪ̯zəˌtsɛntʁʊm]",
+    "fa": "مرکز خدمات مسافرتی (ایستگاه قطار)",
+    "en": "travel center (station)",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "reiten",
+    "ipa": "[ˈʁaɪ̯tn̩]",
+    "fa": "اسب‌سواری کردن",
+    "en": "to ride (a horse)",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "rennen",
+    "ipa": "[ˈʁɛnən]",
+    "fa": "دویدن (سریع)",
+    "en": "to run / race",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Reparatur",
+    "ipa": "[ʁepaʁaˈtuːɐ̯]",
+    "fa": "تعمیر",
+    "en": "repair",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "reservieren",
+    "ipa": "[ʁezɛʁˈviːʁən]",
+    "fa": "رزرو کردن",
+    "en": "to reserve",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Rest",
+    "ipa": "[ʁɛst]",
+    "fa": "باقی‌مانده",
+    "en": "rest / remainder",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Rhein",
+    "ipa": "[ʁaɪ̯n]",
+    "fa": "رود راین",
+    "en": "the Rhine (river)",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Richtung",
+    "ipa": "[ˈʁɪçtʊŋ]",
+    "fa": "جهت / سمت",
+    "en": "direction",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Riesenrad",
+    "ipa": "[ˈʁiːzn̩ˌʁaːt]",
+    "fa": "چرخ‌وفلک",
+    "en": "ferris wheel",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "riesig",
+    "ipa": "[ˈʁiːzɪç]",
+    "fa": "غول‌پیکر / بسیار بزرگ",
+    "en": "huge",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Rindfleisch",
+    "ipa": "[ˈʁɪntflaɪ̯ʃ]",
+    "fa": "گوشت گاو",
+    "en": "beef",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Ring",
+    "ipa": "[ʁɪŋ]",
+    "fa": "حلقه / انگشتر",
+    "en": "ring",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Rollschuh",
+    "ipa": "[ˈʁɔlʃuː]",
+    "fa": "اسکیت چرخ‌دار",
+    "en": "roller skate",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Rollstuhl",
+    "ipa": "[ˈʁɔlʃtuːl]",
+    "fa": "ویلچر",
+    "en": "wheelchair",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Roman",
+    "ipa": "[ʁoˈmaːn]",
+    "fa": "رمان",
+    "en": "novel",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "romantisch",
+    "ipa": "[ʁoˈmantɪʃ]",
+    "fa": "رمانتیک",
+    "en": "romantic",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Router",
+    "ipa": "[ˈʁuːtɐ]",
+    "fa": "روتر",
+    "en": "router",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "rufen",
+    "ipa": "[ˈʁuːfn̩]",
+    "fa": "صدا زدن / فریاد زدن",
+    "en": "to call / shout",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Rugby",
+    "ipa": "[ˈʁʌɡbi]",
+    "fa": "راگبی",
+    "en": "rugby",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "ruhig",
+    "ipa": "[ˈʁuːɪç]",
+    "fa": "آرام",
+    "en": "calm / quiet",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "rund",
+    "ipa": "[ʁʊnt]",
+    "fa": "گرد / دایره‌ای",
+    "en": "round",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "russisch",
+    "ipa": "[ˈʁʊsɪʃ]",
+    "fa": "روسی",
+    "en": "Russian",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Saal",
+    "ipa": "[zaːl]",
+    "fa": "سالن",
+    "en": "hall",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Sache",
+    "ipa": "[ˈzaxə]",
+    "fa": "چیز / موضوع",
+    "en": "thing / matter",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "sag Bescheid",
+    "ipa": "[zaːk bəˈʃaɪ̯t]",
+    "fa": "خبرم کن",
+    "en": "let me know",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "salzig",
+    "ipa": "[ˈzaltsɪç]",
+    "fa": "شور",
+    "en": "salty",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Sandale",
+    "ipa": "[zanˈdaːlə]",
+    "fa": "صندل",
+    "en": "sandal",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Sänger",
+    "ipa": "[ˈzɛŋɐ]",
+    "fa": "خواننده (مرد)",
+    "en": "singer (male)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Sängerin",
+    "ipa": "[ˈzɛŋəʁɪn]",
+    "fa": "خواننده (زن)",
+    "en": "singer (female)",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "satt",
+    "ipa": "[zat]",
+    "fa": "سیر (شکم)",
+    "en": "full (from eating)",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "sauer",
+    "ipa": "[ˈzaʊ̯ɐ]",
+    "fa": "ترش / عصبانی",
+    "en": "sour / annoyed",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Sauerkraut",
+    "ipa": "[ˈzaʊ̯ɐkʁaʊ̯t]",
+    "fa": "کلم ترش",
+    "en": "sauerkraut",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Sauna",
+    "ipa": "[ˈzaʊ̯na]",
+    "fa": "سونا",
+    "en": "sauna",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Schach",
+    "ipa": "[ʃax]",
+    "fa": "شطرنج",
+    "en": "chess",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "schade",
+    "ipa": "[ˈʃaːdə]",
+    "fa": "حیف / بد شد",
+    "en": "too bad / a pity",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Schäferhund",
+    "ipa": "[ˈʃɛːfɐhʊnt]",
+    "fa": "سگ شپرد آلمانی",
+    "en": "shepherd dog",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schale",
+    "ipa": "[ˈʃaːlə]",
+    "fa": "کاسه / پوست (میوه)",
+    "en": "bowl / peel",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Schalter",
+    "ipa": "[ˈʃaltɐ]",
+    "fa": "باجه / کلید (برق)",
+    "en": "counter / switch",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "scharf",
+    "ipa": "[ʃaʁf]",
+    "fa": "تند (طعم) / تیز",
+    "en": "spicy / sharp",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Schatz",
+    "ipa": "[ʃats]",
+    "fa": "گنج / عزیزم",
+    "en": "treasure / darling",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Scheibe",
+    "ipa": "[ˈʃaɪ̯bə]",
+    "fa": "برش / تکه (نان و ...) / شیشه",
+    "en": "slice / pane",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "scheinen",
+    "ipa": "[ˈʃaɪ̯nən]",
+    "fa": "تابیدن (خورشید) / به‌نظر رسیدن",
+    "en": "to shine / seem",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "schenken",
+    "ipa": "[ˈʃɛŋkn̩]",
+    "fa": "هدیه دادن",
+    "en": "to give as a gift",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Schere",
+    "ipa": "[ˈʃeːʁə]",
+    "fa": "قیچی",
+    "en": "scissors",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "schick",
+    "ipa": "[ʃɪk]",
+    "fa": "شیک",
+    "en": "chic / stylish",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Schild",
+    "ipa": "[ʃɪlt]",
+    "fa": "تابلو / علامت",
+    "en": "sign",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Schildkröte",
+    "ipa": "[ˈʃɪltˌkʁøːtə]",
+    "fa": "لاک‌پشت",
+    "en": "turtle",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schlafanzug",
+    "ipa": "[ˈʃlaːfʔantsuːk]",
+    "fa": "لباس‌خواب",
+    "en": "pajamas",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Schlagsahne",
+    "ipa": "[ˈʃlaːkˌzaːnə]",
+    "fa": "خامه فرم‌گرفته",
+    "en": "whipped cream",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Schlagzeug",
+    "ipa": "[ˈʃlaːktsɔɪ̯k]",
+    "fa": "درامز",
+    "en": "drums",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Schlange",
+    "ipa": "[ˈʃlaŋə]",
+    "fa": "مار / صف",
+    "en": "snake / queue",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "schlau",
+    "ipa": "[ʃlaʊ̯]",
+    "fa": "زرنگ / باهوش",
+    "en": "clever / cunning",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "schlimm",
+    "ipa": "[ʃlɪm]",
+    "fa": "بد / وخیم",
+    "en": "bad / severe",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Schloss",
+    "ipa": "[ʃlɔs]",
+    "fa": "قلعه / قفل",
+    "en": "castle / lock",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Schmuck",
+    "ipa": "[ʃmʊk]",
+    "fa": "جواهرات",
+    "en": "jewelry",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "schmutzig",
+    "ipa": "[ˈʃmʊtsɪç]",
+    "fa": "کثیف",
+    "en": "dirty",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Schnecke",
+    "ipa": "[ˈʃnɛkə]",
+    "fa": "حلزون",
+    "en": "snail",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Schneidebrett",
+    "ipa": "[ˈʃnaɪ̯dəbʁɛt]",
+    "fa": "تخته برش",
+    "en": "cutting board",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "schon immer",
+    "ipa": "[ʃoːn ˈʔɪmɐ]",
+    "fa": "همیشه (از قدیم)",
+    "en": "always / since forever",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "schrecklich",
+    "ipa": "[ˈʃʁɛklɪç]",
+    "fa": "وحشتناک",
+    "en": "terrible",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Schreibblock",
+    "ipa": "[ˈʃʁaɪ̯pblɔk]",
+    "fa": "دفترچه یادداشت (بلوکی)",
+    "en": "notepad",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Schublade",
+    "ipa": "[ˈʃuːpˌlaːdə]",
+    "fa": "کشو",
+    "en": "drawer",
+    "level": "A2",
+    "category": "منزل و خانه"
   }
 ]
