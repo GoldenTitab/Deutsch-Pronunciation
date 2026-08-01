@@ -4666,5 +4666,1029 @@
     "en": "Greek",
     "level": "A1",
     "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "gegen",
+    "ipa": "[ˈɡeːɡn̩]",
+    "fa": "علیه / در برابر",
+    "en": "against",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "gehen wir",
+    "ipa": "[ˈɡeːən viːɐ̯]",
+    "fa": "بریم",
+    "en": "let's go",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Glas",
+    "ipa": "[ɡlaːs]",
+    "fa": "لیوان / شیشه",
+    "en": "glass",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Großbritannien",
+    "ipa": "[ˈɡʁoːsbʁiˌtaniən]",
+    "fa": "بریتانیای کبیر",
+    "en": "Great Britain",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Größe",
+    "ipa": "[ˈɡʁøːsə]",
+    "fa": "اندازه / سایز",
+    "en": "size",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Gruppe",
+    "ipa": "[ˈɡʁʊpə]",
+    "fa": "گروه",
+    "en": "group",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "grüß dich",
+    "ipa": "[ɡʁyːs dɪç]",
+    "fa": "سلام (محاوره‌ای)",
+    "en": "hi (informal)",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Gummibärchen",
+    "ipa": "[ˈɡʊmiˌbɛːɐ̯çən]",
+    "fa": "پاستیل خرسی",
+    "en": "gummy bear",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Gurke",
+    "ipa": "[ˈɡʊʁkə]",
+    "fa": "خیار",
+    "en": "cucumber",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "gut gemacht",
+    "ipa": "[ɡuːt ɡəˈmaxt]",
+    "fa": "آفرین / خوب انجام دادی",
+    "en": "well done",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "gute Besserung",
+    "ipa": "[ˈɡuːtə ˈbɛsəʁʊŋ]",
+    "fa": "زود خوب شو",
+    "en": "get well soon",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "gute Reise",
+    "ipa": "[ˈɡuːtə ˈʁaɪ̯zə]",
+    "fa": "سفر خوبی داشته باشی",
+    "en": "have a good trip",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "guten Appetit",
+    "ipa": "[ˈɡuːtn̩ apeˈtiːt]",
+    "fa": "نوش جان",
+    "en": "enjoy your meal",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Haar",
+    "ipa": "[haːɐ̯]",
+    "fa": "مو",
+    "en": "hair",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Hähnchen",
+    "ipa": "[ˈhɛːnçən]",
+    "fa": "جوجه (کباب‌شده)",
+    "en": "roast chicken",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "halb",
+    "ipa": "[halp]",
+    "fa": "نصف",
+    "en": "half",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "hallo zusammen",
+    "ipa": "[ˈhalo tsuˈzamən]",
+    "fa": "سلام به همگی",
+    "en": "hello everyone",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Hals",
+    "ipa": "[hals]",
+    "fa": "گردن",
+    "en": "neck",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Haltestelle",
+    "ipa": "[ˈhaltəˌʃtɛlə]",
+    "fa": "ایستگاه (اتوبوس/تراموا)",
+    "en": "stop (bus/tram)",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Hamburg",
+    "ipa": "[ˈhamˌbʊʁk]",
+    "fa": "هامبورگ",
+    "en": "Hamburg",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Hand",
+    "ipa": "[hant]",
+    "fa": "دست",
+    "en": "hand",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Handtasche",
+    "ipa": "[ˈhanttaʃə]",
+    "fa": "کیف دستی",
+    "en": "handbag",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Handtuch",
+    "ipa": "[ˈhanttuːx]",
+    "fa": "حوله",
+    "en": "towel",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Handynummer",
+    "ipa": "[ˈhɛndiˌnʊmɐ]",
+    "fa": "شماره موبایل",
+    "en": "cell phone number",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Hauptbahnhof",
+    "ipa": "[ˈhaʊ̯ptbaːnhoːf]",
+    "fa": "ایستگاه مرکزی قطار",
+    "en": "central station",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Hauptstadt",
+    "ipa": "[ˈhaʊ̯ptʃtat]",
+    "fa": "پایتخت",
+    "en": "capital city",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Hausaufgabe",
+    "ipa": "[ˈhaʊ̯sʔaʊ̯fˌɡaːbə]",
+    "fa": "تکلیف مدرسه",
+    "en": "homework",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Haus",
+    "ipa": "[haʊ̯s]",
+    "fa": "خانه",
+    "en": "house",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Hausnummer",
+    "ipa": "[ˈhaʊ̯sˌnʊmɐ]",
+    "fa": "پلاک خانه",
+    "en": "house number",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Haustier",
+    "ipa": "[ˈhaʊ̯stiːɐ̯]",
+    "fa": "حیوان خانگی",
+    "en": "pet",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Heft",
+    "ipa": "[hɛft]",
+    "fa": "دفتر (مدرسه)",
+    "en": "notebook",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Heizung",
+    "ipa": "[ˈhaɪ̯tsʊŋ]",
+    "fa": "سیستم گرمایشی",
+    "en": "heating",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "hell",
+    "ipa": "[hɛl]",
+    "fa": "روشن",
+    "en": "bright / light",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Herr",
+    "ipa": "[hɛʁ]",
+    "fa": "آقا / جناب",
+    "en": "Mr. / gentleman",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Herz",
+    "ipa": "[hɛʁts]",
+    "fa": "قلب",
+    "en": "heart",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "herzlich willkommen",
+    "ipa": "[ˈhɛʁtslɪç vɪlˈkɔmən]",
+    "fa": "خیلی خوش آمدید",
+    "en": "warmly welcome",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "herzlichen Glückwunsch",
+    "ipa": "[ˈhɛʁtslɪçən ˈɡlʏkvʊnʃ]",
+    "fa": "تبریک می‌گویم",
+    "en": "congratulations",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "heute Abend",
+    "ipa": "[ˈhɔɪ̯tə ˈaːbn̩t]",
+    "fa": "امشب / امروز عصر",
+    "en": "this evening",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "heute Morgen",
+    "ipa": "[ˈhɔɪ̯tə ˈmɔʁɡn̩]",
+    "fa": "امروز صبح",
+    "en": "this morning",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "heute Nachmittag",
+    "ipa": "[ˈhɔɪ̯tə ˈnaːxmɪˌtaːk]",
+    "fa": "امروز بعدازظهر",
+    "en": "this afternoon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "heute Nacht",
+    "ipa": "[ˈhɔɪ̯tə naxt]",
+    "fa": "امشب (دیروقت)",
+    "en": "tonight",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "hey",
+    "ipa": "[heɪ̯]",
+    "fa": "هی (سلام محاوره‌ای)",
+    "en": "hey",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "hier",
+    "ipa": "[hiːɐ̯]",
+    "fa": "اینجا",
+    "en": "here",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Hilfe",
+    "ipa": "[ˈhɪlfə]",
+    "fa": "کمک",
+    "en": "help",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Honig",
+    "ipa": "[ˈhoːnɪç]",
+    "fa": "عسل",
+    "en": "honey",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Hose",
+    "ipa": "[ˈhoːzə]",
+    "fa": "شلوار",
+    "en": "pants / trousers",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Huhn",
+    "ipa": "[huːn]",
+    "fa": "مرغ",
+    "en": "chicken",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Hund",
+    "ipa": "[hʊnt]",
+    "fa": "سگ",
+    "en": "dog",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "hundertdreiundzwanzig",
+    "ipa": "[ˈhʊndɐtdʁaɪ̯ʔʊntˌtsvantsɪç]",
+    "fa": "صدوبیست‌وسه",
+    "en": "one hundred twenty-three",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Hut",
+    "ipa": "[huːt]",
+    "fa": "کلاه",
+    "en": "hat",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "ich freue mich",
+    "ipa": "[ɪç ˈfʁɔɪ̯ə mɪç]",
+    "fa": "خوشحالم / منتظرم",
+    "en": "I'm glad / looking forward to it",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "ich kann nicht",
+    "ipa": "[ɪç kan nɪçt]",
+    "fa": "نمی‌توانم",
+    "en": "I can't",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Idee",
+    "ipa": "[iˈdeː]",
+    "fa": "ایده",
+    "en": "idea",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "im Bett",
+    "ipa": "[ɪm bɛt]",
+    "fa": "در تخت‌خواب",
+    "en": "in bed",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Park",
+    "ipa": "[paʁk]",
+    "fa": "پارک",
+    "en": "park",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Schrank",
+    "ipa": "[ʃʁaŋk]",
+    "fa": "کمد / قفسه",
+    "en": "cabinet / closet",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "in einer Stunde",
+    "ipa": "[ɪn ˈaɪ̯nɐ ˈʃtʊndə]",
+    "fa": "یک ساعت دیگر",
+    "en": "in an hour",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "in Ordnung",
+    "ipa": "[ɪn ˈɔʁdnʊŋ]",
+    "fa": "باشه / مرتب",
+    "en": "okay / in order",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Indien",
+    "ipa": "[ˈɪndiən]",
+    "fa": "هند",
+    "en": "India",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "indisch",
+    "ipa": "[ˈɪndɪʃ]",
+    "fa": "هندی",
+    "en": "Indian",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Information",
+    "ipa": "[ɪnfɔʁmaˈtsjoːn]",
+    "fa": "اطلاعات",
+    "en": "information",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "ins",
+    "ipa": "[ɪns]",
+    "fa": "به داخل (مخفف in das)",
+    "en": "into the (contraction of in das)",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Internetseite",
+    "ipa": "[ˈɪntɐnɛtˌzaɪ̯tə]",
+    "fa": "وب‌سایت",
+    "en": "website",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Island",
+    "ipa": "[ˈiːslant]",
+    "fa": "ایسلند",
+    "en": "Iceland",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Jacke",
+    "ipa": "[ˈjakə]",
+    "fa": "ژاکت / کاپشن",
+    "en": "jacket",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Jahr",
+    "ipa": "[jaːɐ̯]",
+    "fa": "سال",
+    "en": "year",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Jeans",
+    "ipa": "[dʒiːns]",
+    "fa": "شلوار جین",
+    "en": "jeans",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "jeder",
+    "ipa": "[ˈjeːdɐ]",
+    "fa": "هر (کسی)",
+    "en": "each / every",
+    "level": "A1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "jetzt",
+    "ipa": "[jɛtst]",
+    "fa": "حالا / اکنون",
+    "en": "now",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Job",
+    "ipa": "[dʒɔp]",
+    "fa": "شغل",
+    "en": "job",
+    "level": "A1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "joggen",
+    "ipa": "[ˈdʒɔɡn̩]",
+    "fa": "دویدن آهسته",
+    "en": "to jog",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Joghurt",
+    "ipa": "[ˈjoːɡʊʁt]",
+    "fa": "ماست",
+    "en": "yogurt",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kaffeemaschine",
+    "ipa": "[ˈkafeːmaˌʃiːnə]",
+    "fa": "قهوه‌ساز",
+    "en": "coffee machine",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Kakao",
+    "ipa": "[kaˈkaʊ̯]",
+    "fa": "کاکائو",
+    "en": "cocoa",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kalender",
+    "ipa": "[kaˈlɛndɐ]",
+    "fa": "تقویم",
+    "en": "calendar",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Kamera",
+    "ipa": "[ˈkaməʁa]",
+    "fa": "دوربین",
+    "en": "camera",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Kanada",
+    "ipa": "[ˈkanada]",
+    "fa": "کانادا",
+    "en": "Canada",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Kanadier",
+    "ipa": "[kaˈnaːdiɐ]",
+    "fa": "کانادایی (مرد)",
+    "en": "Canadian (male)",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Kanadierin",
+    "ipa": "[kaˈnaːdiəʁɪn]",
+    "fa": "کانادایی (زن)",
+    "en": "Canadian (female)",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Karotte",
+    "ipa": "[kaˈʁɔtə]",
+    "fa": "هویج",
+    "en": "carrot",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Karte",
+    "ipa": "[ˈkaʁtə]",
+    "fa": "کارت / نقشه / بلیت",
+    "en": "card / map / ticket",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Kartoffel",
+    "ipa": "[kaʁˈtɔfl̩]",
+    "fa": "سیب‌زمینی",
+    "en": "potato",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Käse",
+    "ipa": "[ˈkɛːzə]",
+    "fa": "پنیر",
+    "en": "cheese",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Käsebrot",
+    "ipa": "[ˈkɛːzəbʁoːt]",
+    "fa": "نان‌وپنیر",
+    "en": "cheese sandwich",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kasse",
+    "ipa": "[ˈkasə]",
+    "fa": "صندوق (فروشگاه)",
+    "en": "cash register / checkout",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Katze",
+    "ipa": "[ˈkatsə]",
+    "fa": "گربه",
+    "en": "cat",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "kein Problem",
+    "ipa": "[kaɪ̯n pʁoˈbleːm]",
+    "fa": "مشکلی نیست",
+    "en": "no problem",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Keks",
+    "ipa": "[keːks]",
+    "fa": "بیسکویت",
+    "en": "cookie / biscuit",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Keller",
+    "ipa": "[ˈkɛlɐ]",
+    "fa": "زیرزمین",
+    "en": "basement / cellar",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Kellner",
+    "ipa": "[ˈkɛlnɐ]",
+    "fa": "پیشخدمت (مرد)",
+    "en": "waiter",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Kellnerin",
+    "ipa": "[ˈkɛlnəʁɪn]",
+    "fa": "پیشخدمت (زن)",
+    "en": "waitress",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "kennenlernen",
+    "ipa": "[ˈkɛnənˌlɛʁnən]",
+    "fa": "آشنا شدن",
+    "en": "to get to know / meet",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Kilo",
+    "ipa": "[ˈkiːlo]",
+    "fa": "کیلو",
+    "en": "kilo",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kilogramm",
+    "ipa": "[ˈkiːloɡʁam]",
+    "fa": "کیلوگرم",
+    "en": "kilogram",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kilometer",
+    "ipa": "[kiloˈmeːtɐ]",
+    "fa": "کیلومتر",
+    "en": "kilometer",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Kinderbuch",
+    "ipa": "[ˈkɪndɐbuːx]",
+    "fa": "کتاب کودک",
+    "en": "children's book",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Kindergarten",
+    "ipa": "[ˈkɪndɐˌɡaʁtn̩]",
+    "fa": "مهدکودک",
+    "en": "kindergarten",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Kinderzimmer",
+    "ipa": "[ˈkɪndɐˌtsɪmɐ]",
+    "fa": "اتاق بچه",
+    "en": "children's room",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Kino",
+    "ipa": "[ˈkiːno]",
+    "fa": "سینما",
+    "en": "cinema",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Kinokarte",
+    "ipa": "[ˈkiːnoˌkaʁtə]",
+    "fa": "بلیت سینما",
+    "en": "movie ticket",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Kiosk",
+    "ipa": "[ˈkiːɔsk]",
+    "fa": "کیوسک",
+    "en": "kiosk",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Kirche",
+    "ipa": "[ˈkɪʁçə]",
+    "fa": "کلیسا",
+    "en": "church",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "klar",
+    "ipa": "[klaːɐ̯]",
+    "fa": "واضح / روشن",
+    "en": "clear",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Klavier",
+    "ipa": "[klaˈviːɐ̯]",
+    "fa": "پیانو",
+    "en": "piano",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Kleidung",
+    "ipa": "[ˈklaɪ̯dʊŋ]",
+    "fa": "پوشاک / لباس",
+    "en": "clothing",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Knie",
+    "ipa": "[kniː]",
+    "fa": "زانو",
+    "en": "knee",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Knopf",
+    "ipa": "[knɔpf]",
+    "fa": "دکمه",
+    "en": "button",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Kochbuch",
+    "ipa": "[ˈkɔxbuːx]",
+    "fa": "کتاب آشپزی",
+    "en": "cookbook",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Koch",
+    "ipa": "[kɔx]",
+    "fa": "آشپز (مرد)",
+    "en": "cook / chef (male)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Köchin",
+    "ipa": "[ˈkœçɪn]",
+    "fa": "آشپز (زن)",
+    "en": "cook / chef (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Konto",
+    "ipa": "[ˈkɔnto]",
+    "fa": "حساب بانکی",
+    "en": "account",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Kopf",
+    "ipa": "[kɔpf]",
+    "fa": "سر",
+    "en": "head",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Kopfhörer",
+    "ipa": "[ˈkɔpfhøːʁɐ]",
+    "fa": "هدفون",
+    "en": "headphones",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Körper",
+    "ipa": "[ˈkœʁpɐ]",
+    "fa": "بدن",
+    "en": "body",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "kostenlos",
+    "ipa": "[ˈkɔstn̩loːs]",
+    "fa": "رایگان",
+    "en": "free of charge",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Krankenhaus",
+    "ipa": "[ˈkʁaŋkn̩haʊ̯s]",
+    "fa": "بیمارستان",
+    "en": "hospital",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Krankenschwester",
+    "ipa": "[ˈkʁaŋkn̩ˌʃvɛstɐ]",
+    "fa": "پرستار (زن)",
+    "en": "nurse (female)",
+    "level": "A1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Krankenwagen",
+    "ipa": "[ˈkʁaŋkn̩ˌvaːɡn̩]",
+    "fa": "آمبولانس",
+    "en": "ambulance",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Küche",
+    "ipa": "[ˈkʏçə]",
+    "fa": "آشپزخانه",
+    "en": "kitchen",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Kuchen",
+    "ipa": "[ˈkuːxn̩]",
+    "fa": "کیک",
+    "en": "cake",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Kugelschreiber",
+    "ipa": "[ˈkuːɡl̩ʃʁaɪ̯bɐ]",
+    "fa": "خودکار",
+    "en": "ballpoint pen",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Kuh",
+    "ipa": "[kuː]",
+    "fa": "گاو",
+    "en": "cow",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Ladegerät",
+    "ipa": "[ˈlaːdəɡəˌʁɛːt]",
+    "fa": "شارژر",
+    "en": "charger",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Laden",
+    "ipa": "[ˈlaːdn̩]",
+    "fa": "مغازه",
+    "en": "shop / store",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Lampe",
+    "ipa": "[ˈlampə]",
+    "fa": "چراغ / لامپ",
+    "en": "lamp",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Land",
+    "ipa": "[lant]",
+    "fa": "کشور / سرزمین",
+    "en": "country / land",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Landkarte",
+    "ipa": "[ˈlantkaʁtə]",
+    "fa": "نقشه",
+    "en": "map",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "lange",
+    "ipa": "[ˈlaŋə]",
+    "fa": "مدت‌زیادی / طولانی",
+    "en": "for a long time",
+    "level": "A1",
+    "category": "زمان و تقویم"
   }
 ]

@@ -3126,5 +3126,733 @@
     "en": "golden wedding anniversary",
     "level": "B1",
     "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Geist",
+    "ipa": "[ɡaɪ̯st]",
+    "fa": "روح / ذهن",
+    "en": "spirit / mind",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Grundlage",
+    "ipa": "[ˈɡʁʊntlaːɡə]",
+    "fa": "پایه / اساس",
+    "en": "basis / foundation",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Grundstück",
+    "ipa": "[ˈɡʁʊntʃtʏk]",
+    "fa": "زمین (ملک)",
+    "en": "property / plot of land",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Gründung",
+    "ipa": "[ˈɡʁʏndʊŋ]",
+    "fa": "تأسیس",
+    "en": "founding / establishment",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "haltbar",
+    "ipa": "[ˈhaltbaːɐ̯]",
+    "fa": "ماندگار / بادوام",
+    "en": "durable / non-perishable",
+    "level": "B1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Handbuch",
+    "ipa": "[ˈhantbuːx]",
+    "fa": "دفترچه راهنما",
+    "en": "manual / handbook",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Handgelenk",
+    "ipa": "[ˈhantɡəˌlɛŋk]",
+    "fa": "مچ دست",
+    "en": "wrist",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Händler",
+    "ipa": "[ˈhɛndlɐ]",
+    "fa": "فروشنده / تاجر",
+    "en": "dealer / trader",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Handlung",
+    "ipa": "[ˈhandlʊŋ]",
+    "fa": "داستان (فیلم/کتاب) / اقدام",
+    "en": "plot / action",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Handwerk",
+    "ipa": "[ˈhantvɛʁk]",
+    "fa": "صنعت‌دستی / حرفه",
+    "en": "craft / trade",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "harmlos",
+    "ipa": "[ˈhaʁmloːs]",
+    "fa": "بی‌آزار / بی‌ضرر",
+    "en": "harmless",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "häufig",
+    "ipa": "[ˈhɔɪ̯fɪç]",
+    "fa": "مکرر / معمولاً",
+    "en": "frequent / often",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Hauptfach",
+    "ipa": "[ˈhaʊ̯ptfax]",
+    "fa": "رشته اصلی تحصیلی",
+    "en": "major (field of study)",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Haushalt",
+    "ipa": "[ˈhaʊ̯shalt]",
+    "fa": "خانه‌داری / بودجه خانوار",
+    "en": "household / budget",
+    "level": "B1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "hauen",
+    "ipa": "[ˈhaʊ̯ən]",
+    "fa": "زدن / کتک زدن",
+    "en": "to hit / punch",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "heilig",
+    "ipa": "[ˈhaɪ̯lɪç]",
+    "fa": "مقدس",
+    "en": "holy / sacred",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Heimat",
+    "ipa": "[ˈhaɪ̯maːt]",
+    "fa": "وطن / زادگاه",
+    "en": "homeland",
+    "level": "B1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Heimtrainer",
+    "ipa": "[ˈhaɪ̯mtʁeːnɐ]",
+    "fa": "دستگاه بدنسازی خانگی (دوچرخه ثابت)",
+    "en": "exercise bike",
+    "level": "B1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Heimweh",
+    "ipa": "[ˈhaɪ̯mveː]",
+    "fa": "دلتنگی برای وطن",
+    "en": "homesickness",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "her",
+    "ipa": "[heːɐ̯]",
+    "fa": "به این‌طرف (به سمت گوینده)",
+    "en": "hither / this way",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "heraus",
+    "ipa": "[hɛˈʁaʊ̯s]",
+    "fa": "بیرون (به سمت بیرون)",
+    "en": "out (towards the speaker)",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "herausfinden",
+    "ipa": "[hɛˈʁaʊ̯sˌfɪndn̩]",
+    "fa": "فهمیدن / کشف کردن",
+    "en": "to find out",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Herkunft",
+    "ipa": "[ˈheːɐ̯kʊnft]",
+    "fa": "خاستگاه / اصلیت",
+    "en": "origin",
+    "level": "B1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "herrlich",
+    "ipa": "[ˈhɛʁlɪç]",
+    "fa": "باشکوه / فوق‌العاده",
+    "en": "marvelous / splendid",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Hersteller",
+    "ipa": "[ˈheːɐ̯ʃtɛlɐ]",
+    "fa": "تولیدکننده",
+    "en": "manufacturer",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "herum",
+    "ipa": "[hɛˈʁʊm]",
+    "fa": "دور و بر / اطراف",
+    "en": "around",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "herunter",
+    "ipa": "[hɛˈʁʊntɐ]",
+    "fa": "پایین (به سمت پایین)",
+    "en": "down (towards the speaker)",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "hervorragend",
+    "ipa": "[hɛɐ̯ˈfoːɐ̯ʁaːɡn̩t]",
+    "fa": "عالی / برجسته",
+    "en": "outstanding / excellent",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "heutig",
+    "ipa": "[ˈhɔɪ̯tɪç]",
+    "fa": "امروزی / کنونی",
+    "en": "today's / current",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "hierher",
+    "ipa": "[hiːɐ̯ˈheːɐ̯]",
+    "fa": "به اینجا",
+    "en": "to here",
+    "level": "B1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "hierzu",
+    "ipa": "[hiːɐ̯ˈtsuː]",
+    "fa": "در این مورد / برای این",
+    "en": "regarding this",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "hin",
+    "ipa": "[hɪn]",
+    "fa": "به‌آنجا (دور از گوینده)",
+    "en": "there / away (from speaker)",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "hinaus",
+    "ipa": "[hɪˈnaʊ̯s]",
+    "fa": "بیرون (به سمت بیرون، دور از گوینده)",
+    "en": "out (away from speaker)",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "hingegen",
+    "ipa": "[hɪnˈɡeːɡn̩]",
+    "fa": "در حالی که / اما",
+    "en": "whereas / however",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Hintergrund",
+    "ipa": "[ˈhɪntɐɡʁʊnt]",
+    "fa": "پس‌زمینه",
+    "en": "background",
+    "level": "B1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Hinweis",
+    "ipa": "[ˈhɪnvaɪ̯s]",
+    "fa": "راهنمایی / اشاره",
+    "en": "hint / notice",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "hinweisen",
+    "ipa": "[ˈhɪnˌvaɪ̯zn̩]",
+    "fa": "اشاره کردن / یادآوری کردن",
+    "en": "to point out",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "hinzu",
+    "ipa": "[hɪnˈtsuː]",
+    "fa": "علاوه بر این",
+    "en": "in addition",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Höhe",
+    "ipa": "[ˈhøːə]",
+    "fa": "ارتفاع",
+    "en": "height / altitude",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Horn",
+    "ipa": "[hɔʁn]",
+    "fa": "شاخ / بوق",
+    "en": "horn",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Hort",
+    "ipa": "[hɔʁt]",
+    "fa": "مهدکودک بعدازمدرسه",
+    "en": "after-school care center",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Hüfte",
+    "ipa": "[ˈhʏftə]",
+    "fa": "باسن / لگن",
+    "en": "hip",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "hüten",
+    "ipa": "[ˈhyːtn̩]",
+    "fa": "مراقبت کردن از / نگهبانی کردن",
+    "en": "to look after / guard",
+    "level": "B1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "individuell",
+    "ipa": "[ɪndiviˈdu̯ɛl]",
+    "fa": "فردی / اختصاصی",
+    "en": "individual",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Industrie",
+    "ipa": "[ɪndʊsˈtʁiː]",
+    "fa": "صنعت",
+    "en": "industry",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Inhaber",
+    "ipa": "[ˈɪnhaːbɐ]",
+    "fa": "مالک / دارنده",
+    "en": "owner / holder",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Inhalt",
+    "ipa": "[ˈɪnhalt]",
+    "fa": "محتوا",
+    "en": "content",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "inklusive",
+    "ipa": "[ɪnkluˈziːvə]",
+    "fa": "شامل / از جمله",
+    "en": "inclusive / included",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "innen",
+    "ipa": "[ˈɪnən]",
+    "fa": "درون / داخل",
+    "en": "inside",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Institut",
+    "ipa": "[ɪnstiˈtuːt]",
+    "fa": "مؤسسه",
+    "en": "institute",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "international",
+    "ipa": "[ɪntɐnatsioˈnaːl]",
+    "fa": "بین‌المللی",
+    "en": "international",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "inzwischen",
+    "ipa": "[ɪnˈtsvɪʃn̩]",
+    "fa": "در این میان / تا آن‌موقع",
+    "en": "meanwhile",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "irgendwann",
+    "ipa": "[ˈɪʁɡn̩tˌvan]",
+    "fa": "یک روزی / یک وقتی",
+    "en": "sometime",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "irgendwer",
+    "ipa": "[ˈɪʁɡn̩tˌveːɐ̯]",
+    "fa": "یه کسی",
+    "en": "someone (colloquial)",
+    "level": "B1",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Islam",
+    "ipa": "[ˈɪslaːm]",
+    "fa": "اسلام",
+    "en": "Islam",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Jahrestag",
+    "ipa": "[ˈjaːʁəstaːk]",
+    "fa": "سالگرد",
+    "en": "anniversary",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "jährlich",
+    "ipa": "[ˈjɛːɐ̯lɪç]",
+    "fa": "سالانه",
+    "en": "annual",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "je",
+    "ipa": "[jeː]",
+    "fa": "هر (یک) / تا به‌حال",
+    "en": "each / ever",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "jedenfalls",
+    "ipa": "[ˈjeːdn̩fals]",
+    "fa": "به‌هرحال",
+    "en": "in any case",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "jederzeit",
+    "ipa": "[ˈjeːdɐˌtsaɪ̯t]",
+    "fa": "هر زمان",
+    "en": "anytime",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "jedoch",
+    "ipa": "[jeˈdɔx]",
+    "fa": "با این‌حال / اما",
+    "en": "however",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "jemals",
+    "ipa": "[ˈjeːmaːls]",
+    "fa": "هرگز / تا به‌حال",
+    "en": "ever",
+    "level": "B1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Jude",
+    "ipa": "[ˈjuːdə]",
+    "fa": "یهودی",
+    "en": "Jewish person",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "jugendlich",
+    "ipa": "[ˈjuːɡn̩tlɪç]",
+    "fa": "جوان / نوجوان",
+    "en": "youthful / juvenile",
+    "level": "B1",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Kampf",
+    "ipa": "[kampf]",
+    "fa": "مبارزه / نبرد",
+    "en": "fight / struggle",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Kanal",
+    "ipa": "[kaˈnaːl]",
+    "fa": "کانال / آبراه",
+    "en": "canal / channel",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Kantine",
+    "ipa": "[kanˈtiːnə]",
+    "fa": "سلف‌سرویس / رستوران کارمندی",
+    "en": "cafeteria / canteen",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Karnevalsumzug",
+    "ipa": "[ˈkaʁnəvalsˌʔʊmtsuːk]",
+    "fa": "رژه کارناوال",
+    "en": "carnival parade",
+    "level": "B1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Katalog",
+    "ipa": "[kataˈloːk]",
+    "fa": "کاتالوگ",
+    "en": "catalog",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Kategorie",
+    "ipa": "[kateɡoˈʁiː]",
+    "fa": "دسته‌بندی / مقوله",
+    "en": "category",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Käufer",
+    "ipa": "[ˈkɔɪ̯fɐ]",
+    "fa": "خریدار",
+    "en": "buyer",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "kaum",
+    "ipa": "[kaʊ̯m]",
+    "fa": "به‌سختی / تقریباً هیچ",
+    "en": "hardly",
+    "level": "B1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Kinn",
+    "ipa": "[kɪn]",
+    "fa": "چانه",
+    "en": "chin",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Klassentreffen",
+    "ipa": "[ˈklasn̩ˌtʁɛfn̩]",
+    "fa": "گردهمایی هم‌کلاسی‌ها",
+    "en": "class reunion",
+    "level": "B1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Kleinanzeige",
+    "ipa": "[ˈklaɪ̯nʔantsaɪ̯ɡə]",
+    "fa": "آگهی طبقه‌بندی‌شده",
+    "en": "classified ad",
+    "level": "B1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "klingen",
+    "ipa": "[ˈklɪŋən]",
+    "fa": "به‌نظر رسیدن (صدا) / صدا دادن",
+    "en": "to sound",
+    "level": "B1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "knapp",
+    "ipa": "[knap]",
+    "fa": "کم / محدود / به‌سختی",
+    "en": "scarce / barely",
+    "level": "B1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Knöchel",
+    "ipa": "[ˈknœçl̩]",
+    "fa": "مچ پا",
+    "en": "ankle",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Kohle",
+    "ipa": "[ˈkoːlə]",
+    "fa": "زغال‌سنگ / (محاوره‌ای) پول",
+    "en": "coal / (slang) money",
+    "level": "B1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Kombination",
+    "ipa": "[kɔmbinaˈtsjoːn]",
+    "fa": "ترکیب",
+    "en": "combination",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Komponist",
+    "ipa": "[kɔmpoˈnɪst]",
+    "fa": "آهنگساز",
+    "en": "composer",
+    "level": "B1",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Kontrolle",
+    "ipa": "[kɔnˈtʁɔlə]",
+    "fa": "کنترل / بازرسی",
+    "en": "control / check",
+    "level": "B1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Konzept",
+    "ipa": "[kɔnˈtsɛpt]",
+    "fa": "مفهوم / طرح",
+    "en": "concept",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Kraft",
+    "ipa": "[kʁaft]",
+    "fa": "قدرت / نیرو",
+    "en": "strength / power",
+    "level": "B1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Kreis",
+    "ipa": "[kʁaɪ̯s]",
+    "fa": "دایره / حوزه",
+    "en": "circle / district",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Kritik",
+    "ipa": "[kʁiˈtiːk]",
+    "fa": "نقد / انتقاد",
+    "en": "criticism",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Kunststoff",
+    "ipa": "[ˈkʊnstʃtɔf]",
+    "fa": "پلاستیک",
+    "en": "plastic",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Kupfer",
+    "ipa": "[ˈkʊpfɐ]",
+    "fa": "مس",
+    "en": "copper",
+    "level": "B1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Lage",
+    "ipa": "[ˈlaːɡə]",
+    "fa": "موقعیت / وضعیت",
+    "en": "situation / location",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "lagern",
+    "ipa": "[ˈlaːɡɐn]",
+    "fa": "نگه‌داری کردن / انبار کردن",
+    "en": "to store",
+    "level": "B1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Länge",
+    "ipa": "[ˈlɛŋə]",
+    "fa": "طول",
+    "en": "length",
+    "level": "B1",
+    "category": "مفاهیم و اشیای روزمره"
   }
 ]

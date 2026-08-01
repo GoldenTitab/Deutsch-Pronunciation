@@ -2030,5 +2030,69 @@
     "en": "commandment / bid",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "hiermit",
+    "ipa": "[hiːɐ̯ˈmɪt]",
+    "fa": "بدین‌وسیله",
+    "en": "hereby",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Hinduismus",
+    "ipa": "[hɪnduˈɪsmʊs]",
+    "fa": "آیین هندو",
+    "en": "Hinduism",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "insbesondere",
+    "ipa": "[ɪnsbəˈzɔndəʁə]",
+    "fa": "به‌ویژه",
+    "en": "in particular",
+    "level": "B2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "keinerlei",
+    "ipa": "[ˈkaɪ̯nɐlaɪ̯]",
+    "fa": "هیچ‌گونه",
+    "en": "no ... whatsoever",
+    "level": "B2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Kompetenz",
+    "ipa": "[kɔmpeˈtɛnts]",
+    "fa": "شایستگی / صلاحیت",
+    "en": "competence",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Kooperation",
+    "ipa": "[koʔopəʁaˈtsjoːn]",
+    "fa": "همکاری",
+    "en": "cooperation",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "korrupt",
+    "ipa": "[kɔˈʁʊpt]",
+    "fa": "فاسد",
+    "en": "corrupt",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Kriterium",
+    "ipa": "[kʁiˈteːʁiʊm]",
+    "fa": "معیار",
+    "en": "criterion",
+    "level": "B2",
+    "category": "علم و فلسفه"
   }
 ]
