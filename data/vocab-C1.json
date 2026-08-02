@@ -5,7 +5,12 @@
     "fa": "دوگانگی / ضدونقیض",
     "en": "ambivalence",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Ambivalenz“.",
+    "exampleFa": "من واژه «دوگانگی / ضدونقیض» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ambivalenz”.",
+    "enNote": "Possible cognate with English “ambivalence”.",
+    "plural": "die Ambivalenzen"
   },
   {
     "word": "Analyse",
@@ -13,7 +18,13 @@
     "fa": "تحلیل",
     "en": "analysis",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Analyse“.",
+    "exampleFa": "من واژه «تحلیل» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Analyse”.",
+    "enNote": "Possible cognate with English “analysis”.",
+    "plural": "die Analysen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Angststörung",
@@ -21,7 +32,12 @@
     "fa": "اختلال اضطراب",
     "en": "anxiety disorder",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Angststörung“.",
+    "exampleFa": "من واژه «اختلال اضطراب» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Angststörung”.",
+    "plural": "die Angststörungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Asyl",
@@ -29,7 +45,13 @@
     "fa": "پناهندگی",
     "en": "asylum",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Asyl“.",
+    "exampleFa": "من واژه «پناهندگی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Asyl”.",
+    "enNote": "Possible cognate with English “asylum”.",
+    "plural": "die Asyle",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Ästhetik",
@@ -37,7 +59,12 @@
     "fa": "زیبایی‌شناسی",
     "en": "aesthetics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Ästhetik“.",
+    "exampleFa": "من واژه «زیبایی‌شناسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ästhetik”.",
+    "plural": "die Ästhetike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Auseinandersetzung",
@@ -45,7 +72,12 @@
     "fa": "بحث / برخورد / رویارویی",
     "en": "confrontation / debate",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Auseinandersetzung“.",
+    "exampleFa": "من واژه «بحث / برخورد / رویارویی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Auseinandersetzung”.",
+    "plural": "die Auseinandersetzungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "authentisch",
@@ -53,7 +85,11 @@
     "fa": "اصیل / معتبر",
     "en": "authentic",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist authentisch.",
+    "exampleFa": "این اصیل / معتبر است.",
+    "exampleEn": "That is authentic.",
+    "enNote": "Possible cognate with English “authentic”."
   },
   {
     "word": "Autoritarismus",
@@ -61,7 +97,12 @@
     "fa": "استبداد",
     "en": "authoritarianism",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Autoritarismus“.",
+    "exampleFa": "من واژه «استبداد» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Autoritarismus”.",
+    "plural": "die Autoritarismuse",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Beweis",
@@ -69,7 +110,12 @@
     "fa": "دلیل / اثبات",
     "en": "proof / evidence",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Beweis“.",
+    "exampleFa": "من واژه «دلیل / اثبات» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Beweis”.",
+    "plural": "die Beweise",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Blockchain",
@@ -77,7 +123,13 @@
     "fa": "زنجیره‌بلوک",
     "en": "blockchain",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Blockchain“.",
+    "exampleFa": "من واژه «زنجیره‌بلوک» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Blockchain”.",
+    "enNote": "Possible cognate with English “blockchain”.",
+    "plural": "die Blockchainnen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Bürgerschaft",
@@ -85,7 +137,12 @@
     "fa": "شهروندی (مجموعه شهروندان)",
     "en": "citizenship / citizenry",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Bürgerschaft“.",
+    "exampleFa": "من واژه «شهروندی (مجموعه شهروندان)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Bürgerschaft”.",
+    "plural": "die Bürgerschaften",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Burnout",
@@ -93,7 +150,13 @@
     "fa": "فرسودگی شغلی",
     "en": "burnout",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Burnout“.",
+    "exampleFa": "من واژه «فرسودگی شغلی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Burnout”.",
+    "enNote": "Possible cognate with English “burnout”.",
+    "plural": "die Burnoute",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "CO2-Emission",
@@ -101,7 +164,12 @@
     "fa": "انتشار دی‌اکسید کربن",
     "en": "CO2 emission",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „CO2-Emission“.",
+    "exampleFa": "من واژه «انتشار دی‌اکسید کربن» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “CO2-Emission”.",
+    "plural": "die CO2-Emissionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "CO2-Fußabdruck",
@@ -109,7 +177,12 @@
     "fa": "ردپای کربن",
     "en": "carbon footprint",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „CO2-Fußabdruck“.",
+    "exampleFa": "من واژه «ردپای کربن» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “CO2-Fußabdruck”.",
+    "plural": "die CO2-Fußabdrucke",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Cyberkriminalität",
@@ -117,7 +190,13 @@
     "fa": "جرایم سایبری",
     "en": "cybercrime",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Cyberkriminalität“.",
+    "exampleFa": "من واژه «جرایم سایبری» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Cyberkriminalität”.",
+    "enNote": "Possible cognate with English “cybercrime”.",
+    "plural": "die Cyberkriminalitäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Datenschutz",
@@ -125,7 +204,12 @@
     "fa": "حفاظت از داده",
     "en": "data protection",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Datenschutz“.",
+    "exampleFa": "من واژه «حفاظت از داده» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Datenschutz”.",
+    "plural": "die Datenschutze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Deflation",
@@ -133,7 +217,13 @@
     "fa": "کاهش تورم",
     "en": "deflation",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Deflation“.",
+    "exampleFa": "من واژه «کاهش تورم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Deflation”.",
+    "enNote": "Possible cognate with English “deflation”.",
+    "plural": "die Deflationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Depression",
@@ -141,7 +231,13 @@
     "fa": "افسردگی",
     "en": "depression",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Depression“.",
+    "exampleFa": "من واژه «افسردگی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Depression”.",
+    "enNote": "Possible cognate with English “depression”.",
+    "plural": "die Depressionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "destabilisieren",
@@ -149,7 +245,11 @@
     "fa": "بی‌ثبات کردن",
     "en": "to destabilize",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich will destabilisieren.",
+    "exampleFa": "می‌خواهم بی‌ثبات کردن.",
+    "exampleEn": "I want to destabilize.",
+    "enNote": "Possible cognate with English “to destabilize”."
   },
   {
     "word": "Diagnose",
@@ -157,7 +257,13 @@
     "fa": "تشخیص (پزشکی)",
     "en": "diagnosis",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Diagnose“.",
+    "exampleFa": "من واژه «تشخیص (پزشکی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Diagnose”.",
+    "enNote": "Possible cognate with English “diagnosis”.",
+    "plural": "die Diagnosen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Dialektik",
@@ -165,7 +271,13 @@
     "fa": "دیالکتیک",
     "en": "dialectics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Dialektik“.",
+    "exampleFa": "من واژه «دیالکتیک» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Dialektik”.",
+    "enNote": "Possible cognate with English “dialectics”.",
+    "plural": "die Dialektike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Diplomatie",
@@ -173,7 +285,13 @@
     "fa": "دیپلماسی",
     "en": "diplomacy",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Diplomatie“.",
+    "exampleFa": "من واژه «دیپلماسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Diplomatie”.",
+    "enNote": "Possible cognate with English “diplomacy”.",
+    "plural": "die Diplomatien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "divers",
@@ -181,7 +299,11 @@
     "fa": "گوناگون / متنوع",
     "en": "diverse",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist divers.",
+    "exampleFa": "این گوناگون / متنوع است.",
+    "exampleEn": "That is diverse.",
+    "enNote": "Possible cognate with English “diverse”."
   },
   {
     "word": "Dividende",
@@ -189,7 +311,13 @@
     "fa": "سود سهام",
     "en": "dividend",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Dividende“.",
+    "exampleFa": "من واژه «سود سهام» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Dividende”.",
+    "enNote": "Possible cognate with English “dividend”.",
+    "plural": "die Dividenden",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Dynamik",
@@ -197,7 +325,13 @@
     "fa": "پویایی",
     "en": "dynamics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Dynamik“.",
+    "exampleFa": "من واژه «پویایی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Dynamik”.",
+    "enNote": "Possible cognate with English “dynamics”.",
+    "plural": "die Dynamike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Emotion",
@@ -205,7 +339,13 @@
     "fa": "احساس (هیجان)",
     "en": "emotion",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Emotion“.",
+    "exampleFa": "من واژه «احساس (هیجان)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Emotion”.",
+    "enNote": "Possible cognate with English “emotion”.",
+    "plural": "die Emotionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Emotionsregulation",
@@ -213,7 +353,13 @@
     "fa": "تنظیم هیجانات",
     "en": "emotion regulation",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Emotionsregulation“.",
+    "exampleFa": "من واژه «تنظیم هیجانات» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Emotionsregulation”.",
+    "enNote": "Possible cognate with English “emotion regulation”.",
+    "plural": "die Emotionsregulationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Energiewende",
@@ -221,7 +367,13 @@
     "fa": "گذار انرژی",
     "en": "energy transition",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Energiewende“.",
+    "exampleFa": "من واژه «گذار انرژی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Energiewende”.",
+    "enNote": "Possible cognate with English “energy transition”.",
+    "plural": "die Energiewenden",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Epidemie",
@@ -229,7 +381,13 @@
     "fa": "همه‌گیری (محلی)",
     "en": "epidemic",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Epidemie“.",
+    "exampleFa": "من واژه «همه‌گیری (محلی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Epidemie”.",
+    "enNote": "Possible cognate with English “epidemic”.",
+    "plural": "die Epidemien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Epistemologie",
@@ -237,7 +395,12 @@
     "fa": "شناخت‌شناسی",
     "en": "epistemology",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Epistemologie“.",
+    "exampleFa": "من واژه «شناخت‌شناسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Epistemologie”.",
+    "enNote": "Possible cognate with English “epistemology”.",
+    "plural": "die Epistemologien"
   },
   {
     "word": "Ergebnis",
@@ -245,7 +408,12 @@
     "fa": "نتیجه",
     "en": "result",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Ergebnis“.",
+    "exampleFa": "من واژه «نتیجه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ergebnis”.",
+    "plural": "die Ergebnise",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Erkenntnis",
@@ -253,7 +421,12 @@
     "fa": "شناخت / دریافت",
     "en": "cognition / insight",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Erkenntnis“.",
+    "exampleFa": "من واژه «شناخت / دریافت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Erkenntnis”.",
+    "plural": "die Erkenntnise",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Ethik",
@@ -261,7 +434,13 @@
     "fa": "اخلاق (علمی)",
     "en": "ethics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Ethik“.",
+    "exampleFa": "من واژه «اخلاق (علمی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ethik”.",
+    "enNote": "Possible cognate with English “ethics”.",
+    "plural": "die Ethike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Existenz",
@@ -269,7 +448,13 @@
     "fa": "وجود",
     "en": "existence",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Existenz“.",
+    "exampleFa": "من واژه «وجود» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Existenz”.",
+    "enNote": "Possible cognate with English “existence”.",
+    "plural": "die Existenze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Experiment",
@@ -277,7 +462,13 @@
     "fa": "آزمایش",
     "en": "experiment",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Experiment“.",
+    "exampleFa": "من واژه «آزمایش» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Experiment”.",
+    "enNote": "Possible cognate with English “experiment”.",
+    "plural": "die Experimente",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "explizieren",
@@ -285,7 +476,11 @@
     "fa": "تصریح کردن / آشکار ساختن",
     "en": "to explicate",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will explizieren.",
+    "exampleFa": "می‌خواهم تصریح کردن / آشکار ساختن.",
+    "exampleEn": "I want to explicate.",
+    "enNote": "Possible cognate with English “to explicate”."
   },
   {
     "word": "extrapolieren",
@@ -293,7 +488,11 @@
     "fa": "برون‌یابی کردن",
     "en": "to extrapolate",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will extrapolieren.",
+    "exampleFa": "می‌خواهم برون‌یابی کردن.",
+    "exampleEn": "I want to extrapolate.",
+    "enNote": "Possible cognate with English “to extrapolate”."
   },
   {
     "word": "Flüchtling",
@@ -301,7 +500,12 @@
     "fa": "پناهنده",
     "en": "refugee",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Flüchtling“.",
+    "exampleFa": "من واژه «پناهنده» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Flüchtling”.",
+    "plural": "die Flüchtlinge",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Föderalismus",
@@ -309,7 +513,12 @@
     "fa": "فدرالیسم",
     "en": "federalism",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Föderalismus“.",
+    "exampleFa": "من واژه «فدرالیسم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Föderalismus”.",
+    "plural": "die Föderalismuse",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Gedanke",
@@ -317,7 +526,12 @@
     "fa": "اندیشه",
     "en": "thought",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Gedanke“.",
+    "exampleFa": "من واژه «اندیشه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Gedanke”.",
+    "plural": "die Gedanken",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Geist",
@@ -325,7 +539,12 @@
     "fa": "روح / ذهن",
     "en": "spirit / mind",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Geist“.",
+    "exampleFa": "من واژه «روح / ذهن» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Geist”.",
+    "plural": "die Geiste",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Generation",
@@ -333,7 +552,13 @@
     "fa": "نسل",
     "en": "generation",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Generation“.",
+    "exampleFa": "من واژه «نسل» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Generation”.",
+    "enNote": "Possible cognate with English “generation”.",
+    "plural": "die Generationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Gentechnik",
@@ -341,7 +566,12 @@
     "fa": "مهندسی ژنتیک",
     "en": "genetic engineering",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Gentechnik“.",
+    "exampleFa": "من واژه «مهندسی ژنتیک» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Gentechnik”.",
+    "plural": "die Gentechnike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Gesundheitssystem",
@@ -349,7 +579,12 @@
     "fa": "سیستم بهداشت و درمان",
     "en": "health system",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Gesundheitssystem“.",
+    "exampleFa": "من واژه «سیستم بهداشت و درمان» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Gesundheitssystem”.",
+    "plural": "die Gesundheitssysteme",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Gewaltenteilung",
@@ -357,7 +592,12 @@
     "fa": "تفکیک قوا",
     "en": "separation of powers",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Gewaltenteilung“.",
+    "exampleFa": "من واژه «تفکیک قوا» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Gewaltenteilung”.",
+    "plural": "die Gewaltenteilungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Globalisierung",
@@ -365,7 +605,13 @@
     "fa": "جهانی‌سازی",
     "en": "globalization",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Globalisierung“.",
+    "exampleFa": "من واژه «جهانی‌سازی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Globalisierung”.",
+    "enNote": "Possible cognate with English “globalization”.",
+    "plural": "die Globalisierungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Herausforderung",
@@ -373,7 +619,12 @@
     "fa": "چالش",
     "en": "challenge",
     "level": "C1",
-    "category": "مفاهیم و اشیای روزمره"
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Ich lerne das Wort „Herausforderung“.",
+    "exampleFa": "من واژه «چالش» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Herausforderung”.",
+    "plural": "die Herausforderungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Hermeneutik",
@@ -381,7 +632,13 @@
     "fa": "هرمنوتیک (علم تفسیر)",
     "en": "hermeneutics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Hermeneutik“.",
+    "exampleFa": "من واژه «هرمنوتیک (علم تفسیر)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Hermeneutik”.",
+    "enNote": "Possible cognate with English “hermeneutics”.",
+    "plural": "die Hermeneutike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Hypothese",
@@ -389,7 +646,13 @@
     "fa": "فرضیه",
     "en": "hypothesis",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Hypothese“.",
+    "exampleFa": "من واژه «فرضیه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Hypothese”.",
+    "enNote": "Possible cognate with English “hypothesis”.",
+    "plural": "die Hypothesen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "implizieren",
@@ -397,7 +660,11 @@
     "fa": "دلالت داشتن / نتیجه دادن",
     "en": "to imply",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will implizieren.",
+    "exampleFa": "می‌خواهم دلالت داشتن / نتیجه دادن.",
+    "exampleEn": "I want to imply.",
+    "enNote": "Possible cognate with English “to imply”."
   },
   {
     "word": "Impfung",
@@ -405,7 +672,12 @@
     "fa": "واکسیناسیون",
     "en": "vaccination",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Impfung“.",
+    "exampleFa": "من واژه «واکسیناسیون» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Impfung”.",
+    "plural": "die Impfungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Indiz",
@@ -413,7 +685,13 @@
     "fa": "نشانه / قرینه",
     "en": "indication / clue",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Indiz“.",
+    "exampleFa": "من واژه «نشانه / قرینه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Indiz”.",
+    "enNote": "Possible cognate with English “indication / clue”.",
+    "plural": "die Indize",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "inkohärent",
@@ -421,7 +699,10 @@
     "fa": "ناهماهنگ / ناپیوسته",
     "en": "incoherent",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist inkohärent.",
+    "exampleFa": "این ناهماهنگ / ناپیوسته است.",
+    "exampleEn": "That is incoherent."
   },
   {
     "word": "inkonsistent",
@@ -429,7 +710,10 @@
     "fa": "ناسازگار",
     "en": "inconsistent",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist inkonsistent.",
+    "exampleFa": "این ناسازگار است.",
+    "exampleEn": "That is inconsistent."
   },
   {
     "word": "innovativ",
@@ -437,7 +721,11 @@
     "fa": "نوآورانه",
     "en": "innovative",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist innovativ.",
+    "exampleFa": "این نوآورانه است.",
+    "exampleEn": "That is innovative.",
+    "enNote": "Possible cognate with English “innovative”."
   },
   {
     "word": "Integration",
@@ -445,7 +733,13 @@
     "fa": "ادغام / یکپارچه‌سازی",
     "en": "integration",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Integration“.",
+    "exampleFa": "من واژه «ادغام / یکپارچه‌سازی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Integration”.",
+    "enNote": "Possible cognate with English “integration”.",
+    "plural": "die Integrationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Intelligenz",
@@ -453,7 +747,13 @@
     "fa": "هوش",
     "en": "intelligence",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Intelligenz“.",
+    "exampleFa": "من واژه «هوش» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Intelligenz”.",
+    "enNote": "Possible cognate with English “intelligence”.",
+    "plural": "die Intelligenze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Interpretation",
@@ -461,7 +761,13 @@
     "fa": "تفسیر",
     "en": "interpretation",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Interpretation“.",
+    "exampleFa": "من واژه «تفسیر» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Interpretation”.",
+    "enNote": "Possible cognate with English “interpretation”.",
+    "plural": "die Interpretationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "intransparent",
@@ -469,7 +775,10 @@
     "fa": "غیرشفاف",
     "en": "non-transparent",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist intransparent.",
+    "exampleFa": "این غیرشفاف است.",
+    "exampleEn": "That is non-transparent."
   },
   {
     "word": "Klimaschutz",
@@ -477,7 +786,12 @@
     "fa": "حفاظت از اقلیم",
     "en": "climate protection",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Klimaschutz“.",
+    "exampleFa": "من واژه «حفاظت از اقلیم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Klimaschutz”.",
+    "plural": "die Klimaschutze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Kognition",
@@ -485,7 +799,12 @@
     "fa": "شناخت (ذهنی)",
     "en": "cognition",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Kognition“.",
+    "exampleFa": "من واژه «شناخت (ذهنی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kognition”.",
+    "plural": "die Kognitionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "kohärent",
@@ -493,7 +812,10 @@
     "fa": "هماهنگ / منسجم",
     "en": "coherent",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist kohärent.",
+    "exampleFa": "این هماهنگ / منسجم است.",
+    "exampleEn": "That is coherent."
   },
   {
     "word": "Kohärenz",
@@ -501,7 +823,12 @@
     "fa": "انسجام",
     "en": "coherence",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Kohärenz“.",
+    "exampleFa": "من واژه «انسجام» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kohärenz”.",
+    "plural": "die Kohärenze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Konjunktur",
@@ -509,7 +836,12 @@
     "fa": "رونق اقتصادی",
     "en": "economic boom / cycle",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Konjunktur“.",
+    "exampleFa": "من واژه «رونق اقتصادی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Konjunktur”.",
+    "plural": "die Konjunkture",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "konsistent",
@@ -517,7 +849,10 @@
     "fa": "سازگار / یکدست",
     "en": "consistent",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist konsistent.",
+    "exampleFa": "این سازگار / یکدست است.",
+    "exampleEn": "That is consistent."
   },
   {
     "word": "Kontinuität",
@@ -525,7 +860,12 @@
     "fa": "تداوم",
     "en": "continuity",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Kontinuität“.",
+    "exampleFa": "من واژه «تداوم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kontinuität”.",
+    "plural": "die Kontinuitäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "kontrovers",
@@ -533,7 +873,10 @@
     "fa": "بحث‌برانگیز",
     "en": "controversial",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist kontrovers.",
+    "exampleFa": "این بحث‌برانگیز است.",
+    "exampleEn": "That is controversial."
   },
   {
     "word": "kontrastieren",
@@ -541,7 +884,10 @@
     "fa": "مقابله کردن / تقابل دادن",
     "en": "to contrast",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will kontrastieren.",
+    "exampleFa": "می‌خواهم مقابله کردن / تقابل دادن.",
+    "exampleEn": "I want to contrast."
   },
   {
     "word": "Krankenkasse",
@@ -549,7 +895,12 @@
     "fa": "بیمه سلامت",
     "en": "health insurance",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Krankenkasse“.",
+    "exampleFa": "من واژه «بیمه سلامت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Krankenkasse”.",
+    "plural": "die Krankenkassen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Kredit",
@@ -557,7 +908,12 @@
     "fa": "اعتبار (وام)",
     "en": "credit",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Kredit“.",
+    "exampleFa": "من واژه «اعتبار (وام)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kredit”.",
+    "plural": "die Kredite",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Kreislaufwirtschaft",
@@ -565,7 +921,12 @@
     "fa": "اقتصاد چرخشی",
     "en": "circular economy",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Kreislaufwirtschaft“.",
+    "exampleFa": "من واژه «اقتصاد چرخشی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kreislaufwirtschaft”.",
+    "plural": "die Kreislaufwirtschaften",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Kryptowährung",
@@ -573,7 +934,12 @@
     "fa": "ارز دیجیتال",
     "en": "cryptocurrency",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Kryptowährung“.",
+    "exampleFa": "من واژه «ارز دیجیتال» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Kryptowährung”.",
+    "plural": "die Kryptowährungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Künstliche Intelligenz",
@@ -581,7 +947,10 @@
     "fa": "هوش مصنوعی",
     "en": "artificial intelligence",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Künstliche Intelligenz",
+    "exampleFa": "هوش مصنوعی",
+    "exampleEn": "artificial intelligence"
   },
   {
     "word": "Lebensqualität",
@@ -589,7 +958,12 @@
     "fa": "کیفیت زندگی",
     "en": "quality of life",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Lebensqualität“.",
+    "exampleFa": "من واژه «کیفیت زندگی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Lebensqualität”.",
+    "plural": "die Lebensqualitäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "legitimieren",
@@ -597,7 +971,11 @@
     "fa": "مشروعیت بخشیدن",
     "en": "to legitimize",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich will legitimieren.",
+    "exampleFa": "می‌خواهم مشروعیت بخشیدن.",
+    "exampleEn": "I want to legitimize.",
+    "enNote": "Possible cognate with English “to legitimize”."
   },
   {
     "word": "Lösungsansatz",
@@ -605,7 +983,12 @@
     "fa": "رویکرد حل مسئله",
     "en": "approach to solution",
     "level": "C1",
-    "category": "مفاهیم و اشیای روزمره"
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Ich lerne das Wort „Lösungsansatz“.",
+    "exampleFa": "من واژه «رویکرد حل مسئله» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Lösungsansatz”.",
+    "plural": "die Lösungsansatze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Machine Learning",
@@ -613,7 +996,11 @@
     "fa": "یادگیری ماشین",
     "en": "machine learning",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Machine Learning",
+    "exampleFa": "یادگیری ماشین",
+    "exampleEn": "machine learning",
+    "enNote": "Possible cognate with English “machine learning”."
   },
   {
     "word": "Makroökonomie",
@@ -621,7 +1008,12 @@
     "fa": "اقتصاد کلان",
     "en": "macroeconomics",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Makroökonomie“.",
+    "exampleFa": "من واژه «اقتصاد کلان» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Makroökonomie”.",
+    "plural": "die Makroökonomien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Methode",
@@ -629,7 +1021,13 @@
     "fa": "روش",
     "en": "method",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Methode“.",
+    "exampleFa": "من واژه «روش» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Methode”.",
+    "enNote": "Possible cognate with English “method”.",
+    "plural": "die Methoden",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Migration",
@@ -637,7 +1035,13 @@
     "fa": "مهاجرت",
     "en": "migration",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Migration“.",
+    "exampleFa": "من واژه «مهاجرت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Migration”.",
+    "enNote": "Possible cognate with English “migration”.",
+    "plural": "die Migrationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Mikroökonomie",
@@ -645,7 +1049,12 @@
     "fa": "اقتصاد خرد",
     "en": "microeconomics",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Mikroökonomie“.",
+    "exampleFa": "من واژه «اقتصاد خرد» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Mikroökonomie”.",
+    "plural": "die Mikroökonomien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Moral",
@@ -653,7 +1062,13 @@
     "fa": "اخلاقیات",
     "en": "morality",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Moral“.",
+    "exampleFa": "من واژه «اخلاقیات» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Moral”.",
+    "enNote": "Possible cognate with English “morality”.",
+    "plural": "die Morale",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Motivation",
@@ -661,7 +1076,13 @@
     "fa": "انگیزه",
     "en": "motivation",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Motivation“.",
+    "exampleFa": "من واژه «انگیزه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Motivation”.",
+    "enNote": "Possible cognate with English “motivation”.",
+    "plural": "die Motivationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Multikulti",
@@ -669,7 +1090,13 @@
     "fa": "چندفرهنگی",
     "en": "multicultural",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Multikulti“.",
+    "exampleFa": "من واژه «چندفرهنگی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Multikulti”.",
+    "enNote": "Possible cognate with English “multicultural”.",
+    "plural": "die Multikultie",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Nachhaltigkeitsziele",
@@ -677,7 +1104,12 @@
     "fa": "اهداف توسعه پایدار",
     "en": "sustainable development goals",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Nachhaltigkeitsziele“.",
+    "exampleFa": "من واژه «اهداف توسعه پایدار» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Nachhaltigkeitsziele”.",
+    "plural": "die Nachhaltigkeitszielen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Nanotechnologie",
@@ -685,7 +1117,13 @@
     "fa": "نانوتکنولوژی",
     "en": "nanotechnology",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Nanotechnologie“.",
+    "exampleFa": "من واژه «نانوتکنولوژی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Nanotechnologie”.",
+    "enNote": "Possible cognate with English “nanotechnology”.",
+    "plural": "die Nanotechnologien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Ökologie",
@@ -693,7 +1131,12 @@
     "fa": "بوم‌شناسی",
     "en": "ecology",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Ökologie“.",
+    "exampleFa": "من واژه «بوم‌شناسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ökologie”.",
+    "plural": "die Ökologien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Ontologie",
@@ -701,7 +1144,13 @@
     "fa": "هستی‌شناسی",
     "en": "ontology",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Ontologie“.",
+    "exampleFa": "من واژه «هستی‌شناسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Ontologie”.",
+    "enNote": "Possible cognate with English “ontology”.",
+    "plural": "die Ontologien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Opposition",
@@ -709,7 +1158,13 @@
     "fa": "اپوزیسیون",
     "en": "opposition",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Opposition“.",
+    "exampleFa": "من واژه «اپوزیسیون» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Opposition”.",
+    "enNote": "Possible cognate with English “opposition”.",
+    "plural": "die Oppositionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Pandemie",
@@ -717,7 +1172,13 @@
     "fa": "پاندمی (همه‌گیری جهانی)",
     "en": "pandemic",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Pandemie“.",
+    "exampleFa": "من واژه «پاندمی (همه‌گیری جهانی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Pandemie”.",
+    "enNote": "Possible cognate with English “pandemic”.",
+    "plural": "die Pandemien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Paradigma",
@@ -725,7 +1186,13 @@
     "fa": "الگو / پارادایم",
     "en": "paradigm",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Paradigma“.",
+    "exampleFa": "من واژه «الگو / پارادایم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Paradigma”.",
+    "enNote": "Possible cognate with English “paradigm”.",
+    "plural": "die Paradigmae",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Paradoxon",
@@ -733,7 +1200,13 @@
     "fa": "متناقض‌نما",
     "en": "paradox",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Paradoxon“.",
+    "exampleFa": "من واژه «متناقض‌نما» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Paradoxon”.",
+    "enNote": "Possible cognate with English “paradox”.",
+    "plural": "die Paradoxone",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Persönlichkeit",
@@ -741,7 +1214,13 @@
     "fa": "شخصیت",
     "en": "personality",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Persönlichkeit“.",
+    "exampleFa": "من واژه «شخصیت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Persönlichkeit”.",
+    "enNote": "Possible cognate with English “personality”.",
+    "plural": "die Persönlichkeiten",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "postulieren",
@@ -749,7 +1228,11 @@
     "fa": "فرض کردن / مسلم گرفتن",
     "en": "to postulate",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will postulieren.",
+    "exampleFa": "می‌خواهم فرض کردن / مسلم گرفتن.",
+    "exampleEn": "I want to postulate.",
+    "enNote": "Possible cognate with English “to postulate”."
   },
   {
     "word": "Prävention",
@@ -757,7 +1240,12 @@
     "fa": "پیشگیری",
     "en": "prevention",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Prävention“.",
+    "exampleFa": "من واژه «پیشگیری» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Prävention”.",
+    "plural": "die Präventionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Psychotherapie",
@@ -765,7 +1253,13 @@
     "fa": "روان‌درمانی",
     "en": "psychotherapy",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Psychotherapie“.",
+    "exampleFa": "من واژه «روان‌درمانی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Psychotherapie”.",
+    "enNote": "Possible cognate with English “psychotherapy”.",
+    "plural": "die Psychotherapien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Quantenphysik",
@@ -773,7 +1267,13 @@
     "fa": "فیزیک کوانتوم",
     "en": "quantum physics",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Quantenphysik“.",
+    "exampleFa": "من واژه «فیزیک کوانتوم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Quantenphysik”.",
+    "enNote": "Possible cognate with English “quantum physics”.",
+    "plural": "die Quantenphysike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Rechtsstaat",
@@ -781,7 +1281,12 @@
     "fa": "دولت قانون‌مدار",
     "en": "constitutional state",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Rechtsstaat“.",
+    "exampleFa": "من واژه «دولت قانون‌مدار» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Rechtsstaat”.",
+    "plural": "die Rechtsstaate",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "reflektieren",
@@ -789,7 +1294,11 @@
     "fa": "بازتاب دادن / تأمل کردن",
     "en": "to reflect",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will reflektieren.",
+    "exampleFa": "می‌خواهم بازتاب دادن / تأمل کردن.",
+    "exampleEn": "I want to reflect.",
+    "enNote": "Possible cognate with English “to reflect”."
   },
   {
     "word": "Rehabilitation",
@@ -797,7 +1306,13 @@
     "fa": "توانبخشی",
     "en": "rehabilitation",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Rehabilitation“.",
+    "exampleFa": "من واژه «توانبخشی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Rehabilitation”.",
+    "enNote": "Possible cognate with English “rehabilitation”.",
+    "plural": "die Rehabilitationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Rezession",
@@ -805,7 +1320,12 @@
     "fa": "رکود اقتصادی",
     "en": "recession",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Rezession“.",
+    "exampleFa": "من واژه «رکود اقتصادی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Rezession”.",
+    "plural": "die Rezessionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Robotik",
@@ -813,7 +1333,13 @@
     "fa": "رباتیک",
     "en": "robotics",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Robotik“.",
+    "exampleFa": "من واژه «رباتیک» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Robotik”.",
+    "enNote": "Possible cognate with English “robotics”.",
+    "plural": "die Robotike",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Seele",
@@ -821,7 +1347,12 @@
     "fa": "روان (روح)",
     "en": "soul / psyche",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Seele“.",
+    "exampleFa": "من واژه «روان (روح)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Seele”.",
+    "plural": "die Seelen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Selbstwirksamkeit",
@@ -829,7 +1360,12 @@
     "fa": "خودکارآمدی",
     "en": "self-efficacy",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Selbstwirksamkeit“.",
+    "exampleFa": "من واژه «خودکارآمدی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Selbstwirksamkeit”.",
+    "plural": "die Selbstwirksamkeiten",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Simulation",
@@ -837,7 +1373,13 @@
     "fa": "شبیه‌سازی",
     "en": "simulation",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Simulation“.",
+    "exampleFa": "من واژه «شبیه‌سازی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Simulation”.",
+    "enNote": "Possible cognate with English “simulation”.",
+    "plural": "die Simulationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Solidarität",
@@ -845,7 +1387,13 @@
     "fa": "همبستگی",
     "en": "solidarity",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Solidarität“.",
+    "exampleFa": "من واژه «همبستگی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Solidarität”.",
+    "enNote": "Possible cognate with English “solidarity”.",
+    "plural": "die Solidaritäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Souveränität",
@@ -853,7 +1401,12 @@
     "fa": "حاکمیت",
     "en": "sovereignty",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Souveränität“.",
+    "exampleFa": "من واژه «حاکمیت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Souveränität”.",
+    "plural": "die Souveränitäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Spekulation",
@@ -861,7 +1414,12 @@
     "fa": "سفته‌بازی / حدس‌زنی",
     "en": "speculation",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Spekulation“.",
+    "exampleFa": "من واژه «سفته‌بازی / حدس‌زنی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Spekulation”.",
+    "plural": "die Spekulationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "stabilisieren",
@@ -869,7 +1427,11 @@
     "fa": "پایدار کردن",
     "en": "to stabilize",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich will stabilisieren.",
+    "exampleFa": "می‌خواهم پایدار کردن.",
+    "exampleEn": "I want to stabilize.",
+    "enNote": "Possible cognate with English “to stabilize”."
   },
   {
     "word": "Stagflation",
@@ -877,7 +1439,13 @@
     "fa": "رکود تورمی",
     "en": "stagflation",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Stagflation“.",
+    "exampleFa": "من واژه «رکود تورمی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Stagflation”.",
+    "enNote": "Possible cognate with English “stagflation”.",
+    "plural": "die Stagflationen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Subvention",
@@ -885,7 +1453,12 @@
     "fa": "یارانه",
     "en": "subsidy",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Subvention“.",
+    "exampleFa": "من واژه «یارانه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Subvention”.",
+    "plural": "die Subventionen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Symptom",
@@ -893,7 +1466,13 @@
     "fa": "نشانه (بیماری)",
     "en": "symptom",
     "level": "C1",
-    "category": "بدن و سلامتی"
+    "category": "بدن و سلامتی",
+    "example": "Ich lerne das Wort „Symptom“.",
+    "exampleFa": "من واژه «نشانه (بیماری)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Symptom”.",
+    "enNote": "Possible cognate with English “symptom”.",
+    "plural": "die Symptome",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Synthese",
@@ -901,7 +1480,13 @@
     "fa": "سنتز",
     "en": "synthesis",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Synthese“.",
+    "exampleFa": "من واژه «سنتز» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Synthese”.",
+    "enNote": "Possible cognate with English “synthesis”.",
+    "plural": "die Synthesen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "synthetisieren",
@@ -909,7 +1494,11 @@
     "fa": "سنتز کردن",
     "en": "to synthesize",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich will synthetisieren.",
+    "exampleFa": "می‌خواهم سنتز کردن.",
+    "exampleEn": "I want to synthesize.",
+    "enNote": "Possible cognate with English “to synthesize”."
   },
   {
     "word": "Therapie",
@@ -917,7 +1506,13 @@
     "fa": "درمان",
     "en": "therapy",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Therapie“.",
+    "exampleFa": "من واژه «درمان» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Therapie”.",
+    "enNote": "Possible cognate with English “therapy”.",
+    "plural": "die Therapien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Toleranz",
@@ -925,7 +1520,13 @@
     "fa": "تحمل",
     "en": "tolerance",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Toleranz“.",
+    "exampleFa": "من واژه «تحمل» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Toleranz”.",
+    "enNote": "Possible cognate with English “tolerance”.",
+    "plural": "die Toleranze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Totalitarismus",
@@ -933,7 +1534,13 @@
     "fa": "تمامیت‌خواهی",
     "en": "totalitarianism",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Totalitarismus“.",
+    "exampleFa": "من واژه «تمامیت‌خواهی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Totalitarismus”.",
+    "enNote": "Possible cognate with English “totalitarianism”.",
+    "plural": "die Totalitarismuse",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Trauma",
@@ -941,7 +1548,13 @@
     "fa": "تروما",
     "en": "trauma",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Trauma“.",
+    "exampleFa": "من واژه «تروما» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Trauma”.",
+    "enNote": "Possible cognate with English “trauma”.",
+    "plural": "die Traumae",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Treibhauseffekt",
@@ -949,7 +1562,12 @@
     "fa": "اثر گلخانه‌ای",
     "en": "greenhouse effect",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Treibhauseffekt“.",
+    "exampleFa": "من واژه «اثر گلخانه‌ای» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Treibhauseffekt”.",
+    "plural": "die Treibhauseffekte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Überwachung",
@@ -957,7 +1575,12 @@
     "fa": "نظارت",
     "en": "surveillance",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Überwachung“.",
+    "exampleFa": "من واژه «نظارت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Überwachung”.",
+    "plural": "die Überwachungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Überzeugung",
@@ -965,7 +1588,12 @@
     "fa": "اعتقاد",
     "en": "conviction",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Überzeugung“.",
+    "exampleFa": "من واژه «اعتقاد» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Überzeugung”.",
+    "plural": "die Überzeugungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Umweltschutz",
@@ -973,7 +1601,12 @@
     "fa": "حفاظت محیط زیست",
     "en": "environmental protection",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Umweltschutz“.",
+    "exampleFa": "من واژه «حفاظت محیط زیست» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Umweltschutz”.",
+    "plural": "die Umweltschutze",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Umweltverschmutzung",
@@ -981,7 +1614,12 @@
     "fa": "آلودگی محیط زیست",
     "en": "environmental pollution",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Umweltverschmutzung“.",
+    "exampleFa": "من واژه «آلودگی محیط زیست» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Umweltverschmutzung”.",
+    "plural": "die Umweltverschmutzungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "verantwortlich",
@@ -989,7 +1627,10 @@
     "fa": "مسئول",
     "en": "responsible",
     "level": "C1",
-    "category": "صفت‌های توصیفی عمومی"
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das ist verantwortlich.",
+    "exampleFa": "این مسئول است.",
+    "exampleEn": "That is responsible."
   },
   {
     "word": "Verfassung",
@@ -997,7 +1638,12 @@
     "fa": "قانون اساسی",
     "en": "constitution",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Verfassung“.",
+    "exampleFa": "من واژه «قانون اساسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Verfassung”.",
+    "plural": "die Verfassungen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Verfassungsgericht",
@@ -1005,7 +1651,12 @@
     "fa": "دادگاه قانون اساسی",
     "en": "constitutional court",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Verfassungsgericht“.",
+    "exampleFa": "من واژه «دادگاه قانون اساسی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Verfassungsgericht”.",
+    "plural": "die Verfassungsgerichte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Verhaltenspsychologie",
@@ -1013,7 +1664,12 @@
     "fa": "روان‌شناسی رفتار",
     "en": "behavioral psychology",
     "level": "C1",
-    "category": "روان‌شناسی و سلامت روان"
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Ich lerne das Wort „Verhaltenspsychologie“.",
+    "exampleFa": "من واژه «روان‌شناسی رفتار» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Verhaltenspsychologie”.",
+    "plural": "die Verhaltenspsychologien",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Vielfalt",
@@ -1021,7 +1677,12 @@
     "fa": "تنوع",
     "en": "diversity",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Vielfalt“.",
+    "exampleFa": "من واژه «تنوع» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Vielfalt”.",
+    "plural": "die Vielfalte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Virtualität",
@@ -1029,7 +1690,13 @@
     "fa": "مجازی‌سازی",
     "en": "virtuality",
     "level": "C1",
-    "category": "فناوری"
+    "category": "فناوری",
+    "example": "Ich lerne das Wort „Virtualität“.",
+    "exampleFa": "من واژه «مجازی‌سازی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Virtualität”.",
+    "enNote": "Possible cognate with English “virtuality”.",
+    "plural": "die Virtualitäte",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Wesen",
@@ -1037,7 +1704,12 @@
     "fa": "ذات / ماهیت",
     "en": "essence",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Wesen“.",
+    "exampleFa": "من واژه «ذات / ماهیت» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Wesen”.",
+    "plural": "die Wesen",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Wirtschaftswachstum",
@@ -1045,7 +1717,12 @@
     "fa": "رشد اقتصادی",
     "en": "economic growth",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Wirtschaftswachstum“.",
+    "exampleFa": "من واژه «رشد اقتصادی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Wirtschaftswachstum”.",
+    "plural": "die Wirtschaftswachsten",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Wohlstand",
@@ -1053,7 +1730,12 @@
     "fa": "رفاه",
     "en": "prosperity",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Wohlstand“.",
+    "exampleFa": "من واژه «رفاه» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Wohlstand”.",
+    "plural": "die Wohlstande",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Wissenschaft",
@@ -1061,7 +1743,12 @@
     "fa": "علم",
     "en": "science",
     "level": "C1",
-    "category": "علم و فلسفه"
+    "category": "علم و فلسفه",
+    "example": "Ich lerne das Wort „Wissenschaft“.",
+    "exampleFa": "من واژه «علم» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Wissenschaft”.",
+    "plural": "die Wissenschaften",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Zentralismus",
@@ -1069,7 +1756,12 @@
     "fa": "تمرکزگرایی",
     "en": "centralism",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Zentralismus“.",
+    "exampleFa": "من واژه «تمرکزگرایی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Zentralismus”.",
+    "plural": "die Zentralismuse",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Zins",
@@ -1077,7 +1769,12 @@
     "fa": "بهره (مالی)",
     "en": "interest (finance)",
     "level": "C1",
-    "category": "اقتصاد و مالی"
+    "category": "اقتصاد و مالی",
+    "example": "Ich lerne das Wort „Zins“.",
+    "exampleFa": "من واژه «بهره (مالی)» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Zins”.",
+    "plural": "die Zinse",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Zivilgesellschaft",
@@ -1085,7 +1782,12 @@
     "fa": "جامعه مدنی",
     "en": "civil society",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich lerne das Wort „Zivilgesellschaft“.",
+    "exampleFa": "من واژه «جامعه مدنی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Zivilgesellschaft”.",
+    "plural": "die Zivilgesellschaften",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "Zukunftsfähigkeit",
@@ -1093,7 +1795,12 @@
     "fa": "توانایی آینده‌سازی",
     "en": "future viability",
     "level": "C1",
-    "category": "محیط‌زیست و انرژی"
+    "category": "محیط‌زیست و انرژی",
+    "example": "Ich lerne das Wort „Zukunftsfähigkeit“.",
+    "exampleFa": "من واژه «توانایی آینده‌سازی» را یاد می‌گیرم.",
+    "exampleEn": "I am learning the word “Zukunftsfähigkeit”.",
+    "plural": "die Zukunftsfähigkeiten",
+    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند"
   },
   {
     "word": "bedürfen",
@@ -1101,7 +1808,10 @@
     "fa": "نیاز داشتن (رسمی)",
     "en": "to require / need (formal)",
     "level": "C1",
-    "category": "مفاهیم و اشیای روزمره"
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Ich will bedürfen.",
+    "exampleFa": "می‌خواهم نیاز داشتن (رسمی).",
+    "exampleEn": "I want to require / need (formal)."
   },
   {
     "word": "bergen",
@@ -1109,7 +1819,10 @@
     "fa": "نجات دادن / در خود داشتن (خطر و ...)",
     "en": "to salvage / to harbor (danger etc.)",
     "level": "C1",
-    "category": "مفاهیم و اشیای روزمره"
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Ich will bergen.",
+    "exampleFa": "می‌خواهم نجات دادن / در خود داشتن (خطر و ...).",
+    "exampleEn": "I want to salvage / to harbor (danger etc.)."
   },
   {
     "word": "erlassen",
@@ -1117,6 +1830,9 @@
     "fa": "صادر کردن (قانون)",
     "en": "to enact / issue (a law)",
     "level": "C1",
-    "category": "جامعه، سیاست و حقوق"
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Ich will erlassen.",
+    "exampleFa": "می‌خواهم صادر کردن (قانون).",
+    "exampleEn": "I want to enact / issue (a law)."
   }
 ]
