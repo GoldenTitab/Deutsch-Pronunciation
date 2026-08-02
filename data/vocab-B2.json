@@ -2158,5 +2158,77 @@
     "en": "category / section (newspaper)",
     "level": "B2",
     "category": "فناوری"
+  },
+  {
+    "word": "Spiritualität",
+    "ipa": "[ʃpiʁituali'tɛːt]",
+    "fa": "معنویت",
+    "en": "spirituality",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Strahlung",
+    "ipa": "[ˈʃtʁaːlʊŋ]",
+    "fa": "تابش / اشعه",
+    "en": "radiation",
+    "level": "B2",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Umsetzung",
+    "ipa": "[ˈʊmzɛtsʊŋ]",
+    "fa": "اجرا / پیاده‌سازی",
+    "en": "implementation",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "unerträglich",
+    "ipa": "[ˈʊnʔɛɐ̯tʁɛːklɪç]",
+    "fa": "غیرقابل‌تحمل",
+    "en": "unbearable",
+    "level": "B2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Verfasser",
+    "ipa": "[fɛɐ̯ˈfasɐ]",
+    "fa": "نویسنده / مؤلف",
+    "en": "author",
+    "level": "B2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Vermittlung",
+    "ipa": "[fɛɐ̯ˈmɪtlʊŋ]",
+    "fa": "واسطه‌گری / کاریابی",
+    "en": "mediation / placement",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "verpflichtet",
+    "ipa": "[fɛɐ̯ˈpflɪçtət]",
+    "fa": "موظف / متعهد",
+    "en": "obligated",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Verpflichtung",
+    "ipa": "[fɛɐ̯ˈpflɪçtʊŋ]",
+    "fa": "تعهد",
+    "en": "obligation",
+    "level": "B2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Verzeichnis",
+    "ipa": "[fɛɐ̯ˈtsaɪ̯çnɪs]",
+    "fa": "فهرست / پوشه",
+    "en": "directory / index",
+    "level": "B2",
+    "category": "فناوری"
   }
 ]

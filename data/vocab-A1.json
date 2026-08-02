@@ -6730,5 +6730,901 @@
     "en": "school backpack",
     "level": "A1",
     "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Hunger",
+    "ipa": "[ˈhʊŋɐ]",
+    "fa": "گرسنگی",
+    "en": "hunger",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Laptop",
+    "ipa": "[ˈlɛptɔp]",
+    "fa": "لپ‌تاپ",
+    "en": "laptop",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Mittag",
+    "ipa": "[ˈmɪtaːk]",
+    "fa": "ظهر",
+    "en": "noon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Möbel",
+    "ipa": "[ˈmøːbl̩]",
+    "fa": "مبلمان",
+    "en": "furniture",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Moment",
+    "ipa": "[moˈmɛnt]",
+    "fa": "لحظه",
+    "en": "moment",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Monat",
+    "ipa": "[ˈmoːnat]",
+    "fa": "ماه (تقویمی)",
+    "en": "month",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Mond",
+    "ipa": "[moːnt]",
+    "fa": "ماه (آسمان)",
+    "en": "moon",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Monitor",
+    "ipa": "[ˈmoːnitɔɐ̯]",
+    "fa": "مانیتور",
+    "en": "monitor",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "morgens",
+    "ipa": "[ˈmɔʁɡn̩s]",
+    "fa": "صبح‌ها",
+    "en": "in the morning",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Motorrad",
+    "ipa": "[ˈmoːtoːɐ̯ʁaːt]",
+    "fa": "موتورسیکلت",
+    "en": "motorcycle",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "München",
+    "ipa": "[ˈmʏnçn̩]",
+    "fa": "مونیخ",
+    "en": "Munich",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Mund",
+    "ipa": "[mʊnt]",
+    "fa": "دهان",
+    "en": "mouth",
+    "level": "A1",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Museum",
+    "ipa": "[muˈzeːʊm]",
+    "fa": "موزه",
+    "en": "museum",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Musik",
+    "ipa": "[muˈziːk]",
+    "fa": "موسیقی",
+    "en": "music",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Müsli",
+    "ipa": "[ˈmyːsli]",
+    "fa": "موزلی (غلات صبحانه)",
+    "en": "muesli",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Mütze",
+    "ipa": "[ˈmʏtsə]",
+    "fa": "کلاه بافتنی",
+    "en": "beanie / cap",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "nach Hause",
+    "ipa": "[naːx ˈhaʊ̯zə]",
+    "fa": "به خانه (مسیر)",
+    "en": "home (direction)",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Nachmittag",
+    "ipa": "[ˈnaːxmɪtaːk]",
+    "fa": "بعدازظهر",
+    "en": "afternoon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nachmittags",
+    "ipa": "[ˈnaːxmɪtaːks]",
+    "fa": "بعدازظهرها",
+    "en": "in the afternoon",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Nachname",
+    "ipa": "[ˈnaːxnaːmə]",
+    "fa": "نام خانوادگی",
+    "en": "surname",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Nachricht",
+    "ipa": "[ˈnaːxʁɪçt]",
+    "fa": "پیام / خبر",
+    "en": "message",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "nächste",
+    "ipa": "[ˈnɛːçstə]",
+    "fa": "بعدی",
+    "en": "next",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Nacht",
+    "ipa": "[naxt]",
+    "fa": "شب",
+    "en": "night",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Nachtisch",
+    "ipa": "[ˈnaːxtɪʃ]",
+    "fa": "دسر",
+    "en": "dessert",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Planet",
+    "ipa": "[plaˈneːt]",
+    "fa": "سیاره",
+    "en": "planet",
+    "level": "A1",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "Plastik",
+    "ipa": "[ˈplastɪk]",
+    "fa": "پلاستیک",
+    "en": "plastic",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Platz",
+    "ipa": "[plats]",
+    "fa": "میدان / جا",
+    "en": "square / space / seat",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "plus",
+    "ipa": "[plʊs]",
+    "fa": "بعلاوه",
+    "en": "plus",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Polizei",
+    "ipa": "[poliˈtsaɪ̯]",
+    "fa": "پلیس",
+    "en": "police",
+    "level": "A1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Pommes",
+    "ipa": "[ˈpɔməs]",
+    "fa": "سیب‌زمینی سرخ‌کرده",
+    "en": "fries",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Popcorn",
+    "ipa": "[ˈpɔpkɔɐ̯n]",
+    "fa": "پاپ‌کورن",
+    "en": "popcorn",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Poster",
+    "ipa": "[ˈpoːstɐ]",
+    "fa": "پوستر",
+    "en": "poster",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Postkarte",
+    "ipa": "[ˈpɔstkaʁtə]",
+    "fa": "کارت‌پستال",
+    "en": "postcard",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Postleitzahl",
+    "ipa": "[ˈpɔstlaɪ̯ttsaːl]",
+    "fa": "کد پستی",
+    "en": "postal code",
+    "level": "A1",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Musikinstrument",
+    "ipa": "[muˈziːkʔɪnstʁuˌmɛnt]",
+    "fa": "ساز موسیقی",
+    "en": "musical instrument",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Polen",
+    "ipa": "[ˈpoːlən]",
+    "fa": "لهستان",
+    "en": "Poland",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "SMS",
+    "ipa": "[ˌɛsʔɛmˈʔɛs]",
+    "fa": "پیامک",
+    "en": "text message",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "so",
+    "ipa": "[zoː]",
+    "fa": "این‌طوری / خیلی",
+    "en": "so / like this",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Sofa",
+    "ipa": "[ˈzoːfa]",
+    "fa": "مبل",
+    "en": "sofa",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Sohn",
+    "ipa": "[zoːn]",
+    "fa": "پسر (فرزند)",
+    "en": "son",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Song",
+    "ipa": "[zɔŋ]",
+    "fa": "آهنگ",
+    "en": "song",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sonnenbrille",
+    "ipa": "[ˈzɔnənbʁɪlə]",
+    "fa": "عینک آفتابی",
+    "en": "sunglasses",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "sonntags",
+    "ipa": "[ˈzɔntaːks]",
+    "fa": "یکشنبه‌ها",
+    "en": "on Sundays",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "sonst noch etwas",
+    "ipa": "[zɔnst nɔx ˈɛtvas]",
+    "fa": "چیز دیگه‌ای هم می‌خوای؟",
+    "en": "anything else?",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "sorry",
+    "ipa": "[ˈzɔʁi]",
+    "fa": "ببخشید (محاوره‌ای)",
+    "en": "sorry (informal)",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Soße",
+    "ipa": "[ˈzoːsə]",
+    "fa": "سس",
+    "en": "sauce",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Spaghetti",
+    "ipa": "[ʃpaˈɡɛti]",
+    "fa": "اسپاگتی",
+    "en": "spaghetti",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "spazieren gehen",
+    "ipa": "[ʃpaˈtsiːʁən ˈɡeːən]",
+    "fa": "قدم زدن",
+    "en": "to go for a walk",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Speisekarte",
+    "ipa": "[ˈʃpaɪ̯zəˌkaʁtə]",
+    "fa": "منوی غذا",
+    "en": "menu",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Spielplatz",
+    "ipa": "[ˈʃpiːlplats]",
+    "fa": "زمین بازی",
+    "en": "playground",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Spielzeug",
+    "ipa": "[ˈʃpiːltsɔɪ̯k]",
+    "fa": "اسباب‌بازی",
+    "en": "toy",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sporthalle",
+    "ipa": "[ˈʃpɔʁthalə]",
+    "fa": "سالن ورزشی",
+    "en": "sports hall / gym",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sprache",
+    "ipa": "[ˈʃpʁaːxə]",
+    "fa": "زبان",
+    "en": "language",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Spülmaschine",
+    "ipa": "[ˈʃpyːlmaˌʃiːnə]",
+    "fa": "ماشین ظرفشویی",
+    "en": "dishwasher",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Stadt",
+    "ipa": "[ʃtat]",
+    "fa": "شهر",
+    "en": "city",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Stadtplan",
+    "ipa": "[ˈʃtatplaːn]",
+    "fa": "نقشه شهر",
+    "en": "city map",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Stadtzentrum",
+    "ipa": "[ˈʃtatˌtsɛntʁʊm]",
+    "fa": "مرکز شهر",
+    "en": "city center",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "stehen",
+    "ipa": "[ˈʃteːən]",
+    "fa": "ایستادن",
+    "en": "to stand",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Steckdose",
+    "ipa": "[ˈʃtɛkdoːzə]",
+    "fa": "پریز برق",
+    "en": "electrical outlet",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Stein",
+    "ipa": "[ʃtaɪ̯n]",
+    "fa": "سنگ",
+    "en": "stone",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Stern",
+    "ipa": "[ʃtɛʁn]",
+    "fa": "ستاره",
+    "en": "star",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Strand",
+    "ipa": "[ʃtʁant]",
+    "fa": "ساحل",
+    "en": "beach",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Straße",
+    "ipa": "[ˈʃtʁaːsə]",
+    "fa": "خیابان",
+    "en": "street",
+    "level": "A1",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Straßenbahn",
+    "ipa": "[ˈʃtʁaːsn̩baːn]",
+    "fa": "تراموا",
+    "en": "tram",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Stück",
+    "ipa": "[ʃtʏk]",
+    "fa": "قطعه / تکه",
+    "en": "piece",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Student",
+    "ipa": "[ʃtuˈdɛnt]",
+    "fa": "دانشجو (مرد)",
+    "en": "student (male, university)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Studentin",
+    "ipa": "[ʃtuˈdɛntɪn]",
+    "fa": "دانشجو (زن)",
+    "en": "student (female, university)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "studieren",
+    "ipa": "[ʃtuˈdiːʁən]",
+    "fa": "درس خواندن (دانشگاه)",
+    "en": "to study (at university)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Stuhl",
+    "ipa": "[ʃtuːl]",
+    "fa": "صندلی",
+    "en": "chair",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Stunde",
+    "ipa": "[ˈʃtʊndə]",
+    "fa": "ساعت (مدت زمان)",
+    "en": "hour",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Stundenplan",
+    "ipa": "[ˈʃtʊndn̩plaːn]",
+    "fa": "برنامه کلاسی",
+    "en": "class schedule",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Südamerika",
+    "ipa": "[ˈzyːtʔaˌmeːʁika]",
+    "fa": "آمریکای جنوبی",
+    "en": "South America",
+    "level": "A1",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "super",
+    "ipa": "[ˈzuːpɐ]",
+    "fa": "عالی",
+    "en": "great",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Supermarkt",
+    "ipa": "[ˈzuːpɐmaʁkt]",
+    "fa": "سوپرمارکت",
+    "en": "supermarket",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Suppe",
+    "ipa": "[ˈzʊpə]",
+    "fa": "سوپ",
+    "en": "soup",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "süß",
+    "ipa": "[zyːs]",
+    "fa": "شیرین / بامزه",
+    "en": "sweet",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Süßigkeit",
+    "ipa": "[ˈzyːsɪçkaɪ̯t]",
+    "fa": "شیرینی / آب‌نبات",
+    "en": "candy / sweet",
+    "level": "A1",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "T-Shirt",
+    "ipa": "[ˈtiːʃœʁt]",
+    "fa": "تی‌شرت",
+    "en": "t-shirt",
+    "level": "A1",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Tankstelle",
+    "ipa": "[ˈtaŋkʃtɛlə]",
+    "fa": "پمپ‌بنزین",
+    "en": "gas station",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Tante",
+    "ipa": "[ˈtantə]",
+    "fa": "عمه/خاله",
+    "en": "aunt",
+    "level": "A1",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Taschenrechner",
+    "ipa": "[ˈtaʃn̩ˌʁɛçnɐ]",
+    "fa": "ماشین‌حساب",
+    "en": "calculator",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Tasse",
+    "ipa": "[ˈtasə]",
+    "fa": "فنجان",
+    "en": "cup",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Tastatur",
+    "ipa": "[tastaˈtuːɐ̯]",
+    "fa": "صفحه‌کلید",
+    "en": "keyboard",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "tausend",
+    "ipa": "[ˈtaʊ̯zn̩t]",
+    "fa": "هزار",
+    "en": "thousand",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Taxi",
+    "ipa": "[ˈtaksi]",
+    "fa": "تاکسی",
+    "en": "taxi",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Taxistand",
+    "ipa": "[ˈtaksiʃtant]",
+    "fa": "ایستگاه تاکسی",
+    "en": "taxi stand",
+    "level": "A1",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Team",
+    "ipa": "[tiːm]",
+    "fa": "تیم",
+    "en": "team",
+    "level": "A1",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Telefon",
+    "ipa": "[teleˈfoːn]",
+    "fa": "تلفن",
+    "en": "telephone",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "telefonieren",
+    "ipa": "[telefoˈniːʁən]",
+    "fa": "تلفن زدن",
+    "en": "to make a phone call",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Telefonnummer",
+    "ipa": "[teleˈfoːnˌnʊmɐ]",
+    "fa": "شماره تلفن",
+    "en": "phone number",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Teller",
+    "ipa": "[ˈtɛlɐ]",
+    "fa": "بشقاب",
+    "en": "plate",
+    "level": "A1",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Uhr",
+    "ipa": "[uːɐ̯]",
+    "fa": "ساعت (وسیله)",
+    "en": "clock / o'clock",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Uhrzeit",
+    "ipa": "[ˈuːɐ̯tsaɪ̯t]",
+    "fa": "ساعت (زمان روز)",
+    "en": "time of day",
+    "level": "A1",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Uni",
+    "ipa": "[ˈuːni]",
+    "fa": "دانشگاه (محاوره‌ای)",
+    "en": "uni (informal for university)",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Universität",
+    "ipa": "[univɛʁziˈtɛːt]",
+    "fa": "دانشگاه",
+    "en": "university",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "verkaufen",
+    "ipa": "[fɛɐ̯ˈkaʊ̯fn̩]",
+    "fa": "فروختن",
+    "en": "to sell",
+    "level": "A1",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "versuchen",
+    "ipa": "[fɛɐ̯ˈzuːxn̩]",
+    "fa": "تلاش کردن",
+    "en": "to try",
+    "level": "A1",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Verzeihung",
+    "ipa": "[fɛɐ̯ˈtsaɪ̯ʊŋ]",
+    "fa": "ببخشید",
+    "en": "excuse me / pardon",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Video",
+    "ipa": "[ˈviːdeo]",
+    "fa": "ویدیو",
+    "en": "video",
+    "level": "A1",
+    "category": "فناوری"
+  },
+  {
+    "word": "Videospiel",
+    "ipa": "[ˈviːdeoˌʃpiːl]",
+    "fa": "بازی ویدیویی",
+    "en": "video game",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "viel",
+    "ipa": "[fiːl]",
+    "fa": "زیاد / خیلی",
+    "en": "much / a lot",
+    "level": "A1",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "viel Glück",
+    "ipa": "[fiːl ɡlʏk]",
+    "fa": "موفق باشی",
+    "en": "good luck",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "viel Spaß",
+    "ipa": "[fiːl ʃpaːs]",
+    "fa": "خوش بگذره",
+    "en": "have fun",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "vielen Dank",
+    "ipa": "[ˈfiːlən daŋk]",
+    "fa": "خیلی ممنون",
+    "en": "thank you very much",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "vielleicht",
+    "ipa": "[fiˈlaɪ̯çt]",
+    "fa": "شاید",
+    "en": "maybe",
+    "level": "A1",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Viertel",
+    "ipa": "[ˈfɪʁtl̩]",
+    "fa": "ربع / یک‌چهارم",
+    "en": "quarter",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "vierundzwanzig",
+    "ipa": "[ˈfiːɐ̯ʔʊntˌtsvantsɪç]",
+    "fa": "بیست‌وچهار",
+    "en": "twenty-four",
+    "level": "A1",
+    "category": "حروف و اعداد"
+  },
+  {
+    "word": "Vogel",
+    "ipa": "[ˈfoːɡl̩]",
+    "fa": "پرنده",
+    "en": "bird",
+    "level": "A1",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Vokabel",
+    "ipa": "[voˈkaːbl̩]",
+    "fa": "واژه / لغت",
+    "en": "vocabulary word",
+    "level": "A1",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "voll",
+    "ipa": "[fɔl]",
+    "fa": "پر",
+    "en": "full",
+    "level": "A1",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Volleyball",
+    "ipa": "[ˈvɔlibal]",
+    "fa": "والیبال",
+    "en": "volleyball",
+    "level": "A1",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Vorname",
+    "ipa": "[ˈfoːɐ̯naːmə]",
+    "fa": "نام کوچک",
+    "en": "first name",
+    "level": "A1",
+    "category": "احوال‌پرسی و عبارات رایج"
   }
 ]

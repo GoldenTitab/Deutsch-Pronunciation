@@ -7158,5 +7158,1333 @@
     "en": "drawer",
     "level": "A2",
     "category": "منزل و خانه"
+  },
+  {
+    "word": "Möbelhaus",
+    "ipa": "[ˈmøːbl̩haʊ̯s]",
+    "fa": "فروشگاه مبلمان",
+    "en": "furniture store",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Mittagsmenü",
+    "ipa": "[ˈmɪtaːksmenyː]",
+    "fa": "منوی ناهار",
+    "en": "lunch menu",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Mittagszeit",
+    "ipa": "[ˈmɪtaːkstsaɪ̯t]",
+    "fa": "وقت ناهار",
+    "en": "lunchtime",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Mitte",
+    "ipa": "[ˈmɪtə]",
+    "fa": "وسط / مرکز",
+    "en": "middle / center",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Mittelmeer",
+    "ipa": "[ˈmɪtl̩meːɐ̯]",
+    "fa": "دریای مدیترانه",
+    "en": "Mediterranean Sea",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Mitternacht",
+    "ipa": "[ˈmɪtɐnaxt]",
+    "fa": "نیمه‌شب",
+    "en": "midnight",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Mode",
+    "ipa": "[ˈmoːdə]",
+    "fa": "مد / فشن",
+    "en": "fashion",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "Modell",
+    "ipa": "[moˈdɛl]",
+    "fa": "مدل",
+    "en": "model",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "möglich",
+    "ipa": "[ˈmøːklɪç]",
+    "fa": "ممکن",
+    "en": "possible",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Möglichkeit",
+    "ipa": "[ˈmøːklɪçkaɪ̯t]",
+    "fa": "امکان / احتمال",
+    "en": "possibility",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "monatlich",
+    "ipa": "[ˈmoːnatlɪç]",
+    "fa": "ماهانه",
+    "en": "monthly",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Moped",
+    "ipa": "[ˈmoːpɛt]",
+    "fa": "موتور (کم‌سرعت)",
+    "en": "moped",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Moschee",
+    "ipa": "[mɔˈʃeː]",
+    "fa": "مسجد",
+    "en": "mosque",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Motor",
+    "ipa": "[ˈmoːtɔɐ̯]",
+    "fa": "موتور (خودرو)",
+    "en": "engine / motor",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Müllbeutel",
+    "ipa": "[ˈmʏlbɔɪ̯tl̩]",
+    "fa": "کیسه زباله",
+    "en": "trash bag",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Münze",
+    "ipa": "[ˈmʏntsə]",
+    "fa": "سکه",
+    "en": "coin",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Musiker",
+    "ipa": "[ˈmuːzikɐ]",
+    "fa": "موسیقی‌دان",
+    "en": "musician",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Muttersprache",
+    "ipa": "[ˈmʊtɐʃpʁaːxə]",
+    "fa": "زبان مادری",
+    "en": "mother tongue",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "nach der Arbeit",
+    "ipa": "[naːx deːɐ̯ ˈaʁbaɪ̯t]",
+    "fa": "بعد از کار",
+    "en": "after work",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nach der Schule",
+    "ipa": "[naːx deːɐ̯ ˈʃuːlə]",
+    "fa": "بعد از مدرسه",
+    "en": "after school",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Nachbar",
+    "ipa": "[ˈnaːxbaːɐ̯]",
+    "fa": "همسایه (مرد)",
+    "en": "neighbor (male)",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Nachbarin",
+    "ipa": "[ˈnaːxbaːʁɪn]",
+    "fa": "همسایه (زن)",
+    "en": "neighbor (female)",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "nachher",
+    "ipa": "[ˈnaːxheːɐ̯]",
+    "fa": "بعداً",
+    "en": "afterwards",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nah",
+    "ipa": "[naː]",
+    "fa": "نزدیک",
+    "en": "near / close",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "nächstes Mal",
+    "ipa": "[ˈnɛːçstəs maːl]",
+    "fa": "دفعه‌ی بعد",
+    "en": "next time",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "nachts",
+    "ipa": "[naxts]",
+    "fa": "شب‌ها",
+    "en": "at night",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Plan",
+    "ipa": "[plaːn]",
+    "fa": "برنامه / طرح",
+    "en": "plan",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "plötzlich",
+    "ipa": "[ˈplœtslɪç]",
+    "fa": "ناگهان",
+    "en": "suddenly",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Podcast",
+    "ipa": "[ˈpɔtkɛst]",
+    "fa": "پادکست",
+    "en": "podcast",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "polnisch",
+    "ipa": "[ˈpɔlnɪʃ]",
+    "fa": "لهستانی",
+    "en": "Polish",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "positiv",
+    "ipa": "[poziˈtiːf]",
+    "fa": "مثبت",
+    "en": "positive",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Prag",
+    "ipa": "[pʁaːk]",
+    "fa": "پراگ",
+    "en": "Prague",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Praktikum",
+    "ipa": "[ˈpʁaktikʊm]",
+    "fa": "کارآموزی",
+    "en": "internship",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "praktisch",
+    "ipa": "[ˈpʁaktɪʃ]",
+    "fa": "عملی / کاربردی",
+    "en": "practical",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Präsentation",
+    "ipa": "[pʁɛzɛntaˈtsi̯oːn]",
+    "fa": "ارائه (کاری/کلاسی)",
+    "en": "presentation",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Motorroller",
+    "ipa": "[ˈmoːtoːɐ̯ˌʁɔlɐ]",
+    "fa": "اسکوتر موتوری",
+    "en": "scooter",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "nachsehen",
+    "ipa": "[ˈnaːxˌzeːən]",
+    "fa": "چک کردن / نگاه کردن",
+    "en": "to check / look up",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Snowboard",
+    "ipa": "[ˈsnoːbɔːɐ̯t]",
+    "fa": "اسنوبرد",
+    "en": "snowboard",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "sofort",
+    "ipa": "[zoˈfɔʁt]",
+    "fa": "فوراً",
+    "en": "immediately",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "sogar",
+    "ipa": "[zoˈɡaːɐ̯]",
+    "fa": "حتی",
+    "en": "even",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Sonderangebot",
+    "ipa": "[ˈzɔndɐʔanɡəˌboːt]",
+    "fa": "پیشنهاد ویژه / تخفیف",
+    "en": "special offer",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "sondern",
+    "ipa": "[ˈzɔndɐn]",
+    "fa": "بلکه",
+    "en": "but rather",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "Sonnenbrand",
+    "ipa": "[ˈzɔnənbʁant]",
+    "fa": "آفتاب‌سوختگی",
+    "en": "sunburn",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Sonnencreme",
+    "ipa": "[ˈzɔnənkʁeːm]",
+    "fa": "کرم ضدآفتاب",
+    "en": "sunscreen",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Spa",
+    "ipa": "[spaː]",
+    "fa": "اسپا",
+    "en": "spa",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Spargel",
+    "ipa": "[ˈʃpaʁɡl̩]",
+    "fa": "مارچوبه",
+    "en": "asparagus",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Spaziergang",
+    "ipa": "[ʃpaˈtsiːɐ̯ɡaŋ]",
+    "fa": "قدم‌زنی / پیاده‌روی",
+    "en": "walk / stroll",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Speck",
+    "ipa": "[ʃpɛk]",
+    "fa": "بیکن",
+    "en": "bacon",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Spieler",
+    "ipa": "[ˈʃpiːlɐ]",
+    "fa": "بازیکن",
+    "en": "player",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Spinat",
+    "ipa": "[ʃpiˈnaːt]",
+    "fa": "اسفناج",
+    "en": "spinach",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "sportlich",
+    "ipa": "[ˈʃpɔʁtlɪç]",
+    "fa": "ورزشکار / اسپرت",
+    "en": "athletic",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Sportverein",
+    "ipa": "[ˈʃpɔʁtfɛɐ̯ˌʔaɪ̯n]",
+    "fa": "باشگاه ورزشی",
+    "en": "sports club",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Spülbecken",
+    "ipa": "[ˈʃpyːlbɛkn̩]",
+    "fa": "سینک ظرفشویی",
+    "en": "kitchen sink",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Stadion",
+    "ipa": "[ˈʃtaːdi̯ɔn]",
+    "fa": "استادیوم",
+    "en": "stadium",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Stadtführung",
+    "ipa": "[ˈʃtatfyːʁʊŋ]",
+    "fa": "تور گردشگری شهر",
+    "en": "city tour",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Stadtmuseum",
+    "ipa": "[ˈʃtatmuˌzeːʊm]",
+    "fa": "موزه شهر",
+    "en": "city museum",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Stadtviertel",
+    "ipa": "[ˈʃtatfɪʁtl̩]",
+    "fa": "محله شهر",
+    "en": "city district",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Stall",
+    "ipa": "[ʃtal]",
+    "fa": "طویله",
+    "en": "stable / barn",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "stark",
+    "ipa": "[ʃtaʁk]",
+    "fa": "قوی",
+    "en": "strong",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "starten",
+    "ipa": "[ˈʃtaʁtn̩]",
+    "fa": "شروع کردن / راه‌اندازی کردن",
+    "en": "to start",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "steigen",
+    "ipa": "[ˈʃtaɪ̯ɡn̩]",
+    "fa": "بالا رفتن / افزایش یافتن",
+    "en": "to climb / rise",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Stimme",
+    "ipa": "[ˈʃtɪmə]",
+    "fa": "صدا (انسان) / رأی",
+    "en": "voice / vote",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "stimmen",
+    "ipa": "[ˈʃtɪmən]",
+    "fa": "درست بودن / رأی دادن",
+    "en": "to be correct / to vote",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "stolz",
+    "ipa": "[ʃtɔlts]",
+    "fa": "مغرور / سربلند",
+    "en": "proud",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Stoppschild",
+    "ipa": "[ˈʃtɔpʃɪlt]",
+    "fa": "تابلوی ایست",
+    "en": "stop sign",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "streiten",
+    "ipa": "[ˈʃtʁaɪ̯tn̩]",
+    "fa": "دعوا کردن / بحث کردن",
+    "en": "to argue",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "streng",
+    "ipa": "[ʃtʁɛŋ]",
+    "fa": "سخت‌گیر",
+    "en": "strict",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "stressig",
+    "ipa": "[ˈʃtʁɛsɪç]",
+    "fa": "استرس‌زا",
+    "en": "stressful",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Strom",
+    "ipa": "[ʃtʁoːm]",
+    "fa": "برق / جریان",
+    "en": "electricity",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Studentenausweis",
+    "ipa": "[ʃtuˈdɛntn̩ʔaʊ̯svaɪ̯s]",
+    "fa": "کارت دانشجویی",
+    "en": "student ID",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Studentenwohnheim",
+    "ipa": "[ʃtuˈdɛntn̩voːnhaɪ̯m]",
+    "fa": "خوابگاه دانشجویی",
+    "en": "student dorm",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Studio",
+    "ipa": "[ˈʃtuːdi̯o]",
+    "fa": "استودیو",
+    "en": "studio",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Studium",
+    "ipa": "[ˈʃtuːdi̯ʊm]",
+    "fa": "تحصیلات دانشگاهی",
+    "en": "university studies",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Sturm",
+    "ipa": "[ʃtʊʁm]",
+    "fa": "طوفان",
+    "en": "storm",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Süden",
+    "ipa": "[ˈzyːdn̩]",
+    "fa": "جنوب",
+    "en": "south",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Südpol",
+    "ipa": "[ˈzyːtpoːl]",
+    "fa": "قطب جنوب",
+    "en": "South Pole",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "Surfbrett",
+    "ipa": "[ˈsœʁfbʁɛt]",
+    "fa": "تخته موج‌سواری",
+    "en": "surfboard",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Syrien",
+    "ipa": "[ˈzyːʁi̯ən]",
+    "fa": "سوریه",
+    "en": "Syria",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Tabelle",
+    "ipa": "[taˈbɛlə]",
+    "fa": "جدول",
+    "en": "table / chart",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Tablett",
+    "ipa": "[taˈblɛt]",
+    "fa": "سینی",
+    "en": "tray",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Tafel",
+    "ipa": "[ˈtaːfl̩]",
+    "fa": "تخته سیاه",
+    "en": "blackboard",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "Tagebuch",
+    "ipa": "[ˈtaːɡəbuːx]",
+    "fa": "دفترچه خاطرات",
+    "en": "diary",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "täglich",
+    "ipa": "[ˈtɛːklɪç]",
+    "fa": "روزانه",
+    "en": "daily",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "tanken",
+    "ipa": "[ˈtaŋkn̩]",
+    "fa": "سوخت‌گیری کردن",
+    "en": "to fill up (with gas)",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Tänzer",
+    "ipa": "[ˈtɛntsɐ]",
+    "fa": "رقصنده",
+    "en": "dancer",
+    "level": "A2",
+    "category": "ورزش، سرگرمی و هنر"
+  },
+  {
+    "word": "Taschengeld",
+    "ipa": "[ˈtaʃn̩ɡɛlt]",
+    "fa": "پول توجیبی",
+    "en": "allowance",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Taxifahrt",
+    "ipa": "[ˈtaksifaːɐ̯t]",
+    "fa": "سواری تاکسی",
+    "en": "taxi ride",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Teekanne",
+    "ipa": "[ˈteːkanə]",
+    "fa": "قوری چای",
+    "en": "teapot",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Teig",
+    "ipa": "[taɪ̯k]",
+    "fa": "خمیر",
+    "en": "dough",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "teilen",
+    "ipa": "[ˈtaɪ̯lən]",
+    "fa": "تقسیم کردن / به اشتراک گذاشتن",
+    "en": "to share / divide",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Teilzeit",
+    "ipa": "[ˈtaɪ̯ltsaɪ̯t]",
+    "fa": "پاره‌وقت",
+    "en": "part-time",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Tempel",
+    "ipa": "[ˈtɛmpl̩]",
+    "fa": "معبد",
+    "en": "temple",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Temperatur",
+    "ipa": "[tɛmpəʁaˈtuːɐ̯]",
+    "fa": "دما",
+    "en": "temperature",
+    "level": "A2",
+    "category": "طبیعت و آب‌وهوا"
+  },
+  {
+    "word": "überrascht",
+    "ipa": "[yːbɐˈʁaʃt]",
+    "fa": "شگفت‌زده",
+    "en": "surprised",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Überraschung",
+    "ipa": "[yːbɐˈʁaʃʊŋ]",
+    "fa": "غافلگیری / سورپرایز",
+    "en": "surprise",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Übersetzung",
+    "ipa": "[yːbɐˈzɛtsʊŋ]",
+    "fa": "ترجمه",
+    "en": "translation",
+    "level": "A2",
+    "category": "مدرسه و آموزش"
+  },
+  {
+    "word": "übrigens",
+    "ipa": "[ˈyːbʁɪɡn̩s]",
+    "fa": "راستی / در ضمن",
+    "en": "by the way",
+    "level": "A2",
+    "category": "احوال‌پرسی و عبارات رایج"
+  },
+  {
+    "word": "Ufo",
+    "ipa": "[ˈuːfo]",
+    "fa": "بشقاب‌پرنده",
+    "en": "UFO",
+    "level": "A2",
+    "category": "علم و فلسفه"
+  },
+  {
+    "word": "um die Ecke",
+    "ipa": "[ʊm diː ˈɛkə]",
+    "fa": "سر نبش / نزدیک",
+    "en": "around the corner",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Umkleidekabine",
+    "ipa": "[ʊmˈklaɪ̯dəkaˌbiːnə]",
+    "fa": "اتاق پرو",
+    "en": "fitting room",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "umtauschen",
+    "ipa": "[ˈʊmˌtaʊ̯ʃn̩]",
+    "fa": "تعویض کردن (کالا)",
+    "en": "to exchange (goods)",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "unbekannt",
+    "ipa": "[ˈʊnbəkant]",
+    "fa": "ناشناس / ناآشنا",
+    "en": "unknown",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Unfall",
+    "ipa": "[ˈʊnfal]",
+    "fa": "تصادف",
+    "en": "accident",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "ungarisch",
+    "ipa": "[ˈʊnɡaʁɪʃ]",
+    "fa": "مجارستانی",
+    "en": "Hungarian",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "Ungar",
+    "ipa": "[ˈʊnɡaɐ̯]",
+    "fa": "مجار (شخص)",
+    "en": "Hungarian (person)",
+    "level": "A2",
+    "category": "کشورها و زبان‌ها"
+  },
+  {
+    "word": "ungefähr",
+    "ipa": "[ˈʊnɡəˌfɛːɐ̯]",
+    "fa": "تقریباً",
+    "en": "approximately",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "unglaublich",
+    "ipa": "[ʊnˈɡlaʊ̯plɪç]",
+    "fa": "باورنکردنی",
+    "en": "unbelievable",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "unglücklich",
+    "ipa": "[ˈʊnɡlʏklɪç]",
+    "fa": "ناراحت / بدشانس",
+    "en": "unhappy",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "unhöflich",
+    "ipa": "[ˈʊnhøːflɪç]",
+    "fa": "بی‌ادب",
+    "en": "impolite",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Uniform",
+    "ipa": "[uniˈfɔʁm]",
+    "fa": "یونیفرم",
+    "en": "uniform",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "unmöglich",
+    "ipa": "[ˈʊnmøːklɪç]",
+    "fa": "غیرممکن",
+    "en": "impossible",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "unordentlich",
+    "ipa": "[ˈʊnʔɔʁdn̩tlɪç]",
+    "fa": "شلخته / نامرتب",
+    "en": "messy",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "unten",
+    "ipa": "[ˈʊntn̩]",
+    "fa": "پایین",
+    "en": "below / downstairs",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "unter",
+    "ipa": "[ˈʊntɐ]",
+    "fa": "زیر",
+    "en": "under",
+    "level": "A2",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه"
+  },
+  {
+    "word": "Unterkunft",
+    "ipa": "[ˈʊntɐkʊnft]",
+    "fa": "محل اقامت",
+    "en": "accommodation",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "unterschiedlich",
+    "ipa": "[ˈʊntɐʃiːtlɪç]",
+    "fa": "متفاوت",
+    "en": "different",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "unterschreiben",
+    "ipa": "[ˈʊntɐˌʃʁaɪ̯bn̩]",
+    "fa": "امضا کردن",
+    "en": "to sign",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Unterschrift",
+    "ipa": "[ˈʊntɐʃʁɪft]",
+    "fa": "امضا",
+    "en": "signature",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "unterstützen",
+    "ipa": "[ˈʊntɐˌʃtʏtsn̩]",
+    "fa": "حمایت کردن",
+    "en": "to support",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Unterstützung",
+    "ipa": "[ˈʊntɐʃtʏtsʊŋ]",
+    "fa": "حمایت / پشتیبانی",
+    "en": "support",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Unterwäsche",
+    "ipa": "[ˈʊntɐvɛʃə]",
+    "fa": "لباس زیر",
+    "en": "underwear",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "unterwegs",
+    "ipa": "[ˈʊntɐveːks]",
+    "fa": "در راه",
+    "en": "on the way",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "Vase",
+    "ipa": "[ˈvaːzə]",
+    "fa": "گلدان",
+    "en": "vase",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "Vatertag",
+    "ipa": "[ˈfaːtɐtaːk]",
+    "fa": "روز پدر",
+    "en": "Father's Day",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "vegan",
+    "ipa": "[veˈɡaːn]",
+    "fa": "وگان",
+    "en": "vegan",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Vegetarier",
+    "ipa": "[veɡeˈtaːʁiɐ]",
+    "fa": "گیاه‌خوار",
+    "en": "vegetarian",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Venedig",
+    "ipa": "[veˈneːdɪç]",
+    "fa": "ونیز",
+    "en": "Venice",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Ventilator",
+    "ipa": "[vɛntiˈlaːtɔɐ̯]",
+    "fa": "پنکه",
+    "en": "fan (device)",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "verändern",
+    "ipa": "[fɛɐ̯ˈʔɛndɐn]",
+    "fa": "تغییر دادن",
+    "en": "to change",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verbinden",
+    "ipa": "[fɛɐ̯ˈbɪndn̩]",
+    "fa": "وصل کردن / متصل کردن",
+    "en": "to connect",
+    "level": "A2",
+    "category": "فناوری"
+  },
+  {
+    "word": "verbessern",
+    "ipa": "[fɛɐ̯ˈbɛsɐn]",
+    "fa": "بهتر کردن / اصلاح کردن",
+    "en": "to improve",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verboten",
+    "ipa": "[fɛɐ̯ˈboːtn̩]",
+    "fa": "ممنوع",
+    "en": "forbidden",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "verdienen",
+    "ipa": "[fɛɐ̯ˈdiːnən]",
+    "fa": "درآمد داشتن / لایق بودن",
+    "en": "to earn / deserve",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "Verein",
+    "ipa": "[fɛɐ̯ˈʔaɪ̯n]",
+    "fa": "انجمن / باشگاه",
+    "en": "club / association",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "verheiratet",
+    "ipa": "[fɛɐ̯ˈhaɪ̯ʁaːtət]",
+    "fa": "متأهل",
+    "en": "married",
+    "level": "A2",
+    "category": "خانواده و روابط نزدیک"
+  },
+  {
+    "word": "Verkäufer",
+    "ipa": "[fɛɐ̯ˈkɔɪ̯fɐ]",
+    "fa": "فروشنده",
+    "en": "salesperson",
+    "level": "A2",
+    "category": "مشاغل"
+  },
+  {
+    "word": "Verkehrsmittel",
+    "ipa": "[fɛɐ̯ˈkeːɐ̯smɪtl̩]",
+    "fa": "وسیله حمل‌ونقل",
+    "en": "means of transportation",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "sich verkleiden",
+    "ipa": "[zɪç fɛɐ̯ˈklaɪ̯dn̩]",
+    "fa": "لباس مبدل پوشیدن",
+    "en": "to dress up in costume",
+    "level": "A2",
+    "category": "پوشاک"
+  },
+  {
+    "word": "verlassen",
+    "ipa": "[fɛɐ̯ˈlasn̩]",
+    "fa": "ترک کردن",
+    "en": "to leave",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verletzt",
+    "ipa": "[fɛɐ̯ˈlɛtst]",
+    "fa": "مجروح / آسیب‌دیده",
+    "en": "injured",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "verliebt",
+    "ipa": "[fɛɐ̯ˈliːpt]",
+    "fa": "عاشق",
+    "en": "in love",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "verlieren",
+    "ipa": "[fɛɐ̯ˈliːʁən]",
+    "fa": "گم کردن / باختن",
+    "en": "to lose",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "verpassen",
+    "ipa": "[fɛɐ̯ˈpasn̩]",
+    "fa": "از دست دادن (فرصت/اتوبوس)",
+    "en": "to miss (a bus/opportunity)",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "verrückt",
+    "ipa": "[fɛɐ̯ˈʁʏkt]",
+    "fa": "دیوانه",
+    "en": "crazy",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "verschieden",
+    "ipa": "[fɛɐ̯ˈʃiːdn̩]",
+    "fa": "مختلف / متفاوت",
+    "en": "different / various",
+    "level": "A2",
+    "category": "صفت‌های توصیفی عمومی"
+  },
+  {
+    "word": "Versicherung",
+    "ipa": "[fɛɐ̯ˈzɪçəʁʊŋ]",
+    "fa": "بیمه",
+    "en": "insurance",
+    "level": "A2",
+    "category": "اقتصاد و مالی"
+  },
+  {
+    "word": "Verspätung",
+    "ipa": "[fɛɐ̯ˈʃpɛːtʊŋ]",
+    "fa": "تأخیر",
+    "en": "delay",
+    "level": "A2",
+    "category": "حمل‌ونقل و سفر"
+  },
+  {
+    "word": "versprechen",
+    "ipa": "[fɛɐ̯ˈʃpʁɛçn̩]",
+    "fa": "قول دادن",
+    "en": "to promise",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Versteck",
+    "ipa": "[fɛɐ̯ˈʃtɛk]",
+    "fa": "مخفی‌گاه",
+    "en": "hiding place",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "Vertrag",
+    "ipa": "[fɛɐ̯ˈtʁaːk]",
+    "fa": "قرارداد",
+    "en": "contract",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "verwenden",
+    "ipa": "[fɛɐ̯ˈvɛndn̩]",
+    "fa": "استفاده کردن",
+    "en": "to use",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Viertelstunde",
+    "ipa": "[ˈfɪʁtl̩ˌʃtʊndə]",
+    "fa": "ربع ساعت",
+    "en": "quarter hour",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "Virus",
+    "ipa": "[ˈviːʁʊs]",
+    "fa": "ویروس",
+    "en": "virus",
+    "level": "A2",
+    "category": "بدن و سلامتی"
+  },
+  {
+    "word": "Visum",
+    "ipa": "[ˈviːzʊm]",
+    "fa": "ویزا",
+    "en": "visa",
+    "level": "A2",
+    "category": "جامعه، سیاست و حقوق"
+  },
+  {
+    "word": "Vollzeit",
+    "ipa": "[ˈfɔltsaɪ̯t]",
+    "fa": "تمام‌وقت",
+    "en": "full-time",
+    "level": "A2",
+    "category": "کار و شغل"
+  },
+  {
+    "word": "vor allem",
+    "ipa": "[foːɐ̯ ˈʔaləm]",
+    "fa": "مخصوصاً / بیش از همه",
+    "en": "above all",
+    "level": "A2",
+    "category": "حروف ربط و قیدهای رایج"
+  },
+  {
+    "word": "vorbei",
+    "ipa": "[foːɐ̯ˈbaɪ̯]",
+    "fa": "تمام‌شده / گذشته",
+    "en": "past / over",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "vorbereiten",
+    "ipa": "[ˈfoːɐ̯bəˌʁaɪ̯tn̩]",
+    "fa": "آماده کردن",
+    "en": "to prepare",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "Vorhang",
+    "ipa": "[ˈfoːɐ̯haŋ]",
+    "fa": "پرده",
+    "en": "curtain",
+    "level": "A2",
+    "category": "منزل و خانه"
+  },
+  {
+    "word": "vorher",
+    "ipa": "[ˈfoːɐ̯heːɐ̯]",
+    "fa": "قبل از آن",
+    "en": "beforehand",
+    "level": "A2",
+    "category": "زمان و تقویم"
+  },
+  {
+    "word": "vorne",
+    "ipa": "[ˈfɔʁnə]",
+    "fa": "جلو",
+    "en": "in front",
+    "level": "A2",
+    "category": "شهر و مکان‌های عمومی"
+  },
+  {
+    "word": "Vorschlag",
+    "ipa": "[ˈfoːɐ̯ʃlaːk]",
+    "fa": "پیشنهاد",
+    "en": "suggestion",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
+  },
+  {
+    "word": "vorschlagen",
+    "ipa": "[ˈfoːɐ̯ʃlaːɡn̩]",
+    "fa": "پیشنهاد دادن",
+    "en": "to suggest",
+    "level": "A2",
+    "category": "افعال روزمره"
+  },
+  {
+    "word": "vorsichtig",
+    "ipa": "[ˈfoːɐ̯zɪçtɪç]",
+    "fa": "محتاط",
+    "en": "careful",
+    "level": "A2",
+    "category": "احساسات و شخصیت"
+  },
+  {
+    "word": "Vorspeise",
+    "ipa": "[ˈfoːɐ̯ʃpaɪ̯zə]",
+    "fa": "پیش‌غذا",
+    "en": "appetizer",
+    "level": "A2",
+    "category": "غذا و نوشیدنی"
+  },
+  {
+    "word": "Vorteil",
+    "ipa": "[ˈfoːɐ̯taɪ̯l]",
+    "fa": "مزیت",
+    "en": "advantage",
+    "level": "A2",
+    "category": "مفاهیم و اشیای روزمره"
   }
 ]
