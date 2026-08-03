@@ -257,6 +257,7 @@ if (megaParent) {
 
 const SECTION_LABELS = {
   home: 'خانه',
+  path: 'مسیر روزانه',
   vocabulary: 'واژگان',
   grammar: 'گرامر',
   conjugation: 'صرف افعال',
@@ -264,17 +265,23 @@ const SECTION_LABELS = {
   levels: 'سطوح',
   quiz: 'آزمون سطح',
   reading: 'متن‌خوانی',
+  dialogues: 'دیالوگ',
+  dictation: 'دیکته',
   flashcards: 'فلش‌کارت',
   progress: 'پیشرفت من',
   phonetics: 'مسترکلاس فونتیک'
 };
 
 function runSectionInit(section) {
+  if (section === 'home') { renderHome(); renderHomeGamification(); }
+  if (section === 'path') renderStudyPath();
   if (section === 'vocabulary') filterVocab();
   if (section === 'grammar') { renderGrammar(); renderCultureNotes(); }
   if (section === 'conjugation') renderVerbs();
   if (section === 'cases') renderCases();
   if (section === 'reading') renderReading();
+  if (section === 'dialogues') renderDialogues();
+  if (section === 'dictation') { /* area filled on start */ }
   if (section === 'levels') renderLevels();
   if (section === 'flashcards') initFlashcards();
   if (section === 'progress') updateProgress();
@@ -408,6 +415,7 @@ async function loadData() {
     APP_DATA.vocabulary = vocabChunks.flat();
 
     currentVocab = APP_DATA.vocabulary || [];
+    currentPathDay = getStudyDayIndex();
     renderHome();
     renderLevels();
     renderVocab();
@@ -416,8 +424,11 @@ async function loadData() {
     renderVerbs();
     renderCases();
     renderReading();
+    renderDialogues();
+    renderStudyPath();
     initFlashcards();
     updateProgress();
+    renderHomeGamification();
     if (typeof populateRecorderSelect === 'function') populateRecorderSelect();
     const hash = location.hash.slice(1);
     if (hash) goToHash(hash, { updateHash: false });
@@ -437,14 +448,14 @@ async function loadData() {
 }
 
 function renderHome() {
-  if (!APP_DATA) return;
+  if (!APP_DATA || !homeFeatures) return;
   const features = [
     { icon: 'fa-graduation-cap', title: 'از A0 تا C1', desc: 'مسیر گام‌به‌گام از الفبا تا سطح پیشرفته' },
-    { icon: 'fa-volume-up', title: 'تلفظ دقیق IPA', desc: 'فونتیک استاندارد بین‌المللی' },
-    { icon: 'fa-language', title: 'ترجمهٔ دوزبانه', desc: 'فارسی و انگلیسی برای هر کلمه' },
-    { icon: 'fa-diagram-project', title: 'صرف افعال و حالت‌های دستوری', desc: 'مرجع کامل Konjugation و Kasus' },
-    { icon: 'fa-headphones', title: 'تلفظ صوتی و مسترکلاس فونتیک', desc: 'آنالیزور، جفت‌های کمینه و ضبط صدا' },
-    { icon: 'fa-list-check', title: 'آزمون سطح و پیگیری پیشرفت', desc: 'قبل از سطح بعد، دانشت را بسنج' },
+    { icon: 'fa-route', title: 'مسیر ۴۵ روزه', desc: 'هر روز درس مشخص: واژه، گرامر، تمرین' },
+    { icon: 'fa-volume-up', title: 'تلفظ دقیق IPA', desc: 'فونتیک، دیکته و دیالوگ صوتی' },
+    { icon: 'fa-language', title: 'ترجمهٔ دوزبانه', desc: 'فارسی، انگلیسی و نکات تفاوت با انگلیسی' },
+    { icon: 'fa-diagram-project', title: 'صرف و حالت‌ها', desc: 'افعال تا C1، Passiv، Konjunktiv II و Wechsel' },
+    { icon: 'fa-list-check', title: 'آزمون و پیشرفت', desc: 'تعیین سطح، دیکته، خروجی JSON و XP' },
   ];
   homeFeatures.innerHTML = features.map(f => `
     <div class="feature">
@@ -454,27 +465,33 @@ function renderHome() {
     </div>
   `).join('');
 
-  const path = [
-    { section: 'vocabulary', label: '۱. الفبا و اعداد را در بخش واژگان (سطح A0) مرور کن' },
-    { section: 'vocabulary', label: '۲. واژگان سطح فعلی‌ات را در بخش واژگان تمرین کن' },
-    { section: 'grammar', label: '۳. قواعد گرامری هم‌سطح را در بخش گرامر بخوان' },
-    { section: 'cases', label: '۴. حالت‌های دستوری (der/die/das و حروف اضافه) را مرور کن' },
-    { section: 'flashcards', label: '۵. با فلش‌کارت واژگان را مرور و تثبیت کن' },
-    { section: 'quiz', label: '۶. با آزمون سطح، آمادگی رفتن به سطح بعد را بسنج' },
-  ];
-  const pathHtml = `
-    <div class="progress-levels" style="margin-top:2rem;">
-      <h3 style="margin-bottom:0.5rem;">مسیر یادگیری پیشنهادی</h3>
-      ${path.map(p => `<button class="btn-secondary home-path-btn" data-goto="${p.section}" style="text-align:right;justify-content:flex-start;">${p.label}</button>`).join('')}
-    </div>
-  `;
-  homeFeatures.insertAdjacentHTML('afterend', pathHtml);
-  document.querySelectorAll('.home-path-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const navLink = document.querySelector(`.nav-list a[data-section="${btn.dataset.goto}"]`);
-      if (navLink) navLink.click();
+  const pathArea = document.getElementById('homePathArea');
+  if (pathArea) {
+    const today = getStudyDayIndex();
+    const dayPlan = (APP_DATA.studyPlan || [])[today] || (APP_DATA.studyPlan || [])[0];
+    const path = [
+      { section: 'path', label: dayPlan ? `امروز: ${dayPlan.title}` : 'مسیر یادگیری روزانه را باز کن' },
+      { section: 'vocabulary', label: 'واژگان سطح فعلی را مرور کن' },
+      { section: 'grammar', label: 'قواعد گرامری هم‌سطح را با توضیح بخوان' },
+      { section: 'dictation', label: 'دیکتهٔ شنیداری (ä ö ü ß) را تمرین کن' },
+      { section: 'dialogues', label: 'یک دیالوگ صوتی گوش بده' },
+      { section: 'flashcards', label: 'با فلش‌کارت واژگان را تثبیت کن' },
+      { section: 'quiz', label: 'آزمون سطح را بده' },
+    ];
+    pathArea.innerHTML = `
+      <div class="progress-levels" style="margin-top:2rem;">
+        <h3 style="margin-bottom:0.5rem;">مسیر یادگیری پیشنهادی</h3>
+        ${path.map(p => `<button class="btn-secondary home-path-btn" data-goto="${p.section}" style="text-align:right;justify-content:flex-start;">${escHtml(p.label)}</button>`).join('')}
+      </div>
+    `;
+    pathArea.querySelectorAll('.home-path-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const navLink = document.querySelector(`.nav-list a[data-section="${btn.dataset.goto}"]`);
+        if (navLink) navLink.click();
+      });
     });
-  });
+  }
+  renderHomeGamification();
 }
 
 const LEVEL_ICONS = { A0: 'fa-seedling', A1: 'fa-shoe-prints', A2: 'fa-walking', B1: 'fa-hiking', B2: 'fa-mountain', C1: 'fa-trophy' };
@@ -532,19 +549,28 @@ function renderVocab() {
   const page = currentVocab.slice(start, start + PAGE_SIZE);
 
   if (page.length === 0) {
-    vocabBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:2rem;opacity:0.6;">کلمه‌ای یافت نشد</td></tr>`;
+    vocabBody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:2rem;opacity:0.6;">کلمه‌ای یافت نشد</td></tr>`;
     vocabPagination.innerHTML = '';
     return;
   }
 
   vocabBody.innerHTML = page.map(w => {
     const isLearned = learnedWords.has(wKey(w));
+    const ex = w.example || '';
+    const exAudio = ex || w.word;
     return `
     <tr data-word="${escHtml(w.word)}">
       <td data-label="کلمه"><strong lang="de">${escHtml(w.word)}</strong></td>
+      <td data-label="جمع" dir="ltr" lang="de">${w.plural ? escHtml(w.plural) : '—'}${w.pluralNote ? ` <span class="plural-note" title="${escHtml(w.pluralNote)}">≈</span>` : ''}</td>
       <td class="ipa" data-label="تلفظ" dir="ltr">${escHtml(w.ipa || '')}</td>
       <td data-label="فارسی">${escHtml(w.fa || '')}</td>
-      <td data-label="English" dir="ltr" lang="en">${escHtml(w.en || '')}</td>
+      <td data-label="English" dir="ltr" lang="en">${escHtml(w.en || '')}${w.enNote ? `<div class="en-note" dir="ltr" lang="en">${escHtml(w.enNote)}</div>` : ''}</td>
+      <td data-label="مثال" class="vocab-example-cell">
+        ${ex ? `<span dir="ltr" lang="de">${escHtml(ex)}</span>
+          <button class="audio-btn" data-word="${escHtml(exAudio)}" aria-label="پخش مثال"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+          ${w.exampleFa ? `<div class="trans">🇮🇷 ${escHtml(w.exampleFa)}</div>` : ''}
+          ${w.exampleEn ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(w.exampleEn)}</div>` : ''}` : '—'}
+      </td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
         <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
@@ -580,9 +606,11 @@ function renderVocab() {
         btn.querySelector('i').className = 'fas fa-check-circle';
         btn.setAttribute('aria-pressed', 'true');
         btn.setAttribute('aria-label', 'حذف از یادگرفته‌ها');
+        addXP(2, 'واژه جدید');
       }
       saveProgress();
       updateProgressBar();
+      renderHomeGamification();
     });
   });
 
@@ -652,26 +680,52 @@ function renderGrammar() {
     return;
   }
 
-  grammarGrid.innerHTML = filtered.map(g => {
+  // Collapse duplicate titles into one card with multiple examples
+  const groups = [];
+  const byTitle = new Map();
+  filtered.forEach(g => {
+    const key = (g.title || '') + '|' + (g.level || '');
+    if (!byTitle.has(key)) {
+      const item = { ...g, examplesList: [] };
+      byTitle.set(key, item);
+      groups.push(item);
+    }
+    const item = byTitle.get(key);
+    if (g.description && !item.description) item.description = g.description;
+    if (g.enNote && !item.enNote) item.enNote = g.enNote;
+    if (g.examples && Array.isArray(g.examples)) item.examplesList.push(...g.examples);
+    else if (g.example) item.examplesList.push(g.example);
+    if (g.fa && !item.fa) item.fa = g.fa;
+    if (g.en && !item.en) item.en = g.en;
+  });
+
+  grammarGrid.innerHTML = groups.map(g => {
     let extraContent = '';
     if (g.description) {
-      extraContent += `<div class="grammar-desc">${escHtml(g.description)}</div>`;
+      extraContent += `
+        <div class="grammar-rule-box">
+          <div class="grammar-rule-label"><i class="fas fa-book-open"></i> قاعدهٔ گرامری</div>
+          <div class="grammar-desc">${escHtml(g.description)}</div>
+        </div>`;
     }
-    if (g.examples && Array.isArray(g.examples)) {
-      extraContent += g.examples.map(ex => `
+    if (g.enNote) {
+      extraContent += `
+        <div class="en-diff-box" dir="ltr" lang="en">
+          <strong>Difference from English / Cognate tip</strong>
+          <p>${escHtml(g.enNote)}</p>
+        </div>`;
+    }
+    const examples = [...new Set(g.examplesList || [])];
+    if (examples.length) {
+      extraContent += `<div class="grammar-examples-label">مثال‌ها</div>`;
+      extraContent += examples.map(ex => `
         <div class="example" dir="ltr">
           <span lang="de">${escHtml(ex)}</span>
           <button class="audio-btn" data-word="${escHtml(ex)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         </div>
       `).join('');
-    } else if (g.example) {
-      extraContent += `
-        <div class="example" dir="ltr">
-          <span lang="de">${escHtml(g.example)}</span>
-          <button class="audio-btn" data-word="${escHtml(g.example)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
-        </div>
-      `;
     }
+    // Show fa/en for first example set only as translations under examples
     return `
     <div class="grammar-card">
       <div class="title">${escHtml(g.title || 'مبحث گرامری')}</div>
@@ -731,7 +785,9 @@ function renderVerbs() {
     return;
   }
 
-  verbGrid.innerHTML = list.map(v => `
+  verbGrid.innerHTML = list.map(v => {
+    const hasK2 = v.konjunktivII && typeof v.konjunktivII === 'object';
+    return `
     <div class="grammar-card">
       <div class="title" dir="ltr" lang="de">${escHtml(v.infinitive)}
         <button class="audio-btn" data-word="${escHtml(v.infinitive)}" aria-label="پخش تلفظ ${escHtml(v.infinitive)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
@@ -740,18 +796,28 @@ function renderVerbs() {
       <span class="level-tag">${escHtml(v.type || '')}</span>${v.separable ? ' <span class="level-tag" style="background-color:rgba(16,185,129,0.15);color:var(--accent-color);">فعل جدایی‌پذیر (پیشوند: ' + escHtml(v.prefix || '') + ')</span>' : ''}
       <div class="grammar-desc">🇮🇷 ${escHtml(v.fa || '')} &nbsp;·&nbsp; 🇬🇧 ${escHtml(v.en || '')}</div>
       <table class="verb-table">
-        <tr><th class="pronoun"></th><th>حال (Präsens)</th>${v.praeteritum ? '<th>گذشته‌ی ساده (Präteritum)</th>' : ''}</tr>
+        <tr>
+          <th class="pronoun"></th>
+          <th>حال (Präsens)</th>
+          ${v.praeteritum ? '<th>گذشته‌ی ساده (Präteritum)</th>' : ''}
+          ${hasK2 ? '<th>Konjunktiv II</th>' : ''}
+        </tr>
         ${Object.keys(PRONOUN_LABELS).map(p => `
           <tr>
             <td class="pronoun">${PRONOUN_LABELS[p]}</td>
-            <td dir="ltr" lang="de">${escHtml(v.present[p] || '')}</td>
+            <td dir="ltr" lang="de">${escHtml((v.present && v.present[p]) || '')}</td>
             ${v.praeteritum ? `<td dir="ltr" lang="de">${escHtml(v.praeteritum[p] || '')}</td>` : ''}
+            ${hasK2 ? `<td dir="ltr" lang="de">${escHtml(v.konjunktivII[p] || '')}</td>` : ''}
           </tr>
         `).join('')}
       </table>
-      <div class="trans" style="margin-top:0.5rem;" dir="ltr" lang="de">Perfekt: ${escHtml(v.auxiliary)} ... ${escHtml(v.partizip)}</div>
+      <div class="trans" style="margin-top:0.5rem;" dir="ltr" lang="de">Perfekt: ${escHtml(v.auxiliary || '')} ... ${escHtml(v.partizip || '')}</div>
+      ${v.passive ? `<div class="passive-box" dir="ltr" lang="de"><strong>Passiv:</strong> ${escHtml(v.passive)}
+        <button class="audio-btn" data-word="${escHtml(v.passive)}" aria-label="پخش مجهول"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+      </div>` : ''}
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   attachSpeaker(verbGrid);
 }
@@ -808,11 +874,19 @@ function showExerciseResult(container, score, total, onRetry) {
 
 function startVerbExercise() {
   if (!APP_DATA || !APP_DATA.verbs) return;
-  const pool = shuffleArr(APP_DATA.verbs).slice(0, Math.min(8, APP_DATA.verbs.length));
+  const level = verbLevelFilter ? verbLevelFilter.value : 'all';
+  let verbs = APP_DATA.verbs;
+  if (level !== 'all') verbs = verbs.filter(v => v.level === level);
+  if (!verbs.length) verbs = APP_DATA.verbs;
+  const pool = shuffleArr(verbs).slice(0, Math.min(8, verbs.length));
   const questions = pool.map(v => {
     const pronoun = shuffleArr(Object.keys(PRONOUN_LABELS))[0];
-    const useTense = (v.praeteritum && Math.random() < 0.35) ? 'praeteritum' : 'present';
-    const tenseLabel = useTense === 'praeteritum' ? ' — گذشته‌ی ساده' : '';
+    const tenseChoices = ['present'];
+    if (v.praeteritum) tenseChoices.push('praeteritum');
+    if (v.konjunktivII) tenseChoices.push('konjunktivII');
+    const useTense = shuffleArr(tenseChoices)[0];
+    const tenseLabel = useTense === 'praeteritum' ? ' — گذشته‌ی ساده'
+      : useTense === 'konjunktivII' ? ' — Konjunktiv II' : '';
     const forms = v[useTense];
     const answer = forms[pronoun];
     const distractors = shuffleArr(Object.values(forms).filter(f => f !== answer)).slice(0, 3);
@@ -822,7 +896,10 @@ function startVerbExercise() {
       options: shuffleArr([answer, ...distractors])
     };
   });
-  runExercise(verbExerciseArea, questions, (score, total) => showExerciseResult(verbExerciseArea, score, total, startVerbExercise));
+  runExercise(verbExerciseArea, questions, (score, total) => {
+    showExerciseResult(verbExerciseArea, score, total, startVerbExercise);
+    if (score > 0) addXP(score * 3, 'تمرین صرف');
+  });
 }
 verbExerciseBtn.addEventListener('click', startVerbExercise);
 
@@ -1187,6 +1264,529 @@ function renderQuizQuestion() {
 
 quizStartBtn.addEventListener('click', buildQuiz);
 
+/* ── Gamification (XP + streak) ─────────────────────────────────────── */
+const XP_KEY = 'germanXP';
+const STREAK_KEY = 'germanStreak';
+const STUDY_DAY_KEY = 'germanStudyDay';
+const PATH_DONE_KEY = 'germanPathDone';
+
+function getXP() {
+  try { return parseInt(localStorage.getItem(XP_KEY) || '0', 10) || 0; } catch (_) { return 0; }
+}
+function addXP(amount, reason) {
+  const next = getXP() + (amount || 0);
+  try { localStorage.setItem(XP_KEY, String(next)); } catch (_) {}
+  touchStreak();
+  if (reason && typeof showToast === 'function') showToast(`+${amount} XP — ${reason}`);
+  renderHomeGamification();
+  return next;
+}
+function getStreakData() {
+  try { return JSON.parse(localStorage.getItem(STREAK_KEY) || '{}') || {}; } catch (_) { return {}; }
+}
+function touchStreak() {
+  const today = new Date().toISOString().slice(0, 10);
+  const data = getStreakData();
+  if (data.last === today) return data.count || 1;
+  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  const count = data.last === yesterday ? (data.count || 0) + 1 : 1;
+  try { localStorage.setItem(STREAK_KEY, JSON.stringify({ last: today, count })); } catch (_) {}
+  return count;
+}
+function getStreak() {
+  const data = getStreakData();
+  const today = new Date().toISOString().slice(0, 10);
+  const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+  if (data.last === today || data.last === yesterday) return data.count || 0;
+  return 0;
+}
+function renderHomeGamification() {
+  const el = document.getElementById('homeGamification');
+  const stats = document.getElementById('gamificationStats');
+  const xp = getXP();
+  const streak = getStreak();
+  const htmlMini = `<span class="xp-pill"><i class="fas fa-bolt"></i> ${xp} XP</span>
+    <span class="xp-pill"><i class="fas fa-fire"></i> ${streak} روز متوالی</span>`;
+  if (el) el.innerHTML = htmlMini;
+  if (stats) {
+    stats.innerHTML = `
+      <div class="stat-card"><i class="fas fa-bolt"></i><div><span>${xp}</span><p>امتیاز تجربه (XP)</p></div></div>
+      <div class="stat-card"><i class="fas fa-fire"></i><div><span>${streak}</span><p>روز متوالی فعالیت</p></div></div>
+      <div class="stat-card"><i class="fas fa-trophy"></i><div><span>${Math.floor(xp / 100) + 1}</span><p>سطح بازیکن (هر ۱۰۰ XP)</p></div></div>
+    `;
+  }
+}
+
+/* ── Study path (45-day) ────────────────────────────────────────────── */
+let currentPathDay = 0;
+
+function getStudyDayIndex() {
+  try {
+    const saved = parseInt(localStorage.getItem(STUDY_DAY_KEY) || '0', 10);
+    if (!isNaN(saved) && saved >= 0) return saved;
+  } catch (_) {}
+  return 0;
+}
+function setStudyDayIndex(i) {
+  const plan = (APP_DATA && APP_DATA.studyPlan) || [];
+  const max = Math.max(0, plan.length - 1);
+  currentPathDay = Math.max(0, Math.min(max, i));
+  try { localStorage.setItem(STUDY_DAY_KEY, String(currentPathDay)); } catch (_) {}
+}
+function getPathDone() {
+  try { return JSON.parse(localStorage.getItem(PATH_DONE_KEY) || '{}') || {}; } catch (_) { return {}; }
+}
+function markPathTaskDone(day, taskIdx) {
+  const done = getPathDone();
+  const key = String(day);
+  if (!done[key]) done[key] = [];
+  if (!done[key].includes(taskIdx)) {
+    done[key].push(taskIdx);
+    try { localStorage.setItem(PATH_DONE_KEY, JSON.stringify(done)); } catch (_) {}
+    addXP(10, 'تکلیف مسیر روزانه');
+  }
+  renderStudyPath();
+}
+function renderStudyPath() {
+  const content = document.getElementById('pathContent');
+  const badge = document.getElementById('pathDayBadge');
+  if (!content || !APP_DATA || !APP_DATA.studyPlan) return;
+  if (currentPathDay === 0 && getStudyDayIndex()) currentPathDay = getStudyDayIndex();
+  const plan = APP_DATA.studyPlan;
+  const day = plan[currentPathDay] || plan[0];
+  if (!day) { content.innerHTML = '<p>برنامه یافت نشد.</p>'; return; }
+  if (badge) badge.textContent = `روز ${day.day} از ${plan.length} · ${day.level}`;
+  const done = getPathDone()[String(day.day)] || [];
+  content.innerHTML = `
+    <div class="table-container path-card" style="padding:1.5rem;">
+      <h3>${escHtml(day.title)}</h3>
+      <p style="color:var(--text-muted);margin:0.5rem 0 1rem;">سطح پیشنهادی: <span class="level-badge">${escHtml(day.level)}</span></p>
+      <div class="path-tasks">
+        ${(day.tasks || []).map((t, i) => `
+          <div class="path-task ${done.includes(i) ? 'done' : ''}">
+            <div>
+              <strong>${escHtml(t.label)}</strong>
+              <div style="color:var(--text-muted);font-size:0.85rem;">${escHtml(t.type || '')}</div>
+            </div>
+            <div class="path-task-actions">
+              <button class="btn-small path-goto" data-section="${escHtml(t.section || '')}" data-level="${escHtml(t.level || day.level)}">برو</button>
+              <button class="btn-small path-done-btn" data-day="${day.day}" data-idx="${i}" ${done.includes(i) ? 'disabled' : ''}>
+                ${done.includes(i) ? '✓ انجام شد' : 'علامت انجام'}
+              </button>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  content.querySelectorAll('.path-goto').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const sec = btn.dataset.section;
+      const lvl = btn.dataset.level;
+      if (sec === 'vocabulary' && vocabLevelFilter) vocabLevelFilter.value = lvl || 'all';
+      if (sec === 'grammar' && grammarLevelFilter) grammarLevelFilter.value = lvl || 'all';
+      if (sec === 'quiz' && quizLevelFilter) quizLevelFilter.value = lvl || 'all';
+      if (sec === 'reading' && readingLevelFilter) readingLevelFilter.value = lvl || 'A0';
+      if (sec === 'flashcards' && flashcardLevelFilter) flashcardLevelFilter.value = lvl || 'all';
+      if (sec === 'dialogues') {
+        const df = document.getElementById('dialogueLevelFilter');
+        if (df) df.value = lvl || 'A0';
+      }
+      if (sec === 'dictation') {
+        const df = document.getElementById('dictationLevelFilter');
+        if (df) df.value = lvl || 'all';
+      }
+      goToSection(sec || 'vocabulary');
+    });
+  });
+  content.querySelectorAll('.path-done-btn').forEach(btn => {
+    btn.addEventListener('click', () => markPathTaskDone(parseInt(btn.dataset.day, 10), parseInt(btn.dataset.idx, 10)));
+  });
+}
+document.getElementById('pathTodayBtn')?.addEventListener('click', () => {
+  setStudyDayIndex(getStudyDayIndex());
+  renderStudyPath();
+});
+document.getElementById('pathPrevDayBtn')?.addEventListener('click', () => {
+  setStudyDayIndex(currentPathDay - 1);
+  renderStudyPath();
+});
+document.getElementById('pathNextDayBtn')?.addEventListener('click', () => {
+  setStudyDayIndex(currentPathDay + 1);
+  renderStudyPath();
+});
+
+/* ── Dialogues ──────────────────────────────────────────────────────── */
+function renderDialogues() {
+  const wrap = document.getElementById('dialogueContent');
+  const filter = document.getElementById('dialogueLevelFilter');
+  if (!wrap || !APP_DATA || !APP_DATA.dialogues) return;
+  const level = filter ? filter.value : 'A0';
+  const d = APP_DATA.dialogues.find(x => x.level === level) || APP_DATA.dialogues[0];
+  if (!d) { wrap.innerHTML = '<p>دیالوگی نیست.</p>'; return; }
+  wrap.innerHTML = `
+    <div class="table-container" style="padding:1.5rem;">
+      <h3>${escHtml(d.title)} <span class="level-badge">${escHtml(d.level)}</span></h3>
+      <div class="dialogue-lines">
+        ${(d.lines || []).map((line, i) => `
+          <div class="dialogue-line" data-line-idx="${i}">
+            <div class="dialogue-speaker">${escHtml(line.speaker || '')}</div>
+            <div class="dialogue-de" dir="ltr" lang="de">
+              ${escHtml(line.de || '')}
+              <button class="audio-btn" data-word="${escHtml(line.de || '')}" aria-label="پخش"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+            </div>
+            <div class="trans">🇮🇷 ${escHtml(line.fa || '')}</div>
+            <div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(line.en || '')}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+  attachSpeaker(wrap);
+}
+document.getElementById('dialogueLevelFilter')?.addEventListener('change', renderDialogues);
+
+async function playDialogueAll() {
+  if (!APP_DATA || !APP_DATA.dialogues) return;
+  const filter = document.getElementById('dialogueLevelFilter');
+  const level = filter ? filter.value : 'A0';
+  const d = APP_DATA.dialogues.find(x => x.level === level) || APP_DATA.dialogues[0];
+  if (!d || !d.lines) return;
+  addXP(5, 'شنیدن دیالوگ');
+  for (const line of d.lines) {
+    if (line.de) await speakGerman(line.de);
+    await new Promise(r => setTimeout(r, 400));
+  }
+}
+document.getElementById('dialoguePlayAllBtn')?.addEventListener('click', () => { playDialogueAll(); });
+
+/* ── Dictation ──────────────────────────────────────────────────────── */
+let dictationPool = [];
+let dictationIdx = 0;
+let dictationScore = 0;
+
+function normalizeDictation(s) {
+  return (s || '')
+    .trim()
+    .replace(/[?!.,;:"""''«»]/g, '')
+    .replace(/\s+/g, ' ')
+    .toLowerCase()
+    .replace(/ß/g, 'ss'); // accept ss for ß optionally — but we also allow exact ß via dual check
+}
+
+function dictationMatch(user, answer) {
+  const u = (user || '').trim().replace(/[?!.,;:"""''«»]/g, '').replace(/\s+/g, ' ');
+  const a = (answer || '').trim().replace(/[?!.,;:"""''«»]/g, '').replace(/\s+/g, ' ');
+  if (u === a) return true;
+  // case-insensitive + ß/ss flexibility
+  const fold = (x) => x.toLowerCase().replace(/ß/g, 'ss');
+  return fold(u) === fold(a);
+}
+
+function startDictation() {
+  const area = document.getElementById('dictationArea');
+  const filter = document.getElementById('dictationLevelFilter');
+  if (!area || !APP_DATA || !APP_DATA.dictation) return;
+  const level = filter ? filter.value : 'all';
+  let pool = APP_DATA.dictation.filter(d => level === 'all' || d.level === level);
+  if (!pool.length) pool = APP_DATA.dictation.slice();
+  dictationPool = shuffleArr(pool).slice(0, Math.min(8, pool.length));
+  dictationIdx = 0;
+  dictationScore = 0;
+  renderDictationQ();
+}
+
+function renderDictationQ() {
+  const area = document.getElementById('dictationArea');
+  if (!area) return;
+  if (dictationIdx >= dictationPool.length) {
+    area.innerHTML = `
+      <div class="table-container" style="padding:2rem;text-align:center;">
+        <h3>نتیجه دیکته</h3>
+        <p style="font-size:1.4rem;margin:1rem 0;">${dictationScore} از ${dictationPool.length} درست</p>
+        <button class="btn-primary" id="dictationRetryBtn">دوباره</button>
+      </div>`;
+    if (dictationScore === dictationPool.length && dictationPool.length) {
+      celebrate();
+      addXP(30, 'دیکته کامل');
+    } else {
+      addXP(5 * dictationScore, 'دیکته');
+    }
+    document.getElementById('dictationRetryBtn')?.addEventListener('click', startDictation);
+    return;
+  }
+  const item = dictationPool[dictationIdx];
+  area.innerHTML = `
+    <div class="table-container" style="padding:1.5rem;">
+      <p style="color:var(--text-muted);">عبارت ${dictationIdx + 1} از ${dictationPool.length} · سطح ${escHtml(item.level || '')} · امتیاز: ${dictationScore}</p>
+      ${item.hint ? `<p class="dictation-hint">راهنما: ${escHtml(item.hint)}</p>` : ''}
+      <div class="dictation-controls">
+        <button class="btn-primary" id="dictationPlayBtn"><i class="fas fa-volume-up"></i> پخش صوت</button>
+        <button class="btn-secondary" id="dictationReplayBtn">پخش دوباره</button>
+      </div>
+      <label class="sr-only" for="dictationInput">متن شنیده‌شده</label>
+      <input type="text" id="dictationInput" class="dictation-input" dir="ltr" lang="de" autocomplete="off" spellcheck="false" placeholder="آنچه شنیدی را اینجا بنویس...">
+      <div style="margin-top:0.75rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <button class="btn-accent" id="dictationCheckBtn">بررسی پاسخ</button>
+        <button class="btn-secondary" id="dictationSkipBtn">رد کردن</button>
+      </div>
+      <div id="dictationFeedback" style="margin-top:1rem;"></div>
+    </div>
+  `;
+  const play = () => speakGerman(item.text);
+  document.getElementById('dictationPlayBtn')?.addEventListener('click', play);
+  document.getElementById('dictationReplayBtn')?.addEventListener('click', play);
+  document.getElementById('dictationCheckBtn')?.addEventListener('click', () => {
+    const input = document.getElementById('dictationInput');
+    const fb = document.getElementById('dictationFeedback');
+    const ok = dictationMatch(input?.value || '', item.text);
+    if (ok) {
+      dictationScore++;
+      if (fb) fb.innerHTML = `<p style="color:var(--accent-color);font-weight:600;">✓ درست!</p>`;
+    } else if (fb) {
+      fb.innerHTML = `<p style="color:#ef4444;">✗ نادرست</p>
+        <p dir="ltr" lang="de">پاسخ: <strong>${escHtml(item.text)}</strong></p>
+        <p>🇮🇷 ${escHtml(item.fa || '')}</p>`;
+    }
+    setTimeout(() => { dictationIdx++; renderDictationQ(); }, 1100);
+  });
+  document.getElementById('dictationSkipBtn')?.addEventListener('click', () => {
+    dictationIdx++;
+    renderDictationQ();
+  });
+  setTimeout(play, 300);
+}
+document.getElementById('dictationStartBtn')?.addEventListener('click', startDictation);
+
+document.getElementById('umlautBtns')?.addEventListener('click', (e) => {
+  const btn = e.target.closest('.umlaut-insert');
+  if (!btn) return;
+  const input = document.getElementById('dictationInput');
+  if (!input) return;
+  const ch = btn.dataset.char || '';
+  const start = input.selectionStart || input.value.length;
+  const end = input.selectionEnd || input.value.length;
+  input.value = input.value.slice(0, start) + ch + input.value.slice(end);
+  input.focus();
+  const pos = start + ch.length;
+  input.setSelectionRange(pos, pos);
+});
+
+/* ── Wechselpräpositionen exercise ──────────────────────────────────── */
+function startWechselExercise() {
+  const area = document.getElementById('wechselExerciseArea');
+  if (!area || !APP_DATA || !APP_DATA.wechselExercises) return;
+  const items = shuffleArr(APP_DATA.wechselExercises).slice(0, 8);
+  const questions = items.map(it => ({
+    prompt: `${it.sentence}<br><span style="font-size:0.9rem;color:var(--text-muted);">${escHtml(it.reason || '')} — حالت مورد نیاز: ${escHtml(it.caseNeeded || '')}</span>`,
+    answer: it.caseNeeded,
+    options: shuffleArr(['Akkusativ', 'Dativ']),
+    explain: it.full
+  }));
+  // Use custom runner that supports HTML prompt + explanation
+  let idx = 0, score = 0;
+  function renderQ() {
+    if (idx >= questions.length) {
+      showExerciseResult(area, score, questions.length, startWechselExercise);
+      if (score > 0) addXP(score * 5, 'تمرین Wechsel');
+      return;
+    }
+    const q = questions[idx];
+    area.innerHTML = `
+      <div class="table-container" style="padding:1.5rem;margin-bottom:1rem;">
+        <p style="color:var(--text-muted);margin-bottom:0.5rem;">سوال ${idx + 1} از ${questions.length} · امتیاز: ${score}</p>
+        <p style="font-size:1.1rem;margin-bottom:0.5rem;" dir="ltr" lang="de">${q.prompt}</p>
+        <p style="margin-bottom:0.75rem;">حرکت (Wohin؟ → Akk) یا مکان ثابت (Wo؟ → Dat)؟</p>
+        <div style="display:flex;flex-direction:column;gap:0.5rem;">
+          ${q.options.map(o => `<button class="btn-secondary exercise-option" data-value="${escHtml(o)}" style="text-align:right;">${escHtml(o)}</button>`).join('')}
+        </div>
+        <div id="wechselExplain" style="margin-top:0.75rem;"></div>
+      </div>`;
+    area.querySelectorAll('.exercise-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const correct = btn.dataset.value === q.answer;
+        area.querySelectorAll('.exercise-option').forEach(b => {
+          b.disabled = true;
+          if (b.dataset.value === q.answer) b.classList.add('btn-accent');
+        });
+        if (correct) score++;
+        else btn.style.outline = '2px solid #ef4444';
+        const ex = document.getElementById('wechselExplain');
+        if (ex && q.explain) ex.innerHTML = `<p dir="ltr" lang="de">${escHtml(q.explain)}</p>`;
+        setTimeout(() => { idx++; renderQ(); }, 900);
+      });
+    });
+  }
+  renderQ();
+}
+document.getElementById('wechselExerciseBtn')?.addEventListener('click', startWechselExercise);
+
+/* ── Plural practice ────────────────────────────────────────────────── */
+function startPluralPractice() {
+  const area = document.getElementById('pluralExerciseArea');
+  if (!area || !APP_DATA || !APP_DATA.vocabulary) return;
+  // Prefer reliable plurals: with article form or without heuristic note
+  let pool = APP_DATA.vocabulary.filter(w => w.plural && (/^(der|die|das)\s/i.test(w.word) || !w.pluralNote));
+  if (pool.length < 8) pool = APP_DATA.vocabulary.filter(w => w.plural);
+  pool = shuffleArr(pool).slice(0, Math.min(8, pool.length));
+  if (!pool.length) {
+    area.innerHTML = '<p style="padding:1rem;">هنوز صورت جمع کافی برای تمرین نیست.</p>';
+    return;
+  }
+  const allPlurals = shuffleArr(APP_DATA.vocabulary.filter(w => w.plural).map(w => w.plural));
+  const questions = pool.map(w => {
+    const answer = w.plural;
+    const distractors = shuffleArr(allPlurals.filter(p => p !== answer)).slice(0, 3);
+    return {
+      prompt: `جمع «${w.word}» (${w.fa || ''}) چیست؟`,
+      answer,
+      options: shuffleArr([answer, ...distractors])
+    };
+  });
+  runExercise(area, questions, (score, total) => {
+    showExerciseResult(area, score, total, startPluralPractice);
+    if (score > 0) addXP(score * 4, 'تمرین جمع');
+  });
+}
+document.getElementById('pluralPracticeBtn')?.addEventListener('click', startPluralPractice);
+
+/* ── Placement test ─────────────────────────────────────────────────── */
+let placementIdx = 0;
+let placementScores = { A0: 0, A1: 0, A2: 0, B1: 0, B2: 0, C1: 0 };
+
+function startPlacementTest() {
+  const area = document.getElementById('placementArea');
+  if (!area || !APP_DATA || !APP_DATA.placementTest) return;
+  placementIdx = 0;
+  placementScores = { A0: 0, A1: 0, A2: 0, B1: 0, B2: 0, C1: 0 };
+  renderPlacementQ();
+}
+function renderPlacementQ() {
+  const area = document.getElementById('placementArea');
+  const qs = APP_DATA.placementTest || [];
+  if (!area) return;
+  if (placementIdx >= qs.length) {
+    const order = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
+    let recommended = 'A0';
+    let correct = 0;
+    // Recommend highest level where user got that level's question right, with cascade
+    for (const lvl of order) {
+      if (placementScores[lvl] > 0) recommended = lvl;
+      correct += placementScores[lvl];
+    }
+    // If weak overall, nudge down
+    if (correct <= 2) recommended = 'A0';
+    else if (correct <= 4) recommended = recommended === 'C1' ? 'B1' : recommended;
+    area.innerHTML = `
+      <div style="text-align:center;padding:0.5rem;">
+        <h4>سطح پیشنهادی: <span class="level-badge" style="font-size:1.1rem;">${escHtml(recommended)}</span></h4>
+        <p style="color:var(--text-muted);margin:0.75rem 0;">${correct} از ${qs.length} پاسخ درست</p>
+        <button class="btn-primary" id="placementGoVocab">شروع واژگان ${escHtml(recommended)}</button>
+        <button class="btn-secondary" id="placementGoPath">باز کردن مسیر روزانه</button>
+        <button class="btn-secondary" id="placementRetry">آزمون دوباره</button>
+      </div>`;
+    try { localStorage.setItem('germanPlacementLevel', recommended); } catch (_) {}
+    addXP(15, 'آزمون تعیین سطح');
+    document.getElementById('placementGoVocab')?.addEventListener('click', () => {
+      vocabLevelFilter.value = recommended;
+      filterVocab();
+      goToSection('vocabulary');
+    });
+    document.getElementById('placementGoPath')?.addEventListener('click', () => goToSection('path'));
+    document.getElementById('placementRetry')?.addEventListener('click', startPlacementTest);
+    return;
+  }
+  const q = qs[placementIdx];
+  area.innerHTML = `
+    <p style="color:var(--text-muted);margin-bottom:0.5rem;">سؤال ${placementIdx + 1} از ${qs.length}</p>
+    <p style="margin-bottom:0.75rem;font-weight:600;">${escHtml(q.q)}</p>
+    <div style="display:flex;flex-direction:column;gap:0.5rem;">
+      ${(q.options || []).map(o => `<button class="btn-secondary placement-opt" data-value="${escHtml(o)}" style="text-align:right;">${escHtml(o)}</button>`).join('')}
+    </div>`;
+  area.querySelectorAll('.placement-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ok = btn.dataset.value === q.answer;
+      area.querySelectorAll('.placement-opt').forEach(b => {
+        b.disabled = true;
+        if (b.dataset.value === q.answer) b.classList.add('btn-accent');
+      });
+      if (ok) {
+        placementScores[q.level] = (placementScores[q.level] || 0) + 1;
+      } else {
+        btn.style.outline = '2px solid #ef4444';
+      }
+      setTimeout(() => { placementIdx++; renderPlacementQ(); }, 650);
+    });
+  });
+}
+document.getElementById('placementStartBtn')?.addEventListener('click', startPlacementTest);
+
+/* ── Progress export / import ───────────────────────────────────────── */
+function collectProgressBackup() {
+  const keys = [
+    'germanLearned', 'germanMainFlashSR', 'germanBadgesUnlocked',
+    XP_KEY, STREAK_KEY, STUDY_DAY_KEY, PATH_DONE_KEY, 'germanPlacementLevel',
+    'germanPhoneticsProgress', 'theme'
+  ];
+  const quizKeys = [];
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k && k.startsWith('germanQuizLast_')) quizKeys.push(k);
+    }
+  } catch (_) {}
+  const data = { version: 1, exportedAt: new Date().toISOString(), store: {} };
+  [...keys, ...quizKeys].forEach(k => {
+    try {
+      const v = localStorage.getItem(k);
+      if (v !== null) data.store[k] = v;
+    } catch (_) {}
+  });
+  return data;
+}
+function exportProgress() {
+  const data = collectProgressBackup();
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `deutsch-progress-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  if (typeof showToast === 'function') showToast('فایل پیشرفت دانلود شد');
+}
+function importProgressFromObject(data) {
+  if (!data || !data.store || typeof data.store !== 'object') throw new Error('فرمت نامعتبر');
+  Object.keys(data.store).forEach(k => {
+    try { localStorage.setItem(k, data.store[k]); } catch (_) {}
+  });
+  loadProgress();
+  updateProgress();
+  renderVocab();
+  renderHomeGamification();
+  if (typeof showToast === 'function') showToast('پیشرفت بازیابی شد');
+}
+document.getElementById('exportProgressBtn')?.addEventListener('click', exportProgress);
+document.getElementById('importProgressBtn')?.addEventListener('click', () => {
+  document.getElementById('importProgressFile')?.click();
+});
+document.getElementById('importProgressFile')?.addEventListener('change', (e) => {
+  const file = e.target.files && e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      if (!confirm('پیشرفت فعلی با فایل وارداتی جایگزین می‌شود. ادامه؟')) return;
+      importProgressFromObject(data);
+    } catch (err) {
+      alert('خواندن فایل ناموفق بود: ' + (err.message || err));
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+});
+
 function loadProgress() {
   try {
     const saved = JSON.parse(localStorage.getItem('germanLearned') || '[]');
@@ -1196,6 +1796,7 @@ function loadProgress() {
 
 function saveProgress() {
   localStorage.setItem('germanLearned', JSON.stringify([...learnedWords]));
+  touchStreak();
 }
 
 function updateProgressBar() {
@@ -1216,6 +1817,7 @@ function updateProgress() {
   if (statTotal) statTotal.textContent = total;
   if (statPercent) statPercent.textContent = pct + '%';
   updateProgressBar();
+  renderHomeGamification();
 
   if (progressRing) {
     progressRing.style.background = `conic-gradient(var(--accent-color) ${pct * 3.6}deg, var(--border-color) 0deg)`;

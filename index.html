@@ -75,12 +75,15 @@
       <nav id="primary-nav" aria-label="منوی اصلی">
         <ul class="nav-list" id="navList">
           <li><a href="#" data-section="home" class="active">خانه</a></li>
+          <li><a href="#" data-section="path">مسیر روزانه</a></li>
           <li><a href="#" data-section="vocabulary">واژگان</a></li>
           <li><a href="#" data-section="grammar">گرامر</a></li>
           <li><a href="#" data-section="conjugation">صرف افعال</a></li>
           <li><a href="#" data-section="cases">حالت‌های دستوری</a></li>
           <li><a href="#" data-section="levels">سطوح</a></li>
           <li><a href="#" data-section="reading">متن‌خوانی</a></li>
+          <li><a href="#" data-section="dialogues">دیالوگ</a></li>
+          <li><a href="#" data-section="dictation">دیکته</a></li>
           <li><a href="#" data-section="quiz">آزمون سطح</a></li>
           <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
           <li><a href="#" data-section="progress">پیشرفت من</a></li>
@@ -114,8 +117,29 @@
       <div class="hero">
         <h1>یادگیری هوشمند زبان آلمانی</h1>
         <p>مسیر جامع یادگیری واژگان، گرامر و اصطلاحات از سطح A0 تا C1</p>
+        <div id="homeGamification" class="home-gamification" aria-live="polite"></div>
+      </div>
+      <div id="placementWrap" class="placement-wrap table-container">
+        <h3><i class="fas fa-clipboard-check" aria-hidden="true"></i> آزمون تعیین سطح</h3>
+        <p style="color:var(--text-muted);margin:0.5rem 0 1rem;">نمی‌دانی از کجا شروع کنی؟ با ۱۰ سؤال کوتاه سطح CEFR پیشنهادی را ببین.</p>
+        <div id="placementArea">
+          <button id="placementStartBtn" class="btn-primary">شروع آزمون تعیین سطح</button>
+        </div>
       </div>
       <div id="homeFeatures" class="features-grid"></div>
+      <div id="homePathArea"></div>
+    </section>
+
+    <section id="path" class="section">
+      <h2>مسیر یادگیری روزانه (۴۵ روز)</h2>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">هر روز دقیقاً بدان چه واژه‌ای، چه گرامری و چه تمرینی را انجام دهی.</p>
+      <div class="controls-bar">
+        <button id="pathTodayBtn" class="btn-primary">برو به درس امروز</button>
+        <button id="pathPrevDayBtn" class="btn-secondary">روز قبل</button>
+        <button id="pathNextDayBtn" class="btn-secondary">روز بعد</button>
+        <span id="pathDayBadge" class="badge">روز ۱</span>
+      </div>
+      <div id="pathContent"></div>
     </section>
 
     <section id="vocabulary" class="section">
@@ -165,15 +189,19 @@
           <option value="مفاهیم و اشیای روزمره">مفاهیم و اشیای روزمره</option>
         </select>
         <button id="vocabRandomBtn" class="btn-primary">کلمه تصادفی</button>
+        <button id="pluralPracticeBtn" class="btn-accent">تمرین جمع اسم‌ها</button>
       </div>
+      <div id="pluralExerciseArea"></div>
       <div class="table-container">
         <table id="vocabTable">
           <thead>
             <tr>
               <th>کلمه (آلمانی)</th>
+              <th>جمع</th>
               <th>تلفظ (IPA)</th>
               <th>معنی فارسی</th>
               <th>معنی انگلیسی</th>
+              <th>مثال</th>
               <th>سطح</th>
               <th>عملیات</th>
             </tr>
@@ -206,7 +234,7 @@
 
     <section id="conjugation" class="section">
       <h2>صرف افعال (Konjugation)</h2>
-      <p style="color:var(--text-muted);margin-bottom:1rem;">صرف زمان حال و زمان کامل (Perfekt) مهم‌ترین افعال آلمانی، شامل افعال بی‌قاعده و کمکی-وجهی.</p>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">صرف حال، گذشته ساده، Perfekt، و در سطوح بالاتر Konjunktiv II و مجهول — از A0 تا C1.</p>
       <div class="controls-bar">
         <input type="text" id="verbSearch" placeholder="جستجوی فعل (مثلاً sein, haben, sprechen)...">
         <select id="verbLevelFilter">
@@ -214,6 +242,9 @@
           <option value="A0">A0</option>
           <option value="A1">A1</option>
           <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
         </select>
         <button id="verbExerciseBtn" class="btn-accent">تمرین صرف افعال</button>
       </div>
@@ -226,8 +257,10 @@
       <p style="color:var(--text-muted);margin-bottom:1rem;">حروف تعریف، ضمایر و حروف اضافه در چهار حالت آلمانی — مهم‌ترین بخش گرامری برای عبور از سطح A2/B1.</p>
       <div class="controls-bar">
         <button id="caseExerciseBtn" class="btn-accent">تمرین حروف تعریف</button>
+        <button id="wechselExerciseBtn" class="btn-primary">تمرین Wechselpräpositionen</button>
       </div>
       <div id="caseExerciseArea"></div>
+      <div id="wechselExerciseArea"></div>
       <div id="casesContent"></div>
     </section>
 
@@ -245,6 +278,53 @@
         </select>
       </div>
       <div id="readingContent"></div>
+    </section>
+
+    <section id="dialogues" class="section">
+      <h2>دیالوگ‌های صوتی</h2>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">مکالمهٔ کوتاه دو نفره برای هر سطح — واقعی‌تر از متن روایی تنها.</p>
+      <div class="controls-bar">
+        <select id="dialogueLevelFilter">
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
+        </select>
+        <button id="dialoguePlayAllBtn" class="btn-primary"><i class="fas fa-play"></i> پخش کل دیالوگ</button>
+      </div>
+      <div id="dialogueContent"></div>
+    </section>
+
+    <section id="dictation" class="section">
+      <h2>دیکتهٔ شنیداری</h2>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">صدا را بشنو، آنچه می‌شنوی را تایپ کن. ä، ö، ü و ß در تصحیح لحاظ می‌شوند.</p>
+      <div class="controls-bar">
+        <select id="dictationLevelFilter">
+          <option value="all">همه سطوح</option>
+          <option value="A0">A0</option>
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
+        </select>
+        <button id="dictationStartBtn" class="btn-primary">شروع دیکته</button>
+      </div>
+      <div id="dictationArea"></div>
+      <div class="dictation-help table-container" style="padding:1rem;margin-top:1rem;">
+        <strong>میان‌بر حروف ویژه:</strong>
+        <div class="umlaut-btns" id="umlautBtns">
+          <button type="button" class="btn-small umlaut-insert" data-char="ä">ä</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="ö">ö</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="ü">ü</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="ß">ß</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="Ä">Ä</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="Ö">Ö</button>
+          <button type="button" class="btn-small umlaut-insert" data-char="Ü">Ü</button>
+        </div>
+      </div>
     </section>
 
     <section id="levels" class="section">
@@ -344,7 +424,17 @@
         <div id="progressFill" class="progress-fill"></div>
       </div>
       <div id="progressLevels" class="progress-levels"></div>
+      <div id="gamificationStats" class="stats-cards" style="margin-top:1.5rem;"></div>
       <div id="badgesArea" class="stats-cards" style="margin-top:1.5rem;"></div>
+      <div class="backup-container table-container" style="padding:1.25rem;margin-top:1.5rem;">
+        <h3 style="margin-bottom:0.5rem;"><i class="fas fa-file-export"></i> پشتیبان‌گیری پیشرفت</h3>
+        <p style="color:var(--text-muted);margin-bottom:0.75rem;">پیشرفت فقط در مرورگر ذخیره می‌شود. با خروجی JSON می‌توانی آن را به دستگاه دیگر منتقل کنی.</p>
+        <div class="controls-bar" style="margin:0;">
+          <button id="exportProgressBtn" class="btn-primary">خروجی JSON</button>
+          <button id="importProgressBtn" class="btn-secondary">ورود از JSON</button>
+          <input type="file" id="importProgressFile" accept="application/json,.json" hidden>
+        </div>
+      </div>
       <div class="reset-container">
         <button id="resetProgressBtn" class="btn-danger">ریست کردن پیشرفت یادگیری</button>
       </div>
