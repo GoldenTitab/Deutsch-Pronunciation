@@ -351,17 +351,6 @@
     "exampleEn": "I want to begin / start."
   },
   {
-    "word": "anfangen",
-    "ipa": "[ˈanˌfaŋən]",
-    "fa": "شروع کردن",
-    "en": "to start / begin",
-    "level": "A2",
-    "category": "افعال روزمره",
-    "example": "Ich will anfangen.",
-    "exampleFa": "می‌خواهم شروع کردن.",
-    "exampleEn": "I want to start / begin."
-  },
-  {
     "word": "Angabe",
     "ipa": "[ˈanɡaːbə]",
     "fa": "اطلاعات / جزئیات ارائه‌شده",
@@ -1533,18 +1522,6 @@
     "exampleEn": "That is character."
   },
   {
-    "word": "Chef",
-    "ipa": "[ʃɛf]",
-    "fa": "رئیس",
-    "en": "boss",
-    "level": "A2",
-    "category": "کار و شغل",
-    "plural": "die Chefs",
-    "example": "Ich lerne das Wort „Chef“.",
-    "exampleFa": "من واژه «رئیس» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Chef”."
-  },
-  {
     "word": "circa",
     "ipa": "[ˈtsɪʁka]",
     "fa": "تقریباً",
@@ -1660,19 +1637,6 @@
     "example": "Hier ist das Bein.",
     "exampleFa": "اینجا پا (از ران تا مچ) است.",
     "exampleEn": "Here is leg."
-  },
-  {
-    "word": "das Brötchen",
-    "ipa": "[das ˈbʁøːtçən]",
-    "fa": "نان کوچک (نان سنگک)",
-    "en": "roll (bread)",
-    "level": "A2",
-    "category": "غذا و نوشیدنی",
-    "plural": "die Brötchen",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist das Brötchen.",
-    "exampleFa": "اینجا نان کوچک (نان سنگک) است.",
-    "exampleEn": "Here is roll (bread)."
   },
   {
     "word": "das Ei",
@@ -2109,32 +2073,6 @@
     "exampleEn": "Here is engineer."
   },
   {
-    "word": "der Keller",
-    "ipa": "[deːɐ̯ ˈkɛlɐ]",
-    "fa": "زیرزمین",
-    "en": "basement",
-    "level": "A2",
-    "category": "منزل و خانه",
-    "plural": "die Keller",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Keller.",
-    "exampleFa": "اینجا زیرزمین است.",
-    "exampleEn": "Here is basement."
-  },
-  {
-    "word": "der Koch",
-    "ipa": "[deːɐ̯ kɔx]",
-    "fa": "آشپز (مرد)",
-    "en": "cook (male)",
-    "level": "A2",
-    "category": "مشاغل",
-    "plural": "die Koche",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Koch.",
-    "exampleFa": "اینجا آشپز (مرد) است.",
-    "exampleEn": "Here is cook (male)."
-  },
-  {
     "word": "der Kuchen",
     "ipa": "[deːɐ̯ ˈkuːxən]",
     "fa": "کیک",
@@ -2307,19 +2245,6 @@
     "exampleEn": "Here is salad."
   },
   {
-    "word": "der Schrank",
-    "ipa": "[deːɐ̯ ʃʁaŋk]",
-    "fa": "کمد / گنجه",
-    "en": "cupboard / wardrobe",
-    "level": "A2",
-    "category": "منزل و خانه",
-    "plural": "die Schranke",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Schrank.",
-    "exampleFa": "اینجا کمد / گنجه است.",
-    "exampleEn": "Here is cupboard / wardrobe."
-  },
-  {
     "word": "der Spiegel",
     "ipa": "[deːɐ̯ ˈʃpiːɡl̩]",
     "fa": "آینه",
@@ -2370,19 +2295,6 @@
     "example": "Hier ist der Teppich.",
     "exampleFa": "اینجا قالی / فرش است.",
     "exampleEn": "Here is carpet."
-  },
-  {
-    "word": "der Verkäufer",
-    "ipa": "[deːɐ̯ fɛɐ̯ˈkɔʏ̯fɐ]",
-    "fa": "فروشنده (مرد)",
-    "en": "salesman",
-    "level": "A2",
-    "category": "مشاغل",
-    "plural": "die Verkäufer",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Verkäufer.",
-    "exampleFa": "اینجا فروشنده (مرد) است.",
-    "exampleEn": "Here is salesman."
   },
   {
     "word": "der Vormittag",
@@ -2511,32 +2423,6 @@
     "example": "Ich lerne das Wort „dick“.",
     "exampleFa": "من واژه «چاق / ضخیم» را یاد می‌گیرم.",
     "exampleEn": "I am learning the word “dick”."
-  },
-  {
-    "word": "die Bahn",
-    "ipa": "[diː baːn]",
-    "fa": "قطار / تراموا",
-    "en": "train / tram",
-    "level": "A2",
-    "category": "حمل‌ونقل و سفر",
-    "plural": "die Bahnen",
-    "example": "Hier ist die Bahn.",
-    "exampleFa": "اینجا قطار / تراموا است.",
-    "exampleEn": "Here is train / tram."
-  },
-  {
-    "word": "die Bank",
-    "ipa": "[diː baŋk]",
-    "fa": "بانک",
-    "en": "bank",
-    "enNote": "Possible cognate with English “bank”.",
-    "level": "A2",
-    "category": "شهر و مکان‌های عمومی",
-    "plural": "die Banken",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist die Bank.",
-    "exampleFa": "اینجا بانک است.",
-    "exampleEn": "Here is bank."
   },
   {
     "word": "die Butter",
@@ -4164,17 +4050,6 @@
     "exampleEn": "I want to like (sth. appeals to sb.)."
   },
   {
-    "word": "gefallen",
-    "ipa": "[ɡəˈfalən]",
-    "fa": "خوش آمدن (کسی از چیزی)",
-    "en": "to please / to like (impersonal)",
-    "level": "A2",
-    "category": "احساسات و شخصیت",
-    "example": "Ich will gefallen.",
-    "exampleFa": "می‌خواهم خوش آمدن (کسی از چیزی).",
-    "exampleEn": "I want to please / to like (impersonal)."
-  },
-  {
     "word": "gefährlich",
     "ipa": "[ɡəˈfɛːɐ̯lɪç]",
     "fa": "خطرناک",
@@ -4971,18 +4846,6 @@
     "example": "Ich will holen.",
     "exampleFa": "می‌خواهم آوردن / گرفتن.",
     "exampleEn": "I want to fetch / get."
-  },
-  {
-    "word": "Hose",
-    "ipa": "[ˈhoːzə]",
-    "fa": "شلوار",
-    "en": "pants / trousers",
-    "level": "A2",
-    "category": "پوشاک",
-    "plural": "die Hosen",
-    "example": "Ich lerne das Wort „Hose“.",
-    "exampleFa": "من واژه «شلوار» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Hose”."
   },
   {
     "word": "Hotel",
@@ -8918,18 +8781,6 @@
     "example": "Ich lerne das Wort „Temperatur“.",
     "exampleFa": "من واژه «دما» را یاد می‌گیرم.",
     "exampleEn": "I am learning the word “Temperatur”."
-  },
-  {
-    "word": "Teppich",
-    "ipa": "[ˈtɛpɪç]",
-    "fa": "فرش",
-    "en": "carpet / rug",
-    "level": "A2",
-    "category": "منزل و خانه",
-    "plural": "die Teppiche",
-    "example": "Ich lerne das Wort „Teppich“.",
-    "exampleFa": "من واژه «فرش» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word \"Teppich\"."
   },
   {
     "word": "Termin",

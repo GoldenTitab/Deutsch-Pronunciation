@@ -1885,19 +1885,6 @@
     "exampleEn": "I am learning the word “Denkmal”."
   },
   {
-    "word": "der Bäcker",
-    "ipa": "[deːɐ̯ ˈbɛkɐ]",
-    "fa": "نانوا",
-    "en": "baker",
-    "level": "B1",
-    "category": "مشاغل",
-    "plural": "die Bäcker",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Bäcker.",
-    "exampleFa": "اینجا نانوا است.",
-    "exampleEn": "Here is baker."
-  },
-  {
     "word": "der Cousin",
     "ipa": "[deːɐ̯ kuˈzɛ̃ː]",
     "fa": "پسرعمو / پسرخاله",
@@ -1910,33 +1897,6 @@
     "example": "Hier ist der Cousin.",
     "exampleFa": "اینجا پسرعمو / پسرخاله است.",
     "exampleEn": "Here is cousin (male)."
-  },
-  {
-    "word": "der Friseur",
-    "ipa": "[deːɐ̯ fʁiˈzøːɐ̯]",
-    "fa": "آرایشگر (مرد)",
-    "en": "hairdresser",
-    "level": "B1",
-    "category": "مشاغل",
-    "plural": "die Friseure",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Friseur.",
-    "exampleFa": "اینجا آرایشگر (مرد) است.",
-    "exampleEn": "Here is hairdresser."
-  },
-  {
-    "word": "der Pullover",
-    "ipa": "[deːɐ̯ ˈpʊloːvɐ]",
-    "fa": "پلیور",
-    "en": "pullover / sweater",
-    "enNote": "Possible cognate with English “pullover / sweater”.",
-    "level": "B1",
-    "category": "پوشاک",
-    "plural": "die Pullover",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Pullover.",
-    "exampleFa": "اینجا پلیور است.",
-    "exampleEn": "Here is pullover / sweater."
   },
   {
     "word": "der Schal",
@@ -2124,19 +2084,6 @@
     "exampleEn": "Here is nurse (female)."
   },
   {
-    "word": "die Köchin",
-    "ipa": "[diː ˈkœçɪn]",
-    "fa": "آشپز (زن)",
-    "en": "cook (female)",
-    "level": "B1",
-    "category": "مشاغل",
-    "plural": "die Köchinnen",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist die Köchin.",
-    "exampleFa": "اینجا آشپز (زن) است.",
-    "exampleEn": "Here is cook (female)."
-  },
-  {
     "word": "die Lampe",
     "ipa": "[diː ˈlampə]",
     "fa": "چراغ",
@@ -2164,19 +2111,6 @@
     "exampleEn": "Here is jam."
   },
   {
-    "word": "die Mütze",
-    "ipa": "[diː ˈmʏt͡sə]",
-    "fa": "کلاه (بافتنی)",
-    "en": "cap / beanie",
-    "level": "B1",
-    "category": "پوشاک",
-    "plural": "die Mützen",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist die Mütze.",
-    "exampleFa": "اینجا کلاه (بافتنی) است.",
-    "exampleEn": "Here is cap / beanie."
-  },
-  {
     "word": "die Polizistin",
     "ipa": "[diː poliˈt͡sɪstɪn]",
     "fa": "پلیس (زن)",
@@ -2189,19 +2123,6 @@
     "example": "Hier ist die Polizistin.",
     "exampleFa": "اینجا پلیس (زن) است.",
     "exampleEn": "Here is policewoman."
-  },
-  {
-    "word": "die Schülerin",
-    "ipa": "[diː ˈʃyːləʁɪn]",
-    "fa": "دانش‌آموز (زن)",
-    "en": "pupil (female)",
-    "level": "B1",
-    "category": "مشاغل",
-    "plural": "die Schülerinnen",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist die Schülerin.",
-    "exampleFa": "اینجا دانش‌آموز (زن) است.",
-    "exampleEn": "Here is pupil (female)."
   },
   {
     "word": "die Stiefel",
@@ -2897,17 +2818,6 @@
     "example": "Das ist erleichtert.",
     "exampleFa": "این آسوده‌خاطر / راحت‌شده است.",
     "exampleEn": "That is relieved."
-  },
-  {
-    "word": "ermöglichen",
-    "ipa": "[ɛɐ̯ˈmøːklɪçn̩]",
-    "fa": "امکان دادن",
-    "en": "to enable",
-    "level": "B1",
-    "category": "افعال روزمره",
-    "example": "Ich will ermöglichen.",
-    "exampleFa": "می‌خواهم امکان دادن.",
-    "exampleEn": "I want to enable."
   },
   {
     "word": "ersetzen",
@@ -6255,19 +6165,6 @@
     "exampleEn": "I am learning the word “Motor”."
   },
   {
-    "word": "Motorrad",
-    "ipa": "[ˈmoːtoːɐ̯ʁaːt]",
-    "fa": "موتورسیکلت",
-    "en": "motorcycle",
-    "enNote": "Possible cognate with English “motorcycle”.",
-    "level": "B1",
-    "category": "حمل‌ونقل و سفر",
-    "plural": "die Motorräder",
-    "example": "Ich lerne das Wort „Motorrad“.",
-    "exampleFa": "من واژه «موتورسیکلت» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Motorrad”."
-  },
-  {
     "word": "Muskel",
     "ipa": "[ˈmʊskl̩]",
     "fa": "عضله",
@@ -7695,19 +7592,6 @@
     "exampleEn": "I am learning the word “Schale”."
   },
   {
-    "word": "Schale",
-    "ipa": "[ˈʃaːlə]",
-    "fa": "کاسه / پوست (میوه)",
-    "en": "bowl / peel",
-    "level": "B1",
-    "category": "منزل و خانه",
-    "plural": "die Schalen",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Ich lerne das Wort „Schale“.",
-    "exampleFa": "من واژه «کاسه / پوست (میوه)» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Schale”."
-  },
-  {
     "word": "Schalter",
     "ipa": "[ˈʃaltɐ]",
     "fa": "باجه / کلید (برق)",
@@ -8206,17 +8090,6 @@
     "exampleEn": "to recover"
   },
   {
-    "word": "sich erholen",
-    "ipa": "[zɪç ɛɐ̯ˈhoːlən]",
-    "fa": "استراحت کردن / بهبود یافتن",
-    "en": "to relax / recover",
-    "level": "B1",
-    "category": "بدن و سلامتی",
-    "example": "sich erholen",
-    "exampleFa": "استراحت کردن / بهبود یافتن",
-    "exampleEn": "to relax / recover"
-  },
-  {
     "word": "sich interessieren",
     "ipa": "[zɪç ɪntəʁɛˈsiːʁən]",
     "fa": "علاقه داشتن (به)",
@@ -8226,17 +8099,6 @@
     "example": "Ich will sich interessieren.",
     "exampleFa": "می‌خواهم علاقه داشتن (به).",
     "exampleEn": "I want to be interested (in)."
-  },
-  {
-    "word": "sich interessieren",
-    "ipa": "[zɪç ɪntəʁɛˈsiːʁən]",
-    "fa": "علاقه‌مند بودن",
-    "en": "to be interested",
-    "level": "B1",
-    "category": "احساسات و شخصیت",
-    "example": "Das ist sich interessieren.",
-    "exampleFa": "این علاقه‌مند بودن است.",
-    "exampleEn": "That is to be interested."
   },
   {
     "word": "sich verkleiden",
@@ -8782,19 +8644,6 @@
     "exampleEn": "That is strict."
   },
   {
-    "word": "Student",
-    "ipa": "[ʃtuˈdɛnt]",
-    "fa": "دانشجو (مرد)",
-    "en": "student (male, university)",
-    "enNote": "Possible cognate with English “student (male, university)”.",
-    "level": "B1",
-    "category": "مدرسه و آموزش",
-    "plural": "die Studenten",
-    "example": "Ich lerne das Wort „Student“.",
-    "exampleFa": "من واژه «دانشجو (مرد)» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Student”."
-  },
-  {
     "word": "studieren",
     "ipa": "[ʃtuˈdiːʁən]",
     "fa": "تحصیل کردن (دانشگاه)",
@@ -8805,18 +8654,6 @@
     "example": "Ich will studieren.",
     "exampleFa": "می‌خواهم تحصیل کردن (دانشگاه).",
     "exampleEn": "I want to study (uni)."
-  },
-  {
-    "word": "studieren",
-    "ipa": "[ʃtuˈdiːʁən]",
-    "fa": "درس خواندن (دانشگاه)",
-    "en": "to study (at university)",
-    "enNote": "Possible cognate with English “to study (at university)”.",
-    "level": "B1",
-    "category": "مدرسه و آموزش",
-    "example": "Ich will studieren.",
-    "exampleFa": "می‌خواهم درس خواندن (دانشگاه).",
-    "exampleEn": "I want to study (at university)."
   },
   {
     "word": "Studio",
@@ -9738,17 +9575,6 @@
     "example": "Ich will verändern.",
     "exampleFa": "می‌خواهم تغییر دادن.",
     "exampleEn": "I want to change."
-  },
-  {
-    "word": "verändern",
-    "ipa": "[fɛɐ̯ˈʔɛndɐn]",
-    "fa": "تغییر دادن",
-    "en": "to change (trans.)",
-    "level": "B1",
-    "category": "افعال روزمره",
-    "example": "Ich will verändern.",
-    "exampleFa": "می‌خواهم تغییر دادن.",
-    "exampleEn": "I want to change (trans.)."
   },
   {
     "word": "Video",

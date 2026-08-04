@@ -1693,20 +1693,6 @@
     "exampleEn": "I am learning the word “E-Mail”."
   },
   {
-    "word": "E-Mail",
-    "ipa": "[ˈiːmeɪ̯l]",
-    "fa": "ایمیل",
-    "en": "e-mail",
-    "enNote": "Possible cognate with English “e-mail”.",
-    "level": "B2",
-    "category": "فناوری",
-    "plural": "die E-Maile",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Ich lerne das Wort „E-Mail“.",
-    "exampleFa": "من واژه «ایمیل» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “E-Mail”."
-  },
-  {
     "word": "E-Mail-Adresse",
     "ipa": "[ˈiːmeɪ̯lʔaˌdʁɛsə]",
     "fa": "آدرس ایمیل",
@@ -2017,17 +2003,6 @@
     "example": "Ich will ergeben.",
     "exampleFa": "می‌خواهم نتیجه دادن / منجر شدن به.",
     "exampleEn": "I want to result in / yield."
-  },
-  {
-    "word": "erhöhen",
-    "ipa": "[ɛɐ̯ˈhøːən]",
-    "fa": "افزایش دادن",
-    "en": "to increase",
-    "level": "B2",
-    "category": "اقتصاد و مالی",
-    "example": "Ich will erhöhen.",
-    "exampleFa": "می‌خواهم افزایش دادن.",
-    "exampleEn": "I want to increase."
   },
   {
     "word": "Erkenntnis",
@@ -6456,19 +6431,6 @@
     "example": "Ich lerne das Wort „Strumpf“.",
     "exampleFa": "من واژه «جوراب ساق‌بلند» را یاد می‌گیرم.",
     "exampleEn": "I am learning the word “Strumpf”."
-  },
-  {
-    "word": "Studentin",
-    "ipa": "[ʃtuˈdɛntɪn]",
-    "fa": "دانشجو (زن)",
-    "en": "student (female, university)",
-    "enNote": "Possible cognate with English “student (female, university)”.",
-    "level": "B2",
-    "category": "مدرسه و آموزش",
-    "plural": "die Studentinnen",
-    "example": "Ich lerne das Wort „Studentin“.",
-    "exampleFa": "من واژه «دانشجو (زن)» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Studentin”."
   },
   {
     "word": "Studie",

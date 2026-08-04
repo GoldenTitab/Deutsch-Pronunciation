@@ -892,19 +892,6 @@
     "exampleEn": "Here is beer."
   },
   {
-    "word": "das Bild",
-    "ipa": "[das bɪlt]",
-    "fa": "تصویر",
-    "en": "picture",
-    "level": "A1",
-    "category": "منزل و خانه",
-    "plural": "die Bilder",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist das Bild.",
-    "exampleFa": "اینجا تصویر است.",
-    "exampleEn": "Here is picture."
-  },
-  {
     "word": "das Fenster",
     "ipa": "[das ˈfɛnstɐ]",
     "fa": "پنجره",
@@ -1144,19 +1131,6 @@
     "example": "Hier ist der Platz.",
     "exampleFa": "اینجا میدان / جایگاه است.",
     "exampleEn": "Here is square / place."
-  },
-  {
-    "word": "der Schüler",
-    "ipa": "[deːɐ̯ ˈʃyːlɐ]",
-    "fa": "دانش‌آموز (مرد)",
-    "en": "pupil (male)",
-    "level": "A1",
-    "category": "مشاغل",
-    "plural": "die Schüler",
-    "pluralNote": "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند",
-    "example": "Hier ist der Schüler.",
-    "exampleFa": "اینجا دانش‌آموز (مرد) است.",
-    "exampleEn": "Here is pupil (male)."
   },
   {
     "word": "der Sohn",
@@ -1448,18 +1422,6 @@
     "example": "Hier ist die Tür.",
     "exampleFa": "اینجا در است.",
     "exampleEn": "Here is door."
-  },
-  {
-    "word": "die Uhr",
-    "ipa": "[diː ʔuːɐ̯]",
-    "fa": "ساعت (دیواری/مچی)",
-    "en": "clock / watch",
-    "level": "A1",
-    "category": "زمان و تقویم",
-    "plural": "die Uhren",
-    "example": "Hier ist die Uhr.",
-    "exampleFa": "اینجا ساعت (دیواری/مچی) است.",
-    "exampleEn": "Here is clock / watch."
   },
   {
     "word": "die Woche",
@@ -4469,18 +4431,6 @@
     "example": "Ich lerne das Wort „per“.",
     "exampleFa": "من واژه «از طریق / با» را یاد می‌گیرم.",
     "exampleEn": "I am learning the word “per”."
-  },
-  {
-    "word": "Platz",
-    "ipa": "[plats]",
-    "fa": "میدان / جا",
-    "en": "square / space / seat",
-    "level": "A1",
-    "category": "شهر و مکان‌های عمومی",
-    "plural": "die Plätze",
-    "example": "Ich lerne das Wort „Platz“.",
-    "exampleFa": "من واژه «میدان / جا» را یاد می‌گیرم.",
-    "exampleEn": "I am learning the word “Platz”."
   },
   {
     "word": "plus",
