@@ -1,74 +1,37 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-
-    if (request.method === 'OPTIONS') {
-      return new Response(null, {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type',
-          'Access-Control-Max-Age': '86400',
-        },
-      });
-    }
-
     const word = url.searchParams.get('word');
-    if (!word || word.length > 200) {
-      return new Response(JSON.stringify({ error: 'Missing or invalid word parameter' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-      });
+    if (!word) {
+      return new Response('پارامتر word لازم است', { status: 400 });
     }
 
-    try {
-      const ttsRes = await fetch(
-        'https://texttospeech.googleapis.com/v1/text:synthesize',
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${env.TTS_API_KEY}`,
-          },
-          body: JSON.stringify({
-            input: { text: word },
-            voice: { languageCode: 'de-DE', name: 'de-DE-Wavenet-B' },
-            audioConfig: { audioEncoding: 'MP3' },
-          }),
-        }
-      );
-
-      if (!ttsRes.ok) {
-        return new Response(JSON.stringify({ error: 'TTS API error' }), {
-          status: 502,
-          headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-        });
+    const ttsRes = await fetch(
+      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${env.TTS_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          input: { text: word },
+          voice: { languageCode: 'de-DE', name: 'de-DE-Wavenet-B' },
+          audioConfig: { audioEncoding: 'MP3' }
+        })
       }
+    );
 
-      const data = await ttsRes.json();
-
-      if (!data.audioContent) {
-        return new Response(JSON.stringify({ error: 'No audio content in TTS response' }), {
-          status: 502,
-          headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-        });
-      }
-
-      const audioBuffer = Buffer.from(data.audioContent, 'base64');
-
-      return new Response(audioBuffer, {
-        headers: {
-          'Content-Type': 'audio/mpeg',
-          'Content-Length': String(audioBuffer.length),
-          'Cache-Control': 'public, max-age=31536000, immutable',
-          'Access-Control-Allow-Origin': '*',
-        },
-      });
-    } catch (err) {
-      return new Response(JSON.stringify({ error: 'Internal server error' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
-      });
+    if (!ttsRes.ok) {
+      return new Response('خطا در سرویس TTS', { status: 502 });
     }
-  },
+
+    const data = await ttsRes.json();
+    const audioBytes = Uint8Array.from(atob(data.audioContent), c => c.charCodeAt(0));
+
+    return new Response(audioBytes, {
+      headers: {
+        'Content-Type': 'audio/mpeg',
+        'Cache-Control': 'public, max-age=2592000',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
+  }
 };
