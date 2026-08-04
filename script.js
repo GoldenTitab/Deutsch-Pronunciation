@@ -773,9 +773,9 @@ function renderVerbs() {
       <table class="verb-table">
         <tr>
           <th class="pronoun"></th>
-          <th>حال (Präsens)</th>
-          ${v.praeteritum ? '<th>گذشته‌ی ساده (Präteritum)</th>' : ''}
-          ${hasK2 ? '<th>Konjunktiv II</th>' : ''}
+          <th>حال<br><span class="verb-th-de">Präsens</span></th>
+          ${v.praeteritum ? '<th>گذشته<br><span class="verb-th-de">Präteritum</span></th>' : ''}
+          ${hasK2 ? '<th>Konjunktiv<br><span class="verb-th-de">II</span></th>' : ''}
         </tr>
         ${Object.keys(PRONOUN_LABELS).map(p => `
           <tr>

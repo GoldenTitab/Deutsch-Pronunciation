@@ -556,16 +556,30 @@ body.dark .grammar-card .level-tag {
 .verb-table td.pronoun {
   color: var(--text-muted);
   font-weight: 600;
-  width: 40%;
+  width: 22%;
 }
 
 .verb-table th {
   padding: 0.35rem 0.25rem;
   border-bottom: 2px solid var(--border-color);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
   color: var(--text-muted);
   font-weight: 700;
   text-align: right;
+  vertical-align: bottom;
+}
+
+.verb-table th.pronoun {
+  width: 22%;
+}
+
+.verb-th-de {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  opacity: 0.75;
+  font-size: 0.68rem;
 }
 
 .flashcard-container {
@@ -825,7 +839,7 @@ footer {
     display: block;
   }
 
-  .table-container {
+  .vocab-table-container {
     background: transparent;
     border: none;
     box-shadow: none;
@@ -880,6 +894,16 @@ footer {
     border-bottom: none;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  #vocabTable td.vocab-example-cell {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  #vocabTable td.vocab-example-cell .trans {
+    font-size: 0.85rem;
   }
 }
 
@@ -982,7 +1006,7 @@ footer {
 
 .phonetics-card {
   background: var(--card-bg);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border: 1px solid var(--border-color);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -1063,7 +1087,7 @@ footer {
 
 .word-table-wrap {
   border: 1px solid var(--border-color);
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -1330,7 +1354,7 @@ footer {
 .analyzed-word {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 1.5rem;
   font-size: 3.5rem;
   font-family: 'Inter', sans-serif;
@@ -1378,7 +1402,7 @@ footer {
 
 .pedagogy {
   background: var(--card-bg);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 2rem;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
@@ -1421,7 +1445,7 @@ footer {
 
 .minimal-pairs-card {
   background: var(--card-bg);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   border: 1px solid var(--border-color);
@@ -1490,7 +1514,7 @@ footer {
 
 .recorder-card {
   background: var(--card-bg);
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: 2rem;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow);
@@ -1761,6 +1785,11 @@ footer {
   color: var(--primary-color);
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+.hero .xp-pill {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 .placement-wrap {
