@@ -970,11 +970,19 @@ function renderCases() {
     </div>
   `;
 
+  const wechselTip = `
+    <div class="wechsel-tip">
+      <strong><i class="fas fa-exchange-alt"></i> Wechselpräpositionen (an, auf, in, …)</strong>
+      <p style="margin-top:0.35rem;">اگر جمله «به کجا؟ / Wohin?» باشد → <strong>Akkusativ</strong> (حرکت). اگر «کجا؟ / Wo?» باشد → <strong>Dativ</strong> (مکان ثابت). از دکمه «تمرین Wechselpräpositionen» بالا استفاده کن.</p>
+    </div>
+  `;
+
   casesContent.innerHTML =
     articleTable('حرف تعریف معین (der/die/das)', c.articles_definite) +
     articleTable('حرف تعریف نامعین (ein/eine)', c.articles_indefinite) +
     pronounTable +
-    prepCards;
+    prepCards +
+    wechselTip;
 }
 
 function renderReading() {
@@ -1227,6 +1235,7 @@ function renderQuizQuestion() {
     document.getElementById('quizRetryBtn').addEventListener('click', buildQuiz);
     try { localStorage.setItem('germanQuizLast_' + quizLevelFilter.value, JSON.stringify({ score: quizScore, total: quizQuestions.length })); } catch (_) {}
     if (quizScore === quizQuestions.length) celebrate();
+    if (quizScore > 0) addXP(quizScore * 4, 'آزمون سطح');
     return;
   }
   const q = quizQuestions[quizIndex];
@@ -1277,7 +1286,9 @@ function addXP(amount, reason) {
   const next = getXP() + (amount || 0);
   try { localStorage.setItem(XP_KEY, String(next)); } catch (_) {}
   touchStreak();
-  if (reason && typeof showToast === 'function') showToast(`+${amount} XP — ${reason}`);
+  if (reason && amount >= 5 && typeof showToast === 'function') {
+    showToast(`+${amount} XP — ${reason}`);
+  }
   renderHomeGamification();
   return next;
 }
@@ -1869,11 +1880,25 @@ function updateProgress() {
 }
 
 resetProgressBtn.addEventListener('click', () => {
-  if (confirm('همهٔ پیشرفت پاک می‌شود. ادامه می‌دهی؟')) {
+  if (confirm('همهٔ پیشرفت (واژگان یادگرفته، XP، streak، مسیر روزانه و فلش‌کارت) پاک می‌شود. ادامه می‌دهی؟')) {
     learnedWords.clear();
     saveProgress();
+    try {
+      localStorage.removeItem(XP_KEY);
+      localStorage.removeItem(STREAK_KEY);
+      localStorage.removeItem(STUDY_DAY_KEY);
+      localStorage.removeItem(PATH_DONE_KEY);
+      localStorage.removeItem(MAIN_SR_KEY);
+      localStorage.removeItem('germanBadgesUnlocked');
+      localStorage.removeItem('germanPlacementLevel');
+      ['A0', 'A1', 'A2', 'B1', 'B2', 'C1', 'all'].forEach(l => {
+        localStorage.removeItem('germanQuizLast_' + l);
+      });
+    } catch (_) {}
     updateProgress();
     renderVocab();
+    renderHomeGamification();
+    renderStudyPath();
   }
 });
 

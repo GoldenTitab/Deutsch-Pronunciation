@@ -13,14 +13,18 @@ This is a personal educational project. No commercial use is intended.
 
 ## Features
 
-- **Vocabulary browser** — searchable, filterable by CEFR level (A0–C1) and topic, with audio pronunciation for every word
-- **Grammar reference** — grammar modules plus Landeskunde (culture notes) for B2/C1
-- **Verb conjugation** — present tense and Perfekt for key regular, irregular, and modal verbs, with a practice exercise
-- **Grammatical cases (Kasus)** — articles, pronouns, and prepositions across all four German cases, with a practice exercise
+- **Vocabulary browser** — searchable, filterable by CEFR level (A0–C1) and topic, with audio, example sentences, and plural forms
+- **Grammar lessons** — rule explanations in Persian (before examples), plus “Difference from English” notes for bilingual learners, and Landeskunde for B2/C1
+- **Verb conjugation** — Präsens, Präteritum, Perfekt through C1; Konjunktiv II and passive examples where available, with practice
+- **Grammatical cases (Kasus)** — articles, pronouns, prepositions, plus a dedicated **Wechselpräpositionen** (Akk/Dat) exercise
+- **Dictation** — listen and type what you hear; checks ä/ö/ü/ß (with ss≈ß flexibility)
+- **Dialogues** — short two-speaker audio dialogues per level
+- **45-day study path** — daily tasks linking vocabulary, grammar, dictation, dialogues, flashcards, and quizzes
+- **Placement test** — short CEFR recommendation on the home page
 - **Reading comprehension** — one short text with questions per level
 - **Level quiz** — a 10-question quiz mixing vocabulary, verb conjugation, and case/article questions
 - **Flashcards** — a Leitner-style spaced-repetition (SM-2) flashcard deck across all levels
-- **Progress tracking** — per-level progress, word counts, and a completion ring
+- **Progress + backup** — per-level progress, XP, daily streak, badges; **export/import JSON** for cross-device backup
 - **Phonetics Masterclass** *(sourced, see Attribution)* — vowel/consonant/ending pronunciation rules, a word analyzer, minimal-pairs listening practice, and a recording/comparison tool
 - Dark/light theme toggle, keyboard navigation, and a responsive layout for mobile and desktop
 
@@ -29,22 +33,18 @@ This is a personal educational project. No commercial use is intended.
 The site is a single-page app:
 
 ```
-index.html          entry point — every section lives here (home, vocabulary,
-                     grammar, conjugation, cases, reading, levels, quiz,
-                     flashcards, progress, phonetics masterclass)
+index.html          entry point — every section (home, path, vocabulary,
+                     grammar, conjugation, cases, reading, dialogues,
+                     dictation, levels, quiz, flashcards, progress, phonetics)
 style.css            all styling, theming, and responsive layout
-script.js            all app logic — routing between sections, rendering,
-                     search/filtering, spaced repetition, quizzes, and the
-                     phonetics masterclass logic
+script.js            app logic — routing, exercises, path, dictation, XP, backup
 worker.js            optional Cloudflare Worker for server-side text-to-speech
+tools/
+  enrich-data.js     one-shot content enrichment (grammar rules, verbs, etc.)
 data/
-  core.json          levels, grammar, verbs, cases, reading passages, culture notes
-  vocab-A0.json      vocabulary for level A0
-  vocab-A1.json      vocabulary for level A1
-  vocab-A2.json      vocabulary for level A2
-  vocab-B1.json      vocabulary for level B1
-  vocab-B2.json      vocabulary for level B2
-  vocab-C1.json      vocabulary for level C1
+  core.json          levels, grammar (+descriptions), verbs, cases, readings,
+                     dialogues, study plan, dictation, placement, wechsel items
+  vocab-A0.json … vocab-C1.json   vocabulary (+ examples, plurals where set)
 ```
 
 In-page navigation switches between sections without loading a separate page. Content data is split into `core.json` plus one `vocab-<LEVEL>.json` per CEFR level, fetched in parallel on load instead of one large file.
