@@ -7,10 +7,28 @@ const ROOT = path.join(__dirname, "..");
 const DATA = path.join(ROOT, "data");
 
 function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch (err) {
+    console.error(`Error reading ${file}:`, err.message);
+    process.exit(1);
+  }
+}
+function backupFile(file) {
+  const bak = file + ".bak";
+  if (!fs.existsSync(bak)) {
+    fs.copyFileSync(file, bak);
+    console.log(`Backup created: ${path.basename(bak)}`);
+  }
 }
 function writeJson(file, data) {
-  fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n", "utf8");
+  backupFile(file);
+  try {
+    fs.writeFileSync(file, JSON.stringify(data, null, 2) + "\n", "utf8");
+  } catch (err) {
+    console.error(`Error writing ${file}:`, err.message);
+    process.exit(1);
+  }
 }
 
 const GRAMMAR_META = {
@@ -234,50 +252,25 @@ const GRAMMAR_META = {
       "شرط غیرواقعی گذشته (نوع ۳): Wenn ich das gewusst hätte, wäre ich nicht gegangen. هر دو بند معمولاً Konjunktiv II گذشته دارند.",
     enNote: "Third conditional: If I had known, I would have stayed — same idea, German verb-final in the wenn-clause.",
   },
-  "جمله‌های شرطی نوع سوم": {
-    description:
-      "همان شرط نوع سوم: گذشتهٔ غیرواقعی با hätte/wäre + Partizip در بندها. برای بیان «اگر آن موقع… الان/آن موقع طور دیگری می‌شد».",
-    enNote: "Same as English third conditional; focus on auxiliary choice haben vs sein in each clause.",
-  },
   "جمله‌های موصولی با حروف اضافه (Relativsätze mit Präpositionen)": {
     description:
-      "حرف اضافه قبل از ضمیر موصولی می‌آید: Der Freund, mit dem ich spreche… یا صورت wo- برای چیزها (worauf، womit) در سبک رسمی/نوشتاری.",
-    enNote: "English the friend with whom / that I speak with; German prefers preposition + relative dem/der/denen.",
-  },
-  "جمله‌های موصولی با حروف اضافه": {
-    description:
-      "ساختار Präposition + Relativpronomen را تمرین کنید و حالت بعد از حرف اضافه را رعایت کنید (mit dem، für die، von dem).",
-    enNote: "Case after the preposition controls dem vs den vs der in the relative pronoun.",
+      "حرف اضافه قبل از ضمیر موصولی می‌آید: Der Freund, mit dem ich spreche… یا صورت wo- برای چیزها (worauf، womit) در سبک رسمی/نوشتاری. حالت بعد از حرف اضافه را رعایت کنید (mit dem، für die، von dem).",
+    enNote: "English the friend with whom / that I speak with; German prefers preposition + relative dem/der/denen. Case after the preposition controls dem vs den vs der.",
   },
   "ساختارهای جایگزین برای مجهول (man / sich lassen)": {
     description:
-      "به‌جای مجهول می‌توان از man (Man sagt…) یا sich lassen (Das lässt sich machen) یا sein + zu + Infinitiv استفاده کرد. در نوشتار و گفتار طبیعی بسیار رایج‌اند.",
-    enNote: "English one/you/they + verb or this can be done; German man is extremely common in place of full passives.",
-  },
-  "ساختارهای جایگزین برای مجهول": {
-    description:
-      "man + فعل معلوم، sich lassen + Infinitiv، و sein + zu + Infinitiv جایگزین‌های کاربردی مجهول هستند و اغلب طبیعی‌تر از Passiv کامل‌اند.",
-    enNote: "Prefer these in everyday style; reserve werden-passive for processes and formal texts.",
+      "man + فعل معلوم، sich lassen + Infinitiv، و sein + zu + Infinitiv جایگزین‌های کاربردی مجهول هستند و اغلب طبیعی‌تر از Passiv کامل‌اند. در نوشتار و گفتار طبیعی بسیار رایج‌اند.",
+    enNote: "English one/you/they + verb or this can be done; German man is extremely common. Prefer these in everyday style; reserve werden-passive for formal texts.",
   },
   "جمله‌های تأکیدی (mit es / das)": {
     description:
-      "es و das می‌توانند برای تأکید، جای‌نگهدار یا اشاره به کل جمله به کار روند: Es ist wichtig, dass… / Das weiß ich. در برخی ساخت‌ها es اجباری است حتی اگر فاعل منطقی جای دیگری باشد.",
-    enNote: "Like English dummy it (It is important that…), but German also uses das to point back to a whole idea.",
-  },
-  "جمله‌های تأکیدی": {
-    description:
-      "با جابه‌جایی عنصر مهم به ابتدای جمله (و حفظ V2) یا با es/das می‌توان تأکید ایجاد کرد. معنی با آهنگ و جایگاه تغییر می‌کند.",
-    enNote: "Fronting for emphasis still requires the finite verb in position two.",
+      "es و das می‌توانند برای تأکید، جای‌نگهدار یا اشاره به کل جمله به کار روند: Es ist wichtig, dass… / Das weiß ich. با جابه‌جایی عنصر مهم به ابتدای جمله (و حفظ V2) نیز می‌توان تأکید ایجاد کرد.",
+    enNote: "Like English dummy it (It is important that…), but German also uses das to point back to a whole idea. Fronting for emphasis still requires the finite verb in position two.",
   },
   "جمله‌های تقابلی (obwohl, trotz, etc.)": {
     description:
-      "برای تضاد: obwohl/obgleich (فعلی‌نهای)، trotz + Genitiv، trotzdem (قید در جملهٔ اصلی). entgegengesetzte Beziehungen را با ویرگول درست جدا کنید.",
-    enNote: "obwohl ≈ although (verb-final); trotz ≈ despite (+ genitive); trotzdem ≈ nevertheless (V2 main clause).",
-  },
-  "جمله‌های تقابلی": {
-    description:
-      "obwohl بند وابسته می‌سازد؛ trotzdem جملهٔ جدید را با V2 ادامه می‌دهد. trotz حرف اضافه است نه حرف ربط.",
-    enNote: "Do not mix obwohl (conjunction) with trotz (preposition) word order patterns.",
+      "برای تضاد: obwohl/obgleich (بند وابسته، فعلی‌نهای)، trotz + Genitiv (حرف اضافه، نه حرف ربط)، trotzdem (قید در جملهٔ اصلی با V2). 注意: obwohl و trotz را با هم اشتباه نگیرید.",
+    enNote: "obwohl ≈ although (verb-final); trotz ≈ despite (+ genitive); trotzdem ≈ nevertheless (V2 main clause). Do not mix obwohl (conjunction) with trotz (preposition) word order.",
   },
 };
 
@@ -785,8 +778,6 @@ function guessPlural(word) {
   const noun = m[2];
   // uncountable-ish / already plural-looking
   if (/heit$|keit$|ung$|schaft$|tion$|sion$/i.test(noun)) return `die ${noun}en`.replace(/een$/, "en");
-  if (/ung$/i.test(noun)) return `die ${noun}en`;
-  if (/heit$|keit$/i.test(noun)) return `die ${noun}en`;
   if (/in$/i.test(noun) && article === "die") return `die ${noun}nen`;
   if (/e$/i.test(noun)) return `die ${noun}n`;
   if (/el$|er$|en$/i.test(noun) && article !== "die") return `die ${noun}`; // many neutral/masc no change
@@ -812,7 +803,7 @@ function makeExample(w) {
       exampleEn: `Here is ${en}.`,
     };
   }
-  if (cat.includes("افعال") || /en$|eln$|ern$/i.test(word) && !/\s/.test(word) && word[0] === word[0].toLowerCase()) {
+  if (cat.includes("افعال") || (/en$|eln$|ern$/i.test(word) && !/\s/.test(word) && word[0] === word[0].toLowerCase())) {
     const cap = word.charAt(0).toUpperCase() + word.slice(1);
     return {
       example: `Ich will ${word}.`,

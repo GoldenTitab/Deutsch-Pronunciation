@@ -11,7 +11,7 @@ const PAGE_SIZE = 20;
 let currentVocab = [];
 let flashCards = [];
 let flashIndexValue = 0;
-let searchTimeout = null;
+let vocabSearchTimeout, verbSearchTimeout;
 
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
@@ -102,7 +102,10 @@ function celebrate() {
     wrap.appendChild(piece);
   }
   document.body.appendChild(wrap);
-  setTimeout(() => wrap.remove(), 3200);
+  setTimeout(function() {
+    var c = document.querySelector('.confetti-wrap');
+    if (c) c.remove();
+  }, 3200);
 }
 
 async function speakGerman(text, showBanner = false) {
@@ -184,6 +187,15 @@ loadTheme();
 navToggle.addEventListener('click', () => {
   const isOpen = navList.classList.toggle('open');
   navToggle.setAttribute('aria-expanded', String(isOpen));
+  var overlay = document.getElementById('navOverlay');
+  if (overlay) overlay.hidden = !navList.classList.contains('open');
+});
+
+var navOverlay = document.getElementById('navOverlay');
+navOverlay && navOverlay.addEventListener('click', function() {
+  navList.classList.remove('open');
+  navOverlay.hidden = true;
+  navToggle && navToggle.focus();
 });
 
 document.addEventListener('click', (e) => {
@@ -247,19 +259,39 @@ const SECTION_LABELS = {
   phonetics: 'مسترکلاس فونتیک'
 };
 
+let renderedSections = new Set();
+
+function renderSection(id) {
+  switch(id) {
+    case 'vocabulary': renderVocab(); break;
+    case 'grammar': renderGrammar(); break;
+    case 'conjugation': renderVerbs(); break;
+    case 'cases': renderCases(); break;
+    case 'reading': renderReading(); break;
+    case 'dialogues': renderDialogues(); break;
+    case 'quiz': renderQuiz(); break;
+    case 'flashcards': initFlashcards(); break;
+    case 'progress': updateProgress(); break;
+    case 'levels': renderLevels(); break;
+    case 'phonetics': break; // static HTML
+    case 'path': renderStudyPath(); break;
+    case 'dictation': renderDictation(); break;
+  }
+}
+
 function runSectionInit(section) {
-  if (section === 'home') { renderHome(); renderHomeGamification(); }
-  if (section === 'path') renderStudyPath();
-  if (section === 'vocabulary') filterVocab();
-  if (section === 'grammar') { renderGrammar(); renderCultureNotes(); }
-  if (section === 'conjugation') renderVerbs();
-  if (section === 'cases') renderCases();
-  if (section === 'reading') renderReading();
-  if (section === 'dialogues') renderDialogues();
-  if (section === 'dictation') { /* area filled on start */ }
-  if (section === 'levels') renderLevels();
-  if (section === 'flashcards') initFlashcards();
-  if (section === 'progress') updateProgress();
+  if (section === 'home') { renderHome(); renderHomeGamification(); renderedSections.add('home'); }
+  if (section === 'path' && !renderedSections.has('path')) { renderStudyPath(); renderedSections.add('path'); }
+  if (section === 'vocabulary' && !renderedSections.has('vocabulary')) { filterVocab(); renderedSections.add('vocabulary'); }
+  if (section === 'grammar' && !renderedSections.has('grammar')) { renderGrammar(); renderCultureNotes(); renderedSections.add('grammar'); }
+  if (section === 'conjugation' && !renderedSections.has('conjugation')) { renderVerbs(); renderedSections.add('conjugation'); }
+  if (section === 'cases' && !renderedSections.has('cases')) { renderCases(); renderedSections.add('cases'); }
+  if (section === 'reading' && !renderedSections.has('reading')) { renderReading(); renderedSections.add('reading'); }
+  if (section === 'dialogues' && !renderedSections.has('dialogues')) { renderDialogues(); renderedSections.add('dialogues'); }
+  if (section === 'dictation') { /* area filled on start */ renderedSections.add('dictation'); }
+  if (section === 'levels' && !renderedSections.has('levels')) { renderLevels(); renderedSections.add('levels'); }
+  if (section === 'flashcards' && !renderedSections.has('flashcards')) { initFlashcards(); renderedSections.add('flashcards'); }
+  if (section === 'progress' && !renderedSections.has('progress')) { updateProgress(); renderedSections.add('progress'); }
 }
 
 function activateSection(id, opts = {}) {
@@ -344,12 +376,34 @@ document.addEventListener('keydown', (e) => {
   if (flashSection && flashSection.classList.contains('active')) {
     const active = document.activeElement;
     if (active === document.body || active === flashcard || active === document.getElementById('flashFront') || active === document.getElementById('flashBack')) {
-      if (e.key === 'ArrowRight') { e.preventDefault(); flashPrev.click(); }
-      if (e.key === 'ArrowLeft') { e.preventDefault(); flashNext.click(); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); flashNext.click(); }
+      if (e.key === 'ArrowLeft') { e.preventDefault(); flashPrev.click(); }
       if (e.key === ' ' || e.key === 'Enter') {
         e.preventDefault();
         flipBtn.click();
       }
+    }
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    var mega = document.getElementById('megaMenu');
+    if (mega && mega.style.display !== 'none' && mega.style.display !== '') {
+      mega.style.display = '';
+      document.getElementById('megaToggle') && document.getElementById('megaToggle').focus();
+    }
+    var nav = document.getElementById('primary-nav');
+    var overlay = document.getElementById('navOverlay');
+    if (nav && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      if (overlay) overlay.hidden = true;
+      document.getElementById('navToggle') && document.getElementById('navToggle').focus();
+    }
+    var modal = document.getElementById('confirmModal');
+    if (modal && !modal.hidden) {
+      modal.hidden = true;
+      document.getElementById('confirmNo') && document.getElementById('confirmNo').focus();
     }
   }
 });
@@ -392,17 +446,7 @@ async function loadData() {
     currentVocab = APP_DATA.vocabulary || [];
     currentPathDay = getStudyDayIndex();
     renderHome();
-    renderLevels();
-    renderVocab();
-    renderGrammar();
-    renderCultureNotes();
-    renderVerbs();
-    renderCases();
-    renderReading();
-    renderDialogues();
-    renderStudyPath();
-    initFlashcards();
-    updateProgress();
+    renderedSections = new Set(['home']);
     renderHomeGamification();
     if (typeof populateRecorderSelect === 'function') populateRecorderSelect();
     const hash = location.hash.slice(1);
@@ -413,7 +457,7 @@ async function loadData() {
       <div style="text-align:center;padding:3rem;direction:rtl;">
         <h2 style="color:#d32f2f;">خطا در بارگذاری داده‌ها</h2>
         <p>لطفاً پوشه‌ی data را در کنار این صفحه قرار دهید.</p>
-        <p style="font-size:0.8rem;opacity:0.7;">${err.message}</p>
+        <p style="font-size:0.8rem;opacity:0.7;">${escHtml(err.message)}</p>
       </div>
     `;
   } finally {
@@ -581,7 +625,10 @@ function renderVocab() {
         btn.querySelector('i').className = 'fas fa-check-circle';
         btn.setAttribute('aria-pressed', 'true');
         btn.setAttribute('aria-label', 'حذف از یادگرفته‌ها');
-        addXP(2, 'واژه جدید');
+        var xpGained = 2;
+        addXP(xpGained, 'واژه جدید');
+        var liveRegion = document.getElementById('ariaLiveRegion');
+        if (liveRegion) liveRegion.textContent = '+' + xpGained + ' XP';
       }
       saveProgress();
       updateProgressBar();
@@ -630,8 +677,8 @@ function renderPagination() {
 }
 
 vocabSearch.addEventListener('input', () => {
-  clearTimeout(searchTimeout);
-  searchTimeout = setTimeout(filterVocab, 250);
+  clearTimeout(vocabSearchTimeout);
+  vocabSearchTimeout = setTimeout(filterVocab, 250);
 });
 vocabLevelFilter.addEventListener('change', filterVocab);
 vocabCategoryFilter.addEventListener('change', filterVocab);
@@ -655,7 +702,6 @@ function renderGrammar() {
     return;
   }
 
-  // Collapse duplicate titles into one card with multiple examples
   const groups = [];
   const byTitle = new Map();
   filtered.forEach(g => {
@@ -798,8 +844,8 @@ function renderVerbs() {
 }
 
 verbSearch.addEventListener('input', () => {
-  clearTimeout(searchTimeout);
-  searchTimeout = setTimeout(renderVerbs, 200);
+  clearTimeout(verbSearchTimeout);
+  verbSearchTimeout = setTimeout(renderVerbs, 200);
 });
 verbLevelFilter.addEventListener('change', renderVerbs);
 
@@ -828,6 +874,8 @@ function runExercise(container, questions, onFinish) {
         });
         if (correct) score++;
         else btn.style.outline = '2px solid #ef4444';
+        var liveRegion = document.getElementById('ariaLiveRegion');
+        if (liveRegion) liveRegion.textContent = 'پاسخ ' + (correct ? 'صحیح' : 'نادرست');
         setTimeout(() => { idx++; renderQ(); }, 700);
       });
     });
@@ -863,6 +911,7 @@ function startVerbExercise() {
     const tenseLabel = useTense === 'praeteritum' ? ' — گذشته‌ی ساده'
       : useTense === 'konjunktivII' ? ' — Konjunktiv II' : '';
     const forms = v[useTense];
+    if (!forms || !pronoun) return null;
     const answer = forms[pronoun];
     const distractors = shuffleArr(Object.values(forms).filter(f => f !== answer)).slice(0, 3);
     return {
@@ -871,7 +920,7 @@ function startVerbExercise() {
       options: shuffleArr([answer, ...distractors])
     };
   });
-  runExercise(verbExerciseArea, questions, (score, total) => {
+  runExercise(verbExerciseArea, questions.filter(Boolean), (score, total) => {
     showExerciseResult(verbExerciseArea, score, total, startVerbExercise);
     if (score > 0) addXP(score * 3, 'تمرین صرف');
   });
@@ -1062,7 +1111,8 @@ function showFlashcard() {
   if (flashBack) attachSpeaker(flashBack);
 }
 
-flipBtn.addEventListener('click', () => {
+flipBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
   flashcard.classList.toggle('flipped');
   const isFlipped = flashcard.classList.contains('flipped');
   flashRateRow.style.display = isFlipped ? 'flex' : 'none';
@@ -1240,6 +1290,8 @@ function renderQuizQuestion() {
       });
       if (correct) quizScore++;
       else btn.style.outline = '2px solid #ef4444';
+      var quizLiveRegion = document.getElementById('ariaLiveRegion');
+      if (quizLiveRegion) quizLiveRegion.textContent = 'پاسخ ' + (correct ? 'صحیح' : 'نادرست');
       setTimeout(() => { quizIndex++;
         renderQuizQuestion(); }, 700);
     });
@@ -1248,7 +1300,6 @@ function renderQuizQuestion() {
 
 quizStartBtn.addEventListener('click', buildQuiz);
 
-/* ── Gamification (XP + streak) ─────────────────────────────────────── */
 const XP_KEY = 'germanXP';
 const STREAK_KEY = 'germanStreak';
 const STUDY_DAY_KEY = 'germanStudyDay';
@@ -1303,7 +1354,6 @@ function renderHomeGamification() {
   }
 }
 
-/* ── Study path (45-day) ────────────────────────────────────────────── */
 let currentPathDay = 0;
 
 function getStudyDayIndex() {
@@ -1402,7 +1452,6 @@ document.getElementById('pathNextDayBtn')?.addEventListener('click', () => {
   renderStudyPath();
 });
 
-/* ── Dialogues ──────────────────────────────────────────────────────── */
 function renderDialogues() {
   const wrap = document.getElementById('dialogueContent');
   const filter = document.getElementById('dialogueLevelFilter');
@@ -1446,7 +1495,6 @@ async function playDialogueAll() {
 }
 document.getElementById('dialoguePlayAllBtn')?.addEventListener('click', () => { playDialogueAll(); });
 
-/* ── Dictation ──────────────────────────────────────────────────────── */
 let dictationPool = [];
 let dictationIdx = 0;
 let dictationScore = 0;
@@ -1457,7 +1505,7 @@ function normalizeDictation(s) {
     .replace(/[?!.,;:"""''«»]/g, '')
     .replace(/\s+/g, ' ')
     .toLowerCase()
-    .replace(/ß/g, 'ss'); // accept ss for ß optionally — but we also allow exact ß via dual check
+    .replace(/ß/g, 'ss');
 }
 
 function dictationMatch(user, answer) {
@@ -1558,7 +1606,6 @@ document.getElementById('umlautBtns')?.addEventListener('click', (e) => {
   input.setSelectionRange(pos, pos);
 });
 
-/* ── Wechselpräpositionen exercise ──────────────────────────────────── */
 function startWechselExercise() {
   const area = document.getElementById('wechselExerciseArea');
   if (!area || !APP_DATA || !APP_DATA.wechselExercises) return;
@@ -1569,7 +1616,6 @@ function startWechselExercise() {
     options: shuffleArr(['Akkusativ', 'Dativ']),
     explain: it.full
   }));
-  // Use custom runner that supports HTML prompt + explanation
   let idx = 0, score = 0;
   function renderQ() {
     if (idx >= questions.length) {
@@ -1607,11 +1653,9 @@ function startWechselExercise() {
 }
 document.getElementById('wechselExerciseBtn')?.addEventListener('click', startWechselExercise);
 
-/* ── Plural practice ────────────────────────────────────────────────── */
 function startPluralPractice() {
   const area = document.getElementById('pluralExerciseArea');
   if (!area || !APP_DATA || !APP_DATA.vocabulary) return;
-  // Prefer reliable plurals: with article form or without heuristic note
   let pool = APP_DATA.vocabulary.filter(w => w.plural && (/^(der|die|das)\s/i.test(w.word) || !w.pluralNote));
   if (pool.length < 8) pool = APP_DATA.vocabulary.filter(w => w.plural);
   pool = shuffleArr(pool).slice(0, Math.min(8, pool.length));
@@ -1636,7 +1680,6 @@ function startPluralPractice() {
 }
 document.getElementById('pluralPracticeBtn')?.addEventListener('click', startPluralPractice);
 
-/* ── Placement test ─────────────────────────────────────────────────── */
 let placementIdx = 0;
 let placementScores = { A0: 0, A1: 0, A2: 0, B1: 0, B2: 0, C1: 0 };
 
@@ -1655,12 +1698,10 @@ function renderPlacementQ() {
     const order = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
     let recommended = 'A0';
     let correct = 0;
-    // Recommend highest level where user got that level's question right, with cascade
     for (const lvl of order) {
       if (placementScores[lvl] > 0) recommended = lvl;
       correct += placementScores[lvl];
     }
-    // If weak overall, nudge down
     if (correct <= 2) recommended = 'A0';
     else if (correct <= 4) recommended = recommended === 'C1' ? 'B1' : recommended;
     area.innerHTML = `
@@ -1707,7 +1748,6 @@ function renderPlacementQ() {
 }
 document.getElementById('placementStartBtn')?.addEventListener('click', startPlacementTest);
 
-/* ── Progress export / import ───────────────────────────────────────── */
 function collectProgressBackup() {
   const keys = [
     'germanLearned', 'germanMainFlashSR', 'germanBadgesUnlocked',
@@ -1743,6 +1783,10 @@ function exportProgress() {
 }
 function importProgressFromObject(data) {
   if (!data || !data.store || typeof data.store !== 'object') throw new Error('فرمت نامعتبر');
+  if (typeof data.store !== 'object' || data.store === null) {
+    showToast('فایل وارد شده نامعتبر است.');
+    return;
+  }
   Object.keys(data.store).forEach(k => {
     try { localStorage.setItem(k, data.store[k]); } catch (_) {}
   });
@@ -1766,7 +1810,7 @@ document.getElementById('importProgressFile')?.addEventListener('change', (e) =>
       if (!confirm('پیشرفت فعلی با فایل وارداتی جایگزین می‌شود. ادامه؟')) return;
       importProgressFromObject(data);
     } catch (err) {
-      alert('خواندن فایل ناموفق بود: ' + (err.message || err));
+      showToast('خواندن فایل ناموفق بود: ' + (err.message || err));
     }
   };
   reader.readAsText(file);
@@ -1777,11 +1821,15 @@ function loadProgress() {
   try {
     const saved = JSON.parse(localStorage.getItem('germanLearned') || '[]');
     learnedWords = new Set(saved);
-  } catch { learnedWords = new Set(); }
+  } catch(e) { learnedWords = new Set(); }
 }
 
 function saveProgress() {
-  localStorage.setItem('germanLearned', JSON.stringify([...learnedWords]));
+  try {
+    localStorage.setItem('germanLearned', JSON.stringify([...learnedWords]));
+  } catch(e) {
+    showToast('فضای ذخیره‌سازی پر شده. لطفاً پیشرفت را export کنید.');
+  }
   touchStreak();
 }
 
@@ -1854,8 +1902,22 @@ function updateProgress() {
   });
 }
 
-resetProgressBtn.addEventListener('click', () => {
-  if (confirm('همهٔ پیشرفت (واژگان یادگرفته، XP، streak، مسیر روزانه و فلش‌کارت) پاک می‌شود. ادامه می‌دهی؟')) {
+resetProgressBtn && resetProgressBtn.addEventListener('click', function() {
+  const modal = document.getElementById('confirmModal');
+  const msg = document.getElementById('confirmMessage');
+  const yesBtn = document.getElementById('confirmYes');
+  const noBtn = document.getElementById('confirmNo');
+  if (!modal) return;
+  msg.textContent = 'آیا مطمئنید که می‌خواهید تمام پیشرفت یادگیری پاک شود؟ این عمل غیرقابل بازگشت است.';
+  modal.hidden = false;
+  noBtn.focus();
+  function close() { modal.hidden = true; cleanup(); }
+  function cleanup() {
+    yesBtn.removeEventListener('click', doReset);
+    noBtn.removeEventListener('click', close);
+  }
+  function doReset() {
+    close();
     learnedWords.clear();
     saveProgress();
     try {
@@ -1875,6 +1937,8 @@ resetProgressBtn.addEventListener('click', () => {
     renderHomeGamification();
     renderStudyPath();
   }
+  yesBtn.addEventListener('click', doReset);
+  noBtn.addEventListener('click', close);
 });
 
 loadProgress();
@@ -1883,13 +1947,28 @@ loadData();
 window.speakGerman = speakGerman;
 window.playPhoneticsAudio = playPhoneticsAudio;
 
-function showToast(message) {
-  const toast = document.getElementById('ui-toast');
-  const msgEl = document.getElementById('toast-message');
-  if (!toast || !msgEl) return;
-  msgEl.textContent = message;
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3000);
+function showToast(msg, duration) {
+  duration = duration || 3000;
+  let stack = document.querySelector('.toast-stack');
+  if (!stack) {
+    stack = document.createElement('div');
+    stack.className = 'toast-stack';
+    document.body.appendChild(stack);
+  }
+  const existing = document.getElementById('ui-toast');
+  const toast = existing ? existing.cloneNode(true) : document.createElement('div');
+  toast.removeAttribute('id');
+  toast.removeAttribute('hidden');
+  const msgEl = toast.querySelector('#toast-message') || toast.querySelector('span');
+  if (msgEl) msgEl.textContent = msg;
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateX(-50%) translateY(0)';
+  stack.appendChild(toast);
+  setTimeout(function() {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(-50%) translateY(10px)';
+    setTimeout(function() { toast.remove(); }, 300);
+  }, duration);
 }
 
 const phoneticsRules = [
@@ -2026,7 +2105,7 @@ let pairScore = { correct: 0, total: 0 };
 function newPair() {
   const pair = MINIMAL_PAIRS[Math.floor(Math.random() * MINIMAL_PAIRS.length)];
   const shuffled = Math.random() < 0.5 ? pair : [pair[1], pair[0]];
-  currentPair = { pair: shuffled, answer: shuffled[Math.round(Math.random())] };
+  currentPair = { pair: shuffled, answer: shuffled[Math.random() < 0.5 ? 0 : 1] };
   const wrap = document.getElementById('pair-options');
   const meaningsWrap = document.getElementById('pair-meanings');
   if (!wrap) return;
@@ -2088,6 +2167,8 @@ async function toggleRecording() {
       playbackDiv.innerHTML =
         `<div class="text-muted" style="margin-bottom:0.5rem;font-size:0.8rem;">صدای ضبط‌شده‌ی شما:</div><audio id="rec-audio-player" controls src="${url}" style="width:100%"></audio>`;
       recAudio = document.getElementById('rec-audio-player');
+      recAudio.addEventListener('ended', () => URL.revokeObjectURL(url));
+      setTimeout(() => URL.revokeObjectURL(url), 60000);
       recStream.getTracks().forEach(t => t.stop());
     };
     mediaRecorder.start();
