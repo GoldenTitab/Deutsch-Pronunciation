@@ -1,7 +1,5 @@
 "use strict";
 
-const TTS_WORKER_URL = 'https://tts-proxy.YOUR-SUBDOMAIN.workers.dev/';
-
 let APP_DATA = null;
 let learnedWords = new Set();
 
@@ -110,29 +108,6 @@ function celebrate() {
 async function speakGerman(text, showBanner = false) {
   if (!text) return;
   if (window.speechSynthesis) window.speechSynthesis.cancel();
-
-  const workerConfigured = TTS_WORKER_URL && !TTS_WORKER_URL.includes('YOUR-SUBDOMAIN');
-  if (workerConfigured) {
-    try {
-      const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 3000);
-      const workerUrl = `${TTS_WORKER_URL}?word=${encodeURIComponent(text)}`;
-      const response = await fetch(workerUrl, { signal: controller.signal });
-      clearTimeout(timer);
-      if (response.ok) {
-        const audioBlob = await response.blob();
-        const audioUrl = URL.createObjectURL(audioBlob);
-        const audio = new Audio(audioUrl);
-        await new Promise((resolve, reject) => {
-          audio.onended = resolve;
-          audio.onerror = reject;
-          audio.play().catch(reject);
-        });
-        URL.revokeObjectURL(audioUrl);
-        return;
-      }
-    } catch (_) {}
-  }
 
   return new Promise((resolve) => {
     if (!window.speechSynthesis) { resolve(); return; }
@@ -2214,5 +2189,3 @@ const backToTopBtn = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   if (backToTopBtn) backToTopBtn.classList.toggle('hidden', window.scrollY <= window.innerHeight * 0.8);
 });
-
-console.log('مسترکلاس فونتیک آلمانی بارگذاری شد!');

@@ -777,9 +777,7 @@ footer {
   .global-search {
     display: none;
   }
-}
 
-@media (max-width: 1400px) {
   .nav-toggle {
     display: block;
   }
