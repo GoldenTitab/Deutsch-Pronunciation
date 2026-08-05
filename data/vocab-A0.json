@@ -55,6 +55,28 @@
     "exampleEn": "This is the letter E."
   },
   {
+    "word": "F",
+    "ipa": "[ɛf]",
+    "fa": "حرف اف",
+    "en": "the letter F",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe F.",
+    "exampleFa": "این حرف حرف اف است.",
+    "exampleEn": "This is the letter F."
+  },
+  {
+    "word": "G",
+    "ipa": "[ɡeː]",
+    "fa": "حرف گه",
+    "en": "the letter G",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe G.",
+    "exampleFa": "این حرف حرف گه است.",
+    "exampleEn": "This is the letter G."
+  },
+  {
     "word": "H",
     "ipa": "[haː]",
     "fa": "حرف ها",
@@ -75,6 +97,39 @@
     "example": "Das ist der Buchstabe I.",
     "exampleFa": "این حرف ای است.",
     "exampleEn": "This is the letter I."
+  },
+  {
+    "word": "J",
+    "ipa": "[jɔt]",
+    "fa": "حرف یوت",
+    "en": "the letter J",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe J.",
+    "exampleFa": "این حرف حرف یوت است.",
+    "exampleEn": "This is the letter J."
+  },
+  {
+    "word": "K",
+    "ipa": "[kaː]",
+    "fa": "حرف کا",
+    "en": "the letter K",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe K.",
+    "exampleFa": "این حرف حرف کا است.",
+    "exampleEn": "This is the letter K."
+  },
+  {
+    "word": "L",
+    "ipa": "[ɛl]",
+    "fa": "حرف اِل",
+    "en": "the letter L",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe L.",
+    "exampleFa": "این حرف حرف اِل است.",
+    "exampleEn": "This is the letter L."
   },
   {
     "word": "M",
@@ -99,6 +154,39 @@
     "exampleEn": "This is the letter N."
   },
   {
+    "word": "O",
+    "ipa": "[oː]",
+    "fa": "حرف او",
+    "en": "the letter O",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe O.",
+    "exampleFa": "این حرف حرف او است.",
+    "exampleEn": "This is the letter O."
+  },
+  {
+    "word": "P",
+    "ipa": "[peː]",
+    "fa": "حرف په",
+    "en": "the letter P",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe P.",
+    "exampleFa": "این حرف حرف په است.",
+    "exampleEn": "This is the letter P."
+  },
+  {
+    "word": "Q",
+    "ipa": "[kuː]",
+    "fa": "حرف کو",
+    "en": "the letter Q",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe Q.",
+    "exampleFa": "این حرف حرف کو است.",
+    "exampleEn": "This is the letter Q."
+  },
+  {
     "word": "R",
     "ipa": "[ɛʁ]",
     "fa": "حرف اِر",
@@ -121,6 +209,17 @@
     "exampleEn": "This is the letter S."
   },
   {
+    "word": "T",
+    "ipa": "[teː]",
+    "fa": "حرف ته",
+    "en": "the letter T",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe T.",
+    "exampleFa": "این حرف حرف ته است.",
+    "exampleEn": "This is the letter T."
+  },
+  {
     "word": "U",
     "ipa": "[uː]",
     "fa": "حرف او",
@@ -130,6 +229,72 @@
     "example": "Das ist der Buchstabe U.",
     "exampleFa": "این حرف او است.",
     "exampleEn": "This is the letter U."
+  },
+  {
+    "word": "V",
+    "ipa": "[faʊ̯]",
+    "fa": "حرف فاو",
+    "en": "the letter V",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe V.",
+    "exampleFa": "این حرف حرف فاو است.",
+    "exampleEn": "This is the letter V."
+  },
+  {
+    "word": "W",
+    "ipa": "[veː]",
+    "fa": "حرف وه",
+    "en": "the letter W",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe W.",
+    "exampleFa": "این حرف حرف وه است.",
+    "exampleEn": "This is the letter W."
+  },
+  {
+    "word": "X",
+    "ipa": "[ɪks]",
+    "fa": "حرف ایکس",
+    "en": "the letter X",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe X.",
+    "exampleFa": "این حرف حرف ایکس است.",
+    "exampleEn": "This is the letter X."
+  },
+  {
+    "word": "Y",
+    "ipa": "[ˈʏpsilɔn]",
+    "fa": "حرف اوپسیلون",
+    "en": "the letter Y",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe Y.",
+    "exampleFa": "این حرف حرف اوپسیلون است.",
+    "exampleEn": "This is the letter Y."
+  },
+  {
+    "word": "Z",
+    "ipa": "[tsɛt]",
+    "fa": "حرف تسِت",
+    "en": "the letter Z",
+    "level": "A0",
+    "category": "حروف الفبا",
+    "example": "Das ist der Buchstabe Z.",
+    "exampleFa": "این حرف حرف تسِت است.",
+    "exampleEn": "This is the letter Z."
+  },
+  {
+    "word": "null",
+    "ipa": "[nʊl]",
+    "fa": "صفر",
+    "en": "zero",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis null.",
+    "exampleFa": "تا صفر می‌شمارم.",
+    "exampleEn": "I count to zero."
   },
   {
     "word": "eins",
@@ -242,49 +407,125 @@
     "exampleEn": "Ten people are here."
   },
   {
-    "word": "mal",
-    "ipa": "[maːl]",
-    "fa": "بار / ضربدر",
-    "en": "time(s) / times (multiplication)",
+    "word": "elf",
+    "ipa": "[ɛlf]",
+    "fa": "یازده",
+    "en": "eleven",
     "level": "A0",
     "category": "اعداد",
-    "example": "Zwei mal drei ist sechs.",
-    "exampleFa": "دو ضربدر سه می‌شود شش.",
-    "exampleEn": "Two times three is six.",
-    "grammarNote": "در گفتار روزمره اغلب به‌صورت «mal» برای «یک بار» هم استفاده می‌شود (مثلاً: Komm mal her!)."
+    "example": "Ich habe elf.",
+    "exampleFa": "من یازده تا دارم.",
+    "exampleEn": "I have eleven."
   },
   {
-    "word": "pro",
-    "ipa": "[pʁoː]",
-    "fa": "به ازای هر",
-    "en": "per",
+    "word": "zwölf",
+    "ipa": "[tsvœlf]",
+    "fa": "دوازده",
+    "en": "twelve",
     "level": "A0",
     "category": "اعداد",
-    "example": "Das kostet 5 Euro pro Person.",
-    "exampleFa": "این ۵ یورو به ازای هر نفر است.",
-    "exampleEn": "That costs 5 euros per person."
+    "example": "Ich habe zwölf.",
+    "exampleFa": "من دوازده تا دارم.",
+    "exampleEn": "I have twelve."
   },
   {
-    "word": "weniger als",
-    "ipa": "[ˈveːnɪɡɐ als]",
-    "fa": "کمتر از",
-    "en": "less than",
+    "word": "dreizehn",
+    "ipa": "[ˈdraɪtseːn]",
+    "fa": "سیزده",
+    "en": "thirteen",
     "level": "A0",
     "category": "اعداد",
-    "example": "Ich habe weniger als 10 Euro.",
-    "exampleFa": "کمتر از ۱۰ یورو دارم.",
-    "exampleEn": "I have less than 10 euros."
+    "example": "Ich zähle bis dreizehn.",
+    "exampleFa": "تا سیزده می‌شمارم.",
+    "exampleEn": "I count to thirteen."
   },
   {
-    "word": "ich",
-    "ipa": "[ɪç]",
-    "fa": "من",
-    "en": "I",
+    "word": "vierzehn",
+    "ipa": "[ˈfiːɐ̯tseːn]",
+    "fa": "چهارده",
+    "en": "fourteen",
     "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Ich heiße Ali.",
-    "exampleFa": "اسم من علی است.",
-    "exampleEn": "My name is Ali."
+    "category": "اعداد",
+    "example": "Ich zähle bis vierzehn.",
+    "exampleFa": "تا چهارده می‌شمارم.",
+    "exampleEn": "I count to fourteen."
+  },
+  {
+    "word": "fünfzehn",
+    "ipa": "[ˈfʏnftseːn]",
+    "fa": "پانزده",
+    "en": "fifteen",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis fünfzehn.",
+    "exampleFa": "تا پانزده می‌شمارم.",
+    "exampleEn": "I count to fifteen."
+  },
+  {
+    "word": "sechzehn",
+    "ipa": "[ˈsɛçtseːn]",
+    "fa": "شانزده",
+    "en": "sixteen",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis sechzehn.",
+    "exampleFa": "تا شانزده می‌شمارم.",
+    "exampleEn": "I count to sixteen."
+  },
+  {
+    "word": "siebzehn",
+    "ipa": "[ˈziːptseːn]",
+    "fa": "هفده",
+    "en": "seventeen",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis siebzehn.",
+    "exampleFa": "تا هفده می‌شمارم.",
+    "exampleEn": "I count to seventeen."
+  },
+  {
+    "word": "achtzehn",
+    "ipa": "[ˈaxtseːn]",
+    "fa": "هجده",
+    "en": "eighteen",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis achtzehn.",
+    "exampleFa": "تا هجده می‌شمارم.",
+    "exampleEn": "I count to eighteen."
+  },
+  {
+    "word": "neunzehn",
+    "ipa": "[ˈnɔʏ̯ntseːn]",
+    "fa": "نوزده",
+    "en": "nineteen",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis neunzehn.",
+    "exampleFa": "تا نوزده می‌شمارم.",
+    "exampleEn": "I count to nineteen."
+  },
+  {
+    "word": "zwanzig",
+    "ipa": "[ˈtsvantsɪç]",
+    "fa": "بیست",
+    "en": "twenty",
+    "level": "A0",
+    "category": "اعداد",
+    "example": "Ich zähle bis zwanzig.",
+    "exampleFa": "تا بیست می‌شمارم.",
+    "exampleEn": "I count to twenty."
+  },
+  {
+    "word": "dir",
+    "ipa": "[diːɐ̯]",
+    "fa": "به تو / برای تو (غیررسمی)",
+    "en": "to you / for you (informal singular)",
+    "level": "A0",
+    "category": "ضمایر شخصی (حالات)",
+    "example": "Ich gebe dir das Buch.",
+    "exampleFa": "کتاب را به تو می‌دهم.",
+    "exampleEn": "I give you the book."
   },
   {
     "word": "du",
@@ -309,18 +550,6 @@
     "exampleEn": "He is my friend."
   },
   {
-    "word": "sie",
-    "ipa": "[ziː]",
-    "fa": "او (مونث)",
-    "en": "she",
-    "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Sie ist meine Schwester.",
-    "exampleFa": "او خواهر من است.",
-    "exampleEn": "She is my sister.",
-    "id": "sie_she"
-  },
-  {
     "word": "es",
     "ipa": "[ɛs]",
     "fa": "آن (خنثی)",
@@ -332,74 +561,26 @@
     "exampleEn": "It is cold."
   },
   {
-    "word": "wir",
-    "ipa": "[viːɐ̯]",
-    "fa": "ما",
-    "en": "we",
-    "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Wir lernen Deutsch.",
-    "exampleFa": "ما آلمانی یاد می‌گیریم.",
-    "exampleEn": "We are learning German."
-  },
-  {
-    "word": "ihr",
-    "ipa": "[iːɐ̯]",
-    "fa": "شما (غیررسمی جمع)",
-    "en": "you (informal plural)",
-    "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Wie geht es euch?",
-    "exampleFa": "حالتان چطور است؟ (جمع غیررسمی)",
-    "exampleEn": "How are you? (informal plural)",
-    "id": "ihr_you_pl"
-  },
-  {
-    "word": "Sie",
-    "ipa": "[ziː]",
-    "fa": "شما (رسمی – مفرد و جمع)",
-    "en": "you (formal)",
-    "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Wie heißen Sie?",
-    "exampleFa": "اسم شما چیست؟",
-    "exampleEn": "What is your name? (formal)",
-    "id": "sie_formal_you",
-    "grammarNote": "همیشه با حرف بزرگ نوشته می‌شود و فعل به صورت سوم شخص جمع صرف می‌شود."
-  },
-  {
-    "word": "sie",
-    "ipa": "[ziː]",
-    "fa": "آنها",
-    "en": "they",
-    "level": "A0",
-    "category": "ضمایر شخصی",
-    "example": "Sie sind hier.",
-    "exampleFa": "آنها اینجا هستند.",
-    "exampleEn": "They are here.",
-    "id": "sie_they"
-  },
-  {
-    "word": "mir",
-    "ipa": "[miːɐ̯]",
-    "fa": "به من / برای من",
-    "en": "to me / for me",
+    "word": "euch",
+    "ipa": "[ɔʏ̯ç]",
+    "fa": "به شما / برای شما (غیررسمی جمع)",
+    "en": "to you / for you (informal plural)",
     "level": "A0",
     "category": "ضمایر شخصی (حالات)",
-    "example": "Gib mir das Buch!",
-    "exampleFa": "کتاب را به من بده!",
-    "exampleEn": "Give me the book!"
+    "example": "Ich danke euch.",
+    "exampleFa": "از شما ممنونم.",
+    "exampleEn": "I thank you (all)."
   },
   {
-    "word": "dir",
-    "ipa": "[diːɐ̯]",
-    "fa": "به تو / برای تو (غیررسمی)",
-    "en": "to you / for you (informal singular)",
+    "word": "ich",
+    "ipa": "[ɪç]",
+    "fa": "من",
+    "en": "I",
     "level": "A0",
-    "category": "ضمایر شخصی (حالات)",
-    "example": "Ich gebe dir das Buch.",
-    "exampleFa": "کتاب را به تو می‌دهم.",
-    "exampleEn": "I give you the book."
+    "category": "ضمایر شخصی",
+    "example": "Ich heiße Ali.",
+    "exampleFa": "اسم من علی است.",
+    "exampleEn": "My name is Ali."
   },
   {
     "word": "ihm",
@@ -411,40 +592,6 @@
     "example": "Ich gebe ihm das Buch.",
     "exampleFa": "کتاب را به او می‌دهم.",
     "exampleEn": "I give him the book."
-  },
-  {
-    "word": "ihr",
-    "ipa": "[iːɐ̯]",
-    "fa": "به او / برای او (مونث – داتیو)",
-    "en": "to her / for her",
-    "level": "A0",
-    "category": "ضمایر شخصی (حالات)",
-    "example": "Ich gebe ihr das Buch.",
-    "exampleFa": "کتاب را به او (مونث) می‌دهم.",
-    "exampleEn": "I give her the book.",
-    "id": "ihr_dat_her"
-  },
-  {
-    "word": "uns",
-    "ipa": "[ʊns]",
-    "fa": "به ما / برای ما",
-    "en": "to us / for us",
-    "level": "A0",
-    "category": "ضمایر شخصی (حالات)",
-    "example": "Komm zu uns!",
-    "exampleFa": "بیا پیش ما!",
-    "exampleEn": "Come to us!"
-  },
-  {
-    "word": "euch",
-    "ipa": "[ɔʏ̯ç]",
-    "fa": "به شما / برای شما (غیررسمی جمع)",
-    "en": "to you / for you (informal plural)",
-    "level": "A0",
-    "category": "ضمایر شخصی (حالات)",
-    "example": "Ich danke euch.",
-    "exampleFa": "از شما ممنونم.",
-    "exampleEn": "I thank you (all)."
   },
   {
     "word": "Ihnen",
@@ -459,26 +606,61 @@
     "grammarNote": "همیشه با حرف بزرگ."
   },
   {
-    "word": "mein",
-    "ipa": "[maɪ̯n]",
-    "fa": "مال من (مذکر/خنثی)",
-    "en": "my (masculine / neuter)",
+    "word": "ihr",
+    "ipa": "[iːɐ̯]",
+    "fa": "شما (غیررسمی جمع)",
+    "en": "you (informal plural)",
     "level": "A0",
-    "category": "ضمایر ملکی",
-    "example": "Das ist mein Name.",
-    "exampleFa": "این اسم من است.",
-    "exampleEn": "This is my name."
+    "category": "ضمایر شخصی",
+    "example": "Wie geht es euch?",
+    "exampleFa": "حالتان چطور است؟ (جمع غیررسمی)",
+    "exampleEn": "How are you? (informal plural)",
+    "id": "ihr_you_pl"
   },
   {
-    "word": "meine",
-    "ipa": "[ˈmaɪ̯nə]",
-    "fa": "مال من (مونث/جمع)",
-    "en": "my (feminine / plural)",
+    "word": "mir",
+    "ipa": "[miːɐ̯]",
+    "fa": "به من / برای من",
+    "en": "to me / for me",
     "level": "A0",
-    "category": "ضمایر ملکی",
-    "example": "Das sind meine Bücher.",
-    "exampleFa": "این‌ها کتاب‌های من هستند.",
-    "exampleEn": "These are my books."
+    "category": "ضمایر شخصی (حالات)",
+    "example": "Gib mir das Buch!",
+    "exampleFa": "کتاب را به من بده!",
+    "exampleEn": "Give me the book!"
+  },
+  {
+    "word": "sie",
+    "ipa": "[ziː]",
+    "fa": "او (مونث)",
+    "en": "she",
+    "level": "A0",
+    "category": "ضمایر شخصی",
+    "example": "Sie ist meine Schwester.",
+    "exampleFa": "او خواهر من است.",
+    "exampleEn": "She is my sister.",
+    "id": "sie_she"
+  },
+  {
+    "word": "uns",
+    "ipa": "[ʊns]",
+    "fa": "به ما / برای ما",
+    "en": "to us / for us",
+    "level": "A0",
+    "category": "ضمایر شخصی (حالات)",
+    "example": "Komm zu uns!",
+    "exampleFa": "بیا پیش ما!",
+    "exampleEn": "Come to us!"
+  },
+  {
+    "word": "wir",
+    "ipa": "[viːɐ̯]",
+    "fa": "ما",
+    "en": "we",
+    "level": "A0",
+    "category": "ضمایر شخصی",
+    "example": "Wir lernen Deutsch.",
+    "exampleFa": "ما آلمانی یاد می‌گیریم.",
+    "exampleEn": "We are learning German."
   },
   {
     "word": "dein",
@@ -503,28 +685,38 @@
     "exampleEn": "Where is your bag?"
   },
   {
+    "word": "mein",
+    "ipa": "[maɪ̯n]",
+    "fa": "مال من (مذکر/خنثی)",
+    "en": "my (masculine / neuter)",
+    "level": "A0",
+    "category": "ضمایر ملکی",
+    "example": "Ist das mein Buch?",
+    "exampleFa": "آیا این کتاب مال من (مذکر/خنثی) است؟",
+    "exampleEn": "Is that my (masculine / neuter) book?"
+  },
+  {
+    "word": "meine",
+    "ipa": "[ˈmaɪ̯nə]",
+    "fa": "مال من (مونث/جمع)",
+    "en": "my (feminine / plural)",
+    "level": "A0",
+    "category": "ضمایر ملکی",
+    "example": "Das sind meine Bücher.",
+    "exampleFa": "این‌ها کتاب‌های من هستند.",
+    "exampleEn": "These are my books."
+  },
+  {
     "word": "sein",
     "ipa": "[zaɪ̯n]",
     "fa": "مال او (مذکر/خنثی)",
     "en": "his / its",
     "level": "A0",
     "category": "ضمایر ملکی",
-    "example": "Das ist sein Auto.",
-    "exampleFa": "این ماشین اوست.",
-    "exampleEn": "That is his car.",
+    "example": "Ist das sein Buch?",
+    "exampleFa": "آیا این کتاب مال او (مذکر/خنثی) است؟",
+    "exampleEn": "Is that his / its book?",
     "id": "sein_poss"
-  },
-  {
-    "word": "ihr",
-    "ipa": "[iːɐ̯]",
-    "fa": "مال او (مونث) / مال آنها",
-    "en": "her / their",
-    "level": "A0",
-    "category": "ضمایر ملکی",
-    "example": "Das ist ihr Auto.",
-    "exampleFa": "این ماشین او / آنهاست.",
-    "exampleEn": "That is her / their car.",
-    "id": "ihr_poss"
   },
   {
     "word": "unser",
@@ -533,9 +725,9 @@
     "en": "our (masculine / neuter)",
     "level": "A0",
     "category": "ضمایر ملکی",
-    "example": "Das ist unser Haus.",
-    "exampleFa": "این خانه ماست.",
-    "exampleEn": "This is our house."
+    "example": "Ist das unser Buch?",
+    "exampleFa": "آیا این کتاب مال ما (مذکر/خنثی) است؟",
+    "exampleEn": "Is that our (masculine / neuter) book?"
   },
   {
     "word": "unsere",
@@ -547,107 +739,6 @@
     "example": "Das sind unsere Kinder.",
     "exampleFa": "این‌ها بچه‌های ما هستند.",
     "exampleEn": "These are our children."
-  },
-  {
-    "word": "Ihr",
-    "ipa": "[iːɐ̯]",
-    "fa": "مال شما (رسمی)",
-    "en": "your (formal)",
-    "level": "A0",
-    "category": "ضمایر ملکی",
-    "example": "Ist das Ihr Pass?",
-    "exampleFa": "این پاسپورت شماست؟",
-    "exampleEn": "Is that your passport? (formal)",
-    "id": "ihr_formal_your",
-    "grammarNote": "با حرف بزرگ نوشته می‌شود."
-  },
-  {
-    "word": "der",
-    "ipa": "[deːɐ̯]",
-    "fa": "حرف تعریف مذکر",
-    "en": "the (masculine)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Der Mann ist hier.",
-    "exampleFa": "آن مرد اینجاست.",
-    "exampleEn": "The man is here."
-  },
-  {
-    "word": "die",
-    "ipa": "[diː]",
-    "fa": "حرف تعریف مونث / جمع",
-    "en": "the (feminine / plural)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Die Frau lacht.",
-    "exampleFa": "آن زن می‌خندد.",
-    "exampleEn": "The woman is laughing."
-  },
-  {
-    "word": "das",
-    "ipa": "[das]",
-    "fa": "حرف تعریف خنثی / این",
-    "en": "the (neuter) / that / this",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Das ist ein Buch.",
-    "exampleFa": "این یک کتاب است.",
-    "exampleEn": "This is a book."
-  },
-  {
-    "word": "ein",
-    "ipa": "[aɪ̯n]",
-    "fa": "یک (مذکر/خنثی)",
-    "en": "a / an (masculine / neuter)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Das ist ein Hund.",
-    "exampleFa": "این یک سگ است.",
-    "exampleEn": "This is a dog."
-  },
-  {
-    "word": "eine",
-    "ipa": "[ˈaɪ̯nə]",
-    "fa": "یک (مونث)",
-    "en": "a / an (feminine)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Das ist eine Katze.",
-    "exampleFa": "این یک گربه است.",
-    "exampleEn": "This is a cat."
-  },
-  {
-    "word": "kein",
-    "ipa": "[kaɪ̯n]",
-    "fa": "هیچ / نه یک (مذکر/خنثی)",
-    "en": "no / not a (masculine / neuter)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Ich habe kein Auto.",
-    "exampleFa": "ماشین ندارم.",
-    "exampleEn": "I don't have a car."
-  },
-  {
-    "word": "keine",
-    "ipa": "[ˈkaɪ̯nə]",
-    "fa": "هیچ / نه یک (مونث/جمع)",
-    "en": "no / not a (feminine / plural)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Ich habe keine Zeit.",
-    "exampleFa": "وقت ندارم.",
-    "exampleEn": "I have no time."
-  },
-  {
-    "word": "dies",
-    "ipa": "[diːs]",
-    "fa": "این",
-    "en": "this",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Dies ist mein Auto.",
-    "exampleFa": "این ماشین من است.",
-    "exampleEn": "This is my car."
   },
   {
     "word": "alle",
@@ -683,6 +774,83 @@
     "exampleEn": "Both are here."
   },
   {
+    "word": "das",
+    "ipa": "[das]",
+    "fa": "حرف تعریف خنثی / این",
+    "en": "the (neuter) / that / this",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Das ist ein Buch.",
+    "exampleFa": "این یک کتاب است.",
+    "exampleEn": "This is a book."
+  },
+  {
+    "word": "der",
+    "ipa": "[deːɐ̯]",
+    "fa": "حرف تعریف مذکر",
+    "en": "the (masculine)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Der Mann ist hier.",
+    "exampleFa": "آن مرد اینجاست.",
+    "exampleEn": "The man is here."
+  },
+  {
+    "word": "die",
+    "ipa": "[diː]",
+    "fa": "حرف تعریف مونث / جمع",
+    "en": "the (feminine / plural)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Die Frau lacht.",
+    "exampleFa": "آن زن می‌خندد.",
+    "exampleEn": "The woman is laughing."
+  },
+  {
+    "word": "dies",
+    "ipa": "[diːs]",
+    "fa": "این",
+    "en": "this",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Dies ist mein Auto.",
+    "exampleFa": "این ماشین من است.",
+    "exampleEn": "This is my car."
+  },
+  {
+    "word": "ein",
+    "ipa": "[aɪ̯n]",
+    "fa": "یک (مذکر/خنثی)",
+    "en": "a / an (masculine / neuter)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "ein ist ein wichtiges Wort.",
+    "exampleFa": "یک (مذکر/خنثی) یک واژه مهم است.",
+    "exampleEn": "a / an (masculine / neuter) is an important word."
+  },
+  {
+    "word": "eine",
+    "ipa": "[ˈaɪ̯nə]",
+    "fa": "یک (مونث)",
+    "en": "a / an (feminine)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "eine ist ein wichtiges Wort.",
+    "exampleFa": "یک (مونث) یک واژه مهم است.",
+    "exampleEn": "a / an (feminine) is an important word."
+  },
+  {
+    "word": "etwas",
+    "ipa": "[ˈɛtvas]",
+    "fa": "چیزی / کمی",
+    "en": "something / a bit",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Ich möchte etwas trinken.",
+    "exampleFa": "می‌خواهم چیزی بنوشم.",
+    "exampleEn": "I would like something to drink."
+  },
+  {
     "word": "jeder",
     "ipa": "[ˈjeːdɐ]",
     "fa": "هر (کسی) / هرکس",
@@ -705,6 +873,28 @@
     "exampleEn": "Someone is knocking on the door."
   },
   {
+    "word": "kein",
+    "ipa": "[kaɪ̯n]",
+    "fa": "هیچ / نه یک (مذکر/خنثی)",
+    "en": "no / not a (masculine / neuter)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Ich habe kein Auto.",
+    "exampleFa": "ماشین ندارم.",
+    "exampleEn": "I don't have a car."
+  },
+  {
+    "word": "keine",
+    "ipa": "[ˈkaɪ̯nə]",
+    "fa": "هیچ / نه یک (مونث/جمع)",
+    "en": "no / not a (feminine / plural)",
+    "level": "A0",
+    "category": "حروف تعریف و ضمایر",
+    "example": "Ich habe keine Zeit.",
+    "exampleFa": "وقت ندارم.",
+    "exampleEn": "I have no time."
+  },
+  {
     "word": "man",
     "ipa": "[man]",
     "fa": "آدم / کسی (ضمیر نامشخص)",
@@ -717,17 +907,6 @@
     "grammarNote": "فعل بعد از man همیشه به صورت سوم شخص مفرد صرف می‌شود."
   },
   {
-    "word": "etwas",
-    "ipa": "[ˈɛtvas]",
-    "fa": "چیزی / کمی",
-    "en": "something / a bit",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Ich möchte etwas trinken.",
-    "exampleFa": "می‌خواهم چیزی بنوشم.",
-    "exampleEn": "I would like something to drink."
-  },
-  {
     "word": "nichts",
     "ipa": "[nɪçts]",
     "fa": "هیچی / هیچ چیز",
@@ -737,28 +916,6 @@
     "example": "Ich habe nichts gehört.",
     "exampleFa": "هیچی نشنیدم.",
     "exampleEn": "I heard nothing."
-  },
-  {
-    "word": "welche",
-    "ipa": "[ˈvɛlçə]",
-    "fa": "کدام (مونث/جمع)",
-    "en": "which (feminine / plural)",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Welche Farbe magst du?",
-    "exampleFa": "کدام رنگ را دوست داری؟",
-    "exampleEn": "Which color do you like?"
-  },
-  {
-    "word": "was für",
-    "ipa": "[vas fyːɐ̯]",
-    "fa": "چه نوع / چه جور",
-    "en": "what kind of",
-    "level": "A0",
-    "category": "حروف تعریف و ضمایر",
-    "example": "Was für ein Buch ist das?",
-    "exampleFa": "این چه جور کتابی است؟",
-    "exampleEn": "What kind of book is that?"
   },
   {
     "word": "selbst",
@@ -784,365 +941,46 @@
     "grammarNote": "ضمیر انعکاسی برای افعال انعکاسی استفاده می‌شود."
   },
   {
-    "word": "für",
-    "ipa": "[fyːɐ̯]",
-    "fa": "برای",
-    "en": "for",
+    "word": "was für",
+    "ipa": "[vas fyːɐ̯]",
+    "fa": "چه نوع / چه جور",
+    "en": "what kind of",
     "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Das ist für dich.",
-    "exampleFa": "این برای توست.",
-    "exampleEn": "This is for you.",
-    "grammarNote": "همیشه با Akkusativ."
+    "category": "حروف تعریف و ضمایر",
+    "example": "Was für ein Buch ist das?",
+    "exampleFa": "این چه جور کتابی است؟",
+    "exampleEn": "What kind of book is that?"
   },
   {
-    "word": "gegen",
-    "ipa": "[ˈɡeːɡn̩]",
-    "fa": "علیه / در برابر / به سمت",
-    "en": "against / towards",
+    "word": "welche",
+    "ipa": "[ˈvɛlçə]",
+    "fa": "کدام (مونث/جمع)",
+    "en": "which (feminine / plural)",
     "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Ich bin gegen das Rauchen.",
-    "exampleFa": "من مخالف سیگار کشیدن هستم.",
-    "exampleEn": "I am against smoking.",
-    "grammarNote": "همیشه با Akkusativ."
+    "category": "حروف تعریف و ضمایر",
+    "example": "Welche Farbe magst du?",
+    "exampleFa": "کدام رنگ را دوست داری؟",
+    "exampleEn": "Which color do you like?"
   },
   {
-    "word": "mit",
-    "ipa": "[mɪt]",
-    "fa": "با",
-    "en": "with",
-    "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Ich komme mit dem Bus.",
-    "exampleFa": "با اتوبوس می‌آیم.",
-    "exampleEn": "I am coming by bus.",
-    "grammarNote": "همیشه با Dativ."
-  },
-  {
-    "word": "ohne",
-    "ipa": "[ˈoːnə]",
-    "fa": "بدون",
-    "en": "without",
-    "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Ich trinke Kaffee ohne Zucker.",
-    "exampleFa": "قهوه بدون شکر می‌نوشم.",
-    "exampleEn": "I drink coffee without sugar.",
-    "grammarNote": "همیشه با Akkusativ."
-  },
-  {
-    "word": "von",
-    "ipa": "[fɔn]",
-    "fa": "از (مبدأ / مالکیت)",
-    "en": "from / of",
-    "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Ich komme von der Arbeit.",
-    "exampleFa": "از سر کار می‌آیم.",
-    "exampleEn": "I am coming from work.",
-    "grammarNote": "همیشه با Dativ."
-  },
-  {
-    "word": "wegen",
-    "ipa": "[ˈveːɡn̩]",
-    "fa": "به خاطر / به دلیل",
-    "en": "because of / due to",
-    "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Wegen des Regens bleibe ich zu Hause.",
-    "exampleFa": "به خاطر باران خانه می‌مانم.",
-    "exampleEn": "Because of the rain I am staying at home.",
-    "grammarNote": "به‌طور سنتی با Genitiv، در گفتار روزمره اغلب با Dativ."
-  },
-  {
-    "word": "statt",
-    "ipa": "[ʃtat]",
-    "fa": "به‌جای",
-    "en": "instead of",
-    "level": "A0",
-    "category": "حروف اضافه",
-    "example": "Statt Tee trinke ich Kaffee.",
-    "exampleFa": "به‌جای چای قهوه می‌نوشم.",
-    "exampleEn": "Instead of tea I drink coffee.",
-    "grammarNote": "معمولاً با Genitiv."
-  },
-  {
-    "word": "an",
-    "ipa": "[an]",
-    "fa": "کنار / به / در (سطح عمودی)",
-    "en": "at / on (vertical surface)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Bild hängt an der Wand.",
-    "exampleFa": "عکس به دیوار آویزان است.",
-    "exampleEn": "The picture is hanging on the wall.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت به سمت."
-  },
-  {
-    "word": "auf",
-    "ipa": "[aʊ̯f]",
-    "fa": "روی (سطح افقی) / در (مکان باز)",
-    "en": "on / at (open places)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Buch liegt auf dem Tisch.",
-    "exampleFa": "کتاب روی میز است.",
-    "exampleEn": "The book is on the table.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت."
-  },
-  {
-    "word": "aus",
-    "ipa": "[aʊ̯s]",
-    "fa": "از / بیرون / خاموش",
-    "en": "from / out of / off",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Ich komme aus Iran.",
-    "exampleFa": "من از ایران می‌آیم.",
-    "exampleEn": "I come from Iran."
-  },
-  {
-    "word": "bei",
-    "ipa": "[baɪ̯]",
-    "fa": "نزد / پیش / در (مکان شخص یا فعالیت)",
-    "en": "at / with (someone's place)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Ich wohne bei meinen Eltern.",
-    "exampleFa": "نزد والدینم زندگی می‌کنم.",
-    "exampleEn": "I live with my parents."
-  },
-  {
-    "word": "hinter",
-    "ipa": "[ˈhɪntɐ]",
-    "fa": "پشت",
-    "en": "behind",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Auto steht hinter dem Haus.",
-    "exampleFa": "ماشین پشت خانه است.",
-    "exampleEn": "The car is behind the house.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت."
-  },
-  {
-    "word": "in",
-    "ipa": "[ɪn]",
-    "fa": "در (داخل)",
-    "en": "in",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Ich bin in Berlin.",
-    "exampleFa": "من در برلین هستم.",
-    "exampleEn": "I am in Berlin.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت به داخل."
-  },
-  {
-    "word": "ins",
-    "ipa": "[ɪns]",
-    "fa": "به داخل (مخفف in das)",
-    "en": "into the (contraction of in das)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Ich gehe ins Kino.",
-    "exampleFa": "می‌روم سینما.",
-    "exampleEn": "I am going to the cinema."
-  },
-  {
-    "word": "neben",
-    "ipa": "[ˈneːbn̩]",
-    "fa": "کنار / بغل",
-    "en": "next to / beside",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Auto steht neben dem Haus.",
-    "exampleFa": "ماشین کنار خانه است.",
-    "exampleEn": "The car is next to the house.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت."
-  },
-  {
-    "word": "über",
-    "ipa": "[ˈyːbɐ]",
-    "fa": "روی (بالا) / دربارهٔ",
-    "en": "over / above / about",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Bild hängt über dem Sofa.",
-    "exampleFa": "عکس بالای مبل آویزان است.",
-    "exampleEn": "The picture is hanging above the sofa.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت از روی چیزی."
-  },
-  {
-    "word": "unter",
-    "ipa": "[ˈʊntɐ]",
-    "fa": "زیر",
-    "en": "under / below",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Die Katze ist unter dem Tisch.",
-    "exampleFa": "گربه زیر میز است.",
-    "exampleEn": "The cat is under the table.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت."
-  },
-  {
-    "word": "zwischen",
-    "ipa": "[ˈt͡svɪʃn̩]",
-    "fa": "بین",
-    "en": "between",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Haus steht zwischen zwei Bäumen.",
-    "exampleFa": "خانه بین دو درخت است.",
-    "exampleEn": "The house is between two trees.",
-    "grammarNote": "با Dativ برای مکان ثابت، با Akkusativ برای حرکت."
-  },
-  {
-    "word": "gegenüber",
-    "ipa": "[ɡeːɡn̩ˈʔyːbɐ]",
-    "fa": "مقابل / روبه‌رو",
-    "en": "opposite / across from",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Das Café liegt gegenüber dem Bahnhof.",
-    "exampleFa": "کافه روبه‌روی ایستگاه قطار است.",
-    "exampleEn": "The café is opposite the station.",
-    "grammarNote": "معمولاً با Dativ."
-  },
-  {
-    "word": "durch",
-    "ipa": "[dʊʁç]",
-    "fa": "از میان / از طریق",
-    "en": "through",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی)",
-    "example": "Wir gehen durch den Park.",
-    "exampleFa": "از میان پارک رد می‌شویم.",
-    "exampleEn": "We are walking through the park.",
-    "grammarNote": "همیشه با Akkusativ."
-  },
-  {
-    "word": "bis",
-    "ipa": "[bɪs]",
-    "fa": "تا",
-    "en": "until / to / by",
-    "level": "A0",
-    "category": "حروف اضافه (زمانی)",
-    "example": "Ich bleibe bis morgen.",
-    "exampleFa": "تا فردا می‌مانم.",
-    "exampleEn": "I will stay until tomorrow."
-  },
-  {
-    "word": "seit",
-    "ipa": "[zaɪ̯t]",
-    "fa": "از (زمان شروع تاکنون)",
-    "en": "since / for (time)",
-    "level": "A0",
-    "category": "حروف اضافه (زمانی)",
-    "example": "Ich lerne Deutsch seit einem Jahr.",
-    "exampleFa": "از یک سال پیش آلمانی یاد می‌گیرم.",
-    "exampleEn": "I have been learning German for a year.",
-    "grammarNote": "همیشه با Dativ و معمولاً با زمان حال کامل یا حال ساده."
-  },
-  {
-    "word": "während",
-    "ipa": "[ˈvɛːʁənt]",
-    "fa": "در طول / هنگام",
-    "en": "during / while",
-    "level": "A0",
-    "category": "حروف اضافه (زمانی)",
-    "example": "Während des Films schlafe ich nicht.",
-    "exampleFa": "در طول فیلم نمی‌خوابم.",
-    "exampleEn": "I don't sleep during the film.",
-    "grammarNote": "به‌طور سنتی با Genitiv، اما در گفتار روزمره اغلب با Dativ هم استفاده می‌شود."
-  },
-  {
-    "word": "am",
-    "ipa": "[am]",
-    "fa": "در (روز هفته) / روی (مخفف an dem)",
-    "en": "on (day) / at the (contraction of an dem)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی و زمانی)",
-    "example": "Am Montag habe ich Zeit.",
-    "exampleFa": "دوشنبه وقت دارم.",
-    "exampleEn": "On Monday I have time."
-  },
-  {
-    "word": "beim",
-    "ipa": "[baɪ̯m]",
-    "fa": "نزد / هنگام (مخفف bei dem)",
-    "en": "at the / while (contraction of bei dem)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی و زمانی)",
-    "example": "Beim Essen sprechen wir nicht.",
-    "exampleFa": "هنگام غذا خوردن حرف نمی‌زنیم.",
-    "exampleEn": "We don't talk while eating."
-  },
-  {
-    "word": "im",
-    "ipa": "[ɪm]",
-    "fa": "در (مخفف in dem) / در ماه یا فصل",
-    "en": "in the (contraction of in dem) / in (month/season)",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی و زمانی)",
-    "example": "Im Sommer ist es heiß.",
-    "exampleFa": "در تابستان هوا گرم است.",
-    "exampleEn": "In summer it is hot."
-  },
-  {
-    "word": "nach",
-    "ipa": "[naːx]",
-    "fa": "به سوی / بعد از",
-    "en": "to (direction) / after",
-    "level": "A0",
-    "category": "حروف اضافه (مکانی و زمانی)",
-    "example": "Ich fahre nach Berlin.",
-    "exampleFa": "به برلین می‌روم.",
-    "exampleEn": "I am going to Berlin.",
-    "grammarNote": "برای شهرها و کشورها بدون حرف تعریف معمولاً بدون Artikel."
-  },
-  {
-    "word": "um",
-    "ipa": "[ʊm]",
-    "fa": "ساعت (زمان) / دور / حدود",
-    "en": "at (time) / around / about",
-    "level": "A0",
-    "category": "حروف اضافه (زمانی و مکانی)",
-    "example": "Der Zug kommt um 8 Uhr.",
-    "exampleFa": "قطار ساعت ۸ می‌آید.",
-    "exampleEn": "The train arrives at 8 o'clock.",
-    "grammarNote": "برای زمان دقیق با Akkusativ."
-  },
-  {
-    "word": "ab",
-    "ipa": "[ap]",
-    "fa": "از (این به بعد) / جدا / از (مکان)",
-    "en": "from / off / as of",
-    "level": "A0",
-    "category": "حروف اضافه و پیشوندها",
-    "example": "Ab morgen arbeite ich.",
-    "exampleFa": "از فردا کار می‌کنم.",
-    "exampleEn": "From tomorrow I will work."
-  },
-  {
-    "word": "sein",
-    "ipa": "[zaɪ̯n]",
-    "fa": "بودن",
-    "en": "to be",
+    "word": "dürfen",
+    "ipa": "[ˈdʏʁfn̩]",
+    "fa": "اجازه داشتن",
+    "en": "may / to be allowed to",
     "level": "A0",
     "category": "افعال کمکی و وجهی",
-    "example": "Ich bin Student.",
-    "exampleFa": "من دانشجو هستم.",
-    "exampleEn": "I am a student.",
-    "id": "sein_verb",
+    "example": "Darf ich hier parken?",
+    "exampleFa": "اجازه دارم اینجا پارک کنم؟",
+    "exampleEn": "May I park here?",
     "conjugation": {
-      "ich": "bin",
-      "du": "bist",
-      "er/sie/es": "ist",
-      "wir": "sind",
-      "ihr": "seid",
-      "Sie/sie": "sind"
+      "ich": "darf",
+      "du": "darfst",
+      "er/sie/es": "darf",
+      "wir": "dürfen",
+      "ihr": "dürft",
+      "Sie/sie": "dürfen"
     },
-    "grammarNote": "فعل کمکی بسیار مهم. بی‌قاعده است."
+    "grammarNote": "فعل منظم یا نیمه‌بی‌قاعده. مصدر در انتهای جمله با افعال وجهی."
   },
   {
     "word": "haben",
@@ -1165,26 +1003,6 @@
     "grammarNote": "فعل کمکی مهم برای ساختن زمان‌های کامل."
   },
   {
-    "word": "werden",
-    "ipa": "[ˈveːɐ̯dn̩]",
-    "fa": "شدن / برای ساختن آینده",
-    "en": "to become / will (future)",
-    "level": "A0",
-    "category": "افعال کمکی و وجهی",
-    "example": "Ich werde Lehrer.",
-    "exampleFa": "معلم می‌شوم.",
-    "exampleEn": "I will become a teacher.",
-    "conjugation": {
-      "ich": "werde",
-      "du": "wirst",
-      "er/sie/es": "wird",
-      "wir": "werden",
-      "ihr": "werdet",
-      "Sie/sie": "werden"
-    },
-    "grammarNote": "برای ساختن آینده ساده و مجهول استفاده می‌شود."
-  },
-  {
     "word": "können",
     "ipa": "[ˈkœnən]",
     "fa": "توانستن / بلد بودن",
@@ -1203,6 +1021,36 @@
       "Sie/sie": "können"
     },
     "grammarNote": "فعل وجهی. فعل اصلی بعد از آن به صورت مصدر در انتهای جمله می‌آید."
+  },
+  {
+    "word": "möchten",
+    "ipa": "[ˈmœçtn̩]",
+    "fa": "خواستن (تمایل، مؤدبانه)",
+    "en": "would like",
+    "level": "A0",
+    "category": "افعال کمکی و وجهی",
+    "example": "Kannst du möchten?",
+    "exampleFa": "می‌توانی خواستن (تمایل، مؤدبانه)؟",
+    "exampleEn": "Can you would like?"
+  },
+  {
+    "word": "mögen",
+    "ipa": "[ˈmøːɡən]",
+    "fa": "دوست داشتن (چیزی/کسی را)",
+    "en": "to like",
+    "level": "A0",
+    "category": "افعال کمکی و وجهی",
+    "example": "Kannst du mögen?",
+    "exampleFa": "می‌توانی دوست داشتن (چیزی/کسی را)؟",
+    "exampleEn": "Can you like?",
+    "conjugation": {
+      "ich": "mag",
+      "du": "magst",
+      "er/sie/es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "Sie/sie": "mögen"
+    }
   },
   {
     "word": "müssen",
@@ -1245,6 +1093,26 @@
     "grammarNote": "فعل وجهی برای توصیه یا تکلیف."
   },
   {
+    "word": "werden",
+    "ipa": "[ˈveːɐ̯dn̩]",
+    "fa": "شدن / برای ساختن آینده",
+    "en": "to become / will (future)",
+    "level": "A0",
+    "category": "افعال کمکی و وجهی",
+    "example": "Ich werde Lehrer.",
+    "exampleFa": "معلم می‌شوم.",
+    "exampleEn": "I will become a teacher.",
+    "conjugation": {
+      "ich": "werde",
+      "du": "wirst",
+      "er/sie/es": "wird",
+      "wir": "werden",
+      "ihr": "werdet",
+      "Sie/sie": "werden"
+    },
+    "grammarNote": "برای ساختن آینده ساده و مجهول استفاده می‌شود."
+  },
+  {
     "word": "wollen",
     "ipa": "[ˈvɔlən]",
     "fa": "خواستن (اراده)",
@@ -1265,26 +1133,208 @@
     "grammarNote": "فعل وجهی برای اراده و خواست."
   },
   {
-    "word": "und",
-    "ipa": "[ʊnt]",
-    "fa": "و",
-    "en": "and",
+    "word": "essen",
+    "ipa": "[ˈɛsən]",
+    "fa": "خوردن",
+    "en": "to eat",
     "level": "A0",
-    "category": "حروف ربط",
-    "example": "Ich und du.",
-    "exampleFa": "من و تو.",
-    "exampleEn": "You and I."
+    "category": "افعال روزمره",
+    "example": "Wir essen um 12 Uhr.",
+    "exampleFa": "ساعت ۱۲ غذا می‌خوریم.",
+    "exampleEn": "We eat at 12 o'clock.",
+    "conjugation": {
+      "ich": "esse",
+      "du": "isst",
+      "er/sie/es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "Sie/sie": "essen"
+    },
+    "grammarNote": "فعل منظم یا نیمه‌بی‌قاعده. مصدر در انتهای جمله با افعال وجهی."
   },
   {
-    "word": "Was?",
-    "ipa": "[vas]",
-    "fa": "چه چیزی؟",
-    "en": "what?",
+    "word": "gehen",
+    "ipa": "[ˈɡeːən]",
+    "fa": "رفتن / پیاده رفتن",
+    "en": "to go / walk",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Wohin gehst du?",
+    "exampleFa": "کجا می‌روی؟",
+    "exampleEn": "Where are you going?",
+    "conjugation": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er/sie/es": "geht",
+      "wir": "gehen",
+      "ihr": "geht",
+      "Sie/sie": "gehen"
+    },
+    "grammarNote": "فعل منظم یا نیمه‌بی‌قاعده. مصدر در انتهای جمله با افعال وجهی."
+  },
+  {
+    "word": "heißen",
+    "ipa": "[ˈhaɪ̯sn̩]",
+    "fa": "نام داشتن، نامیدن",
+    "en": "to be called",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du heißen?",
+    "exampleFa": "می‌توانی نام داشتن، نامیدن؟",
+    "exampleEn": "Can you be called?",
+    "conjugation": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er/sie/es": "heißt",
+      "wir": "heißen",
+      "ihr": "heißt",
+      "Sie/sie": "heißen"
+    }
+  },
+  {
+    "word": "kommen",
+    "ipa": "[ˈkɔmən]",
+    "fa": "آمدن (از جایی آمدن)",
+    "en": "to come (from)",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du kommen?",
+    "exampleFa": "می‌توانی آمدن (از جایی آمدن)؟",
+    "exampleEn": "Can you come (from)?",
+    "conjugation": {
+      "ich": "komme",
+      "du": "kommst",
+      "er/sie/es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "Sie/sie": "kommen"
+    }
+  },
+  {
+    "word": "lernen",
+    "ipa": "[ˈlɛʁnən]",
+    "fa": "یاد گرفتن",
+    "en": "to learn",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du lernen?",
+    "exampleFa": "می‌توانی یاد گرفتن؟",
+    "exampleEn": "Can you learn?",
+    "conjugation": {
+      "ich": "lerne",
+      "du": "lernst",
+      "er/sie/es": "lernt",
+      "wir": "lernen",
+      "ihr": "lernt",
+      "Sie/sie": "lernen"
+    }
+  },
+  {
+    "word": "machen",
+    "ipa": "[ˈmaxən]",
+    "fa": "انجام دادن / درست کردن",
+    "en": "to do / make",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du machen?",
+    "exampleFa": "می‌توانی انجام دادن / درست کردن؟",
+    "exampleEn": "Can you do / make?",
+    "conjugation": {
+      "ich": "mache",
+      "du": "machst",
+      "er/sie/es": "macht",
+      "wir": "machen",
+      "ihr": "macht",
+      "Sie/sie": "machen"
+    }
+  },
+  {
+    "word": "schlafen",
+    "ipa": "[ˈʃlaːfn̩]",
+    "fa": "خوابیدن",
+    "en": "to sleep",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du schlafen?",
+    "exampleFa": "می‌توانی خوابیدن؟",
+    "exampleEn": "Can you sleep?",
+    "conjugation": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er/sie/es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "Sie/sie": "schlafen"
+    }
+  },
+  {
+    "word": "sehen",
+    "ipa": "[ˈzeːən]",
+    "fa": "دیدن",
+    "en": "to see",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Ich sehe dich.",
+    "exampleFa": "تو را می‌بینم.",
+    "exampleEn": "I see you.",
+    "conjugation": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er/sie/es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "Sie/sie": "sehen"
+    },
+    "grammarNote": "فعل منظم یا نیمه‌بی‌قاعده. مصدر در انتهای جمله با افعال وجهی."
+  },
+  {
+    "word": "trinken",
+    "ipa": "[ˈtʁɪŋkən]",
+    "fa": "نوشیدن",
+    "en": "to drink",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Kannst du trinken?",
+    "exampleFa": "می‌توانی نوشیدن؟",
+    "exampleEn": "Can you drink?",
+    "conjugation": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er/sie/es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "Sie/sie": "trinken"
+    }
+  },
+  {
+    "word": "wohnen",
+    "ipa": "[ˈvoːnən]",
+    "fa": "سکونت داشتن، زندگی کردن",
+    "en": "to live (reside)",
+    "level": "A0",
+    "category": "افعال روزمره",
+    "example": "Ich wohne in Berlin.",
+    "exampleFa": "در برلین زندگی می‌کنم.",
+    "exampleEn": "I live in Berlin.",
+    "conjugation": {
+      "ich": "wohne",
+      "du": "wohnst",
+      "er/sie/es": "wohnt",
+      "wir": "wohnen",
+      "ihr": "wohnt",
+      "Sie/sie": "wohnen"
+    }
+  },
+  {
+    "word": "Warum?",
+    "ipa": "[vaˈʁʊm]",
+    "fa": "چرا؟",
+    "en": "why?",
     "level": "A0",
     "category": "کلمات پرسشی",
-    "example": "Das ist Was?.",
-    "exampleFa": "این چه چیزی؟ است.",
-    "exampleEn": "This is what?."
+    "example": "Warum lernst du Deutsch?",
+    "exampleFa": "چرا آلمانی یاد می‌گیری؟",
+    "exampleEn": "Why are you learning German?"
   },
   {
     "word": "was",
@@ -1298,15 +1348,15 @@
     "exampleEn": "What is that?"
   },
   {
-    "word": "Wer?",
-    "ipa": "[veːɐ̯]",
-    "fa": "چه کسی؟",
-    "en": "who?",
+    "word": "Was?",
+    "ipa": "[vas]",
+    "fa": "چه چیزی؟",
+    "en": "what?",
     "level": "A0",
     "category": "کلمات پرسشی",
-    "example": "Das ist Wer?.",
-    "exampleFa": "این چه کسی؟ است.",
-    "exampleEn": "This is who?."
+    "example": "Was? ist ein wichtiges Wort.",
+    "exampleFa": "چه چیزی؟ یک واژه مهم است.",
+    "exampleEn": "what? is an important word."
   },
   {
     "word": "wer",
@@ -1320,37 +1370,15 @@
     "exampleEn": "Who are you?"
   },
   {
-    "word": "Wie?",
-    "ipa": "[viː]",
-    "fa": "چطور؟ / چگونه؟",
-    "en": "how?",
+    "word": "Wer?",
+    "ipa": "[veːɐ̯]",
+    "fa": "چه کسی؟",
+    "en": "who?",
     "level": "A0",
     "category": "کلمات پرسشی",
-    "example": "Wie geht das?",
-    "exampleFa": "این چطور کار می‌کند؟",
-    "exampleEn": "How does that work?"
-  },
-  {
-    "word": "Wo?",
-    "ipa": "[voː]",
-    "fa": "کجا؟",
-    "en": "where?",
-    "level": "A0",
-    "category": "کلمات پرسشی",
-    "example": "Wo ist der Bahnhof?",
-    "exampleFa": "ایستگاه قطار کجاست؟",
-    "exampleEn": "Where is the station?"
-  },
-  {
-    "word": "Warum?",
-    "ipa": "[vaˈʁʊm]",
-    "fa": "چرا؟",
-    "en": "why?",
-    "level": "A0",
-    "category": "کلمات پرسشی",
-    "example": "Warum lernst du Deutsch?",
-    "exampleFa": "چرا آلمانی یاد می‌گیری؟",
-    "exampleEn": "Why are you learning German?"
+    "example": "Wer? ist ein wichtiges Wort.",
+    "exampleFa": "چه کسی؟ یک واژه مهم است.",
+    "exampleEn": "who? is an important word."
   },
   {
     "word": "wie viel",
@@ -1375,72 +1403,103 @@
     "exampleEn": "How many books do you have?"
   },
   {
-    "word": "Ja",
-    "ipa": "[jaː]",
-    "fa": "بله",
-    "en": "yes",
+    "word": "Wie?",
+    "ipa": "[viː]",
+    "fa": "چطور؟ / چگونه؟",
+    "en": "how?",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Ja, ich komme.",
-    "exampleFa": "بله، می‌آیم.",
-    "exampleEn": "Yes, I am coming."
+    "category": "کلمات پرسشی",
+    "example": "Wie geht das?",
+    "exampleFa": "این چطور کار می‌کند؟",
+    "exampleEn": "How does that work?"
   },
   {
-    "word": "Nein",
-    "ipa": "[naɪ̯n]",
-    "fa": "نه",
-    "en": "no",
+    "word": "Wo?",
+    "ipa": "[voː]",
+    "fa": "کجا؟",
+    "en": "where?",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Nein, danke.",
-    "exampleFa": "نه، ممنون.",
-    "exampleEn": "No, thank you."
+    "category": "کلمات پرسشی",
+    "example": "Wo ist der Bahnhof?",
+    "exampleFa": "ایستگاه قطار کجاست؟",
+    "exampleEn": "Where is the station?"
   },
   {
-    "word": "Bitte",
-    "ipa": "[ˈbɪtə]",
-    "fa": "لطفاً / خواهش می‌کنم / بفرمایید",
-    "en": "please / you're welcome",
+    "word": "aber",
+    "ipa": "[ˈaːbɐ]",
+    "fa": "اما",
+    "en": "but",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Bitte, setzen Sie sich!",
-    "exampleFa": "لطفاً بنشینید!",
-    "exampleEn": "Please, take a seat!",
-    "plural": "die Bitten",
-    "pluralNote": "وقتی به معنای «درخواست» باشد (اسم)."
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Ich will kommen, aber ich habe keine Zeit.",
+    "exampleFa": "می‌خواهم بیایم، اما وقت ندارم.",
+    "exampleEn": "I want to come, but I have no time."
   },
   {
-    "word": "Bitte schön",
-    "ipa": "[ˈbɪtə ʃøːn]",
-    "fa": "خواهش می‌کنم (پاسخ به تشکر)",
-    "en": "you're welcome",
+    "word": "auch",
+    "ipa": "[aʊ̯x]",
+    "fa": "هم / همچنین",
+    "en": "also / too",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Danke! – Bitte schön!",
-    "exampleFa": "متشکرم! – خواهش می‌کنم!",
-    "exampleEn": "Thank you! – You're welcome!"
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Ich komme auch.",
+    "exampleFa": "من هم می‌آیم.",
+    "exampleEn": "I am coming too."
   },
   {
-    "word": "Danke",
-    "ipa": "[ˈdaŋkə]",
-    "fa": "متشکرم / ممنون",
-    "en": "thank you / thanks",
+    "word": "oder",
+    "ipa": "[ˈoːdɐ]",
+    "fa": "یا",
+    "en": "or",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Danke für die Hilfe!",
-    "exampleFa": "ممنون بابت کمک!",
-    "exampleEn": "Thank you for the help!"
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Tee oder Kaffee?",
+    "exampleFa": "چای یا قهوه؟",
+    "exampleEn": "Tea or coffee?"
   },
   {
-    "word": "Danke schön",
-    "ipa": "[ˈdaŋkə ʃøːn]",
-    "fa": "خیلی ممنون",
-    "en": "thank you very much",
+    "word": "sehr",
+    "ipa": "[zeːɐ̯]",
+    "fa": "خیلی",
+    "en": "very",
     "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Danke schön!",
-    "exampleFa": "خیلی ممنون!",
-    "exampleEn": "Thank you very much!"
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Das Buch liegt sehr dem Tisch.",
+    "exampleFa": "کتاب خیلی میز است.",
+    "exampleEn": "The book is very the table."
+  },
+  {
+    "word": "und",
+    "ipa": "[ʊnt]",
+    "fa": "و",
+    "en": "and",
+    "level": "A0",
+    "category": "حروف ربط",
+    "example": "Ich und du.",
+    "exampleFa": "من و تو.",
+    "exampleEn": "You and I."
+  },
+  {
+    "word": "warum",
+    "ipa": "[vaˈʁʊm]",
+    "fa": "چرا",
+    "en": "why",
+    "level": "A0",
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Das Buch liegt warum dem Tisch.",
+    "exampleFa": "کتاب چرا میز است.",
+    "exampleEn": "The book is why the table."
+  },
+  {
+    "word": "wie",
+    "ipa": "[viː]",
+    "fa": "چطور / همان‌طور که",
+    "en": "how / as",
+    "level": "A0",
+    "category": "حروف ربط و قیدهای رایج",
+    "example": "Das Buch liegt wie dem Tisch.",
+    "exampleFa": "کتاب چطور / همان‌طور که میز است.",
+    "exampleEn": "The book is how / as the table."
   },
   {
     "word": "alles Gute",
@@ -1463,6 +1522,28 @@
     "example": "Alles klar?",
     "exampleFa": "همه‌چی روبه‌راهه؟ / فهمیدی؟",
     "exampleEn": "Everything clear? / Got it?"
+  },
+  {
+    "word": "auf Wiederhören",
+    "ipa": "[aʊ̯f ˈviːdɐˌhøːʁən]",
+    "fa": "خداحافظ (پای تلفن)",
+    "en": "goodbye (on the phone)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "auf Wiederhören ist ein wichtiges Wort.",
+    "exampleFa": "خداحافظ (پای تلفن) یک واژه مهم است.",
+    "exampleEn": "goodbye (on the phone) is an important word."
+  },
+  {
+    "word": "Auf Wiedersehen",
+    "ipa": "[aʊf ˈviːdɐzeːən]",
+    "fa": "خداحافظ (رسمی)",
+    "en": "goodbye (formal)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Auf Wiedersehen!",
+    "exampleFa": "خداحافظ!",
+    "exampleEn": "Goodbye!"
   },
   {
     "word": "bis bald",
@@ -1498,6 +1579,84 @@
     "exampleEn": "See you later!"
   },
   {
+    "word": "bis zum nächsten Mal",
+    "ipa": "[bɪs t͡sʊm ˈnɛːçstn̩ maːl]",
+    "fa": "تا دفعه‌ی بعد",
+    "en": "until next time",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "bis zum nächsten Mal ist ein wichtiges Wort.",
+    "exampleFa": "تا دفعه‌ی بعد یک واژه مهم است.",
+    "exampleEn": "until next time is an important word."
+  },
+  {
+    "word": "Bitte",
+    "ipa": "[ˈbɪtə]",
+    "fa": "لطفاً / خواهش می‌کنم / بفرمایید",
+    "en": "please / you're welcome",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Bitte, setzen Sie sich!",
+    "exampleFa": "لطفاً بنشینید!",
+    "exampleEn": "Please, take a seat!",
+    "plural": "die Bitten",
+    "pluralNote": "وقتی به معنای «درخواست» باشد (اسم).",
+    "article": "die"
+  },
+  {
+    "word": "Bitte schön",
+    "ipa": "[ˈbɪtə ʃøːn]",
+    "fa": "خواهش می‌کنم (پاسخ به تشکر)",
+    "en": "you're welcome",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Danke! – Bitte schön!",
+    "exampleFa": "متشکرم! – خواهش می‌کنم!",
+    "exampleEn": "Thank you! – You're welcome!"
+  },
+  {
+    "word": "Danke",
+    "ipa": "[ˈdaŋkə]",
+    "fa": "متشکرم / ممنون",
+    "en": "thank you / thanks",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Danke für die Hilfe!",
+    "exampleFa": "ممنون بابت کمک!",
+    "exampleEn": "Thank you for the help!"
+  },
+  {
+    "word": "Danke schön",
+    "ipa": "[ˈdaŋkə ʃøːn]",
+    "fa": "خیلی ممنون",
+    "en": "thank you very much",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Danke schön!",
+    "exampleFa": "خیلی ممنون!",
+    "exampleEn": "Thank you very much!"
+  },
+  {
+    "word": "danken",
+    "ipa": "[ˈdaŋkn̩]",
+    "fa": "تشکر کردن",
+    "en": "to thank",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Ich danke.",
+    "exampleFa": "من تشکر کردن.",
+    "exampleEn": "I thank.",
+    "conjugation": {
+      "ich": "danke",
+      "du": "dankst",
+      "er/sie/es": "dankt",
+      "wir": "danken",
+      "ihr": "dankt",
+      "Sie/sie": "danken"
+    },
+    "grammarNote": "فعل منظم یا نیمه‌بی‌قاعده. مصدر در انتهای جمله با افعال وجهی."
+  },
+  {
     "word": "das geht",
     "ipa": "[das ɡeːt]",
     "fa": "می‌شه / اشکالی نداره",
@@ -1531,6 +1690,17 @@
     "exampleEn": "I don't care / It doesn't matter to me."
   },
   {
+    "word": "entschuldigen Sie bitte",
+    "ipa": "[ɛntˈʃʊldɪɡn̩ ziː ˈbɪtə]",
+    "fa": "ببخشید (رسمی)",
+    "en": "excuse me, please (formal)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "entschuldigen Sie bitte ist ein wichtiges Wort.",
+    "exampleFa": "ببخشید (رسمی) یک واژه مهم است.",
+    "exampleEn": "excuse me, please (formal) is an important word."
+  },
+  {
     "word": "es geht",
     "ipa": "[ɛs ɡeːt]",
     "fa": "بد نیست / حالم خوب است (تقریبی)",
@@ -1540,18 +1710,6 @@
     "example": "Wie geht's? – Es geht.",
     "exampleFa": "حالت چطوره؟ – بد نیست.",
     "exampleEn": "How are you? – It's okay."
-  },
-  {
-    "word": "es gibt",
-    "ipa": "[ɛs ɡiːpt]",
-    "fa": "وجود دارد / هست",
-    "en": "there is / there are",
-    "level": "A0",
-    "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Es gibt ein Problem.",
-    "exampleFa": "یک مشکل وجود دارد.",
-    "exampleEn": "There is a problem.",
-    "grammarNote": "بعد از es gibt معمولاً Akkusativ می‌آید."
   },
   {
     "word": "gar nicht",
@@ -1587,6 +1745,106 @@
     "exampleEn": "Well done!"
   },
   {
+    "word": "Gute Nacht",
+    "ipa": "[ˈɡuːtə naxt]",
+    "fa": "شب بخیر",
+    "en": "good night",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Gute Nacht ist ein wichtiges Wort.",
+    "exampleFa": "شب بخیر یک واژه مهم است.",
+    "exampleEn": "good night is an important word."
+  },
+  {
+    "word": "Guten Abend",
+    "ipa": "[ˈɡuːtn̩ ˈaːbn̩t]",
+    "fa": "عصر بخیر",
+    "en": "good evening",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Guten Abend ist ein wichtiges Wort.",
+    "exampleFa": "عصر بخیر یک واژه مهم است.",
+    "exampleEn": "good evening is an important word."
+  },
+  {
+    "word": "guten Appetit",
+    "ipa": "[ˈɡuːtn̩ apeˈtiːt]",
+    "fa": "نوش جان",
+    "en": "enjoy your meal",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "guten Appetit ist ein wichtiges Wort.",
+    "exampleFa": "نوش جان یک واژه مهم است.",
+    "exampleEn": "enjoy your meal is an important word."
+  },
+  {
+    "word": "Guten Morgen",
+    "ipa": "[ˈɡuːtn̩ ˈmɔʁɡn̩]",
+    "fa": "صبح بخیر",
+    "en": "good morning",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Guten Morgen ist ein wichtiges Wort.",
+    "exampleFa": "صبح بخیر یک واژه مهم است.",
+    "exampleEn": "good morning is an important word."
+  },
+  {
+    "word": "guten Rutsch ins neue Jahr",
+    "ipa": "[ˈɡuːtn̩ ʁʊtʃ ɪns ˈnɔɪ̯ə jaːɐ̯]",
+    "fa": "سال نو مبارک (محاوره‌ای)",
+    "en": "happy new year (informal)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "guten Rutsch ins neue Jahr ist ein wichtiges Wort.",
+    "exampleFa": "سال نو مبارک (محاوره‌ای) یک واژه مهم است.",
+    "exampleEn": "happy new year (informal) is an important word."
+  },
+  {
+    "word": "Guten Tag",
+    "ipa": "[ˈɡuːtn̩ taːk]",
+    "fa": "روز بخیر",
+    "en": "good day",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Guten Tag ist ein wichtiges Wort.",
+    "exampleFa": "روز بخیر یک واژه مهم است.",
+    "exampleEn": "good day is an important word."
+  },
+  {
+    "word": "Hallo",
+    "ipa": "[haˈloː]",
+    "fa": "سلام",
+    "en": "hello",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Hallo ist ein wichtiges Wort.",
+    "exampleFa": "سلام یک واژه مهم است.",
+    "exampleEn": "hello is an important word.",
+    "plural": "die Halloe"
+  },
+  {
+    "word": "hallo zusammen",
+    "ipa": "[ˈhalo tsuˈzamən]",
+    "fa": "سلام به همگی",
+    "en": "hello everyone",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "hallo zusammen ist ein wichtiges Wort.",
+    "exampleFa": "سلام به همگی یک واژه مهم است.",
+    "exampleEn": "hello everyone is an important word."
+  },
+  {
+    "word": "Ich bin ... Jahre alt.",
+    "ipa": "[ɪç bɪn ... ˈjaːʁə alt]",
+    "fa": "من ... سال دارم",
+    "en": "I am ... years old.",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Ich bin ... Jahre alt. ist ein wichtiges Wort.",
+    "exampleFa": "من ... سال دارم یک واژه مهم است.",
+    "exampleEn": "I am ... years old. is an important word."
+  },
+  {
     "word": "ich kann nicht",
     "ipa": "[ɪç kan nɪçt]",
     "fa": "نمی‌توانم",
@@ -1596,6 +1854,17 @@
     "example": "Ich kann nicht kommen.",
     "exampleFa": "نمی‌توانم بیایم.",
     "exampleEn": "I can't come."
+  },
+  {
+    "word": "Ja",
+    "ipa": "[jaː]",
+    "fa": "بله",
+    "en": "yes",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Ja, ich komme.",
+    "exampleFa": "بله، می‌آیم.",
+    "exampleEn": "Yes, I am coming."
   },
   {
     "word": "leider",
@@ -1620,6 +1889,31 @@
     "exampleEn": "I'm fine, thank you!"
   },
   {
+    "word": "naja",
+    "ipa": "[naˈja]",
+    "fa": "خب... (تردید)",
+    "en": "well... (hesitation)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "naja ist ein wichtiges Wort.",
+    "exampleFa": "خب... (تردید) یک واژه مهم است.",
+    "exampleEn": "well... (hesitation) is an important word."
+  },
+  {
+    "word": "Name",
+    "ipa": "[ˈnaːmə]",
+    "fa": "نام",
+    "en": "name",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Die Name ist nützlich.",
+    "exampleFa": "نام مفید است.",
+    "exampleEn": "The name is useful.",
+    "plural": "die Namen",
+    "enNote": "Possible cognate with English “name”.",
+    "article": "die"
+  },
+  {
     "word": "natürlich",
     "ipa": "[naˈtyːɐ̯lɪç]",
     "fa": "البته / طبیعتاً",
@@ -1631,6 +1925,17 @@
     "exampleEn": "Of course I'll help you!"
   },
   {
+    "word": "Nein",
+    "ipa": "[naɪ̯n]",
+    "fa": "نه",
+    "en": "no",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Nein, danke.",
+    "exampleFa": "نه، ممنون.",
+    "exampleEn": "No, thank you."
+  },
+  {
     "word": "noch einmal",
     "ipa": "[nɔx ˈaɪ̯nmaːl]",
     "fa": "یک بار دیگر",
@@ -1640,6 +1945,18 @@
     "example": "Kannst du das noch einmal sagen?",
     "exampleFa": "می‌تونی یک بار دیگر بگی؟",
     "exampleEn": "Can you say that once more?"
+  },
+  {
+    "word": "Tschüss",
+    "ipa": "[tʃʏs]",
+    "fa": "خداحافظ (غیررسمی)",
+    "en": "bye (informal)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "Tschüss!",
+    "exampleFa": "خداحافظ!",
+    "exampleEn": "Bye!",
+    "plural": "die Tschüsse"
   },
   {
     "word": "wie bitte",
@@ -1659,9 +1976,9 @@
     "en": "How are you? (informal)",
     "level": "A0",
     "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Wie geht es dir?.",
-    "exampleFa": "حالت چطور است؟ (غیررسمی)",
-    "exampleEn": "How are you? (informal)"
+    "example": "Wie geht es dir? ist ein wichtiges Wort.",
+    "exampleFa": "حالت چطور است؟ (غیررسمی) یک واژه مهم است.",
+    "exampleEn": "How are you? (informal) is an important word."
   },
   {
     "word": "Wie geht es Ihnen?",
@@ -1670,8 +1987,446 @@
     "en": "How are you? (formal)",
     "level": "A0",
     "category": "احوال‌پرسی و عبارات رایج",
-    "example": "Wie geht es Ihnen?.",
-    "exampleFa": "حال شما چطور است؟ (رسمی)",
-    "exampleEn": "How are you? (formal)"
+    "example": "Wie geht es Ihnen? ist ein wichtiges Wort.",
+    "exampleFa": "حال شما چطور است؟ (رسمی) یک واژه مهم است.",
+    "exampleEn": "How are you? (formal) is an important word."
+  },
+  {
+    "word": "wie geht's",
+    "ipa": "[viː ɡeːts]",
+    "fa": "چطوری؟ (محاوره‌ای)",
+    "en": "how are you (informal)",
+    "level": "A0",
+    "category": "احوال‌پرسی و عبارات رایج",
+    "example": "wie geht's ist ein wichtiges Wort.",
+    "exampleFa": "چطوری؟ (محاوره‌ای) یک واژه مهم است.",
+    "exampleEn": "how are you (informal) is an important word."
+  },
+  {
+    "word": "gestern",
+    "ipa": "[ˈɡɛstɐn]",
+    "fa": "دیروز",
+    "en": "yesterday",
+    "level": "A0",
+    "category": "زمان و تقویم",
+    "example": "Wir treffen uns gestern.",
+    "exampleFa": "همدیگر را دیروز می‌بینیم.",
+    "exampleEn": "We meet yesterday."
+  },
+  {
+    "word": "heute",
+    "ipa": "[ˈhɔʏ̯tə]",
+    "fa": "امروز",
+    "en": "today",
+    "level": "A0",
+    "category": "زمان و تقویم",
+    "example": "Wir treffen uns heute.",
+    "exampleFa": "همدیگر را امروز می‌بینیم.",
+    "exampleEn": "We meet today."
+  },
+  {
+    "word": "jetzt",
+    "ipa": "[jɛtst]",
+    "fa": "حالا / اکنون",
+    "en": "now",
+    "level": "A0",
+    "category": "زمان و تقویم",
+    "example": "Wir treffen uns jetzt.",
+    "exampleFa": "همدیگر را حالا / اکنون می‌بینیم.",
+    "exampleEn": "We meet now."
+  },
+  {
+    "word": "morgen",
+    "ipa": "[ˈmɔʁɡn̩]",
+    "fa": "فردا",
+    "en": "tomorrow",
+    "level": "A0",
+    "category": "زمان و تقویم",
+    "example": "Wir treffen uns morgen.",
+    "exampleFa": "همدیگر را فردا می‌بینیم.",
+    "exampleEn": "We meet tomorrow."
+  },
+  {
+    "word": "Frau",
+    "ipa": "[fʁaʊ̯]",
+    "fa": "زن / خانم",
+    "en": "woman / Mrs.",
+    "level": "A0",
+    "category": "خانواده و روابط نزدیک",
+    "example": "Das ist meine Frau.",
+    "exampleFa": "این همسر من است.",
+    "exampleEn": "This is my wife.",
+    "plural": "die Frauen"
+  },
+  {
+    "word": "Kind",
+    "ipa": "[kɪnt]",
+    "fa": "کودک، بچه",
+    "en": "child",
+    "level": "A0",
+    "category": "خانواده و روابط نزدیک",
+    "example": "Das ist mein/e Kind.",
+    "exampleFa": "این کودک، بچه من است.",
+    "exampleEn": "This is my child.",
+    "plural": "die Kinder"
+  },
+  {
+    "word": "Mann",
+    "ipa": "[man]",
+    "fa": "مرد / شوهر",
+    "en": "man / husband",
+    "level": "A0",
+    "category": "خانواده و روابط نزدیک",
+    "example": "Das ist mein/e Mann.",
+    "exampleFa": "این مرد / شوهر من است.",
+    "exampleEn": "This is my man / husband.",
+    "plural": "die Männer"
+  },
+  {
+    "word": "Brot",
+    "ipa": "[bʁoːt]",
+    "fa": "نان",
+    "en": "bread",
+    "level": "A0",
+    "category": "غذا و نوشیدنی",
+    "example": "Ich esse gerne Brot.",
+    "exampleFa": "دوست دارم نان بخورم.",
+    "exampleEn": "I like to eat bread.",
+    "plural": "die Brote"
+  },
+  {
+    "word": "Wasser",
+    "ipa": "[ˈvasɐ]",
+    "fa": "آب",
+    "en": "water",
+    "level": "A0",
+    "category": "غذا و نوشیدنی",
+    "example": "Ich esse gerne Wasser.",
+    "exampleFa": "دوست دارم آب بخورم.",
+    "exampleEn": "I like to eat water.",
+    "plural": "die Wasser",
+    "pluralNote": "جمع بدون تغییر یا Wässer",
+    "article": "der"
+  },
+  {
+    "word": "dort",
+    "ipa": "[dɔʁt]",
+    "fa": "آنجا",
+    "en": "there",
+    "level": "A0",
+    "category": "شهر و مکان‌های عمومی",
+    "example": "dort ist ein wichtiges Wort.",
+    "exampleFa": "آنجا یک واژه مهم است.",
+    "exampleEn": "there is an important word."
+  },
+  {
+    "word": "hier",
+    "ipa": "[hiːɐ̯]",
+    "fa": "اینجا",
+    "en": "here",
+    "level": "A0",
+    "category": "شهر و مکان‌های عمومی",
+    "example": "Der hier ist wichtig.",
+    "exampleFa": "اینجا مهم است.",
+    "exampleEn": "The here is important."
+  },
+  {
+    "word": "wo",
+    "ipa": "[voː]",
+    "fa": "کجا",
+    "en": "where",
+    "level": "A0",
+    "category": "شهر و مکان‌های عمومی",
+    "example": "wo ist ein wichtiges Wort.",
+    "exampleFa": "کجا یک واژه مهم است.",
+    "exampleEn": "where is an important word."
+  },
+  {
+    "word": "alt",
+    "ipa": "[alt]",
+    "fa": "پیر / قدیمی",
+    "en": "old",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das Haus ist alt.",
+    "exampleFa": "خانه قدیمی است.",
+    "exampleEn": "The house is old."
+  },
+  {
+    "word": "groß",
+    "ipa": "[ɡʁoːs]",
+    "fa": "بزرگ / قدبلند",
+    "en": "big / tall",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das finde ich groß.",
+    "exampleFa": "به نظرم این بزرگ / قدبلند است.",
+    "exampleEn": "I find that big / tall."
+  },
+  {
+    "word": "gut",
+    "ipa": "[ɡuːt]",
+    "fa": "خوب",
+    "en": "good",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das finde ich gut.",
+    "exampleFa": "به نظرم این خوب است.",
+    "exampleEn": "I find that good."
+  },
+  {
+    "word": "jung",
+    "ipa": "[jʊŋ]",
+    "fa": "جوان",
+    "en": "young",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das finde ich jung.",
+    "exampleFa": "به نظرم این جوان است.",
+    "exampleEn": "I find that young."
+  },
+  {
+    "word": "klein",
+    "ipa": "[klaɪ̯n]",
+    "fa": "کوچک / کوتاه",
+    "en": "small / short",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das finde ich klein.",
+    "exampleFa": "به نظرم این کوچک / کوتاه است.",
+    "exampleEn": "I find that small / short."
+  },
+  {
+    "word": "neu",
+    "ipa": "[nɔʏ̯]",
+    "fa": "نو",
+    "en": "new",
+    "level": "A0",
+    "category": "صفت‌های توصیفی عمومی",
+    "example": "Das finde ich neu.",
+    "exampleFa": "به نظرم این نو است.",
+    "exampleEn": "I find that new."
+  },
+  {
+    "word": "all",
+    "ipa": "[al]",
+    "fa": "همه، کل",
+    "en": "all (of)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt all dem Tisch.",
+    "exampleFa": "کتاب همه، کل میز است.",
+    "exampleEn": "The book is all (of) the table."
+  },
+  {
+    "word": "ander",
+    "ipa": "[ˈandɐ]",
+    "fa": "دیگر / دیگری",
+    "en": "other",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt ander dem Tisch.",
+    "exampleFa": "کتاب دیگر / دیگری میز است.",
+    "exampleEn": "The book is other the table."
+  },
+  {
+    "word": "aufs",
+    "ipa": "[aʊ̯fs]",
+    "fa": "روی (مخفف auf das)",
+    "en": "onto (contraction of auf das)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt aufs dem Tisch.",
+    "exampleFa": "کتاب روی (مخفف auf das) میز است.",
+    "exampleEn": "The book is onto (contraction of auf das) the table."
+  },
+  {
+    "word": "entlang",
+    "ipa": "[ɛntˈlaŋ]",
+    "fa": "در امتداد",
+    "en": "along",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt entlang dem Tisch.",
+    "exampleFa": "کتاب در امتداد میز است.",
+    "exampleEn": "The book is along the table."
+  },
+  {
+    "word": "euer",
+    "ipa": "[ˈɔɪ̯ɐ]",
+    "fa": "مال شما (مذکر/خنثی، غیررسمی جمع)",
+    "en": "your (informal pl., masc./neut.)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt euer dem Tisch.",
+    "exampleFa": "کتاب مال شما (مذکر/خنثی، غیررسمی جمع) میز است.",
+    "exampleEn": "The book is your (informal pl., masc./neut.) the table."
+  },
+  {
+    "word": "eure",
+    "ipa": "[ˈɔɪ̯rə]",
+    "fa": "مال شما (مونث/جمع، غیررسمی جمع)",
+    "en": "your (informal pl., fem./pl.)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt eure dem Tisch.",
+    "exampleFa": "کتاب مال شما (مونث/جمع، غیررسمی جمع) میز است.",
+    "exampleEn": "The book is your (informal pl., fem./pl.) the table."
+  },
+  {
+    "word": "fürs",
+    "ipa": "[fʏɐ̯s]",
+    "fa": "برای (مخفف für das)",
+    "en": "for the (contraction of für das)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt fürs dem Tisch.",
+    "exampleFa": "کتاب برای (مخفف für das) میز است.",
+    "exampleEn": "The book is for the (contraction of für das) the table."
+  },
+  {
+    "word": "irgendwas",
+    "ipa": "[ˈɪʁɡn̩tˌvas]",
+    "fa": "یه چیزی",
+    "en": "something (colloquial)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt irgendwas dem Tisch.",
+    "exampleFa": "کتاب یه چیزی میز است.",
+    "exampleEn": "The book is something (colloquial) the table."
+  },
+  {
+    "word": "irgendwer",
+    "ipa": "[ˈɪʁɡn̩tˌveːɐ̯]",
+    "fa": "یه کسی",
+    "en": "someone (colloquial)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt irgendwer dem Tisch.",
+    "exampleFa": "کتاب یه کسی میز است.",
+    "exampleEn": "The book is someone (colloquial) the table."
+  },
+  {
+    "word": "keinerlei",
+    "ipa": "[ˈkaɪ̯nɐlaɪ̯]",
+    "fa": "هیچ‌گونه",
+    "en": "no ... whatsoever",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt keinerlei dem Tisch.",
+    "exampleFa": "کتاب هیچ‌گونه میز است.",
+    "exampleEn": "The book is no ... whatsoever the table."
+  },
+  {
+    "word": "mancher",
+    "ipa": "[ˈmançɐ]",
+    "fa": "بعضی",
+    "en": "some / many a",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt mancher dem Tisch.",
+    "exampleFa": "کتاب بعضی میز است.",
+    "exampleEn": "The book is some / many a the table."
+  },
+  {
+    "word": "niemand",
+    "ipa": "[ˈniːmant]",
+    "fa": "هیچ‌کس",
+    "en": "nobody",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt niemand dem Tisch.",
+    "exampleFa": "کتاب هیچ‌کس میز است.",
+    "exampleEn": "The book is nobody the table."
+  },
+  {
+    "word": "per",
+    "ipa": "[pɛːɐ̯]",
+    "fa": "از طریق / با",
+    "en": "via / by",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt per dem Tisch.",
+    "exampleFa": "کتاب از طریق / با میز است.",
+    "exampleEn": "The book is via / by the table."
+  },
+  {
+    "word": "selber",
+    "ipa": "[ˈzɛlbɐ]",
+    "fa": "خودم/خودت (تأکیدی)",
+    "en": "oneself (emphatic)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt selber dem Tisch.",
+    "exampleFa": "کتاب خودم/خودت (تأکیدی) میز است.",
+    "exampleEn": "The book is oneself (emphatic) the table."
+  },
+  {
+    "word": "trotz",
+    "ipa": "[tʁɔt͡s]",
+    "fa": "با وجود (حرف اضافه + داتیو)",
+    "en": "despite / in spite of",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt trotz dem Tisch.",
+    "exampleFa": "کتاب با وجود (حرف اضافه + داتیو) میز است.",
+    "exampleEn": "The book is despite / in spite of the table."
+  },
+  {
+    "word": "Wann?",
+    "ipa": "[van]",
+    "fa": "کی؟ (زمان)",
+    "en": "when?",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt Wann? dem Tisch.",
+    "exampleFa": "کتاب کی؟ (زمان) میز است.",
+    "exampleEn": "The book is when? the table.",
+    "plural": "die Wann?e"
+  },
+  {
+    "word": "welcher",
+    "ipa": "[ˈvɛlçɐ]",
+    "fa": "کدام (مذکر)",
+    "en": "which (masc.)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt welcher dem Tisch.",
+    "exampleFa": "کتاب کدام (مذکر) میز است.",
+    "exampleEn": "The book is which (masc.) the table."
+  },
+  {
+    "word": "welches",
+    "ipa": "[ˈvɛlçəs]",
+    "fa": "کدام (خنثی)",
+    "en": "which (neut.)",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt welches dem Tisch.",
+    "exampleFa": "کتاب کدام (خنثی) میز است.",
+    "exampleEn": "The book is which (neut.) the table."
+  },
+  {
+    "word": "Woher?",
+    "ipa": "[voˈheːɐ̯]",
+    "fa": "اهل کجا؟",
+    "en": "where from?",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt Woher? dem Tisch.",
+    "exampleFa": "کتاب اهل کجا؟ میز است.",
+    "exampleEn": "The book is where from? the table.",
+    "plural": "die Woher?e"
+  },
+  {
+    "word": "wohin",
+    "ipa": "[voˈhɪn]",
+    "fa": "به کجا (مقصد)",
+    "en": "where to",
+    "level": "A0",
+    "category": "ضمایر، حروف‌تعریف و حروف‌اضافه",
+    "example": "Das Buch liegt wohin dem Tisch.",
+    "exampleFa": "کتاب به کجا (مقصد) میز است.",
+    "exampleEn": "The book is where to the table."
   }
 ]
