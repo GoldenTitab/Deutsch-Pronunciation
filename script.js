@@ -451,20 +451,23 @@ async function loadData() {
 
     currentVocab = APP_DATA.vocabulary || [];
     currentPathDay = getStudyDayIndex();
-    renderHome();
-    renderLevels();
-    renderVocab();
-    renderGrammar();
-    renderCultureNotes();
-    renderVerbs();
-    renderCases();
-    renderReading();
-    renderDialogues();
-    renderStudyPath();
-    initFlashcards();
-    updateProgress();
-    renderHomeGamification();
-    if (typeof populateRecorderSelect === 'function') populateRecorderSelect();
+    const safe = (fn, name) => {
+      try { fn(); } catch (e) { console.error('Render error in ' + name + ':', e); }
+    };
+    safe(renderHome, 'home');
+    safe(renderLevels, 'levels');
+    safe(renderVocab, 'vocab');
+    safe(renderGrammar, 'grammar');
+    safe(renderCultureNotes, 'culture');
+    safe(renderVerbs, 'verbs');
+    safe(renderCases, 'cases');
+    safe(renderReading, 'reading');
+    safe(renderDialogues, 'dialogues');
+    safe(renderStudyPath, 'path');
+    safe(initFlashcards, 'flashcards');
+    safe(updateProgress, 'progress');
+    safe(renderHomeGamification, 'gamification');
+    if (typeof populateRecorderSelect === 'function') safe(populateRecorderSelect, 'recorder');
     const hash = location.hash.slice(1);
     if (hash) goToHash(hash, { updateHash: false });
   } catch (err) {
@@ -767,17 +770,25 @@ function renderGrammar() {
           <p>${escHtml(g.enNote)}</p>
         </div>`;
     }
-    const examples = [...new Set(g.examplesList || [])];
-    if (examples.length) {
+    const rawExamples = g.examplesList || [];
+    if (rawExamples.length) {
       extraContent += `<div class="grammar-examples-label">مثال‌ها</div>`;
-      extraContent += examples.map(ex => `
-        <div class="example" dir="ltr">
-          <span lang="de">${escHtml(ex)}</span>
-          <button class="audio-btn" data-word="${escHtml(ex)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
-        </div>
-      `).join('');
+      extraContent += rawExamples.map(ex => {
+        const de = typeof ex === 'string' ? ex : (ex && ex.de) || '';
+        const fa = typeof ex === 'object' && ex ? (ex.fa || '') : '';
+        const en = typeof ex === 'object' && ex ? (ex.en || '') : '';
+        if (!de) return '';
+        return `
+        <div class="example" style="flex-direction:column;align-items:stretch;gap:0.25rem;">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:0.5rem;" dir="ltr">
+            <span lang="de">${escHtml(de)}</span>
+            <button class="audio-btn" data-word="${escHtml(de)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+          </div>
+          ${fa ? `<div class="trans">🇮🇷 ${escHtml(fa)}</div>` : ''}
+          ${en ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(en)}</div>` : ''}
+        </div>`;
+      }).join('');
     }
-    // Show fa/en for first example set only as translations under examples
     return `
     <div class="grammar-card">
       <div class="title">${escHtml(g.title || 'مبحث گرامری')}</div>
@@ -984,43 +995,72 @@ function renderCases() {
   const c = APP_DATA.cases;
   const genderLabel = { m: 'مذکر', f: 'مؤنث', n: 'خنثی', pl: 'جمع' };
 
-  const articleTable = (title, rows) => `
+  const articleTable = (title, rows) => {
+    if (!rows || !rows.Nominativ) return '';
+    const genders = Object.keys(rows.Nominativ);
+    return `
     <h3 style="margin:1.5rem 0 0.75rem;">${title}</h3>
     <div class="table-container">
       <table>
-        <thead><tr><th>حالت</th>${Object.keys(rows.Nominativ).map(g => `<th>${genderLabel[g]}</th>`).join('')}</tr></thead>
+        <thead><tr><th>حالت</th>${genders.map(g => `<th>${genderLabel[g] || g}</th>`).join('')}</tr></thead>
         <tbody>
           ${Object.keys(rows).map(kase => `
-            <tr><td><strong>${kase}</strong></td>${Object.keys(rows[kase]).map(g => `<td dir="ltr" lang="de">${escHtml(rows[kase][g])}</td>`).join('')}</tr>
+            <tr><td><strong>${kase}</strong></td>${genders.map(g => `<td dir="ltr" lang="de">${escHtml(rows[kase][g] || '')}</td>`).join('')}</tr>
           `).join('')}
         </tbody>
       </table>
-    </div>
-  `;
+    </div>`;
+  };
 
-  const pronounTable = `
+  // personal_pronouns is keyed by case → person; build a flat table
+  let pronounTable = '';
+  const pp = c.personal_pronouns || c.pronouns;
+  if (pp && pp.Nominativ) {
+    const persons = Object.keys(pp.Nominativ);
+    const personLabel = {
+      ich: 'ich', du: 'du', er: 'er', sie_f: 'sie (مفرد)', es: 'es',
+      wir: 'wir', ihr: 'ihr', sie_pl: 'sie (جمع)', Sie: 'Sie (رسمی)'
+    };
+    pronounTable = `
+    <h3 style="margin:1.5rem 0 0.75rem;">ضمایر شخصی در حالت‌های صرفی</h3>
+    <div class="table-container">
+      <table>
+        <thead><tr><th>ضمیر</th><th>Nominativ</th><th>Akkusativ</th><th>Dativ</th>${pp.Genitiv ? '<th>Genitiv</th>' : ''}</tr></thead>
+        <tbody>
+          ${persons.map(p => `<tr>
+            <td><strong>${escHtml(personLabel[p] || p)}</strong></td>
+            <td dir="ltr" lang="de">${escHtml(pp.Nominativ[p] || '')}</td>
+            <td dir="ltr" lang="de">${escHtml((pp.Akkusativ || {})[p] || '')}</td>
+            <td dir="ltr" lang="de">${escHtml((pp.Dativ || {})[p] || '')}</td>
+            ${pp.Genitiv ? `<td dir="ltr" lang="de">${escHtml(pp.Genitiv[p] || '')}</td>` : ''}
+          </tr>`).join('')}
+        </tbody>
+      </table>
+    </div>`;
+  } else if (Array.isArray(pp)) {
+    pronounTable = `
     <h3 style="margin:1.5rem 0 0.75rem;">ضمایر شخصی در حالت‌های صرفی</h3>
     <div class="table-container">
       <table>
         <thead><tr><th>ضمیر (Nominativ)</th><th>Akkusativ</th><th>Dativ</th></tr></thead>
         <tbody>
-          ${c.pronouns.map(p => `<tr><td dir="ltr" lang="de">${escHtml(p.person)}</td><td dir="ltr" lang="de">${escHtml(p.akkusativ)}</td><td dir="ltr" lang="de">${escHtml(p.dativ)}</td></tr>`).join('')}
+          ${pp.map(p => `<tr><td dir="ltr" lang="de">${escHtml(p.person)}</td><td dir="ltr" lang="de">${escHtml(p.akkusativ)}</td><td dir="ltr" lang="de">${escHtml(p.dativ)}</td></tr>`).join('')}
         </tbody>
       </table>
-    </div>
-  `;
+    </div>`;
+  }
 
-  const prepCards = `
+  const prepCards = (c.prepositions && typeof c.prepositions === 'object') ? `
     <h3 style="margin:1.5rem 0 0.75rem;">حروف اضافه بر اساس حالت دستوری</h3>
     <div class="grammar-grid">
       ${Object.keys(c.prepositions).map(kase => `
         <div class="grammar-card">
-          <div class="title">${kase}</div>
-          <div class="grammar-desc" dir="ltr" lang="de">${c.prepositions[kase].join(' · ')}</div>
+          <div class="title">${escHtml(kase)}</div>
+          <div class="grammar-desc" dir="ltr" lang="de">${(Array.isArray(c.prepositions[kase]) ? c.prepositions[kase] : []).join(' · ')}</div>
         </div>
       `).join('')}
     </div>
-  `;
+  ` : '';
 
   const wechselTip = `
     <div class="wechsel-tip">
@@ -1032,6 +1072,8 @@ function renderCases() {
   casesContent.innerHTML =
     articleTable('حرف تعریف معین (der/die/das)', c.articles_definite) +
     articleTable('حرف تعریف نامعین (ein/eine)', c.articles_indefinite) +
+    (c.articles_negative ? articleTable('حرف تعریف منفی (kein)', c.articles_negative) : '') +
+    (c.possessive_articles ? articleTable('ضمایر ملکی (نمونه: mein)', c.possessive_articles) : '') +
     pronounTable +
     prepCards +
     wechselTip;
