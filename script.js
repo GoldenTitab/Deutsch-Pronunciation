@@ -230,6 +230,39 @@ if (megaParent) {
   });
 }
 
+// The mega-menu is position:fixed so it's never clipped by the
+// horizontally-scrolling desktop nav list. Position it relative to the
+// toggle link's actual on-screen location every time it might open.
+function isDesktopNav() {
+  return window.matchMedia('(min-width: 900px)').matches;
+}
+
+function positionMegaMenu() {
+  if (!megaParent || !megaToggle || !megaMenu) return;
+  if (!isDesktopNav()) {
+    megaMenu.style.position = '';
+    megaMenu.style.top = '';
+    megaMenu.style.left = '';
+    megaMenu.style.right = '';
+    return;
+  }
+  const rect = megaToggle.getBoundingClientRect();
+  const menuWidth = megaMenu.offsetWidth || 300;
+  let left = rect.right - menuWidth;
+  left = Math.max(8, Math.min(left, window.innerWidth - menuWidth - 8));
+  megaMenu.style.position = 'fixed';
+  megaMenu.style.top = (rect.bottom + 6) + 'px';
+  megaMenu.style.left = left + 'px';
+  megaMenu.style.right = 'auto';
+}
+
+if (megaParent) {
+  ['mouseenter', 'focusin'].forEach(evt => megaParent.addEventListener(evt, positionMegaMenu));
+  navList.addEventListener('scroll', positionMegaMenu, { passive: true });
+  window.addEventListener('resize', positionMegaMenu);
+  positionMegaMenu();
+}
+
 const SECTION_LABELS = {
   home: 'خانه',
   path: 'مسیر روزانه',
