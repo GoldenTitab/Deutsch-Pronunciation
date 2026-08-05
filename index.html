@@ -7,6 +7,8 @@
   <meta name="description" content="آموزش هوشمند زبان آلمانی از سطح A0 تا C1 با واژگان، گرامر، تلفظ IPA، فلش‌کارت، آزمون و مسترکلاس فونتیک">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='33' y='0' fill='%23000'/%3E%3Crect width='100' height='34' y='33' fill='%23DD0000'/%3E%3Crect width='100' height='33' y='67' fill='%23FFCE00'/%3E%3C/svg%3E">
   <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -84,6 +86,7 @@
           <li><a href="#" data-section="reading">متن‌خوانی</a></li>
           <li><a href="#" data-section="dialogues">دیالوگ</a></li>
           <li><a href="#" data-section="dictation">دیکته</a></li>
+          <li><a href="#" data-section="writing">تمرین نوشتاری</a></li>
           <li><a href="#" data-section="quiz">آزمون سطح</a></li>
           <li><a href="#" data-section="flashcards">فلش‌کارت</a></li>
           <li><a href="#" data-section="progress">پیشرفت من</a></li>
@@ -324,6 +327,29 @@
           <button type="button" class="btn-small umlaut-insert" data-char="Ö">Ö</button>
           <button type="button" class="btn-small umlaut-insert" data-char="Ü">Ü</button>
         </div>
+      </div>
+    </section>
+
+
+    <section id="writing" class="section">
+      <h2>تمرین نوشتاری هدایت‌شده</h2>
+      <p style="color:var(--text-muted);margin-bottom:1rem;">جمله را بر اساس راهنما بنویس. سیستم ترتیب فعل (V2)، حروف تعریف و غلط‌های رایج را بررسی می‌کند.</p>
+      <div class="controls-bar">
+        <select id="writingLevelFilter">
+          <option value="A1">A1</option>
+          <option value="A2">A2</option>
+          <option value="B1">B1</option>
+          <option value="B2">B2</option>
+          <option value="C1">C1</option>
+        </select>
+        <button id="writingNewBtn" class="btn-primary">جمله جدید</button>
+        <button id="writingCheckBtn" class="btn-accent">بررسی</button>
+      </div>
+      <div id="writingArea" class="table-container" style="padding:1.25rem;">
+        <p id="writingPrompt" style="margin-bottom:0.75rem;font-weight:600;"></p>
+        <p id="writingHint" class="dictation-hint"></p>
+        <textarea id="writingInput" class="dictation-input" rows="3" dir="ltr" lang="de" placeholder="جمله آلمانی خود را اینجا بنویس..." style="min-height:5rem;resize:vertical;"></textarea>
+        <div id="writingFeedback" style="margin-top:1rem;"></div>
       </div>
     </section>
 
@@ -886,5 +912,12 @@
   <svg style="display:none"><defs><path id="checkmark" d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></defs></svg>
 
   <script src="script.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    });
+  }
+  </script>
 </body>
 </html>

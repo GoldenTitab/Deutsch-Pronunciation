@@ -1,5 +1,9 @@
 "use strict";
 
+// Optional Cloudflare Worker URL for higher-quality Google TTS.
+// Leave empty to use only the browser's built-in speechSynthesis.
+const TTS_WORKER_URL = ''; // e.g. 'https://tts-proxy.your-subdomain.workers.dev/'
+
 let APP_DATA = null;
 let learnedWords = new Set();
 
@@ -107,13 +111,34 @@ function celebrate() {
 
 async function speakGerman(text, showBanner = false) {
   if (!text) return;
+  const clean = String(text).trim();
+  if (!clean) return;
+
+  // Prefer server-side TTS (Google Wavenet via Cloudflare Worker) when configured
+  if (TTS_WORKER_URL) {
+    try {
+      const url = TTS_WORKER_URL.replace(/\/?$/, '/') + '?word=' + encodeURIComponent(clean.slice(0, 60));
+      const res = await fetch(url);
+      if (res.ok) {
+        const blob = await res.blob();
+        const audioUrl = URL.createObjectURL(blob);
+        const audio = new Audio(audioUrl);
+        return new Promise((resolve) => {
+          audio.onended = () => { URL.revokeObjectURL(audioUrl); resolve(); };
+          audio.onerror = () => { URL.revokeObjectURL(audioUrl); resolve(); };
+          audio.play().catch(() => resolve());
+        });
+      }
+    } catch (_) { /* fall through to browser TTS */ }
+  }
+
   if (window.speechSynthesis) window.speechSynthesis.cancel();
 
   return new Promise((resolve) => {
     if (!window.speechSynthesis) { resolve(); return; }
-    const utterance = new SpeechSynthesisUtterance(String(text));
+    const utterance = new SpeechSynthesisUtterance(clean);
     const voices = window.speechSynthesis.getVoices();
-    const deVoice = voices.find(v => v.lang.startsWith('de'));
+    const deVoice = voices.find(v => v.lang.startsWith('de')) || voices.find(v => /german|deutsch/i.test(v.name));
     if (deVoice) utterance.voice = deVoice;
     utterance.lang = 'de-DE';
     utterance.rate = 0.9;
@@ -275,6 +300,7 @@ const SECTION_LABELS = {
   reading: 'متن‌خوانی',
   dialogues: 'دیالوگ',
   dictation: 'دیکته',
+  writing: 'تمرین نوشتاری',
   flashcards: 'فلش‌کارت',
   progress: 'پیشرفت من',
   phonetics: 'مسترکلاس فونتیک'
@@ -290,6 +316,7 @@ function runSectionInit(section) {
   if (section === 'reading') renderReading();
   if (section === 'dialogues') renderDialogues();
   if (section === 'dictation') { /* area filled on start */ }
+  if (section === 'writing') initWritingPractice();
   if (section === 'levels') renderLevels();
   if (section === 'flashcards') initFlashcards();
   if (section === 'progress') updateProgress();
@@ -564,8 +591,25 @@ function renderVocab() {
 
   vocabBody.innerHTML = page.map(w => {
     const isLearned = learnedWords.has(wKey(w));
-    const ex = w.example || '';
+    // Suppress low-quality auto-generated examples that are grammatically broken or generic
+    let ex = w.example || '';
+    const badPatterns = [
+      /ist ein wichtiges Wort/i,
+      /Das finde ich /i,
+      /Der\/Die\/Das /i,
+      /Hier ist (der|die|das) /i,
+      /Ich lerne das Wort/i,
+      /Wir treffen uns (gestern|heute|jetzt|morgen)/i,
+      /Ich esse gerne Wasser/i,
+      /Mein Beruf ist der /i,
+      /Das Buch liegt .+ dem Tisch/i
+    ];
+    if (ex && badPatterns.some(p => p.test(ex))) {
+      ex = '';
+    }
     const exAudio = ex || w.word;
+    const showExFa = ex && w.exampleFa && !/یک واژه مهم است|مهم است\.$/.test(w.exampleFa || '');
+    const showExEn = ex && w.exampleEn && !/is an important word/i.test(w.exampleEn || '');
     return `
     <tr data-word="${escHtml(w.word)}">
       <td data-label="کلمه"><strong lang="de">${escHtml(w.word)}</strong></td>
@@ -576,8 +620,8 @@ function renderVocab() {
       <td data-label="مثال" class="vocab-example-cell">
         ${ex ? `<span dir="ltr" lang="de">${escHtml(ex)}</span>
           <button class="audio-btn" data-word="${escHtml(exAudio)}" aria-label="پخش مثال"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
-          ${w.exampleFa ? `<div class="trans">🇮🇷 ${escHtml(w.exampleFa)}</div>` : ''}
-          ${w.exampleEn ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(w.exampleEn)}</div>` : ''}` : '—'}
+          ${showExFa ? `<div class="trans">🇮🇷 ${escHtml(w.exampleFa)}</div>` : ''}
+          ${showExEn ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(w.exampleEn)}</div>` : ''}` : '—'}
       </td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
@@ -1400,7 +1444,10 @@ function renderStudyPath() {
   `;
   content.querySelectorAll('.path-goto').forEach(btn => {
     btn.addEventListener('click', () => {
-      const sec = btn.dataset.section;
+      let sec = btn.dataset.section || 'vocabulary';
+      // Normalize legacy / data typos
+      if (sec === 'readings') sec = 'reading';
+      if (sec === 'verbs' || sec === 'conjugation') sec = 'conjugation';
       const lvl = btn.dataset.level;
       if (sec === 'vocabulary' && vocabLevelFilter) vocabLevelFilter.value = lvl || 'all';
       if (sec === 'grammar' && grammarLevelFilter) grammarLevelFilter.value = lvl || 'all';
@@ -1415,7 +1462,7 @@ function renderStudyPath() {
         const df = document.getElementById('dictationLevelFilter');
         if (df) df.value = lvl || 'all';
       }
-      goToSection(sec || 'vocabulary');
+      goToSection(sec);
     });
   });
   content.querySelectorAll('.path-done-btn').forEach(btn => {
@@ -2222,3 +2269,144 @@ const backToTopBtn = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   if (backToTopBtn) backToTopBtn.classList.toggle('hidden', window.scrollY <= window.innerHeight * 0.8);
 });
+/* ── Guided Writing Practice ───────────────────────────────────────── */
+const WRITING_PROMPTS = {
+  A1: [
+    { prompt: 'بگو اسمت چیست و اهل کجایی (با heißen و kommen).', hint: 'Ich heiße … und komme aus …', expect: [/ich\s+heiße/i, /komme\s+aus/i], sample: 'Ich heiße Sara und komme aus Iran.' },
+    { prompt: 'بگو چند سالته (با sein + Jahre alt).', hint: 'Ich bin … Jahre alt.', expect: [/ich\s+bin\s+\d+/i, /jahre\s+alt/i], sample: 'Ich bin 25 Jahre alt.' },
+    { prompt: 'بگو امروز چه کاری می‌کنی (فعل حال + قید زمان).', hint: 'Heute + Verb in Position 2', expect: [/heute/i], sample: 'Heute lerne ich Deutsch.' }
+  ],
+  A2: [
+    { prompt: 'با möchten یک سفارش مودبانه بده.', hint: 'Ich möchte …', expect: [/möchte/i], sample: 'Ich möchte einen Kaffee mit Milch, bitte.' },
+    { prompt: 'جمله‌ای در Perfekt با gehen بساز.', hint: 'sein + Partizip (gegangen)', expect: [/bin|ist|sind/i, /gegangen/i], sample: 'Gestern bin ich ins Kino gegangen.' },
+    { prompt: 'با Modalverb (können/müssen) یک جمله بساز.', hint: 'Modal + Infinitiv am Ende', expect: [/kann|muss|möchte|darf|soll/i], sample: 'Ich muss heute noch lernen.' }
+  ],
+  B1: [
+    { prompt: 'جمله‌ای با dass بساز (فعل بند وابسته در انتها).', hint: '…, dass + Verb am Ende', expect: [/dass/i], sample: 'Ich weiß, dass er morgen kommt.' },
+    { prompt: 'جمله‌ای با wenn (شرط واقعی) بنویس.', hint: 'Wenn …, …', expect: [/wenn/i], sample: 'Wenn es regnet, bleibe ich zu Hause.' },
+    { prompt: 'مفعول غیرمستقیم (Dativ) را درست به کار ببر.', hint: 'helfen / danken / gehören + Dativ', expect: [/ihm|ihr|ihnen|mir|dir|uns|euch|dem|der/i], sample: 'Ich helfe meinem Freund bei den Hausaufgaben.' }
+  ],
+  B2: [
+    { prompt: 'جمله‌ای در مجهول (werden + Partizip) بنویس.', hint: 'wird/werden + Partizip II', expect: [/wird|werden|wurde|wurden/i], sample: 'Das Haus wird gerade renoviert.' },
+    { prompt: 'با Konjunktiv II یک آرزو یا فرض بیان کن.', hint: 'wäre / hätte / würde', expect: [/wäre|hätte|würde|könnte/i], sample: 'Wenn ich Zeit hätte, würde ich reisen.' },
+    { prompt: 'نظر خودت را با Meiner Meinung nach بگو.', hint: 'Meiner Meinung nach …', expect: [/meiner\s+meinung\s+nach|ich\s+finde|ich\s+glaube/i], sample: 'Meiner Meinung nach sollten wir mehr öffentliche Verkehrsmittel nutzen.' }
+  ],
+  C1: [
+    { prompt: 'استدلال کوتاه با obwohl یا dennoch بنویس.', hint: 'Nebensatz mit obwohl / trotzdem', expect: [/obwohl|dennoch|trotzdem|jedoch/i], sample: 'Obwohl die Kosten hoch sind, ist die Investition langfristig sinnvoll.' },
+    { prompt: 'از Genitiv یا wegen + Genitiv استفاده کن.', hint: 'wegen des / der …', expect: [/wegen|trotz|während|des|der\s+\w+en\b/i], sample: 'Wegen des starken Regens wurde die Veranstaltung abgesagt.' },
+    { prompt: 'جمله‌ای با Partizipialattribut (صفت فعلی) بنویس.', hint: 'das …-te / -ende Nomen', expect: [/\w+(te|ende|enen)\s+\w+/i], sample: 'Die gestern veröffentlichte Studie zeigt klare Ergebnisse.' }
+  ]
+};
+
+let currentWriting = null;
+
+function initWritingPractice() {
+  const levelSel = document.getElementById('writingLevelFilter');
+  const newBtn = document.getElementById('writingNewBtn');
+  const checkBtn = document.getElementById('writingCheckBtn');
+  if (!levelSel || !newBtn) return;
+  if (!newBtn._bound) {
+    newBtn.addEventListener('click', pickWritingPrompt);
+    checkBtn?.addEventListener('click', checkWriting);
+    levelSel.addEventListener('change', pickWritingPrompt);
+    newBtn._bound = true;
+  }
+  pickWritingPrompt();
+}
+
+function pickWritingPrompt() {
+  const lvl = document.getElementById('writingLevelFilter')?.value || 'A1';
+  const list = WRITING_PROMPTS[lvl] || WRITING_PROMPTS.A1;
+  currentWriting = list[Math.floor(Math.random() * list.length)];
+  const promptEl = document.getElementById('writingPrompt');
+  const hintEl = document.getElementById('writingHint');
+  const input = document.getElementById('writingInput');
+  const fb = document.getElementById('writingFeedback');
+  if (promptEl) promptEl.textContent = currentWriting.prompt;
+  if (hintEl) hintEl.textContent = 'راهنما: ' + currentWriting.hint;
+  if (input) input.value = '';
+  if (fb) fb.innerHTML = '';
+}
+
+function checkWriting() {
+  const input = document.getElementById('writingInput');
+  const fb = document.getElementById('writingFeedback');
+  if (!input || !fb || !currentWriting) return;
+  const text = input.value.trim();
+  if (!text) {
+    fb.innerHTML = '<span style="color:#ef4444;">لطفاً جمله‌ای بنویس.</span>';
+    return;
+  }
+  const hits = currentWriting.expect.filter(re => re.test(text)).length;
+  const total = currentWriting.expect.length;
+  const v2Ok = !/^\s*\w+\s+\w+\s+(ich|du|er|sie|es|wir|ihr)\b/i.test(text) || /^(heute|gestern|morgen|jetzt|dort|hier|dann|deshalb)\b/i.test(text);
+  let html = '';
+  if (hits >= Math.ceil(total * 0.7)) {
+    html += `<p style="color:var(--accent-color);font-weight:700;">✓ خوب بود! (${hits}/${total} معیار کلیدی)</p>`;
+    try { addXP(8); } catch (_) {}
+  } else {
+    html += `<p style="color:#f59e0b;font-weight:700;">نزدیک است — ${hits}/${total} معیار. دوباره تلاش کن.</p>`;
+  }
+  if (!v2Ok) {
+    html += `<p style="color:var(--text-muted);font-size:0.9rem;">نکته V2: در جملهٔ خبری ساده، فعل صرف‌شده معمولاً جایگاه دوم است.</p>`;
+  }
+  html += `<p style="margin-top:0.5rem;"><strong>نمونه:</strong> <span dir="ltr" lang="de">${escHtml(currentWriting.sample)}</span>
+    <button class="audio-btn" data-word="${escHtml(currentWriting.sample)}" aria-label="پخش نمونه"><i class="fas fa-volume-up"></i></button></p>`;
+  fb.innerHTML = html;
+  fb.querySelectorAll('.audio-btn').forEach(btn => {
+    btn.addEventListener('click', () => playPhoneticsAudio(btn.dataset.word, btn));
+  });
+}
+
+/* ── Home: due flashcards + today path summary ─────────────────────── */
+function renderHomeDueAndPath() {
+  const area = document.getElementById('homePathArea');
+  if (!area || !APP_DATA) return;
+  let dueCount = 0;
+  try {
+    const sr = JSON.parse(localStorage.getItem('germanMainSR') || '{}');
+    const now = Date.now();
+    dueCount = Object.values(sr).filter(c => c && c.due && c.due <= now).length;
+  } catch (_) {}
+  const dayIdx = typeof getStudyDayIndex === 'function' ? getStudyDayIndex() : 0;
+  const day = (APP_DATA.studyPlan || [])[dayIdx] || (APP_DATA.studyPlan || [])[0];
+  area.innerHTML = `
+    <div class="table-container" style="padding:1.25rem;margin-top:1.5rem;">
+      <h3 style="margin-bottom:0.75rem;"><i class="fas fa-bolt"></i> امروز</h3>
+      <div class="home-gamification" style="justify-content:flex-start;margin-bottom:1rem;">
+        <span class="xp-pill"><i class="fas fa-layer-group"></i> ${dueCount} فلش‌کارت due</span>
+        <span class="xp-pill"><i class="fas fa-route"></i> روز ${day ? day.day : '—'} — ${day ? escHtml(day.level) : ''}</span>
+      </div>
+      ${day ? `<p style="margin-bottom:0.5rem;font-weight:600;">${escHtml(day.title)}</p>
+        <ul style="margin:0 0 1rem 1.2rem;color:var(--text-muted);">
+          ${(day.tasks || []).slice(0, 4).map(t => `<li>${escHtml(t.label || t.type)}</li>`).join('')}
+        </ul>` : ''}
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+        <button class="btn-primary" id="homeGoFlashDue">مرور due</button>
+        <button class="btn-secondary" id="homeGoPath">مسیر امروز</button>
+        <button class="btn-accent" id="homeGoWriting">تمرین نوشتاری</button>
+      </div>
+    </div>`;
+  document.getElementById('homeGoFlashDue')?.addEventListener('click', () => {
+    const t = document.getElementById('flashcardDueToggle');
+    if (t) t.checked = true;
+    goToSection('flashcards');
+  });
+  document.getElementById('homeGoPath')?.addEventListener('click', () => goToSection('path'));
+  document.getElementById('homeGoWriting')?.addEventListener('click', () => goToSection('writing'));
+}
+
+// Hook into existing renderHome
+const _origRenderHome = typeof renderHome === 'function' ? renderHome : null;
+if (_origRenderHome) {
+  // re-wrap after load
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const orig = window.renderHome || renderHome;
+});
+// Patch renderHomeGamification path area after data load via existing flow
+const _rh = renderHome;
+renderHome = function() {
+  _rh();
+  try { renderHomeDueAndPath(); } catch (_) {}
+};

@@ -1,0 +1,43 @@
+const CACHE = 'german-with-me-v1';
+const ASSETS = [
+  './',
+  './index.html',
+  './style.css',
+  './script.js',
+  './manifest.json',
+  './data/core.json',
+  './data/vocab-A0.json',
+  './data/vocab-A1.json',
+  './data/vocab-A2.json',
+  './data/vocab-B1.json',
+  './data/vocab-B2.json',
+  './data/vocab-C1.json'
+];
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+self.addEventListener('fetch', (e) => {
+  const url = new URL(e.request.url);
+  if (url.origin !== location.origin) return;
+  e.respondWith(
+    caches.match(e.request).then(cached => {
+      const fetched = fetch(e.request).then(res => {
+        if (res && res.status === 200 && e.request.method === 'GET') {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return res;
+      }).catch(() => cached);
+      return cached || fetched;
+    })
+  );
+});

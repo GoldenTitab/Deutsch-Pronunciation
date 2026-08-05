@@ -2023,3 +2023,90 @@ body.dark .en-diff-box strong {
     justify-content: flex-start;
   }
 }
+/* ── Improved mobile vocab table (card layout) ─────────────────────── */
+@media (max-width: 768px) {
+  .vocab-table-container table,
+  .vocab-table-container thead,
+  .vocab-table-container tbody,
+  .vocab-table-container th,
+  .vocab-table-container td,
+  .vocab-table-container tr {
+    display: block;
+  }
+  .vocab-table-container thead {
+    display: none;
+  }
+  .vocab-table-container tr {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    box-shadow: var(--shadow);
+  }
+  .vocab-table-container td {
+    border: none;
+    padding: 0.35rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+  }
+  .vocab-table-container td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    flex: 0 0 5.5rem;
+    text-align: right;
+  }
+  .vocab-table-container td.vocab-actions {
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.35rem;
+  }
+  .vocab-table-container td.vocab-actions::before {
+    display: none;
+  }
+  .vocab-example-cell .trans {
+    font-size: 0.85rem;
+  }
+}
+
+/* Better focus and touch targets */
+button, .audio-btn, .nav-list a, .btn-small {
+  min-height: 44px;
+  min-width: 44px;
+}
+.audio-btn {
+  min-height: 36px;
+  min-width: 36px;
+}
+.nav-list a {
+  min-height: auto;
+  padding: 0.5rem 0.75rem;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .flashcard {
+    transition: none;
+  }
+}
+
+/* High contrast support hint */
+@media (prefers-contrast: more) {
+  :root {
+    --border-color: #000;
+  }
+  body.dark {
+    --border-color: #fff;
+  }
+}
