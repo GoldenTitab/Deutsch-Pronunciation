@@ -891,72 +891,79 @@ footer {
     display: block;
   }
 
-  .vocab-table-container {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-  }
+}
 
-  #vocabTable thead {
-    display: none;
-  }
+/* Vocabulary table always renders as a one-field-per-line card list
+   (label on the right, value on the left) — on desktop as well as
+   mobile — instead of a cramped dense multi-column table. */
+.vocab-table-container {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
 
-  #vocabTable,
-  #vocabTable tbody {
-    display: block;
-    width: 100%;
-  }
+#vocabTable thead {
+  display: none;
+}
 
-  #vocabTable tr {
-    display: block;
-    width: 100%;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    padding: 0.85rem 1rem;
-    margin-bottom: 0.75rem;
-  }
+#vocabTable,
+#vocabTable tbody {
+  display: block;
+  width: 100%;
+}
 
-  #vocabTable td {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.75rem;
-    border: none;
-    padding: 0.35rem 0;
-    width: auto !important;
-  }
+#vocabTable tr {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.75rem;
+}
 
-  #vocabTable td:not(:last-child) {
-    border-bottom: 1px dashed var(--border-color);
-  }
+#vocabTable td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  border: none;
+  padding: 0.35rem 0;
+  width: auto !important;
+}
 
-  #vocabTable td::before {
-    content: attr(data-label);
-    font-weight: 600;
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    flex-shrink: 0;
-  }
+#vocabTable td:not(:last-child) {
+  border-bottom: 1px dashed var(--border-color);
+}
 
-  #vocabTable td.vocab-actions {
-    justify-content: flex-end;
-    border-bottom: none;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
+#vocabTable td::before {
+  content: attr(data-label);
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
 
-  #vocabTable td.vocab-example-cell {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.35rem;
-  }
+#vocabTable td.vocab-actions {
+  justify-content: flex-end;
+  border-bottom: none;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
-  #vocabTable td.vocab-example-cell .trans {
-    font-size: 0.85rem;
-  }
+#vocabTable td.vocab-example-cell {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+#vocabTable td.vocab-example-cell .trans {
+  font-size: 0.85rem;
 }
 
 #phonetics {
@@ -1762,54 +1769,6 @@ footer {
   border-color: #ef4444 !important;
   color: #ef4444 !important;
   background: rgba(239, 68, 68, 0.1) !important;
-}
-
-#vocabTable {
-  table-layout: fixed;
-}
-
-#vocabTable th:nth-child(1),
-#vocabTable td:nth-child(1) {
-  width: 14%;
-}
-
-#vocabTable th:nth-child(2),
-#vocabTable td:nth-child(2) {
-  width: 9%;
-}
-
-#vocabTable th:nth-child(3),
-#vocabTable td:nth-child(3) {
-  width: 14%;
-}
-
-#vocabTable th:nth-child(4),
-#vocabTable td:nth-child(4) {
-  width: 13%;
-}
-
-#vocabTable th:nth-child(5),
-#vocabTable td:nth-child(5) {
-  width: 11%;
-}
-
-#vocabTable th:nth-child(6),
-#vocabTable td:nth-child(6) {
-  width: 21%;
-}
-
-#vocabTable th:nth-child(7),
-#vocabTable td:nth-child(7) {
-  width: 7%;
-}
-
-#vocabTable th:nth-child(8),
-#vocabTable td:nth-child(8) {
-  width: 11%;
-}
-
-.vocab-actions {
-  display: table-cell;
 }
 
 .vocab-actions > .audio-btn {
