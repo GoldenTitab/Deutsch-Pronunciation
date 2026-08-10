@@ -1,7 +1,4 @@
 const MAX_WORD_LENGTH = 60;
-// Allow German letters (incl. umlauts/ß), Latin letters, spaces, and basic
-// punctuation used in example sentences — blocks the proxy from being used
-// as a generic free-text TTS relay that burns the paid Google quota.
 const ALLOWED_CHARS = /^[a-zA-ZäöüÄÖÜß0-9 .,!?'’„"()-]+$/;
 
 export default {
@@ -19,9 +16,6 @@ export default {
       return new Response('کاراکترهای غیرمجاز', { status: 400 });
     }
 
-    // Edge-cache identical requests so repeated words don't re-hit the
-    // paid Google TTS API every time (Cache API is built into Workers,
-    // no extra binding required).
     const cacheKey = new Request(url.toString(), request);
     const cache = caches.default;
     const cached = await cache.match(cacheKey);

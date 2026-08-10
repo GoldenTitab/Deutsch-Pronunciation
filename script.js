@@ -1,8 +1,6 @@
 "use strict";
 
-// Optional Cloudflare Worker URL for higher-quality Google TTS.
-// Leave empty to use only the browser's built-in speechSynthesis.
-const TTS_WORKER_URL = ''; // e.g. 'https://tts-proxy.your-subdomain.workers.dev/'
+const TTS_WORKER_URL = '';
 
 let APP_DATA = null;
 let learnedWords = new Set();
@@ -114,7 +112,6 @@ async function speakGerman(text, showBanner = false) {
   const clean = String(text).trim();
   if (!clean) return;
 
-  // Prefer server-side TTS (Google Wavenet via Cloudflare Worker) when configured
   if (TTS_WORKER_URL) {
     try {
       const url = TTS_WORKER_URL.replace(/\/?$/, '/') + '?word=' + encodeURIComponent(clean.slice(0, 60));
@@ -129,7 +126,7 @@ async function speakGerman(text, showBanner = false) {
           audio.play().catch(() => resolve());
         });
       }
-    } catch (_) { /* fall through to browser TTS */ }
+    } catch (_) {}
   }
 
   if (window.speechSynthesis) window.speechSynthesis.cancel();
@@ -255,9 +252,6 @@ if (megaParent) {
   });
 }
 
-// The mega-menu is position:fixed so it's never clipped by the
-// horizontally-scrolling desktop nav list. Position it relative to the
-// toggle link's actual on-screen location every time it might open.
 function isDesktopNav() {
   return window.matchMedia('(min-width: 900px)').matches;
 }
@@ -735,7 +729,6 @@ function renderGrammar() {
     return;
   }
 
-  // Collapse duplicate titles into one card with multiple examples
   const groups = [];
   const byTitle = new Map();
   filtered.forEach(g => {
@@ -1012,7 +1005,6 @@ function renderCases() {
     </div>`;
   };
 
-  // personal_pronouns is keyed by case → person; build a flat table
   let pronounTable = '';
   const pp = c.personal_pronouns || c.pronouns;
   if (pp && pp.Nominativ) {
@@ -1367,7 +1359,6 @@ function renderQuizQuestion() {
 
 quizStartBtn.addEventListener('click', buildQuiz);
 
-/* ── Gamification (XP + streak) ─────────────────────────────────────── */
 const XP_KEY = 'germanXP';
 const STREAK_KEY = 'germanStreak';
 const STUDY_DAY_KEY = 'germanStudyDay';
@@ -1422,7 +1413,6 @@ function renderHomeGamification() {
   }
 }
 
-/* ── Study path (45-day) ────────────────────────────────────────────── */
 let currentPathDay = 0;
 
 function getStudyDayIndex() {
@@ -1524,7 +1514,6 @@ document.getElementById('pathNextDayBtn')?.addEventListener('click', () => {
   renderStudyPath();
 });
 
-/* ── Dialogues ──────────────────────────────────────────────────────── */
 function renderDialogues() {
   const wrap = document.getElementById('dialogueContent');
   const filter = document.getElementById('dialogueLevelFilter');
@@ -1568,7 +1557,6 @@ async function playDialogueAll() {
 }
 document.getElementById('dialoguePlayAllBtn')?.addEventListener('click', () => { playDialogueAll(); });
 
-/* ── Dictation ──────────────────────────────────────────────────────── */
 let dictationPool = [];
 let dictationIdx = 0;
 let dictationScore = 0;
@@ -1579,7 +1567,7 @@ function normalizeDictation(s) {
     .replace(/[?!.,;:"""''«»]/g, '')
     .replace(/\s+/g, ' ')
     .toLowerCase()
-    .replace(/ß/g, 'ss'); // accept ss for ß optionally — but we also allow exact ß via dual check
+    .replace(/ß/g, 'ss');
 }
 
 function dictationMatch(user, answer) {
@@ -1680,7 +1668,6 @@ document.getElementById('umlautBtns')?.addEventListener('click', (e) => {
   input.setSelectionRange(pos, pos);
 });
 
-/* ── Wechselpräpositionen exercise ──────────────────────────────────── */
 function startWechselExercise() {
   const area = document.getElementById('wechselExerciseArea');
   if (!area || !APP_DATA || !APP_DATA.wechselExercises) return;
@@ -1691,7 +1678,6 @@ function startWechselExercise() {
     options: shuffleArr(['Akkusativ', 'Dativ']),
     explain: it.full
   }));
-  // Use custom runner that supports HTML prompt + explanation
   let idx = 0, score = 0;
   function renderQ() {
     if (idx >= questions.length) {
@@ -1729,7 +1715,6 @@ function startWechselExercise() {
 }
 document.getElementById('wechselExerciseBtn')?.addEventListener('click', startWechselExercise);
 
-/* ── Plural practice ────────────────────────────────────────────────── */
 function startPluralPractice() {
   const area = document.getElementById('pluralExerciseArea');
   if (!area || !APP_DATA || !APP_DATA.vocabulary) return;
@@ -1758,7 +1743,6 @@ function startPluralPractice() {
 }
 document.getElementById('pluralPracticeBtn')?.addEventListener('click', startPluralPractice);
 
-/* ── Placement test ─────────────────────────────────────────────────── */
 let placementIdx = 0;
 let placementScores = { A0: 0, A1: 0, A2: 0, B1: 0, B2: 0, C1: 0 };
 
@@ -1777,12 +1761,10 @@ function renderPlacementQ() {
     const order = ['A0', 'A1', 'A2', 'B1', 'B2', 'C1'];
     let recommended = 'A0';
     let correct = 0;
-    // Recommend highest level where user got that level's question right, with cascade
     for (const lvl of order) {
       if (placementScores[lvl] > 0) recommended = lvl;
       correct += placementScores[lvl];
     }
-    // If weak overall, nudge down
     if (correct <= 2) recommended = 'A0';
     else if (correct <= 4) recommended = recommended === 'C1' ? 'B1' : recommended;
     area.innerHTML = `
@@ -1829,7 +1811,6 @@ function renderPlacementQ() {
 }
 document.getElementById('placementStartBtn')?.addEventListener('click', startPlacementTest);
 
-/* ── Progress export / import ───────────────────────────────────────── */
 function collectProgressBackup() {
   const keys = [
     'germanLearned', 'germanMainFlashSR', 'germanBadgesUnlocked',
@@ -2311,7 +2292,6 @@ const backToTopBtn = document.getElementById('back-to-top');
 window.addEventListener('scroll', () => {
   if (backToTopBtn) backToTopBtn.classList.toggle('hidden', window.scrollY <= window.innerHeight * 0.8);
 });
-/* ── Guided Writing Practice ───────────────────────────────────────── */
 const WRITING_PROMPTS = {
   A1: [
     { prompt: 'بگو اسمت چیست و اهل کجایی (با heißen و kommen).', hint: 'Ich heiße … und komme aus …', expect: [/ich\s+heiße/i, /komme\s+aus/i], sample: 'Ich heiße Sara und komme aus Iran.' },
@@ -2400,7 +2380,6 @@ function checkWriting() {
   });
 }
 
-/* ── Home: due flashcards + today path summary ─────────────────────── */
 function renderHomeDueAndPath() {
   const area = document.getElementById('homePathArea');
   if (!area || !APP_DATA) return;
