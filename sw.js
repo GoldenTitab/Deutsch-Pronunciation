@@ -1,4 +1,4 @@
-const CACHE = 'german-with-me-v1';
+const CACHE = 'german-with-me-v3';
 const ASSETS = [
   './',
   './index.html',

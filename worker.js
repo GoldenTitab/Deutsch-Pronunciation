@@ -3,6 +3,18 @@ const ALLOWED_CHARS = /^[a-zA-ZäöüÄÖÜß0-9 .,!?'’„"()-]+$/;
 
 export default {
   async fetch(request, env, ctx) {
+    if (request.method === 'OPTIONS') {
+      return new Response(null, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, OPTIONS',
+          'Access-Control-Max-Age': '86400'
+        }
+      });
+    }
+    if (request.method !== 'GET') {
+      return new Response('Method Not Allowed', { status: 405, headers: { 'Access-Control-Allow-Origin': '*' } });
+    }
     const url = new URL(request.url);
     const word = url.searchParams.get('word');
 
@@ -21,7 +33,13 @@ export default {
     const cached = await cache.match(cacheKey);
     if (cached) return cached;
 
-    const ttsRes = await fetch(
+    if (!env.TTS_API_KEY) {
+      return new Response('TTS_API_KEY تنظیم نشده است', { status: 500, headers: { 'Access-Control-Allow-Origin': '*' } });
+    }
+
+    let ttsRes;
+    try {
+      ttsRes = await fetch(
       `https://texttospeech.googleapis.com/v1/text:synthesize?key=${env.TTS_API_KEY}`,
       {
         method: 'POST',
@@ -34,8 +52,12 @@ export default {
       }
     );
 
+    } catch (err) {
+      return new Response('خطا در دسترسی به سرویس TTS', { status: 502, headers: { 'Access-Control-Allow-Origin': '*' } });
+    }
+
     if (!ttsRes.ok) {
-      return new Response('خطا در سرویس TTS', { status: 502 });
+      return new Response('خطا در سرویس TTS', { status: 502, headers: { 'Access-Control-Allow-Origin': '*' } });
     }
 
     const data = await ttsRes.json();

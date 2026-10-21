@@ -4638,6 +4638,252 @@
           "en": "I prioritize tasks, communicate early, and get support when needed."
         }
       ]
+    },
+    {
+      "level": "A1",
+      "title": "خرید بلیت قطار",
+      "lines": [
+        {
+          "speaker": "Sara",
+          "de": "Entschuldigung, wann fährt der Zug nach Berlin?",
+          "fa": "ببخشید، قطار برلین کی حرکت می‌کند؟",
+          "en": "Excuse me, when does the train to Berlin leave?"
+        },
+        {
+          "speaker": "Beamter",
+          "de": "Um 10.30 Uhr von Gleis fünf.",
+          "fa": "ساعت ده‌ونیم از سکوی پنج.",
+          "en": "At 10:30 from platform five."
+        },
+        {
+          "speaker": "Sara",
+          "de": "Und wie viel kostet ein Ticket?",
+          "fa": "و قیمت یک بلیت چقدر است؟",
+          "en": "And how much is a ticket?"
+        },
+        {
+          "speaker": "Beamter",
+          "de": "Neunundzwanzig Euro, bitte.",
+          "fa": "بیست‌ونه یورو، لطفاً.",
+          "en": "Twenty-nine euros, please."
+        },
+        {
+          "speaker": "Sara",
+          "de": "Hier, bitte. Danke schön!",
+          "fa": "بفرمایید. خیلی ممنون!",
+          "en": "Here you are. Thank you!"
+        },
+        {
+          "speaker": "Beamter",
+          "de": "Gern geschehen. Gute Reise!",
+          "fa": "خواهش می‌کنم. سفر خوبی داشته باشید!",
+          "en": "You're welcome. Have a good trip!"
+        }
+      ]
+    },
+    {
+      "level": "A2",
+      "title": "پیش پزشک",
+      "lines": [
+        {
+          "speaker": "Arzt",
+          "de": "Guten Tag, was fehlt Ihnen?",
+          "fa": "روز بخیر، مشکلتان چیست؟",
+          "en": "Good day, what seems to be the problem?"
+        },
+        {
+          "speaker": "Patient",
+          "de": "Ich habe seit zwei Tagen Fieber und Kopfschmerzen.",
+          "fa": "از دو روز پیش تب و سردرد دارم.",
+          "en": "I've had a fever and a headache for two days."
+        },
+        {
+          "speaker": "Arzt",
+          "de": "Trinken Sie viel Wasser und ruhen Sie sich aus.",
+          "fa": "آب زیاد بنوشید و استراحت کنید.",
+          "en": "Drink plenty of water and get some rest."
+        },
+        {
+          "speaker": "Patient",
+          "de": "Brauche ich ein Medikament?",
+          "fa": "به دارو نیاز دارم؟",
+          "en": "Do I need any medicine?"
+        },
+        {
+          "speaker": "Arzt",
+          "de": "Ja, nehmen Sie diese Tabletten zweimal am Tag.",
+          "fa": "بله، این قرص‌ها را روزی دو بار بخورید.",
+          "en": "Yes, take these tablets twice a day."
+        },
+        {
+          "speaker": "Patient",
+          "de": "Vielen Dank, auf Wiedersehen.",
+          "fa": "خیلی ممنون، خداحافظ.",
+          "en": "Thank you very much, goodbye."
+        }
+      ]
+    },
+    {
+      "level": "B1",
+      "title": "مصاحبه کاری",
+      "lines": [
+        {
+          "speaker": "Chefin",
+          "de": "Guten Tag, setzen Sie sich bitte. Erzählen Sie mir von sich.",
+          "fa": "روز بخیر، بفرمایید بنشینید. از خودتان بگویید.",
+          "en": "Good day, please take a seat. Tell me about yourself."
+        },
+        {
+          "speaker": "Bewerber",
+          "de": "Ich habe drei Jahre als Lehrer gearbeitet und suche eine neue Herausforderung.",
+          "fa": "سه سال به‌عنوان معلم کار کرده‌ام و دنبال چالش تازه‌ای هستم.",
+          "en": "I worked as a teacher for three years and am looking for a new challenge."
+        },
+        {
+          "speaker": "Chefin",
+          "de": "Warum möchten Sie bei uns arbeiten?",
+          "fa": "چرا می‌خواهید پیش ما کار کنید؟",
+          "en": "Why would you like to work with us?"
+        },
+        {
+          "speaker": "Bewerber",
+          "de": "Weil Ihre Firma einen sehr guten Ruf hat.",
+          "fa": "چون شرکت شما شهرت بسیار خوبی دارد.",
+          "en": "Because your company has a very good reputation."
+        },
+        {
+          "speaker": "Chefin",
+          "de": "Gut. Wir melden uns nächste Woche bei Ihnen.",
+          "fa": "خوب است. هفته‌ی آینده با شما تماس می‌گیریم.",
+          "en": "Good. We will get back to you next week."
+        },
+        {
+          "speaker": "Bewerber",
+          "de": "Vielen Dank für das Gespräch.",
+          "fa": "از این گفت‌وگو خیلی ممنونم.",
+          "en": "Thank you very much for the interview."
+        }
+      ]
+    },
+    {
+      "level": "B2",
+      "title": "بحث درباره محیط زیست",
+      "lines": [
+        {
+          "speaker": "Moderator",
+          "de": "Heute diskutieren wir über den Klimaschutz. Was ist Ihre Meinung?",
+          "fa": "امروز درباره‌ی حفاظت از اقلیم بحث می‌کنیم. نظر شما چیست؟",
+          "en": "Today we are discussing climate protection. What is your opinion?"
+        },
+        {
+          "speaker": "Gast A",
+          "de": "Meiner Meinung nach müssen wir sofort handeln, bevor es zu spät ist.",
+          "fa": "به نظر من باید فوراً اقدام کنیم، پیش از آنکه دیر شود.",
+          "en": "In my opinion, we must act immediately before it is too late."
+        },
+        {
+          "speaker": "Gast B",
+          "de": "Ich stimme zu, aber die Wirtschaft darf darunter nicht leiden.",
+          "fa": "موافقم، اما اقتصاد نباید از آن آسیب ببیند.",
+          "en": "I agree, but the economy must not suffer as a result."
+        },
+        {
+          "speaker": "Gast A",
+          "de": "Erneuerbare Energien schaffen sogar neue Arbeitsplätze.",
+          "fa": "انرژی‌های تجدیدپذیر حتی فرصت‌های شغلی تازه می‌سازند.",
+          "en": "Renewable energies even create new jobs."
+        },
+        {
+          "speaker": "Moderator",
+          "de": "Ein guter Punkt. Gibt es weitere Vorschläge?",
+          "fa": "نکته‌ی خوبی است. پیشنهاد دیگری هم هست؟",
+          "en": "A good point. Are there any further suggestions?"
+        },
+        {
+          "speaker": "Gast B",
+          "de": "Ja, der öffentliche Verkehr sollte günstiger werden.",
+          "fa": "بله، حمل‌ونقل عمومی باید ارزان‌تر شود.",
+          "en": "Yes, public transport should become cheaper."
+        }
+      ]
+    },
+    {
+      "level": "C1",
+      "title": "سمینار دانشگاهی",
+      "lines": [
+        {
+          "speaker": "Professorin",
+          "de": "Kommen wir nun zur Kernfrage: Verändert künstliche Intelligenz unser Denken?",
+          "fa": "حالا به پرسش اصلی می‌رسیم: آیا هوش مصنوعی تفکر ما را دگرگون می‌کند؟",
+          "en": "Let us now turn to the core question: Is artificial intelligence changing our thinking?"
+        },
+        {
+          "speaker": "Student",
+          "de": "Aus meiner Sicht hängt das davon ab, wie wir die Technologie nutzen.",
+          "fa": "از نظر من این به چگونگی استفاده‌ی ما از فناوری بستگی دارد.",
+          "en": "From my point of view, it depends on how we use the technology."
+        },
+        {
+          "speaker": "Professorin",
+          "de": "Könnten Sie das an einem Beispiel erläutern?",
+          "fa": "می‌توانید آن را با یک مثال توضیح دهید؟",
+          "en": "Could you illustrate that with an example?"
+        },
+        {
+          "speaker": "Student",
+          "de": "Gern. Wer Suchmaschinen klug nutzt, lernt schneller, verliert aber vielleicht die Geduld für lange Texte.",
+          "fa": "حتماً. کسی که از موتورهای جستجو هوشمندانه استفاده کند سریع‌تر یاد می‌گیرد، اما شاید حوصله‌ی متن‌های طولانی را از دست بدهد.",
+          "en": "Gladly. Those who use search engines wisely learn faster but may lose patience for long texts."
+        },
+        {
+          "speaker": "Professorin",
+          "de": "Ein interessanter Zusammenhang. Das vertiefen wir nächste Woche.",
+          "fa": "ارتباط جالبی است. هفته‌ی آینده آن را عمیق‌تر بررسی می‌کنیم.",
+          "en": "An interesting connection. We will explore that in depth next week."
+        }
+      ]
+    },
+    {
+      "level": "A0",
+      "title": "سفارش در کافه",
+      "lines": [
+        {
+          "speaker": "Kellner",
+          "de": "Guten Tag! Was möchten Sie?",
+          "fa": "روز بخیر! چه میل دارید؟",
+          "en": "Good day! What would you like?"
+        },
+        {
+          "speaker": "Gast",
+          "de": "Einen Kaffee, bitte.",
+          "fa": "یک قهوه، لطفاً.",
+          "en": "A coffee, please."
+        },
+        {
+          "speaker": "Kellner",
+          "de": "Mit Milch und Zucker?",
+          "fa": "با شیر و شکر؟",
+          "en": "With milk and sugar?"
+        },
+        {
+          "speaker": "Gast",
+          "de": "Ja, bitte. Und ein Wasser.",
+          "fa": "بله، لطفاً. و یک لیوان آب.",
+          "en": "Yes, please. And a glass of water."
+        },
+        {
+          "speaker": "Kellner",
+          "de": "Kommt sofort.",
+          "fa": "همین الان می‌آورم.",
+          "en": "Coming right up."
+        },
+        {
+          "speaker": "Gast",
+          "de": "Vielen Dank!",
+          "fa": "خیلی ممنون!",
+          "en": "Thank you very much!"
+        }
+      ]
     }
   ],
   "wechselExercises": [
@@ -4810,6 +5056,30 @@
       "text": "Es lässt sich nicht vermeiden",
       "fa": "اجتناب‌ناپذیر است",
       "hint": "ß در lässt"
+    },
+    {
+      "level": "A0",
+      "text": "Ich trinke gern Tee.",
+      "fa": "من چای دوست دارم.",
+      "hint": "نوشیدنی و علاقه"
+    },
+    {
+      "level": "B1",
+      "text": "Obwohl es regnete, sind wir spazieren gegangen.",
+      "fa": "با اینکه باران می‌بارید، به پیاده‌روی رفتیم.",
+      "hint": "جمله با obwohl"
+    },
+    {
+      "level": "B2",
+      "text": "Die Entscheidung wurde nach langer Diskussion getroffen.",
+      "fa": "تصمیم پس از بحثی طولانی گرفته شد.",
+      "hint": "مجهول (Passiv)"
+    },
+    {
+      "level": "C1",
+      "text": "Ungeachtet der Schwierigkeiten wurde das Projekt fristgerecht abgeschlossen.",
+      "fa": "با وجود مشکلات، پروژه به‌موقع به پایان رسید.",
+      "hint": "مجهول و حرف اضافه‌ی پیشرفته"
     }
   ],
   "placementTest": [

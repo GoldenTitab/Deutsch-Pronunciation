@@ -15,6 +15,7 @@
   --card-bg-rgb: 255 255 255;
   --border-rgb: 222 226 230;
   --text-rgb: 33 37 41;
+  --analyzer-grad: linear-gradient(135deg, #1e40af, #3b82f6);
 }
 
 body.dark {
@@ -33,6 +34,7 @@ body.dark {
   --card-bg-rgb: 30 41 59;
   --border-rgb: 51 65 85;
   --text-rgb: 248 250 252;
+  --analyzer-grad: linear-gradient(135deg, #0c4a6e, #0f172a);
 }
 
 * {
@@ -957,14 +959,6 @@ footer {
   flex-shrink: 0;
 }
 
-.vocab-cell-value {
-  display: inline-flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  justify-content: flex-end;
-}
-
 #vocabTable td.vocab-actions {
   justify-content: flex-end;
   border-bottom: none;
@@ -1266,7 +1260,7 @@ footer {
 }
 
 .analyzer-card {
-  background: linear-gradient(135deg, #0c4a6e, #0f172a);
+  background: var(--analyzer-grad);
   color: #fff;
   border-radius: 2rem;
   padding: 2rem 2rem 2.5rem;
@@ -1410,13 +1404,13 @@ footer {
 
 .voice-banner p {
   font-size: 0.85rem;
-  color: #d1d5db;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .voice-banner button {
   background: none;
   border: none;
-  color: #d1d5db;
+  color: #ffffff;
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0 0.25rem;
@@ -1662,12 +1656,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .phonetics-hero-title h1 {
-    font-size: 1.8rem;
-  }
-  .phonetics-hero-title p {
-    font-size: 1rem;
-  }
 
   .desktop-headers {
     display: none;
@@ -1730,23 +1718,6 @@ footer {
 
 .hidden {
   display: none !important;
-}
-
-.phonetics-top-progress {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 4px;
-  background: rgba(var(--border-rgb), 0.4);
-  z-index: 1001;
-}
-
-.phonetics-top-progress-fill {
-  height: 100%;
-  width: 0%;
-  background: var(--accent-color);
-  transition: width 0.4s ease;
 }
 
 .phonetic-highlight {
@@ -2028,7 +1999,7 @@ body.dark .en-diff-box strong {
   font-size: 0.92rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 899px) {
   .path-task {
     flex-direction: column;
     align-items: stretch;
@@ -2037,4 +2008,26 @@ body.dark .en-diff-box strong {
   .path-task-actions {
     justify-content: flex-start;
   }
+}
+/* Article chips — der (blue) / die (rose) / das (green), the classic gender colour code */
+.article-chip {
+  display: inline-block;
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--text-muted);
+  vertical-align: middle;
+}
+.article-chip.der { background: #2563eb; }
+.article-chip.die { background: #e11d48; }
+.article-chip.das { background: #059669; }
+
+/* Active state for toggle buttons (flashcard "due only") */
+.learn-toggle-active {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  border-color: var(--primary-color) !important;
 }

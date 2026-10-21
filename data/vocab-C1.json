@@ -1,6 +1,6 @@
 [
   {
-    "word": "die Ambivalenz",
+    "word": "Ambivalenz",
     "ipa": "[ambivaˈlɛnts]",
     "fa": "دوگانگی عاطفی / تضاد درونی",
     "en": "ambivalence",
@@ -13,7 +13,7 @@
     "article": "die"
   },
   {
-    "word": "die Psychologie",
+    "word": "Psychologie",
     "ipa": "[psyçoloˈɡiː]",
     "fa": "روان‌شناسی",
     "en": "psychology",
@@ -22,10 +22,11 @@
     "example": "Sie studiert Psychologie an der Universität.",
     "exampleFa": "او در دانشگاه روان‌شناسی می‌خواند.",
     "exampleEn": "She is studying psychology at the university.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Psychologien"
   },
   {
-    "word": "die Epistemologie",
+    "word": "Epistemologie",
     "ipa": "[epɪstemoˈloːɡiː]",
     "fa": "شناخت‌شناسی",
     "en": "epistemology",
@@ -37,7 +38,7 @@
     "article": "die"
   },
   {
-    "word": "die Ontologie",
+    "word": "Ontologie",
     "ipa": "[ɔntoloˈɡiː]",
     "fa": "هستی‌شناسی",
     "en": "ontology",
@@ -46,10 +47,11 @@
     "example": "In der Ontologie geht es um die Grundstrukturen des Seins.",
     "exampleFa": "در هستی‌شناسی به ساختارهای بنیادین وجود پرداخته می‌شود.",
     "exampleEn": "Ontology deals with the fundamental structures of being.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Ontologien"
   },
   {
-    "word": "die Ästhetik",
+    "word": "Ästhetik",
     "ipa": "[ɛsˈteːtɪk]",
     "fa": "زیبایی‌شناسی",
     "en": "aesthetics",
@@ -58,10 +60,11 @@
     "example": "Die Ästhetik des Films war beeindruckend.",
     "exampleFa": "زیبایی‌شناسی فیلم چشمگیر بود.",
     "exampleEn": "The aesthetics of the film were impressive.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Ästhetiken"
   },
   {
-    "word": "die Ökologie",
+    "word": "Ökologie",
     "ipa": "[økoloˈɡiː]",
     "fa": "بوم‌شناسی",
     "en": "ecology",
@@ -73,7 +76,7 @@
     "article": "die"
   },
   {
-    "word": "das Ökosystem",
+    "word": "Ökosystem",
     "ipa": "[ˈøːkozʏsˌteːm]",
     "fa": "اکوسیستم",
     "en": "ecosystem",
@@ -86,19 +89,7 @@
     "article": "das"
   },
   {
-    "word": "die Nachhaltigkeit",
-    "ipa": "[ˈnaxhaltɪçkaɪt]",
-    "fa": "پایداری",
-    "en": "sustainability",
-    "level": "C1",
-    "category": "محیط‌زیست و انرژی",
-    "example": "Nachhaltigkeit ist ein zentrales politisches Ziel.",
-    "exampleFa": "پایداری هدف اصلی سیاسی است.",
-    "exampleEn": "Sustainability is a central political goal.",
-    "article": "die"
-  },
-  {
-    "word": "die Diskrepanz",
+    "word": "Diskrepanz",
     "ipa": "[dɪsˈkʁɛpants]",
     "fa": "ناسازگاری / اختلاف",
     "en": "discrepancy",
@@ -111,19 +102,7 @@
     "article": "die"
   },
   {
-    "word": "die Kohärenz",
-    "ipa": "[koheˈʁɛnts]",
-    "fa": "انسجام",
-    "en": "coherence",
-    "level": "C1",
-    "category": "علم و فلسفه",
-    "example": "Die Kohärenz des Arguments überzeugt.",
-    "exampleFa": "انسجام استدلال قانع‌کننده است.",
-    "exampleEn": "The coherence of the argument is convincing.",
-    "article": "die"
-  },
-  {
-    "word": "die Prämisse",
+    "word": "Prämisse",
     "ipa": "[pʁɛˈmɪsə]",
     "fa": "پیش‌فرض / مقدمه",
     "en": "premise",
@@ -136,7 +115,7 @@
     "article": "die"
   },
   {
-    "word": "die Implikation",
+    "word": "Implikation",
     "ipa": "[ɪmplikaˈtsi̯oːn]",
     "fa": "پیامد ضمنی",
     "en": "implication",
@@ -149,20 +128,7 @@
     "article": "die"
   },
   {
-    "word": "die Hypothese",
-    "ipa": "[hypoˈteːzə]",
-    "fa": "فرضیه",
-    "en": "hypothesis",
-    "level": "C1",
-    "category": "علم و فلسفه",
-    "example": "Die Hypothese muss empirisch überprüft werden.",
-    "exampleFa": "فرضیه باید به‌صورت تجربی آزمایش شود.",
-    "exampleEn": "The hypothesis must be tested empirically.",
-    "plural": "die Hypothesen",
-    "article": "die"
-  },
-  {
-    "word": "die Empirie",
+    "word": "Empirie",
     "ipa": "[ɛmˈpiːʁi̯ə]",
     "fa": "داده تجربی / تجربه",
     "en": "empiricism / empirical evidence",
@@ -174,7 +140,7 @@
     "article": "die"
   },
   {
-    "word": "die Kontroverse",
+    "word": "Kontroverse",
     "ipa": "[kɔntʁoˈvɛʁzə]",
     "fa": "مجادله",
     "en": "controversy",
@@ -187,7 +153,7 @@
     "article": "die"
   },
   {
-    "word": "die Legitimation",
+    "word": "Legitimation",
     "ipa": "[leɡitimaˈtsi̯oːn]",
     "fa": "مشروعیت‌بخشی",
     "en": "legitimization",
@@ -196,10 +162,11 @@
     "example": "Die Regierung sucht nach Legitimation für ihre Maßnahmen.",
     "exampleFa": "دولت به‌دنبال مشروعیت برای اقداماتش است.",
     "exampleEn": "The government is seeking legitimacy for its measures.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Legitimationen"
   },
   {
-    "word": "die Transparenz",
+    "word": "Transparenz",
     "ipa": "[tʁanspaˈʁɛnts]",
     "fa": "شفافیت",
     "en": "transparency",
@@ -208,10 +175,11 @@
     "example": "Mehr Transparenz würde das Vertrauen stärken.",
     "exampleFa": "شفافیت بیشتر اعتماد را تقویت می‌کند.",
     "exampleEn": "More transparency would strengthen trust.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Transparenzen"
   },
   {
-    "word": "die Korruption",
+    "word": "Korruption",
     "ipa": "[kɔʁʊpˈtsi̯oːn]",
     "fa": "فساد",
     "en": "corruption",
@@ -220,10 +188,11 @@
     "example": "Korruption untergräbt das Rechtssystem.",
     "exampleFa": "فساد نظام حقوقی را تضعیف می‌کند.",
     "exampleEn": "Corruption undermines the legal system.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Korruptionen"
   },
   {
-    "word": "die Diskriminierung",
+    "word": "Diskriminierung",
     "ipa": "[dɪskʁimiˈniːʁʊŋ]",
     "fa": "تبعیض",
     "en": "discrimination",
@@ -232,58 +201,11 @@
     "example": "Jede Form von Diskriminierung ist abzulehnen.",
     "exampleFa": "هر شکلی از تبعیض باید رد شود.",
     "exampleEn": "Any form of discrimination must be rejected.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Diskriminierungen"
   },
   {
-    "word": "die Integration",
-    "ipa": "[ɪnteɡʁaˈtsi̯oːn]",
-    "fa": "ادغام / یکپارچگی",
-    "en": "integration",
-    "level": "C1",
-    "category": "جامعه، سیاست و حقوق",
-    "example": "Erfolgreiche Integration erfordert beide Seiten.",
-    "exampleFa": "ادغام موفق به هر دو طرف نیاز دارد.",
-    "exampleEn": "Successful integration requires both sides.",
-    "article": "die"
-  },
-  {
-    "word": "die Globalisierung",
-    "ipa": "[ɡlobaliˈziːʁʊŋ]",
-    "fa": "جهانی‌شدن",
-    "en": "globalization",
-    "level": "C1",
-    "category": "اقتصاد و مالی",
-    "example": "Die Globalisierung hat Gewinner und Verlierer.",
-    "exampleFa": "جهانی‌شدن برنده‌ها و بازنده‌هایی دارد.",
-    "exampleEn": "Globalization has winners and losers.",
-    "article": "die"
-  },
-  {
-    "word": "die Inflation",
-    "ipa": "[ɪnflaˈtsi̯oːn]",
-    "fa": "تورم",
-    "en": "inflation",
-    "level": "C1",
-    "category": "اقتصاد و مالی",
-    "example": "Hohe Inflation entwertet Ersparnisse.",
-    "exampleFa": "تورم بالا پس‌اندازها را بی‌ارزش می‌کند.",
-    "exampleEn": "High inflation devalues savings.",
-    "article": "die"
-  },
-  {
-    "word": "die Rezession",
-    "ipa": "[ʁet͡sɛˈsi̯oːn]",
-    "fa": "رکود اقتصادی",
-    "en": "recession",
-    "level": "C1",
-    "category": "اقتصاد و مالی",
-    "example": "Die Wirtschaft steuert auf eine Rezession zu.",
-    "exampleFa": "اقتصاد به سمت رکود پیش می‌رود.",
-    "exampleEn": "The economy is heading toward a recession.",
-    "article": "die"
-  },
-  {
-    "word": "die Innovation",
+    "word": "Innovation",
     "ipa": "[ɪnovaˈtsi̯oːn]",
     "fa": "نوآوری",
     "en": "innovation",
@@ -296,7 +218,7 @@
     "article": "die"
   },
   {
-    "word": "die Digitalisierung",
+    "word": "Digitalisierung",
     "ipa": "[diɡitaliˈziːʁʊŋ]",
     "fa": "دیجیتالی‌شدن",
     "en": "digitalization",
@@ -305,47 +227,11 @@
     "example": "Die Digitalisierung verändert ganze Branchen.",
     "exampleFa": "دیجیتالی‌شدن کل صنایع را تغییر می‌دهد.",
     "exampleEn": "Digitalization is transforming entire industries.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Digitalisierungen"
   },
   {
-    "word": "die Künstliche Intelligenz",
-    "ipa": "[ˈkʏnstlɪçə ɪnteliˈɡɛnts]",
-    "fa": "هوش مصنوعی",
-    "en": "artificial intelligence",
-    "level": "C1",
-    "category": "فناوری",
-    "example": "Künstliche Intelligenz wirft ethische Fragen auf.",
-    "exampleFa": "هوش مصنوعی پرسش‌های اخلاقی مطرح می‌کند.",
-    "exampleEn": "Artificial intelligence raises ethical questions.",
-    "article": "die"
-  },
-  {
-    "word": "der Algorithmus",
-    "ipa": "[alɡoˈʁɪtmʊs]",
-    "fa": "الگوریتم",
-    "en": "algorithm",
-    "level": "C1",
-    "category": "فناوری",
-    "example": "Der Algorithmus entscheidet über Sichtbarkeit.",
-    "exampleFa": "الگوریتم درباره دیده شدن تصمیم می‌گیرد.",
-    "exampleEn": "The algorithm decides about visibility.",
-    "plural": "die Algorithmen",
-    "article": "der"
-  },
-  {
-    "word": "der Datenschutz",
-    "ipa": "[ˈdaːtn̩ˌʃʊts]",
-    "fa": "حفاظت از داده‌ها",
-    "en": "data protection",
-    "level": "C1",
-    "category": "فناوری",
-    "example": "Datenschutz ist ein Grundrecht in der EU.",
-    "exampleFa": "حفاظت از داده در اتحادیه اروپا حق بنیادین است.",
-    "exampleEn": "Data protection is a fundamental right in the EU.",
-    "article": "der"
-  },
-  {
-    "word": "die Resilienz",
+    "word": "Resilienz",
     "ipa": "[ʁeziˈli̯ɛnts]",
     "fa": "تاب‌آوری",
     "en": "resilience",
@@ -354,10 +240,11 @@
     "example": "Resilienz hilft, Krisen zu bewältigen.",
     "exampleFa": "تاب‌آوری به عبور از بحران کمک می‌کند.",
     "exampleEn": "Resilience helps to cope with crises.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Resilienzen"
   },
   {
-    "word": "die Prokrastination",
+    "word": "Prokrastination",
     "ipa": "[pʁokʁastinaˈtsi̯oːn]",
     "fa": "اهمال‌کاری / تعلل",
     "en": "procrastination",
@@ -369,7 +256,7 @@
     "article": "die"
   },
   {
-    "word": "die Selbstreflexion",
+    "word": "Selbstreflexion",
     "ipa": "[ˈzɛlpstʁeflɛkˌtsi̯oːn]",
     "fa": "تأمل در خود",
     "en": "self-reflection",
@@ -378,10 +265,11 @@
     "example": "Selbstreflexion ist der erste Schritt zur Veränderung.",
     "exampleFa": "تأمل در خود اولین گام تغییر است.",
     "exampleEn": "Self-reflection is the first step toward change.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Selbstreflexionen"
   },
   {
-    "word": "die Empathie",
+    "word": "Empathie",
     "ipa": "[ɛmpaˈtiː]",
     "fa": "همدلی",
     "en": "empathy",
@@ -390,10 +278,11 @@
     "example": "Empathie ist in der Pflege unerlässlich.",
     "exampleFa": "همدلی در مراقبت ضروری است.",
     "exampleEn": "Empathy is essential in care work.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Empathien"
   },
   {
-    "word": "die Rhetorik",
+    "word": "Rhetorik",
     "ipa": "[ʁeˈtoːʁɪk]",
     "fa": "فن بیان",
     "en": "rhetoric",
@@ -402,10 +291,11 @@
     "example": "Seine Rhetorik war überzeugend, aber inhaltlich leer.",
     "exampleFa": "فن بیانش قانع‌کننده بود اما از نظر محتوا خالی.",
     "exampleEn": "His rhetoric was convincing but empty in substance.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Rhetoriken"
   },
   {
-    "word": "die Argumentation",
+    "word": "Argumentation",
     "ipa": "[aʁɡumɛntaˈtsi̯oːn]",
     "fa": "استدلال‌آوری",
     "en": "argumentation",
@@ -414,10 +304,11 @@
     "example": "Eine schlüssige Argumentation überzeugt mehr als emotionale Appelle.",
     "exampleFa": "استدلال منسجم بیشتر از درخواست عاطفی قانع می‌کند.",
     "exampleEn": "A coherent argumentation is more convincing than emotional appeals.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Argumentationen"
   },
   {
-    "word": "die Metapher",
+    "word": "Metapher",
     "ipa": "[meˈtaːfɐ]",
     "fa": "استعاره",
     "en": "metaphor",
@@ -430,7 +321,7 @@
     "article": "die"
   },
   {
-    "word": "die Komplexität",
+    "word": "Komplexität",
     "ipa": "[kɔmplɛksiˈtɛːt]",
     "fa": "پیچیدگی",
     "en": "complexity",
@@ -442,19 +333,7 @@
     "article": "die"
   },
   {
-    "word": "die Biodiversität",
-    "ipa": "[biodivɛʁziˈtɛːt]",
-    "fa": "تنوع زیستی",
-    "en": "biodiversity",
-    "level": "C1",
-    "category": "محیط‌زیست و انرژی",
-    "example": "Der Verlust an Biodiversität bedroht ganze Ökosysteme.",
-    "exampleFa": "از دست رفتن تنوع زیستی کل اکوسیستم‌ها را تهدید می‌کند.",
-    "exampleEn": "The loss of biodiversity threatens entire ecosystems.",
-    "article": "die"
-  },
-  {
-    "word": "die Klimaneutralität",
+    "word": "Klimaneutralität",
     "ipa": "[ˈkliːmanɔɪ̯tʁaliˌtɛːt]",
     "fa": "بی‌طرفی اقلیمی",
     "en": "climate neutrality",
@@ -466,19 +345,7 @@
     "article": "die"
   },
   {
-    "word": "die Ethik",
-    "ipa": "[ˈeːtɪk]",
-    "fa": "اخلاق / فلسفه اخلاق",
-    "en": "ethics",
-    "level": "C1",
-    "category": "علم و فلسفه",
-    "example": "Die Ethik der KI ist ein aktuelles Forschungsthema.",
-    "exampleFa": "اخلاق هوش مصنوعی موضوع پژوهشی روز است.",
-    "exampleEn": "The ethics of AI is a current research topic.",
-    "article": "die"
-  },
-  {
-    "word": "der Diskurs",
+    "word": "Diskurs",
     "ipa": "[dɪsˈkʊʁs]",
     "fa": "گفتمان",
     "en": "discourse",
@@ -491,7 +358,7 @@
     "article": "der"
   },
   {
-    "word": "die Subjektivität",
+    "word": "Subjektivität",
     "ipa": "[zʊpjɛktiˈviːtɛːt]",
     "fa": "ذهنیت",
     "en": "subjectivity",
@@ -503,7 +370,7 @@
     "article": "die"
   },
   {
-    "word": "die Objektivität",
+    "word": "Objektivität",
     "ipa": "[ɔpjɛktiˈviːtɛːt]",
     "fa": "عینیت",
     "en": "objectivity",
@@ -512,10 +379,11 @@
     "example": "Vollständige Objektivität ist ein Ideal, kein Zustand.",
     "exampleFa": "عینیت کامل یک آرمان است نه یک وضعیت.",
     "exampleEn": "Complete objectivity is an ideal, not a state.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Objektivitäten"
   },
   {
-    "word": "die Ambiguität",
+    "word": "Ambiguität",
     "ipa": "[ambiɡuiˈtɛːt]",
     "fa": "ابهام",
     "en": "ambiguity",
@@ -524,10 +392,11 @@
     "example": "Literarische Ambiguität lädt zu vielfältigen Deutungen ein.",
     "exampleFa": "ابهام ادبی به تفسیرهای متنوع دعوت می‌کند.",
     "exampleEn": "Literary ambiguity invites multiple interpretations.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Ambiguitäten"
   },
   {
-    "word": "die Nuance",
+    "word": "Nuance",
     "ipa": "[nyˈãːsə]",
     "fa": "ظرافت معنایی",
     "en": "nuance",
@@ -540,7 +409,7 @@
     "article": "die"
   },
   {
-    "word": "die Relevanz",
+    "word": "Relevanz",
     "ipa": "[ʁeleˈvants]",
     "fa": "ربط / اهمیت",
     "en": "relevance",
@@ -552,7 +421,7 @@
     "article": "die"
   },
   {
-    "word": "die Validität",
+    "word": "Validität",
     "ipa": "[valiˈdiːtɛːt]",
     "fa": "روایی (پژوهش)",
     "en": "validity",
@@ -561,10 +430,11 @@
     "example": "Die Validität der Studie wurde kritisiert.",
     "exampleFa": "روایی مطالعه مورد انتقاد قرار گرفت.",
     "exampleEn": "The validity of the study was criticized.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Validitäten"
   },
   {
-    "word": "die Reliabilität",
+    "word": "Reliabilität",
     "ipa": "[ʁeliabiliˈtɛːt]",
     "fa": "پایایی",
     "en": "reliability",
@@ -576,7 +446,7 @@
     "article": "die"
   },
   {
-    "word": "die Falsifikation",
+    "word": "Falsifikation",
     "ipa": "[falzifikaˈtsi̯oːn]",
     "fa": "ابطال‌پذیری",
     "en": "falsification",
@@ -585,10 +455,11 @@
     "example": "Nach Popper ist Falsifikation das Kriterium der Wissenschaftlichkeit.",
     "exampleFa": "از نظر پوپر ابطال‌پذیری معیار علمی بودن است.",
     "exampleEn": "According to Popper, falsification is the criterion of scientificity.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Falsifikationen"
   },
   {
-    "word": "die Konnotation",
+    "word": "Konnotation",
     "ipa": "[kɔnotaˈtsi̯oːn]",
     "fa": "دلالت ضمنی",
     "en": "connotation",
@@ -601,7 +472,7 @@
     "article": "die"
   },
   {
-    "word": "die Denotation",
+    "word": "Denotation",
     "ipa": "[denotaˈtsi̯oːn]",
     "fa": "دلالت صریح",
     "en": "denotation",
@@ -610,10 +481,11 @@
     "example": "Die Denotation ist klar, die Konnotation variiert.",
     "exampleFa": "معنای صریح روشن است، بار ضمنی فرق می‌کند.",
     "exampleEn": "The denotation is clear; the connotation varies.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Denotationen"
   },
   {
-    "word": "die Pragmatik",
+    "word": "Pragmatik",
     "ipa": "[pʁaɡˈmaːtɪk]",
     "fa": "کاربردشناسی زبان",
     "en": "pragmatics",
@@ -622,10 +494,11 @@
     "example": "Pragmatik untersucht, wie Sprache in Kontexten wirkt.",
     "exampleFa": "کاربردشناسی بررسی می‌کند زبان در بافت چگونه عمل می‌کند.",
     "exampleEn": "Pragmatics examines how language works in contexts.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Pragmatiken"
   },
   {
-    "word": "die Semantik",
+    "word": "Semantik",
     "ipa": "[zeˈmantɪk]",
     "fa": "معناشناسی",
     "en": "semantics",
@@ -634,10 +507,11 @@
     "example": "Semantik befasst sich mit der Bedeutung von Zeichen.",
     "exampleFa": "معناشناسی به معنای نشانه‌ها می‌پردازد.",
     "exampleEn": "Semantics deals with the meaning of signs.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Semantiken"
   },
   {
-    "word": "die Syntax",
+    "word": "Syntax",
     "ipa": "[zʏnˈtaks]",
     "fa": "نحو",
     "en": "syntax",
@@ -646,10 +520,11 @@
     "example": "Die deutsche Syntax erlaubt flexible Wortstellung.",
     "exampleFa": "نحو آلمانی ترتیب کلمه انعطاف‌پذیر را مجاز می‌داند.",
     "exampleEn": "German syntax allows flexible word order.",
-    "article": "die"
+    "article": "die",
+    "plural": "die Syntaxen"
   },
   {
-    "word": "die Stereotyp",
+    "word": "Stereotyp",
     "ipa": "[ˈʃteʁeoˌtyːp]",
     "fa": "کلیشه",
     "en": "stereotype",
@@ -662,7 +537,7 @@
     "article": "das"
   },
   {
-    "word": "das Vorurteil",
+    "word": "Vorurteil",
     "ipa": "[ˈfoːɐ̯ʔʊɐ̯ˌtaɪ̯l]",
     "fa": "پیش‌داوری",
     "en": "prejudice",
@@ -675,43 +550,7 @@
     "article": "das"
   },
   {
-    "word": "die Toleranz",
-    "ipa": "[toleˈʁants]",
-    "fa": "مدارای",
-    "en": "tolerance",
-    "level": "C1",
-    "category": "جامعه، سیاست و حقوق",
-    "example": "Toleranz bedeutet nicht Gleichgültigkeit.",
-    "exampleFa": "مدارای به معنای بی‌تفاوتی نیست.",
-    "exampleEn": "Tolerance does not mean indifference.",
-    "article": "die"
-  },
-  {
-    "word": "die Solidarität",
-    "ipa": "[zolidaʁiˈtɛːt]",
-    "fa": "همبستگی",
-    "en": "solidarity",
-    "level": "C1",
-    "category": "جامعه، سیاست و حقوق",
-    "example": "In der Krise zeigt sich wahre Solidarität.",
-    "exampleFa": "در بحران همبستگی واقعی نمایان می‌شود.",
-    "exampleEn": "In a crisis, true solidarity becomes visible.",
-    "article": "die"
-  },
-  {
-    "word": "die Verantwortung",
-    "ipa": "[fɛɐ̯ˈʔantvɔʁtʊŋ]",
-    "fa": "مسئولیت",
-    "en": "responsibility",
-    "level": "C1",
-    "category": "مفاهیم و اشیای روزمره",
-    "example": "Jeder trägt Verantwortung für sein Handeln.",
-    "exampleFa": "هر کس مسئول اعمال خود است.",
-    "exampleEn": "Everyone bears responsibility for their actions.",
-    "article": "die"
-  },
-  {
-    "word": "die Integrität",
+    "word": "Integrität",
     "ipa": "[ɪnteɡʁiˈtɛːt]",
     "fa": "درستکاری / یکپارچگی",
     "en": "integrity",
@@ -723,7 +562,7 @@
     "article": "die"
   },
   {
-    "word": "die Authentizität",
+    "word": "Authentizität",
     "ipa": "[aʊ̯tɛntitsiˈtɛːt]",
     "fa": "اصالت",
     "en": "authenticity",
@@ -735,19 +574,7 @@
     "article": "die"
   },
   {
-    "word": "die Selbstwirksamkeit",
-    "ipa": "[ˈzɛlpstˌvɪʁkzaːmkaɪt]",
-    "fa": "خودکارآمدی",
-    "en": "self-efficacy",
-    "level": "C1",
-    "category": "روان‌شناسی و سلامت روان",
-    "example": "Hohe Selbstwirksamkeit fördert Motivation und Durchhaltevermögen.",
-    "exampleFa": "خودکارآمدی بالا انگیزه و پشتکار را تقویت می‌کند.",
-    "exampleEn": "High self-efficacy promotes motivation and perseverance.",
-    "article": "die"
-  },
-  {
-    "word": "die Metakognition",
+    "word": "Metakognition",
     "ipa": "[ˈmetakoɡniˌtsi̯oːn]",
     "fa": "فراشناخت",
     "en": "metacognition",
@@ -759,7 +586,7 @@
     "article": "die"
   },
   {
-    "word": "die Interkulturalität",
+    "word": "Interkulturalität",
     "ipa": "[ɪntɐkʊltuʁaliˈtɛːt]",
     "fa": "بین‌فرهنگی بودن",
     "en": "interculturality",
@@ -771,7 +598,7 @@
     "article": "die"
   },
   {
-    "word": "die Eloquenz",
+    "word": "Eloquenz",
     "ipa": "[eloˈkvɛnts]",
     "fa": "فصاحت",
     "en": "eloquence",
@@ -783,7 +610,7 @@
     "article": "die"
   },
   {
-    "word": "die Präzision",
+    "word": "Präzision",
     "ipa": "[pʁɛtsiˈzi̯oːn]",
     "fa": "دقت",
     "en": "precision",
@@ -793,5 +620,649 @@
     "exampleFa": "کار علمی به دقت در بیان نیاز دارد.",
     "exampleEn": "Scientific work demands precision of expression.",
     "article": "die"
+  },
+  {
+    "word": "Voraussetzung",
+    "ipa": "[foˈʁaʊ̯sˌzɛt͡sʊŋ]",
+    "fa": "پیش‌شرط",
+    "en": "prerequisite",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Eine wichtige Voraussetzung für den Erfolg ist Geduld.",
+    "exampleFa": "یک پیش‌شرط مهم برای موفقیت، صبر است.",
+    "exampleEn": "An important prerequisite for success is patience.",
+    "plural": "die Voraussetzungen",
+    "article": "die"
+  },
+  {
+    "word": "Schlussfolgerung",
+    "ipa": "[ˈʃlʊsˌfɔlɡəʁʊŋ]",
+    "fa": "نتیجه‌گیری",
+    "en": "conclusion",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Aus den Daten zog sie eine klare Schlussfolgerung.",
+    "exampleFa": "او از داده‌ها به یک نتیجه‌گیری روشن رسید.",
+    "exampleEn": "From the data she drew a clear conclusion.",
+    "plural": "die Schlussfolgerungen",
+    "article": "die"
+  },
+  {
+    "word": "Annahme",
+    "ipa": "[ˈanˌnaːmə]",
+    "fa": "فرض، گمان",
+    "en": "assumption",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Diese Annahme erwies sich als falsch.",
+    "exampleFa": "این فرض نادرست از آب درآمد.",
+    "exampleEn": "This assumption turned out to be wrong.",
+    "plural": "die Annahmen",
+    "article": "die"
+  },
+  {
+    "word": "Behauptung",
+    "ipa": "[bəˈhaʊ̯ptʊŋ]",
+    "fa": "ادعا",
+    "en": "claim",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Seine Behauptung ließ sich nicht beweisen.",
+    "exampleFa": "ادعای او قابل اثبات نبود.",
+    "exampleEn": "His claim could not be proven.",
+    "plural": "die Behauptungen",
+    "article": "die"
+  },
+  {
+    "word": "Standpunkt",
+    "ipa": "[ˈʃtantpʊŋkt]",
+    "fa": "دیدگاه، موضع",
+    "en": "point of view",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Aus meinem Standpunkt ist der Plan riskant.",
+    "exampleFa": "از دیدگاه من این طرح پرریسک است.",
+    "exampleEn": "From my point of view, the plan is risky.",
+    "plural": "die Standpunkte",
+    "article": "der"
+  },
+  {
+    "word": "Auffassung",
+    "ipa": "[ˈaʊ̯fˌfasʊŋ]",
+    "fa": "برداشت، نظر",
+    "en": "view, opinion",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Ich teile diese Auffassung nicht.",
+    "exampleFa": "من این نظر را قبول ندارم.",
+    "exampleEn": "I do not share this view.",
+    "plural": "die Auffassungen",
+    "article": "die"
+  },
+  {
+    "word": "Hinsicht",
+    "ipa": "[ˈhɪnˌzɪçt]",
+    "fa": "جنبه، لحاظ",
+    "en": "respect, aspect",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "In dieser Hinsicht hat er recht.",
+    "exampleFa": "از این لحاظ حق با اوست.",
+    "exampleEn": "In this respect he is right.",
+    "plural": "die Hinsichten",
+    "article": "die"
+  },
+  {
+    "word": "Maßnahme",
+    "ipa": "[ˈmaːsˌnaːmə]",
+    "fa": "اقدام، تدبیر",
+    "en": "measure",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Regierung ergriff sofortige Maßnahmen.",
+    "exampleFa": "دولت اقدامات فوری انجام داد.",
+    "exampleEn": "The government took immediate measures.",
+    "plural": "die Maßnahmen",
+    "article": "die"
+  },
+  {
+    "word": "Verfahren",
+    "ipa": "[fɛɐ̯ˈfaːʁən]",
+    "fa": "روش، رویه",
+    "en": "procedure",
+    "level": "C1",
+    "category": "فناوری",
+    "example": "Das neue Verfahren spart Zeit und Kosten.",
+    "exampleFa": "روش جدید در زمان و هزینه صرفه‌جویی می‌کند.",
+    "exampleEn": "The new procedure saves time and costs.",
+    "plural": "die Verfahren",
+    "article": "das"
+  },
+  {
+    "word": "Ablehnung",
+    "ipa": "[ˈapˌleːnʊŋ]",
+    "fa": "رد، مخالفت",
+    "en": "rejection",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Ablehnung des Antrags überraschte viele.",
+    "exampleFa": "رد این درخواست بسیاری را شگفت‌زده کرد.",
+    "exampleEn": "The rejection of the application surprised many.",
+    "plural": "die Ablehnungen",
+    "article": "die"
+  },
+  {
+    "word": "Rückgang",
+    "ipa": "[ˈʁʏkˌɡaŋ]",
+    "fa": "کاهش",
+    "en": "decline",
+    "level": "C1",
+    "category": "اقتصاد و مالی",
+    "example": "Ein Rückgang der Nachfrage ist zu beobachten.",
+    "exampleFa": "کاهشی در تقاضا مشاهده می‌شود.",
+    "exampleEn": "A decline in demand can be observed.",
+    "plural": "die Rückgänge",
+    "article": "der"
+  },
+  {
+    "word": "Berücksichtigung",
+    "ipa": "[bəˈʁʏkˌzɪçtɪɡʊŋ]",
+    "fa": "در نظر گرفتن، ملاحظه",
+    "en": "consideration",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die Berücksichtigung seiner Erfahrung war wichtig.",
+    "exampleFa": "در نظر گرفتن تجربه‌ی او مهم بود.",
+    "exampleEn": "Taking his experience into consideration was important.",
+    "plural": "die Berücksichtigungen",
+    "article": "die"
+  },
+  {
+    "word": "Fragestellung",
+    "ipa": "[ˈfʁaːɡəˌʃtɛlʊŋ]",
+    "fa": "پرسش پژوهش",
+    "en": "research question",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die Fragestellung muss präzise formuliert werden.",
+    "exampleFa": "پرسش پژوهش باید دقیق صورت‌بندی شود.",
+    "exampleEn": "The research question must be formulated precisely.",
+    "plural": "die Fragestellungen",
+    "article": "die"
+  },
+  {
+    "word": "Darstellung",
+    "ipa": "[ˈdaːɐ̯ˌʃtɛlʊŋ]",
+    "fa": "ارائه، نمایش",
+    "en": "presentation, depiction",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die grafische Darstellung erleichtert das Verständnis.",
+    "exampleFa": "ارائه‌ی نموداری فهم را آسان می‌کند.",
+    "exampleEn": "The graphical presentation facilitates understanding.",
+    "plural": "die Darstellungen",
+    "article": "die"
+  },
+  {
+    "word": "Einschätzung",
+    "ipa": "[ˈaɪ̯nˌʃɛt͡sʊŋ]",
+    "fa": "ارزیابی، برآورد",
+    "en": "assessment",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Nach meiner Einschätzung wird das Projekt gelingen.",
+    "exampleFa": "به ارزیابی من این پروژه موفق خواهد شد.",
+    "exampleEn": "In my assessment, the project will succeed.",
+    "plural": "die Einschätzungen",
+    "article": "die"
+  },
+  {
+    "word": "Enttäuschung",
+    "ipa": "[ɛntˈtɔɪ̯ʃʊŋ]",
+    "fa": "ناامیدی",
+    "en": "disappointment",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Die Niederlage war eine große Enttäuschung.",
+    "exampleFa": "شکست ناامیدی بزرگی بود.",
+    "exampleEn": "The defeat was a great disappointment.",
+    "plural": "die Enttäuschungen",
+    "article": "die"
+  },
+  {
+    "word": "Artenvielfalt",
+    "ipa": "[ˈaʁtn̩ˌfiːlfalt]",
+    "fa": "تنوع زیستی",
+    "en": "biodiversity",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی",
+    "example": "Der Schutz der Artenvielfalt ist dringend nötig.",
+    "exampleFa": "حفاظت از تنوع زیستی فوراً لازم است.",
+    "exampleEn": "Protecting biodiversity is urgently needed.",
+    "article": "die"
+  },
+  {
+    "word": "Cybersicherheit",
+    "ipa": "[ˈsaɪ̯bɐˌzɪçɐhaɪ̯t]",
+    "fa": "امنیت سایبری",
+    "en": "cybersecurity",
+    "level": "C1",
+    "category": "فناوری",
+    "example": "Cybersicherheit wird für Firmen immer wichtiger.",
+    "exampleFa": "امنیت سایبری برای شرکت‌ها روزبه‌روز مهم‌تر می‌شود.",
+    "exampleEn": "Cybersecurity is becoming increasingly important for companies.",
+    "article": "die"
+  },
+  {
+    "word": "Bruttoinlandsprodukt",
+    "ipa": "[ˈbʁʊtoˌʔɪnlant͡spʁoˌdʊkt]",
+    "fa": "تولید ناخالص داخلی",
+    "en": "gross domestic product",
+    "level": "C1",
+    "category": "اقتصاد و مالی",
+    "example": "Das Bruttoinlandsprodukt ist um zwei Prozent gewachsen.",
+    "exampleFa": "تولید ناخالص داخلی دو درصد رشد کرده است.",
+    "exampleEn": "The gross domestic product grew by two percent.",
+    "plural": "die Bruttoinlandsprodukte",
+    "article": "das"
+  },
+  {
+    "word": "Steuererklärung",
+    "ipa": "[ˈʃtɔɪ̯ɐʔɛɐ̯ˌkleːʁʊŋ]",
+    "fa": "اظهارنامه مالیاتی",
+    "en": "tax return",
+    "level": "C1",
+    "category": "اقتصاد و مالی",
+    "example": "Die Steuererklärung muss bis Juli abgegeben werden.",
+    "exampleFa": "اظهارنامه مالیاتی باید تا ماه ژوئیه تحویل داده شود.",
+    "exampleEn": "The tax return must be submitted by July.",
+    "plural": "die Steuererklärungen",
+    "article": "die"
+  },
+  {
+    "word": "Glaubwürdigkeit",
+    "ipa": "[ˈɡlaʊ̯pvʏʁdɪçkaɪ̯t]",
+    "fa": "اعتبار، باورپذیری",
+    "en": "credibility",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Seine Glaubwürdigkeit litt unter den Widersprüchen.",
+    "exampleFa": "اعتبار او از تناقض‌ها آسیب دید.",
+    "exampleEn": "His credibility suffered from the contradictions.",
+    "article": "die"
+  },
+  {
+    "word": "Meinungsfreiheit",
+    "ipa": "[ˈmaɪ̯nʊŋsˌfʁaɪ̯haɪ̯t]",
+    "fa": "آزادی بیان",
+    "en": "freedom of expression",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Meinungsfreiheit ist ein Grundrecht.",
+    "exampleFa": "آزادی بیان یک حق بنیادین است.",
+    "exampleEn": "Freedom of expression is a fundamental right.",
+    "article": "die",
+    "plural": "die Meinungsfreiheiten"
+  },
+  {
+    "word": "Gleichberechtigung",
+    "ipa": "[ˈɡlaɪ̯çbəˌʁɛçtɪɡʊŋ]",
+    "fa": "برابری حقوق",
+    "en": "equal rights",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Gleichberechtigung ist im Grundgesetz verankert.",
+    "exampleFa": "برابری حقوق در قانون اساسی تثبیت شده است.",
+    "exampleEn": "Equal rights are enshrined in the Basic Law.",
+    "article": "die",
+    "plural": "die Gleichberechtigungen"
+  },
+  {
+    "word": "Staatsbürgerschaft",
+    "ipa": "[ˈʃtaːt͡sˌbʏʁɡɐʃaft]",
+    "fa": "تابعیت",
+    "en": "citizenship",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Sie beantragte die deutsche Staatsbürgerschaft.",
+    "exampleFa": "او برای تابعیت آلمان درخواست داد.",
+    "exampleEn": "She applied for German citizenship.",
+    "plural": "die Staatsbürgerschaften",
+    "article": "die"
+  },
+  {
+    "word": "Gesichtspunkt",
+    "ipa": "[ɡəˈzɪçt͡sˌpʊŋkt]",
+    "fa": "منظر، وجه",
+    "en": "aspect, point of view",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Von diesem Gesichtspunkt aus ist es verständlich.",
+    "exampleFa": "از این منظر قابل درک است.",
+    "exampleEn": "From this point of view it is understandable.",
+    "plural": "die Gesichtspunkte",
+    "article": "der"
+  },
+  {
+    "word": "Wechselwirkung",
+    "ipa": "[ˈvɛksl̩ˌvɪʁkʊŋ]",
+    "fa": "برهم‌کنش",
+    "en": "interaction",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die Wechselwirkung beider Stoffe ist gefährlich.",
+    "exampleFa": "برهم‌کنش این دو ماده خطرناک است.",
+    "exampleEn": "The interaction of the two substances is dangerous.",
+    "plural": "die Wechselwirkungen",
+    "article": "die"
+  },
+  {
+    "word": "Rahmenbedingung",
+    "ipa": "[ˈʁaːmənbəˌdɪŋʊŋ]",
+    "fa": "شرط چارچوبی",
+    "en": "framework condition",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Rahmenbedingungen für Firmen haben sich verbessert.",
+    "exampleFa": "شرایط چارچوبی برای شرکت‌ها بهبود یافته است.",
+    "exampleEn": "The framework conditions for companies have improved.",
+    "plural": "die Rahmenbedingungen",
+    "article": "die"
+  },
+  {
+    "word": "Aussagekraft",
+    "ipa": "[ˈaʊ̯szaːɡəˌkʁaft]",
+    "fa": "معناداری، قدرت بیان",
+    "en": "meaningfulness",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die Aussagekraft der Studie ist begrenzt.",
+    "exampleFa": "معناداری این مطالعه محدود است.",
+    "exampleEn": "The meaningfulness of the study is limited.",
+    "article": "die"
+  },
+  {
+    "word": "Stellenwert",
+    "ipa": "[ˈʃtɛlənˌveːɐ̯t]",
+    "fa": "جایگاه، اهمیت",
+    "en": "significance, status",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Bildung hat einen hohen Stellenwert.",
+    "exampleFa": "آموزش جایگاه والایی دارد.",
+    "exampleEn": "Education has a high status.",
+    "article": "der",
+    "plural": "die Stellenwerte"
+  },
+  {
+    "word": "Tragweite",
+    "ipa": "[ˈtʁaːkˌvaɪ̯tə]",
+    "fa": "دامنه‌ی پیامد",
+    "en": "implications, scope",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Tragweite der Entscheidung wurde unterschätzt.",
+    "exampleFa": "دامنه‌ی پیامد این تصمیم دست‌کم گرفته شد.",
+    "exampleEn": "The implications of the decision were underestimated.",
+    "article": "die",
+    "plural": "die Tragweiten"
+  },
+  {
+    "word": "Verhältnismäßigkeit",
+    "ipa": "[fɛɐ̯ˈhɛltnɪsˌmeːsɪçkaɪ̯t]",
+    "fa": "تناسب",
+    "en": "proportionality",
+    "level": "C1",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Verhältnismäßigkeit der Strafe wurde geprüft.",
+    "exampleFa": "تناسب مجازات بررسی شد.",
+    "exampleEn": "The proportionality of the punishment was examined.",
+    "article": "die",
+    "plural": "die Verhältnismäßigkeiten"
+  },
+  {
+    "word": "Herangehensweise",
+    "ipa": "[hɛˈʁanɡeːənsˌvaɪ̯zə]",
+    "fa": "شیوه‌ی برخورد",
+    "en": "approach, way of tackling",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Seine Herangehensweise an das Problem war ungewöhnlich.",
+    "exampleFa": "شیوه‌ی برخورد او با مسئله غیرمعمول بود.",
+    "exampleEn": "His approach to the problem was unusual.",
+    "plural": "die Herangehensweisen",
+    "article": "die"
+  },
+  {
+    "word": "Datenlage",
+    "ipa": "[ˈdaːtn̩ˌlaːɡə]",
+    "fa": "وضعیت داده‌ها",
+    "en": "data situation",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Die Datenlage ist noch unzureichend.",
+    "exampleFa": "وضعیت داده‌ها هنوز کافی نیست.",
+    "exampleEn": "The available data is still insufficient.",
+    "article": "die",
+    "plural": "die Datenlagen"
+  },
+  {
+    "word": "Forschungsstand",
+    "ipa": "[ˈfɔʁʃʊŋsˌʃtant]",
+    "fa": "وضعیت پژوهش‌های موجود",
+    "en": "state of research",
+    "level": "C1",
+    "category": "علم و فلسفه",
+    "example": "Der Forschungsstand wurde im ersten Kapitel zusammengefasst.",
+    "exampleFa": "وضعیت پژوهش‌ها در فصل اول خلاصه شد.",
+    "exampleEn": "The state of research was summarized in the first chapter.",
+    "article": "der",
+    "plural": "die Forschungsstände"
+  },
+  {
+    "word": "Ressourcenknappheit",
+    "ipa": "[ʁeˈsʊʁsn̩ˌknaphaɪ̯t]",
+    "fa": "کمبود منابع",
+    "en": "resource scarcity",
+    "level": "C1",
+    "category": "محیط‌زیست و انرژی",
+    "example": "Die Ressourcenknappheit zwingt zum Sparen.",
+    "exampleFa": "کمبود منابع ما را به صرفه‌جویی وادار می‌کند.",
+    "exampleEn": "Resource scarcity forces us to save.",
+    "article": "die"
+  },
+  {
+    "word": "Verhaltensänderung",
+    "ipa": "[fɛɐ̯ˈhaltn̩sˌʔɛndəʁʊŋ]",
+    "fa": "تغییر رفتار",
+    "en": "behavior change",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Eine dauerhafte Verhaltensänderung braucht Zeit.",
+    "exampleFa": "تغییر پایدار رفتار به زمان نیاز دارد.",
+    "exampleEn": "A lasting behavior change takes time.",
+    "plural": "die Verhaltensänderungen",
+    "article": "die"
+  },
+  {
+    "word": "Selbstwahrnehmung",
+    "ipa": "[ˈzɛlpstˌvaːɐ̯neːmʊŋ]",
+    "fa": "خودادراکی",
+    "en": "self-perception",
+    "level": "C1",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Die Selbstwahrnehmung beeinflusst das Selbstvertrauen.",
+    "exampleFa": "خودادراکی بر اعتمادبه‌نفس اثر می‌گذارد.",
+    "exampleEn": "Self-perception influences self-confidence.",
+    "article": "die",
+    "plural": "die Selbstwahrnehmungen"
+  },
+  {
+    "word": "Informationsflut",
+    "ipa": "[ɪnfoʁmaˈt͡si̯oːnsˌfluːt]",
+    "fa": "سیل اطلاعات",
+    "en": "information overload",
+    "level": "C1",
+    "category": "فناوری",
+    "example": "Die Informationsflut im Netz überfordert viele Nutzer.",
+    "exampleFa": "سیل اطلاعات در اینترنت بسیاری از کاربران را کلافه می‌کند.",
+    "exampleEn": "The flood of information online overwhelms many users.",
+    "article": "die",
+    "plural": "die Informationsfluten"
+  },
+  {
+    "word": "Benutzerfreundlichkeit",
+    "ipa": "[bəˈnʊt͡sɐˌfʁɔɪ̯ntlɪçkaɪ̯t]",
+    "fa": "کاربرپسندی",
+    "en": "user-friendliness",
+    "level": "C1",
+    "category": "فناوری",
+    "example": "Die Benutzerfreundlichkeit der App wurde gelobt.",
+    "exampleFa": "کاربرپسندی این اپ تحسین شد.",
+    "exampleEn": "The app's user-friendliness was praised.",
+    "article": "die"
+  },
+  {
+    "word": "Einwand",
+    "article": "der",
+    "plural": "die Einwände",
+    "ipa": "[ˈaɪ̯nvant]",
+    "fa": "اعتراض / ایراد",
+    "en": "objection",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Er erhob einen Einwand gegen den Vorschlag.",
+    "exampleFa": "او به آن پیشنهاد اعتراض کرد.",
+    "exampleEn": "He raised an objection to the proposal.",
+    "level": "C1"
+  },
+  {
+    "word": "Einschränkung",
+    "article": "die",
+    "plural": "die Einschränkungen",
+    "ipa": "[ˈaɪ̯nˌʃʁɛŋkʊŋ]",
+    "fa": "محدودیت",
+    "en": "restriction / limitation",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Diese Einschränkung gilt für alle.",
+    "exampleFa": "این محدودیت برای همه اعمال می‌شود.",
+    "exampleEn": "This restriction applies to everyone.",
+    "level": "C1"
+  },
+  {
+    "word": "Bewältigung",
+    "article": "die",
+    "ipa": "[bəˈvɛltɪɡʊŋ]",
+    "fa": "غلبه / مدیریت (بحران)",
+    "en": "coping / overcoming",
+    "category": "علم و فلسفه",
+    "example": "Die Bewältigung der Krise ist nicht leicht.",
+    "exampleFa": "مدیریت این بحران آسان نیست.",
+    "exampleEn": "Coping with the crisis is not easy.",
+    "level": "C1",
+    "plural": "die Bewältigungen"
+  },
+  {
+    "word": "Sachverhalt",
+    "article": "der",
+    "plural": "die Sachverhalte",
+    "ipa": "[ˈzaxfɛɐ̯ˌhalt]",
+    "fa": "موضوع / واقعیت امر",
+    "en": "facts of the matter",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Der Sachverhalt ist noch unklar.",
+    "exampleFa": "واقعیت ماجرا هنوز مشخص نیست.",
+    "exampleEn": "The facts of the matter are still unclear.",
+    "level": "C1"
+  },
+  {
+    "word": "Angelegenheit",
+    "article": "die",
+    "plural": "die Angelegenheiten",
+    "ipa": "[ˈanɡəˌleːɡn̩haɪ̯t]",
+    "fa": "موضوع / کار",
+    "en": "matter / affair",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Das ist meine Angelegenheit.",
+    "exampleFa": "این به خودم مربوط است.",
+    "exampleEn": "That is my own affair.",
+    "level": "C1"
+  },
+  {
+    "word": "Verordnung",
+    "article": "die",
+    "plural": "die Verordnungen",
+    "ipa": "[fɛɐ̯ˈʔɔʁdnʊŋ]",
+    "fa": "آیین‌نامه / مقررات",
+    "en": "regulation / decree",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Verordnung tritt morgen in Kraft.",
+    "exampleFa": "این آیین‌نامه از فردا لازم‌الاجرا می‌شود.",
+    "exampleEn": "The regulation comes into force tomorrow.",
+    "level": "C1"
+  },
+  {
+    "word": "Ermittlung",
+    "article": "die",
+    "plural": "die Ermittlungen",
+    "ipa": "[ɛɐ̯ˈmɪtlʊŋ]",
+    "fa": "تحقیقات (قضایی)",
+    "en": "investigation",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Die Ermittlungen dauern noch an.",
+    "exampleFa": "تحقیقات هنوز ادامه دارد.",
+    "exampleEn": "The investigation is still ongoing.",
+    "level": "C1"
+  },
+  {
+    "word": "Überlegung",
+    "article": "die",
+    "plural": "die Überlegungen",
+    "ipa": "[yːbɐˈleːɡʊŋ]",
+    "fa": "ملاحظه / تأمل",
+    "en": "consideration / reflection",
+    "category": "علم و فلسفه",
+    "example": "Nach langer Überlegung sagte er zu.",
+    "exampleFa": "او پس از تأمل طولانی موافقت کرد.",
+    "exampleEn": "After long consideration, he agreed.",
+    "level": "C1"
+  },
+  {
+    "word": "Feststellung",
+    "article": "die",
+    "plural": "die Feststellungen",
+    "ipa": "[ˈfɛstˌʃtɛlʊŋ]",
+    "fa": "احراز / نتیجه‌گیری",
+    "en": "finding / determination",
+    "category": "علم و فلسفه",
+    "example": "Diese Feststellung überraschte alle.",
+    "exampleFa": "این نتیجه‌گیری همه را شگفت‌زده کرد.",
+    "exampleEn": "This finding surprised everyone.",
+    "level": "C1"
+  },
+  {
+    "word": "Beobachtung",
+    "article": "die",
+    "plural": "die Beobachtungen",
+    "ipa": "[bəˈʔoːbaxtʊŋ]",
+    "fa": "مشاهده",
+    "en": "observation",
+    "category": "علم و فلسفه",
+    "example": "Die Beobachtung dauerte zwei Stunden.",
+    "exampleFa": "مشاهده دو ساعت طول کشید.",
+    "exampleEn": "The observation lasted two hours.",
+    "level": "C1"
+  },
+  {
+    "word": "Auswirkung",
+    "article": "die",
+    "plural": "die Auswirkungen",
+    "ipa": "[ˈaʊ̯sˌvɪʁkʊŋ]",
+    "fa": "پیامد / اثر",
+    "en": "effect / consequence",
+    "category": "علم و فلسفه",
+    "example": "Die Entscheidung hat große Auswirkungen.",
+    "exampleFa": "این تصمیم پیامدهای بزرگی دارد.",
+    "exampleEn": "The decision has major consequences.",
+    "level": "C1"
   }
 ]

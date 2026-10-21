@@ -778,24 +778,18 @@ const PLURAL_OVERRIDES = {
 };
 
 function guessPlural(word) {
+  // Conservative by design: a missing plural is better than a wrong one.
+  // Only rules that hold (near-)always are applied; anything else returns null.
   if (PLURAL_OVERRIDES[word]) return PLURAL_OVERRIDES[word];
   const m = word.match(/^(der|die|das)\s+(.+)$/i);
   if (!m) return null;
   const article = m[1].toLowerCase();
   const noun = m[2];
-  // uncountable-ish / already plural-looking
-  if (/heit$|keit$|ung$|schaft$|tion$|sion$/i.test(noun)) return `die ${noun}en`.replace(/een$/, "en");
-  if (/ung$/i.test(noun)) return `die ${noun}en`;
-  if (/heit$|keit$/i.test(noun)) return `die ${noun}en`;
-  if (/in$/i.test(noun) && article === "die") return `die ${noun}nen`;
-  if (/e$/i.test(noun)) return `die ${noun}n`;
-  if (/el$|er$|en$/i.test(noun) && article !== "die") return `die ${noun}`; // many neutral/masc no change
   if (/chen$|lein$/i.test(noun)) return `die ${noun}`;
-  if (/um$/i.test(noun)) return `die ${noun.slice(0, -2)}en`;
-  if (/us$/i.test(noun)) return `die ${noun}se`;
-  if (article === "die") return `die ${noun}en`;
-  if (article === "das") return `die ${noun}er`; // imperfect but better than nothing for practice pool filter
-  if (article === "der") return `die ${noun}e`;
+  if (article === "die" && /in$/i.test(noun)) return `die ${noun}nen`;
+  if (article === "die" && /(ung|heit|keit|schaft|tion|sion|tät)$/i.test(noun)) return `die ${noun}en`;
+  if (article === "die" && /e$/i.test(noun)) return `die ${noun}n`;
+  if (article === "die" && /(el|er)$/i.test(noun)) return `die ${noun}n`;
   return null;
 }
 
@@ -805,11 +799,11 @@ function makeExample(w) {
   const en = w.en || "";
   const cat = w.category || "";
 
-  if (/^(der|die|das)\s+/i.test(word)) {
+  if (w.article) {
     return {
-      example: `Hier ist ${word}.`,
+      example: `Hier ist ${w.article} ${word}.`,
       exampleFa: `اینجا ${fa} است.`,
-      exampleEn: `Here is ${en}.`,
+      exampleEn: `Here is the ${en.replace(/^the\s+/i, "")}.`,
     };
   }
   if (cat.includes("افعال") || /en$|eln$|ern$/i.test(word) && !/\s/.test(word) && word[0] === word[0].toLowerCase()) {
@@ -834,11 +828,7 @@ function makeExample(w) {
       exampleEn: en,
     };
   }
-  return {
-    example: `Ich lerne das Wort „${word}“.`,
-    exampleFa: `من واژه «${fa || word}» را یاد می‌گیرم.`,
-    exampleEn: `I am learning the word “${word}”.`,
-  };
+  return null; // no safe frame for this entry — leave the example empty
 }
 
 function enrichVocabFile(filePath) {
@@ -848,11 +838,14 @@ function enrichVocabFile(filePath) {
   const out = list.map((w) => {
     const next = { ...w };
     if (!next.example) {
-      Object.assign(next, makeExample(w));
-      examples++;
+      const made = makeExample(w);
+      if (made) {
+        Object.assign(next, made);
+        examples++;
+      }
     }
     if (!next.plural) {
-      const pl = guessPlural(w.word);
+      const pl = guessPlural(w.article ? `${w.article} ${w.word}` : w.word);
       if (pl) {
         next.plural = pl;
         if (!PLURAL_OVERRIDES[w.word]) next.pluralNote = "تقریبی — برای تمرین؛ در موارد بی‌قاعده ممکن است فرق کند";
@@ -900,11 +893,13 @@ function main() {
     if (!existing.has(v.infinitive)) core.verbs.push(v);
   }
 
-  core.dialogues = DIALOGUES;
-  core.wechselExercises = WECHSEL_ITEMS;
-  core.dictation = DICTATION;
-  core.placementTest = PLACEMENT;
-  core.studyPlan = buildStudyPlan();
+  // The embedded lists are SEEDS: they only fill a section that is missing/empty.
+  // They must never overwrite curated core.json content.
+  if (!core.dialogues || !core.dialogues.length) core.dialogues = DIALOGUES;
+  if (!core.wechselExercises || !core.wechselExercises.length) core.wechselExercises = WECHSEL_ITEMS;
+  if (!core.dictation || !core.dictation.length) core.dictation = DICTATION;
+  if (!core.placementTest || !core.placementTest.length) core.placementTest = PLACEMENT;
+  if (!core.studyPlan || !core.studyPlan.length) core.studyPlan = buildStudyPlan();
 
   writeJson(corePath, core);
 

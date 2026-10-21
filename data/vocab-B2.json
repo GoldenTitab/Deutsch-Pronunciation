@@ -6,11 +6,11 @@
     "en": "anxiety disorder",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Angststörung.",
-    "exampleFa": "احساس می‌کنم اختلال اضطراب هستم.",
-    "exampleEn": "I feel anxiety disorder.",
     "plural": "die Angststörungen",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Angststörung.",
+    "exampleFa": "این اختلال اضطراب است.",
+    "exampleEn": "This is the anxiety disorder."
   },
   {
     "word": "Bewusstsein",
@@ -19,10 +19,11 @@
     "en": "consciousness",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Bewusstsein.",
-    "exampleFa": "احساس می‌کنم آگاهی هستم.",
-    "exampleEn": "I feel consciousness.",
-    "plural": "die Bewusstseinnen"
+    "plural": "die Bewusstseine",
+    "article": "das",
+    "example": "Das ist das Bewusstsein.",
+    "exampleFa": "این آگاهی است.",
+    "exampleEn": "This is the consciousness."
   },
   {
     "word": "Burnout",
@@ -31,11 +32,11 @@
     "en": "burnout",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Burnout.",
-    "exampleFa": "احساس می‌کنم فرسودگی شغلی هستم.",
-    "exampleEn": "I feel burnout.",
-    "plural": "die Burnoute",
-    "enNote": "Possible cognate with English “burnout”."
+    "plural": "die Burnouts",
+    "article": "das",
+    "example": "Das ist das Burnout.",
+    "exampleFa": "این فرسودگی شغلی است.",
+    "exampleEn": "This is the burnout."
   },
   {
     "word": "Depression",
@@ -44,12 +45,11 @@
     "en": "depression",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Depression.",
-    "exampleFa": "احساس می‌کنم افسردگی هستم.",
-    "exampleEn": "I feel depression.",
     "plural": "die Depressionen",
-    "enNote": "Possible cognate with English “depression”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Depression.",
+    "exampleFa": "این افسردگی است.",
+    "exampleEn": "This is the depression."
   },
   {
     "word": "Emotion",
@@ -58,12 +58,11 @@
     "en": "emotion",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Emotion.",
-    "exampleFa": "احساس می‌کنم احساس (هیجان) هستم.",
-    "exampleEn": "I feel emotion.",
     "plural": "die Emotionen",
-    "enNote": "Possible cognate with English “emotion”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Emotion.",
+    "exampleFa": "این احساس است.",
+    "exampleEn": "This is the emotion."
   },
   {
     "word": "Emotionsregulation",
@@ -72,12 +71,11 @@
     "en": "emotion regulation",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Emotionsregulation.",
-    "exampleFa": "احساس می‌کنم تنظیم هیجانات هستم.",
-    "exampleEn": "I feel emotion regulation.",
     "plural": "die Emotionsregulationen",
-    "enNote": "Possible cognate with English “emotion regulation”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Emotionsregulation.",
+    "exampleFa": "این تنظیم هیجانات است.",
+    "exampleEn": "This is the emotion regulation."
   },
   {
     "word": "Fähigkeit",
@@ -86,11 +84,11 @@
     "en": "ability / skill",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Fähigkeit.",
-    "exampleFa": "احساس می‌کنم توانایی هستم.",
-    "exampleEn": "I feel ability / skill.",
     "plural": "die Fähigkeiten",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Fähigkeit.",
+    "exampleFa": "این توانایی است.",
+    "exampleEn": "This is the ability."
   },
   {
     "word": "Identität",
@@ -99,12 +97,11 @@
     "en": "identity",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Identität.",
-    "exampleFa": "احساس می‌کنم هویت هستم.",
-    "exampleEn": "I feel identity.",
-    "plural": "die Identitäte",
-    "enNote": "Possible cognate with English “identity”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Identität.",
+    "exampleFa": "این هویت است.",
+    "exampleEn": "This is the identity.",
+    "plural": "die Identitäten"
   },
   {
     "word": "Individuum",
@@ -113,12 +110,11 @@
     "en": "individual",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Individuum.",
-    "exampleFa": "احساس می‌کنم فرد هستم.",
-    "exampleEn": "I feel individual.",
     "plural": "die Individuen",
-    "enNote": "Possible cognate with English “individual”.",
-    "article": "das"
+    "article": "das",
+    "example": "Das ist das Individuum.",
+    "exampleFa": "این فرد است.",
+    "exampleEn": "This is the individual."
   },
   {
     "word": "Intelligenz",
@@ -127,12 +123,11 @@
     "en": "intelligence",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Intelligenz.",
-    "exampleFa": "احساس می‌کنم هوش هستم.",
-    "exampleEn": "I feel intelligence.",
-    "plural": "die Intelligenze",
-    "enNote": "Possible cognate with English “intelligence”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Intelligenz.",
+    "exampleFa": "این هوش است.",
+    "exampleEn": "This is the intelligence.",
+    "plural": "die Intelligenzen"
   },
   {
     "word": "Kognition",
@@ -141,11 +136,11 @@
     "en": "cognition",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Kognition.",
-    "exampleFa": "احساس می‌کنم شناخت (ذهنی) هستم.",
-    "exampleEn": "I feel cognition.",
     "plural": "die Kognitionen",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Kognition.",
+    "exampleFa": "این شناخت است.",
+    "exampleEn": "This is the cognition."
   },
   {
     "word": "Motivation",
@@ -154,12 +149,11 @@
     "en": "motivation",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Motivation.",
-    "exampleFa": "احساس می‌کنم انگیزه هستم.",
-    "exampleEn": "I feel motivation.",
     "plural": "die Motivationen",
-    "enNote": "Possible cognate with English “motivation”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Motivation.",
+    "exampleFa": "این انگیزه است.",
+    "exampleEn": "This is the motivation."
   },
   {
     "word": "Persönlichkeit",
@@ -168,12 +162,11 @@
     "en": "personality",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Persönlichkeit.",
-    "exampleFa": "احساس می‌کنم شخصیت هستم.",
-    "exampleEn": "I feel personality.",
     "plural": "die Persönlichkeiten",
-    "enNote": "Possible cognate with English “personality”.",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Persönlichkeit.",
+    "exampleFa": "این شخصیت است.",
+    "exampleEn": "This is the personality."
   },
   {
     "word": "Psychotherapie",
@@ -182,11 +175,11 @@
     "en": "psychotherapy",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Psychotherapie.",
-    "exampleFa": "احساس می‌کنم روان‌درمانی هستم.",
-    "exampleEn": "I feel psychotherapy.",
     "plural": "die Psychotherapien",
-    "enNote": "Possible cognate with English “psychotherapy”."
+    "article": "die",
+    "example": "Das ist die Psychotherapie.",
+    "exampleFa": "این روان‌درمانی است.",
+    "exampleEn": "This is the psychotherapy."
   },
   {
     "word": "Seele",
@@ -195,11 +188,11 @@
     "en": "soul / psyche",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Seele.",
-    "exampleFa": "احساس می‌کنم روان (روح) هستم.",
-    "exampleEn": "I feel soul / psyche.",
     "plural": "die Seelen",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Seele.",
+    "exampleFa": "این روان است.",
+    "exampleEn": "This is the soul."
   },
   {
     "word": "Selbstwirksamkeit",
@@ -208,11 +201,11 @@
     "en": "self-efficacy",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Selbstwirksamkeit.",
-    "exampleFa": "احساس می‌کنم خودکارآمدی هستم.",
-    "exampleEn": "I feel self-efficacy.",
     "plural": "die Selbstwirksamkeiten",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Selbstwirksamkeit.",
+    "exampleFa": "این خودکارآمدی است.",
+    "exampleEn": "This is the self-efficacy."
   },
   {
     "word": "Therapie",
@@ -221,11 +214,11 @@
     "en": "therapy",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Therapie.",
-    "exampleFa": "احساس می‌کنم درمان هستم.",
-    "exampleEn": "I feel therapy.",
     "plural": "die Therapien",
-    "enNote": "Possible cognate with English “therapy”."
+    "article": "die",
+    "example": "Das ist die Therapie.",
+    "exampleFa": "این درمان است.",
+    "exampleEn": "This is the therapy."
   },
   {
     "word": "Trauma",
@@ -234,12 +227,11 @@
     "en": "trauma",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Trauma.",
-    "exampleFa": "احساس می‌کنم تروما هستم.",
-    "exampleEn": "I feel trauma.",
-    "plural": "die Traumae",
-    "enNote": "Possible cognate with English “trauma”.",
-    "article": "das"
+    "plural": "die Traumen",
+    "article": "das",
+    "example": "Das ist das Trauma.",
+    "exampleFa": "این تروما است.",
+    "exampleEn": "This is the trauma."
   },
   {
     "word": "Verhalten",
@@ -248,11 +240,11 @@
     "en": "behavior",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Verhalten.",
-    "exampleFa": "احساس می‌کنم رفتار هستم.",
-    "exampleEn": "I feel behavior.",
     "plural": "die Verhalten",
-    "article": "der"
+    "article": "das",
+    "example": "Das ist der Verhalten.",
+    "exampleFa": "این رفتار است.",
+    "exampleEn": "This is the behavior."
   },
   {
     "word": "Wahrnehmung",
@@ -261,11 +253,11 @@
     "en": "perception",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Wahrnehmung.",
-    "exampleFa": "احساس می‌کنم ادراک / درک هستم.",
-    "exampleEn": "I feel perception.",
     "plural": "die Wahrnehmungen",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Wahrnehmung.",
+    "exampleFa": "این ادراک است.",
+    "exampleEn": "This is the perception."
   },
   {
     "word": "Überzeugung",
@@ -274,11 +266,11 @@
     "en": "conviction",
     "level": "B2",
     "category": "روان‌شناسی و سلامت روان",
-    "example": "Ich fühle mich Überzeugung.",
-    "exampleFa": "احساس می‌کنم اعتقاد هستم.",
-    "exampleEn": "I feel conviction.",
     "plural": "die Überzeugungen",
-    "article": "die"
+    "article": "die",
+    "example": "Das ist die Überzeugung.",
+    "exampleFa": "این اعتقاد است.",
+    "exampleEn": "This is the conviction."
   },
   {
     "word": "Abfall",
@@ -287,11 +279,11 @@
     "en": "waste / rubbish",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Abfall ist interessant.",
-    "exampleFa": "زباله جالب است.",
-    "exampleEn": "The waste / rubbish is interesting.",
-    "plural": "die Abfälle",
-    "pluralNote": "با Umlaut"
+    "example": "Das ist der Abfall.",
+    "exampleFa": "این زباله است.",
+    "exampleEn": "This is the waste.",
+    "article": "der",
+    "plural": "die Abfälle"
   },
   {
     "word": "Abfalltrennung",
@@ -300,9 +292,9 @@
     "en": "waste separation",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Abfalltrennung ist interessant.",
-    "exampleFa": "تفکیک زباله جالب است.",
-    "exampleEn": "The waste separation is interesting.",
+    "example": "Das ist die Abfalltrennung.",
+    "exampleFa": "این تفکیک زباله است.",
+    "exampleEn": "This is the waste separation.",
     "plural": "die Abfalltrennungen",
     "article": "die"
   },
@@ -313,9 +305,10 @@
     "en": "species protection",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Artenschutz ist interessant.",
-    "exampleFa": "حفاظت از گونه‌ها جالب است.",
-    "exampleEn": "The species protection is interesting."
+    "example": "Das ist der Artenschutz.",
+    "exampleFa": "این حفاظت از گونه‌ها است.",
+    "exampleEn": "This is the species protection.",
+    "article": "der"
   },
   {
     "word": "Biodiversität",
@@ -324,12 +317,11 @@
     "en": "biodiversity",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Biodiversität ist interessant.",
-    "exampleFa": "تنوع زیستی جالب است.",
-    "exampleEn": "The biodiversity is interesting.",
-    "plural": "die Biodiversitäte",
-    "enNote": "Possible cognate with English “biodiversity”.",
-    "article": "die"
+    "example": "Das ist die Biodiversität.",
+    "exampleFa": "این تنوع زیستی است.",
+    "exampleEn": "This is the biodiversity.",
+    "article": "die",
+    "plural": "die Biodiversitäten"
   },
   {
     "word": "CO2-Emission",
@@ -338,9 +330,9 @@
     "en": "CO2 emission",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das CO2-Emission ist interessant.",
-    "exampleFa": "انتشار دی‌اکسید کربن جالب است.",
-    "exampleEn": "The CO2 emission is interesting.",
+    "example": "Das ist die CO2-Emission.",
+    "exampleFa": "این انتشار دی‌اکسید کربن است.",
+    "exampleEn": "This is the CO2 emission.",
     "plural": "die CO2-Emissionen",
     "article": "die"
   },
@@ -351,10 +343,11 @@
     "en": "carbon footprint",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das CO2-Fußabdruck ist interessant.",
-    "exampleFa": "ردپای کربن جالب است.",
-    "exampleEn": "The carbon footprint is interesting.",
-    "plural": "die CO2-Fußabdrucke"
+    "plural": "die CO2-Fußabdrücke",
+    "article": "der",
+    "example": "Der CO2-Fußabdruck ist groß.",
+    "exampleFa": "ردپای کربن بزرگ است.",
+    "exampleEn": "The carbon footprint is large."
   },
   {
     "word": "Emission",
@@ -363,11 +356,10 @@
     "en": "emission",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Emission ist interessant.",
-    "exampleFa": "انتشار (گاز) جالب است.",
-    "exampleEn": "The emission is interesting.",
+    "example": "Das ist die Emission.",
+    "exampleFa": "این انتشار (گاز) است.",
+    "exampleEn": "This is the emission.",
     "plural": "die Emissionen",
-    "enNote": "Possible cognate with English “emission”.",
     "article": "die"
   },
   {
@@ -377,11 +369,11 @@
     "en": "energy",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Energie ist interessant.",
-    "exampleFa": "انرژی جالب است.",
-    "exampleEn": "The energy is interesting.",
+    "example": "Das ist die Energie.",
+    "exampleFa": "این انرژی است.",
+    "exampleEn": "This is the energy.",
     "plural": "die Energien",
-    "enNote": "Possible cognate with English “energy”."
+    "article": "die"
   },
   {
     "word": "Energiewende",
@@ -390,11 +382,10 @@
     "en": "energy transition",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Energiewende ist interessant.",
-    "exampleFa": "گذار انرژی جالب است.",
-    "exampleEn": "The energy transition is interesting.",
+    "example": "Das ist die Energiewende.",
+    "exampleFa": "این گذار انرژی است.",
+    "exampleEn": "This is the energy transition.",
     "plural": "die Energiewenden",
-    "enNote": "Possible cognate with English “energy transition”.",
     "article": "die"
   },
   {
@@ -404,9 +395,9 @@
     "en": "disposal",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Entsorgung ist interessant.",
-    "exampleFa": "دفع (زباله) جالب است.",
-    "exampleEn": "The disposal is interesting.",
+    "example": "Das ist die Entsorgung.",
+    "exampleFa": "این دفع (زباله) است.",
+    "exampleEn": "This is the disposal.",
     "plural": "die Entsorgungen",
     "article": "die"
   },
@@ -417,9 +408,9 @@
     "en": "global warming",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Erderwärmung ist interessant.",
-    "exampleFa": "گرمایش زمین جالب است.",
-    "exampleEn": "The global warming is interesting.",
+    "example": "Das ist die Erderwärmung.",
+    "exampleFa": "این گرمایش زمین است.",
+    "exampleEn": "This is the global warming.",
     "plural": "die Erderwärmungen",
     "article": "die"
   },
@@ -430,9 +421,9 @@
     "en": "renewable",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das erneuerbar ist interessant.",
-    "exampleFa": "تجدیدپذیر جالب است.",
-    "exampleEn": "The renewable is interesting."
+    "example": "Die Energie ist erneuerbar.",
+    "exampleFa": "این انرژی تجدیدپذیر است.",
+    "exampleEn": "The energy is renewable."
   },
   {
     "word": "fossil",
@@ -441,10 +432,9 @@
     "en": "fossil",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das fossil ist interessant.",
-    "exampleFa": "فسیلی جالب است.",
-    "exampleEn": "The fossil is interesting.",
-    "enNote": "Possible cognate with English “fossil”."
+    "example": "Das ist ein fossiler Brennstoff.",
+    "exampleFa": "این یک سوخت فسیلی است.",
+    "exampleEn": "That is a fossil fuel."
   },
   {
     "word": "Klima",
@@ -453,10 +443,10 @@
     "en": "climate",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Klima ist interessant.",
-    "exampleFa": "آب و هوا (اقلیم) جالب است.",
-    "exampleEn": "The climate is interesting.",
-    "plural": "die Klimae",
+    "example": "Das ist das Klima.",
+    "exampleFa": "این آب و هوا (اقلیم) است.",
+    "exampleEn": "This is the climate.",
+    "plural": "die Klimas",
     "article": "das"
   },
   {
@@ -466,10 +456,11 @@
     "en": "climate protection",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Klimaschutz ist interessant.",
-    "exampleFa": "حفاظت از اقلیم جالب است.",
-    "exampleEn": "The climate protection is interesting.",
-    "plural": "die Klimaschutze"
+    "example": "Das ist der Klimaschutz.",
+    "exampleFa": "این حفاظت از اقلیم است.",
+    "exampleEn": "This is the climate protection.",
+    "plural": "die Klimaschutze",
+    "article": "der"
   },
   {
     "word": "Klimawandel",
@@ -478,9 +469,9 @@
     "en": "climate change",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Klimawandel ist interessant.",
-    "exampleFa": "تغییر اقلیم جالب است.",
-    "exampleEn": "The climate change is interesting.",
+    "example": "Das ist der Klimawandel.",
+    "exampleFa": "این تغییر اقلیم است.",
+    "exampleEn": "This is the climate change.",
     "plural": "die Klimawandel",
     "article": "der"
   },
@@ -491,9 +482,9 @@
     "en": "circular economy",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Kreislaufwirtschaft ist interessant.",
-    "exampleFa": "اقتصاد چرخشی جالب است.",
-    "exampleEn": "The circular economy is interesting.",
+    "example": "Das ist die Kreislaufwirtschaft.",
+    "exampleFa": "این اقتصاد چرخشی است.",
+    "exampleEn": "This is the circular economy.",
     "plural": "die Kreislaufwirtschaften",
     "article": "die"
   },
@@ -504,10 +495,11 @@
     "en": "trash / garbage",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Müll ist interessant.",
-    "exampleFa": "زباله (عامیانه) جالب است.",
-    "exampleEn": "The trash / garbage is interesting.",
-    "plural": "die Mülle"
+    "example": "Das ist der Müll.",
+    "exampleFa": "این زباله (عامیانه) است.",
+    "exampleEn": "This is the trash.",
+    "plural": "die Mülle",
+    "article": "der"
   },
   {
     "word": "nachhaltig",
@@ -516,9 +508,9 @@
     "en": "sustainable",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das nachhaltig ist interessant.",
-    "exampleFa": "پایدار جالب است.",
-    "exampleEn": "The sustainable is interesting."
+    "example": "Das Produkt ist nachhaltig.",
+    "exampleFa": "این محصول پایدار است.",
+    "exampleEn": "The product is sustainable."
   },
   {
     "word": "Nachhaltigkeit",
@@ -527,9 +519,9 @@
     "en": "sustainability",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Nachhaltigkeit ist interessant.",
-    "exampleFa": "پایداری جالب است.",
-    "exampleEn": "The sustainability is interesting.",
+    "example": "Das ist die Nachhaltigkeit.",
+    "exampleFa": "این پایداری است.",
+    "exampleEn": "This is the sustainability.",
     "plural": "die Nachhaltigkeiten",
     "article": "die"
   },
@@ -540,9 +532,9 @@
     "en": "sustainable development goals",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Nachhaltigkeitsziele ist interessant.",
-    "exampleFa": "اهداف توسعه پایدار جالب است.",
-    "exampleEn": "The sustainable development goals is interesting.",
+    "example": "Das ist die Nachhaltigkeitsziele.",
+    "exampleFa": "این اهداف توسعه پایدار است.",
+    "exampleEn": "This is the sustainable development goals.",
     "plural": "die Nachhaltigkeitszielen",
     "article": "die"
   },
@@ -553,12 +545,11 @@
     "en": "recycling",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Recycling ist interessant.",
-    "exampleFa": "بازیافت جالب است.",
-    "exampleEn": "The recycling is interesting.",
-    "plural": "die Recyclinge",
-    "enNote": "Possible cognate with English “recycling”.",
-    "article": "der"
+    "example": "Das ist das Recycling.",
+    "exampleFa": "این بازیافت است.",
+    "exampleEn": "This is the recycling.",
+    "plural": "die Recyclings",
+    "article": "das"
   },
   {
     "word": "Ressource",
@@ -567,9 +558,9 @@
     "en": "resource",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Ressource ist interessant.",
-    "exampleFa": "منبع (طبیعی) جالب است.",
-    "exampleEn": "The resource is interesting.",
+    "example": "Das ist die Ressource.",
+    "exampleFa": "این منبع (طبیعی) است.",
+    "exampleEn": "This is the resource.",
     "plural": "die Ressourcen",
     "article": "die"
   },
@@ -580,11 +571,10 @@
     "en": "solar power plant",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Solaranlage ist interessant.",
-    "exampleFa": "نیروگاه خورشیدی جالب است.",
-    "exampleEn": "The solar power plant is interesting.",
+    "example": "Das ist die Solaranlage.",
+    "exampleFa": "این نیروگاه خورشیدی است.",
+    "exampleEn": "This is the solar power plant.",
     "plural": "die Solaranlagen",
-    "enNote": "Possible cognate with English “solar power plant”.",
     "article": "die"
   },
   {
@@ -594,10 +584,11 @@
     "en": "greenhouse effect",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Treibhauseffekt ist interessant.",
-    "exampleFa": "اثر گلخانه‌ای جالب است.",
-    "exampleEn": "The greenhouse effect is interesting.",
-    "plural": "die Treibhauseffekte"
+    "example": "Das ist der Treibhauseffekt.",
+    "exampleFa": "این اثر گلخانه‌ای است.",
+    "exampleEn": "This is the greenhouse effect.",
+    "plural": "die Treibhauseffekte",
+    "article": "der"
   },
   {
     "word": "Treibhausgas",
@@ -606,10 +597,11 @@
     "en": "greenhouse gas",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Treibhausgas ist interessant.",
-    "exampleFa": "گاز گلخانه‌ای جالب است.",
-    "exampleEn": "The greenhouse gas is interesting.",
-    "plural": "die Treibhausgase"
+    "example": "Das ist das Treibhausgas.",
+    "exampleFa": "این گاز گلخانه‌ای است.",
+    "exampleEn": "This is the greenhouse gas.",
+    "plural": "die Treibhausgase",
+    "article": "das"
   },
   {
     "word": "Umwelt",
@@ -618,10 +610,11 @@
     "en": "environment",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Umwelt ist interessant.",
-    "exampleFa": "محیط زیست جالب است.",
-    "exampleEn": "The environment is interesting.",
-    "plural": "die Umwelte"
+    "example": "Das ist die Umwelt.",
+    "exampleFa": "این محیط زیست است.",
+    "exampleEn": "This is the environment.",
+    "plural": "die Umwelten",
+    "article": "die"
   },
   {
     "word": "Umweltschutz",
@@ -630,10 +623,11 @@
     "en": "environmental protection",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Umweltschutz ist interessant.",
-    "exampleFa": "حفاظت محیط زیست جالب است.",
-    "exampleEn": "The environmental protection is interesting.",
-    "plural": "die Umweltschutze"
+    "example": "Das ist der Umweltschutz.",
+    "exampleFa": "این حفاظت محیط زیست است.",
+    "exampleEn": "This is the environmental protection.",
+    "plural": "die Umweltschutze",
+    "article": "der"
   },
   {
     "word": "Umweltverschmutzung",
@@ -642,9 +636,9 @@
     "en": "environmental pollution",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Umweltverschmutzung ist interessant.",
-    "exampleFa": "آلودگی محیط زیست جالب است.",
-    "exampleEn": "The environmental pollution is interesting.",
+    "example": "Das ist die Umweltverschmutzung.",
+    "exampleFa": "این آلودگی محیط زیست است.",
+    "exampleEn": "This is the environmental pollution.",
     "plural": "die Umweltverschmutzungen",
     "article": "die"
   },
@@ -655,9 +649,9 @@
     "en": "pollution",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Verschmutzung ist interessant.",
-    "exampleFa": "آلودگی جالب است.",
-    "exampleEn": "The pollution is interesting.",
+    "example": "Das ist die Verschmutzung.",
+    "exampleFa": "این آلودگی است.",
+    "exampleEn": "This is the pollution.",
     "plural": "die Verschmutzungen",
     "article": "die"
   },
@@ -668,10 +662,10 @@
     "en": "wind power",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Windkraft ist interessant.",
-    "exampleFa": "انرژی باد جالب است.",
-    "exampleEn": "The wind power is interesting.",
-    "enNote": "Possible cognate with English “wind power”."
+    "example": "Das ist die Windkraft.",
+    "exampleFa": "این انرژی باد است.",
+    "exampleEn": "This is the wind power.",
+    "article": "die"
   },
   {
     "word": "Zukunftsfähigkeit",
@@ -680,9 +674,10 @@
     "en": "future viability",
     "level": "B2",
     "category": "محیط‌زیست و انرژی",
-    "example": "Der/Die/Das Zukunftsfähigkeit ist interessant.",
-    "exampleFa": "توانایی آینده‌سازی جالب است.",
-    "exampleEn": "The future viability is interesting."
+    "example": "Das ist die Zukunftsfähigkeit.",
+    "exampleFa": "این توانایی آینده‌سازی است.",
+    "exampleEn": "This is the future viability.",
+    "article": "die"
   },
   {
     "word": "aktualisieren",
@@ -710,9 +705,9 @@
     "en": "updated",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze aktualisiert jeden Tag.",
-    "exampleFa": "هر روز از به‌روزرسانی‌شده استفاده می‌کنم.",
-    "exampleEn": "I use updated every day."
+    "example": "Die App ist aktualisiert.",
+    "exampleFa": "اپ به‌روز شده است.",
+    "exampleEn": "The app is updated."
   },
   {
     "word": "Anrufbeantworter",
@@ -721,9 +716,9 @@
     "en": "answering machine / voicemail",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Anrufbeantworter jeden Tag.",
-    "exampleFa": "هر روز از پیام‌گیر تلفن استفاده می‌کنم.",
-    "exampleEn": "I use answering machine / voicemail every day.",
+    "example": "Das ist der Anrufbeantworter.",
+    "exampleFa": "این پیام‌گیر تلفن است.",
+    "exampleEn": "This is the answering machine.",
     "plural": "die Anrufbeantworter",
     "article": "der"
   },
@@ -734,11 +729,10 @@
     "en": "automation",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Automatisierung jeden Tag.",
-    "exampleFa": "هر روز از اتوماسیون استفاده می‌کنم.",
-    "exampleEn": "I use automation every day.",
+    "example": "Das ist die Automatisierung.",
+    "exampleFa": "این اتوماسیون است.",
+    "exampleEn": "This is the automation.",
     "plural": "die Automatisierungen",
-    "enNote": "Possible cognate with English “automation”.",
     "article": "die"
   },
   {
@@ -748,11 +742,9 @@
     "en": "cybercrime",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Cyberkriminalität jeden Tag.",
-    "exampleFa": "هر روز از جرایم سایبری استفاده می‌کنم.",
-    "exampleEn": "I use cybercrime every day.",
-    "plural": "die Cyberkriminalitäte",
-    "enNote": "Possible cognate with English “cybercrime”.",
+    "example": "Das ist die Cyberkriminalität.",
+    "exampleFa": "این جرایم سایبری است.",
+    "exampleEn": "This is the cybercrime.",
     "article": "die"
   },
   {
@@ -762,9 +754,9 @@
     "en": "to put through (a call)",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze durchstellen jeden Tag.",
-    "exampleFa": "هر روز از وصل کردن تماس (تلفن) استفاده می‌کنم.",
-    "exampleEn": "I use to put through (a call) every day."
+    "example": "Ich stelle Sie durch.",
+    "exampleFa": "شما را وصل می‌کنم.",
+    "exampleEn": "I will put you through."
   },
   {
     "word": "Durchwahlnummer",
@@ -773,9 +765,9 @@
     "en": "direct-dial number / extension",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Durchwahlnummer jeden Tag.",
-    "exampleFa": "هر روز از شماره داخلی تلفن استفاده می‌کنم.",
-    "exampleEn": "I use direct-dial number / extension every day.",
+    "example": "Das ist der Durchwahlnummer.",
+    "exampleFa": "این شماره داخلی تلفن است.",
+    "exampleEn": "This is the direct-dial number.",
     "plural": "die Durchwahlnummer",
     "article": "der"
   },
@@ -786,9 +778,9 @@
     "en": "email address",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze E-Mail-Adresse jeden Tag.",
-    "exampleFa": "هر روز از آدرس ایمیل استفاده می‌کنم.",
-    "exampleEn": "I use email address every day.",
+    "example": "Das ist die E-Mail-Adresse.",
+    "exampleFa": "این آدرس ایمیل است.",
+    "exampleEn": "This is the email address.",
     "plural": "die E-Mail-Adressen",
     "article": "die"
   },
@@ -799,9 +791,9 @@
     "en": "remote control",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Fernbedienung jeden Tag.",
-    "exampleFa": "هر روز از کنترل از راه دور استفاده می‌کنم.",
-    "exampleEn": "I use remote control every day.",
+    "example": "Das ist die Fernbedienung.",
+    "exampleFa": "این کنترل از راه دور است.",
+    "exampleEn": "This is the remote control.",
     "plural": "die Fernbedienungen",
     "article": "die"
   },
@@ -812,9 +804,9 @@
     "en": "to function / work",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze funktionieren jeden Tag.",
-    "exampleFa": "هر روز از کار کردن (دستگاه) استفاده می‌کنم.",
-    "exampleEn": "I use to function / work every day."
+    "example": "Die App funktioniert gut.",
+    "exampleFa": "این اپ خوب کار می‌کند.",
+    "exampleEn": "The app works well."
   },
   {
     "word": "herunterladen",
@@ -823,9 +815,9 @@
     "en": "to download",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze herunterladen jeden Tag.",
-    "exampleFa": "هر روز از دانلود کردن استفاده می‌کنم.",
-    "exampleEn": "I use to download every day."
+    "example": "Ich lade das Video herunter.",
+    "exampleFa": "من ویدیو را دانلود می‌کنم.",
+    "exampleEn": "I download the video."
   },
   {
     "word": "installieren",
@@ -834,10 +826,9 @@
     "en": "to install",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze installieren jeden Tag.",
-    "exampleFa": "هر روز از نصب کردن استفاده می‌کنم.",
-    "exampleEn": "I use to install every day.",
-    "enNote": "Possible cognate with English “to install”."
+    "example": "Er installiert die App.",
+    "exampleFa": "او اپ را نصب می‌کند.",
+    "exampleEn": "He installs the app."
   },
   {
     "word": "Internetseite",
@@ -846,9 +837,9 @@
     "en": "website",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Internetseite jeden Tag.",
-    "exampleFa": "هر روز از وب‌سایت استفاده می‌کنم.",
-    "exampleEn": "I use website every day.",
+    "example": "Das ist die Internetseite.",
+    "exampleFa": "این وب‌سایت است.",
+    "exampleEn": "This is the website.",
     "plural": "die Internetseiten",
     "article": "die"
   },
@@ -859,11 +850,10 @@
     "en": "internet connection",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Internetverbindung jeden Tag.",
-    "exampleFa": "هر روز از اتصال اینترنت استفاده می‌کنم.",
-    "exampleEn": "I use internet connection every day.",
+    "example": "Das ist die Internetverbindung.",
+    "exampleFa": "این اتصال اینترنت است.",
+    "exampleEn": "This is the internet connection.",
     "plural": "die Internetverbindungen",
-    "enNote": "Possible cognate with English “internet connection”.",
     "article": "die"
   },
   {
@@ -873,9 +863,9 @@
     "en": "artificial intelligence",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Künstliche Intelligenz jeden Tag.",
-    "exampleFa": "هر روز از هوش مصنوعی استفاده می‌کنم.",
-    "exampleEn": "I use artificial intelligence every day."
+    "example": "Künstliche Intelligenz hilft uns.",
+    "exampleFa": "هوش مصنوعی به ما کمک می‌کند.",
+    "exampleEn": "Artificial intelligence helps us."
   },
   {
     "word": "Lautsprecher",
@@ -884,9 +874,9 @@
     "en": "speaker",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Lautsprecher jeden Tag.",
-    "exampleFa": "هر روز از بلندگو استفاده می‌کنم.",
-    "exampleEn": "I use speaker every day.",
+    "example": "Das ist der Lautsprecher.",
+    "exampleFa": "این بلندگو است.",
+    "exampleEn": "This is the speaker.",
     "plural": "die Lautsprecher",
     "article": "der"
   },
@@ -897,10 +887,9 @@
     "en": "machine learning",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Machine Learning jeden Tag.",
-    "exampleFa": "هر روز از یادگیری ماشین استفاده می‌کنم.",
-    "exampleEn": "I use machine learning every day.",
-    "enNote": "Possible cognate with English “machine learning”."
+    "example": "Machine Learning ist ein Teil der KI.",
+    "exampleFa": "یادگیری ماشین بخشی از هوش مصنوعی است.",
+    "exampleEn": "Machine learning is part of AI."
   },
   {
     "word": "Nanotechnologie",
@@ -909,11 +898,11 @@
     "en": "nanotechnology",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Nanotechnologie jeden Tag.",
-    "exampleFa": "هر روز از نانوتکنولوژی استفاده می‌کنم.",
-    "exampleEn": "I use nanotechnology every day.",
+    "example": "Das ist die Nanotechnologie.",
+    "exampleFa": "این نانوتکنولوژی است.",
+    "exampleEn": "This is the nanotechnology.",
     "plural": "die Nanotechnologien",
-    "enNote": "Possible cognate with English “nanotechnology”."
+    "article": "die"
   },
   {
     "word": "Programmierung",
@@ -922,11 +911,10 @@
     "en": "programming",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Programmierung jeden Tag.",
-    "exampleFa": "هر روز از برنامه‌نویسی استفاده می‌کنم.",
-    "exampleEn": "I use programming every day.",
+    "example": "Das ist die Programmierung.",
+    "exampleFa": "این برنامه‌نویسی است.",
+    "exampleEn": "This is the programming.",
     "plural": "die Programmierungen",
-    "enNote": "Possible cognate with English “programming”.",
     "article": "die"
   },
   {
@@ -936,9 +924,9 @@
     "en": "to make a phone call",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze telefonieren jeden Tag.",
-    "exampleFa": "هر روز از تلفن زدن استفاده می‌کنم.",
-    "exampleEn": "I use to make a phone call every day."
+    "example": "Wir telefonieren jeden Abend.",
+    "exampleFa": "ما هر عصر تلفنی صحبت می‌کنیم.",
+    "exampleEn": "We talk on the phone every evening."
   },
   {
     "word": "Telefonnummer",
@@ -947,11 +935,11 @@
     "en": "phone number",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Telefonnummer jeden Tag.",
-    "exampleFa": "هر روز از شماره تلفن استفاده می‌کنم.",
-    "exampleEn": "I use phone number every day.",
-    "plural": "die Telefonnummer",
-    "article": "der"
+    "example": "Das ist die Telefonnummer.",
+    "exampleFa": "این شماره تلفن است.",
+    "exampleEn": "This is the phone number.",
+    "plural": "die Telefonnummern",
+    "article": "die"
   },
   {
     "word": "Verschlüsselung",
@@ -960,9 +948,9 @@
     "en": "encryption",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze Verschlüsselung jeden Tag.",
-    "exampleFa": "هر روز از رمزنگاری استفاده می‌کنم.",
-    "exampleEn": "I use encryption every day.",
+    "example": "Das ist die Verschlüsselung.",
+    "exampleFa": "این رمزنگاری است.",
+    "exampleEn": "This is the encryption.",
     "plural": "die Verschlüsselungen",
     "article": "die"
   },
@@ -973,9 +961,9 @@
     "en": "to publish",
     "level": "B2",
     "category": "فناوری",
-    "example": "Ich benutze veröffentlichen jeden Tag.",
-    "exampleFa": "هر روز از منتشر کردن استفاده می‌کنم.",
-    "exampleEn": "I use to publish every day."
+    "example": "Sie veröffentlicht ein Video.",
+    "exampleFa": "او ویدیویی منتشر می‌کند.",
+    "exampleEn": "She publishes a video."
   },
   {
     "word": "Auseinandersetzung",
@@ -984,9 +972,9 @@
     "en": "confrontation / debate",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Auseinandersetzung ist wichtig.",
-    "exampleFa": "بحث / برخورد / رویارویی مهم است.",
-    "exampleEn": "The confrontation / debate is important.",
+    "example": "Das ist die Auseinandersetzung.",
+    "exampleFa": "این بحث است.",
+    "exampleEn": "This is the confrontation.",
     "plural": "die Auseinandersetzungen",
     "article": "die"
   },
@@ -997,9 +985,9 @@
     "en": "immigration office",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Ausländerbehörde ist wichtig.",
-    "exampleFa": "اداره اتباع بیگانه مهم است.",
-    "exampleEn": "The immigration office is important.",
+    "example": "Das ist die Ausländerbehörde.",
+    "exampleFa": "این اداره اتباع بیگانه است.",
+    "exampleEn": "This is the immigration office.",
     "plural": "die Ausländerbehörden",
     "article": "die"
   },
@@ -1010,10 +998,11 @@
     "en": "authoritarianism",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Autoritarismus ist ein wichtiges Thema.",
-    "exampleFa": "استبداد موضوع مهمی است.",
-    "exampleEn": "authoritarianism is an important topic.",
-    "plural": "die Autoritarismuse"
+    "example": "Das ist der Autoritarismus.",
+    "exampleFa": "این استبداد است.",
+    "exampleEn": "This is the authoritarianism.",
+    "plural": "die Autoritarismuse",
+    "article": "der"
   },
   {
     "word": "Bundesregierung",
@@ -1022,9 +1011,9 @@
     "en": "federal government",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Bundesregierung ist wichtig.",
-    "exampleFa": "دولت فدرال مهم است.",
-    "exampleEn": "The federal government is important.",
+    "example": "Das ist die Bundesregierung.",
+    "exampleFa": "این دولت فدرال است.",
+    "exampleEn": "This is the federal government.",
     "plural": "die Bundesregierungen",
     "article": "die"
   },
@@ -1035,11 +1024,11 @@
     "en": "federal republic",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Bundesrepublik ist wichtig.",
-    "exampleFa": "جمهوری فدرال مهم است.",
-    "exampleEn": "The federal republic is important.",
-    "plural": "die Bundesrepublike",
-    "article": "die"
+    "example": "Das ist die Bundesrepublik.",
+    "exampleFa": "این جمهوری فدرال است.",
+    "exampleEn": "This is the federal republic.",
+    "article": "die",
+    "plural": "die Bundesrepubliken"
   },
   {
     "word": "destabilisieren",
@@ -1048,10 +1037,9 @@
     "en": "to destabilize",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Der destabilisieren ist wichtig.",
-    "exampleFa": "بی‌ثبات کردن مهم است.",
-    "exampleEn": "The to destabilize is important.",
-    "enNote": "Possible cognate with English “to destabilize”."
+    "example": "Das destabilisiert das Land.",
+    "exampleFa": "این کشور را بی‌ثبات می‌کند.",
+    "exampleEn": "That destabilises the country."
   },
   {
     "word": "Gerechtigkeit",
@@ -1060,9 +1048,9 @@
     "en": "justice",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Gerechtigkeit ist wichtig.",
-    "exampleFa": "عدالت مهم است.",
-    "exampleEn": "The justice is important.",
+    "example": "Das ist die Gerechtigkeit.",
+    "exampleFa": "این عدالت است.",
+    "exampleEn": "This is the justice.",
     "plural": "die Gerechtigkeiten",
     "article": "die"
   },
@@ -1073,9 +1061,9 @@
     "en": "social",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Der gesellschaftlich ist wichtig.",
-    "exampleFa": "اجتماعی مهم است.",
-    "exampleEn": "The social is important."
+    "example": "Das ist ein gesellschaftliches Thema.",
+    "exampleFa": "این یک موضوع اجتماعی است.",
+    "exampleEn": "That is a social issue."
   },
   {
     "word": "Gewaltenteilung",
@@ -1084,9 +1072,9 @@
     "en": "separation of powers",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Gewaltenteilung ist wichtig.",
-    "exampleFa": "تفکیک قوا مهم است.",
-    "exampleEn": "The separation of powers is important.",
+    "example": "Das ist die Gewaltenteilung.",
+    "exampleFa": "این تفکیک قوا است.",
+    "exampleEn": "This is the separation of powers.",
     "plural": "die Gewaltenteilungen",
     "article": "die"
   },
@@ -1097,10 +1085,9 @@
     "en": "international",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "international ist ein wichtiges Thema.",
-    "exampleFa": "بین‌المللی موضوع مهمی است.",
-    "exampleEn": "international is an important topic.",
-    "enNote": "Possible cognate with English “international”."
+    "example": "Das ist eine internationale Schule.",
+    "exampleFa": "این یک مدرسه‌ی بین‌المللی است.",
+    "exampleEn": "That is an international school."
   },
   {
     "word": "Menschenrechte",
@@ -1109,9 +1096,9 @@
     "en": "human rights",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Menschenrechte ist wichtig.",
-    "exampleFa": "حقوق بشر مهم است.",
-    "exampleEn": "The human rights is important.",
+    "example": "Das sind die Menschenrechte.",
+    "exampleFa": "این‌ها حقوق بشر هستند.",
+    "exampleEn": "These are the human rights.",
     "plural": "die Menschenrechten",
     "article": "die"
   },
@@ -1122,9 +1109,9 @@
     "en": "membership",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Mitgliedschaft ist wichtig.",
-    "exampleFa": "عضویت مهم است.",
-    "exampleEn": "The membership is important.",
+    "example": "Das ist die Mitgliedschaft.",
+    "exampleFa": "این عضویت است.",
+    "exampleEn": "This is the membership.",
     "plural": "die Mitgliedschaften",
     "article": "die"
   },
@@ -1135,10 +1122,9 @@
     "en": "to represent",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Der repräsentieren ist wichtig.",
-    "exampleFa": "نمایندگی کردن مهم است.",
-    "exampleEn": "The to represent is important.",
-    "enNote": "Possible cognate with English “to represent”."
+    "example": "Er repräsentiert die Firma.",
+    "exampleFa": "او نماینده‌ی شرکت است.",
+    "exampleEn": "He represents the company."
   },
   {
     "word": "Spiritualität",
@@ -1147,11 +1133,9 @@
     "en": "spirituality",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Spiritualität ist wichtig.",
-    "exampleFa": "معنویت مهم است.",
-    "exampleEn": "The spirituality is important.",
-    "plural": "die Spiritualitäte",
-    "enNote": "Possible cognate with English “spirituality”.",
+    "example": "Das ist die Spiritualität.",
+    "exampleFa": "این معنویت است.",
+    "exampleEn": "This is the spirituality.",
     "article": "die"
   },
   {
@@ -1161,9 +1145,9 @@
     "en": "nationality",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Staatsangehörigkeit ist wichtig.",
-    "exampleFa": "تابعیت مهم است.",
-    "exampleEn": "The nationality is important.",
+    "example": "Das ist die Staatsangehörigkeit.",
+    "exampleFa": "این تابعیت است.",
+    "exampleEn": "This is the nationality.",
     "plural": "die Staatsangehörigkeiten",
     "article": "die"
   },
@@ -1174,11 +1158,11 @@
     "en": "totalitarianism",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Totalitarismus ist ein wichtiges Thema.",
-    "exampleFa": "تمامیت‌خواهی موضوع مهمی است.",
-    "exampleEn": "totalitarianism is an important topic.",
-    "plural": "die Totalitarismuse",
-    "enNote": "Possible cognate with English “totalitarianism”."
+    "example": "Das ist der Totalitarismus.",
+    "exampleFa": "این تمامیت‌خواهی است.",
+    "exampleEn": "This is the totalitarianism.",
+    "plural": "die Totalitarismen",
+    "article": "der"
   },
   {
     "word": "unterschreiben",
@@ -1187,9 +1171,9 @@
     "en": "to sign",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Der unterschreiben ist wichtig.",
-    "exampleFa": "امضا کردن مهم است.",
-    "exampleEn": "The to sign is important."
+    "example": "Bitte unterschreiben Sie hier.",
+    "exampleFa": "لطفاً اینجا امضا کنید.",
+    "exampleEn": "Please sign here."
   },
   {
     "word": "Verfassungsgericht",
@@ -1198,10 +1182,11 @@
     "en": "constitutional court",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Verfassungsgericht ist ein wichtiges Thema.",
-    "exampleFa": "دادگاه قانون اساسی موضوع مهمی است.",
-    "exampleEn": "constitutional court is an important topic.",
-    "plural": "die Verfassungsgerichte"
+    "example": "Das ist das Verfassungsgericht.",
+    "exampleFa": "این دادگاه قانون اساسی است.",
+    "exampleEn": "This is the constitutional court.",
+    "plural": "die Verfassungsgerichte",
+    "article": "das"
   },
   {
     "word": "Zivilgesellschaft",
@@ -1210,9 +1195,9 @@
     "en": "civil society",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Zivilgesellschaft ist wichtig.",
-    "exampleFa": "جامعه مدنی مهم است.",
-    "exampleEn": "The civil society is important.",
+    "example": "Das ist die Zivilgesellschaft.",
+    "exampleFa": "این جامعه مدنی است.",
+    "exampleEn": "This is the civil society.",
     "plural": "die Zivilgesellschaften",
     "article": "die"
   },
@@ -1223,9 +1208,11 @@
     "en": "the public",
     "level": "B2",
     "category": "جامعه، سیاست و حقوق",
-    "example": "Die Öffentlichkeit ist wichtig.",
-    "exampleFa": "افکار عمومی / عموم مردم مهم است.",
-    "exampleEn": "The the public is important."
+    "example": "Die Öffentlichkeit wartet.",
+    "exampleFa": "افکار عمومی منتظر است.",
+    "exampleEn": "The public is waiting.",
+    "article": "die",
+    "plural": "die Öffentlichkeiten"
   },
   {
     "word": "Analyse",
@@ -1234,11 +1221,10 @@
     "en": "analysis",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Analyse ist wichtig.",
-    "exampleFa": "تحلیل مهم است.",
-    "exampleEn": "The analysis is important.",
+    "example": "Das ist die Analyse.",
+    "exampleFa": "این تحلیل است.",
+    "exampleEn": "This is the analysis.",
     "plural": "die Analysen",
-    "enNote": "Possible cognate with English “analysis”.",
     "article": "die"
   },
   {
@@ -1258,8 +1244,7 @@
       "wir": "analysieren",
       "ihr": "analysiert",
       "Sie/sie": "analysieren"
-    },
-    "enNote": "Possible cognate with English “to analyze”."
+    }
   },
   {
     "word": "Ansatz",
@@ -1268,11 +1253,11 @@
     "en": "approach",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Ansatz.",
-    "exampleFa": "درباره رویکرد / روش حرف می‌زنیم.",
-    "exampleEn": "We talk about approach.",
+    "article": "der",
     "plural": "die Ansätze",
-    "pluralNote": "با Umlaut"
+    "example": "Das ist der Ansatz.",
+    "exampleFa": "این رویکرد است.",
+    "exampleEn": "This is the approach."
   },
   {
     "word": "außerirdisch",
@@ -1281,9 +1266,9 @@
     "en": "extraterrestrial",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über außerirdisch.",
-    "exampleFa": "درباره فرازمینی حرف می‌زنیم.",
-    "exampleEn": "We talk about extraterrestrial."
+    "example": "Er glaubt an außerirdisches Leben.",
+    "exampleFa": "او به حیات فرازمینی باور دارد.",
+    "exampleEn": "He believes in extraterrestrial life."
   },
   {
     "word": "basieren",
@@ -1292,9 +1277,9 @@
     "en": "to be based on",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der basieren ist wichtig.",
-    "exampleFa": "مبتنی بودن مهم است.",
-    "exampleEn": "The to be based on is important."
+    "example": "Der Film basiert auf einem Buch.",
+    "exampleFa": "فیلم بر اساس یک کتاب است.",
+    "exampleEn": "The film is based on a book."
   },
   {
     "word": "Begründung",
@@ -1303,9 +1288,9 @@
     "en": "justification / reasoning",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Begründung ist wichtig.",
-    "exampleFa": "دلیل / توجیه مهم است.",
-    "exampleEn": "The justification / reasoning is important.",
+    "example": "Das ist die Begründung.",
+    "exampleFa": "این دلیل است.",
+    "exampleEn": "This is the justification.",
     "plural": "die Begründungen",
     "article": "die"
   },
@@ -1316,9 +1301,9 @@
     "en": "to calculate",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der berechnen ist wichtig.",
-    "exampleFa": "محاسبه کردن مهم است.",
-    "exampleEn": "The to calculate is important."
+    "example": "Er berechnet die Kosten.",
+    "exampleFa": "او هزینه‌ها را محاسبه می‌کند.",
+    "exampleEn": "He calculates the costs."
   },
   {
     "word": "Berechnung",
@@ -1327,9 +1312,9 @@
     "en": "calculation",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Berechnung ist wichtig.",
-    "exampleFa": "محاسبه مهم است.",
-    "exampleEn": "The calculation is important.",
+    "example": "Das ist die Berechnung.",
+    "exampleFa": "این محاسبه است.",
+    "exampleEn": "This is the calculation.",
     "plural": "die Berechnungen",
     "article": "die"
   },
@@ -1340,10 +1325,11 @@
     "en": "proof / evidence",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Beweis.",
-    "exampleFa": "درباره دلیل / اثبات حرف می‌زنیم.",
-    "exampleEn": "We talk about proof / evidence.",
-    "plural": "die Beweise"
+    "plural": "die Beweise",
+    "article": "der",
+    "example": "Das ist der Beweis.",
+    "exampleFa": "این دلیل است.",
+    "exampleEn": "This is the proof."
   },
   {
     "word": "Bezeichnung",
@@ -1352,9 +1338,9 @@
     "en": "designation / term",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Bezeichnung ist wichtig.",
-    "exampleFa": "نام‌گذاری / اصطلاح مهم است.",
-    "exampleEn": "The designation / term is important.",
+    "example": "Das ist die Bezeichnung.",
+    "exampleFa": "این نام‌گذاری است.",
+    "exampleEn": "This is the designation.",
     "plural": "die Bezeichnungen",
     "article": "die"
   },
@@ -1365,10 +1351,9 @@
     "en": "chemical",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über chemisch.",
-    "exampleFa": "درباره شیمیایی حرف می‌زنیم.",
-    "exampleEn": "We talk about chemical.",
-    "enNote": "Possible cognate with English “chemical”."
+    "example": "Das ist ein chemischer Prozess.",
+    "exampleFa": "این یک فرایند شیمیایی است.",
+    "exampleEn": "That is a chemical process."
   },
   {
     "word": "definieren",
@@ -1377,10 +1362,9 @@
     "en": "to define",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der definieren ist wichtig.",
-    "exampleFa": "تعریف کردن مهم است.",
-    "exampleEn": "The to define is important.",
-    "enNote": "Possible cognate with English “to define”."
+    "example": "Sie definiert das Wort.",
+    "exampleFa": "او کلمه را تعریف می‌کند.",
+    "exampleEn": "She defines the word."
   },
   {
     "word": "Definition",
@@ -1389,11 +1373,10 @@
     "en": "definition",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Definition ist wichtig.",
-    "exampleFa": "تعریف مهم است.",
-    "exampleEn": "The definition is important.",
+    "example": "Das ist die Definition.",
+    "exampleFa": "این تعریف است.",
+    "exampleEn": "This is the definition.",
     "plural": "die Definitionen",
-    "enNote": "Possible cognate with English “definition”.",
     "article": "die"
   },
   {
@@ -1403,11 +1386,9 @@
     "en": "dialectics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Dialektik ist wichtig.",
-    "exampleFa": "دیالکتیک مهم است.",
-    "exampleEn": "The dialectics is important.",
-    "plural": "die Dialektike",
-    "enNote": "Possible cognate with English “dialectics”.",
+    "example": "Das ist die Dialektik.",
+    "exampleFa": "این دیالکتیک است.",
+    "exampleEn": "This is the dialectics.",
     "article": "die"
   },
   {
@@ -1417,11 +1398,10 @@
     "en": "dimension",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Dimension ist wichtig.",
-    "exampleFa": "بُعد / ابعاد مهم است.",
-    "exampleEn": "The dimension is important.",
+    "example": "Das ist die Dimension.",
+    "exampleFa": "این بُعد است.",
+    "exampleEn": "This is the dimension.",
     "plural": "die Dimensionen",
-    "enNote": "Possible cognate with English “dimension”.",
     "article": "die"
   },
   {
@@ -1431,9 +1411,9 @@
     "en": "to think through",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der durchdenken ist wichtig.",
-    "exampleFa": "با دقت فکر کردن به مهم است.",
-    "exampleEn": "The to think through is important."
+    "example": "Ich denke den Plan durch.",
+    "exampleFa": "من نقشه را کامل بررسی می‌کنم.",
+    "exampleEn": "I think the plan through."
   },
   {
     "word": "Dynamik",
@@ -1442,12 +1422,11 @@
     "en": "dynamics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Dynamik ist wichtig.",
-    "exampleFa": "پویایی مهم است.",
-    "exampleEn": "The dynamics is important.",
-    "plural": "die Dynamike",
-    "enNote": "Possible cognate with English “dynamics”.",
-    "article": "die"
+    "example": "Das ist die Dynamik.",
+    "exampleFa": "این پویایی است.",
+    "exampleEn": "This is the dynamics.",
+    "article": "die",
+    "plural": "die Dynamiken"
   },
   {
     "word": "Einheit",
@@ -1456,9 +1435,9 @@
     "en": "unit / unity",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Einheit ist wichtig.",
-    "exampleFa": "واحد / وحدت مهم است.",
-    "exampleEn": "The unit / unity is important.",
+    "example": "Das ist die Einheit.",
+    "exampleFa": "این واحد است.",
+    "exampleEn": "This is the unit.",
     "plural": "die Einheiten",
     "article": "die"
   },
@@ -1469,11 +1448,11 @@
     "en": "iron",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der Eisen ist wichtig.",
-    "exampleFa": "آهن مهم است.",
-    "exampleEn": "The iron is important.",
+    "example": "Das ist das Eisen.",
+    "exampleFa": "این آهن است.",
+    "exampleEn": "This is the iron.",
     "plural": "die Eisen",
-    "article": "der"
+    "article": "das"
   },
   {
     "word": "Element",
@@ -1482,11 +1461,10 @@
     "en": "element",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Das Element ist wichtig.",
-    "exampleFa": "عنصر / جزء مهم است.",
-    "exampleEn": "The element is important.",
+    "example": "Das ist das Element.",
+    "exampleFa": "این عنصر است.",
+    "exampleEn": "This is the element.",
     "plural": "die Elemente",
-    "enNote": "Possible cognate with English “element”.",
     "article": "das"
   },
   {
@@ -1496,9 +1474,9 @@
     "en": "development",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Entwicklung ist wichtig.",
-    "exampleFa": "توسعه مهم است.",
-    "exampleEn": "The development is important.",
+    "example": "Das ist die Entwicklung.",
+    "exampleFa": "این توسعه است.",
+    "exampleEn": "This is the development.",
     "plural": "die Entwicklungen",
     "article": "die"
   },
@@ -1509,9 +1487,9 @@
     "en": "to invent",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der erfinden ist wichtig.",
-    "exampleFa": "اختراع کردن مهم است.",
-    "exampleEn": "The to invent is important."
+    "example": "Er erfindet eine Maschine.",
+    "exampleFa": "او ماشینی اختراع می‌کند.",
+    "exampleEn": "He invents a machine."
   },
   {
     "word": "Erfindung",
@@ -1520,9 +1498,9 @@
     "en": "invention",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Erfindung ist wichtig.",
-    "exampleFa": "اختراع مهم است.",
-    "exampleEn": "The invention is important.",
+    "example": "Das ist die Erfindung.",
+    "exampleFa": "این اختراع است.",
+    "exampleEn": "This is the invention.",
     "plural": "die Erfindungen",
     "article": "die"
   },
@@ -1533,9 +1511,9 @@
     "en": "to result in / yield",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der ergeben ist wichtig.",
-    "exampleFa": "نتیجه دادن / منجر شدن به مهم است.",
-    "exampleEn": "The to result in / yield is important."
+    "example": "Das ergibt Sinn.",
+    "exampleFa": "این منطقی است.",
+    "exampleEn": "That makes sense."
   },
   {
     "word": "Ergebnis",
@@ -1544,10 +1522,11 @@
     "en": "result",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Ergebnis.",
-    "exampleFa": "درباره نتیجه حرف می‌زنیم.",
-    "exampleEn": "We talk about result.",
-    "plural": "die Ergebnise"
+    "plural": "die Ergebnisse",
+    "article": "das",
+    "example": "Das ist das Ergebnis.",
+    "exampleFa": "این نتیجه است.",
+    "exampleEn": "This is the result."
   },
   {
     "word": "Erkenntnis",
@@ -1556,10 +1535,11 @@
     "en": "cognition / insight",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Erkenntnis.",
-    "exampleFa": "درباره شناخت / دریافت حرف می‌زنیم.",
-    "exampleEn": "We talk about cognition / insight.",
-    "plural": "die Erkenntnise"
+    "plural": "die Erkenntnisse",
+    "article": "die",
+    "example": "Das ist die Erkenntnis.",
+    "exampleFa": "این شناخت است.",
+    "exampleEn": "This is the cognition."
   },
   {
     "word": "Ethik",
@@ -1568,12 +1548,11 @@
     "en": "ethics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Ethik ist wichtig.",
-    "exampleFa": "اخلاق (علمی) مهم است.",
-    "exampleEn": "The ethics is important.",
-    "plural": "die Ethike",
-    "enNote": "Possible cognate with English “ethics”.",
-    "article": "die"
+    "example": "Das ist die Ethik.",
+    "exampleFa": "این اخلاق (علمی) است.",
+    "exampleEn": "This is the ethics.",
+    "article": "die",
+    "plural": "die Ethiken"
   },
   {
     "word": "Existenz",
@@ -1582,12 +1561,11 @@
     "en": "existence",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Existenz ist wichtig.",
-    "exampleFa": "وجود مهم است.",
-    "exampleEn": "The existence is important.",
-    "plural": "die Existenze",
-    "enNote": "Possible cognate with English “existence”.",
-    "article": "die"
+    "example": "Das ist die Existenz.",
+    "exampleFa": "این وجود است.",
+    "exampleEn": "This is the existence.",
+    "article": "die",
+    "plural": "die Existenzen"
   },
   {
     "word": "existieren",
@@ -1596,10 +1574,9 @@
     "en": "to exist",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der existieren ist wichtig.",
-    "exampleFa": "وجود داشتن مهم است.",
-    "exampleEn": "The to exist is important.",
-    "enNote": "Possible cognate with English “to exist”."
+    "example": "So etwas existiert nicht.",
+    "exampleFa": "چنین چیزی وجود ندارد.",
+    "exampleEn": "Such a thing does not exist."
   },
   {
     "word": "Experiment",
@@ -1608,11 +1585,10 @@
     "en": "experiment",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Das Experiment ist wichtig.",
-    "exampleFa": "آزمایش مهم است.",
-    "exampleEn": "The experiment is important.",
+    "example": "Das ist das Experiment.",
+    "exampleFa": "این آزمایش است.",
+    "exampleEn": "This is the experiment.",
     "plural": "die Experimente",
-    "enNote": "Possible cognate with English “experiment”.",
     "article": "das"
   },
   {
@@ -1622,10 +1598,9 @@
     "en": "to explicate",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der explizieren ist wichtig.",
-    "exampleFa": "تصریح کردن / آشکار ساختن مهم است.",
-    "exampleEn": "The to explicate is important.",
-    "enNote": "Possible cognate with English “to explicate”."
+    "example": "Er expliziert den Begriff.",
+    "exampleFa": "او مفهوم را شرح می‌دهد.",
+    "exampleEn": "He explicates the concept."
   },
   {
     "word": "extrapolieren",
@@ -1634,10 +1609,9 @@
     "en": "to extrapolate",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der extrapolieren ist wichtig.",
-    "exampleFa": "برون‌یابی کردن مهم است.",
-    "exampleEn": "The to extrapolate is important.",
-    "enNote": "Possible cognate with English “to extrapolate”."
+    "example": "Man kann die Daten extrapolieren.",
+    "exampleFa": "می‌توان داده‌ها را برون‌یابی کرد.",
+    "exampleEn": "One can extrapolate the data."
   },
   {
     "word": "Forschung",
@@ -1646,9 +1620,9 @@
     "en": "research",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Forschung ist wichtig.",
-    "exampleFa": "پژوهش / تحقیق مهم است.",
-    "exampleEn": "The research is important.",
+    "example": "Das ist die Forschung.",
+    "exampleFa": "این پژوهش است.",
+    "exampleEn": "This is the research.",
     "plural": "die Forschungen",
     "article": "die"
   },
@@ -1659,10 +1633,11 @@
     "en": "progress",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Fortschritt.",
-    "exampleFa": "درباره پیشرفت حرف می‌زنیم.",
-    "exampleEn": "We talk about progress.",
-    "plural": "die Fortschritte"
+    "plural": "die Fortschritte",
+    "article": "der",
+    "example": "Das ist der Fortschritt.",
+    "exampleFa": "این پیشرفت است.",
+    "exampleEn": "This is the progress."
   },
   {
     "word": "Galaxie",
@@ -1671,11 +1646,11 @@
     "en": "galaxy",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Galaxie.",
-    "exampleFa": "درباره کهکشان حرف می‌زنیم.",
-    "exampleEn": "We talk about galaxy.",
     "plural": "die Galaxien",
-    "enNote": "Possible cognate with English “galaxy”."
+    "article": "die",
+    "example": "Das ist die Galaxie.",
+    "exampleFa": "این کهکشان است.",
+    "exampleEn": "This is the galaxy."
   },
   {
     "word": "Gedanke",
@@ -1684,11 +1659,11 @@
     "en": "thought",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Gedanke ist wichtig.",
-    "exampleFa": "اندیشه مهم است.",
-    "exampleEn": "The thought is important.",
+    "example": "Das ist der Gedanke.",
+    "exampleFa": "این اندیشه است.",
+    "exampleEn": "This is the thought.",
     "plural": "die Gedanken",
-    "article": "die"
+    "article": "der"
   },
   {
     "word": "Geist",
@@ -1697,10 +1672,10 @@
     "en": "spirit / mind",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der Geist ist wichtig.",
-    "exampleFa": "روح / ذهن مهم است.",
-    "exampleEn": "The spirit / mind is important.",
-    "plural": "die Geiste",
+    "example": "Das ist der Geist.",
+    "exampleFa": "این روح است.",
+    "exampleEn": "This is the spirit.",
+    "plural": "die Geister",
     "article": "der"
   },
   {
@@ -1710,11 +1685,11 @@
     "en": "genetic engineering",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Gentechnik ist wichtig.",
-    "exampleFa": "مهندسی ژنتیک مهم است.",
-    "exampleEn": "The genetic engineering is important.",
-    "plural": "die Gentechnike",
-    "article": "die"
+    "example": "Das ist die Gentechnik.",
+    "exampleFa": "این مهندسی ژنتیک است.",
+    "exampleEn": "This is the genetic engineering.",
+    "article": "die",
+    "plural": "die Gentechniken"
   },
   {
     "word": "Grundlage",
@@ -1723,9 +1698,9 @@
     "en": "basis / foundation",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Grundlage ist wichtig.",
-    "exampleFa": "پایه / اساس مهم است.",
-    "exampleEn": "The basis / foundation is important.",
+    "example": "Das ist die Grundlage.",
+    "exampleFa": "این پایه است.",
+    "exampleEn": "This is the basis.",
     "plural": "die Grundlagen",
     "article": "die"
   },
@@ -1736,11 +1711,9 @@
     "en": "hermeneutics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Hermeneutik ist wichtig.",
-    "exampleFa": "هرمنوتیک (علم تفسیر) مهم است.",
-    "exampleEn": "The hermeneutics is important.",
-    "plural": "die Hermeneutike",
-    "enNote": "Possible cognate with English “hermeneutics”.",
+    "example": "Das ist die Hermeneutik.",
+    "exampleFa": "این هرمنوتیک (علم تفسیر) است.",
+    "exampleEn": "This is the hermeneutics.",
     "article": "die"
   },
   {
@@ -1750,11 +1723,10 @@
     "en": "hypothesis",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Hypothese ist wichtig.",
-    "exampleFa": "فرضیه مهم است.",
-    "exampleEn": "The hypothesis is important.",
+    "example": "Das ist die Hypothese.",
+    "exampleFa": "این فرضیه است.",
+    "exampleEn": "This is the hypothesis.",
     "plural": "die Hypothesen",
-    "enNote": "Possible cognate with English “hypothesis”.",
     "article": "die"
   },
   {
@@ -1764,11 +1736,11 @@
     "en": "ideal",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Ideal.",
-    "exampleFa": "درباره ایده‌آل حرف می‌زنیم.",
-    "exampleEn": "We talk about ideal.",
     "plural": "die Ideale",
-    "enNote": "Possible cognate with English “ideal”."
+    "article": "das",
+    "example": "Das ist das Ideal.",
+    "exampleFa": "این ایده‌آل است.",
+    "exampleEn": "This is the ideal."
   },
   {
     "word": "implizieren",
@@ -1777,10 +1749,9 @@
     "en": "to imply",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der implizieren ist wichtig.",
-    "exampleFa": "دلالت داشتن / نتیجه دادن مهم است.",
-    "exampleEn": "The to imply is important.",
-    "enNote": "Possible cognate with English “to imply”."
+    "example": "Das impliziert ein Risiko.",
+    "exampleFa": "این مستلزم یک خطر است.",
+    "exampleEn": "That implies a risk."
   },
   {
     "word": "Indiz",
@@ -1789,11 +1760,11 @@
     "en": "indication / clue",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Indiz.",
-    "exampleFa": "درباره نشانه / قرینه حرف می‌زنیم.",
-    "exampleEn": "We talk about indication / clue.",
-    "plural": "die Indize",
-    "enNote": "Possible cognate with English “indication / clue”."
+    "plural": "die Indizien",
+    "article": "das",
+    "example": "Das ist das Indiz.",
+    "exampleFa": "این نشانه است.",
+    "exampleEn": "This is the indication."
   },
   {
     "word": "Interpretation",
@@ -1802,11 +1773,10 @@
     "en": "interpretation",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Interpretation ist wichtig.",
-    "exampleFa": "تفسیر مهم است.",
-    "exampleEn": "The interpretation is important.",
+    "example": "Das ist die Interpretation.",
+    "exampleFa": "این تفسیر است.",
+    "exampleEn": "This is the interpretation.",
     "plural": "die Interpretationen",
-    "enNote": "Possible cognate with English “interpretation”.",
     "article": "die"
   },
   {
@@ -1816,10 +1786,9 @@
     "en": "coherence",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Kohärenz ist wichtig.",
-    "exampleFa": "انسجام مهم است.",
-    "exampleEn": "The coherence is important.",
-    "plural": "die Kohärenze",
+    "example": "Das ist die Kohärenz.",
+    "exampleFa": "این انسجام است.",
+    "exampleEn": "This is the coherence.",
     "article": "die"
   },
   {
@@ -1829,10 +1798,9 @@
     "en": "continuity",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Kontinuität ist wichtig.",
-    "exampleFa": "تداوم مهم است.",
-    "exampleEn": "The continuity is important.",
-    "plural": "die Kontinuitäte",
+    "example": "Das ist die Kontinuität.",
+    "exampleFa": "این تداوم است.",
+    "exampleEn": "This is the continuity.",
     "article": "die"
   },
   {
@@ -1842,9 +1810,9 @@
     "en": "to contrast",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der kontrastieren ist wichtig.",
-    "exampleFa": "مقابله کردن / تقابل دادن مهم است.",
-    "exampleEn": "The to contrast is important."
+    "example": "Die Farben kontrastieren stark.",
+    "exampleFa": "رنگ‌ها تضاد شدیدی دارند.",
+    "exampleEn": "The colours contrast strongly."
   },
   {
     "word": "Konzept",
@@ -1853,10 +1821,11 @@
     "en": "concept",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Konzept.",
-    "exampleFa": "درباره مفهوم / طرح حرف می‌زنیم.",
-    "exampleEn": "We talk about concept.",
-    "plural": "die Konzepte"
+    "plural": "die Konzepte",
+    "article": "das",
+    "example": "Das ist das Konzept.",
+    "exampleFa": "این مفهوم است.",
+    "exampleEn": "This is the concept."
   },
   {
     "word": "Kriterium",
@@ -1865,9 +1834,9 @@
     "en": "criterion",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Das Kriterium ist wichtig.",
-    "exampleFa": "معیار مهم است.",
-    "exampleEn": "The criterion is important.",
+    "example": "Das ist das Kriterium.",
+    "exampleFa": "این معیار است.",
+    "exampleEn": "This is the criterion.",
     "plural": "die Kriterien",
     "article": "das"
   },
@@ -1878,11 +1847,11 @@
     "en": "copper",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der Kupfer ist wichtig.",
-    "exampleFa": "مس مهم است.",
-    "exampleEn": "The copper is important.",
+    "example": "Das ist das Kupfer.",
+    "exampleFa": "این مس است.",
+    "exampleEn": "This is the copper.",
     "plural": "die Kupfer",
-    "article": "der"
+    "article": "das"
   },
   {
     "word": "Labor",
@@ -1891,12 +1860,11 @@
     "en": "laboratory",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der Labor ist wichtig.",
-    "exampleFa": "آزمایشگاه مهم است.",
-    "exampleEn": "The laboratory is important.",
+    "example": "Das ist das Labor.",
+    "exampleFa": "این آزمایشگاه است.",
+    "exampleEn": "This is the laboratory.",
     "plural": "die Labore",
-    "enNote": "Possible cognate with English “laboratory”.",
-    "article": "der"
+    "article": "das"
   },
   {
     "word": "logisch",
@@ -1905,10 +1873,9 @@
     "en": "logical",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über logisch.",
-    "exampleFa": "درباره منطقی حرف می‌زنیم.",
-    "exampleEn": "We talk about logical.",
-    "enNote": "Possible cognate with English “logical”."
+    "example": "Das ist logisch.",
+    "exampleFa": "این منطقی است.",
+    "exampleEn": "That is logical."
   },
   {
     "word": "Material",
@@ -1917,11 +1884,11 @@
     "en": "material",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Material.",
-    "exampleFa": "درباره ماده / مصالح حرف می‌زنیم.",
-    "exampleEn": "We talk about material.",
-    "plural": "die Materiale",
-    "enNote": "Possible cognate with English “material”."
+    "plural": "die Materialien",
+    "article": "das",
+    "example": "Das ist das Material.",
+    "exampleFa": "این ماده است.",
+    "exampleEn": "This is the material."
   },
   {
     "word": "Merkmal",
@@ -1930,10 +1897,11 @@
     "en": "characteristic / feature",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Merkmal.",
-    "exampleFa": "درباره ویژگی / نشانه حرف می‌زنیم.",
-    "exampleEn": "We talk about characteristic / feature.",
-    "plural": "die Merkmale"
+    "plural": "die Merkmale",
+    "article": "das",
+    "example": "Das ist das Merkmal.",
+    "exampleFa": "این ویژگی است.",
+    "exampleEn": "This is the characteristic."
   },
   {
     "word": "messen",
@@ -1942,9 +1910,9 @@
     "en": "to measure",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der messen ist wichtig.",
-    "exampleFa": "اندازه‌گیری کردن مهم است.",
-    "exampleEn": "The to measure is important."
+    "example": "Er misst die Temperatur.",
+    "exampleFa": "او دما را اندازه می‌گیرد.",
+    "exampleEn": "He measures the temperature."
   },
   {
     "word": "Metall",
@@ -1953,11 +1921,11 @@
     "en": "metal",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Metall.",
-    "exampleFa": "درباره فلز حرف می‌زنیم.",
-    "exampleEn": "We talk about metal.",
     "plural": "die Metalle",
-    "enNote": "Possible cognate with English “metal”."
+    "article": "das",
+    "example": "Das ist das Metall.",
+    "exampleFa": "این فلز است.",
+    "exampleEn": "This is the metal."
   },
   {
     "word": "Methode",
@@ -1966,11 +1934,10 @@
     "en": "method",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Methode ist wichtig.",
-    "exampleFa": "روش مهم است.",
-    "exampleEn": "The method is important.",
+    "example": "Das ist die Methode.",
+    "exampleFa": "این روش است.",
+    "exampleEn": "This is the method.",
     "plural": "die Methoden",
-    "enNote": "Possible cognate with English “method”.",
     "article": "die"
   },
   {
@@ -1980,11 +1947,11 @@
     "en": "morality",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Moral.",
-    "exampleFa": "درباره اخلاقیات حرف می‌زنیم.",
-    "exampleEn": "We talk about morality.",
-    "plural": "die Morale",
-    "enNote": "Possible cognate with English “morality”."
+    "plural": "die Moralen",
+    "article": "die",
+    "example": "Das ist die Moral.",
+    "exampleFa": "این اخلاقیات است.",
+    "exampleEn": "This is the morality."
   },
   {
     "word": "Oberfläche",
@@ -1993,9 +1960,9 @@
     "en": "surface",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Oberfläche ist wichtig.",
-    "exampleFa": "سطح (رویه) مهم است.",
-    "exampleEn": "The surface is important.",
+    "example": "Das ist die Oberfläche.",
+    "exampleFa": "این سطح (رویه) است.",
+    "exampleEn": "This is the surface.",
     "plural": "die Oberflächen",
     "article": "die"
   },
@@ -2006,11 +1973,10 @@
     "en": "paradigm",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Das Paradigma ist wichtig.",
-    "exampleFa": "الگو / پارادایم مهم است.",
-    "exampleEn": "The paradigm is important.",
-    "plural": "die Paradigmae",
-    "enNote": "Possible cognate with English “paradigm”.",
+    "example": "Das ist das Paradigma.",
+    "exampleFa": "این الگو است.",
+    "exampleEn": "This is the paradigm.",
+    "plural": "die Paradigmen",
     "article": "das"
   },
   {
@@ -2020,11 +1986,11 @@
     "en": "paradox",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Paradoxon.",
-    "exampleFa": "درباره متناقض‌نما حرف می‌زنیم.",
-    "exampleEn": "We talk about paradox.",
-    "plural": "die Paradoxone",
-    "enNote": "Possible cognate with English “paradox”."
+    "plural": "die Paradoxa",
+    "article": "das",
+    "example": "Das ist das Paradoxon.",
+    "exampleFa": "این متناقض‌نما است.",
+    "exampleEn": "This is the paradox."
   },
   {
     "word": "Philosophie",
@@ -2033,11 +1999,11 @@
     "en": "philosophy",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Philosophie.",
-    "exampleFa": "درباره فلسفه حرف می‌زنیم.",
-    "exampleEn": "We talk about philosophy.",
     "plural": "die Philosophien",
-    "enNote": "Possible cognate with English “philosophy”."
+    "article": "die",
+    "example": "Das ist die Philosophie.",
+    "exampleFa": "این فلسفه است.",
+    "exampleEn": "This is the philosophy."
   },
   {
     "word": "Planet",
@@ -2046,11 +2012,11 @@
     "en": "planet",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Planet.",
-    "exampleFa": "درباره سیاره حرف می‌زنیم.",
-    "exampleEn": "We talk about planet.",
-    "plural": "die Planete",
-    "enNote": "Possible cognate with English “planet”."
+    "plural": "die Planeten",
+    "article": "der",
+    "example": "Das ist der Planet.",
+    "exampleFa": "این سیاره است.",
+    "exampleEn": "This is the planet."
   },
   {
     "word": "postulieren",
@@ -2059,10 +2025,9 @@
     "en": "to postulate",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der postulieren ist wichtig.",
-    "exampleFa": "فرض کردن / مسلم گرفتن مهم است.",
-    "exampleEn": "The to postulate is important.",
-    "enNote": "Possible cognate with English “to postulate”."
+    "example": "Er postuliert eine neue Theorie.",
+    "exampleFa": "او نظریه‌ی جدیدی مطرح می‌کند.",
+    "exampleEn": "He postulates a new theory."
   },
   {
     "word": "Prinzip",
@@ -2071,11 +2036,11 @@
     "en": "principle",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Prinzip.",
-    "exampleFa": "درباره اصل / قاعده حرف می‌زنیم.",
-    "exampleEn": "We talk about principle.",
-    "plural": "die Prinzipe",
-    "enNote": "Possible cognate with English “principle”."
+    "plural": "die Prinzipien",
+    "article": "das",
+    "example": "Das ist das Prinzip.",
+    "exampleFa": "این اصل است.",
+    "exampleEn": "This is the principle."
   },
   {
     "word": "Quantenphysik",
@@ -2084,11 +2049,9 @@
     "en": "quantum physics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Quantenphysik ist wichtig.",
-    "exampleFa": "فیزیک کوانتوم مهم است.",
-    "exampleEn": "The quantum physics is important.",
-    "plural": "die Quantenphysike",
-    "enNote": "Possible cognate with English “quantum physics”.",
+    "example": "Das ist die Quantenphysik.",
+    "exampleFa": "این فیزیک کوانتوم است.",
+    "exampleEn": "This is the quantum physics.",
     "article": "die"
   },
   {
@@ -2098,10 +2061,11 @@
     "en": "spaceship",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Raumschiff.",
-    "exampleFa": "درباره سفینه فضایی حرف می‌زنیم.",
-    "exampleEn": "We talk about spaceship.",
-    "plural": "die Raumschiffe"
+    "plural": "die Raumschiffe",
+    "article": "das",
+    "example": "Das ist das Raumschiff.",
+    "exampleFa": "این سفینه فضایی است.",
+    "exampleEn": "This is the spaceship."
   },
   {
     "word": "Realität",
@@ -2110,12 +2074,11 @@
     "en": "reality",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Realität ist wichtig.",
-    "exampleFa": "واقعیت مهم است.",
-    "exampleEn": "The reality is important.",
-    "plural": "die Realitäte",
-    "enNote": "Possible cognate with English “reality”.",
-    "article": "die"
+    "example": "Das ist die Realität.",
+    "exampleFa": "این واقعیت است.",
+    "exampleEn": "This is the reality.",
+    "article": "die",
+    "plural": "die Realitäten"
   },
   {
     "word": "reflektieren",
@@ -2124,10 +2087,9 @@
     "en": "to reflect",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der reflektieren ist wichtig.",
-    "exampleFa": "بازتاب دادن / تأمل کردن مهم است.",
-    "exampleEn": "The to reflect is important.",
-    "enNote": "Possible cognate with English “to reflect”."
+    "example": "Sie reflektiert über den Text.",
+    "exampleFa": "او درباره‌ی متن تأمل می‌کند.",
+    "exampleEn": "She reflects on the text."
   },
   {
     "word": "Schicksal",
@@ -2136,10 +2098,11 @@
     "en": "fate",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Schicksal.",
-    "exampleFa": "درباره سرنوشت حرف می‌زنیم.",
-    "exampleEn": "We talk about fate.",
-    "plural": "die Schicksale"
+    "plural": "die Schicksale",
+    "article": "das",
+    "example": "Das ist das Schicksal.",
+    "exampleFa": "این سرنوشت است.",
+    "exampleEn": "This is the fate."
   },
   {
     "word": "Statistik",
@@ -2148,12 +2111,11 @@
     "en": "statistics",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Statistik ist wichtig.",
-    "exampleFa": "آمار مهم است.",
-    "exampleEn": "The statistics is important.",
-    "plural": "die Statistike",
-    "enNote": "Possible cognate with English “statistics”.",
-    "article": "die"
+    "example": "Das ist die Statistik.",
+    "exampleFa": "این آمار است.",
+    "exampleEn": "This is the statistics.",
+    "article": "die",
+    "plural": "die Statistiken"
   },
   {
     "word": "Strahlung",
@@ -2162,9 +2124,9 @@
     "en": "radiation",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Strahlung ist wichtig.",
-    "exampleFa": "تابش / اشعه مهم است.",
-    "exampleEn": "The radiation is important.",
+    "example": "Das ist die Strahlung.",
+    "exampleFa": "این تابش است.",
+    "exampleEn": "This is the radiation.",
     "plural": "die Strahlungen",
     "article": "die"
   },
@@ -2175,12 +2137,11 @@
     "en": "structure",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Struktur ist wichtig.",
-    "exampleFa": "ساختار مهم است.",
-    "exampleEn": "The structure is important.",
-    "plural": "die Strukture",
-    "enNote": "Possible cognate with English “structure”.",
-    "article": "die"
+    "example": "Das ist die Struktur.",
+    "exampleFa": "این ساختار است.",
+    "exampleEn": "This is the structure.",
+    "article": "die",
+    "plural": "die Strukturen"
   },
   {
     "word": "Studie",
@@ -2189,11 +2150,11 @@
     "en": "study (research)",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Studie.",
-    "exampleFa": "درباره مطالعه / پژوهش حرف می‌زنیم.",
-    "exampleEn": "We talk about study (research).",
     "plural": "die Studien",
-    "enNote": "Possible cognate with English “study (research)”."
+    "article": "die",
+    "example": "Das ist die Studie.",
+    "exampleFa": "این مطالعه است.",
+    "exampleEn": "This is the study."
   },
   {
     "word": "Synthese",
@@ -2202,11 +2163,10 @@
     "en": "synthesis",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Synthese ist wichtig.",
-    "exampleFa": "سنتز مهم است.",
-    "exampleEn": "The synthesis is important.",
+    "example": "Das ist die Synthese.",
+    "exampleFa": "این سنتز است.",
+    "exampleEn": "This is the synthesis.",
     "plural": "die Synthesen",
-    "enNote": "Possible cognate with English “synthesis”.",
     "article": "die"
   },
   {
@@ -2216,10 +2176,9 @@
     "en": "to synthesize",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der synthetisieren ist wichtig.",
-    "exampleFa": "سنتز کردن مهم است.",
-    "exampleEn": "The to synthesize is important.",
-    "enNote": "Possible cognate with English “to synthesize”."
+    "example": "Der Körper synthetisiert Vitamin D.",
+    "exampleFa": "بدن ویتامین D می‌سازد.",
+    "exampleEn": "The body synthesises vitamin D."
   },
   {
     "word": "testen",
@@ -2228,9 +2187,9 @@
     "en": "to test",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der testen ist wichtig.",
-    "exampleFa": "تست کردن / آزمایش کردن مهم است.",
-    "exampleEn": "The to test is important."
+    "example": "Wir testen die App.",
+    "exampleFa": "ما اپ را تست می‌کنیم.",
+    "exampleEn": "We test the app."
   },
   {
     "word": "theoretisch",
@@ -2239,9 +2198,9 @@
     "en": "theoretical",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über theoretisch.",
-    "exampleFa": "درباره نظری / تئوریک حرف می‌زنیم.",
-    "exampleEn": "We talk about theoretical."
+    "example": "Das ist theoretisch möglich.",
+    "exampleFa": "این از نظر تئوری ممکن است.",
+    "exampleEn": "That is theoretically possible."
   },
   {
     "word": "Theorie",
@@ -2250,11 +2209,11 @@
     "en": "theory",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Theorie.",
-    "exampleFa": "درباره نظریه حرف می‌زنیم.",
-    "exampleEn": "We talk about theory.",
     "plural": "die Theorien",
-    "enNote": "Possible cognate with English “theory”."
+    "article": "die",
+    "example": "Das ist die Theorie.",
+    "exampleFa": "این نظریه است.",
+    "exampleEn": "This is the theory."
   },
   {
     "word": "Ufo",
@@ -2263,10 +2222,11 @@
     "en": "UFO",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Ufo.",
-    "exampleFa": "درباره بشقاب‌پرنده حرف می‌زنیم.",
-    "exampleEn": "We talk about UFO.",
-    "plural": "die Ufoe"
+    "plural": "die Ufos",
+    "article": "das",
+    "example": "Das ist das Ufo.",
+    "exampleFa": "این بشقاب‌پرنده است.",
+    "exampleEn": "This is the UFO."
   },
   {
     "word": "Viereck",
@@ -2275,10 +2235,11 @@
     "en": "quadrilateral",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Viereck.",
-    "exampleFa": "درباره چهارضلعی حرف می‌زنیم.",
-    "exampleEn": "We talk about quadrilateral.",
-    "plural": "die Vierecke"
+    "plural": "die Vierecke",
+    "article": "das",
+    "example": "Das ist das Viereck.",
+    "exampleFa": "این چهارضلعی است.",
+    "exampleEn": "This is the quadrilateral."
   },
   {
     "word": "Weltraum",
@@ -2287,9 +2248,10 @@
     "en": "outer space",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Das Weltraum ist wichtig.",
-    "exampleFa": "فضا (کیهان) مهم است.",
-    "exampleEn": "The outer space is important."
+    "example": "Das ist der Weltraum.",
+    "exampleFa": "این فضا (کیهان) است.",
+    "exampleEn": "This is the outer space.",
+    "article": "der"
   },
   {
     "word": "Wesen",
@@ -2298,11 +2260,11 @@
     "en": "essence",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Der Wesen ist wichtig.",
-    "exampleFa": "ذات / ماهیت مهم است.",
-    "exampleEn": "The essence is important.",
+    "example": "Das ist das Wesen.",
+    "exampleFa": "این ذات است.",
+    "exampleEn": "This is the essence.",
     "plural": "die Wesen",
-    "article": "der"
+    "article": "das"
   },
   {
     "word": "Wirklichkeit",
@@ -2311,9 +2273,9 @@
     "en": "reality (in practice)",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Wirklichkeit ist wichtig.",
-    "exampleFa": "واقعیت (به‌طور عینی/در عمل) مهم است.",
-    "exampleEn": "The reality (in practice) is important.",
+    "example": "Das ist die Wirklichkeit.",
+    "exampleFa": "این واقعیت (به‌طور عینی است.",
+    "exampleEn": "This is the reality (in practice).",
     "plural": "die Wirklichkeiten",
     "article": "die"
   },
@@ -2324,9 +2286,9 @@
     "en": "effect",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Wirkung ist wichtig.",
-    "exampleFa": "اثر / تأثیر مهم است.",
-    "exampleEn": "The effect is important.",
+    "example": "Das ist die Wirkung.",
+    "exampleFa": "این اثر است.",
+    "exampleEn": "This is the effect.",
     "plural": "die Wirkungen",
     "article": "die"
   },
@@ -2337,9 +2299,9 @@
     "en": "science",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Wissenschaft ist wichtig.",
-    "exampleFa": "علم مهم است.",
-    "exampleEn": "The science is important.",
+    "example": "Das ist die Wissenschaft.",
+    "exampleFa": "این علم است.",
+    "exampleEn": "This is the science.",
     "plural": "die Wissenschaften",
     "article": "die"
   },
@@ -2350,9 +2312,9 @@
     "en": "time machine",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Zeitmaschine ist wichtig.",
-    "exampleFa": "ماشین زمان مهم است.",
-    "exampleEn": "The time machine is important.",
+    "example": "Das ist die Zeitmaschine.",
+    "exampleFa": "این ماشین زمان است.",
+    "exampleEn": "This is the time machine.",
     "plural": "die Zeitmaschinen",
     "article": "die"
   },
@@ -2363,9 +2325,9 @@
     "en": "time travel",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Die Zeitreise ist wichtig.",
-    "exampleFa": "سفر در زمان مهم است.",
-    "exampleEn": "The time travel is important.",
+    "example": "Das ist die Zeitreise.",
+    "exampleFa": "این سفر در زمان است.",
+    "exampleEn": "This is the time travel.",
     "plural": "die Zeitreisen",
     "article": "die"
   },
@@ -2376,10 +2338,243 @@
     "en": "context / connection",
     "level": "B2",
     "category": "علم و فلسفه",
-    "example": "Wir sprechen über Zusammenhang.",
-    "exampleFa": "درباره ارتباط / زمینه حرف می‌زنیم.",
-    "exampleEn": "We talk about context / connection.",
+    "article": "der",
     "plural": "die Zusammenhänge",
-    "pluralNote": "با Umlaut"
+    "example": "Das ist der Zusammenhang.",
+    "exampleFa": "این ارتباط است.",
+    "exampleEn": "This is the context."
+  },
+  {
+    "word": "Gewohnheit",
+    "ipa": "[ɡəˈvoːnhaɪ̯t]",
+    "fa": "عادت",
+    "en": "habit",
+    "level": "B2",
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Rauchen ist eine schädliche Gewohnheit.",
+    "exampleFa": "سیگار کشیدن عادت زیان‌باری است.",
+    "exampleEn": "Smoking is a harmful habit.",
+    "plural": "die Gewohnheiten",
+    "article": "die"
+  },
+  {
+    "word": "Entschluss",
+    "ipa": "[ɛntˈʃlʊs]",
+    "fa": "تصمیم",
+    "en": "decision",
+    "level": "B2",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Er fasste den Entschluss, ins Ausland zu ziehen.",
+    "exampleFa": "او تصمیم گرفت به خارج نقل مکان کند.",
+    "exampleEn": "He made the decision to move abroad.",
+    "plural": "die Entschlüsse",
+    "article": "der"
+  },
+  {
+    "word": "Erlebnis",
+    "ipa": "[ɛɐ̯ˈleːpnɪs]",
+    "fa": "تجربه (رویداد)",
+    "en": "experience (event)",
+    "level": "B2",
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Die Reise war ein unvergessliches Erlebnis.",
+    "exampleFa": "آن سفر تجربه‌ای فراموش‌نشدنی بود.",
+    "exampleEn": "The trip was an unforgettable experience.",
+    "plural": "die Erlebnisse",
+    "article": "das"
+  },
+  {
+    "word": "Entdeckung",
+    "ipa": "[ɛntˈdɛkʊŋ]",
+    "fa": "کشف",
+    "en": "discovery",
+    "level": "B2",
+    "category": "علم و فلسفه",
+    "example": "Die Entdeckung des Penicillins veränderte die Medizin.",
+    "exampleFa": "کشف پنی‌سیلین پزشکی را دگرگون کرد.",
+    "exampleEn": "The discovery of penicillin changed medicine.",
+    "plural": "die Entdeckungen",
+    "article": "die"
+  },
+  {
+    "word": "Ursache",
+    "ipa": "[ˈuːɐ̯ˌzaxə]",
+    "fa": "علت",
+    "en": "cause",
+    "level": "B2",
+    "category": "علم و فلسفه",
+    "example": "Die Ursache des Unfalls ist noch unklar.",
+    "exampleFa": "علت تصادف هنوز نامشخص است.",
+    "exampleEn": "The cause of the accident is still unclear.",
+    "plural": "die Ursachen",
+    "article": "die"
+  },
+  {
+    "word": "Folge",
+    "ipa": "[ˈfɔlɡə]",
+    "fa": "پیامد",
+    "en": "consequence",
+    "level": "B2",
+    "category": "علم و فلسفه",
+    "example": "Die Folgen der Krise sind bis heute spürbar.",
+    "exampleFa": "پیامدهای بحران تا امروز محسوس است.",
+    "exampleEn": "The consequences of the crisis are still felt today.",
+    "plural": "die Folgen",
+    "article": "die"
+  },
+  {
+    "word": "Nachteil",
+    "ipa": "[ˈnaːxˌtaɪ̯l]",
+    "fa": "عیب، مضرت",
+    "en": "disadvantage",
+    "level": "B2",
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Jeder Vorteil hat auch einen Nachteil.",
+    "exampleFa": "هر مزیتی عیبی هم دارد.",
+    "exampleEn": "Every advantage also has a disadvantage.",
+    "plural": "die Nachteile",
+    "article": "der"
+  },
+  {
+    "word": "Auskunft",
+    "ipa": "[ˈaʊ̯sˌkʊnft]",
+    "fa": "اطلاعات، راهنمایی",
+    "en": "information (official)",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Bei der Auskunft erhalten Sie alle Informationen.",
+    "exampleFa": "در باجه‌ی اطلاعات همه‌ی اطلاعات را دریافت می‌کنید.",
+    "exampleEn": "At the information desk you will receive all the information.",
+    "plural": "die Auskünfte",
+    "article": "die"
+  },
+  {
+    "word": "Geduld",
+    "ipa": "[ɡəˈdʊlt]",
+    "fa": "صبر",
+    "en": "patience",
+    "level": "B2",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Beim Lernen braucht man Geduld.",
+    "exampleFa": "در یادگیری به صبر نیاز است.",
+    "exampleEn": "Learning requires patience.",
+    "article": "die"
+  },
+  {
+    "word": "Umfrage",
+    "ipa": "[ˈʊmˌfʁaːɡə]",
+    "fa": "نظرسنجی",
+    "en": "survey",
+    "level": "B2",
+    "category": "جامعه، سیاست و حقوق",
+    "example": "Laut einer Umfrage sind die meisten zufrieden.",
+    "exampleFa": "طبق یک نظرسنجی بیشتر مردم راضی‌اند.",
+    "exampleEn": "According to a survey, most people are satisfied.",
+    "plural": "die Umfragen",
+    "article": "die"
+  },
+  {
+    "word": "Erweiterung",
+    "ipa": "[ɛɐ̯ˈvaɪ̯təʁʊŋ]",
+    "fa": "گسترش",
+    "en": "expansion, extension",
+    "level": "B2",
+    "category": "مفاهیم و اشیای روزمره",
+    "example": "Die Erweiterung des Flughafens ist geplant.",
+    "exampleFa": "گسترش فرودگاه برنامه‌ریزی شده است.",
+    "exampleEn": "The expansion of the airport is planned.",
+    "plural": "die Erweiterungen",
+    "article": "die"
+  },
+  {
+    "word": "Behandlung",
+    "ipa": "[bəˈhandlʊŋ]",
+    "fa": "درمان",
+    "en": "treatment",
+    "level": "B2",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Die Behandlung dauert mehrere Wochen.",
+    "exampleFa": "درمان چند هفته طول می‌کشد.",
+    "exampleEn": "The treatment lasts several weeks.",
+    "plural": "die Behandlungen",
+    "article": "die"
+  },
+  {
+    "word": "Verletzung",
+    "ipa": "[fɛɐ̯ˈlɛt͡sʊŋ]",
+    "fa": "آسیب، مصدومیت",
+    "en": "injury",
+    "level": "B2",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Die Verletzung war zum Glück nicht schwer.",
+    "exampleFa": "خوشبختانه آسیب جدی نبود.",
+    "exampleEn": "Fortunately, the injury was not serious.",
+    "plural": "die Verletzungen",
+    "article": "die"
+  },
+  {
+    "word": "Entspannung",
+    "ipa": "[ɛntˈʃpanʊŋ]",
+    "fa": "آرام‌سازی، استراحت",
+    "en": "relaxation",
+    "level": "B2",
+    "category": "روان‌شناسی و سلامت روان",
+    "example": "Nach der Arbeit brauche ich Entspannung.",
+    "exampleFa": "بعد از کار به استراحت نیاز دارم.",
+    "exampleEn": "After work I need relaxation.",
+    "article": "die",
+    "plural": "die Entspannungen"
+  },
+  {
+    "word": "Wasserkreislauf",
+    "ipa": "[ˈvasɐˌkʁaɪ̯slaʊ̯f]",
+    "fa": "چرخه‌ی آب",
+    "en": "water cycle",
+    "level": "B2",
+    "category": "محیط‌زیست و انرژی",
+    "example": "Der Wasserkreislauf hält die Natur im Gleichgewicht.",
+    "exampleFa": "چرخه‌ی آب طبیعت را در تعادل نگه می‌دارد.",
+    "exampleEn": "The water cycle keeps nature in balance.",
+    "article": "der",
+    "plural": "die Wasserkreisläufe"
+  },
+  {
+    "word": "Energiequelle",
+    "ipa": "[enɛɐ̯ˈɡiːˌkvɛlə]",
+    "fa": "منبع انرژی",
+    "en": "energy source",
+    "level": "B2",
+    "category": "محیط‌زیست و انرژی",
+    "example": "Die Sonne ist eine unerschöpfliche Energiequelle.",
+    "exampleFa": "خورشید منبعی پایان‌ناپذیر از انرژی است.",
+    "exampleEn": "The sun is an inexhaustible energy source.",
+    "plural": "die Energiequellen",
+    "article": "die"
+  },
+  {
+    "word": "Ausstoß",
+    "ipa": "[ˈaʊ̯sˌʃtoːs]",
+    "fa": "انتشار (گازها)",
+    "en": "emissions",
+    "level": "B2",
+    "category": "محیط‌زیست و انرژی",
+    "example": "Der Ausstoß von CO₂ muss sinken.",
+    "exampleFa": "انتشار دی‌اکسید کربن باید کاهش یابد.",
+    "exampleEn": "CO₂ emissions must decrease.",
+    "article": "der",
+    "plural": "die Ausstöße"
+  },
+  {
+    "word": "Speicherung",
+    "ipa": "[ˈʃpaɪ̯çəʁʊŋ]",
+    "fa": "ذخیره‌سازی",
+    "en": "storage (data)",
+    "level": "B2",
+    "category": "فناوری",
+    "example": "Die Speicherung der Daten erfolgt automatisch.",
+    "exampleFa": "ذخیره‌سازی داده‌ها به‌صورت خودکار انجام می‌شود.",
+    "exampleEn": "The data is stored automatically.",
+    "article": "die",
+    "plural": "die Speicherungen"
   }
 ]

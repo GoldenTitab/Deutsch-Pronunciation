@@ -188,7 +188,9 @@ function attachSpeaker(container) {
 }
 
 function loadTheme() {
-  const dark = localStorage.getItem('theme') === 'dark';
+  const savedTheme = localStorage.getItem('theme');
+  const dark = savedTheme ? savedTheme === 'dark'
+    : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   document.body.classList.toggle('dark', dark);
   themeToggle.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
   themeToggle.setAttribute('aria-label', dark ? 'تغییر به تم روشن' : 'تغییر به تم تاریک');
@@ -253,7 +255,8 @@ if (megaParent) {
 }
 
 function isDesktopNav() {
-  return window.matchMedia('(min-width: 900px)').matches;
+  // Guarded: without matchMedia (old webviews) the whole script must not die here.
+  return !!(window.matchMedia && window.matchMedia('(min-width: 899px)').matches);
 }
 
 function positionMegaMenu() {
@@ -524,6 +527,7 @@ function renderHome() {
     });
   }
   renderHomeGamification();
+  try { renderHomeDueAndPath(); } catch (_) {}
 }
 
 const LEVEL_ICONS = { A0: 'fa-seedling', A1: 'fa-shoe-prints', A2: 'fa-walking', B1: 'fa-hiking', B2: 'fa-mountain', C1: 'fa-trophy' };
@@ -588,28 +592,13 @@ function renderVocab() {
 
   vocabBody.innerHTML = page.map(w => {
     const isLearned = learnedWords.has(wKey(w));
-    // Suppress low-quality auto-generated examples that are grammatically broken or generic
-    let ex = w.example || '';
-    const badPatterns = [
-      /ist ein wichtiges Wort/i,
-      /Das finde ich /i,
-      /Der\/Die\/Das /i,
-      /Hier ist (der|die|das) /i,
-      /Ich lerne das Wort/i,
-      /Wir treffen uns (gestern|heute|jetzt|morgen)/i,
-      /Ich esse gerne Wasser/i,
-      /Mein Beruf ist der /i,
-      /Das Buch liegt .+ dem Tisch/i
-    ];
-    if (ex && badPatterns.some(p => p.test(ex))) {
-      ex = '';
-    }
+    const ex = w.example || '';
     const exAudio = ex || w.word;
-    const showExFa = ex && w.exampleFa && !/یک واژه مهم است|مهم است\.$/.test(w.exampleFa || '');
-    const showExEn = ex && w.exampleEn && !/is an important word/i.test(w.exampleEn || '');
+    const showExFa = ex && w.exampleFa;
+    const showExEn = ex && w.exampleEn;
     return `
     <tr data-word="${escHtml(w.word)}">
-      <td data-label="کلمه"><strong lang="de">${escHtml(w.word)}</strong></td>
+      <td data-label="کلمه">${w.article ? `<span class="article-chip ${w.article}">${w.article}</span> ` : ''}<strong lang="de">${escHtml(w.word)}</strong></td>
       <td data-label="جمع" dir="ltr" lang="de">${w.plural ? escHtml(w.plural) : '—'}${w.pluralNote ? ` <span class="plural-note" title="${escHtml(w.pluralNote)}">≈</span>` : ''}</td>
       <td class="ipa" data-label="تلفظ" dir="ltr">${escHtml(w.ipa || '')}</td>
       <td data-label="فارسی">${escHtml(w.fa || '')}</td>
@@ -622,7 +611,7 @@ function renderVocab() {
       </td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
-        <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+        <button class="audio-btn" data-word="${escHtml(w.article ? w.article + ' ' + w.word : w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
         <button class="audio-btn learn-toggle ${isLearned ? 'learned' : ''}" data-word="${escHtml(w.word)}" data-key="${escHtml(wKey(w))}" aria-label="${isLearned ? 'حذف از یادگرفته‌ها' : 'علامت‌گذاری به‌عنوان یادگرفته'}" aria-pressed="${isLearned}">
           <i class="fas ${isLearned ? 'fa-check-circle' : 'fa-circle'}"></i>
         </button>
@@ -1137,8 +1126,7 @@ function initFlashcards() {
   if (flashDueOnly) {
     const sr = loadMainSR();
     const now = Date.now();
-    const due = pool.filter(w => !sr[wKey(w)] || sr[wKey(w)].due <= now);
-    pool = due.length > 0 ? due : pool;
+    pool = pool.filter(w => sr[wKey(w)] && sr[wKey(w)].due <= now);
   }
   flashCards = [...pool];
   flashIndexValue = 0;
@@ -1155,9 +1143,9 @@ function showFlashcard() {
   const w = flashCards[flashIndexValue];
 
   flashFront.innerHTML = `
-    <div class="flashcard-word" lang="de">${escHtml(w.word)}</div>
+    <div class="flashcard-word" lang="de">${w.article ? `<span class="article-chip ${w.article}">${w.article}</span> ` : ''}${escHtml(w.word)}</div>
     <div class="flashcard-ipa" dir="ltr">${escHtml(w.ipa || '')}</div>
-    <button class="audio-btn" data-word="${escHtml(w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span> گوش کن</button>
+    <button class="audio-btn" data-word="${escHtml(w.article ? w.article + ' ' + w.word : w.word)}" aria-label="پخش تلفظ ${escHtml(w.word)}"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span> گوش کن</button>
   `;
 
   if (flashFa) flashFa.textContent = w.fa || '';
@@ -1253,10 +1241,17 @@ function buildQuiz() {
 
   const vocabWords = shuffleArr(vocabPool).slice(0, Math.min(6, vocabPool.length));
   const vocabQuestions = vocabWords.map(w => {
-    const distractors = shuffleArr(vocabPool.filter(x => x.word !== w.word)).slice(0, 3).map(x => x.fa);
+    const seenFa = new Set([w.fa]);
+    const distractors = [];
+    for (const x of shuffleArr(vocabPool)) {
+      if (x.word === w.word || !x.fa || seenFa.has(x.fa)) continue;
+      seenFa.add(x.fa);
+      distractors.push(x.fa);
+      if (distractors.length === 3) break;
+    }
     return {
       type: 'vocab',
-      word: w.word,
+      word: w.article ? w.article + ' ' + w.word : w.word,
       ipa: w.ipa,
       promptLabel: 'معنی فارسی این کلمه چیست؟',
       answer: w.fa,
@@ -1273,7 +1268,7 @@ function buildQuiz() {
     verbQuestions = chosenVerbs.map(v => {
       const pronoun = shuffleArr(Object.keys(PRONOUN_LABELS))[0];
       const answer = v.present[pronoun];
-      const distractors = shuffleArr(Object.values(v.present).filter(f => f !== answer)).slice(0, 3);
+      const distractors = shuffleArr([...new Set(Object.values(v.present).filter(f => f !== answer))]).slice(0, 3);
       return {
         type: 'grammar',
         promptLabel: `صرف صحیح فعل «${v.infinitive}» (${v.fa}) برای «${PRONOUN_LABELS[pronoun]}» چیست؟`,
@@ -1358,6 +1353,70 @@ function renderQuizQuestion() {
 }
 
 quizStartBtn.addEventListener('click', buildQuiz);
+
+// ---------- Article trainer (der / die / das) ----------
+const articleArea = document.getElementById('articleArea');
+const articleStartBtn = document.getElementById('articleStartBtn');
+const articleLevelFilter = document.getElementById('articleLevelFilter');
+let articleQuestions = [];
+let articleIndex = 0;
+let articleScore = 0;
+
+function startArticleTrainer() {
+  const level = articleLevelFilter.value;
+  const pool = (APP_DATA?.vocabulary || []).filter(w => w.article && (level === 'all' || w.level === level));
+  if (pool.length < 10) {
+    articleArea.innerHTML = '<p style="opacity:0.6;text-align:center;padding:1.5rem;">برای این سطح اسمِ کافی با آرتیکل وجود ندارد</p>';
+    return;
+  }
+  articleQuestions = shuffleArr(pool).slice(0, 10);
+  articleIndex = 0;
+  articleScore = 0;
+  renderArticleQuestion();
+}
+
+function renderArticleQuestion() {
+  if (articleIndex >= articleQuestions.length) {
+    articleArea.innerHTML = `
+      <div style="padding:1.5rem;text-align:center;">
+        <h3>نتیجه تمرین آرتیکل</h3>
+        <p style="font-size:1.5rem;margin:1rem 0;">${articleScore} از ${articleQuestions.length} پاسخ درست</p>
+        <button id="articleRetryBtn" class="btn-primary">تمرین دوباره</button>
+      </div>`;
+    document.getElementById('articleRetryBtn').addEventListener('click', startArticleTrainer);
+    if (articleScore === articleQuestions.length) celebrate();
+    if (articleScore > 0) addXP(articleScore * 2, 'تمرین آرتیکل');
+    return;
+  }
+  const w = articleQuestions[articleIndex];
+  articleArea.innerHTML = `
+    <div style="padding-top:1rem;">
+      <p style="color:var(--text-muted);margin-bottom:0.5rem;">کلمه ${articleIndex + 1} از ${articleQuestions.length} &nbsp;·&nbsp; امتیاز: ${articleScore}</p>
+      <div class="flashcard-word" dir="ltr" lang="de" style="margin-bottom:0.25rem;">___ ${escHtml(w.word)}</div>
+      <p style="margin-bottom:1rem;">${escHtml(w.fa || '')}</p>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        ${['der', 'die', 'das'].map(a => `<button class="btn-secondary article-opt" data-value="${a}" style="flex:1;min-width:90px;"><span class="article-chip ${a}">${a}</span></button>`).join('')}
+      </div>
+      <p class="article-feedback" style="min-height:1.6rem;margin-top:0.75rem;"></p>
+    </div>`;
+  articleArea.querySelectorAll('.article-opt').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const correct = btn.dataset.value === w.article;
+      articleArea.querySelectorAll('.article-opt').forEach(b => {
+        b.disabled = true;
+        if (b.dataset.value === w.article) b.classList.add('btn-accent');
+      });
+      if (correct) articleScore++;
+      else btn.style.outline = '2px solid #ef4444';
+      const fb = articleArea.querySelector('.article-feedback');
+      if (fb) fb.innerHTML = `${correct ? '✅ درست!' : '❌ درستش اینه:'} <span dir="ltr" lang="de"><b>${escHtml(w.article)} ${escHtml(w.word)}</b></span>${w.plural ? ` <span style="color:var(--text-muted);">(جمع: ${escHtml(w.plural)})</span>` : ''} <button class="audio-btn" data-word="${escHtml(w.article + ' ' + w.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>`;
+      attachSpeaker(articleArea);
+      setTimeout(() => { articleIndex++; renderArticleQuestion(); }, correct ? 1100 : 1900);
+    });
+  });
+}
+
+if (articleStartBtn) articleStartBtn.addEventListener('click', startArticleTrainer);
 
 const XP_KEY = 'germanXP';
 const STREAK_KEY = 'germanStreak';
@@ -1571,12 +1630,8 @@ function normalizeDictation(s) {
 }
 
 function dictationMatch(user, answer) {
-  const u = (user || '').trim().replace(/[?!.,;:"""''«»]/g, '').replace(/\s+/g, ' ');
-  const a = (answer || '').trim().replace(/[?!.,;:"""''«»]/g, '').replace(/\s+/g, ' ');
-  if (u === a) return true;
-  // case-insensitive + ß/ss flexibility
-  const fold = (x) => x.toLowerCase().replace(/ß/g, 'ss');
-  return fold(u) === fold(a);
+  // punctuation-free, case-insensitive, ß/ss equivalence — via normalizeDictation
+  return normalizeDictation(user) === normalizeDictation(answer);
 }
 
 function startDictation() {
@@ -2110,17 +2165,17 @@ const MINIMAL_PAIRS = [
   [{ w: 'Miete', fa: 'اجاره', en: 'rent' }, { w: 'Mitte', fa: 'وسط', en: 'middle' }],
   [{ w: 'rot', fa: 'قرمز', en: 'red' }, { w: 'tot', fa: 'مرده', en: 'dead' }],
   [{ w: 'ich', fa: 'من', en: 'I' }, { w: 'ach', fa: '(حرف ندا) آخ', en: 'oh / ah' }],
-  [{ w: 'Ratte', fa: 'موش صحرایی', en: 'rat' }, { w: 'Rate', fa: 'تخمین / نصیحت', en: 'guess / advice' }],
-  [{ w: 'Soll', fa: 'باید (حالت) / حد', en: 'should / limit' }, { w: 'Zoll', fa: 'گمرک / اینچ', en: 'customs / inch' }],
+  [{ w: 'Ratte', fa: 'موش صحرایی', en: 'rat' }, { w: 'Rate', fa: 'قسط / نرخ', en: 'installment / rate' }],
+  [{ w: 'Soll', fa: 'هدف / بدهی (حسابداری)', en: 'target / debit (accounting)' }, { w: 'Zoll', fa: 'گمرک / اینچ', en: 'customs / inch' }],
   [{ w: 'Kiste', fa: 'جعبه', en: 'box' }, { w: 'Küsse', fa: 'بوسه‌ها', en: 'kisses' }],
   [{ w: 'Busse', fa: 'اتوبوس‌ها', en: 'buses' }, { w: 'Buße', fa: 'جزا / توبه', en: 'penance / fine' }],
-  [{ w: 'Stadt', fa: 'شهر', en: 'city' }, { w: 'Statt', fa: 'به جای', en: 'instead of' }],
+  [{ w: 'Stahl', fa: 'فولاد', en: 'steel' }, { w: 'Stall', fa: 'اسطبل', en: 'stable' }],
   [{ w: 'Rübe', fa: 'چغندر', en: 'beetroot' }, { w: 'Robe', fa: 'عبا / روپوش', en: 'robe / gown' }],
   [{ w: 'Bürger', fa: 'شهروند', en: 'citizen' }, { w: 'Burger', fa: 'همبرگر', en: 'burger' }],
   [{ w: 'Kuchen', fa: 'کیک', en: 'cake' }, { w: 'Küchen', fa: 'آشپزخانه‌ها', en: 'kitchens' }],
-  [{ w: 'Hund', fa: 'سگ', en: 'dog' }, { w: 'Hunt', fa: '(نام خانوادگی) هونت', en: 'surname Hunt' }],
-  [{ w: 'Tag', fa: 'روز', en: 'day' }, { w: 'Tack', fa: 'میخ (نوک‌تیز)', en: 'tack' }],
-  [{ w: 'Weg', fa: 'راه', en: 'way' }, { w: 'Wegg', fa: 'کوکی (شیرینی)', en: 'cookie (Swiss)' }],
+  [{ w: 'Hund', fa: 'سگ', en: 'dog' }, { w: 'Hand', fa: 'دست', en: 'hand' }],
+  [{ w: 'Wahl', fa: 'انتخاب', en: 'choice' }, { w: 'Wall', fa: 'خاکریز / دیوار دفاعی', en: 'rampart' }],
+  [{ w: 'Ofen', fa: 'فر / بخاری', en: 'oven / stove' }, { w: 'offen', fa: 'باز', en: 'open' }],
   [{ w: 'Berg', fa: 'کوه', en: 'mountain' }, { w: 'Burg', fa: 'قلعه', en: 'castle' }]
 ];
 let currentPair = null;
@@ -2294,7 +2349,7 @@ window.addEventListener('scroll', () => {
 });
 const WRITING_PROMPTS = {
   A1: [
-    { prompt: 'بگو اسمت چیست و اهل کجایی (با heißen و kommen).', hint: 'Ich heiße … und komme aus …', expect: [/ich\s+heiße/i, /komme\s+aus/i], sample: 'Ich heiße Sara und komme aus Iran.' },
+    { prompt: 'بگو اسمت چیست و اهل کجایی (با heißen و kommen).', hint: 'Ich heiße … und komme aus …', expect: [/ich\s+heiße/i, /komme\s+aus/i], sample: 'Ich heiße Sara und komme aus dem Iran.' },
     { prompt: 'بگو چند سالته (با sein + Jahre alt).', hint: 'Ich bin … Jahre alt.', expect: [/ich\s+bin\s+\d+/i, /jahre\s+alt/i], sample: 'Ich bin 25 Jahre alt.' },
     { prompt: 'بگو امروز چه کاری می‌کنی (فعل حال + قید زمان).', hint: 'Heute + Verb in Position 2', expect: [/heute/i], sample: 'Heute lerne ich Deutsch.' }
   ],
@@ -2385,12 +2440,14 @@ function renderHomeDueAndPath() {
   if (!area || !APP_DATA) return;
   let dueCount = 0;
   try {
-    const sr = JSON.parse(localStorage.getItem('germanMainSR') || '{}');
+    const sr = JSON.parse(localStorage.getItem(MAIN_SR_KEY) || '{}');
     const now = Date.now();
     dueCount = Object.values(sr).filter(c => c && c.due && c.due <= now).length;
   } catch (_) {}
   const dayIdx = typeof getStudyDayIndex === 'function' ? getStudyDayIndex() : 0;
   const day = (APP_DATA.studyPlan || [])[dayIdx] || (APP_DATA.studyPlan || [])[0];
+  const wodPool = (APP_DATA.vocabulary || []).filter(w => w.article && w.example);
+  const wod = wodPool.length ? wodPool[Math.floor(Date.now() / 86400000) % wodPool.length] : null;
   area.innerHTML = `
     <div class="table-container" style="padding:1.25rem;margin-top:1.5rem;">
       <h3 style="margin-bottom:0.75rem;"><i class="fas fa-bolt"></i> امروز</h3>
@@ -2407,27 +2464,56 @@ function renderHomeDueAndPath() {
         <button class="btn-secondary" id="homeGoPath">مسیر امروز</button>
         <button class="btn-accent" id="homeGoWriting">تمرین نوشتاری</button>
       </div>
-    </div>`;
+    </div>
+    ${wod ? `<div class="table-container" style="padding:1.25rem;margin-top:1rem;">
+      <h3 style="margin-bottom:0.75rem;"><i class="fas fa-sun"></i> کلمهٔ روز</h3>
+      <div class="flashcard-word" dir="ltr" lang="de" style="font-size:1.6rem;margin-bottom:0.25rem;"><span class="article-chip ${wod.article}">${wod.article}</span> ${escHtml(wod.word)}
+        <button class="audio-btn" data-word="${escHtml(wod.article + ' ' + wod.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
+      </div>
+      <div class="flashcard-ipa" dir="ltr">${escHtml(wod.ipa || '')}</div>
+      <p style="margin:0.5rem 0;">${escHtml(wod.fa || '')} · <span dir="ltr">${escHtml(wod.en || '')}</span>${wod.plural ? ` · <span dir="ltr" lang="de">${escHtml(wod.plural)}</span>` : ''}</p>
+      <p dir="ltr" lang="de" style="color:var(--text-muted);margin-bottom:0.25rem;">${escHtml(wod.example)}</p>
+      <p style="color:var(--text-muted);">${escHtml(wod.exampleFa || '')}</p>
+    </div>` : ''}`;
+  attachSpeaker(area);
   document.getElementById('homeGoFlashDue')?.addEventListener('click', () => {
+    flashDueOnly = true;
     const t = document.getElementById('flashcardDueToggle');
-    if (t) t.checked = true;
+    if (t) t.classList.add('learn-toggle-active');
     goToSection('flashcards');
   });
   document.getElementById('homeGoPath')?.addEventListener('click', () => goToSection('path'));
   document.getElementById('homeGoWriting')?.addEventListener('click', () => goToSection('writing'));
 }
 
-// Hook into existing renderHome
-const _origRenderHome = typeof renderHome === 'function' ? renderHome : null;
-if (_origRenderHome) {
-  // re-wrap after load
-}
-document.addEventListener('DOMContentLoaded', () => {
-  const orig = window.renderHome || renderHome;
+
+// --- Static phonetics controls: bound here, no inline onclick attributes ---
+document.querySelectorAll('.example-trigger').forEach(el => {
+  el.addEventListener('click', () => {
+    const input = document.getElementById('analyzer-input');
+    if (!input) return;
+    input.value = el.textContent.trim();
+    input.dispatchEvent(new Event('input'));
+    input.focus();
+  });
 });
-// Patch renderHomeGamification path area after data load via existing flow
-const _rh = renderHome;
-renderHome = function() {
-  _rh();
-  try { renderHomeDueAndPath(); } catch (_) {}
-};
+document.getElementById('pair-play-btn')?.addEventListener('click', () => playCurrentPair());
+document.getElementById('rec-toggle-btn')?.addEventListener('click', () => toggleRecording());
+document.getElementById('rec-native-play-btn')?.addEventListener('click', (e) => {
+  const sel = document.getElementById('rec-word-select');
+  if (sel && sel.value) playPhoneticsAudio(sel.value, e.currentTarget);
+});
+document.querySelectorAll('[data-goto-section]').forEach(el => {
+  el.addEventListener('click', () => goToSection(el.dataset.gotoSection));
+});
+document.querySelector('.voice-banner-close')?.addEventListener('click', (e) => {
+  e.currentTarget.closest('.voice-banner')?.classList.add('hidden');
+});
+if (backToTopBtn) backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+const phoneticsSectionEl = document.getElementById('phonetics');
+if (phoneticsSectionEl) {
+  phoneticsSectionEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('.audio-btn[data-word]');
+    if (btn) playPhoneticsAudio(btn.dataset.word, btn);
+  });
+}
