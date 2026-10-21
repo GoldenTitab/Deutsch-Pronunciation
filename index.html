@@ -34,10 +34,6 @@
     @keyframes eq { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(1.2); } }
     .playing-bg { background-color: var(--primary-color) !important; color: #fff !important; box-shadow: 0 0 15px rgba(59,130,246,0.5); }
     .mega-menu-touch-open .mega-menu { display: block; }
-    .nav-list-scroll-hint { display: none; text-align: center; padding: 0.5rem; color: var(--text-muted); font-size: 0.8rem; }
-    @media (max-width: 899px) {
-      .nav-list.open + .nav-list-scroll-hint { display: block; }
-    }
   </style>
 </head>
 <body>
@@ -102,7 +98,6 @@
             </div>
           </li>
         </ul>
-        <div class="nav-list-scroll-hint"><i class="fas fa-chevron-down"></i> برای دیدن بقیه اسکرول کنید</div>
       </nav>
 
       <button id="themeToggle" class="theme-toggle" aria-label="تغییر تم">

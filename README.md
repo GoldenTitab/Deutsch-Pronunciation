@@ -39,7 +39,7 @@ index.html          entry point — every section (home, path, vocabulary,
 style.css            all styling, theming (CSS variables), and responsive layout
 script.js            app logic — routing, exercises, path, dictation, XP, backup
 manifest.json        PWA manifest
-sw.js                service worker (offline cache, cache name: german-with-me-v3)
+sw.js                service worker (offline cache, cache name: german-with-me-v4)
 worker.js            optional Cloudflare Worker for server-side text-to-speech
 tools/
   enrich-data.js     content enrichment (grammar meta, extra verbs, seed lists) —
@@ -127,7 +127,7 @@ A full audit + repair pass over code and data:
 - Theme unified: the phonetics analyzer card used a hard-coded dark-navy gradient in both themes; it now follows the theme via CSS variables (brand blue in light mode, deep navy in dark). The voice banner text colour is theme-safe. One breakpoint scale (899px). First visit respects `prefers-color-scheme`.
 - `enrich-data.js` moved to `tools/` (the location this README always claimed; from the repo root its `../data` path was wrong), its plural guesser made conservative, its meta example template removed, and its core-section overwrites turned into seed-only fills so re-running it can no longer destroy curated content.
 - `worker.js` hardened: CORS preflight, GET-only, missing-key and upstream-failure handling.
-- Service worker cache bumped to `german-with-me-v2`, then `german-with-me-v3` in round 2.
+- Service worker cache: `german-with-me-v2` → `german-with-me-v3` (round 2) → `german-with-me-v4` (round 3, responsive header/nav fix).
 - Writing-practice sample corrected: *aus dem Iran* (not *aus Iran*).
 
 **Round 2 (same day)** — dictionary-verified completion pass (tools/fix-data-5…14.js):
