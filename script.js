@@ -46,7 +46,6 @@ const statTotal = document.getElementById('statTotal');
 const statPercent = document.getElementById('statPercent');
 const progressLevelsDiv = document.getElementById('progressLevels');
 const resetProgressBtn = document.getElementById('resetProgressBtn');
-const themeToggle = document.getElementById('themeToggle');
 const navToggle = document.getElementById('navToggle');
 const navList = document.getElementById('navList');
 const homeFeatures = document.getElementById('homeFeatures');
@@ -187,20 +186,72 @@ function attachSpeaker(container) {
   });
 }
 
+/* Theme switch — same design as the portfolio site (animated sun/moon
+   switch, checkbox checked = dark), wired to this site's body.dark system
+   and its own localStorage key ('theme', unchanged so saved preferences
+   and the progress-reset key list keep working). */
+const themeCheckbox = document.getElementById('themeCheckbox');
+let currentTheme = 'light';
+let isThemeTransitioning = false;
+
+function createThemeOverlay() {
+  let overlay = document.getElementById('theme-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'theme-overlay';
+    overlay.style.cssText = `
+      position: fixed; inset: 0; z-index: 9999;
+      pointer-events: none; opacity: 0;
+      background: radial-gradient(circle at var(--ox,50%) var(--oy,50%), var(--overlay-color) 0%, transparent 70%);
+      transition: opacity 0.55s cubic-bezier(0.4,0,0.2,1);
+    `;
+    document.body.appendChild(overlay);
+  }
+  return overlay;
+}
+
+function applyTheme(theme) {
+  currentTheme = theme;
+  document.body.classList.toggle('dark', theme === 'dark');
+  if (themeCheckbox) {
+    themeCheckbox.checked = (theme === 'dark');
+    themeCheckbox.setAttribute('aria-label', theme === 'dark' ? 'تغییر به تم روشن' : 'تغییر به تم تاریک');
+  }
+}
+
+function setTheme(theme, originX, originY) {
+  if (isThemeTransitioning) return;
+  isThemeTransitioning = true;
+  const overlay = createThemeOverlay();
+  const ox = originX != null ? originX : 50;
+  const oy = originY != null ? originY : 10;
+  overlay.style.setProperty('--ox', ox + '%');
+  overlay.style.setProperty('--oy', oy + '%');
+  overlay.style.setProperty('--overlay-color', theme === 'light' ? '#f8f9fa' : '#0f172a');
+  overlay.style.opacity = '1';
+  setTimeout(() => {
+    applyTheme(theme);
+    localStorage.setItem('theme', theme);
+    overlay.style.opacity = '0';
+    setTimeout(() => { isThemeTransitioning = false; }, 600);
+  }, 280);
+}
+
 function loadTheme() {
   const savedTheme = localStorage.getItem('theme');
   const dark = savedTheme ? savedTheme === 'dark'
     : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-  document.body.classList.toggle('dark', dark);
-  themeToggle.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-  themeToggle.setAttribute('aria-label', dark ? 'تغییر به تم روشن' : 'تغییر به تم تاریک');
+  applyTheme(dark ? 'dark' : 'light');
 }
 
-themeToggle.addEventListener('click', () => {
-  const dark = document.body.classList.toggle('dark');
-  localStorage.setItem('theme', dark ? 'dark' : 'light');
-  themeToggle.innerHTML = dark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-  themeToggle.setAttribute('aria-label', dark ? 'تغییر به تم روشن' : 'تغییر به تم تاریک');
+themeCheckbox.addEventListener('change', (e) => {
+  let ox = 50, oy = 10;
+  if (e && e.currentTarget) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    ox = ((rect.left + rect.width / 2) / window.innerWidth) * 100;
+    oy = ((rect.top + rect.height / 2) / window.innerHeight) * 100;
+  }
+  setTheme(currentTheme === 'dark' ? 'light' : 'dark', ox, oy);
 });
 
 loadTheme();
