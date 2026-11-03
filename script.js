@@ -606,8 +606,8 @@ function renderVocab() {
       <td data-label="مثال" class="vocab-example-cell">
         ${ex ? `<span dir="ltr" lang="de">${escHtml(ex)}</span>
           <button class="audio-btn" data-word="${escHtml(exAudio)}" aria-label="پخش مثال"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
-          ${showExFa ? `<div class="trans">🇮🇷 ${escHtml(w.exampleFa)}</div>` : ''}
-          ${showExEn ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(w.exampleEn)}</div>` : ''}` : '—'}
+          ${showExFa ? `<div class="trans">FA ${escHtml(w.exampleFa)}</div>` : ''}
+          ${showExEn ? `<div class="trans" dir="ltr" lang="en">EN ${escHtml(w.exampleEn)}</div>` : ''}` : '—'}
       </td>
       <td data-label="سطح"><span class="level-badge">${escHtml(w.level || '')}</span>${w.category ? ` <span class="level-badge category-badge">${escHtml(w.category)}</span>` : ''}</td>
       <td class="vocab-actions" data-label="عملیات">
@@ -766,8 +766,8 @@ function renderGrammar() {
             <span lang="de">${escHtml(de)}</span>
             <button class="audio-btn" data-word="${escHtml(de)}" aria-label="پخش تلفظ جمله"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
           </div>
-          ${fa ? `<div class="trans">🇮🇷 ${escHtml(fa)}</div>` : ''}
-          ${en ? `<div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(en)}</div>` : ''}
+          ${fa ? `<div class="trans">FA ${escHtml(fa)}</div>` : ''}
+          ${en ? `<div class="trans" dir="ltr" lang="en">EN ${escHtml(en)}</div>` : ''}
         </div>`;
       }).join('');
     }
@@ -776,8 +776,8 @@ function renderGrammar() {
       <div class="title">${escHtml(g.title || 'مبحث گرامری')}</div>
       <span class="level-tag">${escHtml(g.level || '')}</span>
       ${extraContent}
-      ${g.fa ? `<div class="trans">🇮🇷 ${escHtml(g.fa)}</div>` : ''}
-      ${g.en ? `<div class="trans">🇬🇧 ${escHtml(g.en)}</div>` : ''}
+      ${g.fa ? `<div class="trans">FA ${escHtml(g.fa)}</div>` : ''}
+      ${g.en ? `<div class="trans">EN ${escHtml(g.en)}</div>` : ''}
     </div>
     `;
   }).join('');
@@ -805,7 +805,7 @@ function renderCultureNotes() {
         <span lang="de">${escHtml(n.text || '')}</span>
         ${n.text ? `<button class="audio-btn" data-word="${escHtml(n.text)}" aria-label="پخش تلفظ متن"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>` : ''}
       </div>
-      ${n.fa ? `<div class="trans">🇮🇷 ${escHtml(n.fa)}</div>` : ''}
+      ${n.fa ? `<div class="trans">FA ${escHtml(n.fa)}</div>` : ''}
     </div>
   `).join('');
 
@@ -839,7 +839,7 @@ function renderVerbs() {
       </div>
       <span class="level-tag">${escHtml(v.level || '')}</span>
       <span class="level-tag">${escHtml(v.type || '')}</span>${v.separable ? ' <span class="level-tag" style="background-color:rgba(16,185,129,0.15);color:var(--accent-color);">فعل جدایی‌پذیر (پیشوند: ' + escHtml(v.prefix || '') + ')</span>' : ''}
-      <div class="grammar-desc">🇮🇷 ${escHtml(v.fa || '')} &nbsp;·&nbsp; 🇬🇧 ${escHtml(v.en || '')}</div>
+      <div class="grammar-desc">FA ${escHtml(v.fa || '')} &nbsp;·&nbsp; EN ${escHtml(v.en || '')}</div>
       <table class="verb-table">
         <tr>
           <th class="pronoun"></th>
@@ -1136,7 +1136,7 @@ function initFlashcards() {
 
 function showFlashcard() {
   if (flashCards.length === 0) {
-    flashFront.innerHTML = '<div class="flashcard-word">کلمه‌ی سررسید‌شده‌ای نیست 🎉</div>';
+    flashFront.innerHTML = '<div class="flashcard-word">کلمه‌ی سررسید‌شده‌ای نیست</div>';
     flashRateRow.style.display = 'none';
     return;
   }
@@ -1409,7 +1409,7 @@ function renderArticleQuestion() {
       if (correct) articleScore++;
       else btn.style.outline = '2px solid #ef4444';
       const fb = articleArea.querySelector('.article-feedback');
-      if (fb) fb.innerHTML = `${correct ? '✅ درست!' : '❌ درستش اینه:'} <span dir="ltr" lang="de"><b>${escHtml(w.article)} ${escHtml(w.word)}</b></span>${w.plural ? ` <span style="color:var(--text-muted);">(جمع: ${escHtml(w.plural)})</span>` : ''} <button class="audio-btn" data-word="${escHtml(w.article + ' ' + w.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>`;
+      if (fb) fb.innerHTML = `${correct ? 'درست!' : 'درستش اینه:'} <span dir="ltr" lang="de"><b>${escHtml(w.article)} ${escHtml(w.word)}</b></span>${w.plural ? ` <span style="color:var(--text-muted);">(جمع: ${escHtml(w.plural)})</span>` : ''} <button class="audio-btn" data-word="${escHtml(w.article + ' ' + w.word)}" aria-label="پخش تلفظ"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>`;
       attachSpeaker(articleArea);
       setTimeout(() => { articleIndex++; renderArticleQuestion(); }, correct ? 1100 : 1900);
     });
@@ -1591,8 +1591,8 @@ function renderDialogues() {
               ${escHtml(line.de || '')}
               <button class="audio-btn" data-word="${escHtml(line.de || '')}" aria-label="پخش"><i class="fas fa-volume-up play-icon"></i><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span><span class="equalizer-bar hidden"></span></button>
             </div>
-            <div class="trans">🇮🇷 ${escHtml(line.fa || '')}</div>
-            <div class="trans" dir="ltr" lang="en">🇬🇧 ${escHtml(line.en || '')}</div>
+            <div class="trans">FA ${escHtml(line.fa || '')}</div>
+            <div class="trans" dir="ltr" lang="en">EN ${escHtml(line.en || '')}</div>
           </div>
         `).join('')}
       </div>
@@ -1697,7 +1697,7 @@ function renderDictationQ() {
     } else if (fb) {
       fb.innerHTML = `<p style="color:#ef4444;">✗ نادرست</p>
         <p dir="ltr" lang="de">پاسخ: <strong>${escHtml(item.text)}</strong></p>
-        <p>🇮🇷 ${escHtml(item.fa || '')}</p>`;
+        <p>FA ${escHtml(item.fa || '')}</p>`;
     }
     setTimeout(() => { dictationIdx++; renderDictationQ(); }, 1100);
   });
@@ -2334,7 +2334,7 @@ function updatePhoneticsProgressUI() {
   checkboxes.forEach(cb => { savedState[cb.getAttribute('data-word')] = cb.checked; });
   try { localStorage.setItem('germanPhoneticsProgress', JSON.stringify(savedState)); } catch (e) {}
   if (percentage === 100 && checked > 0) {
-    setTimeout(() => showToast('🎉 تبریک! شما تمام کلمات این مسترکلاس را مسلط شدید!'), 500);
+    setTimeout(() => showToast('تبریک! شما تمام کلمات این مسترکلاس را مسلط شدید!'), 500);
   }
 }
 
