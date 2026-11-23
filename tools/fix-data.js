@@ -1,22 +1,4 @@
 "use strict";
-/*
- * fix-data.js — one-shot data repair for the Deutsch learning site.
- * Run from the project root:  node tools/fix-data.js
- * Fixes (all logged to tools/fix-report.json):
- *  1. Article normalisation: strip der/die/das prefix from `word` into `article`,
- *     adjudicate the 28 known prefix/field gender conflicts.
- *  2. Plural repair: curated fixes, provable signature rules, drop plurals of
- *     uncountable nouns; drop the "تقریبی" pluralNote once a plural is verified.
- *  3. Article completion for ~150 common nouns that had a plural but no article.
- *  4. Removal of machine-generated example sentences that teach wrong German
- *     (template families), with narrow allow-lists for the valid uses.
- *  5. Safe replacement examples for nouns ("Das ist der/die/das …") — only where
- *     the fa/en glosses are plain noun phrases.
- *  6. Removal of auto-generated "Possible cognate" enNotes (unreliable).
- *  7. Cross-level duplicate removal (kept at the lowest level).
- *  8. Entry repairs: Augen (dup of Auge), Socken→Socke, akzeptiert→akzeptieren,
- *     plural-only nouns (Geschwister, Vereinigten Staaten).
- */
 const fs = require("fs");
 const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
@@ -24,7 +6,6 @@ const LEVELS = ["A0", "A1", "A2", "B1", "B2", "C1"];
 const report = { counts: {}, log: [] };
 const bump = (k, n = 1) => { report.counts[k] = (report.counts[k] || 0) + n; };
 
-/* ---------------- maps ---------------- */
 const ARTICLE_OVERRIDES = { Stereotyp: "das", Stiefel: "der" };
 const PLURAL_ONLY = new Set(["Geschwister", "Vereinigten Staaten"]);
 const PLURAL_FIX = {
@@ -102,7 +83,6 @@ const ABILITY_VERBS = new Set(("schwimmen laufen rennen tanzen singen schlafen k
 const DRINKS = new Set(("Wasser Alkohol Bier Wein Saft Kaffee Tee Milch Cola Limonade Schnaps Sekt Champagner " +
   "Whisky Wodka Gin Rum Likör Kakao Espresso Cappuccino").split(" "));
 
-/* ------------- broken example families ------------- */
 function exampleIsBroken(w) {
   const ex = (w.example || "").trim();
   if (!ex) return false;
@@ -138,7 +118,6 @@ function exampleIsBroken(w) {
   return null;
 }
 
-/* ------------- plural validation / repair ------------- */
 function repairPlural(w) {
   if (!w.plural) return;
   const stem = w.word;
@@ -148,38 +127,34 @@ function repairPlural(w) {
   }
   if (PLURAL_DROP.has(stem)) { delete w.plural; delete w.pluralNote; bump("plural_dropped_uncountable"); return; }
   const m = /^die (.+)$/.exec(w.plural);
-  if (!m) { return; } // variant lists etc. — leave untouched
+  if (!m) { return; }
   const x = m[1];
   if (x === stem || x.includes("/")) { delete w.pluralNote; return; }
   if (x === stem + "en") {
     if (/a$/.test(stem)) { w.plural = "die " + stem + "s"; bump("plural_fixed_a_s"); }
     else if (/e$/.test(stem)) { w.plural = w.article === "die" ? "die " + stem + "n" : "die " + stem; bump("plural_fixed_e"); }
     else if (/(el|er)$/.test(stem) && w.article === "die") { w.plural = "die " + stem + "n"; bump("plural_fixed_el_er_n"); }
-    else { delete w.pluralNote; return; } // +en is regular for many nouns
+    else { delete w.pluralNote; return; }
     delete w.pluralNote; return;
   }
   if (x === stem + "e" && /y$/.test(stem)) { w.plural = "die " + stem + "s"; bump("plural_fixed_y_s"); delete w.pluralNote; return; }
   if (x === stem + "n" || x === stem + "s" || x === stem + "e" || x === stem + "er") { delete w.pluralNote; return; }
-  // unverifiable irregular form: keep only if it was NOT machine-guessed
   if (w.pluralNote) { delete w.plural; delete w.pluralNote; bump("plural_dropped_unverified"); }
 }
 
-/* ------------- main ------------- */
-const seenGlobal = new Map(); // bare word (lowercase) -> level kept
+const seenGlobal = new Map();
 for (const lvl of LEVELS) {
   const file = path.join(DATA, `vocab-${lvl}.json`);
   let arr = JSON.parse(fs.readFileSync(file, "utf8"));
   const out = [];
   for (let w of arr) {
     w = { ...w };
-    // entry repairs before normalisation
     if (lvl === "A1" && w.word === "die Augen") { bump("entry_removed_augen_dup"); continue; }
     if (w.word === "die Socken") { w.word = "die Socke"; bump("entry_fixed_socke"); }
     if (w.word === "akzeptiert") {
       w.word = "akzeptieren"; w.ipa = "[akt͡sɛpˈtiːʁən]"; bump("entry_fixed_akzeptieren");
       delete w.example; delete w.exampleFa; delete w.exampleEn;
     }
-    // 1. article normalisation
     const pm = /^(der|die|das)\s+(.+)$/i.exec(w.word || "");
     if (pm) {
       const prefixArt = pm[1].toLowerCase();
@@ -190,25 +165,19 @@ for (const lvl of LEVELS) {
       bump("article_prefix_stripped");
     }
     if (!w.article && ARTICLE_ADD[w.word]) { w.article = ARTICLE_ADD[w.word]; bump("article_added"); }
-    // plural-only nouns
     if (PLURAL_ONLY.has(w.word)) {
       w.article = "die";
       delete w.plural; delete w.pluralNote;
       if (!w.grammarNote) w.grammarNote = "این اسم فقط به صورت جمع به کار می‌رود (Plurale tantum).";
       bump("plural_only_fixed");
     }
-    // 7. cross-level duplicates
     const key = (w.word || "").toLowerCase();
     if (seenGlobal.has(key)) { bump("cross_level_dup_removed"); report.log.push(`${lvl}: dup '${w.word}' kept at ${seenGlobal.get(key)}`); continue; }
     seenGlobal.set(key, lvl);
-    // 2. plurals
     repairPlural(w);
-    // 6. auto enNotes
     if (w.enNote && /^Possible cognate with English/.test(w.enNote)) { delete w.enNote; bump("auto_ennote_removed"); }
-    // 4. broken examples
     const why = exampleIsBroken(w);
     if (why) { delete w.example; delete w.exampleFa; delete w.exampleEn; bump("example_removed_" + why); }
-    // 5. safe replacement example for nouns
     if (!w.example && w.article && !PLURAL_ONLY.has(w.word)) {
       const faOk = w.fa && !/[/()]/.test(w.fa) && w.fa.length <= 32;
       const enOk = w.en && !/[/()]/.test(w.en) && !/^to /i.test(w.en) && w.en.length <= 40;

@@ -186,10 +186,6 @@ function attachSpeaker(container) {
   });
 }
 
-/* Theme switch — same design as the portfolio site (animated sun/moon
-   switch, checkbox checked = dark), wired to this site's body.dark system
-   and its own localStorage key ('theme', unchanged so saved preferences
-   and the progress-reset key list keep working). */
 const themeCheckbox = document.getElementById('themeCheckbox');
 let currentTheme = 'light';
 let isThemeTransitioning = false;
@@ -306,7 +302,6 @@ if (megaParent) {
 }
 
 function isDesktopNav() {
-  // Guarded: without matchMedia (old webviews) the whole script must not die here.
   return !!(window.matchMedia && window.matchMedia('(min-width: 899px)').matches);
 }
 
@@ -363,7 +358,7 @@ function runSectionInit(section) {
   if (section === 'cases') renderCases();
   if (section === 'reading') renderReading();
   if (section === 'dialogues') renderDialogues();
-  if (section === 'dictation') { /* area filled on start */ }
+  if (section === 'dictation') {  }
   if (section === 'writing') initWritingPractice();
   if (section === 'levels') renderLevels();
   if (section === 'flashcards') initFlashcards();
@@ -1405,7 +1400,6 @@ function renderQuizQuestion() {
 
 quizStartBtn.addEventListener('click', buildQuiz);
 
-// ---------- Article trainer (der / die / das) ----------
 const articleArea = document.getElementById('articleArea');
 const articleStartBtn = document.getElementById('articleStartBtn');
 const articleLevelFilter = document.getElementById('articleLevelFilter');
@@ -1587,7 +1581,6 @@ function renderStudyPath() {
   content.querySelectorAll('.path-goto').forEach(btn => {
     btn.addEventListener('click', () => {
       let sec = btn.dataset.section || 'vocabulary';
-      // Normalize legacy / data typos
       if (sec === 'readings') sec = 'reading';
       if (sec === 'verbs' || sec === 'conjugation') sec = 'conjugation';
       const lvl = btn.dataset.level;
@@ -1681,7 +1674,6 @@ function normalizeDictation(s) {
 }
 
 function dictationMatch(user, answer) {
-  // punctuation-free, case-insensitive, ß/ss equivalence — via normalizeDictation
   return normalizeDictation(user) === normalizeDictation(answer);
 }
 
@@ -1824,7 +1816,6 @@ document.getElementById('wechselExerciseBtn')?.addEventListener('click', startWe
 function startPluralPractice() {
   const area = document.getElementById('pluralExerciseArea');
   if (!area || !APP_DATA || !APP_DATA.vocabulary) return;
-  // Prefer reliable plurals: with article form or without heuristic note
   let pool = APP_DATA.vocabulary.filter(w => w.plural && (/^(der|die|das)\s/i.test(w.word) || !w.pluralNote));
   if (pool.length < 8) pool = APP_DATA.vocabulary.filter(w => w.plural);
   pool = shuffleArr(pool).slice(0, Math.min(8, pool.length));
@@ -2538,7 +2529,6 @@ function renderHomeDueAndPath() {
 }
 
 
-// --- Static phonetics controls: bound here, no inline onclick attributes ---
 document.querySelectorAll('.example-trigger').forEach(el => {
   el.addEventListener('click', () => {
     const input = document.getElementById('analyzer-input');

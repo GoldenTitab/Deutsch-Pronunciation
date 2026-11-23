@@ -1,8 +1,4 @@
 "use strict";
-/* fix-data-12.js — last two junk frames:
- *  "Mein(e) X ist gesund."  (wrong possessive for feminine nouns, absurd semantics)
- *  "X ist ein wichtiges Thema." (template; one verb slipped in)
- * Both → verified noun frame; exceptions curated. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const counts = {}; const bump = (k) => { counts[k] = (counts[k] || 0) + 1; };

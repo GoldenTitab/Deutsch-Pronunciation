@@ -1,15 +1,10 @@
 "use strict";
-/* fix-data-7.js — kill the two surviving generator families from the original data:
- *   "Der/Die/Das X ist interessant."  and  "Ich benutze X jeden Tag."
- * Replacement: noun frame with the verified article, or a hand-written example
- * for verbs / adjectives / phrases. Also fills the last example-less entries. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const counts = {}; const bump = (k) => { counts[k] = (counts[k] || 0) + 1; };
 const E = (example, exampleFa, exampleEn) => ({ example, exampleFa, exampleEn });
 
 const CURATED = {
-  // weather verbs & adjectives (family A leftovers)
   "regnen": E("Es regnet heute.", "امروز باران می‌بارد.", "It is raining today."),
   "schneien": E("Es schneit im Winter.", "در زمستان برف می‌بارد.", "It snows in winter."),
   "blitzen": E("Es blitzt und donnert.", "رعد و برق می‌زند.", "There is lightning and thunder."),
@@ -32,7 +27,6 @@ const CURATED = {
   "erneuerbar": E("Die Energie ist erneuerbar.", "این انرژی تجدیدپذیر است.", "The energy is renewable."),
   "fossil": E("Das ist ein fossiler Brennstoff.", "این یک سوخت فسیلی است.", "That is a fossil fuel."),
   "nachhaltig": E("Das Produkt ist nachhaltig.", "این محصول پایدار است.", "The product is sustainable."),
-  // phrases from family A
   "am See": E("Wir sitzen am See.", "ما کنار دریاچه نشسته‌ایم.", "We are sitting by the lake."),
   "bei Regen": E("Bei Regen bleibe ich zu Hause.", "هنگام باران در خانه می‌مانم.", "When it rains, I stay at home."),
   "bei schlechtem Wetter": E("Bei schlechtem Wetter bleiben wir drin.", "در هوای بد داخل می‌مانیم.", "In bad weather, we stay inside."),
@@ -42,7 +36,6 @@ const CURATED = {
   "Genfer See": E("Der Genfer See ist groß.", "دریاچه‌ی ژنو بزرگ است.", "Lake Geneva is big."),
   "Alpen": E("Die Alpen sind hoch.", "آلپ بلند است.", "The Alps are high."),
   "Schwarzwald": E("Der Schwarzwald ist in Deutschland.", "جنگل سیاه در آلمان است.", "The Black Forest is in Germany."),
-  // tech verbs & adjectives (family B leftovers)
   "benutzen": E("Ich benutze das Handy jeden Tag.", "من هر روز از موبایل استفاده می‌کنم.", "I use the phone every day."),
   "booten": E("Der Computer bootet schnell.", "کامپیوتر سریع بالا می‌آید.", "The computer boots quickly."),
   "drucken": E("Sie druckt den Brief.", "او نامه را چاپ می‌کند.", "She prints the letter."),
@@ -70,7 +63,6 @@ const CURATED = {
   "online": E("Der Kurs ist online.", "دوره آنلاین است.", "The course is online."),
   "technisch": E("Das ist technisch schwer.", "این از نظر فنی سخت است.", "That is technically difficult."),
   "virtuell": E("Das Treffen ist virtuell.", "جلسه مجازی است.", "The meeting is virtual."),
-  // last example-less entries
   "bereits": E("Er ist bereits da.", "او از قبل اینجاست.", "He is already here."),
   "verabredet": E("Wir sind um acht verabredet.", "ما ساعت هشت قرار داریم.", "We have arranged to meet at eight."),
   "Ostern": E("Ostern ist im Frühling.", "عید پاک در بهار است.", "Easter is in spring."),

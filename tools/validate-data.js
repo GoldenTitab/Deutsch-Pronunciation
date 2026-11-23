@@ -1,6 +1,4 @@
 "use strict";
-/* validate-data.js — data quality gate. Run: node tools/validate-data.js
- * Exits non-zero and prints every violation it finds. */
 const fs = require("fs");
 const path = require("path");
 const DATA = path.join(__dirname, "..", "data");

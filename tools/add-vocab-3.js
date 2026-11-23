@@ -1,6 +1,4 @@
 "use strict";
-/* add-vocab-3.js — C1 expansion batch 3: hand-written academic/formal nouns.
- * Same dedupe guard as add-vocab.js: skips anything already present in any level. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const norm = (s) => s.toLowerCase().replace(/ä/g, "a").replace(/ö/g, "o").replace(/ü/g, "u").replace(/ß/g, "ss").replace(/[^a-z0-9 ]/gi, "").trim();

@@ -1,5 +1,4 @@
 "use strict";
-/* fix-data-11.js — examples for the final 11 cleared entries. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const E = (example, exampleFa, exampleEn) => ({ example, exampleFa, exampleEn });

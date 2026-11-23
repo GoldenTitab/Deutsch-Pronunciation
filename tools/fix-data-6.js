@@ -1,14 +1,10 @@
 "use strict";
-/* fix-data-6.js — example completion round: hand-written examples for function words,
- * verbs, reflexive verbs, colours, phrases; agreement-safe frames for the rest.
- * Only fills entries that still have no example. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const counts = {}; const bump = (k) => { counts[k] = (counts[k] || 0) + 1; };
 const E = (example, exampleFa, exampleEn) => ({ example, exampleFa, exampleEn });
 
 const CURATED = {
-  // reflexive verbs
   "sich anziehen": E("Ich ziehe mich warm an.", "من لباس گرم می‌پوشم.", "I put on warm clothes."),
   "sich ausziehen": E("Er zieht sich schnell aus.", "او سریع لباسش را درمی‌آورد.", "He gets undressed quickly."),
   "sich ausruhen": E("Ich ruhe mich zu Hause aus.", "من در خانه استراحت می‌کنم.", "I rest at home."),
@@ -21,7 +17,6 @@ const CURATED = {
   "sich beschweren": E("Sie beschwert sich über den Lärm.", "او از سر و صدا شکایت می‌کند.", "She complains about the noise."),
   "sich verkleiden": E("Die Kinder verkleiden sich an Karneval.", "بچه‌ها در کارناوال لباس مبدل می‌پوشند.", "The children dress up at carnival."),
   "sich bessern": E("Das Wetter bessert sich.", "هوا بهتر می‌شود.", "The weather is improving."),
-  // colours
   "blau": E("Der Himmel ist blau.", "آسمان آبی است.", "The sky is blue."),
   "rot": E("Die Ampel ist rot.", "چراغ راهنمایی قرمز است.", "The traffic light is red."),
   "grün": E("Das Gras ist grün.", "چمن سبز است.", "The grass is green."),
@@ -34,7 +29,6 @@ const CURATED = {
   "lila": E("Das Kleid ist lila.", "پیراهن بنفش است.", "The dress is purple."),
   "pink": E("Das T-Shirt ist pink.", "تی‌شرت صورتی پررنگ است.", "The T-shirt is bright pink."),
   "bunt": E("Der Garten ist bunt.", "باغ رنگارنگ است.", "The garden is colourful."),
-  // verbs
   "anreden": E("Er redet den Lehrer höflich an.", "او مؤدبانه معلم را خطاب می‌کند.", "He addresses the teacher politely."),
   "grüßen": E("Er grüßt seine Nachbarn.", "او به همسایه‌هایش سلام می‌کند.", "He greets his neighbours."),
   "kennenlernen": E("Ich möchte dich kennenlernen.", "می‌خواهم با تو آشنا شوم.", "I would like to get to know you."),
@@ -97,7 +91,6 @@ const CURATED = {
   "auszeichnen": E("Er wurde für seine Arbeit ausgezeichnet.", "او به خاطر کارش تقدیر شد.", "He was honoured for his work."),
   "versprechen": E("Ich verspreche es dir.", "به تو قول می‌دهم.", "I promise you."),
   "einrichten": E("Sie richten die Wohnung ein.", "آن‌ها خانه را مبله می‌کنند.", "They furnish the flat."),
-  // prepositions / conjunctions / adverbs / particles
   "auf": E("Das Buch liegt auf dem Tisch.", "کتاب روی میز است.", "The book is on the table."),
   "für": E("Das Geschenk ist für dich.", "این هدیه برای توست.", "The gift is for you."),
   "außer": E("Alle außer ihm sind da.", "همه به جز او اینجا هستند.", "Everyone except him is here."),
@@ -196,7 +189,6 @@ const CURATED = {
   "überall": E("Ich habe überall gesucht.", "همه‌جا گشتم.", "I searched everywhere."),
   "überhaupt": E("Das stimmt überhaupt nicht.", "این اصلاً درست نیست.", "That is not true at all."),
   "übrigens": E("Übrigens, ich habe ihn gesehen.", "راستی، او را دیدم.", "By the way, I saw him."),
-  // time adverbs
   "bisher": E("Bisher ist alles gut.", "تا حالا همه‌چیز خوب بوده است.", "So far, everything is fine."),
   "damals": E("Damals war ich noch jung.", "آن موقع هنوز جوان بودم.", "I was still young back then."),
   "danach": E("Danach gehen wir essen.", "بعدش می‌رویم غذا بخوریم.", "After that, we go to eat."),
@@ -257,7 +249,6 @@ const CURATED = {
   "schließlich": E("Schließlich sind wir angekommen.", "سرانجام رسیدیم.", "We finally arrived."),
   "spätestens": E("Komm spätestens um neun!", "حداکثر ساعت نه بیا!", "Come by nine at the latest!"),
   "rechtzeitig": E("Wir sind rechtzeitig gekommen.", "ما به موقع رسیدیم.", "We arrived on time."),
-  // adjectives / misc states
   "eigentlich": E("Eigentlich habe ich keine Zeit.", "راستش وقت ندارم.", "Actually, I have no time."),
   "tatsächlich": E("Er ist tatsächlich gekommen.", "او واقعاً آمد.", "He actually came."),
   "wahrscheinlich": E("Er kommt wahrscheinlich später.", "احتمالاً دیرتر می‌آید.", "He will probably come later."),
@@ -307,7 +298,6 @@ const CURATED = {
   "los": E("Los, wir gehen!", "بیا، برویم!", "Come on, let's go!"),
   "willkommen": E("Willkommen in Berlin!", "به برلین خوش آمدید!", "Welcome to Berlin!"),
   "wiedersehen": E("Auf Wiedersehen!", "خداحافظ!", "Goodbye!"),
-  // phrases
   "um ... zu": E("Ich lerne, um zu bestehen.", "یاد می‌گیرم تا قبول شوم.", "I study in order to pass."),
   "vor allem": E("Vor allem musst du ruhig bleiben.", "قبل از هر چیز باید آرام بمانی.", "Above all, you must stay calm."),
   "auf jeden Fall": E("Ich komme auf jeden Fall.", "حتماً می‌آیم.", "I will definitely come."),
@@ -422,7 +412,7 @@ for (const lvl of ["A0", "A1", "A2", "B1", "B2", "C1"]) {
     if (w.article) {
       const fa1 = (w.fa || "").split(/\s*\/\s*/)[0].trim();
       const en1 = (w.en || "").split(/\s*\/\s*/)[0].trim().replace(/^the\s+/i, "");
-      if (/^[A-ZÄÖÜ]/.test(fa1)) { /* skip glitched gloss */ }
+      if (/^[A-ZÄÖÜ]/.test(fa1)) {  }
       else {
         Object.assign(w, E(`Das ist ${w.article} ${w.word}.`, `این ${fa1} است.`, `This is the ${en1}.`));
         bump("noun_frame"); continue;

@@ -1,5 +1,4 @@
 "use strict";
-/* fix-data-3.js — round 3 article completion: more certain suffix rules + everyday nouns. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const counts = {}; const bump = (k) => { counts[k] = (counts[k] || 0) + 1; };

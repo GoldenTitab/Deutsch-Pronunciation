@@ -1,5 +1,4 @@
 "use strict";
-/* add-core.js — second dialogue per level + dictation top-up (3 per level). */
 const fs = require("fs"); const path = require("path");
 const file = path.join(__dirname, "..", "data", "core.json");
 const core = JSON.parse(fs.readFileSync(file, "utf8"));

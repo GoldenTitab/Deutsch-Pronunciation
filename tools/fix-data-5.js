@@ -1,28 +1,19 @@
 "use strict";
-/* fix-data-5.js — dictionary cross-check against the official de.wiktionary dump
- * (pages-articles multistream; the API rate-limits bulk use, dumps are the sanctioned route).
- * Input: /tmp/wikidump/de-texts.json ({word: wikitext}) extracted from the dump.
- * --report: compare only, write tools/wiki-report.json.
- * --apply:  fill missing articles/plurals + apply ADJUDICATE fixes.
- * Sources inside each page: {{Deutsch Substantiv Übersicht}} Genus + Nominativ Plural,
- * cross-checked with the {{Wortart|Substantiv}} gender marker on the same page. */
 const fs = require("fs");
 const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const TEXTS = "/tmp/wikidump/de-texts.json";
 const REPORT_FILE = path.join(__dirname, "wiki-report.json");
-const SKIP = new Set(["Geschwister", "Vereinigten Staaten"]); // plural-only by design
+const SKIP = new Set(["Geschwister", "Vereinigten Staaten"]);
 const ADJUDICATE = {
-  // sense-driven overrides (dictionary's first box is a different sense / regional variant)
-  Steuer: { article: "die", plural: "die Steuern" },        // tax (dict box 1 = steering wheel, das)
-  Silvester: { article: "das" }, Schnitzel: { article: "das" }, Yoga: { article: "das" }, // standard neuter (dict box 1 = regional m)
-  Schnupfen: { article: "der" },                            // Duden standard (de.wiki lists n)
-  Ton: { plural: "die Töne" },                              // sound sense (dict box 1 = clay, Tone)
-  Schild: { article: "das", plural: "die Schilder" },       // sign (Schilde = shields)
-  Keks: { plural: "die Kekse" },                            // standard (dict first = Austrian zero plural)
-  // uncountable / plural-only modelling
+  Steuer: { article: "die", plural: "die Steuern" },
+  Silvester: { article: "das" }, Schnitzel: { article: "das" }, Yoga: { article: "das" },
+  Schnupfen: { article: "der" },
+  Ton: { plural: "die Töne" },
+  Schild: { article: "das", plural: "die Schilder" },
+  Keks: { plural: "die Kekse" },
   Basilikum: { plural: null }, Ostern: { plural: null }, Sport: { plural: null },
-  Milch: { plural: null }, Mittagszeit: { plural: null }, Vollzeit: { plural: null }, Vielfalt: { plural: null }, // dict lists rare/dialectal plurals; taught as uncountable
+  Milch: { plural: null }, Mittagszeit: { plural: null }, Vollzeit: { plural: null }, Vielfalt: { plural: null },
   Musik: { plural: null }, Freizeit: { plural: null }, Handel: { plural: null },
   Prag: { article: null, plural: null },
   Wien: { article: null }, China: { article: null },

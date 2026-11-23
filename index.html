@@ -33,8 +33,7 @@
     .playing-audio .equalizer-bar:nth-child(4) { animation: eq 0.6s ease-in-out infinite alternate 0.1s; }
     @keyframes eq { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(1.2); } }
     .playing-bg { background-color: var(--primary-color) !important; color: #fff !important; box-shadow: 0 0 15px rgba(59,130,246,0.5); }
-    .mega-menu-touch-open .mega-menu { display: block; }
-  </style>
+    .mega-menu-touch-open .mega-menu { display: block; }</style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">پرش به محتوای اصلی</a>
@@ -942,7 +941,6 @@
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("./sw.js").catch(() => {});
     });
-  }
-  </script>
+  }</script>
 </body>
 </html>

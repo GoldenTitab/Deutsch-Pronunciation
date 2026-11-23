@@ -1,8 +1,4 @@
 "use strict";
-/* fix-data-10.js — remove the last generator family: "<Article> X ist wichtig/nützlich."
- * (~500 examples, many with pre-repair wrong articles baked in).
- * Nouns → verified-article frame; plural-only → plural frame; places → article-less
- * frame; verbs/adjectives/adverbs → hand-written examples; the rest are cleared. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const counts = {}; const bump = (k) => { counts[k] = (counts[k] || 0) + 1; };

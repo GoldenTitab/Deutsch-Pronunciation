@@ -225,7 +225,6 @@ header {
   color: var(--primary-color);
 }
 
-/* ===== theme switch (same design as portfolio site) ===== */
 .theme-switch {
     --toggle-size: 10px;
     --container-width: 5.625em;
@@ -2159,7 +2158,6 @@ body.dark .en-diff-box strong {
     justify-content: flex-start;
   }
 }
-/* Article chips — der (blue) / die (rose) / das (green), the classic gender colour code */
 .article-chip {
   display: inline-block;
   padding: 0.05rem 0.55rem;
@@ -2175,7 +2173,6 @@ body.dark .en-diff-box strong {
 .article-chip.die { background: #e11d48; }
 .article-chip.das { background: #059669; }
 
-/* Active state for toggle buttons (flashcard "due only") */
 .learn-toggle-active {
   background: var(--primary-color) !important;
   color: #fff !important;

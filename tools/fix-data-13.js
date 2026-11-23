@@ -1,6 +1,4 @@
 "use strict";
-/* fix-data-13.js — curated examples for the 32 entries cleared by fix-data-12,
- * the mangled "macht" phrase entry, and accusative case in the essen frame. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const E = (example, exampleFa, exampleEn) => ({ example, exampleFa, exampleEn });

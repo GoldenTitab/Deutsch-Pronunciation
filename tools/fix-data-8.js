@@ -1,5 +1,4 @@
 "use strict";
-/* fix-data-8.js — the last six example-less entries + CO2-Fußabdruck plural umlaut. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const FIX = {

@@ -1,6 +1,4 @@
 "use strict";
-/* fix-data-9.js — translation repairs caught by the extended validator:
- * superlative 'the the' + three legacy 'The the X is …' exampleEn strings. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const FIX = {

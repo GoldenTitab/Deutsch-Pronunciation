@@ -1,6 +1,4 @@
 "use strict";
-/* add-vocab.js — curated B2/C1 expansion (hand-written, CEFR-aligned).
- * Asserts: no duplicates against any level, complete fields. Run once. */
 const fs = require("fs");
 const path = require("path");
 const DATA = path.join(__dirname, "..", "data");

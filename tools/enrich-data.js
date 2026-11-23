@@ -778,8 +778,6 @@ const PLURAL_OVERRIDES = {
 };
 
 function guessPlural(word) {
-  // Conservative by design: a missing plural is better than a wrong one.
-  // Only rules that hold (near-)always are applied; anything else returns null.
   if (PLURAL_OVERRIDES[word]) return PLURAL_OVERRIDES[word];
   const m = word.match(/^(der|die|das)\s+(.+)$/i);
   if (!m) return null;
@@ -828,7 +826,7 @@ function makeExample(w) {
       exampleEn: en,
     };
   }
-  return null; // no safe frame for this entry — leave the example empty
+  return null;
 }
 
 function enrichVocabFile(filePath) {
@@ -893,8 +891,6 @@ function main() {
     if (!existing.has(v.infinitive)) core.verbs.push(v);
   }
 
-  // The embedded lists are SEEDS: they only fill a section that is missing/empty.
-  // They must never overwrite curated core.json content.
   if (!core.dialogues || !core.dialogues.length) core.dialogues = DIALOGUES;
   if (!core.wechselExercises || !core.wechselExercises.length) core.wechselExercises = WECHSEL_ITEMS;
   if (!core.dictation || !core.dictation.length) core.dictation = DICTATION;

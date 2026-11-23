@@ -1,9 +1,4 @@
 "use strict";
-/* fix-data-14.js — last unsourced compounds. German compounds take the gender of
- * their final constituent (a deterministic rule, not a guess):
- * Haarreif←der Reif, Mittagsmenü←das Menü, Nebenfach←das Fach,
- * Lösungsansatz←der Ansatz, Bankkaufmann←der Kaufmann, Jobinterview←das Interview,
- * BWL←die (Betriebswirtschafts)lehre, KI←die Intelligenz. */
 const fs = require("fs"); const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
 const ART = { "Haarreif": "der", "Mittagsmenü": "das", "Nebenfach": "das", "Lösungsansatz": "der", "Bankkaufmann": "der", "Jobinterview": "das", "BWL": "die", "KI": "die" };

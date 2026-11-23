@@ -1,7 +1,4 @@
 "use strict";
-/* fix-data-2.js — round 2: suffix-based articles, more plurals, safe example
- * frames for nouns/adjectives/verbs/numbers, hand-written A0 examples.
- * Run AFTER tools/fix-data.js:  node tools/fix-data-2.js */
 const fs = require("fs");
 const path = require("path");
 const DATA = path.join(__dirname, "..", "data");
@@ -78,18 +75,15 @@ for (const lvl of LEVELS) {
   const file = path.join(DATA, `vocab-${lvl}.json`);
   const arr = JSON.parse(fs.readFileSync(file, "utf8"));
   for (const w of arr) {
-    // articles by suffix / map
     if (!w.article && /^[A-ZÄÖÜ]/.test(w.word || "") && !/\s/.test(w.word)) {
       if (ARTICLE_ADD2[w.word]) { w.article = ARTICLE_ADD2[w.word]; bump("article_add2"); }
       else for (const [re, art] of ARTICLE_SUFFIX) { if (re.test(w.word)) { w.article = art; bump("article_suffix_" + art); break; } }
     }
     if (PLURAL_FIX2[w.word] && w.plural !== PLURAL_FIX2[w.word]) { w.plural = PLURAL_FIX2[w.word]; bump("plural_fix2"); }
     if (w.word === "Türkei") { delete w.plural; }
-    // month/weekday english frame polish
     if (MONTHS.has(w.word) && /^Das ist der /.test(w.example || "")) {
       w.exampleEn = `This is ${firstSeg(w.en)}.`;
     }
-    // A0 hand-written examples + phrase-self
     if (lvl === "A0" && !w.example) {
       if (A0_EXAMPLES[w.word]) {
         [w.example, w.exampleFa, w.exampleEn] = A0_EXAMPLES[w.word]; bump("a0_hand_example");
@@ -100,7 +94,6 @@ for (const lvl of LEVELS) {
     if (w.example) continue;
     const fa1 = firstSeg(w.fa), en1 = firstSeg(w.en);
     const faOk = fa1 && fa1.length <= 25, enOk = en1 && en1.length <= 35 && !/^to /i.test(en1);
-    // noun frame v2 (first-segment glosses)
     if (w.article && faOk && enOk) {
       w.example = `Das ist ${w.article} ${w.word}.`;
       w.exampleFa = `این ${fa1} است.`;
@@ -109,7 +102,6 @@ for (const lvl of LEVELS) {
     }
     const cat = w.category || "";
     const single = !/\s/.test(w.word || "");
-    // adjective frame
     if (single && (cat.includes("صفت") || cat.includes("احساسات")) && /^[a-zäöüß]/.test(w.word) &&
         !w.word.startsWith("am ") && !ATTRIB_ONLY.has(w.word) && faOk && enOk) {
       w.example = `Das ist ${w.word}.`;
@@ -117,7 +109,6 @@ for (const lvl of LEVELS) {
       w.exampleEn = `This is ${en1}.`;
       bump("frame_adj"); continue;
     }
-    // verb frame
     if (single && cat.includes("افعال") && /^[a-zäöüß]/.test(w.word) && /(en|eln|ern)$/.test(w.word) &&
         !MODALS.has(w.word) && !VERB_EXCLUDE.has(w.word) && fa1) {
       const enVerb = (w.en || "").split(/\s*\/\s*/)[0].replace(/^to\s+/i, "").replace(/\s*\([^)]*\)\s*/g, "").trim();
@@ -128,7 +119,6 @@ for (const lvl of LEVELS) {
         bump("frame_verb"); continue;
       }
     }
-    // number frame
     if (single && cat.includes("اعداد") && fa1 && en1) {
       w.example = `Ich zähle bis ${w.word}.`;
       w.exampleFa = `تا ${fa1} می‌شمارم.`;
